@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Craftable §6Notch Apples §r- Made by §dEndLordMC",
+        "name": "§gCraftable Notch Apples",
+        "uuid": "18e257c8-b760-4d76-9ca5-f12a8497d083",
+        "version": [ 0, 1, 0 ],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description":"Craftable §6Notch Apples §r- Made by §dEndLordMC",
+            "type": "data",
+            "uuid": "5377ded8-4f82-4bec-94ae-57f2d4725e1e",
+            "version":[ 0, 1, 0 ]
+        }
+    ]
+}
