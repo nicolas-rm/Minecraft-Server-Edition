@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:carton",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:carton",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

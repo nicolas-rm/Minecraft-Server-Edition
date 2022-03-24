@@ -1,0 +1,1 @@
+give @p espadas:cuarzo_rosa

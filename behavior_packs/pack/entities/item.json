@@ -1,0 +1,58 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:item",
+			"runtime_identifier": {},
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"on_damage": {
+							"filters": {
+								"any_of": [
+									{
+										"test": "has_tag",
+										"operator": "==",
+										"subject": "self",
+										"value": "netherite"
+									}
+								]
+							}
+						},
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_component",
+									"value": "minecraft:knockback_resistance",
+									"operator": "==",
+									"subject": "self"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"summon pig"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

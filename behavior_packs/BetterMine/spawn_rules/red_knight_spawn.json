@@ -1,0 +1,66 @@
+{
+  "format_version": "1.11.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "better:red_knight_sapwn",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:mob_event_filter": {
+          "event": "minecraft:pillager_patrols_event"
+        },
+        "minecraft:world_age_filter": {
+          "min": 0
+        },
+        "minecraft:delay_filter": {
+          "min": 0,
+          "max": 660,
+          "identifier": "better:red_knight_spawn",
+          "spawn_chance": 10
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:distance_filter": {
+          "min": 24,
+          "max": 48
+        },
+        "minecraft:difficulty_filter": {
+          "min": "easy"
+        },
+        "minecraft:brightness_filter": {
+          "min": 7,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 2,
+          "initial_event": "minecraft:ageable_grow_up",
+          "initial_event_count": 1,
+          "event": "minecraft:ageable_grow_up",
+          "event_skip_count": 1
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 50,
+            "entity_type": "minecraft:horse"
+          },
+          {
+            "weight": 50,
+            "entity_type": "better:red_knight"
+          }
+        ],
+        "minecraft:biome_filter": {
+          "any_of": [
+            { "test": "has_biome_tag", "operator": "==", "value": "lands" },
+            { "test": "has_biome_tag", "operator": "==", "value": "red_town" }
+          ]
+        },
+        "minecraft:player_in_village_filter": {
+          "distance": 28,
+          "village_border_tolerance": 0
+        }
+      }
+    ]
+  }
+}

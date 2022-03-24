@@ -1,0 +1,282 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\xp.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "f21b1afc_81cf_48a2_95ca_63acf4ca2231",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:xp"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:xp_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:experience_bottle"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:xp"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:xp_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:experience_bottle"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:experience_bottle"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:xp"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:experience_bottle"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:experience_bottle"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:xp_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:xp_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:experience_bottle"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#L#",
+							"LBL",
+							"#L#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:experience_bottle"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:experience_bottle"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "L",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:experience_bottle"
+								}
+							},
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:experience_bottle"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

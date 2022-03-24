@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "trypo_sensor_3c2c1e60"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:powder_snow",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:trypo_sensor",
+      "count": 1
+    }
+  }
+}

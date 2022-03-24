@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "minecraft:stonecutter_dryslate_slab"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "better:drystone",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "better:dryslate_slab",
+      "data": 0,
+      "count": 2
+    }
+  }
+  
+}

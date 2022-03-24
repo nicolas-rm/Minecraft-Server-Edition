@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:spawn_illusioner",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ "walk" ]
+	  },
+	  "animations": {
+	    "walk": "controller.animation.spawn_illusioner"
+	  }
+    },
+	
+	"components": {
+	  "minecraft:type_family": {
+	    "family": [ "inaminate" ]
+	  },
+	  "minecraft:despawn": {
+	    "filters": {
+		  "all_of": [
+		    { "test": "is_family", "subject": "self", "value": "inaminate" }
+		  ]
+		}
+	  },
+	  "minecraft:health": {
+	    "value": 1
+	  },
+	  "minecraft:physics": {
+	  }
+	}
+  }
+}

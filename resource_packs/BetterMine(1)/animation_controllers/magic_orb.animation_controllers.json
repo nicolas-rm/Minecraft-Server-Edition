@@ -1,0 +1,19 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.magic_orb.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "move" ],
+					"particle_effects" : [
+						{
+							"effect" : "trail",
+							"locator" : "particle_locator"
+						}
+					]
+				}
+			}
+		} 	
+	}
+}

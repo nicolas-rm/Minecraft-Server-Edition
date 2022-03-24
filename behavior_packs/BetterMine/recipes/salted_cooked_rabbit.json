@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "better:stalted_cooked_rabbit"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "minecraft:cooked_rabbit",
+        "data": 0
+      },
+      {
+        "item": "better:salt",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "better:salted_rabbit",
+      "data": 0,
+      "count": 1
+    }
+  }
+  
+}

@@ -1,0 +1,61 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "desert_m"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 2.0
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 2.6, 0.64 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:stone",
+        "top_material": "minecraft:stone",
+        "sea_material": "minecraft:stone"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": "minecraft:sand",
+              "sea_floor_material": "minecraft:sand"
+            },
+            "height_range": [ 0.2, 1.0 ],
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ -1.0, -0.012 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:sand",
+              "mid_material": "minecraft:sand",
+              "sea_floor_material": "minecraft:sand"
+            },
+            "height_range": [ 0.2, 1.0 ],
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.024, 1.0 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": "desert",
+        "river_transformation": "dead_river",
+        "generate_for_climates": [
+          [ "warm", 1 ]
+        ]
+      },
+
+      "desert": {},
+      "desert_mountains": {},
+      "monster": {},
+      "overworld": {}
+    }
+  }
+}

@@ -1,0 +1,581 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\entities\\item.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "74a3922e_7637_4a1b_860e_06b57762af32",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "minecraft:item",
+							"runtime_identifier": {},
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"component_groups": {},
+						"components": {
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"cause": "all",
+										"on_damage": {
+											"filters": {
+												"any_of": [
+													{
+														"test": "has_tag",
+														"operator": "==",
+														"subject": "self",
+														"value": "netherite"
+													}
+												]
+											}
+										},
+										"deals_damage": false
+									}
+								]
+							}
+						},
+						"events": {
+							"test": {
+								"sequence": [
+									{
+										"filters": {
+											"any_of": [
+												{
+													"test": "has_component",
+													"value": "minecraft:knockback_resistance",
+													"operator": "==",
+													"subject": "self"
+												}
+											]
+										},
+										"run_command": {
+											"command": [
+												"summon pig"
+											]
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:item",
+								"runtime_identifier": {},
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "has_tag",
+															"operator": "==",
+															"subject": "self",
+															"value": "netherite"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"test": {
+									"sequence": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "has_component",
+														"value": "minecraft:knockback_resistance",
+														"operator": "==",
+														"subject": "self"
+													}
+												]
+											},
+											"run_command": {
+												"command": [
+													"summon pig"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:item",
+							"runtime_identifier": {},
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:item",
+								"runtime_identifier": {},
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "has_tag",
+															"operator": "==",
+															"subject": "self",
+															"value": "netherite"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"test": {
+									"sequence": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "has_component",
+														"value": "minecraft:knockback_resistance",
+														"operator": "==",
+														"subject": "self"
+													}
+												]
+											},
+											"run_command": {
+												"command": [
+													"summon pig"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"cause": "all",
+												"on_damage": {
+													"filters": {
+														"any_of": [
+															{
+																"test": "has_tag",
+																"operator": "==",
+																"subject": "self",
+																"value": "netherite"
+															}
+														]
+													}
+												},
+												"deals_damage": false
+											}
+										]
+									}
+								},
+								"key": "minecraft:damage_sensor",
+								"children": [
+									{
+										"open": {
+											"triggers": [
+												{
+													"cause": "all",
+													"on_damage": {
+														"filters": {
+															"any_of": [
+																{
+																	"test": "has_tag",
+																	"operator": "==",
+																	"subject": "self",
+																	"value": "netherite"
+																}
+															]
+														}
+													},
+													"deals_damage": false
+												}
+											]
+										},
+										"key": "triggers",
+										"children": [
+											{
+												"open": [
+													{
+														"cause": "all",
+														"on_damage": {
+															"filters": {
+																"any_of": [
+																	{
+																		"test": "has_tag",
+																		"operator": "==",
+																		"subject": "self",
+																		"value": "netherite"
+																	}
+																]
+															}
+														},
+														"deals_damage": false
+													}
+												],
+												"children": [
+													{
+														"data": "all",
+														"key": "cause"
+													},
+													{
+														"open": {
+															"cause": "all",
+															"on_damage": {
+																"filters": {
+																	"any_of": [
+																		{
+																			"test": "has_tag",
+																			"operator": "==",
+																			"subject": "self",
+																			"value": "netherite"
+																		}
+																	]
+																}
+															},
+															"deals_damage": false
+														},
+														"key": "on_damage",
+														"children": [
+															{
+																"open": {
+																	"filters": {
+																		"any_of": [
+																			{
+																				"test": "has_tag",
+																				"operator": "==",
+																				"subject": "self",
+																				"value": "netherite"
+																			}
+																		]
+																	}
+																},
+																"key": "filters",
+																"children": [
+																	{
+																		"open": {
+																			"any_of": [
+																				{
+																					"test": "has_tag",
+																					"operator": "==",
+																					"subject": "self",
+																					"value": "netherite"
+																				}
+																			]
+																		},
+																		"key": "any_of",
+																		"children": [
+																			{
+																				"open": [
+																					{
+																						"test": "has_tag",
+																						"operator": "==",
+																						"subject": "self",
+																						"value": "netherite"
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "has_tag",
+																					"operator": "==",
+																					"subject": "self",
+																					"value": "netherite"
+																				}
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													},
+													{
+														"data": "false",
+														"key": "deals_damage"
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:item",
+								"runtime_identifier": {},
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "has_tag",
+															"operator": "==",
+															"subject": "self",
+															"value": "netherite"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"test": {
+									"sequence": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "has_component",
+														"value": "minecraft:knockback_resistance",
+														"operator": "==",
+														"subject": "self"
+													}
+												]
+											},
+											"run_command": {
+												"command": [
+													"summon pig"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"test": {
+										"sequence": [
+											{
+												"filters": {
+													"any_of": [
+														{
+															"test": "has_component",
+															"value": "minecraft:knockback_resistance",
+															"operator": "==",
+															"subject": "self"
+														}
+													]
+												},
+												"run_command": {
+													"command": [
+														"summon pig"
+													]
+												}
+											}
+										]
+									}
+								},
+								"key": "test",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"filters": {
+														"any_of": [
+															{
+																"test": "has_component",
+																"value": "minecraft:knockback_resistance",
+																"operator": "==",
+																"subject": "self"
+															}
+														]
+													},
+													"run_command": {
+														"command": [
+															"summon pig"
+														]
+													}
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"any_of": [
+																{
+																	"test": "has_component",
+																	"value": "minecraft:knockback_resistance",
+																	"operator": "==",
+																	"subject": "self"
+																}
+															]
+														},
+														"run_command": {
+															"command": [
+																"summon pig"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"any_of": [
+																	{
+																		"test": "has_component",
+																		"value": "minecraft:knockback_resistance",
+																		"operator": "==",
+																		"subject": "self"
+																	}
+																]
+															},
+															"run_command": {
+																"command": [
+																	"summon pig"
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"any_of": [
+																		{
+																			"test": "has_component",
+																			"value": "minecraft:knockback_resistance",
+																			"operator": "==",
+																			"subject": "self"
+																		}
+																	]
+																},
+																"key": "any_of",
+																"children": [
+																	{
+																		"open": [
+																			{
+																				"test": "has_component",
+																				"value": "minecraft:knockback_resistance",
+																				"operator": "==",
+																				"subject": "self"
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_component",
+																			"value": "minecraft:knockback_resistance",
+																			"operator": "==",
+																			"subject": "self"
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"any_of": [
+																	{
+																		"test": "has_component",
+																		"value": "minecraft:knockback_resistance",
+																		"operator": "==",
+																		"subject": "self"
+																	}
+																]
+															},
+															"run_command": {
+																"command": [
+																	"summon pig"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"summon pig"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"summon pig"
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

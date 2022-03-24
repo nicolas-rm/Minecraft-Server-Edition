@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "minecraft:hute6_feature"
+    },
+    "features": [
+      [ "minecraft:hute6_position", 1 ],
+      [ "minecraft:hute61_position", 1 ],
+      [ "minecraft:hute62_position", 1 ],
+      [ "minecraft:hute63_position", 1 ],
+      [ "minecraft:hute64_position", 1 ],
+      [ "minecraft:hute65_position", 1 ],
+      [ "minecraft:hute71_position", 1 ],
+      [ "minecraft:hute72_position", 1 ],
+      [ "minecraft:hute73_position", 1 ],
+      [ "minecraft:hute74_position", 1 ],
+      [ "minecraft:hute75_position", 1 ],
+      [ "minecraft:hute76_position", 1 ],
+      [ "minecraft:hute77_position", 1 ]
+    ]
+  }
+}

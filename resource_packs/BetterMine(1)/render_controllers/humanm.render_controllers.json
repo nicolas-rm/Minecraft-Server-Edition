@@ -1,0 +1,76 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.humanm_base": {
+      "arrays": {
+        "textures": {
+          "Array.base": [
+            "Texture.base_steve",
+            "Texture.base_alex",
+            "Texture.base_0",
+            "Texture.base_1",
+            "Texture.base_2",
+            "Texture.base_3",
+            "Texture.base_4"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [
+        "Array.base[query.variant]"
+      ]
+    },
+    "controller.render.humanm_bottom": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.bottom1",
+            "Texture.bottom2",
+            "Texture.bottom3",
+            "Texture.bottom4",
+            "Texture.bottom5",
+            "Texture.bottom6",
+            "Texture.bottom7",
+            "Texture.bottom8",
+            "Texture.bottom9",
+            "Texture.bottom10",
+            "Texture.bottom11"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+          { "*": "Material.default" }
+      ],
+      "textures": [
+        "Array.skins[query.skin_id]"
+      ]
+    },
+    "controller.render.humanm_top": {
+      "arrays": {
+        "textures": {
+          "Array.markings": [
+            "Texture.top1",
+            "Texture.top2",
+            "Texture.top3",
+            "Texture.top4",
+            "Texture.top5",
+            "Texture.top6",
+            "Texture.top7"
+          ]
+        }
+      },
+      "rebuild_animation_matrices": true,
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [
+        "Array.markings[query.mark_variant]"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ray:ar_book"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"pattern": [
+			"###",
+			"#X#",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:iron_ingot"
+			},
+			"X": {
+				"item": "minecraft:book"
+			}
+		},
+		"result": {
+			"item": "ar_book:netherite_ingot"
+		}
+	}
+}

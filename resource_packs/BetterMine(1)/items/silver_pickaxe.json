@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "equipment",
+			"identifier": "better:silver_pickaxe"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.pickaxe"
+			},
+			"minecraft:icon": {
+				"texture": "silver_pickaxe"
+			},
+			"minecraft:render_offsets": "tool",
+			"minecraft:display_name": {
+				"value": "item.better:silver_pickaxe.name"
+			},
+			"minecraft:hover_text_color": "white"
+		}
+	}
+}

@@ -1,0 +1,168 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "better:lead_block",
+            "properties": {
+                "better:growth_stage": [0, 1, 2, 3, 4, 5, 6]
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "lead_block",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:destroy_time": 9999.9,
+            "minecraft:explosion_resistance": 424242.0,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#000000",
+            "minecraft:block_light_absorption": 15.0,
+            "minecraft:loot": "loot_tables/blocks/lead_block.json",
+            "minecraft:on_interact": {
+                "event": "meal",
+                "condition": "query.get_equipped_item_name('main_hand') == 'command_block'"
+            },
+            "minecraft:random_ticking": {
+                "on_tick": {
+                    "event": "grow_stage"
+                }
+            }
+        },
+
+        "events": {
+            "grow_stage": {
+                "randomize": [
+                    {
+                        "weight": 2
+                    },
+                    {
+                        "weight": 1,
+                        "set_block_property": {
+                            "better:growth_stage": "(query.block_property('better:growth_stage')<6) ? query.block_property('better:growth_stage') + 1 : 6"
+                        }
+                    }
+                ]
+            },
+            "meal": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": [
+                                "particle minecraft:crop_growth_emitter ~~~"
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "grow_stage"
+                        }
+                    }
+                ]
+            },
+            "break": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": [
+                                "setblock ~~~ air"
+                            ]
+                        }
+                    },
+                    {
+                        "spawn_loot": {
+                            "table": "loot_tables/blocks/lead_block.json"
+                        }
+                    }
+                ]
+            }
+        },
+
+        "permutations": [
+            {
+                "condition": "query.block_property('better:growth_stage') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "lead_block",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "lead_block",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "lightly_oxidized_lead_block",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 3",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "semi_oxidized_lead_block",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 4",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "semi_oxidized_lead_block",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 5",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "heavyli_oxidized_lead_block",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 6",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "oxidized_lead_block",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:random_ticking": {
+                        "on_tick": {
+                            "event": "break"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

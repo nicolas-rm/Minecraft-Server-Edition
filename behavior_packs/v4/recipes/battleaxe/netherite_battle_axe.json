@@ -1,0 +1,31 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sp:battle_axe_netherite"
+		},
+		"tags": [
+			"enderite_upgrade"
+		],
+		"pattern": [
+			"WXW",
+			"X#X",
+			" # "
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:stick"
+			},
+			"W": {
+				"item": "minecraft:obsidian"
+			},
+			"X": {
+				"item": "minecraft:netherite_ingot"
+			}
+		},
+		"result": {
+			"item": "sp:battle_axe_netherite"
+		}
+	}
+}

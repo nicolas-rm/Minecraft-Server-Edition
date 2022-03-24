@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "better:red_flower_patch_feature"
+    },
+    "iterations": 32,
+    "coordinate_eval_order": "zyx",
+    "x": {
+      "extent": [ -4, 4 ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [ -4, 4 ],
+      "distribution": "gaussian"
+    },
+    "y": {
+      "extent": [ -4, 4 ],
+      "distribution": "gaussian"
+    },
+    "project_input_to_floor": true,
+    "places_feature": "better:red_flower_feature"
+  }
+}

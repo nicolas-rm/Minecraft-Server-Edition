@@ -1,0 +1,221 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "better:blueberry_bush",
+            "properties": {
+                "better:growth_stage": [0, 1, 2, 3, 4, 5, 6]
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "blueberry_bush_stage0",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:geometry": "geometry.crop",
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 16, 16 ]
+            },
+            "minecraft:destroy_time": 0.0,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#577211",
+            "minecraft:block_light_absorption": 0.0,
+            "minecraft:loot": "loot_tables/crops/bluebrry_bush.json",
+            "minecraft:on_interact": {
+                "event": "meal",
+                "condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+            },
+            "minecraft:random_ticking": {
+                "on_tick": {
+                    "event": "grow_stage"
+                }
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": ["up"],
+                        "block_filter": ["farmland", "grass"]
+                    }
+                ]
+            }
+        },
+
+        "events": {
+            "grow_stage": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function sweet_berry_bush_growth_boost"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "set_block_property": {
+                            "better:growth_stage": "(query.block_property('better:growth_stage')<6) ? query.block_property('better:growth_stage') + 1 : 6"
+                        }
+                    }
+                ]
+            },
+            "shear": {
+                "sequence": [
+                    {
+                        "spawn_loot": {
+                            "table": "loot_tables/crops/blueberry_bush_f.json"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "better:growth_stage": 2
+                        }
+                    }
+                ]
+            },
+            "meal": {
+                "sequence": [
+                    {
+                        "decrement_stack": {}
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "function sweet_berry_bush_growth_boost"
+                            ]
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "particle minecraft:crop_growth_emitter ~~~"
+                            ]
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "grow_stage"
+                        }
+                    }
+                ]
+            }
+        },
+
+        "permutations": [
+            {
+                "condition": "query.block_property('better:growth_stage') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "blueberry_bush_stage0",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [-5,0,-5],
+                        "size": [10,5,10]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "blueberry_bush_stage0",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [-5,0,-5],
+                        "size": [10,5,10]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "blueberry_bush_stage1",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [-6.5,0,-6.5],
+                        "size": [13,7,13]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 3",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "blueberry_bush_stage1",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [-6.5,0,-6.5],
+                        "size": [13,7,13]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 4",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "blueberry_bush_stage2",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [-8,0,-8],
+                        "size": [16,14,16]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 5",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "blueberry_bush_stage2",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [-8,0,-8],
+                        "size": [16,15,16]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:growth_stage') == 6",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "blueberry_bush_stage3",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [-8,0,-8],
+                        "size": [16,16,16]
+                    },
+                    "minecraft:on_interact": {
+                        "event": "shear",
+                        "condition": "query.get_equipped_item_name('main_hand') == 'shears'"
+                    },
+                    "minecraft:loot": "loot_tables/crops/blueberry_bush_f.json"
+                }
+            }
+        ]
+    }
+}

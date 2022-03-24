@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "minecraft:stonecutter_chiseled_dryslate"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "priority": 2,
+    "ingredients": [
+      {
+        "item": "better:drystone",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "better:chiseled_dryslate",
+      "data": 0,
+      "count": 1
+    }
+  }
+  
+}

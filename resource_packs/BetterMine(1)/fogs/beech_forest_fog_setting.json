@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "better:fog_beech_forest"
+    },
+    "distance": {
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 15.0,
+        "fog_color": "#4469c2",
+        "render_distance_type": "fixed"
+      },
+      "air": {
+        "fog_start": 0.92,
+        "fog_end": 1.0,
+        "fog_color": "#ffeeae",
+        "render_distance_type": "render"
+      }
+    }
+  }
+}

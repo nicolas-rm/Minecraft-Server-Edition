@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "better:brew_reinforcement_gunpowder"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "better:potion_reinforcement",
+    "reagent": "minecraft:gunpowder",
+    "output": "better:splash_potion_reinforcement"
+  }
+
+}

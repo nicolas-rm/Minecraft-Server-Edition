@@ -1,0 +1,1 @@
+give @s wr:block_of_bone

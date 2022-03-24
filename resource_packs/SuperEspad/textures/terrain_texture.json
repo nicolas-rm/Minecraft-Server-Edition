@@ -1,0 +1,63 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "espadas_mineral_plomo": {
+      "textures": [
+        "textures/blocks/espadas_mineral_plomo"
+      ]
+    },
+    "espadas_mineral_titanio": {
+      "textures": [
+        "textures/blocks/espadas_mineral_titanio"
+      ]
+    },
+    "espadas_mineral_cobre": {
+      "textures": [
+        "textures/blocks/espadas_mineral_cobre"
+      ]
+    },
+    "espadas_mineral_zafiro": {
+      "textures": [
+        "textures/blocks/espadas_mineral_zafiro"
+      ]
+    },
+    "espadas_mineral_platino": {
+      "textures": [
+        "textures/blocks/espadas_mineral_platino"
+      ]
+    },
+    "espadas_mineral_niquel": {
+      "textures": [
+        "textures/blocks/espadas_mineral_niquel"
+      ]
+    },
+    "espadas_mineral_estano": {
+      "textures": [
+        "textures/blocks/espadas_mineral_estano"
+      ]
+    },
+    "espadas_mineral_rubi": {
+      "textures": [
+        "textures/blocks/espadas_mineral_rubi"
+      ]
+    },
+    "espadas_mineral_cuarzo_rosa": {
+      "textures": [
+        "textures/blocks/espadas_mineral_cuarzo_rosa"
+      ]
+    },
+    "espadas_mineral_diamante_blanco": {
+      "textures": [
+        "textures/blocks/espadas_mineral_diamante_blanco"
+      ]
+    },
+    "espadas_mineral_amatista": {
+      "textures": [
+        "textures/blocks/espadas_mineral_amatista"
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.snareling.arms_legs": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": ["math.clamp(this, -22.92, 22.92) - this", 0, 0]
+				},
+				"leftLeg": {
+					"rotation": ["math.clamp(this, -22.92, 22.92) - this", 0, 0]
+				},
+				"rightArm": {
+					"rotation": ["math.clamp(this, -22.92, 22.92) - this", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["math.clamp(this, -22.92, 22.92) - this", 0, 0]
+				}
+			}
+		},
+		"animation.snareling.move" : {
+			"loop" : true,
+			"bones" : {
+				"leftleg" : {
+					"rotation" : [ "variable.tcos0 * -1.4", 0.0, 0.0 ]
+				},
+				"rightleg" : {
+					"rotation" : [ "variable.tcos0 * 1.4", 0.0, 0.0 ]
+				}
+			}
+		},
+		"animation.snareling.carrying": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, -2, -2]
+				},
+				"leftArm": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, -2, -2]
+				}
+			}
+		},
+		"animation.snareling.scary_face": {
+			"loop": true,
+			"bones": {
+				"hat": {
+					"position": [0, -5, 0]
+				},
+				"head": {
+					"position": [0, 5, 1]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "minecraft:red_stables"
+        },
+        "structure_name": "mystructure:red_stables",
+        "adjustment_radius": 8,
+        "facing_direction": "south",
+        "constraints": {
+            "grounded": {}
+        }
+    }
+}

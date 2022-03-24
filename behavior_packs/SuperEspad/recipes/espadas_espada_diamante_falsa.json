@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "espada_diamante_falsa_cbce63e3"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "espadas:espada_carton",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 12
+      }
+    },
+    "result": {
+      "item": "espadas:espada_diamante_falsa",
+      "count": 1
+    }
+  }
+}

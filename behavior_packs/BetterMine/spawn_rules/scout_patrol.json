@@ -1,0 +1,67 @@
+{
+  "format_version": "1.11.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "better:scout_patrol",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:mob_event_filter": {
+          "event": "minecraft:pillager_patrols_event"
+        },
+        "minecraft:world_age_filter": {
+          "min": 0
+        },
+        "minecraft:delay_filter": {
+          "min": 0,
+          "max": 660,
+          "identifier": "better:scout_patrol",
+          "spawn_chance": 20
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:distance_filter": {
+          "min": 15,
+          "max": 48
+        },
+        "minecraft:difficulty_filter": {
+          "min": "easy"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size": 7,
+          "max_size": 10,
+          "initial_event": "minecraft:promote_to_patrol_captain",
+          "initial_event_count": 1,
+          "event": "minecraft:spawn_as_patrol_follower",
+          "event_skip_count": 1
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 80,
+            "entity_type": "better:scout"
+          },
+          {
+            "weight": 20,
+            "entity_type": "better:woodland_captain"
+          }
+        ],
+        "minecraft:biome_filter": {
+          "all_of": [
+            { "test": "has_biome_tag", "operator": "==", "value": "forest" },
+            { "test": "has_biome_tag", "operator": "==", "value": "roofed" },
+            { "test": "has_biome_tag", "operator": "!=", "value": "mutated" }
+          ]
+        },
+        "minecraft:player_in_village_filter": {
+          "distance": 15,
+          "village_border_tolerance": 0
+        }
+      }
+    ]
+  }
+}

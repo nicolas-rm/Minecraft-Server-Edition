@@ -1,0 +1,45 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.moskito",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [-1, 5, -1],
+					"cubes": [
+						{"origin": [-1, 5, -1], "size": [1, 1, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "wings",
+					"parent": "body",
+					"pivot": [-1, 5, -1]
+				},
+				{
+					"name": "wr",
+					"parent": "wings",
+					"pivot": [-1, 5, -1],
+					"cubes": [
+						{"origin": [0, 5, -1], "size": [1, 1, 1], "pivot": [0, 5, -1], "rotation": [0, 0, -25], "uv": [12, 14]}
+					]
+				},
+				{
+					"name": "wl",
+					"parent": "wings",
+					"pivot": [-1, 5, -1],
+					"cubes": [
+						{"origin": [-2, 5, -1], "size": [1, 1, 1], "pivot": [-1, 5, -1], "rotation": [0, 0, 25], "uv": [12, 0]}
+					]
+				}
+			]
+		}
+	]
+}

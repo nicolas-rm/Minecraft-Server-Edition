@@ -1,0 +1,88 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "minecraft:gold_nugget",
+              "quantity": {
+                "min": 9,
+                "max": 9
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:gold_ingot"
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:emerald"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:gold_ingot",
+              "quantity": {
+                "min": 9,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:gold_ingot",
+              "quantity": {
+                "min": 9,
+                "max": 9
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald"
+                  }
+              ]
+           },
+		{
+          "wants": [
+            {
+              "item": "better:silver_ingot"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 9,
+                "max": 9
+              }
+                  }
+              ]
+           },
+		{
+          "wants": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 9,
+                "max": 9
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "better:silver_ingot"
+                  }
+              ]
+           }
+        ]
+     }
+  ]
+}

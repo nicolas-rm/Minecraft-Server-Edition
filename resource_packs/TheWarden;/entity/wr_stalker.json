@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wr:stalker",
+      "textures": {
+        "default": "textures/entity/pamobile/wr_stalker"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.wr_stalker"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "wr:stalker",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.wr_stalker.Walking",
+        "idle": "animation.wr_stalker.Stalker_Ear Vibration",
+        "mad": "animation.wr_stalker.Walking_Glowing Ear"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "mad": "query.is_moving && query.is_angry"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

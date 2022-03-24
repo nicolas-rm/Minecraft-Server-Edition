@@ -1,0 +1,62 @@
+//bridge-file-version: #17
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"components": {
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:breakonpush": true,
+			"minecraft:destroy_time": 1000,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:flammable": {
+				"burn_odds": 10,
+				"flame_odds": 10
+			},
+			"minecraft:geometry": "geometry.log",
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"texture": "log"
+				}
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"on_tick": {
+					"event": "test",
+					"target": "self"
+				},
+				"range": [
+					0,
+					0
+				]
+			},
+			"minecraft:crafting_table": {
+				"custom_description": "Arcane Table",
+				"grid_size": 3,
+				"crafting_tags": [
+					"arcane_table"
+				]
+			}
+		},
+		"description": {
+			"identifier": "ray:jungle_log"
+		},
+		"events": {
+			"test": {
+				"run_command": {
+					"command": [
+						"setblock ~ ~ ~ structure_void",
+						"structure load jungle ~ ~ ~"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:block_light_emission": 1
+				}
+			}
+		]
+	}
+}

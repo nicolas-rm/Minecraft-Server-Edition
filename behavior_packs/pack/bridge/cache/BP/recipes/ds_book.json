@@ -1,0 +1,282 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\ds_book.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "82581284_8104_4d6f_ace4_7f4a33b2812f",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:ds_book"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:ds_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:nautilus_shell"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:ds_book"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:ds_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:nautilus_shell"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ds_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:nautilus_shell"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:ds_book"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ds_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:nautilus_shell"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ds_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:nautilus_shell"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:ds_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ds_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ds_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:nautilus_shell"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#L#",
+							"LBL",
+							"#L#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ds_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:nautilus_shell"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:nautilus_shell"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "L",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:nautilus_shell"
+								}
+							},
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:nautilus_shell"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

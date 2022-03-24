@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:knight_leggings"
+    },
+
+    
+    "tags": [ "adv" ],
+    "pattern": [
+      "#|#",
+      "#X#",
+      "#|#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_ingot"
+      },
+      "X": {
+        "item": "better:steel_leggings"
+      },
+      "|": {
+        "item": "better:tin_ingot"
+      }
+    },
+    "result": {
+      "item": "better:knight_leggings",
+      "data": 0
+    }
+  }
+}

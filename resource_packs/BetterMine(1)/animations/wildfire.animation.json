@@ -1,0 +1,158 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hovering_inferno.spin": {
+			"loop": true,
+			"bones": {
+				"upperBodyParts4": {
+					"rotation": [0, "query.life_time * -720", 0],
+					"position": [0, "(math.cos(query.life_time * 200) * 0.5 )", 0]
+				},
+				"upperBodyParts1": {
+					"rotation": [0, "query.life_time * 360", 0],
+					"position": [0, "(math.cos(query.life_time * 200) * 1 )", 0]
+				},
+				"upperBodyParts2": {
+					"rotation": [0, "query.life_time * 360", 0],
+					"position": [0, "(math.cos(query.life_time * 200) * -1 )", 0]
+				},
+				"upperBodyParts5": {
+					"rotation": [0, "query.life_time * 360", 0],
+					"position": [0, "(math.cos(query.life_time * 200) * -0.8 )", 0]
+				},
+				"upperBodyParts3": {
+					"rotation": [0, "query.life_time * 360", 0],
+					"position": [0, "(math.cos(query.life_time * 200) * 1.2 )", 0]
+				},
+				"rotater1": {
+					"rotation": [-25, 0, 0]
+				},
+				"rotater2": {
+					"rotation": [-25, 0, 0]
+				},
+				"rotater3": {
+					"rotation": [-25, 0, 0]
+				},
+				"rotater4": {
+					"rotation": [25, 0, 0]
+				}
+			}
+		},
+		"animation.hovering_inferno.shockwave": {
+			"animation_length": 2,
+			"bones": {
+				"upperBodyParts4": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"upperBodyParts1": {
+					"rotation": [0, "query.life_time * 720", 0],
+					"position": [0, 0, 0]
+				},
+				"upperBodyParts2": {
+					"rotation": [0, "query.life_time * 720", 0],
+					"position": [0, 0, 0]
+				},
+				"upperBodyParts5": {
+					"rotation": [0, "query.life_time * 720", 0],
+					"position": [0, 0, 0]
+				},
+				"upperBodyParts3": {
+					"rotation": [0, "query.life_time * 720", 0],
+					"position": [0, 0, 0]
+				},
+				"rotater1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.56": [25, 0, 0],
+						"1.6": [25, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.56": [0, 0, 5],
+						"1.6": [0, 0, 5],
+						"1.76": [0, 0, -12]
+					}
+				},
+				"rotater2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.56": [25, 0, 0],
+						"1.6": [25, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.56": [0, 0, 5],
+						"1.6": [0, 0, 5],
+						"1.76": [0, 0, -12]
+					}
+				},
+				"rotater3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.56": [25, 0, 0],
+						"1.6": [25, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.56": [0, 0, 5],
+						"1.6": [0, 0, 5],
+						"1.76": [0, 0, -12]
+					}
+				},
+				"rotater4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.56": [-25, 0, 0],
+						"1.6": [-25, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.56": [0, 0, -5],
+						"1.6": [0, 0, -5],
+						"1.76": [0, 0, 12]
+					}
+				}
+			}
+		},
+		"animation.hovering_inferno.defend": {
+			"loop": true,
+			"bones": {
+				"upperBodyParts1": {
+					"rotation": [0, "query.life_time * 360", 0]
+				},
+				"rotater1": {
+					"rotation": [125, 0, 0],
+					"position": [0, 0, 25]
+				},
+				"upperBodyParts4": {
+					"rotation": [0, 0, 0]
+				},
+				"head": {
+					"position": [0, -5, 0]
+				},
+				"upperBodyParts2": {
+					"rotation": [0, "query.life_time * 360", 0]
+				},
+				"rotater2": {
+					"rotation": [125, 0, 0],
+					"position": [0, 0, 25]
+				},
+				"upperBodyParts5": {
+					"rotation": [0, "query.life_time * 360", 0]
+				},
+				"rotater3": {
+					"rotation": [125, 0, 0],
+					"position": [0, 0, 25]
+				},
+				"upperBodyParts3": {
+					"rotation": [0, "query.life_time * 360", 0]
+				},
+				"rotater4": {
+					"rotation": [-125, 0, 0],
+					"position": [0, 0, -25]
+				}
+			}
+		}
+	}
+}

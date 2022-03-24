@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.icecloud",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "cloud",
+					"pivot": [-14, 9, -4],
+					"cubes": [
+						{"origin": [1, 0, -1], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-22, 9, -12], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-18, 9, -6], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-2, 9, -6], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-2, -11, -6], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-18, -11, -6], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-18, 0, -16], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-2, 0, -16], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-13, 0, 2], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [8, 0, -8], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-24, 0, -8], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-8, 0, -8], "size": [16, 16, 16], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

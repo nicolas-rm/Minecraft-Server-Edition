@@ -1,0 +1,171 @@
+{
+  "format_version": "1.11.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "better:army",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:mob_event_filter": {
+          "event": "minecraft:pillager_patrols_event"
+        },
+        "minecraft:world_age_filter": {
+          "min": 0
+        },
+        "minecraft:delay_filter": {
+          "min": 0,
+          "max": 660,
+          "identifier": "better:army_easy",
+          "spawn_chance": 20
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:distance_filter": {
+          "min": 15,
+          "max": 48
+        },
+        "minecraft:difficulty_filter": {
+          "min": "easy"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size": 12,
+          "max_size": 15,
+          "initial_event": "minecraft:promote_to_patrol_captain",
+          "initial_event_count": 1,
+          "event": "minecraft:spawn_as_patrol_follower",
+          "event_skip_count": 1
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 100,
+            "entity_type": "minecraft:pillager<minecraft:spawn_as_patrol_follower>"
+          }
+        ],
+        "minecraft:biome_filter": {
+          "any_of": [
+            { "test": "has_biome_tag", "operator": "==", "value": "creeperlands" },
+            { "test": "has_biome_tag", "operator": "==", "value": "roofed" }
+          ]
+        },
+        "minecraft:player_in_village_filter": {
+          "distance": 15,
+          "village_border_tolerance": 0
+        }
+      },
+      {
+        "minecraft:mob_event_filter": {
+          "event": "minecraft:pillager_patrols_event"
+        },
+        "minecraft:world_age_filter": {
+          "min": 0
+        },
+        "minecraft:delay_filter": {
+          "min": 0,
+          "max": 660,
+          "identifier": "better:army_normal",
+          "spawn_chance": 20
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:distance_filter": {
+          "min": 15,
+          "max": 48
+        },
+        "minecraft:difficulty_filter": {
+          "min": "normal",
+          "max": "hard"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size": 15,
+          "max_size": 20,
+          "initial_event": "minecraft:promote_to_patrol_captain",
+          "initial_event_count": 1,
+          "event": "minecraft:spawn_as_patrol_follower",
+          "event_skip_count": 1
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 100,
+            "entity_type": "minecraft:pillager<minecraft:spawn_as_patrol_follower>"
+          }
+        ],
+        "minecraft:biome_filter": {
+          "all_of": [
+            { "test": "has_biome_tag", "operator": "==", "value": "creeprlands" },
+            { "test": "has_biome_tag", "operator": "!=", "value": "nether" },
+            { "test": "has_biome_tag", "operator": "!=", "value": "the_end" }
+          ]
+        },
+        "minecraft:player_in_village_filter": {
+          "distance": 48,
+          "village_border_tolerance": 0
+        }
+      },
+      {
+        "minecraft:mob_event_filter": {
+          "event": "minecraft:pillager_patrols_event"
+        },
+        "minecraft:world_age_filter": {
+          "min": 0
+        },
+        "minecraft:delay_filter": {
+          "min": 0,
+          "max": 660,
+          "identifier": "better:army_hard",
+          "spawn_chance": 20
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:distance_filter": {
+          "min": 10,
+          "max": 48
+        },
+        "minecraft:difficulty_filter": {
+          "min": "normal"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size": 20,
+          "max_size": 35,
+          "initial_event": "minecraft:promote_to_patrol_captain",
+          "initial_event_count": 1,
+          "event": "minecraft:spawn_as_patrol_follower",
+          "event_skip_count": 1
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 80,
+            "entity_type": "minecraft:pillager<minecraft:spawn_as_patrol_follower>"
+          },
+          {
+            "weight": 20,
+            "entity_type": "minecraft:vindicator"
+          }
+        ],
+        "minecraft:biome_filter": {
+          "all_of": [
+            { "test": "has_biome_tag", "operator": "==", "value": "creeprlands" },
+            { "test": "has_biome_tag", "operator": "!=", "value": "nether" },
+            { "test": "has_biome_tag", "operator": "!=", "value": "the_end" }
+          ]
+        },
+        "minecraft:player_in_village_filter": {
+          "distance": 48,
+          "village_border_tolerance": 0
+        }
+      }
+    ]
+  }
+}

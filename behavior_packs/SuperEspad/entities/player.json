@@ -1,0 +1,2478 @@
+{
+  "format_version": "1.11",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "walk",
+          "espadas:espada_blaze",
+          "espadas:espada_nieve",
+          "espadas:espada_hueso",
+          "espadas:espada_ender_pearl",
+          "espadas:espada_nuclear",
+          "espadas:espada_dano",
+          "espadas:espada_tnt",
+          "espadas:espada_curativa"
+        ]
+      },
+      "animations": {
+        "walk": "controller.animation.walk",
+        "espadas:espada_blaze": "controller.animation.espadas_espada_blaze",
+        "espadas:espada_nieve": "controller.animation.espadas_espada_nieve",
+        "espadas:espada_hueso": "controller.animation.espadas_espada_hueso",
+        "espadas:espada_ender_pearl": "controller.animation.espadas_espada_ender_pearl",
+        "espadas:espada_nuclear": "controller.animation.espadas_espada_nuclear",
+        "espadas:espada_dano": "controller.animation.espadas_espada_dano",
+        "espadas:espada_tnt": "controller.animation.espadas_espada_tnt",
+        "espadas:espada_curativa": "controller.animation.espadas_espada_curativa"
+      }
+    },
+    "component_groups": {
+      "pamobile:respawn": {
+        "minecraft:mark_variant": {
+          "value": 99999
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": [
+            "saturation",
+            "night_vision",
+            "speed",
+            "regeneration",
+            "invisibility",
+            "resistance",
+            "slowness",
+            "fire_resistance",
+            "slow_falling",
+            "levitation",
+            "jump_boost",
+            "strength",
+            "absorption",
+            "health_boost",
+            "water_breathing",
+            "poison",
+            "wither",
+            "village_hero"
+          ]
+        }
+      },
+      "ammo:1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "espadas:espada_carbon": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "saturation",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_lapislazuli": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "night_vision",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_redstone": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_cuarzo": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_esmeralda": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "invisibility",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_hielo": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slowness",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_lava": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_hojas": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slow_falling",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_papel": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "levitation",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_slime": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "jump_boost",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "slow_falling",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_oro_mejorada": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_infiedra": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_almas": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "absorption",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_cristal": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_lana": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "absorption",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_netherstar": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "slowness",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_inmortalidad": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "absorption",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "health_boost",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "slow_falling",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_prismania": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "invisibility",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_ladrillo": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_wither": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slowness",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_mar": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "water_breathing",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_pedernal": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_bedrock": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "absorption",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "health_boost",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_obsidiana": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "health_boost",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:botella": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_cobre": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_estano": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_niquel": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_plomo": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_platino": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_titanio": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_zafiro": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_rubi": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_amatista": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_cuarzo_rosa": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "espadas:espada_maldita": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "night_vision",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "poison",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "wither",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:super_espada": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "night_vision",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_antigua": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "night_vision",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "poison",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_poder": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "jump_boost",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_mistica": {
+        "minecraft:health": {
+          "value": 35,
+          "max": 35
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:mega_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "absorption",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "fire_resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "resistance",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:guadana": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "village_hero",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "night_vision",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_diamante_blanco": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "night_vision",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "espadas:espada_blaze_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_blaze",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "espadas:espada_nieve_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_nieve",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "espadas:espada_hueso_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_hueso",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "espadas:espada_ender_pearl_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_ender_pearl",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "espadas:espada_nuclear_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_nuclear",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "espadas:espada_dano_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_dano",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "espadas:espada_tnt_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_tnt",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "espadas:espada_curativa_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "espadas:espada_curativa",
+            "num_to_spawn": 1
+          }
+        ]
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:environment_sensor": [
+        {
+          "on_environment": {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "pamobile:refresh_player"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_carbon"
+                }
+              ]
+            },
+            "event": "espadas:espada_carbon_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_lapislazuli"
+                }
+              ]
+            },
+            "event": "espadas:espada_lapislazuli_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_redstone"
+                }
+              ]
+            },
+            "event": "espadas:espada_redstone_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_cuarzo"
+                }
+              ]
+            },
+            "event": "espadas:espada_cuarzo_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_esmeralda"
+                }
+              ]
+            },
+            "event": "espadas:espada_esmeralda_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_hielo"
+                }
+              ]
+            },
+            "event": "espadas:espada_hielo_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_lava"
+                }
+              ]
+            },
+            "event": "espadas:espada_lava_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_hojas"
+                }
+              ]
+            },
+            "event": "espadas:espada_hojas_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_papel"
+                }
+              ]
+            },
+            "event": "espadas:espada_papel_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_slime"
+                }
+              ]
+            },
+            "event": "espadas:espada_slime_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_oro_mejorada"
+                }
+              ]
+            },
+            "event": "espadas:espada_oro_mejorada_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_infiedra"
+                }
+              ]
+            },
+            "event": "espadas:espada_infiedra_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_almas"
+                }
+              ]
+            },
+            "event": "espadas:espada_almas_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_cristal"
+                }
+              ]
+            },
+            "event": "espadas:espada_cristal_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_lana"
+                }
+              ]
+            },
+            "event": "espadas:espada_lana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_netherstar"
+                }
+              ]
+            },
+            "event": "espadas:espada_netherstar_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_inmortalidad"
+                }
+              ]
+            },
+            "event": "espadas:espada_inmortalidad_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_prismania"
+                }
+              ]
+            },
+            "event": "espadas:espada_prismania_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_ladrillo"
+                }
+              ]
+            },
+            "event": "espadas:espada_ladrillo_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_wither"
+                }
+              ]
+            },
+            "event": "espadas:espada_wither_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_mar"
+                }
+              ]
+            },
+            "event": "espadas:espada_mar_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_pedernal"
+                }
+              ]
+            },
+            "event": "espadas:espada_pedernal_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_bedrock"
+                }
+              ]
+            },
+            "event": "espadas:espada_bedrock_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_obsidiana"
+                }
+              ]
+            },
+            "event": "espadas:espada_obsidiana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:botella"
+                }
+              ]
+            },
+            "event": "espadas:botella_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_cobre"
+                }
+              ]
+            },
+            "event": "espadas:espada_cobre_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_estano"
+                }
+              ]
+            },
+            "event": "espadas:espada_estano_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_niquel"
+                }
+              ]
+            },
+            "event": "espadas:espada_niquel_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_plomo"
+                }
+              ]
+            },
+            "event": "espadas:espada_plomo_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_platino"
+                }
+              ]
+            },
+            "event": "espadas:espada_platino_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_titanio"
+                }
+              ]
+            },
+            "event": "espadas:espada_titanio_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_zafiro"
+                }
+              ]
+            },
+            "event": "espadas:espada_zafiro_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_rubi"
+                }
+              ]
+            },
+            "event": "espadas:espada_rubi_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_amatista"
+                }
+              ]
+            },
+            "event": "espadas:espada_amatista_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_cuarzo_rosa"
+                }
+              ]
+            },
+            "event": "espadas:espada_cuarzo_rosa_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_maldita"
+                }
+              ]
+            },
+            "event": "espadas:espada_maldita_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:super_espada"
+                }
+              ]
+            },
+            "event": "espadas:super_espada_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_antigua"
+                }
+              ]
+            },
+            "event": "espadas:espada_antigua_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_poder"
+                }
+              ]
+            },
+            "event": "espadas:espada_poder_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_mistica"
+                }
+              ]
+            },
+            "event": "espadas:espada_mistica_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:mega_sword"
+                }
+              ]
+            },
+            "event": "espadas:mega_sword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:guadana"
+                }
+              ]
+            },
+            "event": "espadas:guadana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_diamante_blanco"
+                }
+              ]
+            },
+            "event": "espadas:espada_diamante_blanco_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_blaze"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_nieve"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_hueso"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_ender_pearl"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_nuclear"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_dano"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_tnt"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "espadas:espada_curativa"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        }
+      ],
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": -1,
+        "inhaleTime": 3.75,
+        "generatesBubbles": false
+      },
+      "minecraft:nameable": {
+        "alwaysShow": true,
+        "allowNameTagRenaming": false
+      },
+      "minecraft:physics": {},
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {}
+    },
+    "events": {
+      "pamobile:refresh_player": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "espadas:espada_carbon",
+            "espadas:espada_lapislazuli",
+            "espadas:espada_redstone",
+            "espadas:espada_cuarzo",
+            "espadas:espada_esmeralda",
+            "espadas:espada_hielo",
+            "espadas:espada_lava",
+            "espadas:espada_hojas",
+            "espadas:espada_papel",
+            "espadas:espada_slime",
+            "espadas:espada_oro_mejorada",
+            "espadas:espada_infiedra",
+            "espadas:espada_almas",
+            "espadas:espada_cristal",
+            "espadas:espada_lana",
+            "espadas:espada_netherstar",
+            "espadas:espada_inmortalidad",
+            "espadas:espada_prismania",
+            "espadas:espada_ladrillo",
+            "espadas:espada_wither",
+            "espadas:espada_mar",
+            "espadas:espada_pedernal",
+            "espadas:espada_bedrock",
+            "espadas:espada_obsidiana",
+            "espadas:botella",
+            "espadas:espada_cobre",
+            "espadas:espada_estano",
+            "espadas:espada_niquel",
+            "espadas:espada_plomo",
+            "espadas:espada_platino",
+            "espadas:espada_titanio",
+            "espadas:espada_zafiro",
+            "espadas:espada_rubi",
+            "espadas:espada_amatista",
+            "espadas:espada_cuarzo_rosa",
+            "espadas:espada_maldita",
+            "espadas:super_espada",
+            "espadas:espada_antigua",
+            "espadas:espada_poder",
+            "espadas:espada_mistica",
+            "espadas:mega_sword",
+            "espadas:guadana",
+            "espadas:espada_diamante_blanco"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {}
+      },
+      "ammo:1": {
+        "remove": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        }
+      },
+      "ammo:2": {
+        "remove": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        }
+      },
+      "espadas:espada_carbon_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_carbon"
+          ]
+        }
+      },
+      "espadas:espada_lapislazuli_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_lapislazuli"
+          ]
+        }
+      },
+      "espadas:espada_redstone_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_redstone"
+          ]
+        }
+      },
+      "espadas:espada_cuarzo_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_cuarzo"
+          ]
+        }
+      },
+      "espadas:espada_esmeralda_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_esmeralda"
+          ]
+        }
+      },
+      "espadas:espada_hielo_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_hielo"
+          ]
+        }
+      },
+      "espadas:espada_lava_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_lava"
+          ]
+        }
+      },
+      "espadas:espada_hojas_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_hojas"
+          ]
+        }
+      },
+      "espadas:espada_papel_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_papel"
+          ]
+        }
+      },
+      "espadas:espada_slime_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_slime"
+          ]
+        }
+      },
+      "espadas:espada_oro_mejorada_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_oro_mejorada"
+          ]
+        }
+      },
+      "espadas:espada_infiedra_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_infiedra"
+          ]
+        }
+      },
+      "espadas:espada_almas_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_almas"
+          ]
+        }
+      },
+      "espadas:espada_cristal_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_cristal"
+          ]
+        }
+      },
+      "espadas:espada_lana_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_lana"
+          ]
+        }
+      },
+      "espadas:espada_netherstar_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_netherstar"
+          ]
+        }
+      },
+      "espadas:espada_inmortalidad_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_inmortalidad"
+          ]
+        }
+      },
+      "espadas:espada_prismania_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_prismania"
+          ]
+        }
+      },
+      "espadas:espada_ladrillo_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_ladrillo"
+          ]
+        }
+      },
+      "espadas:espada_wither_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_wither"
+          ]
+        }
+      },
+      "espadas:espada_mar_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_mar"
+          ]
+        }
+      },
+      "espadas:espada_pedernal_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_pedernal"
+          ]
+        }
+      },
+      "espadas:espada_bedrock_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_bedrock"
+          ]
+        }
+      },
+      "espadas:espada_obsidiana_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_obsidiana"
+          ]
+        }
+      },
+      "espadas:botella_event": {
+        "add": {
+          "component_groups": [
+            "espadas:botella"
+          ]
+        }
+      },
+      "espadas:espada_cobre_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_cobre"
+          ]
+        }
+      },
+      "espadas:espada_estano_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_estano"
+          ]
+        }
+      },
+      "espadas:espada_niquel_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_niquel"
+          ]
+        }
+      },
+      "espadas:espada_plomo_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_plomo"
+          ]
+        }
+      },
+      "espadas:espada_platino_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_platino"
+          ]
+        }
+      },
+      "espadas:espada_titanio_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_titanio"
+          ]
+        }
+      },
+      "espadas:espada_zafiro_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_zafiro"
+          ]
+        }
+      },
+      "espadas:espada_rubi_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_rubi"
+          ]
+        }
+      },
+      "espadas:espada_amatista_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_amatista"
+          ]
+        }
+      },
+      "espadas:espada_cuarzo_rosa_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_cuarzo_rosa"
+          ]
+        }
+      },
+      "espadas:espada_maldita_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_maldita"
+          ]
+        }
+      },
+      "espadas:super_espada_event": {
+        "add": {
+          "component_groups": [
+            "espadas:super_espada"
+          ]
+        }
+      },
+      "espadas:espada_antigua_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_antigua"
+          ]
+        }
+      },
+      "espadas:espada_poder_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_poder"
+          ]
+        }
+      },
+      "espadas:espada_mistica_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_mistica"
+          ]
+        }
+      },
+      "espadas:mega_sword_event": {
+        "add": {
+          "component_groups": [
+            "espadas:mega_sword"
+          ]
+        }
+      },
+      "espadas:guadana_event": {
+        "add": {
+          "component_groups": [
+            "espadas:guadana"
+          ]
+        }
+      },
+      "espadas:espada_diamante_blanco_event": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_diamante_blanco"
+          ]
+        }
+      },
+      "espadas:espada_blaze_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_blaze_fire"
+          ]
+        }
+      },
+      "espadas:espada_nieve_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_nieve_fire"
+          ]
+        }
+      },
+      "espadas:espada_hueso_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_hueso_fire"
+          ]
+        }
+      },
+      "espadas:espada_ender_pearl_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_ender_pearl_fire"
+          ]
+        }
+      },
+      "espadas:espada_nuclear_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_nuclear_fire"
+          ]
+        }
+      },
+      "espadas:espada_dano_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_dano_fire"
+          ]
+        }
+      },
+      "espadas:espada_tnt_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_tnt_fire"
+          ]
+        }
+      },
+      "espadas:espada_curativa_fire": {
+        "add": {
+          "component_groups": [
+            "espadas:espada_curativa_fire"
+          ]
+        }
+      }
+    }
+  }
+}

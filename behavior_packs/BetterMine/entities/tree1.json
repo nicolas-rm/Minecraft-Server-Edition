@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "hb:tree1",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ "walk" ]
+	  },
+	  "animations": {
+	    "walk": "controller.animation.tree1"
+	  }
+    },
+	
+	"components": {
+	  "minecraft:type_family": {
+	    "family": [ "hbuild" ]
+	  },
+	  "minecraft:despawn": {
+	    "filters": {
+		  "all_of": [
+		    { "test": "is_family", "subject": "self", "value": "hbuild" }
+		  ]
+		}
+	  },
+	  "minecraft:health": {
+	    "value": 1
+	  },
+	  "minecraft:physics": {
+	  }
+	}
+  }
+}

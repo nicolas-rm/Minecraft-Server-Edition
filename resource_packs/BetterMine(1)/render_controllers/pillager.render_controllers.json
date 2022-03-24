@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.pillager": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [
+        "query.is_angry ? Texture.default : (query.has_owner ? Texture.tame : Texture.default)"
+      ]
+    }
+  }
+}

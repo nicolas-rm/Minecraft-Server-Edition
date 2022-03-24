@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\hb_chamail_chestplate.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "cbf9eece_2508_4e37_9cf0_7710d2151ddd",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:hb_chamail_chestplate"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:chainmail_chestplate"
+							},
+							{
+								"item": "ray:hb_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:hb_chamail_chestplate"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:hb_chamail_chestplate"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:chainmail_chestplate"
+							},
+							{
+								"item": "ray:hb_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:hb_chamail_chestplate"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:hb_chamail_chestplate"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_chestplate"
+								},
+								{
+									"item": "ray:hb_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:hb_chamail_chestplate"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:hb_chamail_chestplate"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:hb_chamail_chestplate"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_chestplate"
+								},
+								{
+									"item": "ray:hb_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:hb_chamail_chestplate"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:hb_chamail_chestplate"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_chestplate"
+								},
+								{
+									"item": "ray:hb_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:hb_chamail_chestplate"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:chainmail_chestplate"
+									},
+									{
+										"item": "ray:hb_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:chainmail_chestplate"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:chainmail_chestplate"
+									},
+									{
+										"item": "ray:hb_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:hb_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:hb_chamail_chestplate"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_chestplate"
+								},
+								{
+									"item": "ray:hb_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:hb_chamail_chestplate"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:hb_chamail_chestplate"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:hb_chamail_chestplate"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

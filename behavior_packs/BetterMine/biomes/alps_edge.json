@@ -1,0 +1,85 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "alps_edge"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.8,
+        "snow_accumulation": [ 0.0, 0.25 ],
+        "temperature": 0.5
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "extreme"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": {
+                "name": "minecraft:dirt",
+                "states": {
+                  "dirt_type": "coarse"
+                }
+              }
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.212, 1.0 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:podzol"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ -0.115, 0.212 ]
+          }
+        ]
+      },
+      "minecraft:mountain_parameters": {
+        "peaks_factor": 1142,
+        "steep_material_adjustment": {
+          "material": "minecraft:stone",
+          "north_slopes": true,
+          "south_slopes": true,
+          "west_slopes": true,
+          "east_slopes": true
+        },
+        "top_slide": {
+          "enabled": false
+        }
+      },
+      "minecraft:overworld_generation_rules": {
+        "shore_transformation": "stone_beach",
+        "hills_transformation": [
+          [ "alps", 5],
+          [ "alps_peaks", 2],
+          [ "grassy_hills", 2]
+        ],
+        "generate_for_climates": [
+          [ "cold", 1 ]
+        ],
+        "mutate_transformation": [
+          [ "alps", 2],
+          [ "alps_peaks", 1]
+        ],
+        "river_transformation": "cold_ocean"
+      },
+
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "bushes": {},
+      "alps": {},
+      "edge": {}
+    }
+  }
+}

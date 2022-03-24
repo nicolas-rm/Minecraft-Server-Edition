@@ -1,0 +1,25 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "ray:tc_diamond_axe"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:diamond_axe"
+			},
+			{
+				"item": "tc_book:netherite_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "custom:diamond_axe"
+			}
+		]
+	}
+}

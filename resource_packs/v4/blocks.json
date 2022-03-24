@@ -1,0 +1,406 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"sp:glowing_ice": {
+		"textures": "glowing_ice",
+		"sound": "glass"
+	},
+	"sp:butoi": {
+		"textures": "rainbow_ore",
+		"sound": "stone"
+	},
+	"sp:full_pizza": {
+		"sound": "bamboo"
+	},
+	"sp:pizza": {
+		"sound": "bamboo"
+	},
+	"sp:smiley_face": {
+		"sound": "bone_block",
+		"textures": "smileyface"
+	},
+	"sp:sad_face": {
+		"sound": "bone_block",
+		"textures": "sadface"
+	},
+	"sp:newcage": {
+		"sound": "wood"
+	},
+	"sp:regal_cheese": {
+		"sound": "shroomlight"
+	},
+	"sp:red_planks": {
+		"textures": "red_planks",
+		"sound": "wood"
+	},
+	"sp:green_planks": {
+		"textures": "green_planks",
+		"sound": "wood"
+	},
+	"sp:blue_planks": {
+		"textures": "blue_planks",
+		"sound": "wood"
+	},
+	"sp:yellow_planks": {
+		"textures": "yellow_planks",
+		"sound": "wood"
+	},
+	"sp:steel_block": {
+		"sound": "netherite",
+		"textures": "steel_block"
+	},
+	"sp:enderite_block": {
+		"sound": "netherite",
+		"textures": "enderite_block"
+	},
+	"sp:purple_planks": {
+		"sound": "wood",
+		"textures": "purple_planks"
+	},
+	"sp:enderite_ore": {
+		"sound": "stone",
+		"textures": "sp_enderite_ore"
+	},
+	"sp:purple_shroomlight": {
+		"textures": "sp_purple_shroomlight",
+		"sound": "shroomlight"
+	},
+	"sp:lime_shroomlight": {
+		"textures": "sp_lime_shroomlight",
+		"sound": "shroomlight"
+	},
+	"sp:red_shroomlight": {
+		"textures": "sp_red_shroomlight",
+		"sound": "shroomlight"
+	},
+	"sp:blue_shroomlight": {
+		"textures": "sp_blue_shroomlight",
+		"sound": "shroomlight"
+	},
+	"sp:ruby_block": {
+		"textures": "sp_ruby_block",
+		"sound": "amethyst_block"
+	},
+	"sp:ruby_ore": {
+		"textures": "sp_ruby_ore",
+		"sound": "stone"
+	},
+	"sp:ruby1": {
+		"textures": "sp_ruby1",
+		"sound": "amethyst_block"
+	},
+	"sp:sapphire_ore": {
+		"textures": "sp_sapphire_ore",
+		"sound": "stone"
+	},
+	"sp:topaz_block": {
+		"textures": "sp_topaz_block",
+		"sound": "amethyst_block"
+	},
+	"sp:topaz_ore": {
+		"textures": "sp_topaz_ore",
+		"sound": "stone"
+	},
+	"sp:sapphire_block": {
+		"textures": "sp_sapphire_block",
+		"sound": "amethyst_block"
+	},
+
+	"sp:deepslate_peridot_ore": {
+		"textures": "sp_deepslate_peridot_ore",
+		"sound": "stone"
+	},
+	"sp:andesite_peridot_ore": {
+		"textures": "sp_andesite_peridot_ore",
+		"sound": "stone"
+	},
+	"sp:diorite_peridot_ore": {
+		"textures": "sp_diorite_peridot_ore",
+		"sound": "stone"
+	},
+	"sp:granite_peridot_ore": {
+		"textures": "sp_granite_peridot_ore",
+		"sound": "stone"
+	},
+
+
+	"sp:deepslate_sapphire_ore": {
+		"textures": "sp_deepslate_sapphire_ore",
+		"sound": "stone"
+	},
+	"sp:andesite_sapphire_ore": {
+		"textures": "sp_andesite_sapphire_ore",
+		"sound": "stone"
+	},
+	"sp:diorite_sapphire_ore": {
+		"textures": "sp_diorite_sapphire_ore",
+		"sound": "stone"
+	},
+	"sp:granite_sapphire_ore": {
+		"textures": "sp_granite_sapphire_ore",
+		"sound": "stone"
+	},
+
+	"sp:deepslate_ruby_ore": {
+		"textures": "sp_deepslate_ruby_ore",
+		"sound": "stone"
+	},
+	"sp:andesite_ruby_ore": {
+		"textures": "sp_andesite_ruby_ore",
+		"sound": "stone"
+	},
+	"sp:diorite_ruby_ore": {
+		"textures": "sp_diorite_ruby_ore",
+		"sound": "stone"
+	},
+	"sp:granite_ruby_ore": {
+		"textures": "sp_granite_ruby_ore",
+		"sound": "stone"
+	},
+
+
+
+	"sp:deepslate_topaz_ore": {
+		"textures": "sp_deepslate_topaz_ore",
+		"sound": "stone"
+	},
+	"sp:andesite_topaz_ore": {
+		"textures": "sp_andesite_topaz_ore",
+		"sound": "stone"
+	},
+	"sp:diorite_topaz_ore": {
+		"textures": "sp_diorite_topaz_ore",
+		"sound": "stone"
+	},
+	"sp:granite_topaz_ore": {
+		"textures": "sp_granite_topaz_ore",
+		"sound": "stone"
+	},//SorYPMod
+
+
+	"sp:deepslate_citrine_ore": {
+		"textures": "sp_deepslate_citrine_ore",
+		"sound": "stone"
+	},
+	"sp:andesite_citrine_ore": {
+		"textures": "sp_andesite_citrine_ore",
+		"sound": "stone"
+	},
+	"sp:diorite_citrine_ore": {
+		"textures": "sp_diorite_citrine_ore",
+		"sound": "stone"
+	},
+	"sp:granite_citrine_ore": {
+		"textures": "sp_granite_citrine_ore",
+		"sound": "stone"
+	},
+
+
+	"sp:tourmaline_block": {
+		"textures": "sp_tourmaline_block",
+		"sound": "amethyst_block"
+	},
+
+	"sp:netherrack_silver_ore": {
+		"textures": "sp_netherrack_silver_ore",
+		"sound": "netherrack"
+	},
+	"sp:netherrack_uranium_ore": {
+		"textures": "sp_netherrack_uranium_ore",
+		"sound": "netherrack"
+	},
+	"sp:uranium_ore": {
+		"textures": "sp_uranium_ore",
+		"sound": "tuff"
+	},
+	"sp:uranium_block": {
+		"textures": "sp_uranium_block",
+		"sound": "stone"
+	},
+	"sp:netherrack_sulfur_ore": {
+		"textures": "sp_netherrack_sulfur_ore",
+		"sound": "netherrack"
+	},
+	"sp:sulfur_block": {
+		"textures": "sp_sulfur_block",
+		"sound": "stone"
+	},
+
+	"sp:tourmaline_ore": {
+		"textures": "sp_tourmaline_ore",
+		"sound": "stone"
+	},
+	"sp:deepslate_tourmaline_ore": {
+		"textures": "sp_deepslate_tourmaline_ore",
+		"sound": "stone"
+	},
+	"sp:andesite_tourmaline_ore": {
+		"textures": "sp_andesite_tourmaline_ore",
+		"sound": "stone"
+	},
+	"sp:diorite_tourmaline_ore": {
+		"textures": "sp_diorite_tourmaline_ore",
+		"sound": "stone"
+	},
+	"sp:granite_tourmaline_ore": {
+		"textures": "sp_granite_tourmaline_ore",
+		"sound": "stone"
+	},
+	"sp:peridot_ore": {
+		"textures": "sp_peridot_ore",
+		"sound": "stone"
+	},
+	"sp:tin_block": {
+		"textures": "sp_tin_block",
+		"sound": "netherite"
+	},
+	"sp:tin_ore": {
+		"textures": "sp_tin_ore",
+		"sound": "stone"
+	},
+	"sp:brass_block": {
+		"textures": "sp_brass_block",
+		"sound": "copper"
+	},
+	"sp:zinc_block": {
+		"textures": "sp_zinc_block",
+		"sound": "lantern"
+	},
+	"sp:zinc_ore": {
+		"textures": "sp_zinc_ore",
+		"sound": "stone"
+	},
+	"sp:citrine_ore": {
+		"textures": "sp_citrine_ore",
+		"sound": "stone"
+	},
+	"sp:citrine_block": {
+		"textures": "sp_citrine_block",
+		"sound": "amethyst_block"
+	},
+
+	"sp:raw_silver_block": {
+		"textures": "sp_raw_silver_block",
+		"sound": "stone"
+	},
+	"sp:silver_block": {
+		"textures": "sp_silver_block",
+		"sound": "lantern"
+	},
+	"sp:silver_ore": {
+		"textures": "sp_silver_ore",
+		"sound": "stone"
+	},
+
+
+	"sp:raw_cobalt_block": {
+		"textures": "sp_raw_cobalt_block",
+		"sound": "stone"
+	},
+	"sp:cobalt_block": {
+		"textures": "sp_cobalt_block",
+		"sound": "copper"
+	},
+	"sp:netherrack_cobalt_ore": {
+		"textures": "sp_cobalt_ore",
+		"sound": "netherrack"
+	},
+
+
+	"sp:platinum_block": {
+		"textures": "sp_platinum_block",
+		"sound": "copper"
+	},
+	"sp:platinum_ore": {
+		"textures": "sp_platinum_ore",
+		"sound": "deepslate"
+	},
+
+	"sp:netherrack_onyx_ore": {
+		"textures": "sp_netherrack_onyx_ore",
+		"sound": "netherrack"
+	},
+	"sp:netherrack_jade_ore": {
+		"textures": "sp_netherrack_jade_ore",
+		"sound": "netherrack"
+	},
+	"sp:onyx_block": {
+		"textures": "sp_onyx_block",
+		"sound": "stone"
+	},
+
+	"sp:raw_rose_gold_block": {
+		"textures": "sp_raw_rose_gold_block",
+		"sound": "stone"
+	},
+	"sp:raw_amber_block": {
+		"textures": "sp_raw_amber_block",
+		"sound": "stone"
+	},
+	"sp:amber_ore": {
+		"textures": "sp_amber_ore",
+		"sound": "stone"
+	},
+	"sp:rose_gold_block": {
+		"textures": "sp_rose_gold_block",
+		"sound": "stone"
+	},
+	"sp:netherrack_rose_gold_ore": {
+		"textures": "sp_netherrack_rose_gold_ore",
+		"sound": "netherrack"
+	},
+	"sp:endstone_aetherium_ore": {
+		"textures": "sp_endstone_aetherium_ore",
+		"sound": "endstone"
+	},
+	"sp:aetherium_block": {
+		"textures": "sp_aetherium_block",
+		"sound": "stone"
+	},
+
+
+	"sp:endstone_enderium_ore": {
+		"textures": "sp_endstone_enderium_ore",
+		"sound": "endstone"
+	},
+	"sp:enderium_block": {
+		"textures": "sp_enderium_block",
+		"sound": "netherite"
+	},
+
+	"sp:endstone_visinium_ore": {
+		"textures": "sp_endstone_visinium_ore",
+		"sound": "endstone"
+	},
+	"sp:visinium_block": {
+		"textures": "sp_visinium_block",
+		"sound": "netherite"
+	},
+
+	"sp:lonsdaleite_block": {
+		"textures": "sp_lonsdaleite_block",
+		"sound": "netherite"
+	},
+	"sp:endstone_lonsdaleite_ore": {
+		"textures": "sp_endstone_lonsdaleite_ore",
+		"sound": "endstone"
+	},
+	"sp:bronze_block": {
+		"textures": "sp_bronze_block",
+		"sound": "lantern"
+	},
+	"sp:jade_block": {
+		"textures": "sp_jade_block",
+		"sound": "stone"
+	},
+	"sp:soul_block": {
+		"sound": "soul_sand"
+	},
+	"sp:peridot_block": {
+		"textures": "sp_peridot_block",
+		"sound": "amethyst_block"
+	}
+}

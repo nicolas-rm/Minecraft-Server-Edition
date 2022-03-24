@@ -1,0 +1,14 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "minecraft:p_loft_house"
+        },
+        "structure_name": "mystructure:p_loft_house",
+        "adjustment_radius": 8,
+        "facing_direction": "south",
+        "constraints": {
+            "grounded": {}
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:rubi",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:rubi",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

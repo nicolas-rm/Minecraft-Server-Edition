@@ -1,0 +1,265 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "wr_bone_catalyst_up": {
+      "textures": "textures/blocks/wr_bone_catalyst_up"
+    },
+    "wr_grimstone_up": {
+      "textures": "textures/blocks/wr_grimstone_up"
+    },
+    "wr_dark_sculk_up": {
+      "textures": "textures/blocks/wr_dark_sculk_up"
+    },
+    "wr_trypo_shrieker_up": {
+      "textures": "textures/blocks/wr_trypo_shrieker_up"
+    },
+    "wr_cracked_grimstone_tile": {
+      "textures": [
+        "textures/blocks/wr_cracked_grimstone_tile"
+      ]
+    },
+    "wr_grimstone_tile": {
+      "textures": [
+        "textures/blocks/wr_grimstone_tile"
+      ]
+    },
+    "wr_grimstone_copper": {
+      "textures": [
+        "textures/blocks/wr_grimstone_copper"
+      ]
+    },
+    "wr_grimstone_coal": {
+      "textures": [
+        "textures/blocks/wr_grimstone_coal"
+      ]
+    },
+    "wr_bone_ribs": {
+      "textures": [
+        "textures/blocks/wr_bone_ribs"
+      ]
+    },
+    "wr_trypo_shrieker_down": {
+      "textures": "textures/blocks/wr_trypo_shrieker_down"
+    },
+    "wr_corrupted_catalyst": {
+      "textures": [
+        "textures/blocks/wr_corrupted_catalyst"
+      ]
+    },
+    "wr_trypo_vein": {
+      "textures": [
+        "textures/blocks/wr_trypo_vein"
+      ]
+    },
+    "wr_grimstone_diamond": {
+      "textures": [
+        "textures/blocks/wr_grimstone_diamond"
+      ]
+    },
+    "wr_rust_catalyst": {
+      "textures": [
+        "textures/blocks/wr_rust_catalyst"
+      ]
+    },
+    "wr_trypo_catalyst": {
+      "textures": [
+        "textures/blocks/wr_trypo_catalyst"
+      ]
+    },
+    "wr_pitch_vein": {
+      "textures": [
+        "textures/blocks/wr_pitch_vein"
+      ]
+    },
+    "wr_grimstone_emerald": {
+      "textures": [
+        "textures/blocks/wr_grimstone_emerald"
+      ]
+    },
+    "wr_cobbled_grimstone": {
+      "textures": [
+        "textures/blocks/wr_cobbled_grimstone"
+      ]
+    },
+    "wr_grimstone_iron": {
+      "textures": [
+        "textures/blocks/wr_grimstone_iron"
+      ]
+    },
+    "wr_grimstone_down": {
+      "textures": "textures/blocks/wr_grimstone_down"
+    },
+    "wr_grow_bone": {
+      "textures": [
+        "textures/blocks/wr_grow_bone"
+      ]
+    },
+    "wr_grimstone_lapis": {
+      "textures": [
+        "textures/blocks/wr_grimstone_lapis"
+      ]
+    },
+    "wr_grimstone_brick": {
+      "textures": [
+        "textures/blocks/wr_grimstone_brick"
+      ]
+    },
+    "wr_cracked_grimstone_brick": {
+      "textures": [
+        "textures/blocks/wr_cracked_grimstone_brick"
+      ]
+    },
+    "wr_chiseled_grimstone": {
+      "textures": [
+        "textures/blocks/wr_chiseled_grimstone"
+      ]
+    },
+    "wr_rust": {
+      "textures": [
+        "textures/blocks/wr_rust"
+      ]
+    },
+    "wr_grimstone_gold": {
+      "textures": [
+        "textures/blocks/wr_grimstone_gold"
+      ]
+    },
+    "wr_grimstone_redstone": {
+      "textures": [
+        "textures/blocks/wr_grimstone_redstone"
+      ]
+    },
+    "wr_rusted_vein": {
+      "textures": [
+        "textures/blocks/wr_rusted_vein"
+      ]
+    },
+    "wr_corruption2": {
+      "textures": [
+        "textures/blocks/wr_corruption2"
+      ]
+    },
+    "wr_dark_sculk_down": {
+      "textures": "textures/blocks/wr_dark_sculk_down"
+    },
+    "wr_fossiled_bone1": {
+      "textures": [
+        "textures/blocks/wr_fossiled_bone1"
+      ]
+    },
+    "wr_void_vein": {
+      "textures": [
+        "textures/blocks/wr_void_vein"
+      ]
+    },
+    "wr_fossile_bone2": {
+      "textures": [
+        "textures/blocks/wr_fossile_bone2"
+      ]
+    },
+    "wr_corruption1": {
+      "textures": [
+        "textures/blocks/wr_corruption1"
+      ]
+    },
+    "wr_corrupted_sculk": {
+      "textures": [
+        "textures/blocks/wr_corrupted_sculk"
+      ]
+    },
+    "wr_block_of_bone": {
+      "textures": [
+        "textures/blocks/wr_block_of_bone"
+      ]
+    },
+    "wr_corrupted_vein": {
+      "textures": [
+        "textures/blocks/wr_corrupted_vein"
+      ]
+    },
+    "wr_bone_catalyst_down": {
+      "textures": "textures/blocks/wr_bone_catalyst_down"
+    },
+    "wr_dark_void": {
+      "textures": [
+        "textures/blocks/wr_dark_void"
+      ]
+    },
+    "wr_corrupted_vein2": {
+      "textures": [
+        "textures/blocks/wr_corrupted_vein2"
+      ]
+    },
+    "wr_trypo_shrieker_north": {
+      "textures": "textures/blocks/wr_trypo_shrieker_north"
+    },
+    "ani_wr_trypo_sensor": {
+      "textures": [
+        "textures/blocks/wr_trypo_sensor"
+      ]
+    },
+    "ani_wr_trypo_sculk": {
+      "textures": [
+        "textures/blocks/wr_trypo_sculk"
+      ]
+    },
+    "ani_wr_pitch_sculk": {
+      "textures": [
+        "textures/blocks/wr_pitch_sculk"
+      ]
+    },
+    "ani_wr_pitch_catalyst": {
+      "textures": [
+        "textures/blocks/wr_pitch_catalyst"
+      ]
+    },
+    "wr_grimstone_north": {
+      "textures": "textures/blocks/wr_grimstone_north"
+    },
+    "wr_dark_sculk_north": {
+      "textures": "textures/blocks/wr_dark_sculk_north"
+    },
+    "wr_bone_catalyst_north": {
+      "textures": "textures/blocks/wr_bone_catalyst_north"
+    },
+    "wr_trypo_shrieker_south": {
+      "textures": "textures/blocks/wr_trypo_shrieker_south"
+    },
+    "wr_grimstone_south": {
+      "textures": "textures/blocks/wr_grimstone_south"
+    },
+    "wr_dark_sculk_south": {
+      "textures": "textures/blocks/wr_dark_sculk_south"
+    },
+    "wr_bone_catalyst_south": {
+      "textures": "textures/blocks/wr_bone_catalyst_south"
+    },
+    "wr_trypo_shrieker_east": {
+      "textures": "textures/blocks/wr_trypo_shrieker_east"
+    },
+    "wr_dark_sculk_east": {
+      "textures": "textures/blocks/wr_dark_sculk_east"
+    },
+    "wr_bone_catalyst_east": {
+      "textures": "textures/blocks/wr_bone_catalyst_east"
+    },
+    "wr_grimstone_east": {
+      "textures": "textures/blocks/wr_grimstone_east"
+    },
+    "wr_trypo_shrieker_west": {
+      "textures": "textures/blocks/wr_trypo_shrieker_west"
+    },
+    "wr_dark_sculk_west": {
+      "textures": "textures/blocks/wr_dark_sculk_west"
+    },
+    "wr_bone_catalyst_west": {
+      "textures": "textures/blocks/wr_bone_catalyst_west"
+    },
+    "wr_grimstone_west": {
+      "textures": "textures/blocks/wr_grimstone_west"
+    }
+  }
+}

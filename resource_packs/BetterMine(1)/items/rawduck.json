@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:rawduck",
+      "category": "Items"
+    },
+
+    "components": {
+      "minecraft:icon": "raw_duck",
+      "minecraft:use_animation": "eat",
+
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

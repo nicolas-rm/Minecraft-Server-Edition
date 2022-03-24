@@ -1,0 +1,98 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:icecloud",
+   
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": true
+    },
+  
+    "components": {
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "within_radius": 16.0,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "icecloud"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "illager"
+                }
+              ]
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:behavior.delayed_attack": {
+        "priority": 4,
+        "attack_once": false,
+        "track_target": false,
+        "require_complete_path": false,
+        "random_stop_interval": 0,
+        "reach_multiplier": 0.0,
+        "speed_multiplier": 1.25,
+        "attack_duration": 2.75,
+        "hit_delay_pct": 2.5
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_walk": true,
+        "can_break_doors": true
+      },
+      "minecraft:attack": {
+        "damage": 8
+      },
+      "minecraft:spell_effects": {
+
+        "add_effects": [
+          {
+            "effect": "instant_health",
+            "amplifier": 20,
+            "visible": false,
+            "ambient": false,
+            "duration": 9
+          }
+        
+
+         
+        ]
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0.23
+      },
+      "minecraft:collision_box": {
+        "width": 0.55,
+        "height": 2.25
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:explode": {
+        "fuse_length": 1.7,
+        "fuse_lit": true,
+        "breaks_blocks": false,
+        "power": 2
+    
+      }
+    }
+  }
+}

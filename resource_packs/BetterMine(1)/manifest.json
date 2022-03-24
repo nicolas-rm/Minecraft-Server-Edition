@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "by Mrmob757, CurledHealer958, MMherobrine",
+        "name": "Better Minecraft Resource Pack",
+        "uuid": "e9b3c047-d20e-4590-a3d1-55cec3e8aad9",
+        "version": [ 1, 1, 4 ],
+        "min_engine_version": [ 1, 14, 0 ]
+    },
+    "modules": [
+        {
+            "description": "by Mrmob757, CurledHealer958, MMherobrine",
+            "type": "resources",
+            "uuid": "df6726c6-2227-4586-8718-ff00b4b22874",
+            "version": [1, 1, 4]
+        }
+    ]
+}

@@ -1,0 +1,335 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\pack(4)\\manifest.json",
+	"file_type": "manifest_bp",
+	"format_version": 1,
+	"file_uuid": "4bbd556d_0182_40a4_b173_13343209c8c2",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "pack.name",
+						"description": "pack.description",
+						"uuid": "c836f9db-5a58-4603-bd6c-d699941f50de",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "0f2f775a-977b-49c6-a8ff-0559df92772d",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					},
+					"dependencies": [
+						{
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "96459055-2799-4ad0-8dd9-122b006c11ce"
+						}
+					]
+				},
+				"data": "2",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "pack.name",
+						"description": "pack.description",
+						"uuid": "c836f9db-5a58-4603-bd6c-d699941f50de",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "0f2f775a-977b-49c6-a8ff-0559df92772d",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					},
+					"dependencies": [
+						{
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "96459055-2799-4ad0-8dd9-122b006c11ce"
+						}
+					]
+				},
+				"key": "header",
+				"children": [
+					{
+						"data": "pack.name",
+						"key": "name"
+					},
+					{
+						"data": "pack.description",
+						"key": "description"
+					},
+					{
+						"data": "c836f9db-5a58-4603-bd6c-d699941f50de",
+						"key": "uuid"
+					},
+					{
+						"key": "version",
+						"is_minified": true,
+						"children": [
+							1,
+							0,
+							0
+						]
+					},
+					{
+						"open": {
+							"name": "pack.name",
+							"description": "pack.description",
+							"uuid": "c836f9db-5a58-4603-bd6c-d699941f50de",
+							"version": [
+								1,
+								0,
+								0
+							],
+							"min_engine_version": [
+								1,
+								17,
+								0
+							]
+						},
+						"key": "min_engine_version",
+						"is_minified": true,
+						"children": [
+							1,
+							17,
+							0
+						]
+					}
+				]
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "pack.name",
+						"description": "pack.description",
+						"uuid": "c836f9db-5a58-4603-bd6c-d699941f50de",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "0f2f775a-977b-49c6-a8ff-0559df92772d",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					},
+					"dependencies": [
+						{
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "96459055-2799-4ad0-8dd9-122b006c11ce"
+						}
+					]
+				},
+				"key": "modules",
+				"is_minified": true,
+				"children": [
+					{
+						"type": "data",
+						"uuid": "0f2f775a-977b-49c6-a8ff-0559df92772d",
+						"version": [
+							1,
+							0,
+							0
+						]
+					}
+				]
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "pack.name",
+						"description": "pack.description",
+						"uuid": "c836f9db-5a58-4603-bd6c-d699941f50de",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "0f2f775a-977b-49c6-a8ff-0559df92772d",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					},
+					"dependencies": [
+						{
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "96459055-2799-4ad0-8dd9-122b006c11ce"
+						}
+					]
+				},
+				"key": "metadata",
+				"is_minified": true,
+				"children": {
+					"generated_with": {
+						"bridge": [
+							"1.8.4"
+						]
+					}
+				}
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "pack.name",
+						"description": "pack.description",
+						"uuid": "c836f9db-5a58-4603-bd6c-d699941f50de",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							17,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "0f2f775a-977b-49c6-a8ff-0559df92772d",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					},
+					"dependencies": [
+						{
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "96459055-2799-4ad0-8dd9-122b006c11ce"
+						}
+					]
+				},
+				"key": "dependencies",
+				"is_minified": true,
+				"children": [
+					{
+						"version": [
+							1,
+							0,
+							0
+						],
+						"uuid": "96459055-2799-4ad0-8dd9-122b006c11ce"
+					}
+				]
+			}
+		]
+	}
+}

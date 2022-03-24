@@ -1,0 +1,27 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.general.casting" : {
+			"initial_state" : "casting",
+			"states" : {
+				"casting" : {
+					"animations" : [
+						{
+							"casting": "query.is_casting"
+						}
+					 ],
+					"particle_effects" : [
+						{
+							"effect" : "spell",
+							"locator" : "left_hand"
+						},
+						{
+							"effect" : "spell",
+							"locator" : "right_hand"
+						}
+					]
+				}
+			}
+		}
+  }
+}

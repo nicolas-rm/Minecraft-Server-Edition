@@ -1,0 +1,30 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ray:winter_aspect"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:ice"
+			},
+			"B": {
+				"item": "minecraft:book"
+			}
+		},
+		"pattern": [
+			"#O#",
+			"OBO",
+			"#O#"
+		],
+		"result": [
+			{
+				"item": "ia_book:netherite_ingot"
+			}
+		]
+	}
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "better:ghostly_first_forest_rock_feature",
+      "places_feature": "minecraft:legacy:forest_rock_feature"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "ghostly"
+        },
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "hills"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "math.clamp(math.trunc(math.ceil((query.noise(math.trunc(variable.originx / 45), math.trunc(variable.originz / 20)) + 0.2) * 20)), 2, 45)",
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}

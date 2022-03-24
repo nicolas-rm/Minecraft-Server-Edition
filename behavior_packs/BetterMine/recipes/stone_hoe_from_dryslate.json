@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "better:stone_hoe_from_drystone"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XX",
+      " #",
+      " #"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "better:drystone"
+      }
+    },
+    "result": {
+      "item": "minecraft:stone_hoe"
+    },
+    "priority": 2
+  }
+}

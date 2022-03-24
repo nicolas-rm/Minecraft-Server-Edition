@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "minecraft:hamlet_centre_position"
+    },
+    "iterations": 1,
+    "x": -3,
+    "y": -3,
+    "z": -2,
+    "project_input_to_floor": false,
+    "places_feature": "minecraft:hamlet_centre"
+  }
+}

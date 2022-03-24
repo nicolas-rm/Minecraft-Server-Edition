@@ -1,0 +1,16 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:raw_lead"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Raw Lead"
+      },
+      "minecraft:icon": {
+        "texture": "raw_lead"
+      }
+    }
+  }
+}

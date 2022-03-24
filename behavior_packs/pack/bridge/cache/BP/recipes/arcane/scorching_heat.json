@@ -1,0 +1,113 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\arcane\\scorching_heat.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "fb57825b_6d1b_4801_8845_15f085cb2994",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:scorching_heat"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:sh_book"
+							}
+						],
+						"pattern": [
+							"LB"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:lava_bucket"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:scorching_heat"
+						}
+					},
+					{
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"key": "result",
+						"is_minified": true,
+						"children": [
+							{
+								"item": "ray:sh_book"
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:scorching_heat"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"pattern": [
+								"LB"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:lava_bucket"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"LB"
+						]
+					},
+					{
+						"key": "key",
+						"is_minified": true,
+						"children": {
+							"L": {
+								"item": "minecraft:lava_bucket"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,376 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 3,  //Common item slot
+          "trades": [
+            {
+              "max_uses": 12,
+              "wants": [
+                {
+                  "item": "minecraft:paper",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 8
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "village"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "temple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "mansion"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "monument"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "mineshaft"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "pillageroutpost"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "ruinedportal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "exploration_map",
+                      "destination": "ruins"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,  //Used by all wanderers. They need to eat right?
+          "trades": [
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:carrot",
+                  "quantity": 19
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald"
+                }
+              ]
+            },
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:baked_potato",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald"
+                }
+              ]
+            },
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:bread",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 6,
+              "wants": [
+                {
+                  "item": "better:salted_fish",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 6,
+              "wants": [
+                {
+                  "item": "better:salted_salmon",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3
+                }
+              ]
+            },
+            {
+              "max_uses": 6,
+              "wants": [
+                {
+                  "item": "better:salted_chicken",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 6,
+              "wants": [
+                {
+                  "item": "better:salted_beef",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 6,
+              "wants": [
+                {
+                  "item": "better:salted_porkchop",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 8,
+              "wants": [
+                {
+                  "item": "minecraft:cake",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 12
+                }
+              ]
+            },
+            {
+              "max_uses": 8,
+              "wants": [
+                {
+                  "item": "minecraft:rabbit_stew",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 10
+                }
+              ]
+            },
+            {
+              "max_uses": 6,
+              "wants": [
+                {
+                  "item": "minecraft:appleEnchanted",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,  //Rare item slot
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:iron_sword",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

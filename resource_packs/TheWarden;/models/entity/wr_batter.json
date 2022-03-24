@@ -1,0 +1,193 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.wr_batter",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 4.5,
+        "visible_bounds_offset": [
+          0,
+          1.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "RightLeg",
+          "cubes": [
+            {
+              "origin": [
+                -8.0,
+                0.0,
+                -3.0
+              ],
+              "size": [
+                7.0,
+                11.0,
+                7.0
+              ],
+              "uv": [
+                28,
+                64
+              ],
+              "inflate": 0
+            }
+          ]
+        },
+        {
+          "name": "LeftLeg",
+          "cubes": [
+            {
+              "origin": [
+                1.0,
+                0.0,
+                -3.0
+              ],
+              "size": [
+                7.0,
+                11.0,
+                7.0
+              ],
+              "uv": [
+                54,
+                0
+              ],
+              "inflate": 0
+            }
+          ]
+        },
+        {
+          "name": "Body",
+          "cubes": [
+            {
+              "origin": [
+                -8.0,
+                11.0,
+                -3.0
+              ],
+              "size": [
+                16.0,
+                21.0,
+                11.0
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "inflate": 0
+            }
+          ]
+        },
+        {
+          "name": "Head",
+          "cubes": [
+            {
+              "origin": [
+                -8.0,
+                32.0,
+                -3.0
+              ],
+              "size": [
+                16.0,
+                22.0,
+                10.0
+              ],
+              "uv": [
+                0,
+                32
+              ],
+              "inflate": 0
+            }
+          ]
+        },
+        {
+          "name": "Ears",
+          "cubes": [
+            {
+              "origin": [
+                -16.0,
+                41.0,
+                2.0
+              ],
+              "size": [
+                8.0,
+                8.0,
+                1.0
+              ],
+              "uv": [
+                71,
+                18
+              ],
+              "inflate": 0
+            },
+            {
+              "origin": [
+                8.0,
+                41.0,
+                2.0
+              ],
+              "size": [
+                8.0,
+                8.0,
+                1.0
+              ],
+              "uv": [
+                56,
+                64
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Head"
+        },
+        {
+          "name": "RightArm",
+          "cubes": [
+            {
+              "origin": [
+                -13.0,
+                2.0,
+                -2.0
+              ],
+              "size": [
+                5.0,
+                32.0,
+                9.0
+              ],
+              "uv": [
+                52,
+                23
+              ],
+              "inflate": 0
+            }
+          ]
+        },
+        {
+          "name": "LeftArm",
+          "cubes": [
+            {
+              "origin": [
+                8.0,
+                2.0,
+                -2.0
+              ],
+              "size": [
+                5.0,
+                32.0,
+                9.0
+              ],
+              "uv": [
+                0,
+                64
+              ],
+              "inflate": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

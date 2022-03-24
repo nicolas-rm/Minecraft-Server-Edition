@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "better:bronze_shovel"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A",
+            "B",
+            "B"
+        ],
+        "key": {
+            "A": {
+                "item": "better:bronze_ingot"
+            },
+            "B": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "better:bronze_shovel",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

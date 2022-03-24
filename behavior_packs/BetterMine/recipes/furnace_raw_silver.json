@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:furnace_raw_silver"
+    },
+
+    
+    "tags": ["furnace", "blast_furnace"],
+    "input": "better:raw_silver",
+    "output": "better:silver_ingot"
+  }
+  
+}

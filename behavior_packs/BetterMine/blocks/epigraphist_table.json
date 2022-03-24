@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "better:epigraphist_table",
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:pick_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 16, 16]
+            },
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:destroy_time": 9.9,
+            "minecraft:preventsjumping": true,
+            "minecraft:immovable": true,
+            "minecraft:display_name": "Epigraphist Table",
+            "minecraft:explosion_resistance": 600,
+            "minecraft:friction": 0.8,
+            "minecraft:crafting_table": {
+                "custom_description": "Writer's Desk",
+                "grid_size": 3,
+                "crafting_tags": [
+                    "epigraphist"
+                ]
+            },
+            "minecraft:map_color": "#f9e8bf",
+            "minecraft:flammable": {
+                "flame_odds": 8,
+                "burn_odds": 16
+            },
+            "minecraft:block_light_emission": 0.0
+            }
+		}
+    }
+}

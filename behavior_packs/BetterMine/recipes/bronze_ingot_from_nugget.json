@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:bronze_ingot_from_nugget"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "better:bronze_nugget"
+      }
+    },
+    "result": {
+      "item": "better:bronze_ingot",
+      "data": 0
+    }
+  }
+}

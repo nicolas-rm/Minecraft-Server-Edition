@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:lingote_plomo",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:lingote_plomo",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

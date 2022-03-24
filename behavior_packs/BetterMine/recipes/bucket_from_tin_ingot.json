@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:bucket_from_tin_ingot"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X X",
+      " X "
+    ],
+    "key": {
+      "X": {
+        "item": "better:tin_ingot"
+      }
+    },
+    "result": {
+      "item": "minecraft:bucket"
+    }
+  }
+}

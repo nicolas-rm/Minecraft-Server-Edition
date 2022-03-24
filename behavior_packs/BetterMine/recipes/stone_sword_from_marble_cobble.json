@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "better:stone_sword_from_marble_cobble"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X",
+      "X",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "better:marble_cobble"
+      }
+    },
+    "result": {
+      "item": "minecraft:stone_sword"
+    },
+    "priority": 2
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vineyard.setup": {
+			"loop": true,
+			"bones": {
+				"post": {
+					"position": [0, 0, 0]
+				},
+				"vines": {
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

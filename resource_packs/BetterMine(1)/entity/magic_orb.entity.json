@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:magic_orb",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/m"
+      },
+      "geometry": {
+        "default": "geometry.m.orb"
+      },
+      "animations": {
+        "move": "animation.arrow.move",
+        "controller_move": "controller.animation.magic_orb.move"
+      },
+      "scripts": {
+        "animate": [
+          "controller_move"
+        ]
+      },
+      "particle_effects": {
+        "trail": "minecraft:mob_portal"
+      },
+      "render_controllers": [ "controller.render.arrow" ]
+    }
+  }
+}

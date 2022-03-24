@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "better:dense_forest_trees_feature"
+    },
+    "features": [
+      [ "better:dense_forest_birch_tree_feature", 1 ],
+      [ "minecraft:roofed_tree_with_vines_feature", 1 ],
+      [ "better:dense_oak_tree_feature", 1 ],
+      [ "better:fancy_fancy_oak_tree_feature", 1 ],
+      [ "better:oak_bush_feature", 16 ],
+      [ "minecraft:fancy_oak_tree_feature", 1 ],
+      [ "minecraft:spruce_tree_feature", 1 ],
+      [ "minecraft:pine_tree_feature", 1 ],
+      [ "minecraft:mega_spruce_tree_feature", 1 ],
+      [ "minecraft:mega_pine_tree_feature", 1 ],
+      [ "better:dense_f_beech_tree_feature", 8 ],
+      [ "better:dense_forest_sus_tree_feature", 1 ],
+      [ "minecraft:birch_tree_feature", 1 ],
+      [ "minecraft:super_birch_tree_feature", 1 ],
+      [ "better:dense_forest_roofed_tree_feature", 1 ]
+    ]
+  }
+}

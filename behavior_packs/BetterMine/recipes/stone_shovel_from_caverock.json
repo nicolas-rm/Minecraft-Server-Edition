@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "better:stone_shovel_from_compresed_dripstone"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X",
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "better:compresed_dripstone"
+      }
+    },
+    "result": {
+      "item": "minecraft:stone_shovel"
+    },
+    "priority": 2
+  }
+}

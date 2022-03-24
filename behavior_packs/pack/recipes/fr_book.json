@@ -1,0 +1,31 @@
+//bridge-file-version: #4
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "fr_book:netherite_ingot"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"pattern": [
+			"#W#",
+			"PXP",
+			"#P#"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:book"
+			},
+			"P": {
+				"item": "minecraft:blaze_powder"
+			},
+			"W": {
+				"item": "minecraft:water_bucket"
+			}
+		},
+		"result": {
+			"item": "fr_book:netherite_ingot"
+		}
+	}
+}

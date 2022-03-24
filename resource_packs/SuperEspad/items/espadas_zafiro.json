@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:zafiro",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:zafiro",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

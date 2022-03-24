@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "rusted_vein_6d4db44a"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:rust_catalyst",
+        "data": 0
+      },
+      "C": {
+        "item": "wr:rust",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:rusted_vein",
+      "count": 4
+    }
+  }
+}

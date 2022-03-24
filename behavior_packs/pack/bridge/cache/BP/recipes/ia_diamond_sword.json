@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\ia_diamond_sword.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "fccfda71_005e_4e93_9851_5fc069a8ac6f",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:ia_diamond_sword"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:diamond_sword"
+							},
+							{
+								"item": "ray:ia_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:ia_diamond_sword"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:ia_diamond_sword"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:diamond_sword"
+							},
+							{
+								"item": "ray:ia_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:ia_diamond_sword"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ia_diamond_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:diamond_sword"
+								},
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ia_diamond_sword"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:ia_diamond_sword"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ia_diamond_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:diamond_sword"
+								},
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ia_diamond_sword"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ia_diamond_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:diamond_sword"
+								},
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ia_diamond_sword"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:diamond_sword"
+									},
+									{
+										"item": "ray:ia_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:diamond_sword"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:diamond_sword"
+									},
+									{
+										"item": "ray:ia_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ia_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ia_diamond_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:diamond_sword"
+								},
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ia_diamond_sword"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:ia_diamond_sword"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ia_diamond_sword"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

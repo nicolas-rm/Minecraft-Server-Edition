@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:ore_salt"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/ore_salt.json",
+      "minecraft:destroy_time": 6.0,
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#aeaeae",
+      "minecraft:flammable": {
+        "flame_odds": 0,
+        "burn_odds": 0
+    },
+     "minecraft:block_light_absorption": 0.0,
+     "minecraft:block_light_emission": 0.0
+    }
+  }
+}

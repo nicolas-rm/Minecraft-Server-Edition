@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:snareling",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/enderman/snareling"
+      },
+      "geometry": {
+        "default": "geometry.snareling"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 28.65;"
+        ]
+      },
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "move": "animation.snareling.move",
+        "attack.rotations": "animation.humanoid.attack.rotations",
+        "bob": "animation.humanoid.bob",
+        "base_pose": "animation.humanoid.base_pose",
+        "arms_legs": "animation.snareling.arms_legs",
+        "carrying": "animation.snareling.carrying",
+        "scary_face": "animation.snareling.scary_face"
+      },
+      "animation_controllers": [
+        { "look_at_target": "controller.animation.humanoid.look_at_target" },
+        { "move": "controller.animation.humanoid.move" },
+        { "attack": "controller.animation.humanoid.attack" },
+        { "bob": "controller.animation.humanoid.bob" },
+        { "base_pose": "controller.animation.enderman.base_pose" },
+        { "carrying": "controller.animation.enderman.carrying" },
+        { "scary_face": "controller.animation.enderman.scary_face" }
+      ],
+      "render_controllers": [ "controller.render.spider" ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 7
+      }
+    }
+  }
+}

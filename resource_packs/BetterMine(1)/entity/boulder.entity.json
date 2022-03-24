@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:boulder",
+      "materials": {
+        "default": "fireball"
+      },
+      "textures": {
+        "default": "textures/entity/boulder"
+      },
+      "geometry": {
+        "default": "geometry.boulder"
+      },
+      "spawn_egg": {
+        "texture": "fireball",
+        "texture_index": 0
+      },
+      "render_controllers": [ "controller.render.fireball" ]
+    }
+  }
+}

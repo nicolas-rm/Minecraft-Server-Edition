@@ -1,0 +1,31 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "better:the_end_after_surface_end_grass_feature",
+      "places_feature": "better:wasted_grove_end_grass_feature"
+    },
+    "conditions": {
+      "placement_pass": "after_surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "the_end"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 64,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 8 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 8 ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "better:sapphire_ore_feature"
+    },
+    "count": 4,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "better:sapphire_ore"
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:stone"
+          }
+        ]
+      }
+    ]
+  }
+}

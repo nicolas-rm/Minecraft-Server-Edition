@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:hbstatue"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Herobrine Trophy"
+      },
+      "minecraft:icon": {
+        "texture": "hbstatue"
+      },
+      "minecraft:foil": true
+    }
+  }
+}

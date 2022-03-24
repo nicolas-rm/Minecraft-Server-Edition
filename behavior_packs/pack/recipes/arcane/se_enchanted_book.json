@@ -1,0 +1,28 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ray:se_enchanted_book"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"result": [
+			{
+				"item": "se_book:netherite_ingot"
+			}
+		],
+		"pattern": [
+			"LB"
+		],
+		"key": {
+			"L": {
+				"item": "minecraft:ender_eye"
+			},
+			"B": {
+				"item": "minecraft:book"
+			}
+		}
+	}
+}

@@ -1,0 +1,168 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+      "description": {
+        "identifier": "better:world_gen_after_surface_wizard_tower_placement_feature",
+        "places_feature": "better:fixup_wizard_tower_position_feature"
+      },
+      "conditions": {
+        "placement_pass": "after_surface_pass",
+        "minecraft:biome_filter": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "overworld"
+          },
+          {
+            "all_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "desert"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "plains"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "orchard"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "sick_darkwood"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "savanna"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "roofed"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "ghostly"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "mega"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "wilderland"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "wasteland"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "plains_subtropical"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "ocean"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "hb"
+              },              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "creeperlands"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "creeperhills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "volcano"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "volcano_craters"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "birch"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "river"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "largem"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "alps"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "beach"
+              }
+            ]
+          }
+        ]
+      },
+      "distribution": {
+        "iterations": 1,
+        "scatter_chance": 0.04,
+        "x": {
+          "distribution": "uniform",
+          "extent": [
+            0,
+            16
+          ]
+        },
+        "y": {
+          "distribution": "uniform",
+          "extent": [
+            "query.heightmap(variable.worldx, variable.worldz) + 0",
+            "query.heightmap(variable.worldx, variable.worldz) + 1 + 0"
+          ]
+        },
+        "z": {
+          "distribution": "uniform",
+          "extent": [
+            0,
+            16
+          ]
+        }
+      }
+    }
+  }
+  

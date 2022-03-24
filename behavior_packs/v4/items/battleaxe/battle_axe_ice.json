@@ -1,0 +1,358 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sp:battle_axe_ice",
+			"category": "equipment"
+
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 2500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:snow"
+						],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			},
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 38,
+			"minecraft:enchantable": {
+				"value": 25,
+				"slot": "axe"
+			},
+			"tag:minecraft:is_axe": {},
+			"minecraft:icon": {
+				"texture": "battle_axe_ice"
+			},//SorYPMod
+			"minecraft:display_name": {
+				"value": "§5Ice Battle Axe"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "slow"
+				},
+				"on_not_hurt_entity": {
+					"event": "dmg"
+				},
+				"on_hit_block": {
+					"event": "dmg"
+				}
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.axe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "q.any_tag('wood', 'pumpkin', 'plant')"
+						},
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:snow",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:snow_layer",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:blue_ice",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:frosted_ice",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:packed_ice",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:chest",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:bookshelf",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:melon_block",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_stem",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_stem",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_stem",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_stem",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crafting_table",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_planks",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_planks",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_stairs",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_trapdoor",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_stairs",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_trapdoor",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_door",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_double_slab",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_door",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_double_slab",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crafting_table",
+						"speed": 40,
+						"on_dig": {
+							"event": "dmg"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "dmg"
+				}
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "ice"
+				}
+			},
+			"minecraft:cooldown": {
+				"category": "snowice",
+				"duration": 0.5
+			}
+		},
+		"events": {
+			"ice": {
+				"sequence": [
+					{
+						"swing": {}
+					},
+					{
+						"run_command": {
+							"command": [
+								"function ice_function"
+							]
+						}
+					},
+					{
+						"damage": {
+							"type": "none",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"shoot": {
+							"projectile": "minecraft:snowball",
+							"launch_power": 3
+						}
+					},
+					{
+						"trigger": {
+							"event": "ice2"
+						}
+					},
+					{
+						"condition": "query.is_sneaking == 1",
+						"trigger": {
+							"event": "ice3"
+						}
+					}
+				]
+			},
+			"dmg": {
+				"damage": {
+					"type": "none",
+					"amount": 1,
+					"target": "self"
+				}
+			},
+			"ice2": {
+				"run_command": {
+					"command": [
+						"tag @s remove ice"
+					]
+				}
+			},
+			"slow": {
+				"sequence": [
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"add_mob_effect": {
+							"effect": "slowness",
+							"target": "other",
+							"duration": 15,
+							"amplifier": 5
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"function ice_function_2"
+							]
+						}
+					}
+				]
+			},
+			"ice3": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"function ice_function_1"
+							]
+						}
+					},
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 10,
+							"target": "item"
+						}
+					}
+				]
+			}
+		}
+	}
+}

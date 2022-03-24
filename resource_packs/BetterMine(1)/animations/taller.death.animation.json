@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.die": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.84,
+			"bones": {
+				"boss": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.76": [-90, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.84": [-190, 0, 0]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.84": [0, 90, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.84": [0, -20, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.84": [0, 0, -15]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.84": [0, -25, 0]
+					}
+				},
+				"leftLeg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.84": [0, 0, -10]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grimstone_diamond_06c1dbf1"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:deepslate_diamond_ore",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:grimstone_diamond",
+      "count": 1
+    }
+  }
+}

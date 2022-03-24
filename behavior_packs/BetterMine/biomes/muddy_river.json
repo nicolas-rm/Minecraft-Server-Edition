@@ -1,0 +1,48 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "muddy_river"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.8,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.25
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ -0.3, 0.0 ]
+      },
+      "minecraft:swamp_surface": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:podzol",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "sea_material": "minecraft:podzol"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.121, 1.0 ]
+          },
+          {
+            "materials": {
+              "sea_material": "minecraft:water"
+            },
+            "noise_range": [ 0.25, 1.0 ]
+          }
+        ]
+      },
+
+      "animal": {},
+      "monster": {},
+      "river": {},
+      "overworld_generation": {}
+    }
+  }
+}

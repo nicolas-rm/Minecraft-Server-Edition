@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wr:glowing_fly",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/wr_glowing_fly"
+      },
+      "geometry": {
+        "default": "geometry.wr_glowing_fly"
+      },
+      "scripts": {
+        "scale": "0.35"
+      },
+      "animations": {
+        "resting": "animation.bat.resting",
+        "flying": "animation.bat.flying"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.bat.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.bat"
+      ],
+      "spawn_egg": {
+        "texture": "wr:glowing_fly",
+        "texture_index": 0
+      }
+    }
+  }
+}

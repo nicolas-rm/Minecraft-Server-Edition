@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "fossiled_bone1_03b54406"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "ABA",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "wr:block_of_bone",
+        "data": 0
+      },
+      "B": {
+        "item": "wr:bone_catalyst",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:fossiled_bone1",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,1 @@
+give @s wr:grow_bone

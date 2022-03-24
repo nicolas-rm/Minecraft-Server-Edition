@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:sword_42dbs",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "sword_42dbs",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

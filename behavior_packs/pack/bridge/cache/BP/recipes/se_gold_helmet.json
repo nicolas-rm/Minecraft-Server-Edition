@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\se_gold_helmet.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "c34b4e07_1948_494c_ae43_bb2cf21eb894",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:se_gold_helmet"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:golden_helmet"
+							},
+							{
+								"item": "ray:se_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:se_gold_helmet"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:se_gold_helmet"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:golden_helmet"
+							},
+							{
+								"item": "ray:se_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:se_gold_helmet"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:se_gold_helmet"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_helmet"
+								},
+								{
+									"item": "ray:se_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:se_gold_helmet"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:se_gold_helmet"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:se_gold_helmet"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_helmet"
+								},
+								{
+									"item": "ray:se_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:se_gold_helmet"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:se_gold_helmet"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_helmet"
+								},
+								{
+									"item": "ray:se_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:se_gold_helmet"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:golden_helmet"
+									},
+									{
+										"item": "ray:se_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:golden_helmet"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:golden_helmet"
+									},
+									{
+										"item": "ray:se_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:se_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:se_gold_helmet"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_helmet"
+								},
+								{
+									"item": "ray:se_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:se_gold_helmet"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:se_gold_helmet"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:se_gold_helmet"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

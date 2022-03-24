@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grimstone_gold_fb1b262c"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:deepslate_gold_ore",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:grimstone_gold",
+      "count": 1
+    }
+  }
+}

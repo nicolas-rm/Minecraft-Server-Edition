@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grimstone_emerald_9ebb9628"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:deepslate_emerald_ore",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:grimstone_emerald",
+      "count": 1
+    }
+  }
+}

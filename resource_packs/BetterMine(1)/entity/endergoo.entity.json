@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:endergoo",
+      "materials": { "default": "ghost" },
+      "textures": {
+        "default": "textures/entity/enderspit/endergoo"
+      },
+      "geometry": {
+        "default": "geometry.enderspit"
+      },
+      "animations": {
+        "setup": "animation.llama_spit.setup"
+      },
+      "scripts": {
+        "animate": [
+          "setup"
+        ]
+      },
+      "render_controllers": [ "controller.render.llama_spit" ]
+    }
+  }
+}

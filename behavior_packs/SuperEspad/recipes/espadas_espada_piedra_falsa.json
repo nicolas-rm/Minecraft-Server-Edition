@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "espada_piedra_falsa_dacc2cdb"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "espadas:espada_carton",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 8
+      }
+    },
+    "result": {
+      "item": "espadas:espada_piedra_falsa",
+      "count": 1
+    }
+  }
+}

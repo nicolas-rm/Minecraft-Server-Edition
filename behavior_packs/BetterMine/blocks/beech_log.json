@@ -1,0 +1,115 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:beech_log",
+      "properties": {
+        "log:rotation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/beech_log.json",
+      "minecraft:unit_cube": {},
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "beech_log_top",
+          "render_method": "opaque"
+        },
+        "down": {
+          "texture": "beech_log_top",
+          "render_method": "opaque"
+        },
+        "*": {
+          "texture": "beech_log_side",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:flammable": {
+        "flame_odds": 64,
+        "burn_odds": 16
+      },
+      "minecraft:destroy_time": 0.8,
+      "minecraft:explosion_resistance": 0.5,
+      "minecraft:on_player_placing": {
+        "event": "log:rotational"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('log:rotation') == 0",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('log:rotation') == 1",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('log:rotation') == 2",
+        "components": {
+          "minecraft:rotation": [
+            90,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('log:rotation') == 3",
+        "components": {
+          "minecraft:rotation": [
+            90,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('log:rotation') == 4",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            0,
+            90
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('log:rotation') == 5",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            0,
+            90
+          ]
+        }
+      }
+    ],
+    "events": {
+      "log:rotational": {
+        "set_block_property": {
+          "log:rotation": "(query.cardinal_player_facing)"
+        }
+      }
+    }
+  }
+}

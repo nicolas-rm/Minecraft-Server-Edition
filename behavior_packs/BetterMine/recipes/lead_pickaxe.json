@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "better:lead_pickaxe"
+        },
+        "tags": [
+            "adv"
+        ],
+        "pattern": [
+            "AAA",
+            " B ",
+            " B "
+        ],
+        "key": {
+            "A": {
+                "item": "better:lead_ingot"
+            },
+            "B": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "better:lead_pickaxe",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

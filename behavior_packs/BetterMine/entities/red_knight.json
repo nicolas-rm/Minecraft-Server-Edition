@@ -1,0 +1,540 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:red_knight",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "better:warrior_baby": {
+        "minecraft:is_baby": {
+        },
+        "minecraft:scale": {
+          "value": 0.5
+        },
+
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "cooked_chicken",
+            "cooked_beef",
+            "muttonCooked",
+            "cooked_porkchop",
+            "cooked_rabbit"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        }
+      },
+
+      "better:archer": {
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "attack_interval_min": 1.0,
+          "attack_interval_max": 3.0,
+          "attack_radius": 15.0
+        },
+        "minecraft:shooter": {
+          "def": "minecraft:arrow"
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/red_knight_archer.json"
+        }
+      },
+
+      "better:melee": {
+        "minecraft:behavior.melee_attack": {
+          "priority": 5
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/red_knight_melee.json"
+        }
+      },
+
+      "better:warrior_adult": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+        },
+        "minecraft:breedable": {
+          "require_tame": true,
+          "require_full_health": true,
+          "breeds_with": {
+            "mate_type": "better:humanf",
+            "baby_type": "better:red_knight",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+            "cooked_chicken",
+            "cooked_beef",
+            "muttonCooked",
+            "cooked_porkchop",
+            "cooked_rabbit",
+            "emerald"
+          ]
+        }
+      },
+
+      "better:warrior_angry": {
+        "minecraft:angry": {
+          "duration": 25,
+          "broadcast_anger": true,
+          "broadcast_range": 20,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+        }
+      },
+
+      "better:warrior_wild": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "tnt" },
+              "max_dist": 24,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            }
+          ],
+          "probability_per_strength": 0.14
+        },
+        "minecraft:dweller": {
+          "dwelling_type": "village",
+          "dweller_role": "defender",
+          "update_interval_base": 60,
+          "update_interval_variant": 40,
+          "can_find_poi": false,
+          "can_migrate": true,
+          "first_founding_reward": 0
+        },
+        "minecraft:tameable": {
+          "probability": 0.33,
+          "tame_items": "emerald",
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        },
+
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "head",
+                "operator": "==",
+                "value": "better:bad"
+              },
+              "max_dist": 20
+            },
+            {
+              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+              "max_dist": 16
+            }
+          ]
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      },
+
+      "better:warrior_tame": {
+        "minecraft:is_tamed": {
+        },
+        "minecraft:health": {
+          "value": 35,
+          "max": 35
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+        "minecraft:attack": {
+          "damage": 7
+        },
+        "minecraft:behavior.breed": {
+          "priority": 2,
+          "speed_multiplier": 1.0
+        },
+
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 5,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+              "max_dist": 16
+            }
+          ]
+        },
+
+        "minecraft:sittable": {
+        },
+
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0,
+          "on_leash": {
+            "event": "minecraft:on_leash",
+            "target": "self"
+          },
+          "on_unleash": {
+            "event": "minecraft:on_unleash",
+            "target": "self"
+          }
+        }
+      }
+    },
+
+
+    "components": {
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "player", "resagood", "mob" ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:health": {
+        "value": 32,
+        "max": 32
+      },
+      "minecraft:equip_item": {
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "must_see": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "has_equipment",
+              "subject": "other",
+              "domain": "head",
+              "operator": "==",
+              "value": "better:bad"
+            },
+            "max_dist": 20
+          },
+          {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:behavior.find_mount": {
+        "priority": 1,
+        "within_radius": 32,
+        "start_delay": 15,
+        "max_failed_attempts": 90
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "porkchop",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_porkchop",
+            "heal_amount": 8
+          },
+          {
+            "item": "fish",
+            "heal_amount": 2
+          },
+          {
+            "item": "salmon",
+            "heal_amount": 2
+          },
+          {
+            "item": "clownfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "pufferfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "cooked_fish",
+            "heal_amount": 5
+          },
+          {
+            "item": "cooked_salmon",
+            "heal_amount": 6
+          },
+          {
+            "item": "beef",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_beef",
+            "heal_amount": 8
+          },
+          {
+            "item": "chicken",
+            "heal_amount": 2
+          },
+          {
+            "item": "cooked_chicken",
+            "heal_amount": 6
+          },
+          {
+            "item": "muttonRaw",
+            "heal_amount": 2
+          },
+          {
+            "item": "muttonCooked",
+            "heal_amount": 6
+          },
+          {
+            "item": "rotten_flesh",
+            "heal_amount": 1
+          },
+          {
+            "item": "rabbit",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_rabbit",
+            "heal_amount": 5
+          },
+          {
+            "item": "rabbit_stew",
+            "heal_amount": 10
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 1,
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 4,
+        "target_dist": 0.4
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.beg": {
+        "priority": 9,
+        "look_distance": 8,
+        "look_time": [ 2, 4 ],
+        "items": [ "emerald", "cooked_porkchop", "cooked_chicken",
+                   "diamond", "cooked_beef", "muttoncooked", "cooked_rabbit" ]
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "resagood"
+          },
+          "max_dist": 64
+        }
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "better:warrior_adult",
+                "better:warrior_wild",
+                "better:archer"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "better:warrior_adult",
+                "better:warrior_wild",
+                "better:melee"
+              ]
+            }
+          }
+        ]
+      },
+
+      "minecraft:entity_born": {
+        "randomize": [
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "better:warrior_baby",
+                "better:warrior_wild",
+                "better:melee"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "better:warrior_baby",
+                "better:warrior_wild",
+                "better:archer"
+              ]
+
+            }
+          }
+        ]
+      },
+
+      "minecraft:ageable_grow_up": {
+        "remove": {
+          "component_groups": [
+            "better:warrior_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "better:warrior_adult"
+          ]
+        }
+      },
+
+      "minecraft:ageable_set_baby": {
+        "remove": {
+          "component_groups": [
+            "better:warrior_adult"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "better:warrior_baby"
+          ]
+        }
+      },
+
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "better:warrior_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "better:warrior_tame"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": [
+            "better:warrior_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "better:warrior_angry"
+          ]
+        }
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "better:warrior_angry"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "better:warrior_wild"
+          ]
+        }
+      }
+    }
+  }
+}

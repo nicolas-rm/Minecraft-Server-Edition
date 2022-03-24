@@ -1,0 +1,62 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "plains_subtropical"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.15,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 1.5
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "lowlands"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "minecraft:sand",
+              "top_material": "minecraft:sand"
+            },
+            "noise_frequency_scale": 0.1,
+            "noise_range": [ 0.4, 1.0 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:sand"
+            },
+            "noise_range": [ -0.75, -0.5 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": [
+          [ "plains_subtropical_hills", 3 ],
+          [ "desert", 3 ]
+        ],
+        "mutate_transformation": "desert",
+        "shore_transformation": "beach",
+        "generate_for_climates": [
+          [ "warm", 2 ]
+        ]
+      },
+
+      "animal": {},
+      "little_more_grass": {},
+      "monster": {},
+      "overworld": {},
+      "desert": {},
+      "plains_subtropical": {}
+    }
+  }
+}

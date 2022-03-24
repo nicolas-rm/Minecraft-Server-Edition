@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:pastry"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#|#"
+    ],
+    "key": {
+      "#": {
+        "item": "better:flour"
+      },
+      "|": {
+        "item": "minecraft:bucket:8"
+      }
+    },
+    "result": [
+      { "item": "better:pastry", "count": 3, "data": 0 },
+      { "item": "minecraft:bucket", "count": 1, "data": 0 }
+    ]
+  }
+}

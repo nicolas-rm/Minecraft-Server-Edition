@@ -1,0 +1,1 @@
+give @p espadas:espada_hierro_falsa

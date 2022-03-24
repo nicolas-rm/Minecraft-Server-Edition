@@ -1,0 +1,1776 @@
+{
+	"entity": {
+		"BP/entities/player.json": {
+			"events": [
+				"minecraft:gain_bad_omen",
+				"minecraft:clear_add_bad_omen",
+				"minecraft:trigger_raid",
+				"minecraft:remove_raid_trigger",
+				"hb_test",
+				"hit_test",
+				"se_test",
+				"ag_test",
+				"dw_test",
+				"smelt",
+				"mw_test",
+				"fall",
+				"sf_test",
+				"lava_test",
+				"scale_0",
+				"scale_1",
+				"armoring"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:player"
+			],
+			"animation_references": [],
+			"families": [
+				"player"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/small_fireball.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:small_fireball"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/entity_sweep.json": {
+			"events": [
+				"vanish"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mob:sweep"
+			],
+			"animation_references": [],
+			"families": [
+				"sweep"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/light.json": {
+			"events": [
+				"des"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ray:light"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/book.json": {
+			"events": [
+				"command",
+				"des"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ray:book"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/riptide.json": {
+			"events": [
+				"timer",
+				"des",
+				"scale"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ray:trident"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/entities/item.json": {
+			"events": [
+				"test"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:item"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"item": {
+		"BP/items/hb_diamond_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_diamond_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb_chamail_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_chamail_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb_netherite_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_netherite_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb_iron_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_iron_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb_gold_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_gold_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb_book.json": {
+			"identifiers": [
+				"ray:hb2_book"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb2_chamail_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_chamail_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb2_diamond_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_diamond_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb2_gold_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_gold_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb2_iron_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_iron_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb2_netherite_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_netherite_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb2_book.json": {
+			"identifiers": [
+				"ray:hb2_book"
+			],
+			"custom_commands": []
+		},
+		"BP/items/hb/hb2_diamond_chestplate.json": {
+			"identifiers": [
+				"ray:hb2_diamond_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ia/wooden_sword.json": {
+			"identifiers": [
+				"ray:ia_wooden_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ia/stone_sword.json": {
+			"identifiers": [
+				"ray:ia_stone_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ia/netherite_sword.json": {
+			"identifiers": [
+				"ray:ia_netherite_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ia/iron_sword.json": {
+			"identifiers": [
+				"ray:ia_iron_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ia/golden_sword.json": {
+			"identifiers": [
+				"ray:ia_golden_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ia/diamond_sword.json": {
+			"identifiers": [
+				"ray:ia_diamond_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/se_diamond_helmet.json": {
+			"identifiers": [
+				"ray:se_diamond_helmet"
+			],
+			"custom_commands": []
+		},
+		"BP/items/se_iron_helmet.json": {
+			"identifiers": [
+				"ray:se_iron_helmet"
+			],
+			"custom_commands": []
+		},
+		"BP/items/se_chainmail_helmet.json": {
+			"identifiers": [
+				"ray:se_chainmail_helmet"
+			],
+			"custom_commands": []
+		},
+		"BP/items/se_netherite_helmet.json": {
+			"identifiers": [
+				"ray:se_netherite_helmet"
+			],
+			"custom_commands": []
+		},
+		"BP/items/se_gold_helmet.json": {
+			"identifiers": [
+				"ray:se_gold_helmet"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ag_diamond_boots.json": {
+			"identifiers": [
+				"ray:ag_diamond_boots"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ag_iron_boots.json": {
+			"identifiers": [
+				"ray:ag_iron_boots"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ag_golden_boots.json": {
+			"identifiers": [
+				"ray:ag_golden_boots"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ag_chainmail_boots.json": {
+			"identifiers": [
+				"ray:ag_chainmail_boots"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ag_netherite_boots.json": {
+			"identifiers": [
+				"ray:ag_netherite_boots"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ds_chainmail_leggings.json": {
+			"identifiers": [
+				"ray:ds_chainmail_leggings"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ds_golden_leggings.json": {
+			"identifiers": [
+				"ray:ds_golden_leggings"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ds_iron_leggings.json": {
+			"identifiers": [
+				"ray:ds_iron_leggings"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ds_netherite_leggings.json": {
+			"identifiers": [
+				"ray:ds_netherite_leggings"
+			],
+			"custom_commands": []
+		},
+		"BP/items/smelt_iron_pickaxe.json": {
+			"identifiers": [
+				"ray:smelt_iron_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/smelt_diamond_pickaxe.json": {
+			"identifiers": [
+				"ray:smelt_diamond_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/smelt_netherite_pickaxe.json": {
+			"identifiers": [
+				"ray:smelt_netherite_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/smelt_stone_pickaxe.json": {
+			"identifiers": [
+				"ray:smelt_stone_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/xp/xp_stone_pickaxe.json": {
+			"identifiers": [
+				"ray:xp_stone_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/xp/xp_netherite_pickaxe.json": {
+			"identifiers": [
+				"ray:xp_netherite_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/xp/xp_iron_pickaxe.json": {
+			"identifiers": [
+				"ray:xp_iron_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/xp/xp_diamond_pickaxe.json": {
+			"identifiers": [
+				"ray:xp_diamond_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/sw/wooden_sword.json": {
+			"identifiers": [
+				"ray:sw_wooden_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/sw/stone_sword.json": {
+			"identifiers": [
+				"ray:sw_stone_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/sw/netherite_sword.json": {
+			"identifiers": [
+				"ray:sw_netherite_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/sw/iron_sword.json": {
+			"identifiers": [
+				"ray:sw_iron_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/sw/golden_sword.json": {
+			"identifiers": [
+				"ray:sw_golden_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/sw/diamond_sword.json": {
+			"identifiers": [
+				"ray:sw_diamond_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ds/ds_book.json": {
+			"identifiers": [
+				"ray:ds_book"
+			],
+			"custom_commands": []
+		},
+		"BP/items/tc/wooden_axe.json": {
+			"identifiers": [
+				"custom:wooden_axe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/tc/stone_axe.json": {
+			"identifiers": [
+				"custom:stone_axe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/tc/netherite_axe.json": {
+			"identifiers": [
+				"custom:netherite_axe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/tc/iron_axe.json": {
+			"identifiers": [
+				"custom:iron_axe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/tc/golden_axe.json": {
+			"identifiers": [
+				"custom:golden_axe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/tc/diamond_axe.json": {
+			"identifiers": [
+				"custom:diamond_axe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mine/xp_stone_pickaxe.json": {
+			"identifiers": [
+				"ray:sm_stone_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mine/xp_netherite_pickaxe.json": {
+			"identifiers": [
+				"ray:sm_netherite_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mine/xp_iron_pickaxe.json": {
+			"identifiers": [
+				"ray:sm_iron_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mine/xp_diamond_pickaxe.json": {
+			"identifiers": [
+				"ray:sm_diamond_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/netherite_trident.json": {
+			"identifiers": [
+				"ray:fire_trident"
+			],
+			"custom_commands": []
+		},
+		"BP/items/warrior_shield.json": {
+			"identifiers": [
+				"ray:shield"
+			],
+			"custom_commands": []
+		}
+	},
+	"attachable": {
+		"RP/attachables/hb_diamond_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb_chainmail_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb_netherite_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb_iron_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb_gold_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb2_chainmail_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb2_diamond_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb2_gold_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb2_iron_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/hb2_netherite_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/bt_chainmail_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/bt_diamond_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/bt_gold_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/bt_iron_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/bt_netherite_chestplate.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/se_diamond_helmet.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/se_chainmail_helmet.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/se_iron_helmet.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/se_gold_helmet.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/se_netherite_helmet.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ag_diamond_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ag_iron_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ag_golden_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ag_chainmail_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ag_netherite_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ds_diamond_leggings.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ds_chainmail_leggings.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ds_golden_leggings.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ds_iron_leggings.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/ds_netherite_leggings.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/mw_netherite_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/mw_iron_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/mw_golden_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/mw_diamond_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/mw_chainmail_boots.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/fire_riptide.json": {
+			"texture_references": [
+				"enchanted",
+				"default"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default",
+				"crossbow_pulling_0",
+				"crossbow_pulling_1",
+				"crossbow_pulling_2",
+				"crossbow_arrow",
+				"crossbow_rocket"
+			]
+		},
+		"RP/attachables/shield.entity.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		},
+		"RP/attachables/_shield.json": {
+			"texture_references": [
+				"default",
+				"enchanted"
+			],
+			"material_references": [
+				"default",
+				"enchanted"
+			],
+			"geometry_references": [
+				"default"
+			]
+		}
+	},
+	"function": {
+		"BP/functions/§b/n§7.mcfunction": {
+			"custom_commands": []
+		},
+		"c23c0f87_8ee9_4b15_be9e_baaf3e86aa1e": {},
+		"BP/functions/bt.mcfunction": {
+			"custom_commands": [],
+			"tags": [
+				"fire"
+			]
+		},
+		"BP/functions/tick.mcfunction": {
+			"custom_commands": [],
+			"scoreboards": [
+				"fire",
+				"fall",
+				"si",
+				"anee",
+				"particle",
+				"replace",
+				"des",
+				"lava"
+			],
+			"tags": [
+				"fire",
+				"fall",
+				"give",
+				"replace",
+				"netherite"
+			]
+		},
+		"3ae53e4f_39f2_4399_8052_8fdc87f5d83c": {},
+		"cd42681a_3681_4579_9967_c3926d4661e5": {},
+		"22d83436_664d_420d_bf8a_da629e286242": {},
+		"e8c0100b_829e_49a4_82ba_c6e4740d06e2": {},
+		"7719f0f8_17c9_4ac2_b330_9015468545cc": {},
+		"b3b7484a_26d8_4d62_811c_9d8bd44f30aa": {},
+		"BP/functions/winter.mcfunction": {
+			"custom_commands": [],
+			"tags": [
+				"winter"
+			]
+		},
+		"BP/functions/cutclean.mcfunction": {
+			"custom_commands": []
+		},
+		"4978895a_62d1_4922_965a_e4b31a98c57a": {},
+		"af19bdd9_1982_4b19_950b_aa73f585f8b6": {},
+		"7f0ee67e_05d3_4ad9_9491_b9bb960f6ebe": {},
+		"4676382c_237f_4d14_adc5_f80ccfa3c1df": {},
+		"BP/functions/sweep.mcfunction": {
+			"custom_commands": []
+		},
+		"d8d20c41_1abb_4700_8d6a_ae2d7b150b1b": {},
+		"e2c50427_e137_4463_9061_adc9949a0ab8": {},
+		"d16cb5fc_a3ca_43ea_b5c5_13126459950b": {},
+		"4e14dc0f_3536_4d1c_9048_8043c7fe8334": {},
+		"d0bd3a88_db09_4122_8348_349943a6e5cd": {},
+		"27f969f4_873e_4f9d_9977_8a0452083ea4": {},
+		"generic": {},
+		"c62b2de1_3543_4d86_b500_ff4207bd4423": {},
+		"364513b0_5a53_4305_9f6f_bef295f14aa3": {
+			"tags": [
+				"abs"
+			]
+		},
+		"b0234bac_fcd0_4893_8f0e_af976d166e10": {},
+		"0a7af4a0_23ad_4cc8_ab6c_beaa46abbf52": {},
+		"1721b740_2957_4091_aacb_ab55fe3e4570": {},
+		"d4677012_004e_42d3_ab24_a7182ccb163b": {},
+		"BP/functions/test.mcfunction": {
+			"custom_commands": []
+		},
+		"d5f61a80_a3e9_4f17_b273_5b1d9bc58038": {},
+		"50e0b7f1_d2cc_4a37_bf48_222b28532e88": {},
+		"3efb2126_3eea_4cf4_be17_4f63c601cec0": {},
+		"3a2b00a0_7f34_4315_80ae_ae29de081eb6": {},
+		"406d2732_d250_4669_9f16_7c2e86c48f42": {},
+		"1842a585_9dca_4f57_ac3f_510f68f50348": {},
+		"c78d15c1_1bb8_4f01_8ada_c49b5f25c35c": {},
+		"fc153260_9c1b_4baa_8ba1_d577b88ff865": {},
+		"f5324332_2cf2_44fe_866c_3f4e6a8ee92a": {},
+		"BP/functions/tree.mcfunction": {
+			"custom_commands": []
+		},
+		"2dba7c8d_e2ae_4704_abe9_e19bc3e4322f": {},
+		"019d1fd6_c8eb_435c_8585_255363ecf9e7": {},
+		"0a898e6b_d2b3_4562_96eb_0809f39d7b13": {},
+		"ed8fb618_972c_4455_8115_28f9e40ec8ca": {},
+		"8644ec74_7254_4bfe_a8cc_37e0de2e58b7": {},
+		"eb98319c_22d0_47a1_8f5d_34f17fe4cff6": {},
+		"960922e1_344f_47b8_b27d_6de16fb50560": {},
+		"7722f01c_501c_4ef4_ad36_73ecb3867f51": {},
+		"BP/functions/miner.mcfunction": {
+			"custom_commands": []
+		},
+		"fbaef558_fcf6_49d9_afd5_bca654bafdf1": {},
+		"58e443dc_6f47_4606_a765_b3af1a3640ea": {},
+		"b9f35c62_f044_4225_b0bb_d8eff68c5f9b": {},
+		"e7637b47_40a8_4c47_aba7_c17fad77f7f9": {},
+		"99a1adc1_9380_468f_a952_e15d9a21303a": {},
+		"d7d60637_e2a0_44e4_9e48_d9599ed8dd5a": {},
+		"1f209757_60ef_4ba9_8c3b_31d0a8b9ebff": {
+			"tags": [
+				"anee"
+			]
+		},
+		"BP/functions/particle.mcfunction": {
+			"custom_commands": []
+		},
+		"745e1266_be36_4cb9_afdb_004b9be250c0": {},
+		"05337bf5_e5c1_4060_977c_4c515149bf17": {
+			"tags": [
+				"replace"
+			]
+		},
+		"a3900f95_dd3c_46c4_afe1_813b3d62dc47": {},
+		"BP/functions/r.mcfunction": {
+			"custom_commands": [],
+			"scoreboards": [
+				"r"
+			]
+		},
+		"BP/functions/random.mcfunction": {
+			"custom_commands": [],
+			"scoreboards": [
+				"t"
+			]
+		},
+		"ce3306c7_d8b1_45fd_9901_c5fbd94f4893": {},
+		"e39782af_6953_4a50_a061_1f4bb64d507b": {},
+		"74a3922e_7637_4a1b_860e_06b57762af32": {}
+	},
+	"sound_definition": {
+		"RP/sounds/sound_definitions.json": {
+			"ids": [
+				"winter",
+				"sweep"
+			]
+		}
+	},
+	"render_controller": {},
+	"recipe": {
+		"BP/recipes/xp_diamond_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/xp_netherite_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/xp_iron_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/xp_stone_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/smelt_diamond_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/smelt_iron_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/smelt_stone_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/smelt_netherite_pickaxe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/sw_diamond_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/sw_iron_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/sw_stone_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/sw_golden_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/sw_wooden_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/sw_netherite_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ia_diamond_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ia_iron_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ia_wooden_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ia_netherite_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ia_golden_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ia_stone_sword.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/se_diamond_helmet.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/se_iron_helmet.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/se_netherite_helmet.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/se_gold_helmet.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/se_chainmail_helmet.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ds_diamond_leggigns.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ds_chainmail_leggigns.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ds_iron_leggigns.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ds_gold/_leggigns.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ds_gold_leggigns.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ds_netherite_leggigns.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ag_diamond_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ag_iron_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ag_golden_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ag_netherite_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ag_chainmail_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/mw_chainmail_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/mw_netherite_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/mw_iron_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/mw_diamond_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/mw_golden_boots.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/bt_diamond_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/bt_chamail_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/bt_iron_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/bt_golden_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/bt_netherite_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb_chamail_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb_diamond_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb_netherite_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb_iron_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb_golden_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb2_chamail_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb2_diamond_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb2_golden_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb2_iron_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/hb2_netherite_chestplate.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/winter_aspect.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/slime_feet.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/scorching_heat.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/magma_walker.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/burning_thorns.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/ag_enchanted_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/xp.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/hb_1.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/hb_2.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/sweeping_edge.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/se_enchanted_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/ray:ds_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/ds_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/arcane_table.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/tc_wooden_axe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/tc_stone_axe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/tc_iron_axe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/tc_diamond_axe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/tc_netherite_axe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/tc_golden_axe.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/tc_enchanted_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/sm_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/sw_enchanted_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/arcane/scorching_heat.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/arcane/se_enchanted_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/arcane/xp.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/fire_riptide_trident.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/ar_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		},
+		"BP/recipes/netherite_classic_shield.json": {
+			"tags": [
+				"smithing_table"
+			]
+		},
+		"BP/recipes/fr_book.json": {
+			"tags": [
+				"arcane_table"
+			]
+		}
+	},
+	"block": {
+		"BP/blocks/arcane_table.json": {
+			"identifiers": [
+				"ray:arcane_table"
+			],
+			"events": [
+				"sound"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/oak_log.json": {
+			"identifiers": [
+				"ray:acacia_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/birch_log.json": {
+			"identifiers": [
+				"ray:birch_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/acacia_log.json": {
+			"identifiers": [
+				"ray:acacia_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/crimson_log.json": {
+			"identifiers": [
+				"ray:acacia_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/dark_log.json": {
+			"identifiers": [
+				"ray:acacia_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/jungle_log.json": {
+			"identifiers": [
+				"ray:acacia_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/spruce_log.json": {
+			"identifiers": [
+				"ray:acacia_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/warped_log.json": {
+			"identifiers": [
+				"ray:acacia_log"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/stone.json": {
+			"identifiers": [
+				"ray:nether_"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/deepslate.json": {
+			"identifiers": [
+				"ray:stone_"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/nether.json": {
+			"identifiers": [
+				"ray:end_"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/blocks/end_stone.json": {
+			"identifiers": [
+				"ray:end_"
+			],
+			"events": [
+				"test"
+			],
+			"recipe_tags": [
+				"arcane_table"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		}
+	},
+	"client_entity": {
+		"RP/entity/book.json": {
+			"identifiers": [
+				"ray:book"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"creeper_head",
+				"creeper_legs",
+				"creeper_swelling"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default",
+				"charged"
+			],
+			"material_references": [
+				"default",
+				"charged"
+			],
+			"geometry_references": [
+				"default",
+				"charged"
+			],
+			"geometry_identifiers": [
+				"default",
+				"charged"
+			]
+		},
+		"RP/entity/trident.json": {
+			"identifiers": [
+				"ray:trident"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"face_player"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	}
+}

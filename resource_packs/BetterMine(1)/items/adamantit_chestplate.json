@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "better:adamantit_chestplate",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.armor"
+			},
+			"minecraft:icon": {
+				"texture": "adamantit_chestplate"
+			},
+			"minecraft:render_offsets": "chestplate",
+			"minecraft:hover_text_color": "white",
+			"minecraft:display_name": {
+				"value": "item.better:adamantit_chestplate.name"
+			}
+		}
+	}
+}

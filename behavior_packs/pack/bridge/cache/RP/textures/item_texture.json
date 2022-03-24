@@ -1,0 +1,618 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\More Enchantments Addon\\textures\\item_texture.json",
+	"file_type": "item_texture",
+	"format_version": 1,
+	"file_uuid": "db8f1772_cb18_4cfb_9688_a0e45799729c",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.items",
+				"key": "texture_name"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.items",
+					"texture_data": {
+						"diamond_chestplate": {
+							"textures": [
+								"textures/items/chestplate/diamond_chestplate"
+							]
+						},
+						"chamail_chestplate": {
+							"textures": [
+								"textures/items/chestplate/chamail_chestplate"
+							]
+						},
+						"gold_chestplate": {
+							"textures": [
+								"textures/items/chestplate/gold_chestplate"
+							]
+						},
+						"iron_chestplate": {
+							"textures": [
+								"textures/items/chestplate/iron_chestplate"
+							]
+						},
+						"netherite_chestplate\\": {
+							"textures": [
+								"textures/items/chestplate/netherite_chestplate"
+							]
+						},
+						"book": {
+							"textures": [
+								"textures/items/book"
+							]
+						},
+						"diamond_sword": {
+							"textures": [
+								"textures/items/sword/diamond_sword"
+							]
+						},
+						"iron_sword": {
+							"textures": [
+								"textures/items/sword/iron_sword"
+							]
+						},
+						"golden_sword": {
+							"textures": [
+								"textures/items/sword/gold_sword"
+							]
+						},
+						"netherite_sword": {
+							"textures": [
+								"textures/items/sword/netherite_sword"
+							]
+						},
+						"wooden_sword": {
+							"textures": [
+								"textures/items/sword/wooden_sword"
+							]
+						},
+						"stone_sword": {
+							"textures": [
+								"textures/items/sword/stone_sword"
+							]
+						},
+						"diamond_helmet": {
+							"textures": [
+								"textures/items/helmet/diamond_helmet"
+							]
+						},
+						"iron_helmet": {
+							"textures": [
+								"textures/items/helmet/iron_helmet"
+							]
+						},
+						"gold_helmet": {
+							"textures": [
+								"textures/items/helmet/gold_helmet"
+							]
+						},
+						"chainmail_helmet": {
+							"textures": [
+								"textures/items/helmet/chainmail_helmet"
+							]
+						},
+						"netherite_helmet": {
+							"textures": [
+								"textures/items/helmet/netherite_helmet"
+							]
+						},
+						"diamond_boots": {
+							"textures": [
+								"textures/items/boots/diamond_boots"
+							]
+						},
+						"chainmail_boots": {
+							"textures": [
+								"textures/items/boots/chainmail_boots"
+							]
+						},
+						"gold_boots": {
+							"textures": [
+								"textures/items/boots/gold_boots"
+							]
+						},
+						"netherite_boots": {
+							"textures": [
+								"textures/items/boots/netherite_boots"
+							]
+						},
+						"iron_boots": {
+							"textures": [
+								"textures/items/boots/iron_boots"
+							]
+						},
+						"diamond_leggings": {
+							"textures": [
+								"textures/items/leggings/diamond_leggings"
+							]
+						},
+						"golden_leggings": {
+							"textures": [
+								"textures/items/leggings/golden_leggings"
+							]
+						},
+						"chainmail_leggings": {
+							"textures": [
+								"textures/items/leggings/chainmail_leggings"
+							]
+						},
+						"netherite_leggings": {
+							"textures": [
+								"textures/items/leggings/netherite_leggings"
+							]
+						},
+						"iron_leggings": {
+							"textures": [
+								"textures/items/leggings/iron_leggings"
+							]
+						},
+						"stone_pickaxe": {
+							"textures": [
+								"textures/items/pickaxe/stone_pickaxe"
+							]
+						},
+						"iron_pickaxe": {
+							"textures": [
+								"textures/items/pickaxe/iron_pickaxe"
+							]
+						},
+						"diamond_pickaxe": {
+							"textures": [
+								"textures/items/pickaxe/diamond_pickaxe"
+							]
+						},
+						"netherite_pickaxe": {
+							"textures": [
+								"textures/items/pickaxe/netherite_pickaxe"
+							]
+						},
+						"wooden_axe": {
+							"textures": [
+								"textures/items/axe/wooden_axe"
+							]
+						},
+						"stone_axe": {
+							"textures": [
+								"textures/items/axe/stone_axe"
+							]
+						},
+						"iron_axe": {
+							"textures": [
+								"textures/items/axe/iron_axe"
+							]
+						},
+						"diamond_axe": {
+							"textures": [
+								"textures/items/axe/diamond_axe"
+							]
+						},
+						"netherite_axe": {
+							"textures": [
+								"textures/items/axe/netherite_axe"
+							]
+						},
+						"golden_axe": {
+							"textures": [
+								"textures/items/axe/golden_axe"
+							]
+						},
+						"trident": {
+							"textures": [
+								"textures/items/trident/trident"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"key": "diamond_chestplate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chestplate/diamond_chestplate"
+							]
+						}
+					},
+					{
+						"key": "chamail_chestplate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chestplate/chamail_chestplate"
+							]
+						}
+					},
+					{
+						"key": "gold_chestplate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chestplate/gold_chestplate"
+							]
+						}
+					},
+					{
+						"key": "iron_chestplate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chestplate/iron_chestplate"
+							]
+						}
+					},
+					{
+						"key": "netherite_chestplate\\",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chestplate/netherite_chestplate"
+							]
+						}
+					},
+					{
+						"key": "book",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/book"
+							]
+						}
+					},
+					{
+						"key": "diamond_sword",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sword/diamond_sword"
+							]
+						}
+					},
+					{
+						"key": "iron_sword",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sword/iron_sword"
+							]
+						}
+					},
+					{
+						"key": "golden_sword",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sword/gold_sword"
+							]
+						}
+					},
+					{
+						"key": "netherite_sword",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sword/netherite_sword"
+							]
+						}
+					},
+					{
+						"key": "wooden_sword",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sword/wooden_sword"
+							]
+						}
+					},
+					{
+						"key": "stone_sword",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sword/stone_sword"
+							]
+						}
+					},
+					{
+						"key": "diamond_helmet",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/helmet/diamond_helmet"
+							]
+						}
+					},
+					{
+						"key": "iron_helmet",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/helmet/iron_helmet"
+							]
+						}
+					},
+					{
+						"key": "gold_helmet",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/helmet/gold_helmet"
+							]
+						}
+					},
+					{
+						"key": "chainmail_helmet",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/helmet/chainmail_helmet"
+							]
+						}
+					},
+					{
+						"key": "netherite_helmet",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/helmet/netherite_helmet"
+							]
+						}
+					},
+					{
+						"key": "diamond_boots",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/boots/diamond_boots"
+							]
+						}
+					},
+					{
+						"key": "chainmail_boots",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/boots/chainmail_boots"
+							]
+						}
+					},
+					{
+						"key": "gold_boots",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/boots/gold_boots"
+							]
+						}
+					},
+					{
+						"key": "netherite_boots",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/boots/netherite_boots"
+							]
+						}
+					},
+					{
+						"key": "iron_boots",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/boots/iron_boots"
+							]
+						}
+					},
+					{
+						"key": "diamond_leggings",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/leggings/diamond_leggings"
+							]
+						}
+					},
+					{
+						"key": "golden_leggings",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/leggings/golden_leggings"
+							]
+						}
+					},
+					{
+						"key": "chainmail_leggings",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/leggings/chainmail_leggings"
+							]
+						}
+					},
+					{
+						"key": "netherite_leggings",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/leggings/netherite_leggings"
+							]
+						}
+					},
+					{
+						"key": "iron_leggings",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/leggings/iron_leggings"
+							]
+						}
+					},
+					{
+						"key": "stone_pickaxe",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pickaxe/stone_pickaxe"
+							]
+						}
+					},
+					{
+						"key": "iron_pickaxe",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pickaxe/iron_pickaxe"
+							]
+						}
+					},
+					{
+						"key": "diamond_pickaxe",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pickaxe/diamond_pickaxe"
+							]
+						}
+					},
+					{
+						"key": "netherite_pickaxe",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pickaxe/netherite_pickaxe"
+							]
+						}
+					},
+					{
+						"key": "wooden_axe",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/axe/wooden_axe"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/axe/wooden_axe"
+								]
+							}
+						]
+					},
+					{
+						"key": "stone_axe",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/axe/stone_axe"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/axe/stone_axe"
+								]
+							}
+						]
+					},
+					{
+						"key": "iron_axe",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/axe/iron_axe"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/axe/iron_axe"
+								]
+							}
+						]
+					},
+					{
+						"key": "diamond_axe",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/axe/diamond_axe"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/axe/diamond_axe"
+								]
+							}
+						]
+					},
+					{
+						"key": "netherite_axe",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/axe/netherite_axe"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/axe/netherite_axe"
+								]
+							}
+						]
+					},
+					{
+						"key": "golden_axe",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/axe/golden_axe"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/axe/golden_axe"
+								]
+							}
+						]
+					},
+					{
+						"key": "trident",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/trident/trident"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/trident/trident"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

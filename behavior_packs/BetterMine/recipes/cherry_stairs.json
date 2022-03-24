@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "better:cherry_stairs"
+    },
+    "tags": [ 
+      "crafting_table" 
+    ],
+    "group": "wooden_stairs",
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "better:cherry_planks"
+      }
+    },
+    "result": {
+      "item": "better:cherry_stairs",
+      "count": 4
+    }
+  }
+}

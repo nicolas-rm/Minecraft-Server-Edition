@@ -1,0 +1,1 @@
+give @s wr:cobbled_grimstone

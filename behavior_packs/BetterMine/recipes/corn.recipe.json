@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "better:corn"
+    },
+    "tags": [ 
+      "crafting_table" 
+    ],
+    "group": "wooden_stairs",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "better:corn_cob"
+      }
+    },
+    "result": {
+      "item": "better:corn",
+      "count": 5
+    }
+  }
+}

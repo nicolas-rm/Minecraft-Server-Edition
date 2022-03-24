@@ -1,0 +1,50 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ray:se_chainmail_helmet",
+			"category": "commands"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 12,
+				"slot": "armor_head"
+			},
+			"minecraft:durability": {
+				"max_damage": 165,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				},
+				"max_durability": 165
+			},
+			"minecraft:armor": {
+				"protection": 2
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.head"
+			},
+			"minecraft:foil": true,
+			"minecraft:display_name": {
+				"value": "§bChainmail Helmet\n§7Sculk Eyes"
+			},
+			"minecraft:icon": {
+				"texture": "chainmail_helmet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"ray:se_chainmail_helmet",
+							"minecraft:chainmail_helmet"
+						],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			}
+		},
+		"events": {}
+	}
+}

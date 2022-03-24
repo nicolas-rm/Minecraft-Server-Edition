@@ -1,0 +1,274 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "items",
+			"identifier": "better:random"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.enchantedBook"
+			},
+			"minecraft:icon": {
+				"texture": "book_enchanted"
+			},
+			"minecraft:display_name": {
+				"value": "§5Magic Book §b(§kXxxxx Xxxxxxx§b)"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 99999,
+			"minecraft:foil": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "better:cast_spell",
+					"target": "self"
+				}
+			},
+			"minecraft:cooldown": {
+				"category": "magic",
+				"duration": 4.2
+			}
+		},
+		"events": {
+			"better:cast_spell": {
+				"sequence": [
+					{
+						"add_mob_effect": {
+							"effect": "slowness",
+							"target": "holder",
+							"duration": 2,
+							"amplifier": 2
+						}
+					},
+					{
+						"randomize": [
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"function thunderstorm"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"weather clear"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon zombie"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"give @p diamond"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon wither_skeleton"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon evocation_illager"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon better:illusionist"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon witch"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon better:villager_witch"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"function camp"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"function house"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"function witchspell"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon better:villager_cc"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon lightning_bolt"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon skeleton_horse"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"give @p netherite_ingot"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"kill @r"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"effect @r nausea 10 10"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"effect @r levitation"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"effect @e slowness 10 10"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"time set day"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"time set night"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"time set noon"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"time set sunrise"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"time set sunset"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"time set midnight"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"teleport": {
+									"target": "holder",
+									"max_range": [512, 512, 512]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"summon better:specter"
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

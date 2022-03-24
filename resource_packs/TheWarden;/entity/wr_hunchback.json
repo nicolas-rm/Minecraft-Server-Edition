@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wr:hunchback",
+      "textures": {
+        "default": "textures/entity/pamobile/wr_hunchback"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.wr_hunchback"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "wr:hunchback",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.wr_hunchback.walking",
+        "idle": "animation.wr_hunchback.walking",
+        "mad": "animation.wr_hunchback.attackplayer"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "mad": "query.is_moving && query.is_angry"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

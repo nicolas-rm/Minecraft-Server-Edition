@@ -1,0 +1,16 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:sword_42db"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Sword of 42 dimensions blade"
+      },
+      "minecraft:icon": {
+        "texture": "sword_42db"
+      }
+    }
+  }
+}

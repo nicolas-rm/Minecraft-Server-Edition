@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:wildfire",
+      "materials": {
+        "body": "blaze_body",
+        "head": "blaze_head"
+      },
+      "textures": {
+        "default": "textures/entity/wildfire"
+      },
+      "geometry": {
+        "default": "geometry.wildfire"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.hovering_inferno.spin",
+        "roar": "animation.hovering_inferno.shockwave",
+        "defend": "animation.hovering_inferno.defend",
+		"move_controller": "controller.animation.blazeking.move",
+		"flame_controller": "controller.animation.blaze.flame"
+      },
+      "scripts": {
+        "pre_animation": [
+		  "variable.not_defending = query.variant == 0;",
+		  "variable.defending = query.variant == 1;"
+        ],
+        "animate": [
+          "move_controller",
+          "flame_controller",
+		  { "defend": "variable.defending" }
+        ]
+      },
+      "particle_effects": {
+        "smoke": "minecraft:campfire_smoke_particle",
+        "trail_effect": "minecraft:campfire_smoke_particle",
+        "charged_flames": "minecraft:mobflame_emitter"
+      },
+      "render_controllers": [ "controller.render.blaze" ],
+      "spawn_egg": {
+        "texture": "egg_wildfire"
+      },
+      "enable_attachables": false
+    }
+  }
+}

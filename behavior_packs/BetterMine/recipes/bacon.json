@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:bacon"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "better:salted_porkchop"
+      }
+    },
+    "result": {
+      "item": "better:bacon"
+    }
+  }
+}
