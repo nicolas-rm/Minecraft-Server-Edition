@@ -1,0 +1,21 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:catalyst_feature": {
+    "description": {
+      "identifier": "minecraft:sculk_catalyst_feature"
+    },
+    "can_place_sculk_catalyst_on": [
+      "minecraft:stone",
+      "minecraft:deepslate",
+      "minecraft:grass",
+      "minecraft:dirt"
+    ],
+    "central_block": "minecraft:sculk_catalyst",
+    "patch_feature": "minecraft:sculk_patch_feature",
+    "central_patch_feature": "minecraft:sculk_catalyst_central_patch_feature",
+    "vertical_range": 13,
+    "pathes_count_min": 3,
+    "pathes_count_max": 7,
+    "max_patch_distance": 16
+  }
+}
