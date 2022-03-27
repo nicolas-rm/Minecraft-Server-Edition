@@ -3,5 +3,14 @@
 	{
 		"pack_id" : "133d87b1-dd0f-44b5-9766-ce3f1965428b",
 		"version" : [ 0, 0, 1 ]
+	},
+	{
+		"pack_id" : "18e257c8-b760-4d76-9ca5-f12a8497d083",
+		"version" : [ 0, 1, 0 ]
+	},
+	{
+		"uuid": "5377ded8-4f82-4bec-94ae-57f2d4725e1e",
+		"version":[ 0, 1, 0 ]
 	}
+	
 ]
