@@ -1,0 +1,184 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mythmob:orc",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:orc_angry": {
+				"minecraft:angry": {
+					"duration": 25,
+					"broadcastAnger": false,
+					"calm_event": {
+						"event": "minecraft:stop_aggro",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:default_targeting": {
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "snowgolem"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "irongolem"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "wandering_trader"
+									}
+								]
+							},
+							"max_dist": 20
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "villager"
+									},
+									{
+										"test": "has_component",
+										"subject": "other",
+										"operator": "!=",
+										"value": "minecraft:is_baby"
+									}
+								]
+							},
+							"max_dist": 20
+						}
+					],
+					"must_see": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:nameable": {
+				"alwaysShow": true,
+				"allowNameTagRenaming": false
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:health": {
+				"value": 50,
+				"max": 200
+			},
+			"minecraft:scale": {
+				"value": 1.2
+			},
+			"minecraft:collision_box": {
+				"width": 0.7,
+				"height": 2.1
+			},
+			"minecraft:attack": {
+				"damage": 5
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/orc.json"
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"can_pass_doors": true,
+				"can_open_doors": true,
+				"avoid_water": true,
+				"avoid_portals": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:knockback_resistance": {
+				"value": 0.5
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:burns_in_daylight": false,
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"target_dist": 1.2,
+				"speed_multiplier": 1.25,
+				"track_target": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 6,
+				"look_distance": 8
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 6
+			},
+			"minecraft:type_family": {
+				"family": [
+					"zombie_pigman",
+					"orc",
+					"undead",
+					"monster"
+				]
+			},
+			"minecraft:on_target_acquired": {
+				"event": "minecraft:become_aggro",
+				"target": "self"
+			},
+			"minecraft:on_target_escape": {
+				"event": "minecraft:stop_aggro",
+				"target": "self"
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:physics": {},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"events": {
+			"minecraft:become_aggro": {
+				"add": {
+					"component_groups": [
+						"minecraft:orc_angry"
+					]
+				}
+			},
+			"minecraft:stop_aggro": {
+				"remove": {
+					"component_groups": [
+						"minecraft:orc_angry"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {}
+		}
+	}
+}

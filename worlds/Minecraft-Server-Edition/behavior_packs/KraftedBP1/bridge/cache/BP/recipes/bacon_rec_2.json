@@ -1,0 +1,211 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\bacon_rec_2.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "104cd5ea_8063_468c_80c9_4666c29640e1",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:bacon_rec_2"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"##"
+						],
+						"key": {
+							"#": {
+								"item": "strat:porkchop"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:bacon",
+								"count": 3
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:bacon",
+									"count": 3
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:bacon_rec_2"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:bacon",
+									"count": 3
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:bacon",
+									"count": 3
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"##"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:bacon",
+									"count": 3
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:porkchop"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:porkchop"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:bacon",
+									"count": 3
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:bacon",
+										"count": 3
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:bacon",
+									"count": 3
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

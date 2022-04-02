@@ -1,0 +1,1607 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:iron_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:iron_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:diamond_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:diamond_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:netherite_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:netherite_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tin_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tin_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:bronce_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:bronce_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:ruby_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:ruby_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:jade_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:jade_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:migtinio_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:migtinio_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:paladium_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:paladium_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:onyx_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:onyx_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tourmaline_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tourmaline_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:cobalto_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:cobalto_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:enderite_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:enderite_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tin_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tin_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:bronce_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:bronce_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:ruby_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:ruby_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:jade_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:jade_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:migtinio_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:migtinio_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:paladium_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:paladium_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:onyx_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:onyx_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tourmaline_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tourmaline_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:cobalto_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:cobalto_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:enderite_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:enderite_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:wooden_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:wooden_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:stone_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:stone_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:iron_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:iron_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:gold_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:gold_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:diamond_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:diamond_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:quartz_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:quartz_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:netherite_hammer",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:netherite_hammer",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:onyx_ore",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    }
+  ]
+}

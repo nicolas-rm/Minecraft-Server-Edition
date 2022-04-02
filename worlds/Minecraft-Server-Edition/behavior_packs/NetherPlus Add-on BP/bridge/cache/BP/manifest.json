@@ -1,0 +1,313 @@
+{
+	"file_path": "C:\\Users\\Marco\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Nether Plus Add-on 1.17 B\\manifest.json",
+	"file_type": "manifest_bp",
+	"format_version": 1,
+	"file_uuid": "43f3982f_a05a_4b4d_af82_fb8cbd9e1fa2",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "2",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "§l§6NetherPlus §fAdd-on §4[B]",
+						"description": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+						"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+						"version": [
+							0,
+							9,
+							3
+						],
+						"min_engine_version": [
+							1,
+							13,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "fd5ed3b2-12f4-49f2-842f-54e5a2a70e0a",
+							"version": [
+								0,
+								9,
+								3
+							]
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								0,
+								9,
+								3
+							],
+							"uuid": "8fed2295-75e7-427f-92ba-0768cd56cb8a"
+						}
+					]
+				},
+				"key": "header",
+				"children": [
+					{
+						"open": {
+							"name": "§l§6NetherPlus §fAdd-on §4[B]",
+							"description": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+							"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+							"version": [
+								0,
+								9,
+								3
+							],
+							"min_engine_version": [
+								1,
+								13,
+								0
+							]
+						},
+						"data": "§l§6NetherPlus §fAdd-on §4[B]",
+						"key": "name"
+					},
+					{
+						"open": {
+							"name": "§l§6NetherPlus §fAdd-on §4[B]",
+							"description": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+							"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+							"version": [
+								0,
+								9,
+								3
+							],
+							"min_engine_version": [
+								1,
+								13,
+								0
+							]
+						},
+						"data": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+						"key": "description"
+					},
+					{
+						"data": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+						"key": "uuid"
+					},
+					{
+						"open": {
+							"name": "§l§6NetherPlus §fAdd-on §4[B]",
+							"description": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+							"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+							"version": [
+								0,
+								9,
+								3
+							],
+							"min_engine_version": [
+								1,
+								13,
+								0
+							]
+						},
+						"key": "version",
+						"is_minified": true,
+						"children": [
+							0,
+							9,
+							3
+						]
+					},
+					{
+						"open": {
+							"name": "§l§6NetherPlus §fAdd-on §4[B]",
+							"description": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+							"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+							"version": [
+								0,
+								9,
+								3
+							],
+							"min_engine_version": [
+								1,
+								13,
+								0
+							]
+						},
+						"key": "min_engine_version",
+						"is_minified": true,
+						"children": [
+							1,
+							13,
+							0
+						]
+					}
+				]
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "§l§6NetherPlus §fAdd-on §4[B]",
+						"description": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+						"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+						"version": [
+							0,
+							9,
+							3
+						],
+						"min_engine_version": [
+							1,
+							13,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "fd5ed3b2-12f4-49f2-842f-54e5a2a70e0a",
+							"version": [
+								0,
+								9,
+								3
+							]
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								0,
+								9,
+								3
+							],
+							"uuid": "8fed2295-75e7-427f-92ba-0768cd56cb8a"
+						}
+					]
+				},
+				"key": "modules",
+				"children": [
+					{
+						"open": [
+							{
+								"type": "data",
+								"uuid": "fd5ed3b2-12f4-49f2-842f-54e5a2a70e0a",
+								"version": [
+									0,
+									9,
+									3
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "data",
+								"key": "type"
+							},
+							{
+								"data": "fd5ed3b2-12f4-49f2-842f-54e5a2a70e0a",
+								"key": "uuid"
+							},
+							{
+								"open": {
+									"type": "data",
+									"uuid": "fd5ed3b2-12f4-49f2-842f-54e5a2a70e0a",
+									"version": [
+										0,
+										9,
+										3
+									]
+								},
+								"key": "version",
+								"is_minified": true,
+								"children": [
+									0,
+									9,
+									3
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "§l§6NetherPlus §fAdd-on §4[B]",
+						"description": "New Nether Plus 1.17 Update! §6[By: TwitchTube and MarcoGamer]",
+						"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+						"version": [
+							0,
+							9,
+							3
+						],
+						"min_engine_version": [
+							1,
+							13,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "fd5ed3b2-12f4-49f2-842f-54e5a2a70e0a",
+							"version": [
+								0,
+								9,
+								3
+							]
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								0,
+								9,
+								3
+							],
+							"uuid": "8fed2295-75e7-427f-92ba-0768cd56cb8a"
+						}
+					]
+				},
+				"key": "dependencies",
+				"children": [
+					{
+						"open": [
+							{
+								"version": [
+									0,
+									9,
+									3
+								],
+								"uuid": "8fed2295-75e7-427f-92ba-0768cd56cb8a"
+							}
+						],
+						"children": [
+							{
+								"open": {
+									"version": [
+										0,
+										9,
+										3
+									],
+									"uuid": "8fed2295-75e7-427f-92ba-0768cd56cb8a"
+								},
+								"key": "version",
+								"is_minified": true,
+								"children": [
+									0,
+									9,
+									3
+								]
+							},
+							{
+								"data": "8fed2295-75e7-427f-92ba-0768cd56cb8a",
+								"key": "uuid"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

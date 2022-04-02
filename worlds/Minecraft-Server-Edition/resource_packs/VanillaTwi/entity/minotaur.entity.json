@@ -1,0 +1,54 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mythmob:minotaur",
+			"materials": {
+				"default": "vindicator"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/minotaur"
+			},
+			"geometry": {
+				"default": "geometry.minotaur"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+					"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+				],
+				"scale": 0.9375
+			},
+			"animations": {
+				"minotaur_base": "animation.minotaur.base",
+				"move": "animation.minotaur.move",
+				"attack": "animation.minotaur.attack",
+				"look_at_target_default": "animation.kobold.look_at_target.default",
+				"minotaur_angry": "animation.minotaur.base_angry"
+			},
+			"animation_controllers": [
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"minotaur_base": "controller.animation.minotaur.base"
+				},
+				{
+					"move": "controller.animation.minotaur.move"
+				},
+				{
+					"attack": "controller.animation.minotaur.attack"
+				}
+			],
+			"render_controllers": [
+				"controller.render.vindicator"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#3D3123",
+				"overlay_color": "#E9967A"
+			}
+		}
+	}
+}

@@ -1,0 +1,263 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\sausage_sandwich_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "25da738d_c397_4921_af27_6513d0390688",
+	"file_version": 12,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "strat:sausage_sandwich_rec"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "strat:cooked_sausage",
+								"count": 1
+							},
+							{
+								"item": "strat:bread_slice",
+								"count": 2
+							},
+							{
+								"item": "strat:cooked_sausage",
+								"count": 1
+							}
+						],
+						"result": [
+							{
+								"item": "strat:sausage_sandwich",
+								"count": 1
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_sandwich_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:sausage_sandwich",
+									"count": 1
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:sausage_sandwich_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_sandwich_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:sausage_sandwich",
+									"count": 1
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_sandwich_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:sausage_sandwich",
+									"count": 1
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:cooked_sausage",
+										"count": 1
+									},
+									{
+										"item": "strat:bread_slice",
+										"count": 2
+									},
+									{
+										"item": "strat:cooked_sausage",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:cooked_sausage",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:cooked_sausage",
+										"count": 1
+									},
+									{
+										"item": "strat:bread_slice",
+										"count": 2
+									},
+									{
+										"item": "strat:cooked_sausage",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:bread_slice",
+									"count": 2
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:cooked_sausage",
+										"count": 1
+									},
+									{
+										"item": "strat:bread_slice",
+										"count": 2
+									},
+									{
+										"item": "strat:cooked_sausage",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:cooked_sausage",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_sandwich_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cooked_sausage",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:sausage_sandwich",
+									"count": 1
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:sausage_sandwich",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:sausage_sandwich",
+									"count": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

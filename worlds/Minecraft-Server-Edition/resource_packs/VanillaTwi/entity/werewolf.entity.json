@@ -1,0 +1,49 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mythmob:werewolf2",
+			"materials": {
+				"default": "vindicator",
+				"head": "werewolf_glowingeyes"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/werewolf2"
+			},
+			"geometry": {
+				"default": "geometry.werewolf"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180.0;",
+					"variable.attack2 = Math.sin(variable.attack_time * -180.0);"
+				],
+				"scale": 0.9375
+			},
+			"animations": {
+				"vindicator_attack": "animation.giant.attack",
+				"vindicator_walk": "animation.vindicator.walk"
+			},
+			"animation_controllers": [
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"vindicator_base": "controller.animation.vindicator.base.v1.0"
+				},
+				{
+					"riding": "controller.animation.humanoid.riding"
+				}
+			],
+			"render_controllers": [
+				"controller.render.vindicator"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#4a342c",
+				"overlay_color": "#590c9f"
+			}
+		}
+	}
+}

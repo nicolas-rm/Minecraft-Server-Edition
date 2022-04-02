@@ -1,0 +1,1980 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\VanillaTwi\\entities\\kobold_banner.behavior.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "166d9a2b_ff76_4ca1_86a2_bd45b62d4dd8",
+	"file_version": 28,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "vanilla_twilight:kobold_banner",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"component_groups": {
+							"despawn": {
+								"minecraft:instant_despawn": {},
+								"minecraft:timer": {
+									"time": 0.1,
+									"time_down_event": {
+										"event": "kill_lead"
+									}
+								}
+							}
+						},
+						"components": {
+							"minecraft:type_family": {
+								"family": [
+									"kobold_banner"
+								]
+							},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0
+							},
+							"minecraft:collision_box": {
+								"width": 0,
+								"height": 0
+							},
+							"minecraft:nameable": {},
+							"minecraft:health": {
+								"value": 4,
+								"max": 4
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:movement": {
+								"value": 0.25
+							},
+							"minecraft:navigation.walk": {
+								"can_path_over_water": true,
+								"avoid_damage_blocks": true
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:jump.static": {},
+							"minecraft:can_climb": {},
+							"minecraft:behavior.float": {
+								"priority": 0
+							},
+							"minecraft:behavior.panic": {
+								"priority": 1,
+								"speed_multiplier": 1.5
+							},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:conditional_bandwidth_optimization": {},
+							"minecraft:spawn_entity": {
+								"entities": [
+									{
+										"min_wait_time": 0,
+										"max_wait_time": 0,
+										"spawn_entity": "vanilla_twilight:kobold",
+										"spawn_event": "minecraft:entity_spawned_from_bell",
+										"single_use": true,
+										"num_to_spawn": 1,
+										"should_leash": true
+									}
+								]
+							},
+							"minecraft:entity_sensor": {
+								"event_filters": {
+									"subject": "self",
+									"test": "is_riding",
+									"value": false,
+									"operator": "=="
+								},
+								"event": "despawn"
+							},
+							"minecraft:balloonable": {
+								"mass": 0.5
+							},
+							"minecraft:damage_sensor": {
+								"triggers": {
+									"on_damage": {
+										"filters": {
+											"any_of": [
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "player"
+												}
+											]
+										}
+									},
+									"deals_damage": false
+								}
+							}
+						},
+						"events": {
+							"minecraft:entity_spawned": {},
+							"despawn": {
+								"add": {
+									"component_groups": [
+										"despawn"
+									]
+								}
+							},
+							"kill_lead": {
+								"execute": {
+									"commands": [
+										"/kill @e[type=item,r=3,name=lead]"
+									]
+								}
+							}
+						}
+					}
+				},
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "vanilla_twilight:kobold_banner",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"component_groups": {
+							"despawn": {
+								"minecraft:instant_despawn": {},
+								"minecraft:timer": {
+									"time": 0.1,
+									"time_down_event": {
+										"event": "kill_lead"
+									}
+								}
+							}
+						},
+						"components": {
+							"minecraft:type_family": {
+								"family": [
+									"kobold_banner"
+								]
+							},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0
+							},
+							"minecraft:collision_box": {
+								"width": 0,
+								"height": 0
+							},
+							"minecraft:nameable": {},
+							"minecraft:health": {
+								"value": 4,
+								"max": 4
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:movement": {
+								"value": 0.25
+							},
+							"minecraft:navigation.walk": {
+								"can_path_over_water": true,
+								"avoid_damage_blocks": true
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:jump.static": {},
+							"minecraft:can_climb": {},
+							"minecraft:behavior.float": {
+								"priority": 0
+							},
+							"minecraft:behavior.panic": {
+								"priority": 1,
+								"speed_multiplier": 1.5
+							},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:conditional_bandwidth_optimization": {},
+							"minecraft:spawn_entity": {
+								"entities": [
+									{
+										"min_wait_time": 0,
+										"max_wait_time": 0,
+										"spawn_entity": "vanilla_twilight:kobold",
+										"spawn_event": "minecraft:entity_spawned_from_bell",
+										"single_use": true,
+										"num_to_spawn": 1,
+										"should_leash": true
+									}
+								]
+							},
+							"minecraft:entity_sensor": {
+								"event_filters": {
+									"subject": "self",
+									"test": "is_riding",
+									"value": false,
+									"operator": "=="
+								},
+								"event": "despawn"
+							},
+							"minecraft:balloonable": {
+								"mass": 0.5
+							},
+							"minecraft:damage_sensor": {
+								"triggers": {
+									"on_damage": {
+										"filters": {
+											"any_of": [
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "player"
+												}
+											]
+										}
+									},
+									"deals_damage": false
+								}
+							}
+						},
+						"events": {
+							"minecraft:entity_spawned": {},
+							"despawn": {
+								"add": {
+									"component_groups": [
+										"despawn"
+									]
+								}
+							},
+							"kill_lead": {
+								"execute": {
+									"commands": [
+										"/kill @e[type=item,r=3,name=lead]"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:kobold_banner",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {},
+									"minecraft:timer": {
+										"time": 0.1,
+										"time_down_event": {
+											"event": "kill_lead"
+										}
+									}
+								}
+							},
+							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"kobold_banner"
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:nameable": {},
+								"minecraft:health": {
+									"value": 4,
+									"max": 4
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement": {
+									"value": 0.25
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true,
+									"avoid_damage_blocks": true
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:behavior.float": {
+									"priority": 0
+								},
+								"minecraft:behavior.panic": {
+									"priority": 1,
+									"speed_multiplier": 1.5
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:spawn_entity": {
+									"entities": [
+										{
+											"min_wait_time": 0,
+											"max_wait_time": 0,
+											"spawn_entity": "vanilla_twilight:kobold",
+											"spawn_event": "minecraft:entity_spawned_from_bell",
+											"single_use": true,
+											"num_to_spawn": 1,
+											"should_leash": true
+										}
+									]
+								},
+								"minecraft:entity_sensor": {
+									"event_filters": {
+										"subject": "self",
+										"test": "is_riding",
+										"value": false,
+										"operator": "=="
+									},
+									"event": "despawn"
+								},
+								"minecraft:balloonable": {
+									"mass": 0.5
+								},
+								"minecraft:damage_sensor": {
+									"triggers": {
+										"on_damage": {
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													}
+												]
+											}
+										},
+										"deals_damage": false
+									}
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {},
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								},
+								"kill_lead": {
+									"execute": {
+										"commands": [
+											"/kill @e[type=item,r=3,name=lead]"
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "vanilla_twilight:kobold_banner",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:kobold_banner",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {},
+									"minecraft:timer": {
+										"time": 0.1,
+										"time_down_event": {
+											"event": "kill_lead"
+										}
+									}
+								}
+							},
+							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"kobold_banner"
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:nameable": {},
+								"minecraft:health": {
+									"value": 4,
+									"max": 4
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement": {
+									"value": 0.25
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true,
+									"avoid_damage_blocks": true
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:behavior.float": {
+									"priority": 0
+								},
+								"minecraft:behavior.panic": {
+									"priority": 1,
+									"speed_multiplier": 1.5
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:spawn_entity": {
+									"entities": [
+										{
+											"min_wait_time": 0,
+											"max_wait_time": 0,
+											"spawn_entity": "vanilla_twilight:kobold",
+											"spawn_event": "minecraft:entity_spawned_from_bell",
+											"single_use": true,
+											"num_to_spawn": 1,
+											"should_leash": true
+										}
+									]
+								},
+								"minecraft:entity_sensor": {
+									"event_filters": {
+										"subject": "self",
+										"test": "is_riding",
+										"value": false,
+										"operator": "=="
+									},
+									"event": "despawn"
+								},
+								"minecraft:balloonable": {
+									"mass": 0.5
+								},
+								"minecraft:damage_sensor": {
+									"triggers": {
+										"on_damage": {
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													}
+												]
+											}
+										},
+										"deals_damage": false
+									}
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {},
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								},
+								"kill_lead": {
+									"execute": {
+										"commands": [
+											"/kill @e[type=item,r=3,name=lead]"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
+						"children": [
+							{
+								"open": {
+									"despawn": {
+										"minecraft:instant_despawn": {},
+										"minecraft:timer": {
+											"time": 0.1,
+											"time_down_event": {
+												"event": "kill_lead"
+											}
+										}
+									}
+								},
+								"key": "despawn",
+								"children": [
+									{
+										"key": "minecraft:instant_despawn",
+										"is_minified": true,
+										"children": {}
+									},
+									{
+										"open": {
+											"minecraft:instant_despawn": {},
+											"minecraft:timer": {
+												"time": 0.1,
+												"time_down_event": {
+													"event": "kill_lead"
+												}
+											}
+										},
+										"key": "minecraft:timer",
+										"children": [
+											{
+												"data": "0.1",
+												"key": "time"
+											},
+											{
+												"open": {
+													"time": 0.1,
+													"time_down_event": {
+														"event": "kill_lead"
+													}
+												},
+												"key": "time_down_event",
+												"is_minified": true,
+												"children": {
+													"event": "kill_lead"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:kobold_banner",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {},
+									"minecraft:timer": {
+										"time": 0.1,
+										"time_down_event": {
+											"event": "kill_lead"
+										}
+									}
+								}
+							},
+							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"kobold_banner"
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:nameable": {},
+								"minecraft:health": {
+									"value": 4,
+									"max": 4
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement": {
+									"value": 0.25
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true,
+									"avoid_damage_blocks": true
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:behavior.float": {
+									"priority": 0
+								},
+								"minecraft:behavior.panic": {
+									"priority": 1,
+									"speed_multiplier": 1.5
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:spawn_entity": {
+									"entities": [
+										{
+											"min_wait_time": 0,
+											"max_wait_time": 0,
+											"spawn_entity": "vanilla_twilight:kobold",
+											"spawn_event": "minecraft:entity_spawned_from_bell",
+											"single_use": true,
+											"num_to_spawn": 1,
+											"should_leash": true
+										}
+									]
+								},
+								"minecraft:entity_sensor": {
+									"event_filters": {
+										"subject": "self",
+										"test": "is_riding",
+										"value": false,
+										"operator": "=="
+									},
+									"event": "despawn"
+								},
+								"minecraft:balloonable": {
+									"mass": 0.5
+								},
+								"minecraft:damage_sensor": {
+									"triggers": {
+										"on_damage": {
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													}
+												]
+											}
+										},
+										"deals_damage": false
+									}
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {},
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								},
+								"kill_lead": {
+									"execute": {
+										"commands": [
+											"/kill @e[type=item,r=3,name=lead]"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"kobold_banner"
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:nameable": {},
+									"minecraft:health": {
+										"value": 4,
+										"max": 4
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true,
+										"avoid_damage_blocks": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.float": {
+										"priority": 0
+									},
+									"minecraft:behavior.panic": {
+										"priority": 1,
+										"speed_multiplier": 1.5
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:spawn_entity": {
+										"entities": [
+											{
+												"min_wait_time": 0,
+												"max_wait_time": 0,
+												"spawn_entity": "vanilla_twilight:kobold",
+												"spawn_event": "minecraft:entity_spawned_from_bell",
+												"single_use": true,
+												"num_to_spawn": 1,
+												"should_leash": true
+											}
+										]
+									},
+									"minecraft:entity_sensor": {
+										"event_filters": {
+											"subject": "self",
+											"test": "is_riding",
+											"value": false,
+											"operator": "=="
+										},
+										"event": "despawn"
+									},
+									"minecraft:balloonable": {
+										"mass": 0.5
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"kobold_banner"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"kobold_banner"
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"total_supply": 15,
+									"suffocate_time": 0
+								}
+							},
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"kobold_banner"
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:nameable": {},
+									"minecraft:health": {
+										"value": 4,
+										"max": 4
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true,
+										"avoid_damage_blocks": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.float": {
+										"priority": 0
+									},
+									"minecraft:behavior.panic": {
+										"priority": 1,
+										"speed_multiplier": 1.5
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:spawn_entity": {
+										"entities": [
+											{
+												"min_wait_time": 0,
+												"max_wait_time": 0,
+												"spawn_entity": "vanilla_twilight:kobold",
+												"spawn_event": "minecraft:entity_spawned_from_bell",
+												"single_use": true,
+												"num_to_spawn": 1,
+												"should_leash": true
+											}
+										]
+									},
+									"minecraft:entity_sensor": {
+										"event_filters": {
+											"subject": "self",
+											"test": "is_riding",
+											"value": false,
+											"operator": "=="
+										},
+										"event": "despawn"
+									},
+									"minecraft:balloonable": {
+										"mass": 0.5
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0,
+									"height": 0
+								}
+							},
+							{
+								"key": "minecraft:nameable",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 4,
+									"max": 4
+								}
+							},
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"kobold_banner"
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:nameable": {},
+									"minecraft:health": {
+										"value": 4,
+										"max": 4
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true,
+										"avoid_damage_blocks": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.float": {
+										"priority": 0
+									},
+									"minecraft:behavior.panic": {
+										"priority": 1,
+										"speed_multiplier": 1.5
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:spawn_entity": {
+										"entities": [
+											{
+												"min_wait_time": 0,
+												"max_wait_time": 0,
+												"spawn_entity": "vanilla_twilight:kobold",
+												"spawn_event": "minecraft:entity_spawned_from_bell",
+												"single_use": true,
+												"num_to_spawn": 1,
+												"should_leash": true
+											}
+										]
+									},
+									"minecraft:entity_sensor": {
+										"event_filters": {
+											"subject": "self",
+											"test": "is_riding",
+											"value": false,
+											"operator": "=="
+										},
+										"event": "despawn"
+									},
+									"minecraft:balloonable": {
+										"mass": 0.5
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"key": "minecraft:hurt_on_condition",
+								"children": [
+									{
+										"open": {
+											"damage_conditions": [
+												{
+													"filters": {
+														"test": "in_lava",
+														"subject": "self",
+														"operator": "==",
+														"value": true
+													},
+													"cause": "lava",
+													"damage_per_tick": 4
+												}
+											]
+										},
+										"key": "damage_conditions",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"test": "in_lava",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														},
+														"cause": "lava",
+														"damage_per_tick": 4
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"test": "in_lava",
+																"subject": "self",
+																"operator": "==",
+																"value": true
+															},
+															"cause": "lava",
+															"damage_per_tick": 4
+														},
+														"key": "filters",
+														"is_minified": true,
+														"children": {
+															"test": "in_lava",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														}
+													},
+													{
+														"data": "lava",
+														"key": "cause"
+													},
+													{
+														"open": {
+															"filters": {
+																"test": "in_lava",
+																"subject": "self",
+																"operator": "==",
+																"value": true
+															},
+															"cause": "lava",
+															"damage_per_tick": 4
+														},
+														"data": "4",
+														"key": "damage_per_tick"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.25
+								}
+							},
+							{
+								"key": "minecraft:navigation.walk",
+								"is_minified": true,
+								"children": {
+									"can_path_over_water": true,
+									"avoid_damage_blocks": true
+								}
+							},
+							{
+								"key": "minecraft:movement.basic",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:can_climb",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:behavior.float",
+								"is_minified": true,
+								"children": {
+									"priority": 0
+								}
+							},
+							{
+								"key": "minecraft:behavior.panic",
+								"is_minified": true,
+								"children": {
+									"priority": 1,
+									"speed_multiplier": 1.5
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:conditional_bandwidth_optimization",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"kobold_banner"
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:nameable": {},
+									"minecraft:health": {
+										"value": 4,
+										"max": 4
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true,
+										"avoid_damage_blocks": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.float": {
+										"priority": 0
+									},
+									"minecraft:behavior.panic": {
+										"priority": 1,
+										"speed_multiplier": 1.5
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:spawn_entity": {
+										"entities": [
+											{
+												"min_wait_time": 0,
+												"max_wait_time": 0,
+												"spawn_entity": "vanilla_twilight:kobold",
+												"spawn_event": "minecraft:entity_spawned_from_bell",
+												"single_use": true,
+												"num_to_spawn": 1,
+												"should_leash": true
+											}
+										]
+									},
+									"minecraft:entity_sensor": {
+										"event_filters": {
+											"subject": "self",
+											"test": "is_riding",
+											"value": false,
+											"operator": "=="
+										},
+										"event": "despawn"
+									},
+									"minecraft:balloonable": {
+										"mass": 0.5
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"key": "minecraft:spawn_entity",
+								"children": [
+									{
+										"open": {
+											"entities": [
+												{
+													"min_wait_time": 0,
+													"max_wait_time": 0,
+													"spawn_entity": "vanilla_twilight:kobold",
+													"spawn_event": "minecraft:entity_spawned_from_bell",
+													"single_use": true,
+													"num_to_spawn": 1,
+													"should_leash": true
+												}
+											]
+										},
+										"key": "entities",
+										"children": [
+											{
+												"open": [
+													{
+														"min_wait_time": 0,
+														"max_wait_time": 0,
+														"spawn_entity": "vanilla_twilight:kobold",
+														"spawn_event": "minecraft:entity_spawned_from_bell",
+														"single_use": true,
+														"num_to_spawn": 1,
+														"should_leash": true
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"min_wait_time": 0,
+													"max_wait_time": 0,
+													"spawn_entity": "vanilla_twilight:kobold",
+													"spawn_event": "minecraft:entity_spawned_from_bell",
+													"single_use": true,
+													"num_to_spawn": 1,
+													"should_leash": true
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"kobold_banner"
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:nameable": {},
+									"minecraft:health": {
+										"value": 4,
+										"max": 4
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true,
+										"avoid_damage_blocks": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.float": {
+										"priority": 0
+									},
+									"minecraft:behavior.panic": {
+										"priority": 1,
+										"speed_multiplier": 1.5
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:spawn_entity": {
+										"entities": [
+											{
+												"min_wait_time": 0,
+												"max_wait_time": 0,
+												"spawn_entity": "vanilla_twilight:kobold",
+												"spawn_event": "minecraft:entity_spawned_from_bell",
+												"single_use": true,
+												"num_to_spawn": 1,
+												"should_leash": true
+											}
+										]
+									},
+									"minecraft:entity_sensor": {
+										"event_filters": {
+											"subject": "self",
+											"test": "is_riding",
+											"value": false,
+											"operator": "=="
+										},
+										"event": "despawn"
+									},
+									"minecraft:balloonable": {
+										"mass": 0.5
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"key": "minecraft:entity_sensor",
+								"children": [
+									{
+										"open": {
+											"event_filters": {
+												"subject": "self",
+												"test": "is_riding",
+												"value": false,
+												"operator": "=="
+											},
+											"event": "despawn"
+										},
+										"key": "event_filters",
+										"is_minified": true,
+										"children": {
+											"subject": "self",
+											"test": "is_riding",
+											"value": false,
+											"operator": "=="
+										}
+									},
+									{
+										"open": {
+											"event_filters": {
+												"subject": "self",
+												"test": "is_riding",
+												"value": false,
+												"operator": "=="
+											},
+											"event": "despawn"
+										},
+										"data": "despawn",
+										"key": "event"
+									}
+								]
+							},
+							{
+								"key": "minecraft:balloonable",
+								"is_minified": true,
+								"children": {
+									"mass": 0.5
+								}
+							},
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"kobold_banner"
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:nameable": {},
+									"minecraft:health": {
+										"value": 4,
+										"max": 4
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true,
+										"avoid_damage_blocks": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.float": {
+										"priority": 0
+									},
+									"minecraft:behavior.panic": {
+										"priority": 1,
+										"speed_multiplier": 1.5
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:spawn_entity": {
+										"entities": [
+											{
+												"min_wait_time": 0,
+												"max_wait_time": 0,
+												"spawn_entity": "vanilla_twilight:kobold",
+												"spawn_event": "minecraft:entity_spawned_from_bell",
+												"single_use": true,
+												"num_to_spawn": 1,
+												"should_leash": true
+											}
+										]
+									},
+									"minecraft:entity_sensor": {
+										"event_filters": {
+											"subject": "self",
+											"test": "is_riding",
+											"value": false,
+											"operator": "=="
+										},
+										"event": "despawn"
+									},
+									"minecraft:balloonable": {
+										"mass": 0.5
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												}
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"key": "minecraft:damage_sensor",
+								"children": [
+									{
+										"open": {
+											"triggers": {
+												"on_damage": {
+													"filters": {
+														"any_of": [
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "player"
+															}
+														]
+													}
+												},
+												"deals_damage": false
+											}
+										},
+										"key": "triggers",
+										"children": [
+											{
+												"open": {
+													"on_damage": {
+														"filters": {
+															"any_of": [
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "player"
+																}
+															]
+														}
+													},
+													"deals_damage": false
+												},
+												"key": "on_damage",
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"any_of": [
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "player"
+																	}
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"any_of": [
+																		{
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "player"
+																		}
+																	]
+																},
+																"key": "any_of",
+																"children": [
+																	{
+																		"open": [
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "player"
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "player"
+																		}
+																	}
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": "false",
+												"key": "deals_damage"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:kobold_banner",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {},
+									"minecraft:timer": {
+										"time": 0.1,
+										"time_down_event": {
+											"event": "kill_lead"
+										}
+									}
+								}
+							},
+							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"kobold_banner"
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:nameable": {},
+								"minecraft:health": {
+									"value": 4,
+									"max": 4
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement": {
+									"value": 0.25
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true,
+									"avoid_damage_blocks": true
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:behavior.float": {
+									"priority": 0
+								},
+								"minecraft:behavior.panic": {
+									"priority": 1,
+									"speed_multiplier": 1.5
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:spawn_entity": {
+									"entities": [
+										{
+											"min_wait_time": 0,
+											"max_wait_time": 0,
+											"spawn_entity": "vanilla_twilight:kobold",
+											"spawn_event": "minecraft:entity_spawned_from_bell",
+											"single_use": true,
+											"num_to_spawn": 1,
+											"should_leash": true
+										}
+									]
+								},
+								"minecraft:entity_sensor": {
+									"event_filters": {
+										"subject": "self",
+										"test": "is_riding",
+										"value": false,
+										"operator": "=="
+									},
+									"event": "despawn"
+								},
+								"minecraft:balloonable": {
+									"mass": 0.5
+								},
+								"minecraft:damage_sensor": {
+									"triggers": {
+										"on_damage": {
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													}
+												]
+											}
+										},
+										"deals_damage": false
+									}
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {},
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								},
+								"kill_lead": {
+									"execute": {
+										"commands": [
+											"/kill @e[type=item,r=3,name=lead]"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"minecraft:entity_spawned": {},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									},
+									"kill_lead": {
+										"execute": {
+											"commands": [
+												"/kill @e[type=item,r=3,name=lead]"
+											]
+										}
+									}
+								},
+								"key": "minecraft:entity_spawned",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									},
+									"kill_lead": {
+										"execute": {
+											"commands": [
+												"/kill @e[type=item,r=3,name=lead]"
+											]
+										}
+									}
+								},
+								"key": "despawn",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"despawn"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"despawn"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"despawn"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									},
+									"kill_lead": {
+										"execute": {
+											"commands": [
+												"/kill @e[type=item,r=3,name=lead]"
+											]
+										}
+									}
+								},
+								"key": "kill_lead",
+								"children": [
+									{
+										"open": {
+											"execute": {
+												"commands": [
+													"/kill @e[type=item,r=3,name=lead]"
+												]
+											}
+										},
+										"key": "execute",
+										"children": [
+											{
+												"open": {
+													"commands": [
+														"/kill @e[type=item,r=3,name=lead]"
+													]
+												},
+												"key": "commands",
+												"is_minified": true,
+												"children": [
+													"/kill @e[type=item,r=3,name=lead]"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

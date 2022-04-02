@@ -1,0 +1,637 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\entities\\humpback_whale.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "ded57e85_a047_4a1b_b4d9_97e0a3a19161",
+	"file_version": 9,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "ocean:humpback_whale",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"components": {
+							"minecraft:collision_box": {
+								"width": 1.2,
+								"height": 1
+							},
+							"minecraft:type_family": {
+								"family": [
+									"fish"
+								]
+							},
+							"minecraft:health": {
+								"value": 30,
+								"max": 30
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:breathable": {
+								"total_supply": 240,
+								"suffocate_time": 0,
+								"breathes_air": true,
+								"breathes_water": false,
+								"generates_bubbles": false
+							},
+							"minecraft:movement": {
+								"value": 0.2
+							},
+							"minecraft:underwater_movement": {
+								"value": 0.2
+							},
+							"minecraft:navigation.generic": {
+								"is_amphibious": false,
+								"can_path_over_water": false,
+								"can_swim": true,
+								"can_walk": false,
+								"can_sink": false
+							},
+							"minecraft:jump.static": {
+								"jump_power": 0.6
+							},
+							"minecraft:can_climb": {},
+							"minecraft:behavior.swim_idle": {
+								"priority": 5
+							},
+							"minecraft:behavior.random_swim": {
+								"priority": 3,
+								"interval": 0,
+								"xz_dist": 20,
+								"y_dist": 5
+							},
+							"minecraft:behavior.random_look_around": {
+								"priority": 7
+							},
+							"minecraft:behavior.move_to_water": {
+								"priority": 1,
+								"search_range": 15,
+								"search_height": 5
+							},
+							"minecraft:physics": {
+								"has_gravity": true
+							},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:loot": {},
+							"minecraft:behavior.swim_wander": {
+								"priority": 4,
+								"interval": 10,
+								"look_ahead": 2
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ocean:humpback_whale",
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:humpback_whale",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"components": {
+								"minecraft:collision_box": {
+									"width": 1.2,
+									"height": 1
+								},
+								"minecraft:type_family": {
+									"family": [
+										"fish"
+									]
+								},
+								"minecraft:health": {
+									"value": 30,
+									"max": 30
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 240,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": false,
+									"generates_bubbles": false
+								},
+								"minecraft:movement": {
+									"value": 0.2
+								},
+								"minecraft:underwater_movement": {
+									"value": 0.2
+								},
+								"minecraft:navigation.generic": {
+									"is_amphibious": false,
+									"can_path_over_water": false,
+									"can_swim": true,
+									"can_walk": false,
+									"can_sink": false
+								},
+								"minecraft:jump.static": {
+									"jump_power": 0.6
+								},
+								"minecraft:can_climb": {},
+								"minecraft:behavior.swim_idle": {
+									"priority": 5
+								},
+								"minecraft:behavior.random_swim": {
+									"priority": 3,
+									"interval": 0,
+									"xz_dist": 20,
+									"y_dist": 5
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.move_to_water": {
+									"priority": 1,
+									"search_range": 15,
+									"search_height": 5
+								},
+								"minecraft:physics": {
+									"has_gravity": true
+								},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:loot": {},
+								"minecraft:behavior.swim_wander": {
+									"priority": 4,
+									"interval": 10,
+									"look_ahead": 2
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 1.2,
+									"height": 1
+								}
+							},
+							{
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"fish"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"fish"
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 30,
+									"max": 30
+								}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"is_minified": true,
+								"children": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								}
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"total_supply": 240,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": false,
+									"generates_bubbles": false
+								}
+							},
+							{
+								"open": {
+									"minecraft:collision_box": {
+										"width": 1.2,
+										"height": 1
+									},
+									"minecraft:type_family": {
+										"family": [
+											"fish"
+										]
+									},
+									"minecraft:health": {
+										"value": 30,
+										"max": 30
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 240,
+										"suffocate_time": 0,
+										"breathes_air": true,
+										"breathes_water": false,
+										"generates_bubbles": false
+									},
+									"minecraft:movement": {
+										"value": 0.2
+									},
+									"minecraft:underwater_movement": {
+										"value": 0.2
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": false,
+										"can_path_over_water": false,
+										"can_swim": true,
+										"can_walk": false,
+										"can_sink": false
+									},
+									"minecraft:jump.static": {
+										"jump_power": 0.6
+									},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.swim_idle": {
+										"priority": 5
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 3,
+										"interval": 0,
+										"xz_dist": 20,
+										"y_dist": 5
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 7
+									},
+									"minecraft:behavior.move_to_water": {
+										"priority": 1,
+										"search_range": 15,
+										"search_height": 5
+									},
+									"minecraft:physics": {
+										"has_gravity": true
+									},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:loot": {},
+									"minecraft:behavior.swim_wander": {
+										"priority": 4,
+										"interval": 10,
+										"look_ahead": 2
+									}
+								},
+								"key": "minecraft:movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.2
+								}
+							},
+							{
+								"open": {
+									"minecraft:collision_box": {
+										"width": 1.2,
+										"height": 1
+									},
+									"minecraft:type_family": {
+										"family": [
+											"fish"
+										]
+									},
+									"minecraft:health": {
+										"value": 30,
+										"max": 30
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 240,
+										"suffocate_time": 0,
+										"breathes_air": true,
+										"breathes_water": false,
+										"generates_bubbles": false
+									},
+									"minecraft:movement": {
+										"value": 0.2
+									},
+									"minecraft:underwater_movement": {
+										"value": 0.2
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": false,
+										"can_path_over_water": false,
+										"can_swim": true,
+										"can_walk": false,
+										"can_sink": false
+									},
+									"minecraft:jump.static": {
+										"jump_power": 0.6
+									},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.swim_idle": {
+										"priority": 5
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 3,
+										"interval": 0,
+										"xz_dist": 20,
+										"y_dist": 5
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 7
+									},
+									"minecraft:behavior.move_to_water": {
+										"priority": 1,
+										"search_range": 15,
+										"search_height": 5
+									},
+									"minecraft:physics": {
+										"has_gravity": true
+									},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:loot": {},
+									"minecraft:behavior.swim_wander": {
+										"priority": 4,
+										"interval": 10,
+										"look_ahead": 2
+									}
+								},
+								"key": "minecraft:underwater_movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.2
+								}
+							},
+							{
+								"open": {
+									"minecraft:collision_box": {
+										"width": 1.2,
+										"height": 1
+									},
+									"minecraft:type_family": {
+										"family": [
+											"fish"
+										]
+									},
+									"minecraft:health": {
+										"value": 30,
+										"max": 30
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 240,
+										"suffocate_time": 0,
+										"breathes_air": true,
+										"breathes_water": false,
+										"generates_bubbles": false
+									},
+									"minecraft:movement": {
+										"value": 0.2
+									},
+									"minecraft:underwater_movement": {
+										"value": 0.2
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": false,
+										"can_path_over_water": false,
+										"can_swim": true,
+										"can_walk": false,
+										"can_sink": false
+									},
+									"minecraft:jump.static": {
+										"jump_power": 0.6
+									},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.swim_idle": {
+										"priority": 5
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 3,
+										"interval": 0,
+										"xz_dist": 20,
+										"y_dist": 5
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 7
+									},
+									"minecraft:behavior.move_to_water": {
+										"priority": 1,
+										"search_range": 15,
+										"search_height": 5
+									},
+									"minecraft:physics": {
+										"has_gravity": true
+									},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:loot": {},
+									"minecraft:behavior.swim_wander": {
+										"priority": 4,
+										"interval": 10,
+										"look_ahead": 2
+									}
+								},
+								"key": "minecraft:navigation.generic",
+								"is_minified": true,
+								"children": {
+									"is_amphibious": false,
+									"can_path_over_water": false,
+									"can_swim": true,
+									"can_walk": false,
+									"can_sink": false
+								}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {
+									"jump_power": 0.6
+								}
+							},
+							{
+								"key": "minecraft:can_climb",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:behavior.swim_idle",
+								"is_minified": true,
+								"children": {
+									"priority": 5
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_swim",
+								"is_minified": true,
+								"children": {
+									"priority": 3,
+									"interval": 0,
+									"xz_dist": 20,
+									"y_dist": 5
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_look_around",
+								"is_minified": true,
+								"children": {
+									"priority": 7
+								}
+							},
+							{
+								"key": "minecraft:behavior.move_to_water",
+								"is_minified": true,
+								"children": {
+									"priority": 1,
+									"search_range": 15,
+									"search_height": 5
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_gravity": true
+								}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:movement.basic",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:behavior.swim_wander",
+								"is_minified": true,
+								"children": {
+									"priority": 4,
+									"interval": 10,
+									"look_ahead": 2
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

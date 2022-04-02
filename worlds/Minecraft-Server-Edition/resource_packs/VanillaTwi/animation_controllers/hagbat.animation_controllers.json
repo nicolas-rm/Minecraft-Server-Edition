@@ -1,0 +1,45 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.hagbat_pose": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"humanoid_base_pose"
+					],
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"flying": "!query.is_on_ground"
+						}
+					]
+				},
+				"flying": {
+					"blend_transition": 0.2,
+					"animations": [
+						"flying"
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.hagbat.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"move": "query.is_on_ground ? query.modified_move_speed : 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

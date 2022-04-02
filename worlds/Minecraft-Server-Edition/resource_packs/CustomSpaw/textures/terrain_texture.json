@@ -1,0 +1,86 @@
+//bridge-file-version: #15
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"sheepspawner": {
+			"textures": [
+				{
+					"path": "textures/blocks/sheepspawner"
+				}
+			]
+		},
+		"blazespawner": {
+			"textures": [
+				"textures/blocks/blazespawner"
+			]
+		},
+		"chickenspawner": {
+			"textures": [
+				"textures/blocks/chickenspawner"
+			]
+		},
+		"cowspawner": {
+			"textures": [
+				"textures/blocks/cowspawner"
+			]
+		},
+		"pigspawner": {
+			"textures": [
+				"textures/blocks/pigspawner"
+			]
+		},
+		"skeletonspawner": {
+			"textures": [
+				"textures/blocks/skeletonspawner"
+			]
+		},
+		"zombiespawner": {
+			"textures": [
+				"textures/blocks/zombiespawner"
+			]
+		},
+		"spiderspawner": {
+			"textures": [
+				"textures/blocks/spiderspawner"
+			]
+		},
+		"irongolemspawner": {
+			"textures": [
+				"textures/blocks/irongolemspawner"
+			]
+		},
+		"endermanspawner": {
+			"textures": [
+				"textures/blocks/endermanspawner"
+			]
+		},
+		"slimespawner": {
+			"textures": [
+				"textures/blocks/slimespawner"
+			]
+		},
+		"witherskeletonspawner": {
+			"textures": [
+				"textures/blocks/witherskeletonspawner"
+			]
+		},
+		"creeperspawner": {
+			"textures": [
+				"textures/blocks/creeperspawner"
+			]
+		},
+		"guardianspawner": {
+			"textures": [
+				"textures/blocks/guardianspawner"
+			]
+		},
+		"magmacubespawner": {
+			"textures": [
+				"textures/blocks/magmacubespawner"
+			]
+		}
+	}
+}

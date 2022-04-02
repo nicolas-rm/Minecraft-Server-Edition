@@ -1,0 +1,27 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:mud_bricks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"##",
+			"##"
+		],
+		"key": {
+			"#": {
+				"item": "strat:mud_brick"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:mud_bricks",
+				"count": 1
+			}
+		]
+	}
+}

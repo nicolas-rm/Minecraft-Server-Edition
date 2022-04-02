@@ -1,0 +1,273 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\spawn_rules\\humpback_whale.json",
+	"file_type": "spawn_rule",
+	"format_version": 1,
+	"file_uuid": "318e1555_6fb1_4050_91c8_bd1915e75267",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:spawn_rules": {
+						"description": {
+							"identifier": "ocean:humpback_whale",
+							"population_control": "animal"
+						},
+						"conditions": [
+							{
+								"minecraft:spawns_underwater": {},
+								"minecraft:weight": {
+									"default": 2
+								},
+								"minecraft:herd": {
+									"min_size": 1,
+									"max_size": 1
+								},
+								"minecraft:density_limit": {
+									"surface": 1,
+									"underground": 0
+								},
+								"minecraft:biome_filter": [
+									{
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "ocean"
+									}
+								]
+							}
+						]
+					}
+				},
+				"key": "minecraft:spawn_rules",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:humpback_whale",
+								"population_control": "animal"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_underwater": {},
+									"minecraft:weight": {
+										"default": 2
+									},
+									"minecraft:herd": {
+										"min_size": 1,
+										"max_size": 1
+									},
+									"minecraft:density_limit": {
+										"surface": 1,
+										"underground": 0
+									},
+									"minecraft:biome_filter": [
+										{
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "ocean"
+										}
+									]
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ocean:humpback_whale",
+							"population_control": "animal"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:humpback_whale",
+								"population_control": "animal"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_underwater": {},
+									"minecraft:weight": {
+										"default": 2
+									},
+									"minecraft:herd": {
+										"min_size": 1,
+										"max_size": 1
+									},
+									"minecraft:density_limit": {
+										"surface": 1,
+										"underground": 0
+									},
+									"minecraft:biome_filter": [
+										{
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "ocean"
+										}
+									]
+								}
+							]
+						},
+						"key": "conditions",
+						"children": [
+							{
+								"open": [
+									{
+										"minecraft:spawns_underwater": {},
+										"minecraft:weight": {
+											"default": 2
+										},
+										"minecraft:herd": {
+											"min_size": 1,
+											"max_size": 1
+										},
+										"minecraft:density_limit": {
+											"surface": 1,
+											"underground": 0
+										},
+										"minecraft:biome_filter": [
+											{
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "ocean"
+											}
+										]
+									}
+								],
+								"children": [
+									{
+										"open": {
+											"minecraft:spawns_underwater": {},
+											"minecraft:weight": {
+												"default": 2
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 1
+											},
+											"minecraft:density_limit": {
+												"surface": 1,
+												"underground": 0
+											},
+											"minecraft:biome_filter": [
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "ocean"
+												}
+											]
+										},
+										"key": "minecraft:spawns_underwater",
+										"is_minified": true,
+										"children": {}
+									},
+									{
+										"open": {
+											"minecraft:spawns_underwater": {},
+											"minecraft:weight": {
+												"default": 2
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 1
+											},
+											"minecraft:density_limit": {
+												"surface": 1,
+												"underground": 0
+											},
+											"minecraft:biome_filter": [
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "ocean"
+												}
+											]
+										},
+										"key": "minecraft:weight",
+										"is_minified": true,
+										"children": {
+											"default": 2
+										}
+									},
+									{
+										"key": "minecraft:herd",
+										"is_minified": true,
+										"children": {
+											"min_size": 1,
+											"max_size": 1
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_underwater": {},
+											"minecraft:weight": {
+												"default": 2
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 1
+											},
+											"minecraft:density_limit": {
+												"surface": 1,
+												"underground": 0
+											},
+											"minecraft:biome_filter": [
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "ocean"
+												}
+											]
+										},
+										"key": "minecraft:density_limit",
+										"is_minified": true,
+										"children": {
+											"surface": 1,
+											"underground": 0
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_underwater": {},
+											"minecraft:weight": {
+												"default": 2
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 1
+											},
+											"minecraft:density_limit": {
+												"surface": 1,
+												"underground": 0
+											},
+											"minecraft:biome_filter": [
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "ocean"
+												}
+											]
+										},
+										"key": "minecraft:biome_filter",
+										"is_minified": true,
+										"children": [
+											{
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "ocean"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

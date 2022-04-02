@@ -1,0 +1,647 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\chicken_slices.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "5c7ec7ff_a4d6_43a1_bc25_b6af872aa692",
+	"file_version": 17,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:chicken_slices",
+							"category": "nature"
+						},
+						"components": {
+							"minecraft:hand_equipped": false,
+							"minecraft:stacked_by_data": true,
+							"minecraft:use_duration": 0.4,
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.rawFood"
+							},
+							"minecraft:icon": {
+								"texture": "chicken_slices"
+							},
+							"minecraft:foil": false,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "low",
+								"can_always_eat": false,
+								"on_consume": {
+									"event": "hunger"
+								}
+							}
+						},
+						"events": {
+							"hunger": {
+								"sequence": [
+									{
+										"randomize": [
+											{
+												"weight": 7
+											},
+											{
+												"weight": 3,
+												"run_command": {
+													"command": [
+														"effect @p hunger 30 0"
+													]
+												}
+											}
+										]
+									},
+									{
+										"randomize": [
+											{
+												"weight": 199
+											},
+											{
+												"run_command": {
+													"command": [
+														"gamerule sendcommandfeedback false",
+														"give @s strat:raw_foodism_trophy",
+														"playsound strat.trophy_collected @s",
+														"effect @s nausea 10 1",
+														"gamerule sendcommandfeedback true"
+													],
+													"target": "holder"
+												},
+												"weight": 1
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chicken_slices",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "chicken_slices"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "hunger"
+									}
+								}
+							},
+							"events": {
+								"hunger": {
+									"sequence": [
+										{
+											"randomize": [
+												{
+													"weight": 7
+												},
+												{
+													"weight": 3,
+													"run_command": {
+														"command": [
+															"effect @p hunger 30 0"
+														]
+													}
+												}
+											]
+										},
+										{
+											"randomize": [
+												{
+													"weight": 199
+												},
+												{
+													"run_command": {
+														"command": [
+															"gamerule sendcommandfeedback false",
+															"give @s strat:raw_foodism_trophy",
+															"playsound strat.trophy_collected @s",
+															"effect @s nausea 10 1",
+															"gamerule sendcommandfeedback true"
+														],
+														"target": "holder"
+													},
+													"weight": 1
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:chicken_slices",
+							"category": "nature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chicken_slices",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "chicken_slices"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "hunger"
+									}
+								}
+							},
+							"events": {
+								"hunger": {
+									"sequence": [
+										{
+											"randomize": [
+												{
+													"weight": 7
+												},
+												{
+													"weight": 3,
+													"run_command": {
+														"command": [
+															"effect @p hunger 30 0"
+														]
+													}
+												}
+											]
+										},
+										{
+											"randomize": [
+												{
+													"weight": 199
+												},
+												{
+													"run_command": {
+														"command": [
+															"gamerule sendcommandfeedback false",
+															"give @s strat:raw_foodism_trophy",
+															"playsound strat.trophy_collected @s",
+															"effect @s nausea 10 1",
+															"gamerule sendcommandfeedback true"
+														],
+														"target": "holder"
+													},
+													"weight": 1
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "false",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "0.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "chicken_slices"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "hunger"
+										}
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.rawFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "chicken_slices"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "hunger"
+										}
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "chicken_slices"
+								}
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "chicken_slices"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "hunger"
+										}
+									}
+								},
+								"key": "minecraft:food",
+								"children": [
+									{
+										"data": "2",
+										"key": "nutrition"
+									},
+									{
+										"data": "low",
+										"key": "saturation_modifier"
+									},
+									{
+										"data": "false",
+										"key": "can_always_eat"
+									},
+									{
+										"open": {
+											"nutrition": 2,
+											"saturation_modifier": "low",
+											"can_always_eat": false,
+											"on_consume": {
+												"event": "hunger"
+											}
+										},
+										"key": "on_consume",
+										"is_minified": true,
+										"children": {
+											"event": "hunger"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chicken_slices",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "chicken_slices"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "hunger"
+									}
+								}
+							},
+							"events": {
+								"hunger": {
+									"sequence": [
+										{
+											"randomize": [
+												{
+													"weight": 7
+												},
+												{
+													"weight": 3,
+													"run_command": {
+														"command": [
+															"effect @p hunger 30 0"
+														]
+													}
+												}
+											]
+										},
+										{
+											"randomize": [
+												{
+													"weight": 199
+												},
+												{
+													"run_command": {
+														"command": [
+															"gamerule sendcommandfeedback false",
+															"give @s strat:raw_foodism_trophy",
+															"playsound strat.trophy_collected @s",
+															"effect @s nausea 10 1",
+															"gamerule sendcommandfeedback true"
+														],
+														"target": "holder"
+													},
+													"weight": 1
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"hunger": {
+										"sequence": [
+											{
+												"randomize": [
+													{
+														"weight": 7
+													},
+													{
+														"weight": 3,
+														"run_command": {
+															"command": [
+																"effect @p hunger 30 0"
+															]
+														}
+													}
+												]
+											},
+											{
+												"randomize": [
+													{
+														"weight": 199
+													},
+													{
+														"run_command": {
+															"command": [
+																"gamerule sendcommandfeedback false",
+																"give @s strat:raw_foodism_trophy",
+																"playsound strat.trophy_collected @s",
+																"effect @s nausea 10 1",
+																"gamerule sendcommandfeedback true"
+															],
+															"target": "holder"
+														},
+														"weight": 1
+													}
+												]
+											}
+										]
+									}
+								},
+								"key": "hunger",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"randomize": [
+														{
+															"weight": 7
+														},
+														{
+															"weight": 3,
+															"run_command": {
+																"command": [
+																	"effect @p hunger 30 0"
+																]
+															}
+														}
+													]
+												},
+												{
+													"randomize": [
+														{
+															"weight": 199
+														},
+														{
+															"run_command": {
+																"command": [
+																	"gamerule sendcommandfeedback false",
+																	"give @s strat:raw_foodism_trophy",
+																	"playsound strat.trophy_collected @s",
+																	"effect @s nausea 10 1",
+																	"gamerule sendcommandfeedback true"
+																],
+																"target": "holder"
+															},
+															"weight": 1
+														}
+													]
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"randomize": [
+															{
+																"weight": 7
+															},
+															{
+																"weight": 3,
+																"run_command": {
+																	"command": [
+																		"effect @p hunger 30 0"
+																	]
+																}
+															}
+														]
+													},
+													{
+														"randomize": [
+															{
+																"weight": 199
+															},
+															{
+																"run_command": {
+																	"command": [
+																		"gamerule sendcommandfeedback false",
+																		"give @s strat:raw_foodism_trophy",
+																		"playsound strat.trophy_collected @s",
+																		"effect @s nausea 10 1",
+																		"gamerule sendcommandfeedback true"
+																	],
+																	"target": "holder"
+																},
+																"weight": 1
+															}
+														]
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"randomize": [
+														{
+															"weight": 7
+														},
+														{
+															"weight": 3,
+															"run_command": {
+																"command": [
+																	"effect @p hunger 30 0"
+																]
+															}
+														}
+													]
+												}
+											},
+											{
+												"open": [
+													{
+														"randomize": [
+															{
+																"weight": 7
+															},
+															{
+																"weight": 3,
+																"run_command": {
+																	"command": [
+																		"effect @p hunger 30 0"
+																	]
+																}
+															}
+														]
+													},
+													{
+														"randomize": [
+															{
+																"weight": 199
+															},
+															{
+																"run_command": {
+																	"command": [
+																		"gamerule sendcommandfeedback false",
+																		"give @s strat:raw_foodism_trophy",
+																		"playsound strat.trophy_collected @s",
+																		"effect @s nausea 10 1",
+																		"gamerule sendcommandfeedback true"
+																	],
+																	"target": "holder"
+																},
+																"weight": 1
+															}
+														]
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"randomize": [
+														{
+															"weight": 199
+														},
+														{
+															"run_command": {
+																"command": [
+																	"gamerule sendcommandfeedback false",
+																	"give @s strat:raw_foodism_trophy",
+																	"playsound strat.trophy_collected @s",
+																	"effect @s nausea 10 1",
+																	"gamerule sendcommandfeedback true"
+																],
+																"target": "holder"
+															},
+															"weight": 1
+														}
+													]
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

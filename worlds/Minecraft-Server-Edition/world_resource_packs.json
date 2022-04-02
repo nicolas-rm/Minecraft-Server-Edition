@@ -1,16 +1,44 @@
 
 [
+	
+	{
+		"pack_id" : "a31ecca6-69d0-452c-b9b7-78c3cbb794d3",
+		"version" : [ 1, 1, 2 ]
+	},
+	
+	{
+		"pack_id" : "03fd8131-b0d3-4765-aebf-0097712bf726",
+		"subpack" : "cavescliffs",
+		"version" : [ 1, 1, 4 ]
+	},
+	
+	{
+		"pack_id" : "a20cddf4-aa5a-4266-9a1a-ab1c749cfc25",
+		"version" : [ 2, 0, 4 ]
+	},
+	
+	{
+		"pack_id" : "008f2e56-7e74-48b4-8f6b-457208e24e63",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "e9b3c047-d20e-4590-a3d1-55cec3e8aad9",
+		"version" : [ 1, 1, 4 ]
+	},
+	
+	{
+		"pack_id" : "4315677f-08d3-456d-b982-d3d21f39dbd2",
+		"version" : [ 4, 6, 5 ]
+	},
+	
+	{
+		"pack_id" : "6dcaa06d-498c-4bef-b10b-86fe75e0f318",
+		"version" : [ 1, 0, 3 ]
+	},
+	
 	{
 		"pack_id" : "133d87b1-dd0f-44b5-9766-ce3f1965428b",
 		"version" : [ 0, 0, 1 ]
-	},
-	{
-		"pack_id" : "18e257c8-b760-4d76-9ca5-f12a8497d083",
-		"version" : [ 0, 1, 0 ]
-	},
-	{
-		"uuid": "5377ded8-4f82-4bec-94ae-57f2d4725e1e",
-		"version":[ 0, 1, 0 ]
 	}
-	
 ]

@@ -1,0 +1,248 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\pan16.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "2baecea1_317d_4a3f_9a8b_9571eb5f20a1",
+	"file_version": 23,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:frying_pan_item"
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:cooked_bacon",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 2
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:frying_pan_item"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:cooked_bacon",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 2
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:frying_pan_item"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:frying_pan_item"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:frying_pan_item"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:frying_pan_item"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:cooked_bacon",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 2
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:cooked_bacon",
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 2,
+														"max": 2
+													}
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:cooked_bacon",
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 2,
+															"max": 2
+														}
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "strat:cooked_bacon",
+												"key": "name"
+											},
+											{
+												"open": {
+													"type": "item",
+													"name": "strat:cooked_bacon",
+													"functions": [
+														{
+															"function": "set_count",
+															"count": {
+																"min": 2,
+																"max": 2
+															}
+														}
+													]
+												},
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 2,
+																	"max": 2
+																}
+															}
+														],
+														"children": [
+															{
+																"data": "set_count",
+																"key": "function"
+															},
+															{
+																"open": {
+																	"function": "set_count",
+																	"count": {
+																		"min": 2,
+																		"max": 2
+																	}
+																},
+																"key": "count",
+																"is_minified": true,
+																"children": {
+																	"min": 2,
+																	"max": 2
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

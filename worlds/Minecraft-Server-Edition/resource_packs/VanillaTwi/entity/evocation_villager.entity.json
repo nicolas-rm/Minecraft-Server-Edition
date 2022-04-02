@@ -1,0 +1,45 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "vanilla_twilight:evocation_villager",
+			"materials": {
+				"default": "evoker"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/evocation"
+			},
+			"geometry": {
+				"default": "geometry.evoker.villager"
+			},
+			"scripts": {
+				"scale": 0.9375
+			},
+			"animations": {
+				"general": "animation.evoker.general",
+				"casting": "animation.evoker.casting",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.villager.move"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.evoker.general.v1.0"
+				},
+				{
+					"move": "controller.animation.villager.move"
+				}
+			],
+			"particle_effects": {
+				"spell": "minecraft:evoker_spell"
+			},
+			"render_controllers": [
+				"controller.render.evoker"
+			],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 14
+			}
+		}
+	}
+}

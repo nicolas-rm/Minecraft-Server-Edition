@@ -1,0 +1,46 @@
+//bridge-file-version: #2
+[
+	{
+		"flipbook_texture": "textures/blocks/phreyium_stem",
+		"atlas_tile": "phreyium_stem",
+		"ticks_per_frame": 15,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/void_liquid",
+		"atlas_tile": "void_liquid",
+		"ticks_per_frame": 12,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/mysterious_mushroom",
+		"atlas_tile": "mysterious_mushroom",
+		"ticks_per_frame": 15,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/sawmill",
+		"atlas_tile": "sawmill",
+		"ticks_per_frame": 1,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/jukebox_extended",
+		"atlas_tile": "jukebox_extended",
+		"ticks_per_frame": 5,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/firewood",
+		"atlas_tile": "firewood",
+		"ticks_per_frame": 5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/blocks/part_builder_firewood",
+		"atlas_tile": "part_builder_firewood",
+		"ticks_per_frame": 5,
+		"blend_frames": false
+	},
+	{}
+]

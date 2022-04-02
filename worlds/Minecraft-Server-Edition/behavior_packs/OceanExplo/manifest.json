@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "OceanExplorationBP",
+		"description": "An addon created by YouTuber Mr. Mastery",
+		"uuid": "e780d5a8-7183-4e23-96c6-6086cae398af",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			16,
+			100
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "7ff99ecd-afd6-4c62-88e2-f3927805c335",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.4"
+			]
+		}
+	},
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "e1df037b-565e-4adc-9fb4-4a90f29c8958"
+		}
+	]
+}

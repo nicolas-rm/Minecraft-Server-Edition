@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.giantspider": {
+      "arrays": {
+        "materials": {
+          "Array.materials": [ "Material.default", "Material.invisible" ]
+        }
+      },
+      "geometry": "Geometry.default",
+	  "part_visibility": [
+        { "bone11": "query.is_saddled" },
+        { "bone12": "query.is_saddled" },
+        { "saddle": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Array.materials[query.is_invisible]" } ],
+      "textures": [
+        "query.is_tamed ? Texture.tame : Texture.default"
+      ]
+    }
+  }
+}

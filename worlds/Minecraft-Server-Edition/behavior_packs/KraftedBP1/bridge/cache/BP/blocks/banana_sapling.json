@@ -1,0 +1,854 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\banana_sapling.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "1e3efb78_f354_4fe2_b064_d77ee4b348e2",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:banana_sapling"
+						},
+						"components": {
+							"minecraft:block_light_absorption": 0,
+							"minecraft:loot": "loot_tables/banana_sapling.json",
+							"minecraft:geometry": "geometry.crop",
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "strat_banana_sapling",
+									"render_method": "alpha_test"
+								}
+							},
+							"minecraft:breakonpush": true,
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"block_filter": [
+											"minecraft:grass",
+											"minecraft:dirt",
+											"minecraft:podzol",
+											"minecraft:sand"
+										],
+										"allowed_faces": [
+											"up"
+										]
+									}
+								]
+							},
+							"minecraft:random_ticking": {
+								"on_tick": {
+									"event": "grow"
+								}
+							},
+							"minecraft:on_interact": {
+								"event": "bone_meal",
+								"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+							},
+							"minecraft:entity_collision": false,
+							"minecraft:pick_collision": {
+								"origin": [
+									-6,
+									0,
+									-6
+								],
+								"size": [
+									12,
+									13,
+									12
+								]
+							}
+						},
+						"events": {
+							"grow": {
+								"randomize": [
+									{
+										"run_command": {
+											"command": [
+												"setblock ~ ~ ~ air",
+												"structure load banana_tree ~-2 ~ ~-2"
+											]
+										}
+									},
+									{
+										"run_command": {
+											"command": [
+												"setblock ~ ~ ~ air",
+												"structure load banana_tree2 ~-2 ~ ~-2"
+											]
+										}
+									}
+								]
+							},
+							"bone_meal": {
+								"sequence": [
+									{
+										"randomize": [
+											{
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"particle minecraft:crop_growth_emitter ~~~"
+													]
+												},
+												"weight": 1
+											},
+											{
+												"trigger": {
+													"event": "grow"
+												},
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"particle minecraft:crop_growth_emitter ~~~"
+													]
+												},
+												"weight": 5
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:banana_sapling"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 0,
+								"minecraft:loot": "loot_tables/banana_sapling.json",
+								"minecraft:geometry": "geometry.crop",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "strat_banana_sapling",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:breakonpush": true,
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"block_filter": [
+												"minecraft:grass",
+												"minecraft:dirt",
+												"minecraft:podzol",
+												"minecraft:sand"
+											],
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								},
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow"
+									}
+								},
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								},
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-6,
+										0,
+										-6
+									],
+									"size": [
+										12,
+										13,
+										12
+									]
+								}
+							},
+							"events": {
+								"grow": {
+									"randomize": [
+										{
+											"run_command": {
+												"command": [
+													"setblock ~ ~ ~ air",
+													"structure load banana_tree ~-2 ~ ~-2"
+												]
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"setblock ~ ~ ~ air",
+													"structure load banana_tree2 ~-2 ~ ~-2"
+												]
+											}
+										}
+									]
+								},
+								"bone_meal": {
+									"sequence": [
+										{
+											"randomize": [
+												{
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 1
+												},
+												{
+													"trigger": {
+														"event": "grow"
+													},
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 5
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:banana_sapling"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:banana_sapling"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 0,
+								"minecraft:loot": "loot_tables/banana_sapling.json",
+								"minecraft:geometry": "geometry.crop",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "strat_banana_sapling",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:breakonpush": true,
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"block_filter": [
+												"minecraft:grass",
+												"minecraft:dirt",
+												"minecraft:podzol",
+												"minecraft:sand"
+											],
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								},
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow"
+									}
+								},
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								},
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-6,
+										0,
+										-6
+									],
+									"size": [
+										12,
+										13,
+										12
+									]
+								}
+							},
+							"events": {
+								"grow": {
+									"randomize": [
+										{
+											"run_command": {
+												"command": [
+													"setblock ~ ~ ~ air",
+													"structure load banana_tree ~-2 ~ ~-2"
+												]
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"setblock ~ ~ ~ air",
+													"structure load banana_tree2 ~-2 ~ ~-2"
+												]
+											}
+										}
+									]
+								},
+								"bone_meal": {
+									"sequence": [
+										{
+											"randomize": [
+												{
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 1
+												},
+												{
+													"trigger": {
+														"event": "grow"
+													},
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 5
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "0",
+								"key": "minecraft:block_light_absorption"
+							},
+							{
+								"data": "loot_tables/banana_sapling.json",
+								"key": "minecraft:loot"
+							},
+							{
+								"data": "geometry.crop",
+								"key": "minecraft:geometry"
+							},
+							{
+								"key": "minecraft:material_instances",
+								"is_minified": true,
+								"children": {
+									"*": {
+										"texture": "strat_banana_sapling",
+										"render_method": "alpha_test"
+									}
+								}
+							},
+							{
+								"data": "true",
+								"key": "minecraft:breakonpush"
+							},
+							{
+								"open": {
+									"minecraft:block_light_absorption": 0,
+									"minecraft:loot": "loot_tables/banana_sapling.json",
+									"minecraft:geometry": "geometry.crop",
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strat_banana_sapling",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:breakonpush": true,
+									"minecraft:placement_filter": {
+										"conditions": [
+											{
+												"block_filter": [
+													"minecraft:grass",
+													"minecraft:dirt",
+													"minecraft:podzol",
+													"minecraft:sand"
+												],
+												"allowed_faces": [
+													"up"
+												]
+											}
+										]
+									},
+									"minecraft:random_ticking": {
+										"on_tick": {
+											"event": "grow"
+										}
+									},
+									"minecraft:on_interact": {
+										"event": "bone_meal",
+										"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+									},
+									"minecraft:entity_collision": false,
+									"minecraft:pick_collision": {
+										"origin": [
+											-6,
+											0,
+											-6
+										],
+										"size": [
+											12,
+											13,
+											12
+										]
+									}
+								},
+								"key": "minecraft:placement_filter",
+								"children": [
+									{
+										"open": {
+											"conditions": [
+												{
+													"block_filter": [
+														"minecraft:grass",
+														"minecraft:dirt",
+														"minecraft:podzol",
+														"minecraft:sand"
+													],
+													"allowed_faces": [
+														"up"
+													]
+												}
+											]
+										},
+										"key": "conditions",
+										"children": [
+											{
+												"open": [
+													{
+														"block_filter": [
+															"minecraft:grass",
+															"minecraft:dirt",
+															"minecraft:podzol",
+															"minecraft:sand"
+														],
+														"allowed_faces": [
+															"up"
+														]
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"block_filter": [
+																"minecraft:grass",
+																"minecraft:dirt",
+																"minecraft:podzol",
+																"minecraft:sand"
+															],
+															"allowed_faces": [
+																"up"
+															]
+														},
+														"key": "block_filter",
+														"is_minified": true,
+														"children": [
+															"minecraft:grass",
+															"minecraft:dirt",
+															"minecraft:podzol",
+															"minecraft:sand"
+														]
+													},
+													{
+														"key": "allowed_faces",
+														"is_minified": true,
+														"children": [
+															"up"
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:random_ticking",
+								"is_minified": true,
+								"children": {
+									"on_tick": {
+										"event": "grow"
+									}
+								}
+							},
+							{
+								"key": "minecraft:on_interact",
+								"is_minified": true,
+								"children": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								}
+							},
+							{
+								"data": "false",
+								"key": "minecraft:entity_collision"
+							},
+							{
+								"key": "minecraft:pick_collision",
+								"is_minified": true,
+								"children": {
+									"origin": [
+										-6,
+										0,
+										-6
+									],
+									"size": [
+										12,
+										13,
+										12
+									]
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:banana_sapling"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 0,
+								"minecraft:loot": "loot_tables/banana_sapling.json",
+								"minecraft:geometry": "geometry.crop",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "strat_banana_sapling",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:breakonpush": true,
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"block_filter": [
+												"minecraft:grass",
+												"minecraft:dirt",
+												"minecraft:podzol",
+												"minecraft:sand"
+											],
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								},
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow"
+									}
+								},
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								},
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-6,
+										0,
+										-6
+									],
+									"size": [
+										12,
+										13,
+										12
+									]
+								}
+							},
+							"events": {
+								"grow": {
+									"randomize": [
+										{
+											"run_command": {
+												"command": [
+													"setblock ~ ~ ~ air",
+													"structure load banana_tree ~-2 ~ ~-2"
+												]
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"setblock ~ ~ ~ air",
+													"structure load banana_tree2 ~-2 ~ ~-2"
+												]
+											}
+										}
+									]
+								},
+								"bone_meal": {
+									"sequence": [
+										{
+											"randomize": [
+												{
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 1
+												},
+												{
+													"trigger": {
+														"event": "grow"
+													},
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 5
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"grow": {
+										"randomize": [
+											{
+												"run_command": {
+													"command": [
+														"setblock ~ ~ ~ air",
+														"structure load banana_tree ~-2 ~ ~-2"
+													]
+												}
+											},
+											{
+												"run_command": {
+													"command": [
+														"setblock ~ ~ ~ air",
+														"structure load banana_tree2 ~-2 ~ ~-2"
+													]
+												}
+											}
+										]
+									},
+									"bone_meal": {
+										"sequence": [
+											{
+												"randomize": [
+													{
+														"decrement_stack": {},
+														"run_command": {
+															"command": [
+																"particle minecraft:crop_growth_emitter ~~~"
+															]
+														},
+														"weight": 1
+													},
+													{
+														"trigger": {
+															"event": "grow"
+														},
+														"decrement_stack": {},
+														"run_command": {
+															"command": [
+																"particle minecraft:crop_growth_emitter ~~~"
+															]
+														},
+														"weight": 5
+													}
+												]
+											}
+										]
+									}
+								},
+								"key": "grow",
+								"children": [
+									{
+										"open": {
+											"randomize": [
+												{
+													"run_command": {
+														"command": [
+															"setblock ~ ~ ~ air",
+															"structure load banana_tree ~-2 ~ ~-2"
+														]
+													}
+												},
+												{
+													"run_command": {
+														"command": [
+															"setblock ~ ~ ~ air",
+															"structure load banana_tree2 ~-2 ~ ~-2"
+														]
+													}
+												}
+											]
+										},
+										"key": "randomize",
+										"children": [
+											{
+												"open": [
+													{
+														"run_command": {
+															"command": [
+																"setblock ~ ~ ~ air",
+																"structure load banana_tree ~-2 ~ ~-2"
+															]
+														}
+													},
+													{
+														"run_command": {
+															"command": [
+																"setblock ~ ~ ~ air",
+																"structure load banana_tree2 ~-2 ~ ~-2"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"setblock ~ ~ ~ air",
+																	"structure load banana_tree ~-2 ~ ~-2"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"setblock ~ ~ ~ air",
+																		"structure load banana_tree ~-2 ~ ~-2"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"setblock ~ ~ ~ air",
+																	"structure load banana_tree ~-2 ~ ~-2"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"run_command": {
+															"command": [
+																"setblock ~ ~ ~ air",
+																"structure load banana_tree ~-2 ~ ~-2"
+															]
+														}
+													},
+													{
+														"run_command": {
+															"command": [
+																"setblock ~ ~ ~ air",
+																"structure load banana_tree2 ~-2 ~ ~-2"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"setblock ~ ~ ~ air",
+																	"structure load banana_tree2 ~-2 ~ ~-2"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"setblock ~ ~ ~ air",
+																		"structure load banana_tree2 ~-2 ~ ~-2"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"setblock ~ ~ ~ air",
+																	"structure load banana_tree2 ~-2 ~ ~-2"
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "bone_meal",
+								"is_minified": true,
+								"children": {
+									"sequence": [
+										{
+											"randomize": [
+												{
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 1
+												},
+												{
+													"trigger": {
+														"event": "grow"
+													},
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"particle minecraft:crop_growth_emitter ~~~"
+														]
+													},
+													"weight": 5
+												}
+											]
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

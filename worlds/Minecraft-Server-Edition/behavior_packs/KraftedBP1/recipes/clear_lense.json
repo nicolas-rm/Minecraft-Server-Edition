@@ -1,0 +1,30 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mashiene:clear_lense"
+		},
+		"tags": [
+			"mashinery_table",
+			"crafting_table"
+		],
+		"pattern": [
+			"IGI"
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:iron_nugget"
+			},
+			"G": {
+				"item": "minecraft:glass"
+			}
+		},
+		"result": [
+			{
+				"item": "mashiene:clear_lense",
+				"count": 2
+			}
+		]
+	}
+}

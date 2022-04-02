@@ -1,0 +1,100 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\maple_syrup.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "c27acd23_d122_4702_801e_51e254cf99ad",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": {
+								"min": 1,
+								"max": 1
+							},
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:maple_syrup"
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 1
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:maple_syrup"
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:maple_syrup"
+										}
+									]
+								},
+								"key": "rolls",
+								"is_minified": true,
+								"children": {
+									"min": 1,
+									"max": 1
+								}
+							},
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:maple_syrup"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:maple_syrup"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:maple_syrup"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

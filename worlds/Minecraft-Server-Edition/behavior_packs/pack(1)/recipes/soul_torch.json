@@ -1,0 +1,20 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "ray:soul_torch"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:soul_torch"
+			}
+		],
+		"result": {
+			"item": "ray:soul_torch"
+		}
+	}
+}

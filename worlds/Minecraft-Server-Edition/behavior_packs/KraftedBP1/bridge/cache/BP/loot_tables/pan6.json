@@ -1,0 +1,148 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\pan6.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "51c9762f_2e52_463f_8f37_41db5e56c243",
+	"file_version": 15,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:frying_pan_item"
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:chicken_wing"
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:frying_pan_item"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:chicken_wing"
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:frying_pan_item"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:frying_pan_item"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:frying_pan_item"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:frying_pan_item"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:chicken_wing"
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:chicken_wing"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:chicken_wing"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:chicken_wing"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

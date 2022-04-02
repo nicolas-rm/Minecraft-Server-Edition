@@ -1,0 +1,114 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocean:boat_killer",
+			"is_experimental": false,
+			"is_summonable": true,
+			"is_spawnable": false,
+			"animations": {
+				"trap": "animation.barnacle.force_ride",
+				"reset": "animation.barnacle.reset",
+				"down": "animation.barnacle.down"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"trap": "query.is_sheared && !query.has_rider"
+					},
+					{
+						"reset": "query.is_sheared && !query.has_target"
+					},
+					{
+						"down": "query.is_sheared"
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 35,
+				"max": 35
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_air": false,
+				"breathes_water": true
+			},
+			"minecraft:loot": {},
+			"minecraft:follow_range": {
+				"value": 32,
+				"max": 32
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": true
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 0,
+						"height": 0,
+						"pivot": [
+							0,
+							9999,
+							0
+						]
+					}
+				]
+			},
+			"minecraft:area_attack": {
+				"damage_range": 2,
+				"damage_per_tick": 9999,
+				"cause": "contact",
+				"entity_filter": {
+					"test": "is_family",
+					"subject": "other",
+					"value": "boat"
+				}
+			},
+			"minecraft:timer": {
+				"time": 0.3,
+				"time_down_event": {
+					"event": "despawn"
+				},
+				"looping": false
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

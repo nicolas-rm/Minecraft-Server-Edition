@@ -1,0 +1,52 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mythmob:goblin.berserker",
+			"materials": {
+				"default": "goblin"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/goblin_berserker"
+			},
+			"geometry": {
+				"default": "geometry.goblin_berserker"
+			},
+			"animations": {
+				"humanoid_base_pose": "animation.goblin.berserker.general",
+				"move": "animation.goblin.walk",
+				"attack.goblin": "animation.goblin_berserker.attack",
+				"scared": "animation.goblin.scared"
+			},
+			"animation_controllers": [
+				{
+					"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+				},
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"move": "controller.animation.villager.move"
+				},
+				{
+					"attack": "controller.animation.goblin.attack"
+				},
+				{
+					"idle": "controller.animation.goblin.idle"
+				}
+			],
+			"render_controllers": [
+				"controller.render.goblin"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#0a2603",
+				"overlay_color": "#123e07"
+			},
+			"sound_effects": {
+				"laugh": "mob.goblin.idle"
+			}
+		}
+	}
+}

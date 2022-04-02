@@ -1,0 +1,1414 @@
+//bridge-file-version: #222
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "vanilla_twilight:kobold",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"mythmob:kobold_angry": {
+				"minecraft:angry": {
+					"duration": 25,
+					"broadcastAnger": true,
+					"broadcastRange": 20,
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					},
+					"broadcast_targets": [
+						"wild_kobold"
+					]
+				}
+			},
+			"mythmob:kobold_wild": {
+				"minecraft:behavior.avoid_mob_type": {
+					"priority": 3,
+					"entity_types": [
+						{
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "witch"
+							},
+							"max_dist": 24
+						}
+					],
+					"probability_per_strength": 0.14
+				},
+				"minecraft:tameable": {
+					"probability": 0.33,
+					"tame_event": {
+						"event": "minecraft:on_tame",
+						"target": "self"
+					},
+					"tame_items": [
+						"cooked_rabbit",
+						"rabbit"
+					]
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 4,
+					"attack_interval": 10,
+					"reselect_targets": true,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "spider"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "zombie"
+									}
+								]
+							},
+							"max_dist": 16
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "baby_turtle"
+									},
+									{
+										"test": "in_water",
+										"subject": "other",
+										"operator": "!=",
+										"value": true
+									}
+								]
+							},
+							"max_dist": 16
+						}
+					],
+					"must_see": true
+				},
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				},
+				"minecraft:behavior.follow_caravan": {
+					"entity_count": 3,
+					"entity_types": [
+						{
+							"filters": {
+								"subject": "other",
+								"value": "wild_kobold",
+								"test": "is_family",
+								"operator": "=="
+							}
+						}
+					]
+				},
+				"minecraft:type_family": {
+					"family": [
+						"kobold",
+						"wild_kobold"
+					]
+				},
+				"minecraft:rideable": {
+					"family_types": [
+						"kobold_banner"
+					],
+					"seat_count": 1,
+					"pull_in_entities": true,
+					"seats": [
+						{
+							"position": [
+								0,
+								0,
+								0
+							],
+							"rotate_rider_by": 360,
+							"lock_rider_rotation": 360
+						}
+					]
+				}
+			},
+			"mythmob:kobold_tame": {
+				"minecraft:is_tamed": {},
+				"minecraft:health": {
+					"value": 20,
+					"max": 20
+				},
+				"minecraft:behavior.follow_owner": {
+					"priority": 6,
+					"speed_multiplier": 1,
+					"start_distance": 5,
+					"stop_distance": 2
+				},
+				"minecraft:attack": {
+					"damage": 7
+				},
+				"minecraft:behavior.owner_hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.owner_hurt_target": {
+					"priority": 2
+				},
+				"minecraft:equipment": {
+					"table": "loot_tables/entities/swordsman.json"
+				},
+				"minecraft:sittable": {},
+				"minecraft:behavior.stay_while_sitting": {},
+				"minecraft:persistent": {}
+			},
+			"bulldog_armor": {
+				"minecraft:mark_variant": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"time": 0.1,
+					"time_down_event": {
+						"event": "equip_sound"
+					}
+				},
+				"minecraft:health": {
+					"value": 35,
+					"max": 35
+				},
+				"minecraft:mob_effect": {
+					"effect_range": 6,
+					"entity_filter": {
+						"all_of": [
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "resistance"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "strength"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "speed"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_family",
+										"value": "wild_kobold",
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "in_caravan",
+										"subject": "other",
+										"operator": "==",
+										"value": true
+									},
+									{
+										"test": "has_target",
+										"subject": "player",
+										"value": true,
+										"operator": "!="
+									}
+								]
+							}
+						]
+					},
+					"effect_time": 3,
+					"mob_effect": "resistance"
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "resistance",
+							"duration": 999999999,
+							"amplifier": 1,
+							"visible": false
+						}
+					]
+				}
+			},
+			"shiba_armor": {
+				"minecraft:mark_variant": {
+					"value": 2
+				},
+				"minecraft:timer": {
+					"time": 0.1,
+					"time_down_event": {
+						"event": "equip_sound"
+					}
+				},
+				"minecraft:health": {
+					"value": 35,
+					"max": 35
+				},
+				"minecraft:mob_effect": {
+					"effect_range": 9,
+					"entity_filter": {
+						"all_of": [
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "resistance"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "strength"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "speed"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_family",
+										"value": "wild_kobold",
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "in_caravan",
+										"subject": "other",
+										"operator": "==",
+										"value": true
+									},
+									{
+										"test": "has_target",
+										"subject": "player",
+										"value": true,
+										"operator": "!="
+									}
+								]
+							}
+						]
+					},
+					"effect_time": 3,
+					"mob_effect": "speed"
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "speed",
+							"duration": 999999999,
+							"amplifier": 1,
+							"visible": false
+						}
+					]
+				}
+			},
+			"wolf_armor": {
+				"minecraft:mark_variant": {
+					"value": 3
+				},
+				"minecraft:timer": {
+					"time": 0.1,
+					"time_down_event": {
+						"event": "equip_sound"
+					}
+				},
+				"minecraft:health": {
+					"value": 35,
+					"max": 35
+				},
+				"minecraft:mob_effect": {
+					"effect_range": 6,
+					"entity_filter": {
+						"all_of": [
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "resistance"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "strength"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_owner",
+										"value": true,
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "has_mob_effect",
+										"subject": "other",
+										"operator": "!=",
+										"value": "speed"
+									}
+								]
+							},
+							{
+								"all_of": [
+									{
+										"test": "is_family",
+										"value": "wild_kobold",
+										"operator": "==",
+										"subject": "other"
+									},
+									{
+										"test": "in_caravan",
+										"subject": "other",
+										"operator": "==",
+										"value": true
+									},
+									{
+										"test": "has_target",
+										"subject": "player",
+										"value": true,
+										"operator": "!="
+									}
+								]
+							}
+						]
+					},
+					"effect_time": 3,
+					"mob_effect": "strength"
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "strength",
+							"duration": 999999999,
+							"amplifier": 1,
+							"visible": false
+						}
+					]
+				}
+			},
+			"bulldog": {
+				"minecraft:variant": {
+					"value": 0
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "iron_chestplate"
+										}
+									]
+								},
+								"event": "equip",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.kobold_equip_armor",
+							"admire": true,
+							"barter": true
+						}
+					]
+				}
+			},
+			"bulldog2": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "iron_chestplate"
+										}
+									]
+								},
+								"event": "equip",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.kobold_equip_armor",
+							"admire": true,
+							"barter": true
+						}
+					]
+				}
+			},
+			"wolf": {
+				"minecraft:variant": {
+					"value": 4
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "iron_chestplate"
+										}
+									]
+								},
+								"event": "equip3",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.kobold_equip_armor",
+							"admire": true,
+							"barter": true
+						}
+					]
+				}
+			},
+			"wolf2": {
+				"minecraft:variant": {
+					"value": 5
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "iron_chestplate"
+										}
+									]
+								},
+								"event": "equip3",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.kobold_equip_armor",
+							"admire": true,
+							"barter": true
+						}
+					]
+				}
+			},
+			"shiba": {
+				"minecraft:variant": {
+					"value": 2
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "iron_chestplate"
+										}
+									]
+								},
+								"event": "equip2",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.kobold_equip_armor",
+							"admire": true,
+							"barter": true
+						}
+					]
+				}
+			},
+			"shiba2": {
+				"minecraft:variant": {
+					"value": 3
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "iron_chestplate"
+										}
+									]
+								},
+								"event": "equip2",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.kobold_equip_armor",
+							"admire": true,
+							"barter": true
+						}
+					]
+				}
+			},
+			"bulldog_armor_equip": {
+				"minecraft:timer": {
+					"time": 4,
+					"time_down_event": {
+						"event": "suit_up_bulldog"
+					}
+				}
+			},
+			"shiba_armor_equip": {
+				"minecraft:timer": {
+					"time": 4,
+					"time_down_event": {
+						"event": "suit_up_shiba"
+					}
+				}
+			},
+			"wolf_armor_equip": {
+				"minecraft:timer": {
+					"time": 4,
+					"time_down_event": {
+						"event": "suit_up_wolf"
+					}
+				}
+			},
+			"equip_sound": {
+				"minecraft:is_shaking": {},
+				"minecraft:timer": {
+					"time": 0.1,
+					"time_down_event": {
+						"event": "equip_sound_stop"
+					}
+				}
+			},
+			"kobold_spawns": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_entity": "vanilla_twilight:kobold",
+							"spawn_event": "minecraft:entity_spawned_from_bell_bearer",
+							"single_use": true,
+							"num_to_spawn": 2,
+							"should_leash": false
+						}
+					]
+				}
+			},
+			"equipment": {
+				"minecraft:equipment": {
+					"table": "loot_tables/entities/swordsman.json"
+				},
+				"minecraft:attack": {
+					"damage": 7
+				}
+			},
+			"kobold_trader_armor": {
+				"minecraft:economy_trade_table": {
+					"display_name": "Kobold Trader",
+					"table": "trading/kobold_trade_armor.json",
+					"new_screen": true
+				},
+				"minecraft:behavior.trade_interest": {
+					"priority": 3,
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
+				}
+			},
+			"lead": {
+				"minecraft:leashable": {
+					"soft_distance": 1,
+					"hard_distance": 1,
+					"max_distance": 1
+				}
+			},
+			"kobold_trader_weapon": {
+				"minecraft:economy_trade_table": {
+					"display_name": "Kobold Trader",
+					"table": "trading/kobold_trade_weapon.json",
+					"new_screen": true
+				},
+				"minecraft:behavior.trade_interest": {
+					"priority": 3,
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
+				}
+			},
+			"kobold_trader_tool": {
+				"minecraft:economy_trade_table": {
+					"display_name": "Kobold Trader",
+					"table": "trading/kobold_trade_tool.json",
+					"new_screen": true
+				},
+				"minecraft:behavior.trade_interest": {
+					"priority": 3,
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
+				}
+			}
+		},
+		"components": {
+			"minecraft:nameable": {},
+			"minecraft:type_family": {
+				"family": [
+					"kobold"
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.3
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:health": {
+				"value": 30,
+				"max": 30
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesAir": true,
+				"breathesWater": false
+			},
+			"minecraft:attack": {
+				"damage": 4,
+				"effect_name": "weakness",
+				"effect_duration": 15
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/kobold_drops.json"
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 3,
+				"speed_multiplier": 1,
+				"track_target": false
+			},
+			"minecraft:behavior.move_towards_restriction": {
+				"priority": 5,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"within_radius": 25,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "zombie"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "spider"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "skeleton"
+								}
+							]
+						},
+						"max_dist": 35
+					}
+				],
+				"must_see": true,
+				"must_see_forget_duration": 17
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:physics": {},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.65
+			},
+			"minecraft:preferred_path": {
+				"preferred_path_blocks": [
+					{
+						"blocks": [
+							"minecraft:coal_ore"
+						]
+					}
+				]
+			},
+			"minecraft:is_chested": {},
+			"minecraft:item_hopper": {},
+			"minecraft:admire_item": {
+				"duration": 4
+			},
+			"minecraft:behavior.admire_item": {
+				"priority": 2,
+				"admire_item_sound": "admire",
+				"sound_interval": {
+					"range_min": 1,
+					"range_max": 3
+				}
+			},
+			"minecraft:behavior.equip_item": {
+				"priority": 5
+			},
+			"minecraft:equip_item": {},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "porkchop",
+						"heal_amount": 3
+					},
+					{
+						"item": "cooked_porkchop",
+						"heal_amount": 8
+					},
+					{
+						"item": "fish",
+						"heal_amount": 2
+					},
+					{
+						"item": "salmon",
+						"heal_amount": 2
+					},
+					{
+						"item": "clownfish",
+						"heal_amount": 1
+					},
+					{
+						"item": "pufferfish",
+						"heal_amount": 1
+					},
+					{
+						"item": "cooked_fish",
+						"heal_amount": 5
+					},
+					{
+						"item": "cooked_salmon",
+						"heal_amount": 6
+					},
+					{
+						"item": "beef",
+						"heal_amount": 3
+					},
+					{
+						"item": "cooked_beef",
+						"heal_amount": 8
+					},
+					{
+						"item": "chicken",
+						"heal_amount": 2
+					},
+					{
+						"item": "cooked_chicken",
+						"heal_amount": 6
+					},
+					{
+						"item": "muttonRaw",
+						"heal_amount": 2
+					},
+					{
+						"item": "muttonCooked",
+						"heal_amount": 6
+					},
+					{
+						"item": "rotten_flesh",
+						"heal_amount": 4
+					},
+					{
+						"item": "rabbit",
+						"heal_amount": 3
+					},
+					{
+						"item": "cooked_rabbit",
+						"heal_amount": 5
+					},
+					{
+						"item": "rabbit_stew",
+						"heal_amount": 10
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"bulldog"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"bulldog2"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"shiba"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"shiba2"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"wolf"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"wolf2"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:on_tame": {
+				"remove": {
+					"component_groups": [
+						"mythmob:kobold_wild",
+						"kobold_trader_armor",
+						"kobold_trader_weapon",
+						"kobold_trader_tool",
+						"lead"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"mythmob:kobold_tame"
+					]
+				}
+			},
+			"minecraft:become_angry": {
+				"remove": {
+					"component_groups": [
+						"mythmob:kobold_wild"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"mythmob:kobold_angry"
+					]
+				}
+			},
+			"minecraft:on_calm": {
+				"remove": {
+					"component_groups": [
+						"mythmob:kobold_angry"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"mythmob:kobold_wild"
+					]
+				}
+			},
+			"suit_up_bulldog": {
+				"add": {
+					"component_groups": [
+						"bulldog_armor"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bulldog_armor_equip"
+					]
+				}
+			},
+			"suit_up_shiba": {
+				"remove": {
+					"component_groups": [
+						"shiba_armor_equip"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"shiba_armor"
+					]
+				}
+			},
+			"suit_up_wolf": {
+				"add": {
+					"component_groups": [
+						"wolf_armor"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"wolf_armor_equip"
+					]
+				}
+			},
+			"equip": {
+				"add": {
+					"component_groups": [
+						"bulldog_armor_equip"
+					]
+				}
+			},
+			"equip2": {
+				"add": {
+					"component_groups": [
+						"shiba_armor_equip"
+					]
+				}
+			},
+			"equip3": {
+				"add": {
+					"component_groups": [
+						"wolf_armor_equip"
+					]
+				}
+			},
+			"equip_sound": {
+				"add": {
+					"component_groups": [
+						"equip_sound"
+					]
+				}
+			},
+			"equip_sound_stop": {
+				"remove": {
+					"component_groups": [
+						"equip_sound"
+					]
+				}
+			},
+			"minecraft:entity_spawned_from_bell": {
+				"randomize": [
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"bulldog",
+								"bulldog_armor",
+								"kobold_spawns",
+								"equipment",
+								"lead",
+								"kobold_trader_armor"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"bulldog2",
+								"bulldog_armor",
+								"kobold_spawns",
+								"equipment",
+								"lead",
+								"kobold_trader_armor"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"shiba",
+								"shiba_armor",
+								"kobold_spawns",
+								"equipment",
+								"lead",
+								"kobold_trader_tool"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"shiba2",
+								"shiba_armor",
+								"kobold_spawns",
+								"equipment",
+								"lead",
+								"kobold_trader_tool"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"wolf",
+								"wolf_armor",
+								"kobold_spawns",
+								"equipment",
+								"lead",
+								"kobold_trader_weapon"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"mythmob:kobold_wild",
+								"wolf2",
+								"wolf_armor",
+								"kobold_spawns",
+								"equipment",
+								"lead",
+								"kobold_trader_weapon"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_spawned_from_bell_bearer": {
+				"randomize": [
+					{
+						"randomize": [
+							{
+								"randomize": [
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"bulldog2"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"bulldog"
+											]
+										}
+									}
+								],
+								"weight": 1
+							},
+							{
+								"weight": 1,
+								"randomize": [
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"shiba"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"shiba2"
+											]
+										}
+									}
+								]
+							},
+							{
+								"weight": 1,
+								"randomize": [
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"wolf"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"wolf2"
+											]
+										}
+									}
+								]
+							}
+						],
+						"weight": 1
+					},
+					{
+						"randomize": [
+							{
+								"randomize": [
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"bulldog2",
+												"bulldog_armor",
+												"equipment"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"bulldog",
+												"bulldog_armor",
+												"equipment"
+											]
+										}
+									}
+								],
+								"weight": 1
+							},
+							{
+								"randomize": [
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"shiba2",
+												"shiba_armor",
+												"equipment"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"shiba",
+												"shiba_armor",
+												"equipment"
+											]
+										}
+									}
+								],
+								"weight": 1
+							},
+							{
+								"randomize": [
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"wolf2",
+												"equipment",
+												"wolf_armor"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"mythmob:kobold_wild",
+												"wolf",
+												"wolf_armor",
+												"equipment"
+											]
+										}
+									}
+								],
+								"weight": 1
+							}
+						],
+						"weight": 1
+					}
+				]
+			}
+		}
+	}
+}

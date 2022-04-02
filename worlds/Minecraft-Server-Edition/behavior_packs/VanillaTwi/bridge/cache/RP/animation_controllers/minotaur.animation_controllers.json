@@ -1,0 +1,820 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\animation_controllers\\minotaur.animation_controllers.json",
+	"file_type": "rp_animation_controller",
+	"format_version": 1,
+	"file_uuid": "0b0e8b39_afbc_400d_82a9_d0429c179f60",
+	"file_version": 19,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.minotaur.base": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										"minotaur_base"
+									],
+									"blend_transition": 0.2,
+									"transitions": [
+										{
+											"flying": "query.has_target"
+										}
+									]
+								},
+								"flying": {
+									"blend_transition": 0.2,
+									"animations": [
+										{
+											"minotaur_angry": "!query.is_delayed_attacking"
+										}
+									],
+									"transitions": [
+										{
+											"default": "!query.has_target"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.minotaur.move": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										{
+											"move": "query.modified_move_speed"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.minotaur.attack": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"blend_transition": 0.2,
+									"transitions": [
+										{
+											"flying": "query.is_delayed_attacking"
+										}
+									]
+								},
+								"flying": {
+									"blend_transition": 0.2,
+									"animations": [
+										"attack"
+									],
+									"transitions": [
+										{
+											"default": "!query.is_delayed_attacking"
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.minotaur.base": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										"minotaur_base"
+									],
+									"blend_transition": 0.2,
+									"transitions": [
+										{
+											"flying": "query.has_target"
+										}
+									]
+								},
+								"flying": {
+									"blend_transition": 0.2,
+									"animations": [
+										{
+											"minotaur_angry": "!query.is_delayed_attacking"
+										}
+									],
+									"transitions": [
+										{
+											"default": "!query.has_target"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.minotaur.move": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										{
+											"move": "query.modified_move_speed"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.minotaur.attack": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"blend_transition": 0.2,
+									"transitions": [
+										{
+											"flying": "query.is_delayed_attacking"
+										}
+									]
+								},
+								"flying": {
+									"blend_transition": 0.2,
+									"animations": [
+										"attack"
+									],
+									"transitions": [
+										{
+											"default": "!query.is_delayed_attacking"
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.minotaur.base": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"minotaur_base"
+										],
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "query.has_target"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											{
+												"minotaur_angry": "!query.is_delayed_attacking"
+											}
+										],
+										"transitions": [
+											{
+												"default": "!query.has_target"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.minotaur.move": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"move": "query.modified_move_speed"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.minotaur.attack": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "query.is_delayed_attacking"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											"attack"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_delayed_attacking"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.minotaur.base",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"animations": [
+												"minotaur_base"
+											],
+											"blend_transition": 0.2,
+											"transitions": [
+												{
+													"flying": "query.has_target"
+												}
+											]
+										},
+										"flying": {
+											"blend_transition": 0.2,
+											"animations": [
+												{
+													"minotaur_angry": "!query.is_delayed_attacking"
+												}
+											],
+											"transitions": [
+												{
+													"default": "!query.has_target"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"minotaur_base"
+												],
+												"blend_transition": 0.2,
+												"transitions": [
+													{
+														"flying": "query.has_target"
+													}
+												]
+											},
+											"flying": {
+												"blend_transition": 0.2,
+												"animations": [
+													{
+														"minotaur_angry": "!query.is_delayed_attacking"
+													}
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"minotaur_base"
+													],
+													"blend_transition": 0.2,
+													"transitions": [
+														{
+															"flying": "query.has_target"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"minotaur_base"
+												]
+											},
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											},
+											{
+												"open": {
+													"animations": [
+														"minotaur_base"
+													],
+													"blend_transition": 0.2,
+													"transitions": [
+														{
+															"flying": "query.has_target"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"flying": "query.has_target"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"flying": "query.has_target"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"minotaur_base"
+												],
+												"blend_transition": 0.2,
+												"transitions": [
+													{
+														"flying": "query.has_target"
+													}
+												]
+											},
+											"flying": {
+												"blend_transition": 0.2,
+												"animations": [
+													{
+														"minotaur_angry": "!query.is_delayed_attacking"
+													}
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													}
+												]
+											}
+										},
+										"key": "flying",
+										"children": [
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														{
+															"minotaur_angry": "!query.is_delayed_attacking"
+														}
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														}
+													]
+												},
+												"data": "0.2",
+												"key": "blend_transition"
+											},
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														{
+															"minotaur_angry": "!query.is_delayed_attacking"
+														}
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														}
+													]
+												},
+												"key": "animations",
+												"children": [
+													{
+														"open": [
+															{
+																"minotaur_angry": "!query.is_delayed_attacking"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"minotaur_angry": "!query.is_delayed_attacking"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														{
+															"minotaur_angry": "!query.is_delayed_attacking"
+														}
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "!query.has_target"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "!query.has_target"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"controller.animation.minotaur.base": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"minotaur_base"
+										],
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "query.has_target"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											{
+												"minotaur_angry": "!query.is_delayed_attacking"
+											}
+										],
+										"transitions": [
+											{
+												"default": "!query.has_target"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.minotaur.move": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"move": "query.modified_move_speed"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.minotaur.attack": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "query.is_delayed_attacking"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											"attack"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_delayed_attacking"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.minotaur.move",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"animations": [
+												{
+													"move": "query.modified_move_speed"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"animations": [
+													{
+														"move": "query.modified_move_speed"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														{
+															"move": "query.modified_move_speed"
+														}
+													]
+												},
+												"key": "animations",
+												"children": [
+													{
+														"open": [
+															{
+																"move": "query.modified_move_speed"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"move": "query.modified_move_speed"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"controller.animation.minotaur.base": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"minotaur_base"
+										],
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "query.has_target"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											{
+												"minotaur_angry": "!query.is_delayed_attacking"
+											}
+										],
+										"transitions": [
+											{
+												"default": "!query.has_target"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.minotaur.move": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"move": "query.modified_move_speed"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.minotaur.attack": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "query.is_delayed_attacking"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											"attack"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_delayed_attacking"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.minotaur.attack",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"blend_transition": 0.2,
+											"transitions": [
+												{
+													"flying": "query.is_delayed_attacking"
+												}
+											]
+										},
+										"flying": {
+											"blend_transition": 0.2,
+											"animations": [
+												"attack"
+											],
+											"transitions": [
+												{
+													"default": "!query.is_delayed_attacking"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"blend_transition": 0.2,
+												"transitions": [
+													{
+														"flying": "query.is_delayed_attacking"
+													}
+												]
+											},
+											"flying": {
+												"blend_transition": 0.2,
+												"animations": [
+													"attack"
+												],
+												"transitions": [
+													{
+														"default": "!query.is_delayed_attacking"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											},
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"transitions": [
+														{
+															"flying": "query.is_delayed_attacking"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"flying": "query.is_delayed_attacking"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"flying": "query.is_delayed_attacking"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"blend_transition": 0.2,
+												"transitions": [
+													{
+														"flying": "query.is_delayed_attacking"
+													}
+												]
+											},
+											"flying": {
+												"blend_transition": 0.2,
+												"animations": [
+													"attack"
+												],
+												"transitions": [
+													{
+														"default": "!query.is_delayed_attacking"
+													}
+												]
+											}
+										},
+										"key": "flying",
+										"children": [
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											},
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														"attack"
+													],
+													"transitions": [
+														{
+															"default": "!query.is_delayed_attacking"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"attack"
+												]
+											},
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														"attack"
+													],
+													"transitions": [
+														{
+															"default": "!query.is_delayed_attacking"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "!query.is_delayed_attacking"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "!query.is_delayed_attacking"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

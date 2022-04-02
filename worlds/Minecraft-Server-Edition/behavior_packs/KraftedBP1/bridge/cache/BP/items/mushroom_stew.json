@@ -1,0 +1,103 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\mushroom_stew.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "00f4d32c_bb9c_488f_880d_4187aff81ca3",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:mushroom_stew"
+						},
+						"components": {
+							"minecraft:use_duration": 32,
+							"minecraft:max_stack_size": 16,
+							"minecraft:food": {
+								"nutrition": 4,
+								"saturation_modifier": "normal",
+								"using_converts_to": "bowl"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:mushroom_stew"
+							},
+							"components": {
+								"minecraft:use_duration": 32,
+								"minecraft:max_stack_size": 16,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"using_converts_to": "bowl"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:mushroom_stew"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:mushroom_stew"
+							},
+							"components": {
+								"minecraft:use_duration": 32,
+								"minecraft:max_stack_size": 16,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"using_converts_to": "bowl"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "32",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 32,
+									"minecraft:max_stack_size": 16,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "normal",
+										"using_converts_to": "bowl"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"using_converts_to": "bowl"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

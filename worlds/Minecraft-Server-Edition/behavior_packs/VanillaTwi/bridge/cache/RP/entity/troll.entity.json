@@ -1,0 +1,464 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\troll.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "e64a5ef4_e1e1_4a94_bb33_87c3f3cfa7dd",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:troll",
+							"materials": {
+								"default": "skeleton"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/troll"
+							},
+							"geometry": {
+								"default": "geometry.troll"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+									"variable.tcos1 = -variable.tcos0;",
+									"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+									"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+									"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+									"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+									"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0);",
+									"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+								]
+							},
+							"animations": {
+								"humanoid_base_pose": "animation.humanoid.base_pose.v1.0",
+								"look_at_target_default": "animation.humanoid.look_at_target.default.v1.0",
+								"look_at_target_gliding": "animation.humanoid.look_at_target.gliding.v1.0",
+								"look_at_target_swimming": "animation.humanoid.look_at_target.swimming.v1.0",
+								"move": "animation.humanoid.move.v1.0",
+								"riding.arms": "animation.humanoid.riding.arms.v1.0",
+								"riding.legs": "animation.humanoid.riding.legs.v1.0",
+								"holding": "animation.humanoid.holding.v1.0",
+								"brandish_spear": "animation.humanoid.brandish_spear.v1.0",
+								"charging": "animation.humanoid.charging.v1.0",
+								"attack.rotations": "animation.humanoid.attack.rotations.v1.0",
+								"sneaking": "animation.humanoid.sneaking.v1.0",
+								"bob": "animation.humanoid.bob.v1.0",
+								"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs.v1.0",
+								"bow_and_arrow": "animation.humanoid.bow_and_arrow.v1.0",
+								"swimming": "animation.humanoid.swimming.v1.0",
+								"use_item_progress": "animation.humanoid.use_item_progress.v1.0",
+								"skeleton_attack": "animation.skeleton.attack.v1.0"
+							},
+							"animation_controllers": [
+								{
+									"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+								},
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"move": "controller.animation.humanoid.move"
+								},
+								{
+									"riding": "controller.animation.humanoid.riding"
+								},
+								{
+									"holding": "controller.animation.humanoid.holding"
+								},
+								{
+									"brandish_spear": "controller.animation.humanoid.brandish_spear"
+								},
+								{
+									"charging": "controller.animation.humanoid.charging"
+								},
+								{
+									"attack": "controller.animation.humanoid.attack"
+								},
+								{
+									"sneaking": "controller.animation.humanoid.sneaking"
+								},
+								{
+									"bob": "controller.animation.humanoid.bob"
+								},
+								{
+									"damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs"
+								},
+								{
+									"bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+								},
+								{
+									"swimming": "controller.animation.humanoid.swimming"
+								},
+								{
+									"use_item_progress": "controller.animation.humanoid.use_item_progress"
+								},
+								{
+									"skeleton_attack": "controller.animation.skeleton.attack"
+								}
+							],
+							"render_controllers": [
+								"controller.render.skeleton"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#715b39",
+								"overlay_color": "#998202"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:troll",
+								"materials": {
+									"default": "skeleton"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/troll"
+								},
+								"geometry": {
+									"default": "geometry.troll"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+										"variable.tcos1 = -variable.tcos0;",
+										"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+										"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+										"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+										"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+										"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0);",
+										"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+									]
+								},
+								"animations": {
+									"humanoid_base_pose": "animation.humanoid.base_pose.v1.0",
+									"look_at_target_default": "animation.humanoid.look_at_target.default.v1.0",
+									"look_at_target_gliding": "animation.humanoid.look_at_target.gliding.v1.0",
+									"look_at_target_swimming": "animation.humanoid.look_at_target.swimming.v1.0",
+									"move": "animation.humanoid.move.v1.0",
+									"riding.arms": "animation.humanoid.riding.arms.v1.0",
+									"riding.legs": "animation.humanoid.riding.legs.v1.0",
+									"holding": "animation.humanoid.holding.v1.0",
+									"brandish_spear": "animation.humanoid.brandish_spear.v1.0",
+									"charging": "animation.humanoid.charging.v1.0",
+									"attack.rotations": "animation.humanoid.attack.rotations.v1.0",
+									"sneaking": "animation.humanoid.sneaking.v1.0",
+									"bob": "animation.humanoid.bob.v1.0",
+									"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs.v1.0",
+									"bow_and_arrow": "animation.humanoid.bow_and_arrow.v1.0",
+									"swimming": "animation.humanoid.swimming.v1.0",
+									"use_item_progress": "animation.humanoid.use_item_progress.v1.0",
+									"skeleton_attack": "animation.skeleton.attack.v1.0"
+								},
+								"animation_controllers": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"move": "controller.animation.humanoid.move"
+									},
+									{
+										"riding": "controller.animation.humanoid.riding"
+									},
+									{
+										"holding": "controller.animation.humanoid.holding"
+									},
+									{
+										"brandish_spear": "controller.animation.humanoid.brandish_spear"
+									},
+									{
+										"charging": "controller.animation.humanoid.charging"
+									},
+									{
+										"attack": "controller.animation.humanoid.attack"
+									},
+									{
+										"sneaking": "controller.animation.humanoid.sneaking"
+									},
+									{
+										"bob": "controller.animation.humanoid.bob"
+									},
+									{
+										"damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs"
+									},
+									{
+										"bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+									},
+									{
+										"swimming": "controller.animation.humanoid.swimming"
+									},
+									{
+										"use_item_progress": "controller.animation.humanoid.use_item_progress"
+									},
+									{
+										"skeleton_attack": "controller.animation.skeleton.attack"
+									}
+								],
+								"render_controllers": [
+									"controller.render.skeleton"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#715b39",
+									"overlay_color": "#998202"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:troll",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "skeleton"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/troll"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.troll"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+										"variable.tcos1 = -variable.tcos0;",
+										"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+										"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+										"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+										"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+										"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0);",
+										"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+									]
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"humanoid_base_pose": "animation.humanoid.base_pose.v1.0",
+									"look_at_target_default": "animation.humanoid.look_at_target.default.v1.0",
+									"look_at_target_gliding": "animation.humanoid.look_at_target.gliding.v1.0",
+									"look_at_target_swimming": "animation.humanoid.look_at_target.swimming.v1.0",
+									"move": "animation.humanoid.move.v1.0",
+									"riding.arms": "animation.humanoid.riding.arms.v1.0",
+									"riding.legs": "animation.humanoid.riding.legs.v1.0",
+									"holding": "animation.humanoid.holding.v1.0",
+									"brandish_spear": "animation.humanoid.brandish_spear.v1.0",
+									"charging": "animation.humanoid.charging.v1.0",
+									"attack.rotations": "animation.humanoid.attack.rotations.v1.0",
+									"sneaking": "animation.humanoid.sneaking.v1.0",
+									"bob": "animation.humanoid.bob.v1.0",
+									"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs.v1.0",
+									"bow_and_arrow": "animation.humanoid.bow_and_arrow.v1.0",
+									"swimming": "animation.humanoid.swimming.v1.0",
+									"use_item_progress": "animation.humanoid.use_item_progress.v1.0",
+									"skeleton_attack": "animation.skeleton.attack.v1.0"
+								}
+							},
+							{
+								"key": "animation_controllers",
+								"is_minified": true,
+								"children": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"move": "controller.animation.humanoid.move"
+									},
+									{
+										"riding": "controller.animation.humanoid.riding"
+									},
+									{
+										"holding": "controller.animation.humanoid.holding"
+									},
+									{
+										"brandish_spear": "controller.animation.humanoid.brandish_spear"
+									},
+									{
+										"charging": "controller.animation.humanoid.charging"
+									},
+									{
+										"attack": "controller.animation.humanoid.attack"
+									},
+									{
+										"sneaking": "controller.animation.humanoid.sneaking"
+									},
+									{
+										"bob": "controller.animation.humanoid.bob"
+									},
+									{
+										"damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs"
+									},
+									{
+										"bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+									},
+									{
+										"swimming": "controller.animation.humanoid.swimming"
+									},
+									{
+										"use_item_progress": "controller.animation.humanoid.use_item_progress"
+									},
+									{
+										"skeleton_attack": "controller.animation.skeleton.attack"
+									}
+								]
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.skeleton"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:troll",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/troll"
+									},
+									"geometry": {
+										"default": "geometry.troll"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+											"variable.tcos1 = -variable.tcos0;",
+											"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+											"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+											"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+											"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+											"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0);",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										]
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.humanoid.base_pose.v1.0",
+										"look_at_target_default": "animation.humanoid.look_at_target.default.v1.0",
+										"look_at_target_gliding": "animation.humanoid.look_at_target.gliding.v1.0",
+										"look_at_target_swimming": "animation.humanoid.look_at_target.swimming.v1.0",
+										"move": "animation.humanoid.move.v1.0",
+										"riding.arms": "animation.humanoid.riding.arms.v1.0",
+										"riding.legs": "animation.humanoid.riding.legs.v1.0",
+										"holding": "animation.humanoid.holding.v1.0",
+										"brandish_spear": "animation.humanoid.brandish_spear.v1.0",
+										"charging": "animation.humanoid.charging.v1.0",
+										"attack.rotations": "animation.humanoid.attack.rotations.v1.0",
+										"sneaking": "animation.humanoid.sneaking.v1.0",
+										"bob": "animation.humanoid.bob.v1.0",
+										"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs.v1.0",
+										"bow_and_arrow": "animation.humanoid.bow_and_arrow.v1.0",
+										"swimming": "animation.humanoid.swimming.v1.0",
+										"use_item_progress": "animation.humanoid.use_item_progress.v1.0",
+										"skeleton_attack": "animation.skeleton.attack.v1.0"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.humanoid.move"
+										},
+										{
+											"riding": "controller.animation.humanoid.riding"
+										},
+										{
+											"holding": "controller.animation.humanoid.holding"
+										},
+										{
+											"brandish_spear": "controller.animation.humanoid.brandish_spear"
+										},
+										{
+											"charging": "controller.animation.humanoid.charging"
+										},
+										{
+											"attack": "controller.animation.humanoid.attack"
+										},
+										{
+											"sneaking": "controller.animation.humanoid.sneaking"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										},
+										{
+											"damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs"
+										},
+										{
+											"bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+										},
+										{
+											"swimming": "controller.animation.humanoid.swimming"
+										},
+										{
+											"use_item_progress": "controller.animation.humanoid.use_item_progress"
+										},
+										{
+											"skeleton_attack": "controller.animation.skeleton.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.skeleton"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#715b39",
+										"overlay_color": "#998202"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#715b39",
+									"overlay_color": "#998202"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

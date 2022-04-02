@@ -1,0 +1,152 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\feature_rules\\maple_tree_2_feature_rule.json",
+	"file_type": "feature_rule",
+	"format_version": 1,
+	"file_uuid": "e12b7add_807e_4466_8b62_a4e70e3c4fcd",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:feature_rules": {
+						"description": {
+							"identifier": "strat:maple_tree_2_feature_rule",
+							"places_feature": "strat:maple_tree_feature"
+						},
+						"conditions": {
+							"placement_pass": "surface_pass",
+							"minecraft:biome_filter": {
+								"test": "has_biome_tag",
+								"operator": "==",
+								"value": "maple"
+							}
+						},
+						"distribution": {
+							"iterations": 50,
+							"scatter_chance": 0.2,
+							"x": 0,
+							"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+							"z": 0
+						}
+					}
+				},
+				"key": "minecraft:feature_rules",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_tree_2_feature_rule",
+								"places_feature": "strat:maple_tree_feature"
+							},
+							"conditions": {
+								"placement_pass": "surface_pass",
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "maple"
+								}
+							},
+							"distribution": {
+								"iterations": 50,
+								"scatter_chance": 0.2,
+								"x": 0,
+								"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+								"z": 0
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_tree_2_feature_rule",
+							"places_feature": "strat:maple_tree_feature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_tree_2_feature_rule",
+								"places_feature": "strat:maple_tree_feature"
+							},
+							"conditions": {
+								"placement_pass": "surface_pass",
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "maple"
+								}
+							},
+							"distribution": {
+								"iterations": 50,
+								"scatter_chance": 0.2,
+								"x": 0,
+								"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+								"z": 0
+							}
+						},
+						"key": "conditions",
+						"children": [
+							{
+								"data": "surface_pass",
+								"key": "placement_pass"
+							},
+							{
+								"open": {
+									"placement_pass": "surface_pass",
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "maple"
+									}
+								},
+								"key": "minecraft:biome_filter",
+								"is_minified": true,
+								"children": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "maple"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_tree_2_feature_rule",
+								"places_feature": "strat:maple_tree_feature"
+							},
+							"conditions": {
+								"placement_pass": "surface_pass",
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "maple"
+								}
+							},
+							"distribution": {
+								"iterations": 50,
+								"scatter_chance": 0.2,
+								"x": 0,
+								"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+								"z": 0
+							}
+						},
+						"key": "distribution",
+						"is_minified": true,
+						"children": {
+							"iterations": 50,
+							"scatter_chance": 0.2,
+							"x": 0,
+							"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+							"z": 0
+						}
+					}
+				]
+			}
+		]
+	}
+}

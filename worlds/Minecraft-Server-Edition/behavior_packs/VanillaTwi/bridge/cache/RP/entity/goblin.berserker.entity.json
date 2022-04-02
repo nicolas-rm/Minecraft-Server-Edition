@@ -1,0 +1,390 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\goblin.berserker.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "402b4511_7bdb_456a_ac42_85d239e83355",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:goblin.berserker",
+							"materials": {
+								"default": "goblin"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/goblin_berserker"
+							},
+							"geometry": {
+								"default": "geometry.goblin_berserker"
+							},
+							"animations": {
+								"humanoid_base_pose": "animation.goblin.berserker.general",
+								"move": "animation.goblin.walk",
+								"attack.goblin": "animation.goblin_berserker.attack",
+								"scared": "animation.goblin.scared"
+							},
+							"animation_controllers": [
+								{
+									"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+								},
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"move": "controller.animation.villager.move"
+								},
+								{
+									"attack": "controller.animation.goblin.attack"
+								},
+								{
+									"idle": "controller.animation.goblin.idle"
+								}
+							],
+							"render_controllers": [
+								"controller.render.goblin"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#0a2603",
+								"overlay_color": "#123e07"
+							},
+							"sound_effects": {
+								"laugh": "mob.goblin.idle"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:goblin.berserker",
+								"materials": {
+									"default": "goblin"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/goblin_berserker"
+								},
+								"geometry": {
+									"default": "geometry.goblin_berserker"
+								},
+								"animations": {
+									"humanoid_base_pose": "animation.goblin.berserker.general",
+									"move": "animation.goblin.walk",
+									"attack.goblin": "animation.goblin_berserker.attack",
+									"scared": "animation.goblin.scared"
+								},
+								"animation_controllers": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"move": "controller.animation.villager.move"
+									},
+									{
+										"attack": "controller.animation.goblin.attack"
+									},
+									{
+										"idle": "controller.animation.goblin.idle"
+									}
+								],
+								"render_controllers": [
+									"controller.render.goblin"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#0a2603",
+									"overlay_color": "#123e07"
+								},
+								"sound_effects": {
+									"laugh": "mob.goblin.idle"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:goblin.berserker",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "goblin"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/goblin_berserker"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.goblin_berserker"
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"humanoid_base_pose": "animation.goblin.berserker.general",
+									"move": "animation.goblin.walk",
+									"attack.goblin": "animation.goblin_berserker.attack",
+									"scared": "animation.goblin.scared"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:goblin.berserker",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/goblin_berserker"
+									},
+									"geometry": {
+										"default": "geometry.goblin_berserker"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.goblin.berserker.general",
+										"move": "animation.goblin.walk",
+										"attack.goblin": "animation.goblin_berserker.attack",
+										"scared": "animation.goblin.scared"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"idle": "controller.animation.goblin.idle"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#0a2603",
+										"overlay_color": "#123e07"
+									},
+									"sound_effects": {
+										"laugh": "mob.goblin.idle"
+									}
+								},
+								"key": "animation_controllers",
+								"is_minified": true,
+								"children": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"move": "controller.animation.villager.move"
+									},
+									{
+										"attack": "controller.animation.goblin.attack"
+									},
+									{
+										"idle": "controller.animation.goblin.idle"
+									}
+								]
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.goblin"
+								]
+							},
+							{
+								"open": {
+									"identifier": "mythmob:goblin.berserker",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/goblin_berserker"
+									},
+									"geometry": {
+										"default": "geometry.goblin_berserker"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.goblin.berserker.general",
+										"move": "animation.goblin.walk",
+										"attack.goblin": "animation.goblin_berserker.attack",
+										"scared": "animation.goblin.scared"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"idle": "controller.animation.goblin.idle"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#0a2603",
+										"overlay_color": "#123e07"
+									},
+									"sound_effects": {
+										"laugh": "mob.goblin.idle"
+									}
+								},
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:goblin.berserker",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/goblin_berserker"
+									},
+									"geometry": {
+										"default": "geometry.goblin_berserker"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.goblin.berserker.general",
+										"move": "animation.goblin.walk",
+										"attack.goblin": "animation.goblin_berserker.attack",
+										"scared": "animation.goblin.scared"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"idle": "controller.animation.goblin.idle"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#0a2603",
+										"overlay_color": "#123e07"
+									},
+									"sound_effects": {
+										"laugh": "mob.goblin.idle"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#0a2603",
+									"overlay_color": "#123e07"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:goblin.berserker",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/goblin_berserker"
+									},
+									"geometry": {
+										"default": "geometry.goblin_berserker"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.goblin.berserker.general",
+										"move": "animation.goblin.walk",
+										"attack.goblin": "animation.goblin_berserker.attack",
+										"scared": "animation.goblin.scared"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"idle": "controller.animation.goblin.idle"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#0a2603",
+										"overlay_color": "#123e07"
+									},
+									"sound_effects": {
+										"laugh": "mob.goblin.idle"
+									}
+								},
+								"key": "sound_effects",
+								"is_minified": true,
+								"children": {
+									"laugh": "mob.goblin.idle"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

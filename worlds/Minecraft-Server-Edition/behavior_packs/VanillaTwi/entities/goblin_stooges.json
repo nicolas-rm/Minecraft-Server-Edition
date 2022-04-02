@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mythmob:goblin_stooges",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ "walk" ]
+	  },
+	  "animations": {
+	    "walk": "controller.animation.gobble"
+	  }
+    },
+	
+	"components": {
+	  "minecraft:type_family": {
+	    "family": [ "goblin_stooges" ]
+	  },
+     "minecraft:health": {
+	    "value": 1
+	  },
+	  "minecraft:despawn": {
+	    "filters": {
+		  "all_of": [
+		    { "test": "is_family", "subject": "self", "value": "goblin_stooges" }
+		  ]
+		}
+	  },
+	  "minecraft:physics": {
+	  }
+	}
+  }
+}

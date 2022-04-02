@@ -1,0 +1,341 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\yule_log2.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "9306f436_02d6_4342_90be_8fa94b085075",
+	"file_version": 12,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:yule_log2"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"CCC",
+							"AOA"
+						],
+						"key": {
+							"C": {
+								"item": "strat:cocoa_powder"
+							},
+							"A": {
+								"item": "strat:milk_jar"
+							},
+							"O": {
+								"item": "strat:butter"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:yule_log",
+								"count": 1
+							},
+							{
+								"item": "strat:glass_jar",
+								"count": 2
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:yule_log2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"CCC",
+								"AOA"
+							],
+							"key": {
+								"C": {
+									"item": "strat:cocoa_powder"
+								},
+								"A": {
+									"item": "strat:milk_jar"
+								},
+								"O": {
+									"item": "strat:butter"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:yule_log",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 2
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:yule_log2"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:yule_log2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"CCC",
+								"AOA"
+							],
+							"key": {
+								"C": {
+									"item": "strat:cocoa_powder"
+								},
+								"A": {
+									"item": "strat:milk_jar"
+								},
+								"O": {
+									"item": "strat:butter"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:yule_log",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 2
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:yule_log2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"CCC",
+								"AOA"
+							],
+							"key": {
+								"C": {
+									"item": "strat:cocoa_powder"
+								},
+								"A": {
+									"item": "strat:milk_jar"
+								},
+								"O": {
+									"item": "strat:butter"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:yule_log",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 2
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"CCC",
+							"AOA"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:yule_log2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"CCC",
+								"AOA"
+							],
+							"key": {
+								"C": {
+									"item": "strat:cocoa_powder"
+								},
+								"A": {
+									"item": "strat:milk_jar"
+								},
+								"O": {
+									"item": "strat:butter"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:yule_log",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 2
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"C": {
+										"item": "strat:cocoa_powder"
+									},
+									"A": {
+										"item": "strat:milk_jar"
+									},
+									"O": {
+										"item": "strat:butter"
+									}
+								},
+								"key": "C",
+								"is_minified": true,
+								"children": {
+									"item": "strat:cocoa_powder"
+								}
+							},
+							{
+								"open": {
+									"C": {
+										"item": "strat:cocoa_powder"
+									},
+									"A": {
+										"item": "strat:milk_jar"
+									},
+									"O": {
+										"item": "strat:butter"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "strat:milk_jar"
+								}
+							},
+							{
+								"open": {
+									"C": {
+										"item": "strat:cocoa_powder"
+									},
+									"A": {
+										"item": "strat:milk_jar"
+									},
+									"O": {
+										"item": "strat:butter"
+									}
+								},
+								"key": "O",
+								"is_minified": true,
+								"children": {
+									"item": "strat:butter"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:yule_log2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"CCC",
+								"AOA"
+							],
+							"key": {
+								"C": {
+									"item": "strat:cocoa_powder"
+								},
+								"A": {
+									"item": "strat:milk_jar"
+								},
+								"O": {
+									"item": "strat:butter"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:yule_log",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 2
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:yule_log",
+										"count": 1
+									},
+									{
+										"item": "strat:glass_jar",
+										"count": 2
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:yule_log",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:yule_log",
+										"count": 1
+									},
+									{
+										"item": "strat:glass_jar",
+										"count": 2
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:glass_jar",
+									"count": 2
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,175 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\cooked_sausage.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "1865730e_114a_4f45_87eb_b6e05c829aa5",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:cooked_sausage",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 1.6,
+							"minecraft:food": {
+								"nutrition": 4,
+								"saturation_modifier": "normal",
+								"can_always_eat": false
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.cookedFood"
+							},
+							"minecraft:icon": {
+								"texture": "bridge_sausage cooked"
+							},
+							"minecraft:use_animation": "eat"
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cooked_sausage",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.cookedFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_sausage cooked"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cooked_sausage",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cooked_sausage",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.cookedFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_sausage cooked"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1.6",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.cookedFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_sausage cooked"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.cookedFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_sausage cooked"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.cookedFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.cookedFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_sausage cooked"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "bridge_sausage cooked"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

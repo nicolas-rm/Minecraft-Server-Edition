@@ -1,0 +1,77 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "strat:cheese_pizza_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.6,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cheese_pizza_block",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.pizza",
+			"minecraft:entity_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					2,
+					14
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					2,
+					14
+				]
+			},
+			"minecraft:breakonpush": true,
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:map_color": "#D29517",
+			"minecraft:on_player_destroyed": {
+				"event": "strat:cut"
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"strat:cut": {
+				"sequence": [
+					{
+						"condition": "query.get_equipped_item_name('main_hand') == 'kitchen_knife'",
+						"spawn_loot": {
+							"table": "loot_tables/cheese_pizza_slice.json"
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name('main_hand') != 'kitchen_knife'",
+						"spawn_loot": {
+							"table": "loot_tables/cheese_pizza.json"
+						}
+					}
+				]
+			}
+		}
+	}
+}

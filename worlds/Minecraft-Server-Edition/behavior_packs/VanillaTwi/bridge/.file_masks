@@ -1,0 +1,260 @@
+{
+	"RP/animation_controllers/goblin.animation_controllers.json": {
+		"data": {}
+	},
+	"RP/entity/goblin.archer.entity.json": {
+		"data": {}
+	},
+	"RP/entity/goblin.berserker.entity.json": {
+		"data": {}
+	},
+	"BP/entities/goblin.json": {
+		"data": {}
+	},
+	"BP/entities/goblin_archer.json": {
+		"data": {}
+	},
+	"BP/entities/goblin_berserker.json": {
+		"data": {}
+	},
+	"RP/entity/goblin.stooges.entity.json": {
+		"data": {}
+	},
+	"RP/entity/mimic.entity.json": {
+		"data": {}
+	},
+	"BP/entities/mimic.json": {
+		"data": {}
+	},
+	"BP/entities/hagbat.json": {
+		"data": {}
+	},
+	"RP/entity/hagbat.entity.json": {
+		"data": {}
+	},
+	"RP/animation_controllers/hagbat.animation_controllers.json": {
+		"data": {}
+	},
+	"RP/entity/minotaur.entity.json": {
+		"data": {}
+	},
+	"RP/animation_controllers/minotaur.animation_controllers.json": {
+		"data": {}
+	},
+	"BP/entities/minotuar.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/troll.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/centaur.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/cockatrice.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/giant.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/goblin.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/kobold.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/minotaur.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/ogre.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/werewolf.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/wraith.json": {
+		"data": {}
+	},
+	"RP/entity/cockatrice.entity.json": {
+		"data": {}
+	},
+	"BP/entities/troll.json": {
+		"data": {}
+	},
+	"RP/entity/werewolf.entity.json": {
+		"data": {}
+	},
+	"RP/entity/troll.entity.json": {
+		"data": {}
+	},
+	"RP/entity/necromancer_villager.entity.json": {
+		"data": {}
+	},
+	"BP/loot_tables/troll.json": {
+		"data": {}
+	},
+	"RP/entity/centaur.entity.json": {
+		"data": {}
+	},
+	"RP/entity/orc.entity.json": {
+		"data": {}
+	},
+	"RP/entity/giantspider.entity.json": {
+		"data": {}
+	},
+	"RP/entity/kobold.entity.json": {
+		"data": {}
+	},
+	"RP/entity/satyr.entity.json": {
+		"data": {}
+	},
+	"RP/entity/giant.entity.json": {
+		"data": {}
+	},
+	"RP/entity/mushroom2.entity.json": {
+		"data": {}
+	},
+	"RP/entity/mushroom.entity.json": {
+		"data": {}
+	},
+	"BP/entities/villager_v2.json": {
+		"data": {}
+	},
+	"RP/entity/swordsman_villager.entity.json": {
+		"data": {}
+	},
+	"RP/entity/archer_villager.entity.json": {
+		"data": {}
+	},
+	"RP/entity/evocation_villager.entity.json": {
+		"data": {}
+	},
+	"BP/entities/swordsman_villager.json": {
+		"data": {}
+	},
+	"BP/entities/archer_villager.json": {
+		"data": {}
+	},
+	"RP/render_controllers/village_guard.json": {
+		"data": {}
+	},
+	"RP/render_controllers/orc.render_controllers.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/hagbat.json": {
+		"data": {}
+	},
+	"RP/entity/ally_fang.json": {
+		"data": {}
+	},
+	"BP/entities/evocation_villager.json": {
+		"data": {}
+	},
+	"RP/entity/nitwit.entity.json": {
+		"data": {}
+	},
+	"BP/entities/cockatrice.json": {
+		"data": {}
+	},
+	"BP/manifest.json": {
+		"data": {}
+	},
+	"RP/manifest.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/mushroom.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/mushroom2.json": {
+		"data": {}
+	},
+	"RP/sounds/sound_definitions.json": {
+		"data": {}
+	},
+	"BP/entities/spiritgoblin.json": {
+		"data": {}
+	},
+	"RP/entity/marked_arrow.json": {
+		"data": {}
+	},
+	"BP/entities/marked_arrow.json": {
+		"data": {}
+	},
+	"RP/sounds.json": {
+		"data": {}
+	},
+	"BP/entities/kobold.json": {
+		"data": {}
+	},
+	"RP/render_controllers/koboldv2.json": {
+		"data": {}
+	},
+	"RP/render_controllers/kobold_weapon.json": {
+		"data": {}
+	},
+	"RP/render_controllers/koboldv2_armor.json": {
+		"data": {}
+	},
+	"BP/entities/kobold_banner.behavior.json": {
+		"data": {}
+	},
+	"RP/entity/kobold_leader_id.json": {
+		"data": {}
+	},
+	"BP/trading/kobold_trade_armor.json": {
+		"data": {}
+	},
+	"BP/trading/kobold_trade_weapon.json": {
+		"data": {}
+	},
+	"BP/trading/kobold_trade_tool.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/kobold_bell.json": {
+		"data": {}
+	},
+	"BP/entities/giant.json": {
+		"data": {}
+	},
+	"BP/entities/giantspider.json": {
+		"data": {}
+	},
+	"BP/entities/knight_skeleton.json": {
+		"data": {}
+	},
+	"BP/entities/mushroom.json": {
+		"data": {}
+	},
+	"BP/entities/mushroom2.json": {
+		"data": {}
+	},
+	"BP/entities/necromancer.json": {
+		"data": {}
+	},
+	"BP/entities/nymph.json": {
+		"data": {}
+	},
+	"BP/entities/nymph2.json": {
+		"data": {}
+	},
+	"BP/entities/ogre.json": {
+		"data": {}
+	},
+	"BP/entities/ogre_sleeping.json": {
+		"data": {}
+	},
+	"BP/entities/orc.json": {
+		"data": {}
+	},
+	"BP/entities/satyr.json": {
+		"data": {}
+	},
+	"BP/entities/wraith.json": {
+		"data": {}
+	},
+	"BP/entities/werewolf2.json": {
+		"data": {}
+	},
+	"BP/entities/werewolf.json": {
+		"data": {}
+	}
+}

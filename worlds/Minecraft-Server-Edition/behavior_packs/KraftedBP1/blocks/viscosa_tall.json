@@ -1,0 +1,57 @@
+//bridge-file-version: #43
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:viscosa_tall"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "viscosa_tall",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"tag:grass": {},
+			"minecraft:geometry": "geometry.double_plant",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"korbon:phreyium",
+							"korbon:phreyium_block"
+						]
+					}
+				]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:breathability": "air",
+			"minecraft:map_color": "#909143",
+			"minecraft:flammable": {
+				"burn_odds": 2,
+				"flame_odds": 1
+			},
+			"minecraft:explosion_resistance": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					16,
+					12
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/viscosa_tall.json",
+			"minecraft:block_light_absorption": 0
+		},
+		"events": {}
+	}
+}

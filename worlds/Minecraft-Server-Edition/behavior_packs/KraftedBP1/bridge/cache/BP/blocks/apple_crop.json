@@ -1,0 +1,1503 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\apple_crop.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "69d937fa_d96d_483f_a172_eca2d9db66cb",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:apple_crop",
+							"properties": {
+								"strat:growth_stage": [
+									0,
+									1,
+									2
+								]
+							}
+						},
+						"components": {
+							"minecraft:geometry": "geometry.crop",
+							"minecraft:random_ticking": {
+								"on_tick": {
+									"event": "grow_stage"
+								}
+							},
+							"minecraft:breathability": "air",
+							"minecraft:entity_collision": false,
+							"minecraft:pick_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									16
+								]
+							},
+							"minecraft:map_color": "#1EB809",
+							"minecraft:on_interact": {
+								"event": "bone_meal",
+								"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+							},
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"allowed_faces": [
+											"down"
+										],
+										"block_filter": [
+											"minecraft:leaves",
+											"minecraft:leaves2"
+										]
+									}
+								]
+							},
+							"minecraft:block_light_absorption": 0,
+							"minecraft:breakonpush": true,
+							"minecraft:loot": "loot_tables/apple_crop.json"
+						},
+						"events": {
+							"bone_meal": {
+								"sequence": [
+									{
+										"condition": "query.block_property('strat:growth_stage') < 2",
+										"decrement_stack": {},
+										"run_command": {
+											"command": [
+												"particle minecraft:crop_growth_emitter ~~~"
+											]
+										},
+										"trigger": {
+											"event": "grow_stage_2"
+										}
+									}
+								]
+							},
+							"grow_stage": {
+								"randomize": [
+									{
+										"weight": 2
+									},
+									{
+										"weight": 1,
+										"set_block_property": {
+											"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+										}
+									}
+								]
+							},
+							"grow_stage_2": {
+								"randomize": [
+									{
+										"weight": 1
+									},
+									{
+										"weight": 3,
+										"set_block_property": {
+											"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+										}
+									}
+								]
+							},
+							"do_nothing": {},
+							"final_stage": {
+								"sequence": [
+									{
+										"set_block_property": {
+											"strat:growth_stage": 0
+										},
+										"spawn_loot": {
+											"table": "loot_tables/apple_crop_2.json"
+										}
+									}
+								]
+							}
+						},
+						"permutations": [
+							{
+								"condition": "query.block_property('strat:growth_stage') == 0",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "apple_crop_0",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:loot": "loot_tables/apple_crop.json",
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											8,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									}
+								}
+							},
+							{
+								"condition": "query.block_property('strat:growth_stage') == 1",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "apple_crop_1",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:loot": "loot_tables/apple_crop.json",
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											6,
+											-8
+										],
+										"size": [
+											16,
+											10,
+											16
+										]
+									}
+								}
+							},
+							{
+								"condition": "query.block_property('strat:growth_stage') == 2",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "apple_crop_2",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:loot": "loot_tables/apple_crop_2.json",
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											4,
+											-8
+										],
+										"size": [
+											16,
+											12,
+											16
+										]
+									},
+									"minecraft:on_interact": {
+										"event": "final_stage"
+									}
+								}
+							}
+						]
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:apple_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"down"
+											],
+											"block_filter": [
+												"minecraft:leaves",
+												"minecraft:leaves2"
+											]
+										}
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true,
+								"minecraft:loot": "loot_tables/apple_crop.json"
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:growth_stage') < 2",
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"do_nothing": {},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 0
+											},
+											"spawn_loot": {
+												"table": "loot_tables/apple_crop_2.json"
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												6,
+												-8
+											],
+											"size": [
+												16,
+												10,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop_2.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												4,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										}
+									}
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:apple_crop",
+							"properties": {
+								"strat:growth_stage": [
+									0,
+									1,
+									2
+								]
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:apple_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"down"
+											],
+											"block_filter": [
+												"minecraft:leaves",
+												"minecraft:leaves2"
+											]
+										}
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true,
+								"minecraft:loot": "loot_tables/apple_crop.json"
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:growth_stage') < 2",
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"do_nothing": {},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 0
+											},
+											"spawn_loot": {
+												"table": "loot_tables/apple_crop_2.json"
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												6,
+												-8
+											],
+											"size": [
+												16,
+												10,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop_2.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												4,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										}
+									}
+								}
+							]
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:geometry": "geometry.crop",
+							"minecraft:random_ticking": {
+								"on_tick": {
+									"event": "grow_stage"
+								}
+							},
+							"minecraft:breathability": "air",
+							"minecraft:entity_collision": false,
+							"minecraft:pick_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									16
+								]
+							},
+							"minecraft:map_color": "#1EB809",
+							"minecraft:on_interact": {
+								"event": "bone_meal",
+								"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+							},
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"allowed_faces": [
+											"down"
+										],
+										"block_filter": [
+											"minecraft:leaves",
+											"minecraft:leaves2"
+										]
+									}
+								]
+							},
+							"minecraft:block_light_absorption": 0,
+							"minecraft:breakonpush": true,
+							"minecraft:loot": "loot_tables/apple_crop.json"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:apple_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"down"
+											],
+											"block_filter": [
+												"minecraft:leaves",
+												"minecraft:leaves2"
+											]
+										}
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true,
+								"minecraft:loot": "loot_tables/apple_crop.json"
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:growth_stage') < 2",
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"do_nothing": {},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 0
+											},
+											"spawn_loot": {
+												"table": "loot_tables/apple_crop_2.json"
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												6,
+												-8
+											],
+											"size": [
+												16,
+												10,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop_2.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												4,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										}
+									}
+								}
+							]
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"bone_meal": {
+								"sequence": [
+									{
+										"condition": "query.block_property('strat:growth_stage') < 2",
+										"decrement_stack": {},
+										"run_command": {
+											"command": [
+												"particle minecraft:crop_growth_emitter ~~~"
+											]
+										},
+										"trigger": {
+											"event": "grow_stage_2"
+										}
+									}
+								]
+							},
+							"grow_stage": {
+								"randomize": [
+									{
+										"weight": 2
+									},
+									{
+										"weight": 1,
+										"set_block_property": {
+											"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+										}
+									}
+								]
+							},
+							"grow_stage_2": {
+								"randomize": [
+									{
+										"weight": 1
+									},
+									{
+										"weight": 3,
+										"set_block_property": {
+											"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+										}
+									}
+								]
+							},
+							"do_nothing": {},
+							"final_stage": {
+								"sequence": [
+									{
+										"set_block_property": {
+											"strat:growth_stage": 0
+										},
+										"spawn_loot": {
+											"table": "loot_tables/apple_crop_2.json"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:apple_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"down"
+											],
+											"block_filter": [
+												"minecraft:leaves",
+												"minecraft:leaves2"
+											]
+										}
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true,
+								"minecraft:loot": "loot_tables/apple_crop.json"
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:growth_stage') < 2",
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<3) ? query.block_property('strat:growth_stage') + 1 : 2"
+											}
+										}
+									]
+								},
+								"do_nothing": {},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 0
+											},
+											"spawn_loot": {
+												"table": "loot_tables/apple_crop_2.json"
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												6,
+												-8
+											],
+											"size": [
+												16,
+												10,
+												16
+											]
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "apple_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:loot": "loot_tables/apple_crop_2.json",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												4,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										}
+									}
+								}
+							]
+						},
+						"key": "permutations",
+						"children": [
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													6,
+													-8
+												],
+												"size": [
+													16,
+													10,
+													16
+												]
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop_2.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													4,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 0",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 0",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "apple_crop_0",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:loot": "loot_tables/apple_crop.json",
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														8,
+														-8
+													],
+													"size": [
+														16,
+														8,
+														16
+													]
+												}
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											}
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													6,
+													-8
+												],
+												"size": [
+													16,
+													10,
+													16
+												]
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop_2.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													4,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 1",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 1",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "apple_crop_1",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:loot": "loot_tables/apple_crop.json",
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														6,
+														-8
+													],
+													"size": [
+														16,
+														10,
+														16
+													]
+												}
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													6,
+													-8
+												],
+												"size": [
+													16,
+													10,
+													16
+												]
+											}
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													6,
+													-8
+												],
+												"size": [
+													16,
+													10,
+													16
+												]
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop_2.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													4,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 2",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 2",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "apple_crop_2",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:loot": "loot_tables/apple_crop_2.json",
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														4,
+														-8
+													],
+													"size": [
+														16,
+														12,
+														16
+													]
+												},
+												"minecraft:on_interact": {
+													"event": "final_stage"
+												}
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "apple_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:loot": "loot_tables/apple_crop_2.json",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													4,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											}
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

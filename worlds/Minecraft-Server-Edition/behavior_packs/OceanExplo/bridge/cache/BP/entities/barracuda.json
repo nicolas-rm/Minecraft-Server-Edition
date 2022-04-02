@@ -1,0 +1,1361 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\entities\\barracuda.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "5e30382d_a5cc_49d3_bc36_7d45682154d9",
+	"file_version": 13,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "ocean:barracuda",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"components": {
+							"minecraft:collision_box": {
+								"width": 0.8,
+								"height": 0.4
+							},
+							"minecraft:type_family": {
+								"family": [
+									"fish"
+								]
+							},
+							"minecraft:health": {
+								"value": 20,
+								"max": 20
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:breathable": {
+								"total_supply": 240,
+								"suffocate_time": 0,
+								"breathes_air": true,
+								"breathes_water": false,
+								"generates_bubbles": false
+							},
+							"minecraft:movement": {
+								"value": 0.12
+							},
+							"minecraft:underwater_movement": {
+								"value": 0.12
+							},
+							"minecraft:navigation.generic": {
+								"is_amphibious": false,
+								"can_path_over_water": false,
+								"can_swim": true,
+								"can_walk": false,
+								"can_sink": true
+							},
+							"minecraft:jump.static": {
+								"jump_power": 0.6
+							},
+							"minecraft:can_climb": {},
+							"minecraft:behavior.swim_idle": {
+								"priority": 5
+							},
+							"minecraft:behavior.random_swim": {
+								"priority": 3,
+								"interval": 0,
+								"xz_dist": 20,
+								"y_dist": 5
+							},
+							"minecraft:behavior.random_look_around": {
+								"priority": 7
+							},
+							"minecraft:behavior.move_to_water": {
+								"priority": 1,
+								"search_range": 15,
+								"search_height": 5
+							},
+							"minecraft:physics": {
+								"has_gravity": true
+							},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:loot": {
+								"table": "loot_tables/barracuda.json"
+							},
+							"minecraft:behavior.delayed_attack": {
+								"priority": 0,
+								"attack_once": false,
+								"track_target": true,
+								"reach_multiplier": 1.5,
+								"speed_multiplier": 1.5,
+								"attack_duration": 0.5,
+								"hit_delay_pct": 0.5
+							},
+							"minecraft:attack": {
+								"damage": 4
+							},
+							"minecraft:behavior.hurt_by_target": {
+								"priority": 1
+							},
+							"minecraft:behavior.swim_wander": {
+								"priority": 4,
+								"interval": 10,
+								"look_ahead": 2
+							},
+							"minecraft:behavior.nearest_attackable_target": {
+								"priority": 2,
+								"within_radius": 20,
+								"persist_time": 3,
+								"entity_types": [
+									{
+										"filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "head",
+													"operator": "==",
+													"value": "minecraft:iron_helmet"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "head",
+													"operator": "==",
+													"value": "minecraft:golden_helmet"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "head",
+													"operator": "==",
+													"value": "minecraft:diamond_helmet"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"operator": "==",
+													"domain": "torso",
+													"value": "minecraft:iron_chestplate"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"operator": "==",
+													"domain": "torso",
+													"value": "minecraft:golden_chestplate"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"operator": "==",
+													"domain": "torso",
+													"value": "minecraft:diamond_chestplate"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "leg",
+													"operator": "==",
+													"value": "minecraft:iron_leggings"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "leg",
+													"operator": "==",
+													"value": "minecraft:golden_leggings"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "leg",
+													"operator": "==",
+													"value": "minecraft:diamond_leggings"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "feet",
+													"operator": "==",
+													"value": "minecraft:iron_boots"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "feet",
+													"operator": "==",
+													"value": "minecraft:golden_boots"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "feet",
+													"operator": "==",
+													"value": "minecraft:diamond_boots"
+												}
+											]
+										},
+										"must_see": true
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ocean:barracuda",
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:barracuda",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"components": {
+								"minecraft:collision_box": {
+									"width": 0.8,
+									"height": 0.4
+								},
+								"minecraft:type_family": {
+									"family": [
+										"fish"
+									]
+								},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 240,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": false,
+									"generates_bubbles": false
+								},
+								"minecraft:movement": {
+									"value": 0.12
+								},
+								"minecraft:underwater_movement": {
+									"value": 0.12
+								},
+								"minecraft:navigation.generic": {
+									"is_amphibious": false,
+									"can_path_over_water": false,
+									"can_swim": true,
+									"can_walk": false,
+									"can_sink": true
+								},
+								"minecraft:jump.static": {
+									"jump_power": 0.6
+								},
+								"minecraft:can_climb": {},
+								"minecraft:behavior.swim_idle": {
+									"priority": 5
+								},
+								"minecraft:behavior.random_swim": {
+									"priority": 3,
+									"interval": 0,
+									"xz_dist": 20,
+									"y_dist": 5
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.move_to_water": {
+									"priority": 1,
+									"search_range": 15,
+									"search_height": 5
+								},
+								"minecraft:physics": {
+									"has_gravity": true
+								},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:loot": {
+									"table": "loot_tables/barracuda.json"
+								},
+								"minecraft:behavior.delayed_attack": {
+									"priority": 0,
+									"attack_once": false,
+									"track_target": true,
+									"reach_multiplier": 1.5,
+									"speed_multiplier": 1.5,
+									"attack_duration": 0.5,
+									"hit_delay_pct": 0.5
+								},
+								"minecraft:attack": {
+									"damage": 4
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1
+								},
+								"minecraft:behavior.swim_wander": {
+									"priority": 4,
+									"interval": 10,
+									"look_ahead": 2
+								},
+								"minecraft:behavior.nearest_attackable_target": {
+									"priority": 2,
+									"within_radius": 20,
+									"persist_time": 3,
+									"entity_types": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "head",
+														"operator": "==",
+														"value": "minecraft:iron_helmet"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "head",
+														"operator": "==",
+														"value": "minecraft:golden_helmet"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "head",
+														"operator": "==",
+														"value": "minecraft:diamond_helmet"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"operator": "==",
+														"domain": "torso",
+														"value": "minecraft:iron_chestplate"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"operator": "==",
+														"domain": "torso",
+														"value": "minecraft:golden_chestplate"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"operator": "==",
+														"domain": "torso",
+														"value": "minecraft:diamond_chestplate"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "leg",
+														"operator": "==",
+														"value": "minecraft:iron_leggings"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "leg",
+														"operator": "==",
+														"value": "minecraft:golden_leggings"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "leg",
+														"operator": "==",
+														"value": "minecraft:diamond_leggings"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "feet",
+														"operator": "==",
+														"value": "minecraft:iron_boots"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "feet",
+														"operator": "==",
+														"value": "minecraft:golden_boots"
+													},
+													{
+														"test": "has_equipment",
+														"subject": "other",
+														"domain": "feet",
+														"operator": "==",
+														"value": "minecraft:diamond_boots"
+													}
+												]
+											},
+											"must_see": true
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0.8,
+									"height": 0.4
+								}
+							},
+							{
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"fish"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"fish"
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 20,
+									"max": 20
+								}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"is_minified": true,
+								"children": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								}
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"total_supply": 240,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": false,
+									"generates_bubbles": false
+								}
+							},
+							{
+								"key": "minecraft:movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.12
+								}
+							},
+							{
+								"key": "minecraft:underwater_movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.12
+								}
+							},
+							{
+								"key": "minecraft:navigation.generic",
+								"is_minified": true,
+								"children": {
+									"is_amphibious": false,
+									"can_path_over_water": false,
+									"can_swim": true,
+									"can_walk": false,
+									"can_sink": true
+								}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {
+									"jump_power": 0.6
+								}
+							},
+							{
+								"key": "minecraft:can_climb",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:behavior.swim_idle",
+								"is_minified": true,
+								"children": {
+									"priority": 5
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_swim",
+								"is_minified": true,
+								"children": {
+									"priority": 3,
+									"interval": 0,
+									"xz_dist": 20,
+									"y_dist": 5
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_look_around",
+								"is_minified": true,
+								"children": {
+									"priority": 7
+								}
+							},
+							{
+								"key": "minecraft:behavior.move_to_water",
+								"is_minified": true,
+								"children": {
+									"priority": 1,
+									"search_range": 15,
+									"search_height": 5
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_gravity": true
+								}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:movement.basic",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {
+									"table": "loot_tables/barracuda.json"
+								}
+							},
+							{
+								"key": "minecraft:behavior.delayed_attack",
+								"is_minified": true,
+								"children": {
+									"priority": 0,
+									"attack_once": false,
+									"track_target": true,
+									"reach_multiplier": 1.5,
+									"speed_multiplier": 1.5,
+									"attack_duration": 0.5,
+									"hit_delay_pct": 0.5
+								}
+							},
+							{
+								"key": "minecraft:attack",
+								"is_minified": true,
+								"children": {
+									"damage": 4
+								}
+							},
+							{
+								"key": "minecraft:behavior.hurt_by_target",
+								"is_minified": true,
+								"children": {
+									"priority": 1
+								}
+							},
+							{
+								"key": "minecraft:behavior.swim_wander",
+								"is_minified": true,
+								"children": {
+									"priority": 4,
+									"interval": 10,
+									"look_ahead": 2
+								}
+							},
+							{
+								"open": {
+									"minecraft:collision_box": {
+										"width": 0.8,
+										"height": 0.4
+									},
+									"minecraft:type_family": {
+										"family": [
+											"fish"
+										]
+									},
+									"minecraft:health": {
+										"value": 20,
+										"max": 20
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 240,
+										"suffocate_time": 0,
+										"breathes_air": true,
+										"breathes_water": false,
+										"generates_bubbles": false
+									},
+									"minecraft:movement": {
+										"value": 0.12
+									},
+									"minecraft:underwater_movement": {
+										"value": 0.12
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": false,
+										"can_path_over_water": false,
+										"can_swim": true,
+										"can_walk": false,
+										"can_sink": true
+									},
+									"minecraft:jump.static": {
+										"jump_power": 0.6
+									},
+									"minecraft:can_climb": {},
+									"minecraft:behavior.swim_idle": {
+										"priority": 5
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 3,
+										"interval": 0,
+										"xz_dist": 20,
+										"y_dist": 5
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 7
+									},
+									"minecraft:behavior.move_to_water": {
+										"priority": 1,
+										"search_range": 15,
+										"search_height": 5
+									},
+									"minecraft:physics": {
+										"has_gravity": true
+									},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:loot": {
+										"table": "loot_tables/barracuda.json"
+									},
+									"minecraft:behavior.delayed_attack": {
+										"priority": 0,
+										"attack_once": false,
+										"track_target": true,
+										"reach_multiplier": 1.5,
+										"speed_multiplier": 1.5,
+										"attack_duration": 0.5,
+										"hit_delay_pct": 0.5
+									},
+									"minecraft:attack": {
+										"damage": 4
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1
+									},
+									"minecraft:behavior.swim_wander": {
+										"priority": 4,
+										"interval": 10,
+										"look_ahead": 2
+									},
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 2,
+										"within_radius": 20,
+										"persist_time": 3,
+										"entity_types": [
+											{
+												"filters": {
+													"any_of": [
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "head",
+															"operator": "==",
+															"value": "minecraft:iron_helmet"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "head",
+															"operator": "==",
+															"value": "minecraft:golden_helmet"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "head",
+															"operator": "==",
+															"value": "minecraft:diamond_helmet"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"operator": "==",
+															"domain": "torso",
+															"value": "minecraft:iron_chestplate"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"operator": "==",
+															"domain": "torso",
+															"value": "minecraft:golden_chestplate"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"operator": "==",
+															"domain": "torso",
+															"value": "minecraft:diamond_chestplate"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "leg",
+															"operator": "==",
+															"value": "minecraft:iron_leggings"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "leg",
+															"operator": "==",
+															"value": "minecraft:golden_leggings"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "leg",
+															"operator": "==",
+															"value": "minecraft:diamond_leggings"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "feet",
+															"operator": "==",
+															"value": "minecraft:iron_boots"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "feet",
+															"operator": "==",
+															"value": "minecraft:golden_boots"
+														},
+														{
+															"test": "has_equipment",
+															"subject": "other",
+															"domain": "feet",
+															"operator": "==",
+															"value": "minecraft:diamond_boots"
+														}
+													]
+												},
+												"must_see": true
+											}
+										]
+									}
+								},
+								"key": "minecraft:behavior.nearest_attackable_target",
+								"children": [
+									{
+										"data": "2",
+										"key": "priority"
+									},
+									{
+										"data": "20",
+										"key": "within_radius"
+									},
+									{
+										"data": "3",
+										"key": "persist_time"
+									},
+									{
+										"key": "entity_types",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"any_of": [
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "head",
+																	"operator": "==",
+																	"value": "minecraft:iron_helmet"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "head",
+																	"operator": "==",
+																	"value": "minecraft:golden_helmet"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "head",
+																	"operator": "==",
+																	"value": "minecraft:diamond_helmet"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"operator": "==",
+																	"domain": "torso",
+																	"value": "minecraft:iron_chestplate"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"operator": "==",
+																	"domain": "torso",
+																	"value": "minecraft:golden_chestplate"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"operator": "==",
+																	"domain": "torso",
+																	"value": "minecraft:diamond_chestplate"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "leg",
+																	"operator": "==",
+																	"value": "minecraft:iron_leggings"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "leg",
+																	"operator": "==",
+																	"value": "minecraft:golden_leggings"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "leg",
+																	"operator": "==",
+																	"value": "minecraft:diamond_leggings"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "feet",
+																	"operator": "==",
+																	"value": "minecraft:iron_boots"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "feet",
+																	"operator": "==",
+																	"value": "minecraft:golden_boots"
+																},
+																{
+																	"test": "has_equipment",
+																	"subject": "other",
+																	"domain": "feet",
+																	"operator": "==",
+																	"value": "minecraft:diamond_boots"
+																}
+															]
+														},
+														"must_see": true
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"any_of": [
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "head",
+																		"operator": "==",
+																		"value": "minecraft:iron_helmet"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "head",
+																		"operator": "==",
+																		"value": "minecraft:golden_helmet"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "head",
+																		"operator": "==",
+																		"value": "minecraft:diamond_helmet"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"operator": "==",
+																		"domain": "torso",
+																		"value": "minecraft:iron_chestplate"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"operator": "==",
+																		"domain": "torso",
+																		"value": "minecraft:golden_chestplate"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"operator": "==",
+																		"domain": "torso",
+																		"value": "minecraft:diamond_chestplate"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "leg",
+																		"operator": "==",
+																		"value": "minecraft:iron_leggings"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "leg",
+																		"operator": "==",
+																		"value": "minecraft:golden_leggings"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "leg",
+																		"operator": "==",
+																		"value": "minecraft:diamond_leggings"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "feet",
+																		"operator": "==",
+																		"value": "minecraft:iron_boots"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "feet",
+																		"operator": "==",
+																		"value": "minecraft:golden_boots"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"subject": "other",
+																		"domain": "feet",
+																		"operator": "==",
+																		"value": "minecraft:diamond_boots"
+																	}
+																]
+															},
+															"must_see": true
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"any_of": [
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "head",
+																			"operator": "==",
+																			"value": "minecraft:iron_helmet"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "head",
+																			"operator": "==",
+																			"value": "minecraft:golden_helmet"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "head",
+																			"operator": "==",
+																			"value": "minecraft:diamond_helmet"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"operator": "==",
+																			"domain": "torso",
+																			"value": "minecraft:iron_chestplate"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"operator": "==",
+																			"domain": "torso",
+																			"value": "minecraft:golden_chestplate"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"operator": "==",
+																			"domain": "torso",
+																			"value": "minecraft:diamond_chestplate"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "leg",
+																			"operator": "==",
+																			"value": "minecraft:iron_leggings"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "leg",
+																			"operator": "==",
+																			"value": "minecraft:golden_leggings"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "leg",
+																			"operator": "==",
+																			"value": "minecraft:diamond_leggings"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "feet",
+																			"operator": "==",
+																			"value": "minecraft:iron_boots"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "feet",
+																			"operator": "==",
+																			"value": "minecraft:golden_boots"
+																		},
+																		{
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "feet",
+																			"operator": "==",
+																			"value": "minecraft:diamond_boots"
+																		}
+																	]
+																},
+																"key": "any_of",
+																"children": [
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "head",
+																			"operator": "==",
+																			"value": "minecraft:iron_helmet"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "head",
+																			"operator": "==",
+																			"value": "minecraft:golden_helmet"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "head",
+																			"operator": "==",
+																			"value": "minecraft:diamond_helmet"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"operator": "==",
+																			"domain": "torso",
+																			"value": "minecraft:iron_chestplate"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"operator": "==",
+																			"domain": "torso",
+																			"value": "minecraft:golden_chestplate"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"operator": "==",
+																			"domain": "torso",
+																			"value": "minecraft:diamond_chestplate"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "leg",
+																			"operator": "==",
+																			"value": "minecraft:iron_leggings"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "leg",
+																			"operator": "==",
+																			"value": "minecraft:golden_leggings"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "leg",
+																			"operator": "==",
+																			"value": "minecraft:diamond_leggings"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "feet",
+																			"operator": "==",
+																			"value": "minecraft:iron_boots"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "feet",
+																			"operator": "==",
+																			"value": "minecraft:golden_boots"
+																		}
+																	},
+																	{
+																		"open": [
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "head",
+																				"operator": "==",
+																				"value": "minecraft:iron_helmet"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "head",
+																				"operator": "==",
+																				"value": "minecraft:golden_helmet"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "head",
+																				"operator": "==",
+																				"value": "minecraft:diamond_helmet"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"operator": "==",
+																				"domain": "torso",
+																				"value": "minecraft:iron_chestplate"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"operator": "==",
+																				"domain": "torso",
+																				"value": "minecraft:golden_chestplate"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"operator": "==",
+																				"domain": "torso",
+																				"value": "minecraft:diamond_chestplate"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "leg",
+																				"operator": "==",
+																				"value": "minecraft:iron_leggings"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "leg",
+																				"operator": "==",
+																				"value": "minecraft:golden_leggings"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "leg",
+																				"operator": "==",
+																				"value": "minecraft:diamond_leggings"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "feet",
+																				"operator": "==",
+																				"value": "minecraft:iron_boots"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "feet",
+																				"operator": "==",
+																				"value": "minecraft:golden_boots"
+																			},
+																			{
+																				"test": "has_equipment",
+																				"subject": "other",
+																				"domain": "feet",
+																				"operator": "==",
+																				"value": "minecraft:diamond_boots"
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "has_equipment",
+																			"subject": "other",
+																			"domain": "feet",
+																			"operator": "==",
+																			"value": "minecraft:diamond_boots"
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"data": "true",
+														"key": "must_see"
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

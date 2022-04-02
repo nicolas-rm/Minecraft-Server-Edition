@@ -1,0 +1,534 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\VanillaTwi\\spawn_rules\\hagbat.json",
+	"file_type": "spawn_rule",
+	"format_version": 1,
+	"file_uuid": "9b337bba_f7a2_41ab_846b_29957334664a",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:spawn_rules": {
+						"description": {
+							"identifier": "vanilla_twilight:hagbat",
+							"population_control": "monster"
+						},
+						"conditions": [
+							{
+								"minecraft:spawns_on_surface": {},
+								"minecraft:spawns_on_block_filter": "minecraft:grass",
+								"minecraft:brightness_filter": {
+									"min": 0,
+									"max": 7,
+									"adjust_for_weather": false
+								},
+								"minecraft:weight": {
+									"default": 5
+								},
+								"minecraft:herd": {
+									"min_size": 1,
+									"max_size": 2
+								},
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "mountain"
+								}
+							},
+							{
+								"minecraft:spawns_on_surface": {},
+								"minecraft:spawns_on_block_filter": "minecraft:grass",
+								"minecraft:brightness_filter": {
+									"min": 0,
+									"max": 7,
+									"adjust_for_weather": false
+								},
+								"minecraft:weight": {
+									"default": 1
+								},
+								"minecraft:herd": {
+									"min_size": 4,
+									"max_size": 8
+								},
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "mountain"
+								}
+							}
+						]
+					}
+				},
+				"key": "minecraft:spawn_rules",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:hagbat",
+								"population_control": "monster"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:spawns_on_block_filter": "minecraft:grass",
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 7,
+										"adjust_for_weather": false
+									},
+									"minecraft:weight": {
+										"default": 5
+									},
+									"minecraft:herd": {
+										"min_size": 1,
+										"max_size": 2
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "mountain"
+									}
+								},
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:spawns_on_block_filter": "minecraft:grass",
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 7,
+										"adjust_for_weather": false
+									},
+									"minecraft:weight": {
+										"default": 1
+									},
+									"minecraft:herd": {
+										"min_size": 4,
+										"max_size": 8
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "mountain"
+									}
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "vanilla_twilight:hagbat",
+							"population_control": "monster"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:hagbat",
+								"population_control": "monster"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:spawns_on_block_filter": "minecraft:grass",
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 7,
+										"adjust_for_weather": false
+									},
+									"minecraft:weight": {
+										"default": 5
+									},
+									"minecraft:herd": {
+										"min_size": 1,
+										"max_size": 2
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "mountain"
+									}
+								},
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:spawns_on_block_filter": "minecraft:grass",
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 7,
+										"adjust_for_weather": false
+									},
+									"minecraft:weight": {
+										"default": 1
+									},
+									"minecraft:herd": {
+										"min_size": 4,
+										"max_size": 8
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "mountain"
+									}
+								}
+							]
+						},
+						"key": "conditions",
+						"children": [
+							{
+								"open": [
+									{
+										"minecraft:spawns_on_surface": {},
+										"minecraft:spawns_on_block_filter": "minecraft:grass",
+										"minecraft:brightness_filter": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": false
+										},
+										"minecraft:weight": {
+											"default": 5
+										},
+										"minecraft:herd": {
+											"min_size": 1,
+											"max_size": 2
+										},
+										"minecraft:biome_filter": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "mountain"
+										}
+									},
+									{
+										"minecraft:spawns_on_surface": {},
+										"minecraft:spawns_on_block_filter": "minecraft:grass",
+										"minecraft:brightness_filter": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": false
+										},
+										"minecraft:weight": {
+											"default": 1
+										},
+										"minecraft:herd": {
+											"min_size": 4,
+											"max_size": 8
+										},
+										"minecraft:biome_filter": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "mountain"
+										}
+									}
+								],
+								"children": [
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 5
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 2
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:spawns_on_surface",
+										"is_minified": true,
+										"children": {}
+									},
+									{
+										"data": "minecraft:grass",
+										"key": "minecraft:spawns_on_block_filter"
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 5
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 2
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:brightness_filter",
+										"is_minified": true,
+										"children": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": false
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 5
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 2
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:weight",
+										"is_minified": true,
+										"children": {
+											"default": 5
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 5
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 2
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:herd",
+										"is_minified": true,
+										"children": {
+											"min_size": 1,
+											"max_size": 2
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 5
+											},
+											"minecraft:herd": {
+												"min_size": 1,
+												"max_size": 2
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:biome_filter",
+										"is_minified": true,
+										"children": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "mountain"
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"minecraft:spawns_on_surface": {},
+										"minecraft:spawns_on_block_filter": "minecraft:grass",
+										"minecraft:brightness_filter": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": false
+										},
+										"minecraft:weight": {
+											"default": 5
+										},
+										"minecraft:herd": {
+											"min_size": 1,
+											"max_size": 2
+										},
+										"minecraft:biome_filter": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "mountain"
+										}
+									},
+									{
+										"minecraft:spawns_on_surface": {},
+										"minecraft:spawns_on_block_filter": "minecraft:grass",
+										"minecraft:brightness_filter": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": false
+										},
+										"minecraft:weight": {
+											"default": 1
+										},
+										"minecraft:herd": {
+											"min_size": 4,
+											"max_size": 8
+										},
+										"minecraft:biome_filter": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "mountain"
+										}
+									}
+								],
+								"children": [
+									{
+										"key": "minecraft:spawns_on_surface",
+										"is_minified": true,
+										"children": {}
+									},
+									{
+										"data": "minecraft:grass",
+										"key": "minecraft:spawns_on_block_filter"
+									},
+									{
+										"key": "minecraft:brightness_filter",
+										"is_minified": true,
+										"children": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": false
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 1
+											},
+											"minecraft:herd": {
+												"min_size": 4,
+												"max_size": 8
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:weight",
+										"is_minified": true,
+										"children": {
+											"default": 1
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 1
+											},
+											"minecraft:herd": {
+												"min_size": 4,
+												"max_size": 8
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:herd",
+										"is_minified": true,
+										"children": {
+											"min_size": 4,
+											"max_size": 8
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:spawns_on_block_filter": "minecraft:grass",
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": false
+											},
+											"minecraft:weight": {
+												"default": 1
+											},
+											"minecraft:herd": {
+												"min_size": 4,
+												"max_size": 8
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "mountain"
+											}
+										},
+										"key": "minecraft:biome_filter",
+										"is_minified": true,
+										"children": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "mountain"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

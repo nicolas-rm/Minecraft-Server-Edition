@@ -1,0 +1,22 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "strat:tough_binding_cast",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Tough Binding Cast"
+			},
+			"minecraft:icon": {
+				"texture": "tough_binding_cast"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			}
+		},
+		"events": {}
+	}
+}

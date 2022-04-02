@@ -1,0 +1,1241 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Food Expansion Addon RP\\textures\\terrain_texture.json",
+	"file_type": "terrain_texture",
+	"format_version": 1,
+	"file_uuid": "9cc82c3e_83f3_4427_8e96_f84bbbe75ec8",
+	"file_version": 98,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.terrain",
+				"key": "texture_name"
+			},
+			{
+				"data": "8",
+				"key": "padding"
+			},
+			{
+				"data": "4",
+				"key": "num_mip_levels"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.terrain",
+					"padding": 8,
+					"num_mip_levels": 4,
+					"texture_data": {
+						"distillation chamber": {
+							"textures": [
+								"textures/blocks/distillation_chamber"
+							]
+						},
+						"strat_salt ore": {
+							"textures": [
+								"textures/blocks/salt_ore"
+							]
+						},
+						"strat_tomato_crop_0": {
+							"textures": [
+								"textures/blocks/tomato_stage_0"
+							]
+						},
+						"strat_tomato_crop_1": {
+							"textures": [
+								"textures/blocks/tomato_stage_1"
+							]
+						},
+						"strat_tomato_crop_2": {
+							"textures": [
+								"textures/blocks/tomato_stage_2"
+							]
+						},
+						"strat_tomato_crop_3": {
+							"textures": [
+								"textures/blocks/tomato_stage_3"
+							]
+						},
+						"strat_tomato_crop_4": {
+							"textures": [
+								"textures/blocks/tomato_stage_4"
+							]
+						},
+						"strat_tomato_crop_5": {
+							"textures": [
+								"textures/blocks/tomato_stage_5"
+							]
+						},
+						"strat_toaster": {
+							"textures": [
+								"textures/blocks/toaster"
+							]
+						},
+						"strat_toaster 1": {
+							"textures": [
+								"textures/blocks/toaster_out"
+							]
+						},
+						"strat_toaster 2": {
+							"textures": [
+								"textures/blocks/toaster_inside"
+							]
+						},
+						"strat_toaster 3": {
+							"textures": [
+								"textures/blocks/toaster_out_toast"
+							]
+						},
+						"strat_mold": {
+							"textures": [
+								"textures/blocks/mold"
+							]
+						},
+						"strat_mold milk": {
+							"textures": [
+								"textures/blocks/mold_milk"
+							]
+						},
+						"strat_mold cheese": {
+							"textures": [
+								"textures/blocks/mold_cheese"
+							]
+						},
+						"strat_cheese block": {
+							"textures": [
+								"textures/blocks/cheese_block"
+							]
+						},
+						"strat_churn": {
+							"textures": [
+								"textures/blocks/churn"
+							]
+						},
+						"strat_churn 1": {
+							"textures": [
+								"textures/blocks/churn 1"
+							]
+						},
+						"strat_lettuce_crop_0": {
+							"textures": [
+								"textures/blocks/lettuce_stage_0"
+							]
+						},
+						"strat_lettuce_crop_1": {
+							"textures": [
+								"textures/blocks/lettuce_stage_1"
+							]
+						},
+						"strat_lettuce_crop_2": {
+							"textures": [
+								"textures/blocks/lettuce_stage_2"
+							]
+						},
+						"strat_lettuce_crop_3": {
+							"textures": [
+								"textures/blocks/lettuce_stage_3"
+							]
+						},
+						"strat_crop_bush": {
+							"textures": [
+								"textures/blocks/crop_bush"
+							]
+						},
+						"strats_leaves_maple": {
+							"textures": [
+								"textures/blocks/strats_leaves_maple_carried"
+							]
+						},
+						"strats_planks_maple": {
+							"textures": [
+								"textures/blocks/strats_planks_maple_2"
+							]
+						},
+						"strats_log_maple_0": {
+							"textures": [
+								"textures/blocks/strats_log_maple_0"
+							]
+						},
+						"strats_log_maple_1": {
+							"textures": [
+								"textures/blocks/strats_log_maple_1"
+							]
+						},
+						"strats_log_maple_2": {
+							"textures": [
+								"textures/blocks/strats_log_maple_2"
+							]
+						},
+						"strats_sapling_maple": {
+							"textures": [
+								"textures/blocks/strats_sapling_maple"
+							]
+						},
+						"pot": {
+							"textures": [
+								"textures/blocks/pot"
+							]
+						},
+						"pot2": {
+							"textures": [
+								"textures/blocks/pot2"
+							]
+						},
+						"pot3": {
+							"textures": [
+								"textures/blocks/pot3"
+							]
+						},
+						"pan": {
+							"textures": [
+								"textures/blocks/pan"
+							]
+						},
+						"chopping_board": {
+							"textures": [
+								"textures/blocks/chopping_board"
+							]
+						},
+						"chopping_board1": {
+							"textures": [
+								"textures/blocks/chopping_board1"
+							]
+						},
+						"chopping_board2": {
+							"textures": [
+								"textures/blocks/chopping_board2"
+							]
+						},
+						"pan1": {
+							"textures": [
+								"textures/blocks/panpotato"
+							]
+						},
+						"pan2": {
+							"textures": [
+								"textures/blocks/panpotato2"
+							]
+						},
+						"pan3": {
+							"textures": [
+								"textures/blocks/panpotato3"
+							]
+						},
+						"pan4": {
+							"textures": [
+								"textures/blocks/panpotato4"
+							]
+						},
+						"pan5": {
+							"textures": [
+								"textures/blocks/pannuggets"
+							]
+						},
+						"pan6": {
+							"textures": [
+								"textures/blocks/pannuggets2"
+							]
+						},
+						"pan7": {
+							"textures": [
+								"textures/blocks/pannuggets3"
+							]
+						},
+						"pan8": {
+							"textures": [
+								"textures/blocks/panwings"
+							]
+						},
+						"pan9": {
+							"textures": [
+								"textures/blocks/panwings2"
+							]
+						},
+						"pan10": {
+							"textures": [
+								"textures/blocks/panwings3"
+							]
+						},
+						"pan11": {
+							"textures": [
+								"textures/blocks/panwings4"
+							]
+						},
+						"pan12": {
+							"textures": [
+								"textures/blocks/panpancake"
+							]
+						},
+						"pan13": {
+							"textures": [
+								"textures/blocks/panpancake2"
+							]
+						},
+						"chopping_board3": {
+							"textures": [
+								"textures/blocks/chopping_board3"
+							]
+						},
+						"pan14": {
+							"textures": [
+								"textures/blocks/panegg"
+							]
+						},
+						"pan15": {
+							"textures": [
+								"textures/blocks/panegg2"
+							]
+						},
+						"pan16": {
+							"textures": [
+								"textures/blocks/panbacon"
+							]
+						},
+						"pan17": {
+							"textures": [
+								"textures/blocks/panbacon2"
+							]
+						},
+						"pan18": {
+							"textures": [
+								"textures/blocks/panbacon3"
+							]
+						},
+						"pan19": {
+							"textures": [
+								"textures/blocks/panbacon4"
+							]
+						},
+						"pan20": {
+							"textures": [
+								"textures/blocks/pansausage"
+							]
+						},
+						"pan21": {
+							"textures": [
+								"textures/blocks/pansausage2"
+							]
+						},
+						"pan22": {
+							"textures": [
+								"textures/blocks/pansausage3"
+							]
+						},
+						"pan23": {
+							"textures": [
+								"textures/blocks/pansausage4"
+							]
+						},
+						"strat_banana_crop_0": {
+							"textures": [
+								"textures/blocks/banana_crop_0"
+							]
+						},
+						"strat_banana_crop_1": {
+							"textures": [
+								"textures/blocks/banana_crop_1"
+							]
+						},
+						"strat_banana_crop_2": {
+							"textures": [
+								"textures/blocks/banana_crop_2"
+							]
+						},
+						"strat_banana_sapling": {
+							"textures": [
+								"textures/blocks/strats_sapling_banana"
+							]
+						},
+						"pot_milk": {
+							"textures": [
+								"textures/blocks/pot_milk"
+							]
+						},
+						"pot_milk2": {
+							"textures": [
+								"textures/blocks/pot_milk2"
+							]
+						},
+						"pot_milk3": {
+							"textures": [
+								"textures/blocks/pot_milk3"
+							]
+						},
+						"chopping_board4": {
+							"textures": [
+								"textures/blocks/chopping_board4"
+							]
+						},
+						"mortar_and_pestle": {
+							"textures": [
+								"textures/blocks/mortar_and_pestle"
+							]
+						},
+						"mortar_and_pestle_cocoa": {
+							"textures": [
+								"textures/blocks/mortar_and_pestle_cocoa"
+							]
+						},
+						"mortar_and_pestle_wheat": {
+							"textures": [
+								"textures/blocks/mortar_and_pestle_wheat"
+							]
+						},
+						"mortar_and_pestle_sugar_cane": {
+							"textures": [
+								"textures/blocks/mortar_and_pestle_sugar_cane"
+							]
+						},
+						"maple_slab": {
+							"textures": [
+								"textures/blocks/maple_slab"
+							]
+						},
+						"maple_slab2": {
+							"textures": [
+								"textures/blocks/maple_slab2"
+							]
+						},
+						"chocolate_cake": {
+							"textures": [
+								"textures/blocks/chocolate_cake"
+							]
+						},
+						"orange_crop_0": {
+							"textures": [
+								"textures/blocks/orange_crop_0"
+							]
+						},
+						"orange_crop_1": {
+							"textures": [
+								"textures/blocks/orange_crop_1"
+							]
+						},
+						"orange_crop_2": {
+							"textures": [
+								"textures/blocks/orange_crop_2"
+							]
+						},
+						"orange_sapling": {
+							"textures": [
+								"textures/blocks/sapling_orange"
+							]
+						},
+						"chopping_board5": {
+							"textures": [
+								"textures/blocks/chopping_board5"
+							]
+						},
+						"cheese_pizza_block": {
+							"textures": [
+								"textures/blocks/cheese_pizza_block"
+							]
+						},
+						"pepperoni_pizza_block": {
+							"textures": [
+								"textures/blocks/pepperoni_pizza_block"
+							]
+						},
+						"sausage_pizza_block": {
+							"textures": [
+								"textures/blocks/sausage_pizza_block"
+							]
+						},
+						"meat_feast_pizza_block": {
+							"textures": [
+								"textures/blocks/meat_feast_pizza_block"
+							]
+						},
+						"chopping_board6": {
+							"textures": [
+								"textures/blocks/chopping_board6"
+							]
+						},
+						"chopping_board7": {
+							"textures": [
+								"textures/blocks/chopping_board7"
+							]
+						},
+						"chopping_board8": {
+							"textures": [
+								"textures/blocks/chopping_board8"
+							]
+						},
+						"jar_block": {
+							"textures": [
+								"textures/blocks/jar_block"
+							]
+						},
+						"jar_block_jam": {
+							"textures": [
+								"textures/blocks/jar_block_jam"
+							]
+						},
+						"jar_block_marmalade": {
+							"textures": [
+								"textures/blocks/jar_block_marmalade"
+							]
+						},
+						"jar_block_maple_syrup": {
+							"textures": [
+								"textures/blocks/jar_block_maple_syrup"
+							]
+						},
+						"jar_block_milk": {
+							"textures": [
+								"textures/blocks/jar_block_milk"
+							]
+						},
+						"jar_block_water": {
+							"textures": [
+								"textures/blocks/jar_block_water"
+							]
+						},
+						"apple_crop_0": {
+							"textures": [
+								"textures/blocks/apple_crop_0"
+							]
+						},
+						"apple_crop_1": {
+							"textures": [
+								"textures/blocks/apple_crop_1"
+							]
+						},
+						"apple_crop_2": {
+							"textures": [
+								"textures/blocks/apple_crop_2"
+							]
+						},
+						"apple_sapling": {
+							"textures": [
+								"textures/blocks/sapling_apple"
+							]
+						},
+						"pumpkin_pie_block": {
+							"textures": [
+								"textures/blocks/pumpkin_pie_block"
+							]
+						},
+						"apple_pie_block": {
+							"textures": [
+								"textures/blocks/apple_pie_block"
+							]
+						},
+						"cheese_cake": {
+							"textures": [
+								"textures/blocks/cheese_cake"
+							]
+						},
+						"christmas_cake": {
+							"textures": [
+								"textures/blocks/christmas_cake"
+							]
+						},
+						"plate": {
+							"textures": [
+								"textures/blocks/plate"
+							]
+						},
+						"chicken_plate": {
+							"textures": [
+								"textures/blocks/plate_of_chicken"
+							]
+						},
+						"yule_log_plate": {
+							"textures": [
+								"textures/blocks/plate_of_yule_log"
+							]
+						},
+						"pork_plate": {
+							"textures": [
+								"textures/blocks/plate_of_pork"
+							]
+						},
+						"beef_plate": {
+							"textures": [
+								"textures/blocks/plate_of_beef"
+							]
+						},
+						"spaghetti_plate": {
+							"textures": [
+								"textures/blocks/plate_of_spaghetti"
+							]
+						},
+						"fish_and_chips_plate": {
+							"textures": [
+								"textures/blocks/plate_of_fish_and_chips"
+							]
+						},
+						"bangers_plate": {
+							"textures": [
+								"textures/blocks/plate_of_bangers"
+							]
+						},
+						"fish_plate": {
+							"textures": [
+								"textures/blocks/plate_of_fish"
+							]
+						},
+						"pizza_dinner_plate": {
+							"textures": [
+								"textures/blocks/plate_of_pizza_dinner"
+							]
+						},
+						"pizza_plate": {
+							"textures": [
+								"textures/blocks/plate_of_pizza"
+							]
+						},
+						"bacon_and_eggs_plate": {
+							"textures": [
+								"textures/blocks/plate_of_bacon_and_eggs"
+							]
+						},
+						"milk_and_cookies_plate": {
+							"textures": [
+								"textures/blocks/plate_of_milk_and_cookies"
+							]
+						},
+						"steak_and_chips_plate": {
+							"textures": [
+								"textures/blocks/plate_of_steak_and_chips"
+							]
+						},
+						"fries_plate": {
+							"textures": [
+								"textures/blocks/plate_of_fries"
+							]
+						},
+						"nuggets_plate": {
+							"textures": [
+								"textures/blocks/plate_of_nuggets"
+							]
+						},
+						"nuggets_and_fries_plate": {
+							"textures": [
+								"textures/blocks/plate_of_nuggets_and_fries"
+							]
+						},
+						"chicken_and_waffles_plate": {
+							"textures": [
+								"textures/blocks/plate_of_chicken_and_waffles"
+							]
+						},
+						"roast_chicken_plate": {
+							"textures": [
+								"textures/blocks/plate_of_roast_chicken"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"is_minified": true,
+				"children": {
+					"distillation chamber": {
+						"textures": [
+							"textures/blocks/distillation_chamber"
+						]
+					},
+					"strat_salt ore": {
+						"textures": [
+							"textures/blocks/salt_ore"
+						]
+					},
+					"strat_tomato_crop_0": {
+						"textures": [
+							"textures/blocks/tomato_stage_0"
+						]
+					},
+					"strat_tomato_crop_1": {
+						"textures": [
+							"textures/blocks/tomato_stage_1"
+						]
+					},
+					"strat_tomato_crop_2": {
+						"textures": [
+							"textures/blocks/tomato_stage_2"
+						]
+					},
+					"strat_tomato_crop_3": {
+						"textures": [
+							"textures/blocks/tomato_stage_3"
+						]
+					},
+					"strat_tomato_crop_4": {
+						"textures": [
+							"textures/blocks/tomato_stage_4"
+						]
+					},
+					"strat_tomato_crop_5": {
+						"textures": [
+							"textures/blocks/tomato_stage_5"
+						]
+					},
+					"strat_toaster": {
+						"textures": [
+							"textures/blocks/toaster"
+						]
+					},
+					"strat_toaster 1": {
+						"textures": [
+							"textures/blocks/toaster_out"
+						]
+					},
+					"strat_toaster 2": {
+						"textures": [
+							"textures/blocks/toaster_inside"
+						]
+					},
+					"strat_toaster 3": {
+						"textures": [
+							"textures/blocks/toaster_out_toast"
+						]
+					},
+					"strat_mold": {
+						"textures": [
+							"textures/blocks/mold"
+						]
+					},
+					"strat_mold milk": {
+						"textures": [
+							"textures/blocks/mold_milk"
+						]
+					},
+					"strat_mold cheese": {
+						"textures": [
+							"textures/blocks/mold_cheese"
+						]
+					},
+					"strat_cheese block": {
+						"textures": [
+							"textures/blocks/cheese_block"
+						]
+					},
+					"strat_churn": {
+						"textures": [
+							"textures/blocks/churn"
+						]
+					},
+					"strat_churn 1": {
+						"textures": [
+							"textures/blocks/churn 1"
+						]
+					},
+					"strat_lettuce_crop_0": {
+						"textures": [
+							"textures/blocks/lettuce_stage_0"
+						]
+					},
+					"strat_lettuce_crop_1": {
+						"textures": [
+							"textures/blocks/lettuce_stage_1"
+						]
+					},
+					"strat_lettuce_crop_2": {
+						"textures": [
+							"textures/blocks/lettuce_stage_2"
+						]
+					},
+					"strat_lettuce_crop_3": {
+						"textures": [
+							"textures/blocks/lettuce_stage_3"
+						]
+					},
+					"strat_crop_bush": {
+						"textures": [
+							"textures/blocks/crop_bush"
+						]
+					},
+					"strats_leaves_maple": {
+						"textures": [
+							"textures/blocks/strats_leaves_maple_carried"
+						]
+					},
+					"strats_planks_maple": {
+						"textures": [
+							"textures/blocks/strats_planks_maple_2"
+						]
+					},
+					"strats_log_maple_0": {
+						"textures": [
+							"textures/blocks/strats_log_maple_0"
+						]
+					},
+					"strats_log_maple_1": {
+						"textures": [
+							"textures/blocks/strats_log_maple_1"
+						]
+					},
+					"strats_log_maple_2": {
+						"textures": [
+							"textures/blocks/strats_log_maple_2"
+						]
+					},
+					"strats_sapling_maple": {
+						"textures": [
+							"textures/blocks/strats_sapling_maple"
+						]
+					},
+					"pot": {
+						"textures": [
+							"textures/blocks/pot"
+						]
+					},
+					"pot2": {
+						"textures": [
+							"textures/blocks/pot2"
+						]
+					},
+					"pot3": {
+						"textures": [
+							"textures/blocks/pot3"
+						]
+					},
+					"pan": {
+						"textures": [
+							"textures/blocks/pan"
+						]
+					},
+					"chopping_board": {
+						"textures": [
+							"textures/blocks/chopping_board"
+						]
+					},
+					"chopping_board1": {
+						"textures": [
+							"textures/blocks/chopping_board1"
+						]
+					},
+					"chopping_board2": {
+						"textures": [
+							"textures/blocks/chopping_board2"
+						]
+					},
+					"pan1": {
+						"textures": [
+							"textures/blocks/panpotato"
+						]
+					},
+					"pan2": {
+						"textures": [
+							"textures/blocks/panpotato2"
+						]
+					},
+					"pan3": {
+						"textures": [
+							"textures/blocks/panpotato3"
+						]
+					},
+					"pan4": {
+						"textures": [
+							"textures/blocks/panpotato4"
+						]
+					},
+					"pan5": {
+						"textures": [
+							"textures/blocks/pannuggets"
+						]
+					},
+					"pan6": {
+						"textures": [
+							"textures/blocks/pannuggets2"
+						]
+					},
+					"pan7": {
+						"textures": [
+							"textures/blocks/pannuggets3"
+						]
+					},
+					"pan8": {
+						"textures": [
+							"textures/blocks/panwings"
+						]
+					},
+					"pan9": {
+						"textures": [
+							"textures/blocks/panwings2"
+						]
+					},
+					"pan10": {
+						"textures": [
+							"textures/blocks/panwings3"
+						]
+					},
+					"pan11": {
+						"textures": [
+							"textures/blocks/panwings4"
+						]
+					},
+					"pan12": {
+						"textures": [
+							"textures/blocks/panpancake"
+						]
+					},
+					"pan13": {
+						"textures": [
+							"textures/blocks/panpancake2"
+						]
+					},
+					"chopping_board3": {
+						"textures": [
+							"textures/blocks/chopping_board3"
+						]
+					},
+					"pan14": {
+						"textures": [
+							"textures/blocks/panegg"
+						]
+					},
+					"pan15": {
+						"textures": [
+							"textures/blocks/panegg2"
+						]
+					},
+					"pan16": {
+						"textures": [
+							"textures/blocks/panbacon"
+						]
+					},
+					"pan17": {
+						"textures": [
+							"textures/blocks/panbacon2"
+						]
+					},
+					"pan18": {
+						"textures": [
+							"textures/blocks/panbacon3"
+						]
+					},
+					"pan19": {
+						"textures": [
+							"textures/blocks/panbacon4"
+						]
+					},
+					"pan20": {
+						"textures": [
+							"textures/blocks/pansausage"
+						]
+					},
+					"pan21": {
+						"textures": [
+							"textures/blocks/pansausage2"
+						]
+					},
+					"pan22": {
+						"textures": [
+							"textures/blocks/pansausage3"
+						]
+					},
+					"pan23": {
+						"textures": [
+							"textures/blocks/pansausage4"
+						]
+					},
+					"strat_banana_crop_0": {
+						"textures": [
+							"textures/blocks/banana_crop_0"
+						]
+					},
+					"strat_banana_crop_1": {
+						"textures": [
+							"textures/blocks/banana_crop_1"
+						]
+					},
+					"strat_banana_crop_2": {
+						"textures": [
+							"textures/blocks/banana_crop_2"
+						]
+					},
+					"strat_banana_sapling": {
+						"textures": [
+							"textures/blocks/strats_sapling_banana"
+						]
+					},
+					"pot_milk": {
+						"textures": [
+							"textures/blocks/pot_milk"
+						]
+					},
+					"pot_milk2": {
+						"textures": [
+							"textures/blocks/pot_milk2"
+						]
+					},
+					"pot_milk3": {
+						"textures": [
+							"textures/blocks/pot_milk3"
+						]
+					},
+					"chopping_board4": {
+						"textures": [
+							"textures/blocks/chopping_board4"
+						]
+					},
+					"mortar_and_pestle": {
+						"textures": [
+							"textures/blocks/mortar_and_pestle"
+						]
+					},
+					"mortar_and_pestle_cocoa": {
+						"textures": [
+							"textures/blocks/mortar_and_pestle_cocoa"
+						]
+					},
+					"mortar_and_pestle_wheat": {
+						"textures": [
+							"textures/blocks/mortar_and_pestle_wheat"
+						]
+					},
+					"mortar_and_pestle_sugar_cane": {
+						"textures": [
+							"textures/blocks/mortar_and_pestle_sugar_cane"
+						]
+					},
+					"maple_slab": {
+						"textures": [
+							"textures/blocks/maple_slab"
+						]
+					},
+					"maple_slab2": {
+						"textures": [
+							"textures/blocks/maple_slab2"
+						]
+					},
+					"chocolate_cake": {
+						"textures": [
+							"textures/blocks/chocolate_cake"
+						]
+					},
+					"orange_crop_0": {
+						"textures": [
+							"textures/blocks/orange_crop_0"
+						]
+					},
+					"orange_crop_1": {
+						"textures": [
+							"textures/blocks/orange_crop_1"
+						]
+					},
+					"orange_crop_2": {
+						"textures": [
+							"textures/blocks/orange_crop_2"
+						]
+					},
+					"orange_sapling": {
+						"textures": [
+							"textures/blocks/sapling_orange"
+						]
+					},
+					"chopping_board5": {
+						"textures": [
+							"textures/blocks/chopping_board5"
+						]
+					},
+					"cheese_pizza_block": {
+						"textures": [
+							"textures/blocks/cheese_pizza_block"
+						]
+					},
+					"pepperoni_pizza_block": {
+						"textures": [
+							"textures/blocks/pepperoni_pizza_block"
+						]
+					},
+					"sausage_pizza_block": {
+						"textures": [
+							"textures/blocks/sausage_pizza_block"
+						]
+					},
+					"meat_feast_pizza_block": {
+						"textures": [
+							"textures/blocks/meat_feast_pizza_block"
+						]
+					},
+					"chopping_board6": {
+						"textures": [
+							"textures/blocks/chopping_board6"
+						]
+					},
+					"chopping_board7": {
+						"textures": [
+							"textures/blocks/chopping_board7"
+						]
+					},
+					"chopping_board8": {
+						"textures": [
+							"textures/blocks/chopping_board8"
+						]
+					},
+					"jar_block": {
+						"textures": [
+							"textures/blocks/jar_block"
+						]
+					},
+					"jar_block_jam": {
+						"textures": [
+							"textures/blocks/jar_block_jam"
+						]
+					},
+					"jar_block_marmalade": {
+						"textures": [
+							"textures/blocks/jar_block_marmalade"
+						]
+					},
+					"jar_block_maple_syrup": {
+						"textures": [
+							"textures/blocks/jar_block_maple_syrup"
+						]
+					},
+					"jar_block_milk": {
+						"textures": [
+							"textures/blocks/jar_block_milk"
+						]
+					},
+					"jar_block_water": {
+						"textures": [
+							"textures/blocks/jar_block_water"
+						]
+					},
+					"apple_crop_0": {
+						"textures": [
+							"textures/blocks/apple_crop_0"
+						]
+					},
+					"apple_crop_1": {
+						"textures": [
+							"textures/blocks/apple_crop_1"
+						]
+					},
+					"apple_crop_2": {
+						"textures": [
+							"textures/blocks/apple_crop_2"
+						]
+					},
+					"apple_sapling": {
+						"textures": [
+							"textures/blocks/sapling_apple"
+						]
+					},
+					"pumpkin_pie_block": {
+						"textures": [
+							"textures/blocks/pumpkin_pie_block"
+						]
+					},
+					"apple_pie_block": {
+						"textures": [
+							"textures/blocks/apple_pie_block"
+						]
+					},
+					"cheese_cake": {
+						"textures": [
+							"textures/blocks/cheese_cake"
+						]
+					},
+					"christmas_cake": {
+						"textures": [
+							"textures/blocks/christmas_cake"
+						]
+					},
+					"plate": {
+						"textures": [
+							"textures/blocks/plate"
+						]
+					},
+					"chicken_plate": {
+						"textures": [
+							"textures/blocks/plate_of_chicken"
+						]
+					},
+					"yule_log_plate": {
+						"textures": [
+							"textures/blocks/plate_of_yule_log"
+						]
+					},
+					"pork_plate": {
+						"textures": [
+							"textures/blocks/plate_of_pork"
+						]
+					},
+					"beef_plate": {
+						"textures": [
+							"textures/blocks/plate_of_beef"
+						]
+					},
+					"spaghetti_plate": {
+						"textures": [
+							"textures/blocks/plate_of_spaghetti"
+						]
+					},
+					"fish_and_chips_plate": {
+						"textures": [
+							"textures/blocks/plate_of_fish_and_chips"
+						]
+					},
+					"bangers_plate": {
+						"textures": [
+							"textures/blocks/plate_of_bangers"
+						]
+					},
+					"fish_plate": {
+						"textures": [
+							"textures/blocks/plate_of_fish"
+						]
+					},
+					"pizza_dinner_plate": {
+						"textures": [
+							"textures/blocks/plate_of_pizza_dinner"
+						]
+					},
+					"pizza_plate": {
+						"textures": [
+							"textures/blocks/plate_of_pizza"
+						]
+					},
+					"bacon_and_eggs_plate": {
+						"textures": [
+							"textures/blocks/plate_of_bacon_and_eggs"
+						]
+					},
+					"milk_and_cookies_plate": {
+						"textures": [
+							"textures/blocks/plate_of_milk_and_cookies"
+						]
+					},
+					"steak_and_chips_plate": {
+						"textures": [
+							"textures/blocks/plate_of_steak_and_chips"
+						]
+					},
+					"fries_plate": {
+						"textures": [
+							"textures/blocks/plate_of_fries"
+						]
+					},
+					"nuggets_plate": {
+						"textures": [
+							"textures/blocks/plate_of_nuggets"
+						]
+					},
+					"nuggets_and_fries_plate": {
+						"textures": [
+							"textures/blocks/plate_of_nuggets_and_fries"
+						]
+					},
+					"chicken_and_waffles_plate": {
+						"textures": [
+							"textures/blocks/plate_of_chicken_and_waffles"
+						]
+					},
+					"roast_chicken_plate": {
+						"textures": [
+							"textures/blocks/plate_of_roast_chicken"
+						]
+					}
+				}
+			}
+		]
+	}
+}

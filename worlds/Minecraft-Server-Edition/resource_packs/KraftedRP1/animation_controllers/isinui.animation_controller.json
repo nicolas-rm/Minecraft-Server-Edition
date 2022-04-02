@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.isinui": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ { "id": "query.is_in_ui" } ]
+        },
+        "id": {
+          "transitions": [
+            { "default": "variable.isinui = 1.0; return 0.0;" }
+          ]
+        }
+      }
+    }
+  }
+}

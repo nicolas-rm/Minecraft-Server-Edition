@@ -1,0 +1,49 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mythmob:goblin.archer",
+			"materials": {
+				"default": "goblin"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/goblin_archer"
+			},
+			"geometry": {
+				"default": "geometry.goblin_archer"
+			},
+			"animations": {
+				"humanoid_base_pose": "animation.goblin.archer.general",
+				"move": "animation.goblin.walk",
+				"attack.goblin": "animation.goblin_archer.attack",
+				"scared": "animation.goblin.scared"
+			},
+			"animation_controllers": [
+				{
+					"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+				},
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"move": "controller.animation.villager.move"
+				},
+				{
+					"attack": "controller.animation.goblin_archer.attack"
+				},
+				{
+					"idle": "controller.animation.goblin.idle"
+				}
+			],
+			"render_controllers": [
+				"controller.render.goblin"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#0a2603",
+				"overlay_color": "#123e07"
+			}
+		}
+	}
+}

@@ -1,0 +1,417 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\animation_controllers\\hagbat.animation_controllers.json",
+	"file_type": "rp_animation_controller",
+	"format_version": 1,
+	"file_uuid": "d907c48c_6917_4fa7_8230_d539e9c8753b",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.hagbat_pose": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										"humanoid_base_pose"
+									],
+									"blend_transition": 0.2,
+									"transitions": [
+										{
+											"flying": "!query.is_on_ground"
+										}
+									]
+								},
+								"flying": {
+									"blend_transition": 0.2,
+									"animations": [
+										"flying"
+									],
+									"transitions": [
+										{
+											"default": "query.is_on_ground"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.hagbat.move": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										{
+											"move": "query.is_on_ground ? query.modified_move_speed : 0"
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.hagbat_pose": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"humanoid_base_pose"
+										],
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "!query.is_on_ground"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											"flying"
+										],
+										"transitions": [
+											{
+												"default": "query.is_on_ground"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.hagbat.move": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"move": "query.is_on_ground ? query.modified_move_speed : 0"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.hagbat_pose",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"animations": [
+												"humanoid_base_pose"
+											],
+											"blend_transition": 0.2,
+											"transitions": [
+												{
+													"flying": "!query.is_on_ground"
+												}
+											]
+										},
+										"flying": {
+											"blend_transition": 0.2,
+											"animations": [
+												"flying"
+											],
+											"transitions": [
+												{
+													"default": "query.is_on_ground"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"humanoid_base_pose"
+												],
+												"blend_transition": 0.2,
+												"transitions": [
+													{
+														"flying": "!query.is_on_ground"
+													}
+												]
+											},
+											"flying": {
+												"blend_transition": 0.2,
+												"animations": [
+													"flying"
+												],
+												"transitions": [
+													{
+														"default": "query.is_on_ground"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"humanoid_base_pose"
+													],
+													"blend_transition": 0.2,
+													"transitions": [
+														{
+															"flying": "!query.is_on_ground"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"humanoid_base_pose"
+												]
+											},
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											},
+											{
+												"open": {
+													"animations": [
+														"humanoid_base_pose"
+													],
+													"blend_transition": 0.2,
+													"transitions": [
+														{
+															"flying": "!query.is_on_ground"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"flying": "!query.is_on_ground"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"flying": "!query.is_on_ground"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"humanoid_base_pose"
+												],
+												"blend_transition": 0.2,
+												"transitions": [
+													{
+														"flying": "!query.is_on_ground"
+													}
+												]
+											},
+											"flying": {
+												"blend_transition": 0.2,
+												"animations": [
+													"flying"
+												],
+												"transitions": [
+													{
+														"default": "query.is_on_ground"
+													}
+												]
+											}
+										},
+										"key": "flying",
+										"children": [
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														"flying"
+													],
+													"transitions": [
+														{
+															"default": "query.is_on_ground"
+														}
+													]
+												},
+												"data": "0.2",
+												"key": "blend_transition"
+											},
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														"flying"
+													],
+													"transitions": [
+														{
+															"default": "query.is_on_ground"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"flying"
+												]
+											},
+											{
+												"open": {
+													"blend_transition": 0.2,
+													"animations": [
+														"flying"
+													],
+													"transitions": [
+														{
+															"default": "query.is_on_ground"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "query.is_on_ground"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.is_on_ground"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"controller.animation.hagbat_pose": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"humanoid_base_pose"
+										],
+										"blend_transition": 0.2,
+										"transitions": [
+											{
+												"flying": "!query.is_on_ground"
+											}
+										]
+									},
+									"flying": {
+										"blend_transition": 0.2,
+										"animations": [
+											"flying"
+										],
+										"transitions": [
+											{
+												"default": "query.is_on_ground"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.hagbat.move": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"move": "query.is_on_ground ? query.modified_move_speed : 0"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.hagbat.move",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"animations": [
+												{
+													"move": "query.is_on_ground ? query.modified_move_speed : 0"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"animations": [
+													{
+														"move": "query.is_on_ground ? query.modified_move_speed : 0"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														{
+															"move": "query.is_on_ground ? query.modified_move_speed : 0"
+														}
+													]
+												},
+												"key": "animations",
+												"children": [
+													{
+														"open": [
+															{
+																"move": "query.is_on_ground ? query.modified_move_speed : 0"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"move": "query.is_on_ground ? query.modified_move_speed : 0"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

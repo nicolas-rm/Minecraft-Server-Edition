@@ -1,0 +1,51 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:spawnrule",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/spawnrule"
+			},
+			"animations": {
+				"default_pose": "animation.spawnrule.default_pose",
+				"no_pose": "animation.spawnrule.no_pose",
+				"solemn_pose": "animation.spawnrule.solemn_pose",
+				"athena_pose": "animation.spawnrule.athena_pose",
+				"brandish_pose": "animation.spawnrule.brandish_pose",
+				"honor_pose": "animation.spawnrule.honor_pose",
+				"entertain_pose": "animation.spawnrule.entertain_pose",
+				"salute_pose": "animation.spawnrule.salute_pose",
+				"riposte_pose": "animation.spawnrule.riposte_pose",
+				"zombie_pose": "animation.spawnrule.zombie_pose",
+				"cancan_a_pose": "animation.spawnrule.cancan_a_pose",
+				"cancan_b_pose": "animation.spawnrule.cancan_b_pose",
+				"hero_pose": "animation.spawnrule.hero_pose",
+				"wiggle": "animation.spawnrule.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index=0;",
+					"variable.armor_stand.hurt_time=0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.spawnrule"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": false
+		}
+	}
+}

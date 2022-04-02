@@ -1,0 +1,249 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\wooden_shovel_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "ab41b932_c185_4614_86d2_0ef75666410c",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.16,
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:wooden_shovel_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"A",
+							"B",
+							"B"
+						],
+						"key": {
+							"A": {
+								"item": "strat:maple_planks"
+							},
+							"B": {
+								"item": "stick"
+							}
+						},
+						"result": {
+							"item": "wooden_shovel",
+							"count": 1
+						},
+						"priority": 50
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:wooden_shovel_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"A",
+								"B",
+								"B"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "stick"
+								}
+							},
+							"result": {
+								"item": "wooden_shovel",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:wooden_shovel_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:wooden_shovel_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"A",
+								"B",
+								"B"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "stick"
+								}
+							},
+							"result": {
+								"item": "wooden_shovel",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:wooden_shovel_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"A",
+								"B",
+								"B"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "stick"
+								}
+							},
+							"result": {
+								"item": "wooden_shovel",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"A",
+							"B",
+							"B"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:wooden_shovel_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"A",
+								"B",
+								"B"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "stick"
+								}
+							},
+							"result": {
+								"item": "wooden_shovel",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "stick"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "stick"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "stick"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:wooden_shovel_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"A",
+								"B",
+								"B"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "stick"
+								}
+							},
+							"result": {
+								"item": "wooden_shovel",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "result",
+						"is_minified": true,
+						"children": {
+							"item": "wooden_shovel",
+							"count": 1
+						}
+					},
+					{
+						"data": "50",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

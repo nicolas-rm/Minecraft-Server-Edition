@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:smeltery_controller"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"# #",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "strat:seared_brick"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:smeltery_controller",
+				"count": 1
+			}
+		],
+		"priority": 1
+	}
+}

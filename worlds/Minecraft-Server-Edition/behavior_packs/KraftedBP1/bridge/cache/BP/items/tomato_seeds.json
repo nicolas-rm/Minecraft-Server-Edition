@@ -1,0 +1,148 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\tomato_seeds.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "b99838c6_1422_40b7_ba0e_0609d61433c6",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:tomato_seeds",
+							"category": "nature"
+						},
+						"components": {
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.seed"
+							},
+							"minecraft:block_placer": {
+								"block": "strat:tomato_crop",
+								"use_block_description": true
+							},
+							"minecraft:icon": {
+								"texture": "strat_tomato seeds"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato_seeds",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.seed"
+								},
+								"minecraft:block_placer": {
+									"block": "strat:tomato_crop",
+									"use_block_description": true
+								},
+								"minecraft:icon": {
+									"texture": "strat_tomato seeds"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:tomato_seeds",
+							"category": "nature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato_seeds",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.seed"
+								},
+								"minecraft:block_placer": {
+									"block": "strat:tomato_crop",
+									"use_block_description": true
+								},
+								"minecraft:icon": {
+									"texture": "strat_tomato seeds"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.seed"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:tomato_crop",
+										"use_block_description": true
+									},
+									"minecraft:icon": {
+										"texture": "strat_tomato seeds"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.seed"
+								}
+							},
+							{
+								"open": {
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.seed"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:tomato_crop",
+										"use_block_description": true
+									},
+									"minecraft:icon": {
+										"texture": "strat_tomato seeds"
+									}
+								},
+								"key": "minecraft:block_placer",
+								"is_minified": true,
+								"children": {
+									"block": "strat:tomato_crop",
+									"use_block_description": true
+								}
+							},
+							{
+								"open": {
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.seed"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:tomato_crop",
+										"use_block_description": true
+									},
+									"minecraft:icon": {
+										"texture": "strat_tomato seeds"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "strat_tomato seeds"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

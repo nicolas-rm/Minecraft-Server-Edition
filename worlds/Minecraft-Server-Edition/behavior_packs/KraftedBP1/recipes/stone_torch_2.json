@@ -1,0 +1,30 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:stone_torch_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#",
+			"~"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:charcoal"
+			},
+			"~": {
+				"item": "strat:stone_rod"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:stone_torch",
+				"count": 4
+			}
+		]
+	}
+}

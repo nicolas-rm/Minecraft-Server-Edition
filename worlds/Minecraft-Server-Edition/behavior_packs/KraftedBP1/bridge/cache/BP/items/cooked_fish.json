@@ -1,0 +1,106 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\cooked_fish.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "8aa2caa5_0a16_4c34_9df0_9bf25c81bf6c",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:cooked_fish"
+						},
+						"components": {
+							"minecraft:use_duration": 16,
+							"minecraft:max_damage": 0,
+							"minecraft:stacked_by_data": true,
+							"minecraft:food": {
+								"nutrition": 3,
+								"saturation_modifier": "low"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cooked_fish"
+							},
+							"components": {
+								"minecraft:use_duration": 16,
+								"minecraft:max_damage": 0,
+								"minecraft:stacked_by_data": true,
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation_modifier": "low"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:cooked_fish"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cooked_fish"
+							},
+							"components": {
+								"minecraft:use_duration": 16,
+								"minecraft:max_damage": 0,
+								"minecraft:stacked_by_data": true,
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation_modifier": "low"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "16",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "0",
+								"key": "minecraft:max_damage"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 16,
+									"minecraft:max_damage": 0,
+									"minecraft:stacked_by_data": true,
+									"minecraft:food": {
+										"nutrition": 3,
+										"saturation_modifier": "low"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 3,
+									"saturation_modifier": "low"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

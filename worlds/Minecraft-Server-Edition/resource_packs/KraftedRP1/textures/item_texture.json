@@ -1,0 +1,8464 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+	"chorus_leaves_hanging_item": {
+		"textures": [
+			"textures/items/chorus_leaves_hanging"
+		]
+	},
+	"chorus_water_leaves_item": {
+		"textures": [
+			"textures/items/water_chorus_leaves"
+		]
+	},
+	"ori_blossom_item": {
+		"textures": [
+			"textures/items/ori_blossom"
+		]
+	},
+	"phreyium_grass_item": {
+		"textures": [
+			"textures/items/phreyium_grass"
+		]
+	},
+	"phreyium_tendril_item": {
+		"textures": [
+			"textures/items/phreyium_tendril_vine"
+		]
+	},
+	"phreyium_tendril_bottom_item": {
+		"textures": [
+			"textures/items/phreyium_tendril_vine_bottom"
+		]
+	},
+	"phreyium_tooth_fungus_item": {
+		"textures": [
+			"textures/items/phreyium_tooth_fungus"
+		]
+	},
+	"pread_item": {
+		"textures": [
+			"textures/items/pread"
+		]
+	},
+	"pread_tall_item": {
+		"textures": [
+			"textures/items/tall_pread"
+		]
+	},
+	"viscosa_item": {
+		"textures": [
+			"textures/items/viscosa"
+		]
+	},
+	"viscosa_tall_item": {
+		"textures": [
+			"textures/items/double_viscosa"
+		]
+	},
+	"void_sprouts_item": {
+		"textures": [
+			"textures/items/void_sprouts"
+		]
+	},
+	"void_turf_fern_tall_item": {
+		"textures": [
+			"textures/items/void_turf_fern_tall"
+		]
+	},
+	"void_turf_grass_item": {
+		"textures": [
+			"textures/items/void_turf_grass"
+		]
+	},
+	"void_turf_grass_short_item": {
+		"textures": [
+			"textures/items/void_turf_grass_short"
+		]
+	},
+	"velvium_vine_item": {
+		"textures": [
+			"textures/items/velvium_vine"
+		]
+	},
+	"velvium_vine_bulb_item": {
+		"textures": [
+			"textures/items/velvium_vine_bulb"
+		]
+	},
+	"void_turf_fern_item": {
+		"textures": [
+			"textures/items/void_turf_fern"
+		]
+	},
+	"phreyium_sprouts_item": {
+		"textures": [
+			"textures/items/phreyium_sprout"
+		]
+	},
+	"cooked_jokle": {
+		"textures": [
+			"textures/items/jokle_cooked"
+		]
+	},
+	"raw_jokle": {
+		"textures": [
+			"textures/items/jokle_raw"
+		]
+	},
+	"jokle_bucket": {
+		"textures": [
+			"textures/items/bucket_jokle"
+		]
+	},
+	"thorn_root_item": {
+		"textures": [
+			"textures/items/thorn_root"
+		]
+	},
+	"vaudrite_spike_item": {
+		"textures": [
+			"textures/items/vaudrite_spike"
+		]
+	},
+	"velvium_grass_item": {
+		"textures": [
+			"textures/items/velvium_grass"
+		]
+	},
+	"eye_of_shadows": {
+		"textures": [
+			"textures/items/eye_of_shadows"
+		]
+	},
+	"void_standing_torch": {
+		"textures": [
+			"textures/items/void_standing_torch"
+		]
+	},
+	"void_turf_grass_tall_item": {
+		"textures": [
+			"textures/items/void_turf_grass_tall"
+		]
+	},
+	"phreyium_grass_tall_item": {
+		"textures": [
+			"textures/items/phreyium_grass_tall"
+		]
+	},
+	"velvium_grass_tall_item": {
+		"textures": [
+			"textures/items/velvium_grass_tall"
+		]
+	},
+	"korbon:orange": {
+		"textures": "textures/items/orange2"
+	},
+	"mummy": {
+		"textures": "textures/items/mummy"
+	},
+	"korbon:golden_orange": {
+		"textures": "textures/items/golden_orange"
+	},
+	"pirate": {
+		"textures": "textures/items/pirate"
+	},
+	"decayed_zombie": {
+		"textures": "textures/items/decayed_zombie"
+	},
+	"korbon:ectoplasm": {
+		"textures": "textures/items/ectoplasm"
+	},
+	"ghost": {
+		"textures": "textures/items/ghost"
+	},
+	"korbon:pear": {
+		"textures": "textures/items/pear"
+	},
+	"korbon:peach": {
+		"textures": "textures/items/peach"
+	},
+	"korbon:lemon": {
+		"textures": "textures/items/lemon"
+	},
+	"korbon:cherry": {
+		"textures": "textures/items/cherry"
+	},
+	"enraged_zombie": {
+		"textures": "textures/items/enraged_zombie"
+	},
+	"korbon:apple_sapling": {
+		"textures": [
+			"textures/items/apple_sapling"
+		]
+	},
+	"korbon:orange_sapling": {
+		"textures": [
+			"textures/items/orange_sapling"
+		]
+	},
+	"korbon:cherry_sapling": {
+		"textures": [
+			"textures/items/cherry_sapling"
+		]
+	},
+	"korbon:peach_sapling": {
+		"textures": [
+			"textures/items/peach_sapling"
+		]
+	},
+	"korbon:pear_sapling": {
+		"textures": [
+			"textures/items/pear_sapling"
+		]
+	},
+	"korbon:lemon_sapling": {
+		"textures": [
+			"textures/items/lemon_sapling"
+		]
+	},
+	"korbon:candle_item": {
+		"textures": [
+			"textures/items/candle_item"
+		]
+	},
+	"korbon:candle_holder_item": {
+		"textures": [
+			"textures/items/candle_holder_item"
+		]
+	},
+	"queen_spider": {
+		"textures": [
+			"textures/items/queen_spider"
+		]
+	},
+	"korbon:banana": {
+		"textures": [
+			"textures/items/banana"
+		]
+	},
+	"korbon:banana_seeds": {
+		"textures": [
+			"textures/items/banana_seeds"
+		]
+	},
+	"korbon:banana_sapling_item": {
+		"textures": [
+			"textures/items/banana_sapling"
+		]
+	},
+	"bs:exp_book_1": {
+		"textures": [
+			"textures/items/exp_book"
+		]
+	},
+	"bs:exp_book_2": {
+		"textures": [
+			"textures/items/exp_book"
+		]
+	},
+	"bs:exp_book_3": {
+		"textures": [
+			"textures/items/exp_book"
+		]
+	},
+	"bs:the_great_book_of_experience": {
+		"textures": [
+			"textures/items/exp_book_1"
+		]
+	},
+	"korbon:blueberries": {
+		"textures": [
+			"textures/items/blueberries"
+		]
+	},
+	"korbon:mysterious_mushroom": {
+		"textures": [
+			"textures/items/mysterious_mushroom"
+		]
+	},
+	"korbon:mysterious_mushroom_stew": {
+		"textures": [
+			"textures/items/mysterious_mushroom_stew"
+		]
+	},
+	"korbon:record_mystical": {
+		"textures": [
+			"textures/items/record_mystical"
+		]
+	},
+	"korbon:coconut": {
+		"textures": [
+			"textures/items/coconut"
+		]
+	},
+	"korbon:coconut_open": {
+		"textures": [
+			"textures/items/coconut_open"
+		]
+	},
+	"oh:wooden_hammer": {
+		"textures": "textures/items/wooden_hammer"
+	},
+	"enderite": {
+		"textures": "textures/items/enderite_ingot"
+	},
+	"enderite_boots": {
+		"textures": "textures/items/enderite_boots"
+	},
+	"enderite_helmet": {
+		"textures": "textures/items/enderite_helmet"
+	},
+	"enderite_chestplate": {
+		"textures": "textures/items/enderite_chestplate"
+	},
+	"enderite_leggins": {
+		"textures": "textures/items/enderite_leggins"
+	},
+	"enderite_sword": {
+		"textures": "textures/items/enderite_sword"
+	},
+	"enderite_axe": {
+		"textures": "textures/items/enderite_axe"
+	},
+	"enderite_shovel": {
+		"textures": "textures/items/enderite_shovel"
+	},
+	"enderite_hoe": {
+		"textures": "textures/items/enderite_hoe"
+	},
+	"enderite_pickaxe": {
+		"textures": "textures/items/enderite_pickaxe"
+	},
+	"tourmaline": {
+		"textures": "textures/items/tourmaline"
+	},
+	"tourmaline_boots": {
+		"textures": "textures/items/tourmaline_boots"
+	},
+	"tourmaline_helmet": {
+		"textures": "textures/items/tourmaline_helmet"
+	},
+	"tourmaline_chestplate": {
+		"textures": "textures/items/tourmaline_chestplate"
+	},
+	"tourmaline_leggings": {
+		"textures": "textures/items/tourmaline_leggings"
+	},
+	"tourmaline_sword": {
+		"textures": "textures/items/tourmaline_sword"
+	},
+	"tourmaline_axe": {
+		"textures": "textures/items/tourmaline_axe"
+	},
+	"tourmaline_shovel": {
+		"textures": "textures/items/tourmaline_shovel"
+	},
+	"tourmaline_hoe": {
+		"textures": "textures/items/tourmaline_hoe"
+	},
+	"tourmaline_pickaxe": {
+		"textures": "textures/items/tourmaline_pickaxe"
+	},
+	"onyx": {
+		"textures": "textures/items/onyx"
+	},
+	"onyx_boots": {
+		"textures": "textures/items/onyx_boots"
+	},
+	"onyx_helmet": {
+		"textures": "textures/items/onyx_helmet"
+	},
+	"onyx_chestplate": {
+		"textures": "textures/items/onyx_chestplate"
+	},
+	"onyx_leggings": {
+		"textures": "textures/items/onyx_leggings"
+	},
+	"onyx_sword": {
+		"textures": "textures/items/onyx_sword"
+	},
+	"onyx_axe": {
+		"textures": "textures/items/onyx_axe"
+	},
+	"onyx_shovel": {
+		"textures": "textures/items/onyx_shovel"
+	},
+	"onyx_hoe": {
+		"textures": "textures/items/onyx_hoe"
+	},
+	"onyx_pickaxe": {
+		"textures": "textures/items/onyx_pickaxe"
+	},
+	"migtinio_boots": {
+		"textures": "textures/items/migtinio_boots"
+	},
+	"migtinio_helmet": {
+		"textures": "textures/items/migtinio_helmet"
+	},
+	"migtinio_chestplate": {
+		"textures": "textures/items/migtinio_chestplate"
+	},
+	"migtinio_leggings": {
+		"textures": "textures/items/migtinio_leggings"
+	},
+	"migtinio_sword": {
+		"textures": "textures/items/migtinio_sword"
+	},
+	"migtinio_axe": {
+		"textures": "textures/items/migtinio_axe"
+	},
+	"migtinio_shovel": {
+		"textures": "textures/items/migtinio_shovel"
+	},
+	"migtinio_hoe": {
+		"textures": "textures/items/migtinio_hoe"
+	},
+	"migtinio_pickaxe": {
+		"textures": "textures/items/migtinio_pickaxe"
+	},
+	"bronce_boots": {
+		"textures": "textures/items/bronce_boots"
+	},
+	"bronce_helmet": {
+		"textures": "textures/items/bronce_helmet"
+	},
+	"bronce_chestplate": {
+		"textures": "textures/items/bronce_chestplate"
+	},
+	"bronce_leggings": {
+		"textures": "textures/items/bronce_leggings"
+	},
+	"bronce_sword": {
+		"textures": "textures/items/bronce_sword"
+	},
+	"bronce_axe": {
+		"textures": "textures/items/bronce_axe"
+	},
+	"bronce_shovel": {
+		"textures": "textures/items/bronce_shovel"
+	},
+	"bronce_hoe": {
+		"textures": "textures/items/bronce_hoe"
+	},
+	"bronce_pickaxe": {
+		"textures": "textures/items/bronce_pickaxe"
+	},
+	"tin_helmet": {
+		"textures": "textures/items/tin_helmet"
+	},
+	"tin_chestplate": {
+		"textures": "textures/items/tin_chestplate"
+	},
+	"tin_leggings": {
+		"textures": "textures/items/tin_leggings"
+	},
+	"tin_boots": {
+		"textures": "textures/items/tin_boots"
+	},
+	"tin_sword": {
+		"textures": "textures/items/tin_sword"
+	},
+	"tin_great_sword": {
+		"textures": "textures/items/tin_great_sword"
+	},
+	"tin_hammer": {
+		"textures": "textures/items/tin_hammer"
+	},
+	"tin_axe": {
+		"textures": "textures/items/tin_axe"
+	},
+	"tin_battleaxe": {
+		"textures": "textures/items/tin_battleaxe"
+	},
+	"tin_great_axe": {
+		"textures": "textures/items/tin_great_axe"
+	},
+	"tin_dagger": {
+		"textures": "textures/items/tin_dagger"
+	},
+	"tin_shovel": {
+		"textures": "textures/items/tin_shovel"
+	},
+	"tin_apple": {
+		"textures": "textures/items/tin_apple"
+	},
+	"tin_hoe": {
+		"textures": "textures/items/tin_hoe"
+	},
+	"tin_pickaxe": {
+		"textures": "textures/items/tin_pickaxe"
+	},
+	"onyx_hammer": {
+		"textures": "textures/items/onyx_hammer"
+	},
+	"cobalto_boots": {
+		"textures": "textures/items/cobalto_boots"
+	},
+	"cobalto_helmet": {
+		"textures": "textures/items/cobalto_helmet"
+	},
+	"cobalto_chestplate": {
+		"textures": "textures/items/cobalto_chestplate"
+	},
+	"cobalto_leggings": {
+		"textures": "textures/items/cobalto_leggings"
+	},
+	"cobalto_sword": {
+		"textures": "textures/items/cobalto_sword"
+	},
+	"cobalto_axe": {
+		"textures": "textures/items/cobalto_axe"
+	},
+	"cobalto_shovel": {
+		"textures": "textures/items/cobalto_shovel"
+	},
+	"cobalto_hoe": {
+		"textures": "textures/items/cobalto_hoe"
+	},
+	"cobalto_pickaxe": {
+		"textures": "textures/items/cobalto_pickaxe"
+	},
+	"ruby_boots": {
+		"textures": "textures/items/ruby_boots"
+	},
+	"ruby_helmet": {
+		"textures": "textures/items/ruby_helmet"
+	},
+	"ruby_chestplate": {
+		"textures": "textures/items/ruby_chestplate"
+	},
+	"ruby_leggings": {
+		"textures": "textures/items/ruby_leggings"
+	},
+	"ruby_sword": {
+		"textures": "textures/items/ruby_sword"
+	},
+	"ruby_axe": {
+		"textures": "textures/items/ruby_axe"
+	},
+	"mesa": {
+		"textures": "textures/items/mesa_set"
+	},
+	"ruby_shovel": {
+		"textures": "textures/items/ruby_shovel"
+	},
+	"ruby_hoe": {
+		"textures": "textures/items/ruby_hoe"
+	},
+	"ruby_pickaxe": {
+		"textures": "textures/items/ruby_pickaxe"
+	},
+	"jade_boots": {
+		"textures": "textures/items/jade_boots"
+	},
+	"jade_sword": {
+		"textures": "textures/items/jade_sword"
+	},
+	"jade_axe": {
+		"textures": "textures/items/jade_axe"
+	},
+	"jade_shovel": {
+		"textures": "textures/items/jade_shovel"
+	},
+	"jade_hoe": {
+		"textures": "textures/items/jade_hoe"
+	},
+	"jade_pickaxe": {
+		"textures": "textures/items/jade_pickaxe"
+	},
+	"jade_helmet": {
+		"textures": "textures/items/jade_helmet"
+	},
+	"jade_chestplate": {
+		"textures": "textures/items/jade_chestplate"
+	},
+	"jade_leggings": {
+		"textures": "textures/items/jade_leggings"
+	},
+	"oh:stone_hammer": {
+		"textures": "textures/items/stone_hammer"
+	},
+	"oh:jade_hammer": {
+		"textures": "textures/items/jade_hammer"
+	},
+	"enderite_hammer": {
+		"textures": "textures/items/enderite_hammer"
+	},
+	"oh:ruby_hammer": {
+		"textures": "textures/items/ruby_hammer"
+	},
+	"oh:enderite_hammer": {
+		"textures": "textures/items/enderite_hammer"
+	},
+	"oh:onyx_hammer": {
+		"textures": "textures/items/onyx_hammer"
+	},
+	"oh:cobalto_hammer": {
+		"textures": "textures/items/cobalto_hammer"
+	},
+	"oh:bronce_hammer": {
+		"textures": "textures/items/bronce_hammer"
+	},
+	"oh:quartz_hammer": {
+		"textures": "textures/items/quartz_hammer"
+	},
+	"oh:iron_hammer": {
+		"textures": "textures/items/iron_hammer"
+	},
+	"oh:gold_hammer": {
+		"textures": "textures/items/gold_hammer"
+	},
+	"oh:diamond_hammer": {
+		"textures": "textures/items/diamond_hammer"
+	},
+	"oh:netherite_hammer": {
+		"textures": "textures/items/netherite_hammer"
+	},
+	"jade": {
+		"textures": "textures/items/jade"
+	},
+	"ruby": {
+		"textures": "textures/items/ruby"
+	},
+	"bronce": {
+		"textures": "textures/items/bronce"
+	},
+	"cobalto": {
+		"textures": "textures/items/cobalto"
+	},
+	"trunk_stick": {
+		"textures": "textures/items/trunk_stick"
+	},
+	"strong_stick": {
+		"textures": "textures/items/strong_stick"
+	},
+	"ender_stick": {
+		"textures": "textures/items/ender_stick"
+	},
+	"migtinio": {
+		"textures": "textures/items/migtinio"
+	},
+	"raw_migtinio": {
+		"textures": "textures/items/raw_migtinio"
+	},
+	"migtinio_hammer": {
+		"textures": "textures/items/migtinio_hammer"
+	},
+	"tourmaline_hammer": {
+		"textures": "textures/items/tourmaline_hammer"
+	},
+	"tin": {
+		"textures": "textures/items/tin"
+	},
+	"oh:mesa": {
+		"textures": "textures/items/mesa"
+	},
+	"bronce_head": {
+		"textures": "textures/items/bronce_head"
+	},
+	"tin_head": {
+		"textures": "textures/items/tin_head"
+	},
+	"ruby_head": {
+		"textures": "textures/items/ruby_head"
+	},
+	"jade_head": {
+		"textures": "textures/items/jade_head"
+	},
+	"migtinio_head": {
+		"textures": "textures/items/migtinio_head"
+	},
+	"onyx_head": {
+		"textures": "textures/items/onyx_head"
+	},
+	"tourmaline_head": {
+		"textures": "textures/items/tourmaline_head"
+	},
+	"cobalto_head": {
+		"textures": "textures/items/cobalto_head"
+	},
+	"enderite_head": {
+		"textures": "textures/items/enderite_head"
+	},
+	"wooden_head": {
+		"textures": "textures/items/wooden_head"
+	},
+	"stone_head": {
+		"textures": "textures/items/stone_head"
+	},
+	"iron_head": {
+		"textures": "textures/items/iron_head"
+	},
+	"gold_head": {
+		"textures": "textures/items/gold_head"
+	},
+	"diamond_head": {
+		"textures": "textures/items/diamond_head"
+	},
+	"netherite_head": {
+		"textures": "textures/items/netherite_head"
+	},
+	"quartz_head": {
+		"textures": "textures/items/quartz_head"
+	},
+	"bronce_battleaxe": {
+		"textures": "textures/items/bronce_battleaxe"
+	},
+	"ruby_battleaxe": {
+		"textures": "textures/items/ruby_battleaxe"
+	},
+	"jade_battleaxe": {
+		"textures": "textures/items/jade_battleaxe"
+	},
+	"migtinio_battleaxe": {
+		"textures": "textures/items/migtinio_battleaxe"
+	},
+	"onyx_battleaxe": {
+		"textures": "textures/items/onyx_battleaxe"
+	},
+	"tourmaline_battleaxe": {
+		"textures": "textures/items/tourmaline_battleaxe"
+	},
+	"cobalto_battleaxe": {
+		"textures": "textures/items/cobalto_battleaxe"
+	},
+	"enderite_battleaxe": {
+		"textures": "textures/items/enderite_battleaxe"
+	},
+	"bronce_dagger": {
+		"textures": "textures/items/bronce_dagger"
+	},
+	"ruby_dagger": {
+		"textures": "textures/items/ruby_dagger"
+	},
+	"jade_dagger": {
+		"textures": "textures/items/jade_dagger"
+	},
+	"migtinio_dagger": {
+		"textures": "textures/items/migtinio_dagger"
+	},
+	"onyx_dagger": {
+		"textures": "textures/items/onyx_dagger"
+	},
+	"tourmaline_dagger": {
+		"textures": "textures/items/tourmaline_dagger"
+	},
+	"cobalto_dagger": {
+		"textures": "textures/items/cobalto_dagger"
+	},
+	"enderite_dagger": {
+		"textures": "textures/items/enderite_dagger"
+	},
+	"bronce_great_axe": {
+		"textures": "textures/items/bronce_great_axe"
+	},
+	"ruby_great_axe": {
+		"textures": "textures/items/ruby_great_axe"
+	},
+	"jade_great_axe": {
+		"textures": "textures/items/jade_great_axe"
+	},
+	"migtinio_great_axe": {
+		"textures": "textures/items/migtinio_great_axe"
+	},
+	"onyx_great_axe": {
+		"textures": "textures/items/onyx_great_axe"
+	},
+	"tourmaline_great_axe": {
+		"textures": "textures/items/tourmaline_great_axe"
+	},
+	"cobalto_great_axe": {
+		"textures": "textures/items/cobalto_great_axe"
+	},
+	"enderite_great_axe": {
+		"textures": "textures/items/enderite_great_axe"
+	},
+	"bronce_great_sword": {
+		"textures": "textures/items/bronce_great_sword"
+	},
+	"ruby_great_sword": {
+		"textures": "textures/items/ruby_great_sword"
+	},
+	"jade_great_sword": {
+		"textures": "textures/items/jade_great_sword"
+	},
+	"migtinio_great_sword": {
+		"textures": "textures/items/migtinio_great_sword"
+	},
+	"onyx_great_sword": {
+		"textures": "textures/items/onyx_great_sword"
+	},
+	"tourmaline_great_sword": {
+		"textures": "textures/items/tourmaline_great_sword"
+	},
+	"cobalto_great_sword": {
+		"textures": "textures/items/cobalto_great_sword"
+	},
+	"enderite_great_sword": {
+		"textures": "textures/items/enderite_great_sword"
+	},
+	"bronce_apple": {
+		"textures": [
+			"textures/items/bronce_apple"
+		]
+	},
+	"ruby_apple": {
+		"textures": [
+			"textures/items/ruby_apple"
+		]
+	},
+	"jade_apple": {
+		"textures": [
+			"textures/items/jade_apple"
+		]
+	},
+	"migtinio_apple": {
+		"textures": [
+			"textures/items/migtinio_apple"
+		]
+	},
+	"onyx_apple": {
+		"textures": [
+			"textures/items/onyx_apple"
+		]
+	},
+	"tourmaline_apple": {
+		"textures": [
+			"textures/items/tourmaline_apple"
+		]
+	},
+	"cobalto_apple": {
+		"textures": [
+			"textures/items/cobalto_apple"
+		]
+	},
+	"enderite_apple": {
+		"textures": [
+			"textures/items/enderite_apple"
+		]
+	},
+	"bronce_spear": {
+		"textures": [
+			"textures/items/bronce_spear"
+		]
+	},
+	"tin_bow":{
+		"textures":[
+			"textures/items/tin_bow"
+		]
+	},
+	//Paladium
+	"paladium": {
+		"textures":[
+			"textures/items/paladium"
+		]
+	},
+	"paladium_helmet": {
+		"textures":[
+			"textures/items/paladium_helmet"
+		]
+	},
+	"paladium_chestplate": {
+		"textures":[
+			"textures/items/paladium_chestplate"
+		]
+	},
+	"paladium_leggings": {
+		"textures":[
+			"textures/items/paladium_leggings"
+		]
+	},
+	"paladium_boots": {
+		"textures":[
+			"textures/items/paladium_boots"
+		]
+	},
+	"paladium_sword": {
+		"textures":[
+			"textures/items/paladium_sword"
+		]
+	},
+	"paladium_pickaxe": {
+		"textures":[
+			"textures/items/paladium_pickaxe"
+		]
+	},
+	"paladium_axe": {
+		"textures":[
+			"textures/items/paladium_axe"
+		]
+	},
+	"paladium_shovel": {
+		"textures":[
+			"textures/items/paladium_shovel"
+		]
+	},
+	"paladium_hoe": {
+		"textures":[
+			"textures/items/paladium_hoe"
+		]
+	},
+	"paladium_dagger": {
+		"textures":[
+			"textures/items/paladium_dagger"
+		]
+	},
+	"paladium_battleaxe": {
+		"textures":[
+			"textures/items/paladium_battleaxe"
+		]
+	},
+	"paladium_great_sword": {
+		"textures":[
+			"textures/items/paladium_great_sword"
+		]
+	},
+	"paladium_great_axe": {
+		"textures":[
+			"textures/items/paladium_great_axe"
+		]
+	},
+	"paladium_hammer": {
+		"textures":[
+			"textures/items/paladium_hammer"
+		]
+	},
+	"paladium_head": {
+		"textures":[
+			"textures/items/paladium_head"
+		]
+	},
+	"paladium_spear": {
+		"textures":[
+			"textures/items/paladium_spear"
+		]
+	},"paladium_apple": {
+		"textures":[
+			"textures/items/paladium_apple"
+		]
+	},
+	"wrench": {
+		"textures": [
+			"textures/items/wrench"
+		]
+	},
+	"remover": {
+		"textures": [
+			"textures/items/remover"
+		]
+	},
+	"goggles": {
+		"textures": [
+			"textures/items/goggles"
+		]
+	},
+	"motor": {
+		"textures": [
+			"textures/items/motor"
+		]
+	},
+	"shaft": {
+		"textures": [
+			"textures/items/shaft"
+		]
+	},
+	"mechanical_press": {
+		"textures": [
+			"textures/items/mechanical_press"
+		]
+	},
+	"brass_ingot": {
+		"textures": [
+			"textures/items/brass_ingot"
+		]
+	},
+	"brass_sheet": {
+		"textures": [
+			"textures/items/brass_sheet"
+		]
+	},
+	"iron_sheet": {
+		"textures": [
+			"textures/items/iron_sheet"
+		]
+	},
+	"gold_sheet": {
+		"textures": [
+			"textures/items/golden_sheet"
+		]
+	},
+	"copper_sheet": {
+		"textures": [
+			"textures/items/copper_sheet"
+		]
+	},
+	"andesite_alloy": {
+		"textures": [
+			"textures/items/andesite_alloy"
+		]
+	},
+	"cogwheel": {
+		"textures": [
+			"textures/items/cogwheel"
+		]
+	},
+	"gearbox": {
+		"textures": [
+			"textures/items/gearbox"
+		]
+	},
+	"zinc_ingot": {
+		"textures": [
+			"textures/items/zinc_ingot"
+		]
+	},
+	"zinc_nugget": {
+		"textures": [
+			"textures/items/zinc_nugget"
+		]
+	},
+	"zinc_block": {
+		"textures": [
+			"textures/items/zinc_block"
+		]
+	},
+	"raw_zinc": {
+		"textures": [
+			"textures/items/raw_zinc"
+		]
+	},
+	"gearbox_v": {
+		"textures": [
+			"textures/items/gearbox_v"
+		]
+	},
+	"wrench_tool_box": {
+		"textures": [
+			"textures/items/wrench_tool_box"
+		]
+	},
+	"outside_book": {
+		"textures": [
+			"textures/items/outside_book"
+		]
+	},
+	"mechanical_drill": {
+		"textures": "textures/items/mechanical_drill"
+	},
+	"andesite_casing": {
+		"textures": [
+			"textures/items/andesite_casing"
+		]
+	},
+	"millstone": {
+		"textures": "textures/items/millstone"
+	},
+	"purified_water_bottle": {
+		"textures": "textures/items/purified_water_bottle"
+	  },
+	  "water_bottle": {
+		"textures": "textures/items/potion_bottle_drinkable"
+	  },
+	  "canteen": {
+		"textures": "textures/items/canteen"
+	  },
+	"purpurite": {
+		"textures": "textures/items/purpurite"
+	  },
+	  "sandstone_brick": {
+		"textures": "textures/items/sandstone_brick"
+	  },
+	  "end_dust": {
+		"textures": "textures/items/end_dust"
+	  },
+	  "feldspar": {
+		"textures": "textures/items/feldspar"
+	  },
+	  "mica": {
+		"textures": "textures/items/mica"
+	  },
+	  "gypsum_dust": {
+		"textures": "textures/items/gypsum_dust"
+	  },
+	  "ruby": {
+		"textures": "textures/items/ruby"
+	  },
+	  "flint_hoe": {
+		"textures": "textures/items/flint_hoe"
+	  },
+	  "flint_shovel": {
+		"textures": "textures/items/flint_shovel"
+	  },
+	  "flint_pickaxe": {
+		"textures": "textures/items/flint_pickaxe"
+	  },
+	  "flint_axe": {
+		"textures": "textures/items/flint_axe"
+	  },
+	  "flint_sword": {
+		"textures": "textures/items/flint_sword"
+	  },
+	  "novaculite_brick": {
+		"textures": "textures/items/novaculite_brick"
+	  },
+	  "tan_dye": {
+		"textures": "textures/items/tan_dye"
+	  },
+	  "peach_dye": {
+		"textures": "textures/items/peach_dye"
+	  },
+	"azalea_flower": {
+		"textures": "textures/blocks/azalea_flower/azalea_flower"
+	  },
+	  "lotus_flower": {
+		"textures": "textures/items/lotus_flower/lotus_flower"
+	  },
+	  "hibiscus": {
+		"textures": "textures/blocks/hibiscus/hibiscus"
+	  },
+	  "carnation": {
+		"textures": "textures/blocks/carnation/carnation"
+	  },
+	  "marigold": {
+		"textures": "textures/blocks/marigold/marigold"
+	  },
+	  "marigold_tall": {
+		"textures": "textures/items/marigold/marigold_tall"
+	  },
+	  "marigold_large": {
+		"textures": "textures/items/marigold/marigold_large"
+	  },
+	  "tiger_lily": {
+		"textures": "textures/blocks/tiger_lily/tiger_lily"
+	  },
+	  "gold_rose": {
+		"textures": "textures/blocks/gold_rose/gold_rose"
+	  },
+	  "gold_rose_tall": {
+		"textures": "textures/items/gold_rose/gold_rose_tall"
+	  },
+	  "gold_rose_large": {
+		"textures": "textures/items/gold_rose/gold_rose_large"
+	  },
+	  "gold_rose_short": {
+		"textures": "textures/blocks/gold_rose/gold_rose_short"
+	  },
+	  "tiger_lily_tall": {
+		"textures": "textures/items/tiger_lily/tiger_lily_tall"
+	  },
+	  "tiger_lily_large": {
+		"textures": "textures/items/tiger_lily/tiger_lily_large"
+	  },
+	  "rose": {
+		"textures": "textures/blocks/rose/rose"
+	  },
+	  "rose_large": {
+		"textures": "textures/items/rose/rose_large"
+	  },
+	  "rose_short": {
+		"textures": "textures/blocks/rose/rose_short"
+	  },
+	  "daffodil": {
+		"textures": "textures/blocks/daffodil/daffodil"
+	  },
+	  "angels_trumpet": {
+		"textures": "textures/blocks/angels_trumpet/angels_trumpet"
+	  },
+	  "dandelion_tall": {
+		"textures": "textures/items/dandelion/dandelion_tall"
+	  },
+	  "dandelion_large": {
+		"textures": "textures/items/dandelion/dandelion_large"
+	  },
+	  "dandelion_short": {
+		"textures": "textures/blocks/dandelion/dandelion_short"
+	  },
+	  "wither_rose_tall": {
+		"textures": "textures/items/wither_rose/wither_rose_tall"
+	  },
+	  "wither_rose_large": {
+		"textures": "textures/items/wither_rose/wither_rose_large"
+	  },
+	  "wither_rose_short": {
+		"textures": "textures/blocks/wither_rose/wither_rose_short"
+	  },
+	  "buttercup": {
+		"textures": "textures/blocks/buttercup/buttercup"
+	  },
+	  "buttercup_tall": {
+		"textures": "textures/items/buttercup/buttercup_tall"
+	  },
+	  "buttercup_large": {
+		"textures": "textures/items/buttercup/buttercup_large"
+	  },
+	  "anemone": {
+		"textures": "textures/blocks/anemone/anemone"
+	  },
+	  "pink_bleeding_heart": {
+		"textures": "textures/blocks/pink_bleeding_heart/pink_bleeding_heart"
+	  },
+	  "pink_bleeding_heart_tall": {
+		"textures": "textures/items/pink_bleeding_heart/pink_bleeding_heart_tall"
+	  },
+	  "pink_bleeding_heart_large": {
+		"textures": "textures/items/pink_bleeding_heart/pink_bleeding_heart_large"
+	  },
+	  "pink_rose": {
+		"textures": "textures/blocks/pink_rose/pink_rose"
+	  },
+	  "pink_rose_tall": {
+		"textures": "textures/items/pink_rose/pink_rose_tall"
+	  },
+	  "pink_rose_large": {
+		"textures": "textures/items/pink_rose/pink_rose_large"
+	  },
+	  "pink_rose_short": {
+		"textures": "textures/blocks/pink_rose/pink_rose_short"
+	  },
+	  "petunia": {
+		"textures": "textures/blocks/petunia/petunia"
+	  },
+	  "periwinkle": {
+		"textures": "textures/blocks/periwinkle/periwinkle"
+	  },
+	  "purple_orchid": {
+		"textures": "textures/blocks/purple_orchid/purple_orchid"
+	  },
+	  "hemlock": {
+		"textures": "textures/blocks/hemlock/hemlock"
+	  },
+	  "chocolate_cosmos": {
+		"textures": "textures/blocks/chocolate_cosmos/chocolate_cosmos"
+	  },
+	  "queen_tulip": {
+		"textures": "textures/blocks/queen_tulip/queen_tulip"
+	  },
+	  "snapdragon": {
+		"textures": "textures/blocks/snapdragon/snapdragon"
+	  },
+	  "snapdragon_tall": {
+		"textures": "textures/items/snapdragon/snapdragon_tall"
+	  },
+	  "foxglove": {
+		"textures": "textures/blocks/foxglove/foxglove"
+	  },
+	  "foxglove_tall": {
+		"textures": "textures/items/foxglove/foxglove_tall"
+	  },
+	  "wolfsbane": {
+		"textures": "textures/blocks/wolfsbane/wolfsbane"
+	  },
+	  "wolfsbane_tall": {
+		"textures": "textures/items/wolfsbane/wolfsbane_tall"
+	  },
+	  "gardenia": {
+		"textures": "textures/blocks/gardenia/gardenia"
+	  },
+	  "gardenia_tall": {
+		"textures": "textures/items/gardenia/gardenia_tall"
+	  },
+	  "grieving_rose": {
+		"textures": "textures/blocks/grieving_rose/grieving_rose"
+	  },
+	  "grieving_rose_tall": {
+		"textures": "textures/items/grieving_rose/grieving_rose_tall"
+	  },
+	  "grieving_rose_large": {
+		"textures": "textures/items/grieving_rose/grieving_rose_large"
+	  },
+	  "grieving_rose_short": {
+		"textures": "textures/blocks/grieving_rose/grieving_rose_short"
+	  },
+	  "corrupted_rose": {
+		"textures": "textures/blocks/corrupted_rose/corrupted_rose"
+	  },
+	  "corrupted_rose_tall": {
+		"textures": "textures/items/corrupted_rose/corrupted_rose_tall"
+	  },
+	  "corrupted_rose_large": {
+		"textures": "textures/items/corrupted_rose/corrupted_rose_large"
+	  },
+	  "corrupted_rose_short": {
+		"textures": "textures/blocks/corrupted_rose/corrupted_rose_short"
+	  },
+	  "cyan_rose": {
+		"textures": "textures/blocks/cyan_rose/cyan_rose"
+	  },
+	  "cyan_rose_tall": {
+		"textures": "textures/items/cyan_rose/cyan_rose_tall"
+	  },
+	  "cyan_rose_large": {
+		"textures": "textures/items/cyan_rose/cyan_rose_large"
+	  },
+	  "cyan_rose_short": {
+		"textures": "textures/blocks/cyan_rose/cyan_rose_short"
+	  },
+	  "white_rose": {
+		"textures": "textures/blocks/white_rose/white_rose"
+	  },
+	  "white_rose_tall": {
+		"textures": "textures/items/white_rose/white_rose_tall"
+	  },
+	  "white_rose_large": {
+		"textures": "textures/items/white_rose/white_rose_large"
+	  },
+	  "white_rose_short": {
+		"textures": "textures/blocks/white_rose/white_rose_short"
+	  },
+	  "blue_bleeding_heart": {
+		"textures": "textures/blocks/blue_bleeding_heart/blue_bleeding_heart"
+	  },
+	  "blue_bleeding_heart_tall": {
+		"textures": "textures/items/blue_bleeding_heart/blue_bleeding_heart_tall"
+	  },
+	  "blue_bleeding_heart_large": {
+		"textures": "textures/items/blue_bleeding_heart/blue_bleeding_heart_large"
+	  },
+	  "white_bleeding_heart": {
+		"textures": "textures/blocks/white_bleeding_heart/white_bleeding_heart"
+	  },
+	  "white_bleeding_heart_tall": {
+		"textures": "textures/items/white_bleeding_heart/white_bleeding_heart_tall"
+	  },
+	  "white_bleeding_heart_large": {
+		"textures": "textures/items/white_bleeding_heart/white_bleeding_heart_large"
+	  },
+	  "black_bleeding_heart": {
+		"textures": "textures/blocks/black_bleeding_heart/black_bleeding_heart"
+	  },
+	  "black_bleeding_heart_tall": {
+		"textures": "textures/items/black_bleeding_heart/black_bleeding_heart_tall"
+	  },
+	  "black_bleeding_heart_large": {
+		"textures": "textures/items/black_bleeding_heart/black_bleeding_heart_large"
+	  },
+	  "lavender": {
+		"textures": "textures/blocks/lavender/lavender"
+	  },
+	  "lavender_tall": {
+		"textures": "textures/items/lavender/lavender_tall"
+	  },
+	  "lavender_large": {
+		"textures": "textures/items/lavender/lavender_large"
+	  },
+	  "grieving_lavender": {
+		"textures": "textures/blocks/grieving_lavender/grieving_lavender"
+	  },
+	  "grieving_lavender_tall": {
+		"textures": "textures/items/grieving_lavender/grieving_lavender_tall"
+	  },
+	  "grieving_lavender_large": {
+		"textures": "textures/items/grieving_lavender/grieving_lavender_large"
+	  },
+	  "bluebell": {
+		"textures": "textures/blocks/bluebell/bluebell"
+	  },
+	  "bluebell_tall": {
+		"textures": "textures/items/bluebell/bluebell_tall"
+	  },
+	  "bluebell_large": {
+		"textures": "textures/items/bluebell/bluebell_large"
+	  },
+	  "corrupted_bluebell": {
+		"textures": "textures/blocks/corrupted_bluebell/corrupted_bluebell"
+	  },
+	  "corrupted_bluebell_tall": {
+		"textures": "textures/items/corrupted_bluebell/corrupted_bluebell_tall"
+	  },
+	  "corrupted_bluebell_large": {
+		"textures": "textures/items/corrupted_bluebell/corrupted_bluebell_large"
+	  },
+	  "sunflower": {
+		"textures": "textures/items/sunflower/sunflower"
+	  },
+	  "sunflower_large": {
+		"textures": "textures/items/sunflower/sunflower_large"
+	  },
+	  "lilac": {
+		"textures": "textures/blocks/lilac/lilac"
+	  },
+	  "lilac_large": {
+		"textures": "textures/items/lilac/lilac_large"
+	  },
+	  "peony": {
+		"textures": "textures/blocks/peony/peony"
+	  },
+	  "peony_large": {
+		"textures": "textures/items/peony/peony_large"
+	  },
+	  "peony_short": {
+		"textures": "textures/blocks/peony/peony_short"
+	  },
+	  "blue_dragon_rose": {
+		"textures": "textures/blocks/blue_dragon_rose/blue_dragon_rose"
+	  },
+	  "blue_dragon_rose_tall": {
+		"textures": "textures/items/blue_dragon_rose/blue_dragon_rose_tall"
+	  },
+	  "blue_dragon_rose_large": {
+		"textures": "textures/items/blue_dragon_rose/blue_dragon_rose_large"
+	  },
+	  "blue_dragon_rose_short": {
+		"textures": "textures/blocks/blue_dragon_rose/blue_dragon_rose_short"
+	  },
+	  "allium_tall": {
+		"textures": "textures/items/allium/allium_tall"
+	  },
+	  "allium_large": {
+		"textures": "textures/items/allium/allium_large"
+	  },
+	  "allium_short": {
+		"textures": "textures/blocks/allium/allium_short"
+	  },
+	  "poppy_tall": {
+		"textures": "textures/items/poppy/poppy_tall"
+	  },
+	  "poppy_large": {
+		"textures": "textures/items/poppy/poppy_large"
+	  },
+	  "poppy_short": {
+		"textures": "textures/blocks/poppy/poppy_short"
+	  },
+	  "lily_valley_tall": {
+		"textures": "textures/items/lily_valley/lily_valley_tall"
+	  },
+	  "lily_valley_large": {
+		"textures": "textures/items/lily_valley/lily_valley_large"
+	  },
+	  "lily_valley_short": {
+		"textures": "textures/blocks/lily_valley/lily_valley_short"
+	  },
+	  "white_tulip_tall": {
+		"textures": "textures/items/white_tulip/white_tulip_tall"
+	  },
+	  "white_tulip_large": {
+		"textures": "textures/items/white_tulip/white_tulip_large"
+	  },
+	  "white_tulip_short": {
+		"textures": "textures/blocks/white_tulip/white_tulip_short"
+	  },
+	  "red_tulip_tall": {
+		"textures": "textures/items/red_tulip/red_tulip_tall"
+	  },
+	  "red_tulip_large": {
+		"textures": "textures/items/red_tulip/red_tulip_large"
+	  },
+	  "red_tulip_short": {
+		"textures": "textures/blocks/red_tulip/red_tulip_short"
+	  },
+	  "pink_tulip_tall": {
+		"textures": "textures/items/pink_tulip/pink_tulip_tall"
+	  },
+	  "pink_tulip_large": {
+		"textures": "textures/items/pink_tulip/pink_tulip_large"
+	  },
+	  "pink_tulip_short": {
+		"textures": "textures/blocks/pink_tulip/pink_tulip_short"
+	  },
+	  "orange_tulip_tall": {
+		"textures": "textures/items/orange_tulip/orange_tulip_tall"
+	  },
+	  "orange_tulip_large": {
+		"textures": "textures/items/orange_tulip/orange_tulip_large"
+	  },
+	  "orange_tulip_short": {
+		"textures": "textures/blocks/orange_tulip/orange_tulip_short"
+	  },
+	  "yellow_tulip": {
+		"textures": "textures/blocks/yellow_tulip/yellow_tulip"
+	  },
+	  "yellow_tulip_tall": {
+		"textures": "textures/items/yellow_tulip/yellow_tulip_tall"
+	  },
+	  "yellow_tulip_large": {
+		"textures": "textures/items/yellow_tulip/yellow_tulip_large"
+	  },
+	  "yellow_tulip_short": {
+		"textures": "textures/blocks/yellow_tulip/yellow_tulip_short"
+	  },
+	  "purple_tulip": {
+		"textures": "textures/blocks/purple_tulip/purple_tulip"
+	  },
+	  "purple_tulip_tall": {
+		"textures": "textures/items/purple_tulip/purple_tulip_tall"
+	  },
+	  "purple_tulip_large": {
+		"textures": "textures/items/purple_tulip/purple_tulip_large"
+	  },
+	  "purple_tulip_short": {
+		"textures": "textures/blocks/purple_tulip/purple_tulip_short"
+	  },
+	  "green_tulip": {
+		"textures": "textures/blocks/green_tulip/green_tulip"
+	  },
+	  "green_tulip_tall": {
+		"textures": "textures/items/green_tulip/green_tulip_tall"
+	  },
+	  "green_tulip_large": {
+		"textures": "textures/items/green_tulip/green_tulip_large"
+	  },
+	  "green_tulip_short": {
+		"textures": "textures/blocks/green_tulip/green_tulip_short"
+	  },
+	  "blue_tulip": {
+		"textures": "textures/blocks/blue_tulip/blue_tulip"
+	  },
+	  "blue_tulip_tall": {
+		"textures": "textures/items/blue_tulip/blue_tulip_tall"
+	  },
+	  "blue_tulip_large": {
+		"textures": "textures/items/blue_tulip/blue_tulip_large"
+	  },
+	  "blue_tulip_short": {
+		"textures": "textures/blocks/blue_tulip/blue_tulip_short"
+	  },
+	  "oxeye_daisy_tall": {
+		"textures": "textures/items/oxeye_daisy/oxeye_daisy_tall"
+	  },
+	  "oxeye_daisy_large": {
+		"textures": "textures/items/oxeye_daisy/oxeye_daisy_large"
+	  },
+	  "oxeye_daisy_short": {
+		"textures": "textures/blocks/oxeye_daisy/oxeye_daisy_short"
+	  },
+	  "blue_orchid_tall": {
+		"textures": "textures/items/blue_orchid/blue_orchid_tall"
+	  },
+	  "blue_orchid_large": {
+		"textures": "textures/items/blue_orchid/blue_orchid_large"
+	  },
+	  "blue_orchid_short": {
+		"textures": "textures/blocks/blue_orchid/blue_orchid_short"
+	  },
+	  "purple_orchid_tall": {
+		"textures": "textures/items/purple_orchid/purple_orchid_tall"
+	  },
+	  "purple_orchid_large": {
+		"textures": "textures/items/purple_orchid/purple_orchid_large"
+	  },
+	  "purple_orchid_short": {
+		"textures": "textures/blocks/purple_orchid/purple_orchid_short"
+	  },
+	  "azure_bluet_tall": {
+		"textures": "textures/items/azure_bluet/azure_bluet_tall"
+	  },
+	  "azure_bluet_large": {
+		"textures": "textures/items/azure_bluet/azure_bluet_large"
+	  },
+	  "azure_bluet_short": {
+		"textures": "textures/blocks/azure_bluet/azure_bluet_short"
+	  },
+	  "cornflower_tall": {
+		"textures": "textures/items/cornflower/cornflower_tall"
+	  },
+	  "cornflower_large": {
+		"textures": "textures/items/cornflower/cornflower_large"
+	  },
+	  "cornflower_short": {
+		"textures": "textures/blocks/cornflower/cornflower_short"
+	  },
+	  "queen_tulip_tall": {
+		"textures": "textures/items/queen_tulip/queen_tulip_tall"
+	  },
+	  "queen_tulip_large": {
+		"textures": "textures/items/queen_tulip/queen_tulip_large"
+	  },
+	  "queen_tulip_short": {
+		"textures": "textures/blocks/queen_tulip/queen_tulip_short"
+	  },
+	  "petunia_tall": {
+		"textures": "textures/items/petunia/petunia_tall"
+	  },
+	  "petunia_large": {
+		"textures": "textures/items/petunia/petunia_large"
+	  },
+	  "petunia_short": {
+		"textures": "textures/blocks/petunia/petunia_short"
+	  },
+	  "allium_bouquet": {
+		"textures": "textures/items/allium/allium_bouquet"
+	  },
+	  "anemone_bouquet": {
+		"textures": "textures/items/anemone/anemone_bouquet"
+	  },
+	  "angels_trumpet_bouquet": {
+		"textures": "textures/items/angels_trumpet/angels_trumpet_bouquet"
+	  },
+	  "azalea_bouquet": {
+		"textures": "textures/items/azalea/azalea_bouquet"
+	  },
+	  "azure_bluet_bouquet": {
+		"textures": "textures/items/azure_bluet/azure_bluet_bouquet"
+	  },
+	  "black_bleeding_heart_bouquet": {
+		"textures": "textures/items/black_bleeding_heart/black_bleeding_heart_bouquet"
+	  },
+	  "bluebell_bouquet": {
+		"textures": "textures/items/bluebell/bluebell_bouquet"
+	  },
+	  "blue_bleeding_heart_bouquet": {
+		"textures": "textures/items/blue_bleeding_heart/blue_bleeding_heart_bouquet"
+	  },
+	  "blue_dragon_rose_bouquet": {
+		"textures": "textures/items/blue_dragon_rose/blue_dragon_rose_bouquet"
+	  },
+	  "blue_orchid_bouquet": {
+		"textures": "textures/items/blue_orchid/blue_orchid_bouquet"
+	  },
+	  "blue_tulip_bouquet": {
+		"textures": "textures/items/blue_tulip/blue_tulip_bouquet"
+	  },
+	  "buttercup_bouquet": {
+		"textures": "textures/items/buttercup/buttercup_bouquet"
+	  },
+	  "carnation_bouquet": {
+		"textures": "textures/items/carnation/carnation_bouquet"
+	  },
+	  "chocolate_cosmos_bouquet": {
+		"textures": "textures/items/chocolate_cosmos/chocolate_cosmos_bouquet"
+	  },
+	  "cornflower_bouquet": {
+		"textures": "textures/items/cornflower/cornflower_bouquet"
+	  },
+	  "corrupted_bluebell_bouquet": {
+		"textures": "textures/items/corrupted_bluebell/corrupted_bluebell_bouquet"
+	  },
+	  "corrupted_rose_bouquet": {
+		"textures": "textures/items/corrupted_rose/corrupted_rose_bouquet"
+	  },
+	  "cyan_rose_bouquet": {
+		"textures": "textures/items/cyan_rose/cyan_rose_bouquet"
+	  },
+	  "daffodil_bouquet": {
+		"textures": "textures/items/daffodil/daffodil_bouquet"
+	  },
+	  "dandelion_bouquet": {
+		"textures": "textures/items/dandelion/dandelion_bouquet"
+	  },
+	  "foxglove_bouquet": {
+		"textures": "textures/items/foxglove/foxglove_bouquet"
+	  },
+	  "gardenia_bouquet": {
+		"textures": "textures/items/gardenia/gardenia_bouquet"
+	  },
+	  "gold_rose_bouquet": {
+		"textures": "textures/items/gold_rose/gold_rose_bouquet"
+	  },
+	  "green_tulip_bouquet": {
+		"textures": "textures/items/green_tulip/green_tulip_bouquet"
+	  },
+	  "grieving_lavender_bouquet": {
+		"textures": "textures/items/grieving_lavender/grieving_lavender_bouquet"
+	  },
+	  "grieving_rose_bouquet": {
+		"textures": "textures/items/grieving_rose/grieving_rose_bouquet"
+	  },
+	  "hemlock_bouquet": {
+		"textures": "textures/items/hemlock/hemlock_bouquet"
+	  },
+	  "hibiscus_bouquet": {
+		"textures": "textures/items/hibiscus/hibiscus_bouquet"
+	  },
+	  "lavender_bouquet": {
+		"textures": "textures/items/lavender/lavender_bouquet"
+	  },
+	  "lilac_bouquet": {
+		"textures": "textures/items/lilac/lilac_bouquet"
+	  },
+	  "lily_valley_bouquet": {
+		"textures": "textures/items/lily_valley/lily_valley_bouquet"
+	  },
+	  "marigold_bouquet": {
+		"textures": "textures/items/marigold/marigold_bouquet"
+	  },
+	  "orange_tulip_bouquet": {
+		"textures": "textures/items/orange_tulip/orange_tulip_bouquet"
+	  },
+	  "oxeye_daisy_bouquet": {
+		"textures": "textures/items/oxeye_daisy/oxeye_daisy_bouquet"
+	  },
+	  "peony_bouquet": {
+		"textures": "textures/items/peony/peony_bouquet"
+	  },
+	  "periwinkle_bouquet": {
+		"textures": "textures/items/periwinkle/periwinkle_bouquet"
+	  },
+	  "petunia_bouquet": {
+		"textures": "textures/items/petunia/petunia_bouquet"
+	  },
+	  "pink_bleeding_heart_bouquet": {
+		"textures": "textures/items/pink_bleeding_heart/pink_bleeding_heart_bouquet"
+	  },
+	  "pink_rose_bouquet": {
+		"textures": "textures/items/pink_rose/pink_rose_bouquet"
+	  },
+	  "pink_tulip_bouquet": {
+		"textures": "textures/items/pink_tulip/pink_tulip_bouquet"
+	  },
+	  "poppy_bouquet": {
+		"textures": "textures/items/poppy/poppy_bouquet"
+	  },
+	  "purple_orchid_bouquet": {
+		"textures": "textures/items/purple_orchid/purple_orchid_bouquet"
+	  },
+	  "purple_tulip_bouquet": {
+		"textures": "textures/items/purple_tulip/purple_tulip_bouquet"
+	  },
+	  "queen_tulip_bouquet": {
+		"textures": "textures/items/queen_tulip/queen_tulip_bouquet"
+	  },
+	  "red_tulip_bouquet": {
+		"textures": "textures/items/red_tulip/red_tulip_bouquet"
+	  },
+	  "rose_bouquet": {
+		"textures": "textures/items/rose/rose_bouquet"
+	  },
+	  "snapdragon_bouquet": {
+		"textures": "textures/items/snapdragon/snapdragon_bouquet"
+	  },
+	  "sunflower_bouquet": {
+		"textures": "textures/items/sunflower/sunflower_bouquet"
+	  },
+	  "tiger_lily_bouquet": {
+		"textures": "textures/items/tiger_lily/tiger_lily_bouquet"
+	  },
+	  "white_bleeding_heart_bouquet": {
+		"textures": "textures/items/white_bleeding_heart/white_bleeding_heart_bouquet"
+	  },
+	  "white_rose_bouquet": {
+		"textures": "textures/items/white_rose/white_rose_bouquet"
+	  },
+	  "white_tulip_bouquet": {
+		"textures": "textures/items/white_tulip/white_tulip_bouquet"
+	  },
+	  "wither_rose_bouquet": {
+		"textures": "textures/items/wither_rose/wither_rose_bouquet"
+	  },
+	  "wolfsbane_bouquet": {
+		"textures": "textures/items/wolfsbane/wolfsbane_bouquet"
+	  },
+	  "yellow_tulip_bouquet": {
+		"textures": "textures/items/yellow_tulip/yellow_tulip_bouquet"
+	  },
+	  "dead_fern": {
+		"textures": "textures/items/dead_bush/dead_bush_bouquet"
+	  },
+	  "dead_bush_large": {
+		"textures": "textures/items/dead_bush/dead_bush_large"
+	  },
+	  "dead_bush_tall": {
+		"textures": "textures/items/dead_bush/dead_bush_tall"
+	  },
+	  "anemone_short": {
+		"textures": "textures/blocks/anemone/anemone_short"
+	  },
+	  "anemone_large": {
+		"textures": "textures/items/anemone/anemone_large"
+	  },
+	  "anemone_tall": {
+		"textures": "textures/items/anemone/anemone_tall"
+	  },
+	  "azalea_flower_short": {
+		"textures": "textures/blocks/azalea_flower/azalea_flower_short"
+	  },
+	  "azalea_flower_large": {
+		"textures": "textures/items/azalea_flower/azalea_flower_large"
+	  },
+	  "azalea_flower_tall": {
+		"textures": "textures/items/azalea_flower/azalea_flower_tall"
+	  },
+	  "chocolate_cosmos_short": {
+		"textures": "textures/blocks/chocolate_cosmos/chocolate_cosmos_short"
+	  },
+	  "chocolate_cosmos_large": {
+		"textures": "textures/items/chocolate_cosmos/chocolate_cosmos_large"
+	  },
+	  "chocolate_cosmos_tall": {
+		"textures": "textures/items/chocolate_cosmos/chocolate_cosmos_tall"
+	  },
+	  "daffodil_short": {
+		"textures": "textures/blocks/daffodil/daffodil_short"
+	  },
+	  "daffodil_large": {
+		"textures": "textures/items/daffodil/daffodil_large"
+	  },
+	  "daffodil_tall": {
+		"textures": "textures/items/daffodil/daffodil_tall"
+	  },
+	  "drip_flower": {
+		"textures": "textures/items/drip_flower/drip_flower"
+	  },
+	  "foxglove_large": {
+		"textures": "textures/items/foxglove/foxglove_large"
+	  },
+	  "gardenia_large": {
+		"textures": "textures/items/gardenia/gardenia_large"
+	  },
+	  "hydrangea_bouquet": {
+		"textures": "textures/items/hydrangea/hydrangea_bouquet"
+	  },
+	  "hydrangea_short": {
+		"textures": "textures/blocks/hydrangea/hydrangea_short"
+	  },
+	  "hydrangea_large": {
+		"textures": "textures/items/hydrangea/hydrangea_large"
+	  },
+	  "hydrangea_tall": {
+		"textures": "textures/items/hydrangea/hydrangea_tall"
+	  },
+	  "hydrangea": {
+		"textures": "textures/blocks/hydrangea/hydrangea"
+	  },
+	  "moonflower_bouquet": {
+		"textures": "textures/items/moonflower/moonflower_bouquet"
+	  },
+	  "moonflower_large": {
+		"textures": "textures/items/moonflower/moonflower_large"
+	  },
+	  "moonflower_tall": {
+		"textures": "textures/items/moonflower/moonflower_tall"
+	  },
+	  "moonflower": {
+		"textures": "textures/items/moonflower/moonflower"
+	  },
+	  "nasturtium_bouquet": {
+		"textures": "textures/items/nasturtium/nasturtium_bouquet"
+	  },
+	  "nasturtium_large": {
+		"textures": "textures/items/nasturtium/nasturtium_large"
+	  },
+	  "nasturtium_tall": {
+		"textures": "textures/items/nasturtium/nasturtium_tall"
+	  },
+	  "nasturtium": {
+		"textures": "textures/blocks/nasturtium/nasturtium"
+	  },
+	  "periwinkle_short": {
+		"textures": "textures/blocks/periwinkle/periwinkle_short"
+	  },
+	  "periwinkle_large": {
+		"textures": "textures/items/periwinkle/periwinkle_large"
+	  },
+	  "periwinkle_tall": {
+		"textures": "textures/items/periwinkle/periwinkle_tall"
+	  },
+	  "snapdragon_large": {
+		"textures": "textures/items/snapdragon/snapdragon_large"
+	  },
+	  "wolfsbane_large": {
+		"textures": "textures/items/wolfsbane/wolfsbane_large"
+	  },
+	  "acacia_bush_tall": {
+		"textures": "textures/items/acacia_bush/acacia_bush_tall"
+	  },
+	  "acacia_bush": {
+		"textures": "textures/blocks/acacia_bush/acacia_bush"
+	  },
+	  "azalea_bush_flowers_tall": {
+		"textures": "textures/items/azalea_bush_flowers/azalea_bush_flowers_tall"
+	  },
+	  "azalea_bush_flowers": {
+		"textures": "textures/blocks/azalea_bush_flowers/azalea_bush_flowers"
+	  },
+	  "azalea_bush_tall": {
+		"textures": "textures/items/azalea_bush/azalea_bush_tall"
+	  },
+	  "azalea_bush": {
+		"textures": "textures/blocks/azalea_bush/azalea_bush"
+	  },
+	  "birch_bush_tall": {
+		"textures": "textures/items/birch_bush/birch_bush_tall"
+	  },
+	  "birch_bush": {
+		"textures": "textures/blocks/birch_bush/birch_bush"
+	  },
+	  "blooming_fern": {
+		"textures": "textures/items/blooming_grass/blooming_fern"
+	  },
+	  "blooming_grass_large": {
+		"textures": "textures/items/blooming_grass/blooming_grass_large"
+	  },
+	  "blooming_grass_tall": {
+		"textures": "textures/items/blooming_grass/blooming_grass_tall"
+	  },
+	  "blooming_grass": {
+		"textures": "textures/blocks/blooming_grass/blooming_grass"
+	  },
+	  "dark_oak_bush_tall": {
+		"textures": "textures/items/dark_oak_bush/dark_oak_bush_tall"
+	  },
+	  "dark_oak_bush": {
+		"textures": "textures/blocks/dark_oak_bush/dark_oak_bush"
+	  },
+	  "deccan_fern": {
+		"textures": "textures/items/deccan_grass/deccan_fern"
+	  },
+	  "deccan_grass_large": {
+		"textures": "textures/items/deccan_grass/deccan_grass_large"
+	  },
+	  "deccan_grass_tall": {
+		"textures": "textures/items/deccan_grass/deccan_grass_tall"
+	  },
+	  "deccan_grass": {
+		"textures": "textures/blocks/deccan_grass/deccan_grass"
+	  },
+	  "distorted_roots_large": {
+		"textures": "textures/items/distorted_roots/distorted_roots_large"
+	  },
+	  "distorted_roots_tall": {
+		"textures": "textures/items/distorted_roots/distorted_roots_tall"
+	  },
+	  "distorted_roots": {
+		"textures": "textures/items/distorted_roots/distorted_roots"
+	  },
+	  "elymus_fern": {
+		"textures": "textures/items/elymus_grass/elymus_fern"
+	  },
+	  "elymus_grass_large": {
+		"textures": "textures/items/elymus_grass/elymus_grass_large"
+	  },
+	  "elymus_grass_tall": {
+		"textures": "textures/items/elymus_grass/elymus_grass_tall"
+	  },
+	  "elymus_grass": {
+		"textures": "textures/blocks/elymus_grass/elymus_grass"
+	  },
+	  "enchanted_fern": {
+		"textures": "textures/items/enchanted_grass/enchanted_fern"
+	  },
+	  "enchanted_grass_large": {
+		"textures": "textures/items/enchanted_grass/enchanted_grass_large"
+	  },
+	  "enchanted_grass_tall": {
+		"textures": "textures/items/enchanted_grass/enchanted_grass_tall"
+	  },
+	  "enchanted_grass": {
+		"textures": "textures/blocks/enchanted_grass/enchanted_grass"
+	  },
+	  "frigid_fern": {
+		"textures": "textures/items/frigid_grass/frigid_fern"
+	  },
+	  "frigid_grass_large": {
+		"textures": "textures/items/frigid_grass/frigid_grass_large"
+	  },
+	  "frigid_grass_tall": {
+		"textures": "textures/items/frigid_grass/frigid_grass_tall"
+	  },
+	  "frigid_grass": {
+		"textures": "textures/blocks/frigid_grass/frigid_grass"
+	  },
+	  "infernal_fern": {
+		"textures": "textures/items/infernal_grass/infernal_fern"
+	  },
+	  "infernal_grass_large": {
+		"textures": "textures/items/infernal_grass/infernal_grass_large"
+	  },
+	  "infernal_grass_tall": {
+		"textures": "textures/items/infernal_grass/infernal_grass_tall"
+	  },
+	  "infernal_grass": {
+		"textures": "textures/blocks/infernal_grass/infernal_grass"
+	  },
+	  "jungle_bush_tall": {
+		"textures": "textures/items/jungle_bush/jungle_bush_tall"
+	  },
+	  "jungle_bush": {
+		"textures": "textures/items/jungle_bush/jungle_bush"
+	  },
+	  "lush_fern": {
+		"textures": "textures/items/lush_grass/lush_fern"
+	  },
+	  "lush_grass_large": {
+		"textures": "textures/items/lush_grass/lush_grass_large"
+	  },
+	  "lush_grass_tall": {
+		"textures": "textures/items/lush_grass/lush_grass_tall"
+	  },
+	  "lush_grass": {
+		"textures": "textures/blocks/lush_grass/lush_grass"
+	  },
+	  "oak_bush_tall": {
+		"textures": "textures/items/oak_bush/oak_bush_tall"
+	  },
+	  "oak_bush": {
+		"textures": "textures/blocks/oak_bush/oak_bush"
+	  },
+	  "scorched_fern": {
+		"textures": "textures/items/scorched_grass/scorched_fern"
+	  },
+	  "scorched_grass_large": {
+		"textures": "textures/items/scorched_grass/scorched_grass_large"
+	  },
+	  "scorched_grass_tall": {
+		"textures": "textures/items/scorched_grass/scorched_grass_tall"
+	  },
+	  "scorched_grass": {
+		"textures": "textures/blocks/scorched_grass/scorched_grass"
+	  },
+	  "sedge_fern": {
+		"textures": "textures/items/sedge_grass/sedge_fern"
+	  },
+	  "sedge_grass_large": {
+		"textures": "textures/items/sedge_grass/sedge_grass_large"
+	  },
+	  "sedge_grass_tall": {
+		"textures": "textures/items/sedge_grass/sedge_grass_tall"
+	  },
+	  "sedge_grass": {
+		"textures": "textures/blocks/sedge_grass/sedge_grass"
+	  },
+	  "shrub": {
+		"textures": "textures/items/shrub/shrub"
+	  },
+	  "snowy_fern": {
+		"textures": "textures/items/snowy_grass/snowy_fern"
+	  },
+	  "snowy_grass_large": {
+		"textures": "textures/items/snowy_grass/snowy_grass_large"
+	  },
+	  "snowy_grass_tall": {
+		"textures": "textures/items/snowy_grass/snowy_grass_tall"
+	  },
+	  "snowy_grass": {
+		"textures": "textures/blocks/snowy_grass/snowy_grass"
+	  },
+	  "soul_fern": {
+		"textures": "textures/items/soul_grass/soul_fern"
+	  },
+	  "soul_grass_large": {
+		"textures": "textures/items/soul_grass/soul_grass_large"
+	  },
+	  "soul_grass_tall": {
+		"textures": "textures/items/soul_grass/soul_grass_tall"
+	  },
+	  "soul_grass": {
+		"textures": "textures/blocks/soul_grass/soul_grass"
+	  },
+	  "spruce_bush_tall": {
+		"textures": "textures/items/spruce_bush/spruce_bush_tall"
+	  },
+	  "spruce_bush": {
+		"textures": "textures/blocks/spruce_bush/spruce_bush"
+	  },
+	  "violet_roots_large": {
+		"textures": "textures/items/violet_roots/violet_roots_large"
+	  },
+	  "violet_roots_tall": {
+		"textures": "textures/items/violet_roots/violet_roots_tall"
+	  },
+	  "violet_roots": {
+		"textures": "textures/items/violet_roots/violet_roots"
+	  },
+	"bridge_blank pattern": {
+		"textures": [
+			"textures/items/blank_pattern"
+		]
+	},
+	"bridge_pickaxe head pattern": {
+		"textures": [
+			"textures/items/pickaxe_head_pattern"
+		]
+	},
+	"bridge_tool binding pattern": {
+		"textures": [
+			"textures/items/tool_binding_pattern"
+		]
+	},
+	"bridge_tool rod pattern": {
+		"textures": [
+			"textures/items/tool_rod_pattern"
+		]
+	},
+	"bridge_wooden binding": {
+		"textures": [
+			"textures/items/wooden_binding"
+		]
+	},
+	"bridge_wooden pickaxe head": {
+		"textures": [
+			"textures/items/wooden_pickaxe_head"
+		]
+	},
+	"strat_pickaxe 1": {
+		"textures": [
+			"textures/items/pickaxe_1"
+		]
+	},
+	"strat_pickaxe 2": {
+		"textures": [
+			"textures/items/pickaxe_2"
+		]
+	},
+	"strat_pickaxe 3": {
+		"textures": [
+			"textures/items/pickaxe_3"
+		]
+	},
+	"strat_pickaxe 4": {
+		"textures": [
+			"textures/items/pickaxe_4"
+		]
+	},
+	"strat_pickaxe 5": {
+		"textures": [
+			"textures/items/pickaxe_5"
+		]
+	},
+	"strat_pickaxe 6": {
+		"textures": [
+			"textures/items/pickaxe_6"
+		]
+	},
+	"strat_pickaxe 7": {
+		"textures": [
+			"textures/items/pickaxe_7"
+		]
+	},
+	"strat_pickaxe 8": {
+		"textures": [
+			"textures/items/pickaxe_8"
+		]
+	},
+	"bridge_stone binding": {
+		"textures": [
+			"textures/items/stone_binding"
+		]
+	},
+	"bridge_stone pickaxe head": {
+		"textures": [
+			"textures/items/stone_pickaxe_head"
+		]
+	},
+	"bridge_stone tool rod": {
+		"textures": [
+			"textures/items/stone_tool_rod"
+		]
+	},
+	"bridge_wooden tool rod": {
+		"textures": [
+			"textures/items/wooden_tool_rod"
+		]
+	},
+	"strat_axe head pattern": {
+		"textures": [
+			"textures/items/axe_head_pattern"
+		]
+	},
+	"strat_wooden axe head": {
+		"textures": [
+			"textures/items/wooden_axe_head"
+		]
+	},
+	"strat_stone axe head": {
+		"textures": [
+			"textures/items/stone_axe_head"
+		]
+	},
+	"strat_hatchet 1": {
+		"textures": [
+			"textures/items/hatchet_1"
+		]
+	},
+	"strat_hatchet 2": {
+		"textures": [
+			"textures/items/hatchet_2"
+		]
+	},
+	"strat_hatchet 3": {
+		"textures": [
+			"textures/items/hatchet_3"
+		]
+	},
+	"strat_hatchet 4": {
+		"textures": [
+			"textures/items/hatchet_4"
+		]
+	},
+	"strat_hatchet 5": {
+		"textures": [
+			"textures/items/hatchet_5"
+		]
+	},
+	"strat_hatchet 6": {
+		"textures": [
+			"textures/items/hatchet_6"
+		]
+	},
+	"strat_hatchet 7": {
+		"textures": [
+			"textures/items/hatchet_7"
+		]
+	},
+	"strat_hatchet 8": {
+		"textures": [
+			"textures/items/hatchet_8"
+		]
+	},
+	"strat_seared brick": {
+		"textures": [
+			"textures/items/seared_brick"
+		]
+	},
+	"strat_tool rod cast": {
+		"textures": [
+			"textures/items/tool_rod_cast"
+		]
+	},
+	"strat_iron tool rod": {
+		"textures": [
+			"textures/items/iron_tool_rod"
+		]
+	},
+	"strat_molten iron bucket": {
+		"textures": [
+			"textures/items/bucket_molten_iron_2"
+		]
+	},
+	"strat_tool binding cast": {
+		"textures": [
+			"textures/items/tool_binding_cast"
+		]
+	},
+	"strat_iron binding": {
+		"textures": [
+			"textures/items/iron_binding"
+		]
+	},
+	"strat_molten gold bucket": {
+		"textures": [
+			"textures/items/bucket_molten_gold"
+		]
+	},
+	"strat_axe head cast": {
+		"textures": [
+			"textures/items/axe_head_cast"
+		]
+	},
+	"strat_iron axe head": {
+		"textures": [
+			"textures/items/iron_axe_head"
+		]
+	},
+	"strat_pickaxe head cast": {
+		"textures": [
+			"textures/items/pickaxe_head_cast"
+		]
+	},
+	"strat_iron pickaxe head": {
+		"textures": [
+			"textures/items/iron_pickaxe_head"
+		]
+	},
+	"strat_flint tool rod": {
+		"textures": [
+			"textures/items/flint_tool_rod"
+		]
+	},
+	"strat_flint binding": {
+		"textures": [
+			"textures/items/flint_binding"
+		]
+	},
+	"strat_flint pickaxe head": {
+		"textures": [
+			"textures/items/flint_pickaxe_head"
+		]
+	},
+	"strat_flint axe head": {
+		"textures": [
+			"textures/items/flint_axe_head"
+		]
+	},
+	"strat_blank cast": {
+		"textures": [
+			"textures/items/blank_cast"
+		]
+	},
+	"strat_pickaxe 9": {
+		"textures": [
+			"textures/items/pickaxe_9"
+		]
+	},
+	"strat_hatchet 9": {
+		"textures": [
+			"textures/items/hatchet_9"
+		]
+	},
+	"strat_pickaxe 10": {
+		"textures": [
+			"textures/items/pickaxe_10"
+		]
+	},
+	"strat_hatchet 10": {
+		"textures": [
+			"textures/items/hatchet_10"
+		]
+	},
+	"strat_pickaxe 11": {
+		"textures": [
+			"textures/items/pickaxe_11"
+		]
+	},
+	"strat_hatchet 11": {
+		"textures": [
+			"textures/items/hatchet_11"
+		]
+	},
+	"strat_pickaxe 12": {
+		"textures": [
+			"textures/items/pickaxe_12"
+		]
+	},
+	"strat_hatchet 12": {
+		"textures": [
+			"textures/items/hatchet_12"
+		]
+	},
+	"strat_pickaxe 13": {
+		"textures": [
+			"textures/items/pickaxe_13"
+		]
+	},
+	"strat_hatchet 13": {
+		"textures": [
+			"textures/items/hatchet_13"
+		]
+	},
+	"strat_pickaxe 14": {
+		"textures": [
+			"textures/items/pickaxe_14"
+		]
+	},
+	"strat_hatchet 14": {
+		"textures": [
+			"textures/items/hatchet_14"
+		]
+	},
+	"strat_pickaxe 15": {
+		"textures": [
+			"textures/items/pickaxe_15"
+		]
+	},
+	"strat_hatchet 15": {
+		"textures": [
+			"textures/items/hatchet_15"
+		]
+	},
+	"strat_pickaxe 16": {
+		"textures": [
+			"textures/items/pickaxe_16"
+		]
+	},
+	"strat_hatchet 16": {
+		"textures": [
+			"textures/items/hatchet_16"
+		]
+	},
+	"strat_pickaxe 17": {
+		"textures": [
+			"textures/items/pickaxe_17"
+		]
+	},
+	"strat_hatchet 17": {
+		"textures": [
+			"textures/items/hatchet_17"
+		]
+	},
+	"strat_pickaxe 18": {
+		"textures": [
+			"textures/items/pickaxe_18"
+		]
+	},
+	"strat_hatchet 18": {
+		"textures": [
+			"textures/items/hatchet_18"
+		]
+	},
+	"strat_pickaxe 19": {
+		"textures": [
+			"textures/items/pickaxe_19"
+		]
+	},
+	"strat_hatchet 19": {
+		"textures": [
+			"textures/items/hatchet_19"
+		]
+	},
+	"strat_pickaxe 20": {
+		"textures": [
+			"textures/items/pickaxe_20"
+		]
+	},
+	"strat_hatchet 20": {
+		"textures": [
+			"textures/items/hatchet_20"
+		]
+	},
+	"strat_pickaxe 21": {
+		"textures": [
+			"textures/items/pickaxe_21"
+		]
+	},
+	"strat_hatchet 21": {
+		"textures": [
+			"textures/items/hatchet_21"
+		]
+	},
+	"strat_pickaxe 22": {
+		"textures": [
+			"textures/items/pickaxe_22"
+		]
+	},
+	"strat_hatchet 22": {
+		"textures": [
+			"textures/items/hatchet_22"
+		]
+	},
+	"strat_pickaxe 23": {
+		"textures": [
+			"textures/items/pickaxe_23"
+		]
+	},
+	"strat_hatchet 23": {
+		"textures": [
+			"textures/items/hatchet_23"
+		]
+	},
+	"strat_pickaxe 24": {
+		"textures": [
+			"textures/items/pickaxe_24"
+		]
+	},
+	"strat_hatchet 24": {
+		"textures": [
+			"textures/items/hatchet_24"
+		]
+	},
+	"strat_pickaxe 25": {
+		"textures": [
+			"textures/items/pickaxe_25"
+		]
+	},
+	"strat_hatchet 25": {
+		"textures": [
+			"textures/items/hatchet_25"
+		]
+	},
+	"strat_pickaxe 26": {
+		"textures": [
+			"textures/items/pickaxe_26"
+		]
+	},
+	"strat_hatchet 26": {
+		"textures": [
+			"textures/items/hatchet_26"
+		]
+	},
+	"strat_pickaxe 27": {
+		"textures": [
+			"textures/items/pickaxe_27"
+		]
+	},
+	"strat_hatchet 27": {
+		"textures": [
+			"textures/items/hatchet_27"
+		]
+	},
+	"strat_pickaxe 28": {
+		"textures": [
+			"textures/items/pickaxe_28"
+		]
+	},
+	"strat_hatchet 28": {
+		"textures": [
+			"textures/items/hatchet_28"
+		]
+	},
+	"strat_shovel head pattern": {
+		"textures": [
+			"textures/items/shovel_head_pattern"
+		]
+	},
+	"strat_wooden shovel head": {
+		"textures": [
+			"textures/items/wooden_shovel_head"
+		]
+	},
+	"strat_shovel 1": {
+		"textures": [
+			"textures/items/shovel_1"
+		]
+	},
+	"strat_mattock 1": {
+		"textures": [
+			"textures/items/mattock_1"
+		]
+	},
+	"strat_shovel head cast": {
+		"textures": [
+			"textures/items/shovel_head_cast"
+		]
+	},
+	"strat_pickaxe 29": {
+		"textures": [
+			"textures/items/pickaxe_29"
+		]
+	},
+	"strat_hatchet 29": {
+		"textures": [
+			"textures/items/hatchet_29"
+		]
+	},
+	"strat_pickaxe 30": {
+		"textures": [
+			"textures/items/pickaxe_30"
+		]
+	},
+	"strat_hatchet 30": {
+		"textures": [
+			"textures/items/hatchet_30"
+		]
+	},
+	"strat_cleaver 1": {
+		"textures": [
+			"textures/items/cleaver_1"
+		]
+	},
+	"strat_large plate pattern": {
+		"textures": [
+			"textures/items/large_plate_pattern"
+		]
+	},
+	"strat_wooden large plate": {
+		"textures": [
+			"textures/items/wooden_large_plate"
+		]
+	},
+	"strat_tough tool rod pattern": {
+		"textures": [
+			"textures/items/tough_tool_rod_pattern"
+		]
+	},
+	"strat_wooden tough tool rod": {
+		"textures": [
+			"textures/items/wooden_tough_tool_rod"
+		]
+	},
+	"strat_large sword blade pattern": {
+		"textures": [
+			"textures/items/large_sword_blade_pattern"
+		]
+	},
+	"strat_wooden large sword blade": {
+		"textures": [
+			"textures/items/wooden_large_sword_blade"
+		]
+	},
+	"strat_sword blade pattern": {
+		"textures": [
+			"textures/items/sword_blade_pattern"
+		]
+	},
+	"strat_wide guard pattern": {
+		"textures": [
+			"textures/items/wide_guard_pattern"
+		]
+	},
+	"strat_hand guard pattern": {
+		"textures": [
+			"textures/items/hand_guard_pattern"
+		]
+	},
+	"strat_wooden sword blade": {
+		"textures": [
+			"textures/items/wooden_sword_blade"
+		]
+	},
+	"strat_wooden wide guard": {
+		"textures": [
+			"textures/items/wooden_wide_guard"
+		]
+	},
+	"strat_wooden hand guard": {
+		"textures": [
+			"textures/items/wooden_hand_guard"
+		]
+	},
+	"strat_broadsword 1": {
+		"textures": [
+			"textures/items/broadsword_1"
+		]
+	},
+	"strat_longsword 1": {
+		"textures": [
+			"textures/items/longsword_1"
+		]
+	},
+	"strat_copper ingot": {
+		"textures": [
+			"textures/items/copper_ingot"
+		]
+	},
+	"strat_molten copper bucket": {
+		"textures": [
+			"textures/items/bucket_molten_copper"
+		]
+	},
+	"strat_pickaxe 31": {
+		"textures": [
+			"textures/items/pickaxe_31"
+		]
+	},
+	"strat_hatchet 31": {
+		"textures": [
+			"textures/items/hatchet_31"
+		]
+	},
+	"strat_pickaxe 32": {
+		"textures": [
+			"textures/items/pickaxe_32"
+		]
+	},
+	"strat_hatchet 32": {
+		"textures": [
+			"textures/items/hatchet_32"
+		]
+	},
+	"strat_pickaxe 33": {
+		"textures": [
+			"textures/items/pickaxe_33"
+		]
+	},
+	"strat_pickaxe 34": {
+		"textures": [
+			"textures/items/pickaxe_34"
+		]
+	},
+	"strat_hatchet 33": {
+		"textures": [
+			"textures/items/hatchet_33"
+		]
+	},
+	"strat_hatchet 34": {
+		"textures": [
+			"textures/items/hatchet_34"
+		]
+	},
+	"strat_pickaxe 35": {
+		"textures": [
+			"textures/items/pickaxe_35"
+		]
+	},
+	"strat_pickaxe 36": {
+		"textures": [
+			"textures/items/pickaxe_36"
+		]
+	},
+	"strat_hatchet 35": {
+		"textures": [
+			"textures/items/hatchet_35"
+		]
+	},
+	"strat_hatchet 36": {
+		"textures": [
+			"textures/items/hatchet_36"
+		]
+	},
+	"pickaxe_37": {
+		"textures": [
+			"textures/items/pickaxe_37"
+		]
+	},
+	"hatchet_37": {
+		"textures": [
+			"textures/items/hatchet_37"
+		]
+	},
+	"pickaxe_38": {
+		"textures": [
+			"textures/items/pickaxe_38"
+		]
+	},
+	"hatchet_38": {
+		"textures": [
+			"textures/items/hatchet_38"
+		]
+	},
+	"pickaxe_39": {
+		"textures": [
+			"textures/items/pickaxe_39"
+		]
+	},
+	"hatchet_39": {
+		"textures": [
+			"textures/items/hatchet_39"
+		]
+	},
+	"pickaxe_40": {
+		"textures": [
+			"textures/items/pickaxe_40"
+		]
+	},
+	"hatchet_40": {
+		"textures": [
+			"textures/items/hatchet_40"
+		]
+	},
+	"pickaxe_41": {
+		"textures": [
+			"textures/items/pickaxe_41"
+		]
+	},
+	"hatchet_41": {
+		"textures": [
+			"textures/items/hatchet_41"
+		]
+	},
+	"pickaxe_42": {
+		"textures": [
+			"textures/items/pickaxe_42"
+		]
+	},
+	"hatchet_42": {
+		"textures": [
+			"textures/items/hatchet_42"
+		]
+	},
+	"pickaxe_43": {
+		"textures": [
+			"textures/items/pickaxe_43"
+		]
+	},
+	"hatchet_43": {
+		"textures": [
+			"textures/items/hatchet_43"
+		]
+	},
+	"pickaxe_44": {
+		"textures": [
+			"textures/items/pickaxe_44"
+		]
+	},
+	"hatchet_44": {
+		"textures": [
+			"textures/items/hatchet_44"
+		]
+	},
+	"pickaxe_45": {
+		"textures": [
+			"textures/items/pickaxe_45"
+		]
+	},
+	"hatchet_45": {
+		"textures": [
+			"textures/items/hatchet_45"
+		]
+	},
+	"pickaxe_46": {
+		"textures": [
+			"textures/items/pickaxe_46"
+		]
+	},
+	"hatchet_46": {
+		"textures": [
+			"textures/items/hatchet_46"
+		]
+	},
+	"pickaxe_47": {
+		"textures": [
+			"textures/items/pickaxe_47"
+		]
+	},
+	"hatchet_47": {
+		"textures": [
+			"textures/items/hatchet_47"
+		]
+	},
+	"pickaxe_48": {
+		"textures": [
+			"textures/items/pickaxe_48"
+		]
+	},
+	"hatchet_48": {
+		"textures": [
+			"textures/items/hatchet_48"
+		]
+	},
+	"pickaxe_49": {
+		"textures": [
+			"textures/items/pickaxe_49"
+		]
+	},
+	"hatchet_49": {
+		"textures": [
+			"textures/items/hatchet_49"
+		]
+	},
+	"pickaxe_50": {
+		"textures": [
+			"textures/items/pickaxe_50"
+		]
+	},
+	"hatchet_50": {
+		"textures": [
+			"textures/items/hatchet_50"
+		]
+	},
+	"pickaxe_51": {
+		"textures": [
+			"textures/items/pickaxe_51"
+		]
+	},
+	"hatchet_51": {
+		"textures": [
+			"textures/items/hatchet_51"
+		]
+	},
+	"pickaxe_52": {
+		"textures": [
+			"textures/items/pickaxe_52"
+		]
+	},
+	"hatchet_52": {
+		"textures": [
+			"textures/items/hatchet_52"
+		]
+	},
+	"pickaxe_53": {
+		"textures": [
+			"textures/items/pickaxe_53"
+		]
+	},
+	"hatchet_53": {
+		"textures": [
+			"textures/items/hatchet_53"
+		]
+	},
+	"pickaxe_54": {
+		"textures": [
+			"textures/items/pickaxe_54"
+		]
+	},
+	"hatchet_54": {
+		"textures": [
+			"textures/items/hatchet_54"
+		]
+	},
+	"pickaxe_55": {
+		"textures": [
+			"textures/items/pickaxe_55"
+		]
+	},
+	"hatchet_55": {
+		"textures": [
+			"textures/items/hatchet_55"
+		]
+	},
+	"pickaxe_56": {
+		"textures": [
+			"textures/items/pickaxe_56"
+		]
+	},
+	"hatchet_56": {
+		"textures": [
+			"textures/items/hatchet_56"
+		]
+	},
+	"pickaxe_57": {
+		"textures": [
+			"textures/items/pickaxe_57"
+		]
+	},
+	"hatchet_57": {
+		"textures": [
+			"textures/items/hatchet_57"
+		]
+	},
+	"pickaxe_58": {
+		"textures": [
+			"textures/items/pickaxe_58"
+		]
+	},
+	"hatchet_58": {
+		"textures": [
+			"textures/items/hatchet_58"
+		]
+	},
+	"pickaxe_59": {
+		"textures": [
+			"textures/items/pickaxe_59"
+		]
+	},
+	"hatchet_59": {
+		"textures": [
+			"textures/items/hatchet_59"
+		]
+	},
+	"pickaxe_60": {
+		"textures": [
+			"textures/items/pickaxe_60"
+		]
+	},
+	"hatchet_60": {
+		"textures": [
+			"textures/items/hatchet_60"
+		]
+	},
+	"pickaxe_61": {
+		"textures": [
+			"textures/items/pickaxe_61"
+		]
+	},
+	"hatchet_61": {
+		"textures": [
+			"textures/items/hatchet_61"
+		]
+	},
+	"pickaxe_62": {
+		"textures": [
+			"textures/items/pickaxe_62"
+		]
+	},
+	"hatchet_62": {
+		"textures": [
+			"textures/items/hatchet_62"
+		]
+	},
+	"pickaxe_63": {
+		"textures": [
+			"textures/items/pickaxe_63"
+		]
+	},
+	"hatchet_63": {
+		"textures": [
+			"textures/items/hatchet_63"
+		]
+	},
+	"pickaxe_64": {
+		"textures": [
+			"textures/items/pickaxe_64"
+		]
+	},
+	"hatchet_64": {
+		"textures": [
+			"textures/items/hatchet_64"
+		]
+	},
+	"ardite_ingot": {
+		"textures": [
+			"textures/items/ardite_ingot"
+		]
+	},
+	"cobalt_ingot": {
+		"textures": [
+			"textures/items/cobalt_ingot"
+		]
+	},
+	"manyullyn_ingot": {
+		"textures": [
+			"textures/items/manyullyn_ingot"
+		]
+	},
+	"ingot_cast": {
+		"textures": [
+			"textures/items/ingot_cast"
+		]
+	},
+	"copper_pickaxe_head": {
+		"textures": [
+			"textures/items/copper_pickaxe_head"
+		]
+	},
+	"copper_axe_head": {
+		"textures": [
+			"textures/items/copper_axe_head"
+		]
+	},
+	"copper_binding": {
+		"textures": [
+			"textures/items/copper_binding"
+		]
+	},
+	"copper_tool_rod": {
+		"textures": [
+			"textures/items/copper_tool_rod"
+		]
+	},
+	"stone_shovel_head": {
+		"textures": [
+			"textures/items/stone_shovel_head"
+		]
+	},
+	"flint_shovel_head": {
+		"textures": [
+			"textures/items/flint_shovel_head"
+		]
+	},
+	"iron_shovel_head": {
+		"textures": [
+			"textures/items/iron_shovel_head"
+		]
+	},
+	"copper_shovel_head": {
+		"textures": [
+			"textures/items/copper_shovel_head"
+		]
+	},
+	"pickaxe_65": {
+		"textures": [
+			"textures/items/pickaxe_65"
+		]
+	},
+	"hatchet_65": {
+		"textures": [
+			"textures/items/hatchet_65"
+		]
+	},
+	"materials_and_you": {
+		"textures": [
+			"textures/items/materials_and_you"
+		]
+	},
+	"molten_cobalt_bucket": {
+		"textures": [
+			"textures/items/bucket_molten_cobalt"
+		]
+	},
+	"molten_ardite_bucket": {
+		"textures": [
+			"textures/items/bucket_molten_ardite"
+		]
+	},
+	"molten_manyullyn_bucket": {
+		"textures": [
+			"textures/items/bucket_molten_manyullyn"
+		]
+	},
+	"stone_wide_guard": {
+		"textures": [
+			"textures/items/stone_wide_guard"
+		]
+	},
+	"stone_hand_guard": {
+		"textures": [
+			"textures/items/stone_hand_guard"
+		]
+	},
+	"stone_sword_blade": {
+		"textures": [
+			"textures/items/stone_sword_blade"
+		]
+	},
+	"broadsword_2": {
+		"textures": [
+			"textures/items/broadsword_2"
+		]
+	},
+	"longsword_2": {
+		"textures": [
+			"textures/items/longsword_2"
+		]
+	},
+	"broadsword_3": {
+		"textures": [
+			"textures/items/broadsword_3"
+		]
+	},
+	"broadsword_4": {
+		"textures": [
+			"textures/items/broadsword_4"
+		]
+	},
+	"longsword_3": {
+		"textures": [
+			"textures/items/longsword_3"
+		]
+	},
+	"longsword_4": {
+		"textures": [
+			"textures/items/longsword_4"
+		]
+	},
+	"broadsword_5": {
+		"textures": [
+			"textures/items/broadsword_5"
+		]
+	},
+	"broadsword_6": {
+		"textures": [
+			"textures/items/broadsword_6"
+		]
+	},
+	"broadsword_7": {
+		"textures": [
+			"textures/items/broadsword_7"
+		]
+	},
+	"broadsword_8": {
+		"textures": [
+			"textures/items/broadsword_8"
+		]
+	},
+	"longsword_5": {
+		"textures": [
+			"textures/items/longsword_5"
+		]
+	},
+	"longsword_6": {
+		"textures": [
+			"textures/items/longsword_6"
+		]
+	},
+	"longsword_7": {
+		"textures": [
+			"textures/items/longsword_7"
+		]
+	},
+	"longsword_8": {
+		"textures": [
+			"textures/items/longsword_8"
+		]
+	},
+	"sword_blade_cast": {
+		"textures": [
+			"textures/items/sword_blade_cast"
+		]
+	},
+	"wide_guard_cast": {
+		"textures": [
+			"textures/items/wide_guard_cast"
+		]
+	},
+	"hand_guard_cast": {
+		"textures": [
+			"textures/items/hand_guard_cast"
+		]
+	},
+	"iron_sword_blade": {
+		"textures": [
+			"textures/items/iron_sword_blade"
+		]
+	},
+	"flint_sword_blade": {
+		"textures": [
+			"textures/items/flint_sword_blade"
+		]
+	},
+	"iron_wide_guard": {
+		"textures": [
+			"textures/items/iron_wide_guard"
+		]
+	},
+	"flint_wide_guard": {
+		"textures": [
+			"textures/items/flint_wide_guard"
+		]
+	},
+	"iron_hand_guard": {
+		"textures": [
+			"textures/items/iron_hand_guard"
+		]
+	},
+	"flint_hand_guard": {
+		"textures": [
+			"textures/items/flint_hand_guard"
+		]
+	},
+	"broadsword_9": {
+		"textures": [
+			"textures/items/broadsword_9"
+		]
+	},
+	"longsword_9": {
+		"textures": [
+			"textures/items/longsword_9"
+		]
+	},
+	"broadsword_10": {
+		"textures": [
+			"textures/items/broadsword_10"
+		]
+	},
+	"longsword_10": {
+		"textures": [
+			"textures/items/longsword_10"
+		]
+	},
+	"broadsword_11": {
+		"textures": [
+			"textures/items/broadsword_11"
+		]
+	},
+	"longsword_11": {
+		"textures": [
+			"textures/items/longsword_11"
+		]
+	},
+	"broadsword_12": {
+		"textures": [
+			"textures/items/broadsword_12"
+		]
+	},
+	"longsword_12": {
+		"textures": [
+			"textures/items/longsword_12"
+		]
+	},
+	"broadsword_13": {
+		"textures": [
+			"textures/items/broadsword_13"
+		]
+	},
+	"longsword_13": {
+		"textures": [
+			"textures/items/longsword_13"
+		]
+	},
+	"broadsword_14": {
+		"textures": [
+			"textures/items/broadsword_14"
+		]
+	},
+	"longsword_14": {
+		"textures": [
+			"textures/items/longsword_14"
+		]
+	},
+	"broadsword_15": {
+		"textures": [
+			"textures/items/broadsword_15"
+		]
+	},
+	"longsword_15": {
+		"textures": [
+			"textures/items/longsword_15"
+		]
+	},
+	"broadsword_16": {
+		"textures": [
+			"textures/items/broadsword_16"
+		]
+	},
+	"longsword_16": {
+		"textures": [
+			"textures/items/longsword_16"
+		]
+	},
+	"broadsword_17": {
+		"textures": [
+			"textures/items/broadsword_17"
+		]
+	},
+	"broadsword_18": {
+		"textures": [
+			"textures/items/broadsword_18"
+		]
+	},
+	"broadsword_19": {
+		"textures": [
+			"textures/items/broadsword_19"
+		]
+	},
+	"broadsword_20": {
+		"textures": [
+			"textures/items/broadsword_20"
+		]
+	},
+	"longsword_17": {
+		"textures": [
+			"textures/items/longsword_17"
+		]
+	},
+	"longsword_18": {
+		"textures": [
+			"textures/items/longsword_18"
+		]
+	},
+	"longsword_19": {
+		"textures": [
+			"textures/items/longsword_19"
+		]
+	},
+	"longsword_20": {
+		"textures": [
+			"textures/items/longsword_20"
+		]
+	},
+	"broadsword_21": {
+		"textures": [
+			"textures/items/broadsword_21"
+		]
+	},
+	"broadsword_22": {
+		"textures": [
+			"textures/items/broadsword_22"
+		]
+	},
+	"broadsword_23": {
+		"textures": [
+			"textures/items/broadsword_23"
+		]
+	},
+	"broadsword_24": {
+		"textures": [
+			"textures/items/broadsword_24"
+		]
+	},
+	"longsword_21": {
+		"textures": [
+			"textures/items/longsword_21"
+		]
+	},
+	"longsword_22": {
+		"textures": [
+			"textures/items/longsword_22"
+		]
+	},
+	"longsword_23": {
+		"textures": [
+			"textures/items/longsword_23"
+		]
+	},
+	"longsword_24": {
+		"textures": [
+			"textures/items/longsword_24"
+		]
+	},
+	"broadsword_25": {
+		"textures": [
+			"textures/items/broadsword_25"
+		]
+	},
+	"broadsword_26": {
+		"textures": [
+			"textures/items/broadsword_26"
+		]
+	},
+	"longsword_25": {
+		"textures": [
+			"textures/items/longsword_25"
+		]
+	},
+	"longsword_26": {
+		"textures": [
+			"textures/items/longsword_26"
+		]
+	},
+	"broadsword_27": {
+		"textures": [
+			"textures/items/broadsword_27"
+		]
+	},
+	"broadsword_28": {
+		"textures": [
+			"textures/items/broadsword_28"
+		]
+	},
+	"broadsword_29": {
+		"textures": [
+			"textures/items/broadsword_29"
+		]
+	},
+	"broadsword_30": {
+		"textures": [
+			"textures/items/broadsword_30"
+		]
+	},
+	"longsword_27": {
+		"textures": [
+			"textures/items/longsword_27"
+		]
+	},
+	"longsword_28": {
+		"textures": [
+			"textures/items/longsword_28"
+		]
+	},
+	"longsword_29": {
+		"textures": [
+			"textures/items/longsword_29"
+		]
+	},
+	"longsword_30": {
+		"textures": [
+			"textures/items/longsword_30"
+		]
+	},
+	"broadsword_31": {
+		"textures": [
+			"textures/items/broadsword_31"
+		]
+	},
+	"broadsword_32": {
+		"textures": [
+			"textures/items/broadsword_32"
+		]
+	},
+	"broadsword_33": {
+		"textures": [
+			"textures/items/broadsword_33"
+		]
+	},
+	"broadsword_34": {
+		"textures": [
+			"textures/items/broadsword_34"
+		]
+	},
+	"longsword_31": {
+		"textures": [
+			"textures/items/longsword_31"
+		]
+	},
+	"longsword_32": {
+		"textures": [
+			"textures/items/longsword_32"
+		]
+	},
+	"longsword_33": {
+		"textures": [
+			"textures/items/longsword_33"
+		]
+	},
+	"longsword_34": {
+		"textures": [
+			"textures/items/longsword_34"
+		]
+	},
+	"copper_sword_blade": {
+		"textures": [
+			"textures/items/copper_sword_blade"
+		]
+	},
+	"copper_wide_guard": {
+		"textures": [
+			"textures/items/copper_wide_guard"
+		]
+	},
+	"copper_hand_guard": {
+		"textures": [
+			"textures/items/copper_hand_guard"
+		]
+	},
+	"broadsword_35": {
+		"textures": [
+			"textures/items/broadsword_35"
+		]
+	},
+	"broadsword_36": {
+		"textures": [
+			"textures/items/broadsword_36"
+		]
+	},
+	"broadsword_37": {
+		"textures": [
+			"textures/items/broadsword_37"
+		]
+	},
+	"broadsword_38": {
+		"textures": [
+			"textures/items/broadsword_38"
+		]
+	},
+	"broadsword_39": {
+		"textures": [
+			"textures/items/broadsword_39"
+		]
+	},
+	"broadsword_40": {
+		"textures": [
+			"textures/items/broadsword_40"
+		]
+	},
+	"broadsword_41": {
+		"textures": [
+			"textures/items/broadsword_41"
+		]
+	},
+	"broadsword_42": {
+		"textures": [
+			"textures/items/broadsword_42"
+		]
+	},
+	"longsword_35": {
+		"textures": [
+			"textures/items/longsword_35"
+		]
+	},
+	"longsword_36": {
+		"textures": [
+			"textures/items/longsword_36"
+		]
+	},
+	"longsword_37": {
+		"textures": [
+			"textures/items/longsword_37"
+		]
+	},
+	"longsword_38": {
+		"textures": [
+			"textures/items/longsword_38"
+		]
+	},
+	"longsword_39": {
+		"textures": [
+			"textures/items/longsword_39"
+		]
+	},
+	"longsword_40": {
+		"textures": [
+			"textures/items/longsword_40"
+		]
+	},
+	"longsword_41": {
+		"textures": [
+			"textures/items/longsword_41"
+		]
+	},
+	"longsword_42": {
+		"textures": [
+			"textures/items/longsword_42"
+		]
+	},
+	"broadsword_43": {
+		"textures": [
+			"textures/items/broadsword_43"
+		]
+	},
+	"broadsword_44": {
+		"textures": [
+			"textures/items/broadsword_44"
+		]
+	},
+	"broadsword_45": {
+		"textures": [
+			"textures/items/broadsword_45"
+		]
+	},
+	"broadsword_46": {
+		"textures": [
+			"textures/items/broadsword_46"
+		]
+	},
+	"broadsword_47": {
+		"textures": [
+			"textures/items/broadsword_47"
+		]
+	},
+	"broadsword_48": {
+		"textures": [
+			"textures/items/broadsword_48"
+		]
+	},
+	"broadsword_49": {
+		"textures": [
+			"textures/items/broadsword_49"
+		]
+	},
+	"longsword_43": {
+		"textures": [
+			"textures/items/longsword_43"
+		]
+	},
+	"longsword_44": {
+		"textures": [
+			"textures/items/longsword_44"
+		]
+	},
+	"longsword_45": {
+		"textures": [
+			"textures/items/longsword_45"
+		]
+	},
+	"longsword_46": {
+		"textures": [
+			"textures/items/longsword_46"
+		]
+	},
+	"longsword_47": {
+		"textures": [
+			"textures/items/longsword_47"
+		]
+	},
+	"longsword_48": {
+		"textures": [
+			"textures/items/longsword_48"
+		]
+	},
+	"longsword_49": {
+		"textures": [
+			"textures/items/longsword_49"
+		]
+	},
+	"broadsword_65": {
+		"textures": [
+			"textures/items/broadsword_65"
+		]
+	},
+	"longsword_65": {
+		"textures": [
+			"textures/items/longsword_65"
+		]
+	},
+	"broadsword_50": {
+		"textures": [
+			"textures/items/broadsword_50"
+		]
+	},
+	"broadsword_51": {
+		"textures": [
+			"textures/items/broadsword_51"
+		]
+	},
+	"broadsword_52": {
+		"textures": [
+			"textures/items/broadsword_52"
+		]
+	},
+	"broadsword_53": {
+		"textures": [
+			"textures/items/broadsword_53"
+		]
+	},
+	"broadsword_54": {
+		"textures": [
+			"textures/items/broadsword_54"
+		]
+	},
+	"broadsword_55": {
+		"textures": [
+			"textures/items/broadsword_55"
+		]
+	},
+	"broadsword_56": {
+		"textures": [
+			"textures/items/broadsword_56"
+		]
+	},
+	"broadsword_57": {
+		"textures": [
+			"textures/items/broadsword_57"
+		]
+	},
+	"longsword_50": {
+		"textures": [
+			"textures/items/longsword_50"
+		]
+	},
+	"longsword_51": {
+		"textures": [
+			"textures/items/longsword_51"
+		]
+	},
+	"longsword_52": {
+		"textures": [
+			"textures/items/longsword_52"
+		]
+	},
+	"longsword_53": {
+		"textures": [
+			"textures/items/longsword_53"
+		]
+	},
+	"longsword_54": {
+		"textures": [
+			"textures/items/longsword_54"
+		]
+	},
+	"longsword_55": {
+		"textures": [
+			"textures/items/longsword_55"
+		]
+	},
+	"longsword_56": {
+		"textures": [
+			"textures/items/longsword_56"
+		]
+	},
+	"longsword_57": {
+		"textures": [
+			"textures/items/longsword_57"
+		]
+	},
+	"broadsword_58": {
+		"textures": [
+			"textures/items/broadsword_58"
+		]
+	},
+	"broadsword_59": {
+		"textures": [
+			"textures/items/broadsword_59"
+		]
+	},
+	"broadsword_60": {
+		"textures": [
+			"textures/items/broadsword_60"
+		]
+	},
+	"broadsword_61": {
+		"textures": [
+			"textures/items/broadsword_61"
+		]
+	},
+	"broadsword_62": {
+		"textures": [
+			"textures/items/broadsword_62"
+		]
+	},
+	"broadsword_63": {
+		"textures": [
+			"textures/items/broadsword_63"
+		]
+	},
+	"broadsword_64": {
+		"textures": [
+			"textures/items/broadsword_64"
+		]
+	},
+	"longsword_58": {
+		"textures": [
+			"textures/items/longsword_58"
+		]
+	},
+	"longsword_59": {
+		"textures": [
+			"textures/items/longsword_59"
+		]
+	},
+	"longsword_60": {
+		"textures": [
+			"textures/items/longsword_60"
+		]
+	},
+	"longsword_61": {
+		"textures": [
+			"textures/items/longsword_61"
+		]
+	},
+	"longsword_62": {
+		"textures": [
+			"textures/items/longsword_62"
+		]
+	},
+	"longsword_63": {
+		"textures": [
+			"textures/items/longsword_63"
+		]
+	},
+	"longsword_64": {
+		"textures": [
+			"textures/items/longsword_64"
+		]
+	},
+	"seared_stone_bucket": {
+		"textures": [
+			"textures/items/bucket_seared_stone"
+		]
+	},
+	"shovel_2": {
+		"textures": [
+			"textures/items/shovel_2"
+		]
+	},
+	"shovel_3": {
+		"textures": [
+			"textures/items/shovel_3"
+		]
+	},
+	"shovel_4": {
+		"textures": [
+			"textures/items/shovel_4"
+		]
+	},
+	"shovel_5": {
+		"textures": [
+			"textures/items/shovel_5"
+		]
+	},
+	"shovel_6": {
+		"textures": [
+			"textures/items/shovel_6"
+		]
+	},
+	"shovel_7": {
+		"textures": [
+			"textures/items/shovel_7"
+		]
+	},
+	"shovel_8": {
+		"textures": [
+			"textures/items/shovel_8"
+		]
+	},
+	"mattock_2": {
+		"textures": [
+			"textures/items/mattock_2"
+		]
+	},
+	"mattock_3": {
+		"textures": [
+			"textures/items/mattock_3"
+		]
+	},
+	"mattock_4": {
+		"textures": [
+			"textures/items/mattock_4"
+		]
+	},
+	"mattock_5": {
+		"textures": [
+			"textures/items/mattock_5"
+		]
+	},
+	"mattock_6": {
+		"textures": [
+			"textures/items/mattock_6"
+		]
+	},
+	"mattock_7": {
+		"textures": [
+			"textures/items/mattock_7"
+		]
+	},
+	"mattock_8": {
+		"textures": [
+			"textures/items/mattock_8"
+		]
+	},
+	"monster_jerky": {
+		"textures": [
+			"textures/items/jerky_monster"
+		]
+	},
+	"shovel_9": {
+		"textures": [
+			"textures/items/shovel_9"
+		]
+	},
+	"shovel_10": {
+		"textures": [
+			"textures/items/shovel_10"
+		]
+	},
+	"shovel_11": {
+		"textures": [
+			"textures/items/shovel_11"
+		]
+	},
+	"shovel_12": {
+		"textures": [
+			"textures/items/shovel_12"
+		]
+	},
+	"shovel_27": {
+		"textures": [
+			"textures/items/shovel_27"
+		]
+	},
+	"shovel_28": {
+		"textures": [
+			"textures/items/shovel_28"
+		]
+	},
+	"shovel_29": {
+		"textures": [
+			"textures/items/shovel_29"
+		]
+	},
+	"shovel_30": {
+		"textures": [
+			"textures/items/shovel_30"
+		]
+	},
+	"mattock_9": {
+		"textures": [
+			"textures/items/mattock_9"
+		]
+	},
+	"mattock_10": {
+		"textures": [
+			"textures/items/mattock_10"
+		]
+	},
+	"mattock_11": {
+		"textures": [
+			"textures/items/mattock_11"
+		]
+	},
+	"mattock_12": {
+		"textures": [
+			"textures/items/mattock_12"
+		]
+	},
+	"mattock_27": {
+		"textures": [
+			"textures/items/mattock_27"
+		]
+	},
+	"mattock_28": {
+		"textures": [
+			"textures/items/mattock_28"
+		]
+	},
+	"mattock_29": {
+		"textures": [
+			"textures/items/mattock_29"
+		]
+	},
+	"mattock_30": {
+		"textures": [
+			"textures/items/mattock_30"
+		]
+	},
+	"shovel_13": {
+		"textures": [
+			"textures/items/shovel_13"
+		]
+	},
+	"shovel_14": {
+		"textures": [
+			"textures/items/shovel_14"
+		]
+	},
+	"shovel_15": {
+		"textures": [
+			"textures/items/shovel_15"
+		]
+	},
+	"shovel_16": {
+		"textures": [
+			"textures/items/shovel_16"
+		]
+	},
+	"shovel_17": {
+		"textures": [
+			"textures/items/shovel_17"
+		]
+	},
+	"shovel_18": {
+		"textures": [
+			"textures/items/shovel_18"
+		]
+	},
+	"shovel_19": {
+		"textures": [
+			"textures/items/shovel_19"
+		]
+	},
+	"shovel_20": {
+		"textures": [
+			"textures/items/shovel_20"
+		]
+	},
+	"mattock_13": {
+		"textures": [
+			"textures/items/mattock_13"
+		]
+	},
+	"mattock_14": {
+		"textures": [
+			"textures/items/mattock_14"
+		]
+	},
+	"mattock_15": {
+		"textures": [
+			"textures/items/mattock_15"
+		]
+	},
+	"mattock_16": {
+		"textures": [
+			"textures/items/mattock_16"
+		]
+	},
+	"mattock_17": {
+		"textures": [
+			"textures/items/mattock_17"
+		]
+	},
+	"mattock_18": {
+		"textures": [
+			"textures/items/mattock_18"
+		]
+	},
+	"mattock_19": {
+		"textures": [
+			"textures/items/mattock_19"
+		]
+	},
+	"mattock_20": {
+		"textures": [
+			"textures/items/mattock_20"
+		]
+	},
+	"shovel_21": {
+		"textures": [
+			"textures/items/shovel_21"
+		]
+	},
+	"shovel_22": {
+		"textures": [
+			"textures/items/shovel_22"
+		]
+	},
+	"shovel_23": {
+		"textures": [
+			"textures/items/shovel_23"
+		]
+	},
+	"shovel_24": {
+		"textures": [
+			"textures/items/shovel_24"
+		]
+	},
+	"shovel_25": {
+		"textures": [
+			"textures/items/shovel_25"
+		]
+	},
+	"shovel_26": {
+		"textures": [
+			"textures/items/shovel_26"
+		]
+	},
+	"mattock_21": {
+		"textures": [
+			"textures/items/mattock_21"
+		]
+	},
+	"mattock_22": {
+		"textures": [
+			"textures/items/mattock_22"
+		]
+	},
+	"mattock_23": {
+		"textures": [
+			"textures/items/mattock_23"
+		]
+	},
+	"mattock_24": {
+		"textures": [
+			"textures/items/mattock_24"
+		]
+	},
+	"mattock_25": {
+		"textures": [
+			"textures/items/mattock_25"
+		]
+	},
+	"mattock_26": {
+		"textures": [
+			"textures/items/mattock_26"
+		]
+	},
+	"shovel_31": {
+		"textures": [
+			"textures/items/shovel_31"
+		]
+	},
+	"shovel_32": {
+		"textures": [
+			"textures/items/shovel_32"
+		]
+	},
+	"shovel_33": {
+		"textures": [
+			"textures/items/shovel_33"
+		]
+	},
+	"shovel_34": {
+		"textures": [
+			"textures/items/shovel_34"
+		]
+	},
+	"mattock_31": {
+		"textures": [
+			"textures/items/mattock_31"
+		]
+	},
+	"mattock_32": {
+		"textures": [
+			"textures/items/mattock_32"
+		]
+	},
+	"mattock_33": {
+		"textures": [
+			"textures/items/mattock_33"
+		]
+	},
+	"mattock_34": {
+		"textures": [
+			"textures/items/mattock_34"
+		]
+	},
+	"shovel_35": {
+		"textures": [
+			"textures/items/shovel_35"
+		]
+	},
+	"shovel_36": {
+		"textures": [
+			"textures/items/shovel_36"
+		]
+	},
+	"shovel_37": {
+		"textures": [
+			"textures/items/shovel_37"
+		]
+	},
+	"shovel_38": {
+		"textures": [
+			"textures/items/shovel_38"
+		]
+	},
+	"shovel_39": {
+		"textures": [
+			"textures/items/shovel_39"
+		]
+	},
+	"shovel_40": {
+		"textures": [
+			"textures/items/shovel_40"
+		]
+	},
+	"shovel_41": {
+		"textures": [
+			"textures/items/shovel_41"
+		]
+	},
+	"shovel_42": {
+		"textures": [
+			"textures/items/shovel_42"
+		]
+	},
+	"mattock_35": {
+		"textures": [
+			"textures/items/mattock_35"
+		]
+	},
+	"mattock_36": {
+		"textures": [
+			"textures/items/mattock_36"
+		]
+	},
+	"mattock_37": {
+		"textures": [
+			"textures/items/mattock_37"
+		]
+	},
+	"mattock_38": {
+		"textures": [
+			"textures/items/mattock_38"
+		]
+	},
+	"mattock_39": {
+		"textures": [
+			"textures/items/mattock_39"
+		]
+	},
+	"mattock_40": {
+		"textures": [
+			"textures/items/mattock_40"
+		]
+	},
+	"mattock_41": {
+		"textures": [
+			"textures/items/mattock_41"
+		]
+	},
+	"mattock_42": {
+		"textures": [
+			"textures/items/mattock_42"
+		]
+	},
+	"shovel_43": {
+		"textures": [
+			"textures/items/shovel_43"
+		]
+	},
+	"shovel_44": {
+		"textures": [
+			"textures/items/shovel_44"
+		]
+	},
+	"shovel_45": {
+		"textures": [
+			"textures/items/shovel_45"
+		]
+	},
+	"shovel_46": {
+		"textures": [
+			"textures/items/shovel_46"
+		]
+	},
+	"shovel_47": {
+		"textures": [
+			"textures/items/shovel_47"
+		]
+	},
+	"shovel_48": {
+		"textures": [
+			"textures/items/shovel_48"
+		]
+	},
+	"shovel_49": {
+		"textures": [
+			"textures/items/shovel_49"
+		]
+	},
+	"mattock_43": {
+		"textures": [
+			"textures/items/mattock_43"
+		]
+	},
+	"mattock_44": {
+		"textures": [
+			"textures/items/mattock_44"
+		]
+	},
+	"mattock_45": {
+		"textures": [
+			"textures/items/mattock_45"
+		]
+	},
+	"mattock_46": {
+		"textures": [
+			"textures/items/mattock_46"
+		]
+	},
+	"mattock_47": {
+		"textures": [
+			"textures/items/mattock_47"
+		]
+	},
+	"mattock_48": {
+		"textures": [
+			"textures/items/mattock_48"
+		]
+	},
+	"mattock_49": {
+		"textures": [
+			"textures/items/mattock_49"
+		]
+	},
+	"shovel_50": {
+		"textures": [
+			"textures/items/shovel_50"
+		]
+	},
+	"shovel_51": {
+		"textures": [
+			"textures/items/shovel_51"
+		]
+	},
+	"shovel_52": {
+		"textures": [
+			"textures/items/shovel_52"
+		]
+	},
+	"shovel_53": {
+		"textures": [
+			"textures/items/shovel_53"
+		]
+	},
+	"shovel_54": {
+		"textures": [
+			"textures/items/shovel_54"
+		]
+	},
+	"shovel_55": {
+		"textures": [
+			"textures/items/shovel_55"
+		]
+	},
+	"shovel_56": {
+		"textures": [
+			"textures/items/shovel_56"
+		]
+	},
+	"shovel_57": {
+		"textures": [
+			"textures/items/shovel_57"
+		]
+	},
+	"mattock_50": {
+		"textures": [
+			"textures/items/mattock_50"
+		]
+	},
+	"mattock_51": {
+		"textures": [
+			"textures/items/mattock_51"
+		]
+	},
+	"mattock_52": {
+		"textures": [
+			"textures/items/mattock_52"
+		]
+	},
+	"mattock_53": {
+		"textures": [
+			"textures/items/mattock_53"
+		]
+	},
+	"mattock_54": {
+		"textures": [
+			"textures/items/mattock_54"
+		]
+	},
+	"mattock_55": {
+		"textures": [
+			"textures/items/mattock_55"
+		]
+	},
+	"mattock_56": {
+		"textures": [
+			"textures/items/mattock_56"
+		]
+	},
+	"mattock_57": {
+		"textures": [
+			"textures/items/mattock_57"
+		]
+	},
+	"shovel_58": {
+		"textures": [
+			"textures/items/shovel_58"
+		]
+	},
+	"shovel_59": {
+		"textures": [
+			"textures/items/shovel_59"
+		]
+	},
+	"shovel_60": {
+		"textures": [
+			"textures/items/shovel_60"
+		]
+	},
+	"shovel_61": {
+		"textures": [
+			"textures/items/shovel_61"
+		]
+	},
+	"shovel_62": {
+		"textures": [
+			"textures/items/shovel_62"
+		]
+	},
+	"shovel_63": {
+		"textures": [
+			"textures/items/shovel_63"
+		]
+	},
+	"shovel_64": {
+		"textures": [
+			"textures/items/shovel_64"
+		]
+	},
+	"shovel_65": {
+		"textures": [
+			"textures/items/shovel_65"
+		]
+	},
+	"mattock_58": {
+		"textures": [
+			"textures/items/mattock_58"
+		]
+	},
+	"mattock_59": {
+		"textures": [
+			"textures/items/mattock_59"
+		]
+	},
+	"mattock_60": {
+		"textures": [
+			"textures/items/mattock_60"
+		]
+	},
+	"mattock_61": {
+		"textures": [
+			"textures/items/mattock_61"
+		]
+	},
+	"mattock_62": {
+		"textures": [
+			"textures/items/mattock_62"
+		]
+	},
+	"mattock_63": {
+		"textures": [
+			"textures/items/mattock_63"
+		]
+	},
+	"mattock_64": {
+		"textures": [
+			"textures/items/mattock_64"
+		]
+	},
+	"mattock_65": {
+		"textures": [
+			"textures/items/mattock_65"
+		]
+	},
+	"beef_jerky": {
+		"textures": [
+			"textures/items/jerky_beef"
+		]
+	},
+	"bacon_jerky": {
+		"textures": [
+			"textures/items/jerky_bacon"
+		]
+	},
+	"chicken_jerky": {
+		"textures": [
+			"textures/items/jerky_chicken"
+		]
+	},
+	"mutton_jerky": {
+		"textures": [
+			"textures/items/jerky_mutton"
+		]
+	},
+	"stone_rod": {
+		"textures": [
+			"textures/items/stone_rod"
+		]
+	},
+	"knife_blade_pattern": {
+		"textures": [
+			"textures/items/knife_blade_pattern"
+		]
+	},
+	"knife_blade_cast": {
+		"textures": [
+			"textures/items/knife_blade_cast"
+		]
+	},
+	"wooden_knife_blade": {
+		"textures": [
+			"textures/items/wooden_knife_blade"
+		]
+	},
+	"shuriken_1": {
+		"textures": [
+			"textures/items/shuriken_1"
+		]
+	},
+	"stone_knife_blade": {
+		"textures": [
+			"textures/items/stone_knife_blade"
+		]
+	},
+	"shuriken_2": {
+		"textures": [
+			"textures/items/shuriken_2"
+		]
+	},
+	"flint_knife_blade": {
+		"textures": [
+			"textures/items/flint_knife_blade"
+		]
+	},
+	"shuriken_3": {
+		"textures": [
+			"textures/items/shuriken_3"
+		]
+	},
+	"iron_knife_blade": {
+		"textures": [
+			"textures/items/iron_knife_blade"
+		]
+	},
+	"shuriken_4": {
+		"textures": [
+			"textures/items/shuriken_4"
+		]
+	},
+	"copper_knife_blade": {
+		"textures": [
+			"textures/items/copper_knife_blade"
+		]
+	},
+	"shuriken_5": {
+		"textures": [
+			"textures/items/shuriken_5"
+		]
+	},
+	"mud_brick": {
+		"textures": [
+			"textures/items/mud_brick"
+		]
+	},
+	"rabbit_jerky": {
+		"textures": [
+			"textures/items/jerky_rabbit"
+		]
+	},
+	"ardite_nugget": {
+		"textures": [
+			"textures/items/ardite_nugget"
+		]
+	},
+	"cobalt_nugget": {
+		"textures": [
+			"textures/items/cobalt_nugget"
+		]
+	},
+	"manyullyn_nugget": {
+		"textures": [
+			"textures/items/manyullyn_nugget"
+		]
+	},
+	"fish_jerky": {
+		"textures": [
+			"textures/items/jerky_fish"
+		]
+	},
+	"salmon_jerky": {
+		"textures": [
+			"textures/items/jerky_salmon"
+		]
+	},
+	"tropical_fish_jerky": {
+		"textures": [
+			"textures/items/jerky_clownfish"
+		]
+	},
+	"fugu_jerky": {
+		"textures": [
+			"textures/items/jerky_fugu"
+		]
+	},
+	"dried_brick": {
+		"textures": [
+			"textures/items/dried_brick"
+		]
+	},
+	"pickaxe_126": {
+		"textures": [
+			"textures/items/pickaxe_126"
+		]
+	},
+	"cobalt_pickaxe_head": {
+		"textures": [
+			"textures/items/cobalt_pickaxe_head"
+		]
+	},
+	"cobalt_axe_head": {
+		"textures": [
+			"textures/items/cobalt_axe_head"
+		]
+	},
+	"cobalt_binding": {
+		"textures": [
+			"textures/items/cobalt_binding"
+		]
+	},
+	"cobalt_tool_rod": {
+		"textures": [
+			"textures/items/cobalt_tool_rod"
+		]
+	},
+	"cobalt_knife_blade": {
+		"textures": [
+			"textures/items/cobalt_knife_blade"
+		]
+	},
+	"cobalt_sword_blade": {
+		"textures": [
+			"textures/items/cobalt_sword_blade"
+		]
+	},
+	"cobalt_wide_guard": {
+		"textures": [
+			"textures/items/cobalt_wide_guard"
+		]
+	},
+	"cobalt_hand_guard": {
+		"textures": [
+			"textures/items/cobalt_hand_guard"
+		]
+	},
+	"cobalt_shovel_head": {
+		"textures": [
+			"textures/items/cobalt_shovel_head"
+		]
+	},
+	"shuriken_6": {
+		"textures": [
+			"textures/items/shuriken_6"
+		]
+	},
+	"hatchet_126": {
+		"textures": [
+			"textures/items/hatchet_126"
+		]
+	},
+	"broadsword_126": {
+		"textures": [
+			"textures/items/broadsword_126"
+		]
+	},
+	"longsword_126": {
+		"textures": [
+			"textures/items/longsword_126"
+		]
+	},
+	"mattock_126": {
+		"textures": [
+			"textures/items/mattock_126"
+		]
+	},
+	"shovel_126": {
+		"textures": [
+			"textures/items/shovel_126"
+		]
+	},
+	"ardite_pickaxe_head": {
+		"textures": [
+			"textures/items/ardite_pickaxe_head"
+		]
+	},
+	"ardite_axe_head": {
+		"textures": [
+			"textures/items/ardite_axe_head"
+		]
+	},
+	"ardite_binding": {
+		"textures": [
+			"textures/items/ardite_binding"
+		]
+	},
+	"ardite_tool_rod": {
+		"textures": [
+			"textures/items/ardite_tool_rod"
+		]
+	},
+	"ardite_knife_blade": {
+		"textures": [
+			"textures/items/ardite_knife_blade"
+		]
+	},
+	"ardite_sword_blade": {
+		"textures": [
+			"textures/items/ardite_sword_blade"
+		]
+	},
+	"ardite_wide_guard": {
+		"textures": [
+			"textures/items/ardite_wide_guard"
+		]
+	},
+	"ardite_hand_guard": {
+		"textures": [
+			"textures/items/ardite_hand_guard"
+		]
+	},
+	"ardite_shovel_head": {
+		"textures": [
+			"textures/items/ardite_shovel_head"
+		]
+	},
+	"shuriken_7": {
+		"textures": [
+			"textures/items/shuriken_7"
+		]
+	},
+	"pickaxe_127": {
+		"textures": [
+			"textures/items/pickaxe_127"
+		]
+	},
+	"hatchet_127": {
+		"textures": [
+			"textures/items/hatchet_127"
+		]
+	},
+	"broadsword_127": {
+		"textures": [
+			"textures/items/broadsword_127"
+		]
+	},
+	"longsword_127": {
+		"textures": [
+			"textures/items/longsword_127"
+		]
+	},
+	"mattock_127": {
+		"textures": [
+			"textures/items/mattock_127"
+		]
+	},
+	"shovel_127": {
+		"textures": [
+			"textures/items/shovel_127"
+		]
+	},
+	"manyullyn_pickaxe_head": {
+		"textures": [
+			"textures/items/manyullyn_pickaxe_head"
+		]
+	},
+	"manyullyn_axe_head": {
+		"textures": [
+			"textures/items/manyullyn_axe_head"
+		]
+	},
+	"manyullyn_binding": {
+		"textures": [
+			"textures/items/manyullyn_binding"
+		]
+	},
+	"manyullyn_tool_rod": {
+		"textures": [
+			"textures/items/manyullyn_tool_rod"
+		]
+	},
+	"manyullyn_knife_blade": {
+		"textures": [
+			"textures/items/manyullyn_knife_blade"
+		]
+	},
+	"manyullyn_sword_blade": {
+		"textures": [
+			"textures/items/manyullyn_sword_blade"
+		]
+	},
+	"manyullyn_wide_guard": {
+		"textures": [
+			"textures/items/manyullyn_wide_guard"
+		]
+	},
+	"manyullyn_hand_guard": {
+		"textures": [
+			"textures/items/manyullyn_hand_guard"
+		]
+	},
+	"manyullyn_shovel_head": {
+		"textures": [
+			"textures/items/manyullyn_shovel_head"
+		]
+	},
+	"shuriken_8": {
+		"textures": [
+			"textures/items/shuriken_8"
+		]
+	},
+	"pickaxe_128": {
+		"textures": [
+			"textures/items/pickaxe_128"
+		]
+	},
+	"hatchet_128": {
+		"textures": [
+			"textures/items/hatchet_128"
+		]
+	},
+	"broadsword_128": {
+		"textures": [
+			"textures/items/broadsword_128"
+		]
+	},
+	"longsword_128": {
+		"textures": [
+			"textures/items/longsword_128"
+		]
+	},
+	"mattock_128": {
+		"textures": [
+			"textures/items/mattock_128"
+		]
+	},
+	"shovel_128": {
+		"textures": [
+			"textures/items/shovel_128"
+		]
+	},
+	"large_sword_blade_cast": {
+		"textures": [
+			"textures/items/large_sword_blade_cast"
+		]
+	},
+	"large_plate_cast": {
+		"textures": [
+			"textures/items/large_plate_cast"
+		]
+	},
+	"tough_tool_rod_cast": {
+		"textures": [
+			"textures/items/tough_tool_rod_cast"
+		]
+	},
+	"stone_large_sword_blade": {
+		"textures": [
+			"textures/items/stone_large_sword_blade"
+		]
+	},
+	"stone_large_plate": {
+		"textures": [
+			"textures/items/stone_large_plate"
+		]
+	},
+	"stone_tough_tool_rod": {
+		"textures": [
+			"textures/items/stone_tough_tool_rod"
+		]
+	},
+	"flint_large_sword_blade": {
+		"textures": [
+			"textures/items/flint_large_sword_blade"
+		]
+	},
+	"flint_large_plate": {
+		"textures": [
+			"textures/items/flint_large_plate"
+		]
+	},
+	"flint_tough_tool_rod": {
+		"textures": [
+			"textures/items/flint_tough_tool_rod"
+		]
+	},
+	"iron_large_sword_blade": {
+		"textures": [
+			"textures/items/iron_large_sword_blade"
+		]
+	},
+	"iron_large_plate": {
+		"textures": [
+			"textures/items/iron_large_plate"
+		]
+	},
+	"iron_tough_tool_rod": {
+		"textures": [
+			"textures/items/iron_tough_tool_rod"
+		]
+	},
+	"copper_large_sword_blade": {
+		"textures": [
+			"textures/items/copper_large_sword_blade"
+		]
+	},
+	"copper_large_plate": {
+		"textures": [
+			"textures/items/copper_large_plate"
+		]
+	},
+	"copper_tough_tool_rod": {
+		"textures": [
+			"textures/items/copper_tough_tool_rod"
+		]
+	},
+	"cobalt_large_sword_blade": {
+		"textures": [
+			"textures/items/cobalt_large_sword_blade"
+		]
+	},
+	"cobalt_large_plate": {
+		"textures": [
+			"textures/items/cobalt_large_plate"
+		]
+	},
+	"cobalt_tough_tool_rod": {
+		"textures": [
+			"textures/items/cobalt_tough_tool_rod"
+		]
+	},
+	"ardite_large_sword_blade": {
+		"textures": [
+			"textures/items/ardite_large_sword_blade"
+		]
+	},
+	"ardite_large_plate": {
+		"textures": [
+			"textures/items/ardite_large_plate"
+		]
+	},
+	"ardite_tough_tool_rod": {
+		"textures": [
+			"textures/items/ardite_tough_tool_rod"
+		]
+	},
+	"manyullyn_large_sword_blade": {
+		"textures": [
+			"textures/items/manyullyn_large_sword_blade"
+		]
+	},
+	"manyullyn_large_plate": {
+		"textures": [
+			"textures/items/manyullyn_large_plate"
+		]
+	},
+	"manyullyn_tough_tool_rod": {
+		"textures": [
+			"textures/items/manyullyn_tough_tool_rod"
+		]
+	},
+	"cleaver_8": {
+		"textures": [
+			"textures/items/cleaver_8"
+		]
+	},
+	"cleaver_25": {
+		"textures": [
+			"textures/items/cleaver_25"
+		]
+	},
+	"cleaver_26": {
+		"textures": [
+			"textures/items/cleaver_26"
+		]
+	},
+	"cleaver_65": {
+		"textures": [
+			"textures/items/cleaver_65"
+		]
+	},
+	"cleaver_126": {
+		"textures": [
+			"textures/items/cleaver_126"
+		]
+	},
+	"cleaver_127": {
+		"textures": [
+			"textures/items/cleaver_127"
+		]
+	},
+	"cleaver_128": {
+		"textures": [
+			"textures/items/cleaver_128"
+		]
+	},
+	"pickaxe_25_2": {
+		"textures": [
+			"textures/items/pickaxe_25_2"
+		]
+	},
+	"pickaxe_25_3": {
+		"textures": [
+			"textures/items/pickaxe_25_3"
+		]
+	},
+	"pickaxe_25_4": {
+		"textures": [
+			"textures/items/pickaxe_25_4"
+		]
+	},
+	"pickaxe_1_2": {
+		"textures": [
+			"textures/items/pickaxe_1_2"
+		]
+	},
+	"pickaxe_1_3": {
+		"textures": [
+			"textures/items/pickaxe_1_3"
+		]
+	},
+	"pickaxe_1_4": {
+		"textures": [
+			"textures/items/pickaxe_1_4"
+		]
+	},
+	"pickaxe_8_2": {
+		"textures": [
+			"textures/items/pickaxe_8_2"
+		]
+	},
+	"pickaxe_8_3": {
+		"textures": [
+			"textures/items/pickaxe_8_3"
+		]
+	},
+	"pickaxe_8_4": {
+		"textures": [
+			"textures/items/pickaxe_8_4"
+		]
+	},
+	"pickaxe_26_2": {
+		"textures": [
+			"textures/items/pickaxe_26_2"
+		]
+	},
+	"pickaxe_26_3": {
+		"textures": [
+			"textures/items/pickaxe_26_3"
+		]
+	},
+	"pickaxe_26_4": {
+		"textures": [
+			"textures/items/pickaxe_26_4"
+		]
+	},
+	"pickaxe_65_2": {
+		"textures": [
+			"textures/items/pickaxe_65_2"
+		]
+	},
+	"pickaxe_65_3": {
+		"textures": [
+			"textures/items/pickaxe_65_3"
+		]
+	},
+	"pickaxe_65_4": {
+		"textures": [
+			"textures/items/pickaxe_65_4"
+		]
+	},
+	"pickaxe_126_2": {
+		"textures": [
+			"textures/items/pickaxe_126_2"
+		]
+	},
+	"pickaxe_126_3": {
+		"textures": [
+			"textures/items/pickaxe_126_3"
+		]
+	},
+	"pickaxe_126_4": {
+		"textures": [
+			"textures/items/pickaxe_126_4"
+		]
+	},
+	"pickaxe_127_2": {
+		"textures": [
+			"textures/items/pickaxe_127_2"
+		]
+	},
+	"pickaxe_127_3": {
+		"textures": [
+			"textures/items/pickaxe_127_3"
+		]
+	},
+	"pickaxe_127_4": {
+		"textures": [
+			"textures/items/pickaxe_127_4"
+		]
+	},
+	"pickaxe_128_2": {
+		"textures": [
+			"textures/items/pickaxe_128_2"
+		]
+	},
+	"pickaxe_128_3": {
+		"textures": [
+			"textures/items/pickaxe_128_3"
+		]
+	},
+	"pickaxe_128_4": {
+		"textures": [
+			"textures/items/pickaxe_128_4"
+		]
+	},
+	"cleaver_1_2": {
+		"textures": [
+			"textures/items/cleaver_1_2"
+		]
+	},
+	"cleaver_8_2": {
+		"textures": [
+			"textures/items/cleaver_8_2"
+		]
+	},
+	"cleaver_25_2": {
+		"textures": [
+			"textures/items/cleaver_25_2"
+		]
+	},
+	"cleaver_26_2": {
+		"textures": [
+			"textures/items/cleaver_26_2"
+		]
+	},
+	"cleaver_65_2": {
+		"textures": [
+			"textures/items/cleaver_65_2"
+		]
+	},
+	"cleaver_126_2": {
+		"textures": [
+			"textures/items/cleaver_126_2"
+		]
+	},
+	"cleaver_127_2": {
+		"textures": [
+			"textures/items/cleaver_127_2"
+		]
+	},
+	"cleaver_128_2": {
+		"textures": [
+			"textures/items/cleaver_128_2"
+		]
+	},
+	"cleaver_2": {
+		"textures": [
+			"textures/items/cleaver_2"
+		]
+	},
+	"cleaver_3": {
+		"textures": [
+			"textures/items/cleaver_3"
+		]
+	},
+	"cleaver_4": {
+		"textures": [
+			"textures/items/cleaver_4"
+		]
+	},
+	"cleaver_5": {
+		"textures": [
+			"textures/items/cleaver_5"
+		]
+	},
+	"cleaver_6": {
+		"textures": [
+			"textures/items/cleaver_6"
+		]
+	},
+	"cleaver_7": {
+		"textures": [
+			"textures/items/cleaver_7"
+		]
+	},
+	"cleaver_9": {
+		"textures": [
+			"textures/items/cleaver_9"
+		]
+	},
+	"cleaver_10": {
+		"textures": [
+			"textures/items/cleaver_10"
+		]
+	},
+	"cleaver_11": {
+		"textures": [
+			"textures/items/cleaver_11"
+		]
+	},
+	"cleaver_12": {
+		"textures": [
+			"textures/items/cleaver_12"
+		]
+	},
+	"cleaver_13": {
+		"textures": [
+			"textures/items/cleaver_13"
+		]
+	},
+	"cleaver_14": {
+		"textures": [
+			"textures/items/cleaver_14"
+		]
+	},
+	"cleaver_15": {
+		"textures": [
+			"textures/items/cleaver_15"
+		]
+	},
+	"cleaver_16": {
+		"textures": [
+			"textures/items/cleaver_16"
+		]
+	},
+	"cleaver_17": {
+		"textures": [
+			"textures/items/cleaver_17"
+		]
+	},
+	"cleaver_18": {
+		"textures": [
+			"textures/items/cleaver_18"
+		]
+	},
+	"cleaver_19": {
+		"textures": [
+			"textures/items/cleaver_19"
+		]
+	},
+	"cleaver_20": {
+		"textures": [
+			"textures/items/cleaver_20"
+		]
+	},
+	"cleaver_21": {
+		"textures": [
+			"textures/items/cleaver_21"
+		]
+	},
+	"cleaver_22": {
+		"textures": [
+			"textures/items/cleaver_22"
+		]
+	},
+	"cleaver_23": {
+		"textures": [
+			"textures/items/cleaver_23"
+		]
+	},
+	"cleaver_24": {
+		"textures": [
+			"textures/items/cleaver_24"
+		]
+	},
+	"cleaver_27": {
+		"textures": [
+			"textures/items/cleaver_27"
+		]
+	},
+	"cleaver_28": {
+		"textures": [
+			"textures/items/cleaver_28"
+		]
+	},
+	"cleaver_29": {
+		"textures": [
+			"textures/items/cleaver_29"
+		]
+	},
+	"cleaver_30": {
+		"textures": [
+			"textures/items/cleaver_30"
+		]
+	},
+	"cleaver_31": {
+		"textures": [
+			"textures/items/cleaver_31"
+		]
+	},
+	"cleaver_32": {
+		"textures": [
+			"textures/items/cleaver_32"
+		]
+	},
+	"cleaver_33": {
+		"textures": [
+			"textures/items/cleaver_33"
+		]
+	},
+	"cleaver_34": {
+		"textures": [
+			"textures/items/cleaver_34"
+		]
+	},
+	"cleaver_35": {
+		"textures": [
+			"textures/items/cleaver_35"
+		]
+	},
+	"cleaver_36": {
+		"textures": [
+			"textures/items/cleaver_36"
+		]
+	},
+	"cleaver_37": {
+		"textures": [
+			"textures/items/cleaver_37"
+		]
+	},
+	"cleaver_38": {
+		"textures": [
+			"textures/items/cleaver_38"
+		]
+	},
+	"cleaver_39": {
+		"textures": [
+			"textures/items/cleaver_39"
+		]
+	},
+	"cleaver_40": {
+		"textures": [
+			"textures/items/cleaver_40"
+		]
+	},
+	"cleaver_41": {
+		"textures": [
+			"textures/items/cleaver_41"
+		]
+	},
+	"cleaver_42": {
+		"textures": [
+			"textures/items/cleaver_42"
+		]
+	},
+	"cleaver_43": {
+		"textures": [
+			"textures/items/cleaver_43"
+		]
+	},
+	"cleaver_44": {
+		"textures": [
+			"textures/items/cleaver_44"
+		]
+	},
+	"cleaver_45": {
+		"textures": [
+			"textures/items/cleaver_45"
+		]
+	},
+	"cleaver_46": {
+		"textures": [
+			"textures/items/cleaver_46"
+		]
+	},
+	"cleaver_47": {
+		"textures": [
+			"textures/items/cleaver_47"
+		]
+	},
+	"cleaver_48": {
+		"textures": [
+			"textures/items/cleaver_48"
+		]
+	},
+	"cleaver_49": {
+		"textures": [
+			"textures/items/cleaver_49"
+		]
+	},
+	"cleaver_50": {
+		"textures": [
+			"textures/items/cleaver_50"
+		]
+	},
+	"cleaver_51": {
+		"textures": [
+			"textures/items/cleaver_51"
+		]
+	},
+	"cleaver_52": {
+		"textures": [
+			"textures/items/cleaver_52"
+		]
+	},
+	"cleaver_53": {
+		"textures": [
+			"textures/items/cleaver_53"
+		]
+	},
+	"cleaver_54": {
+		"textures": [
+			"textures/items/cleaver_54"
+		]
+	},
+	"cleaver_55": {
+		"textures": [
+			"textures/items/cleaver_55"
+		]
+	},
+	"cleaver_56": {
+		"textures": [
+			"textures/items/cleaver_56"
+		]
+	},
+	"cleaver_57": {
+		"textures": [
+			"textures/items/cleaver_57"
+		]
+	},
+	"cleaver_58": {
+		"textures": [
+			"textures/items/cleaver_58"
+		]
+	},
+	"cleaver_59": {
+		"textures": [
+			"textures/items/cleaver_59"
+		]
+	},
+	"cleaver_60": {
+		"textures": [
+			"textures/items/cleaver_60"
+		]
+	},
+	"cleaver_61": {
+		"textures": [
+			"textures/items/cleaver_61"
+		]
+	},
+	"cleaver_62": {
+		"textures": [
+			"textures/items/cleaver_62"
+		]
+	},
+	"cleaver_63": {
+		"textures": [
+			"textures/items/cleaver_63"
+		]
+	},
+	"cleaver_64": {
+		"textures": [
+			"textures/items/cleaver_64"
+		]
+	},
+	"shuriken_1_2": {
+		"textures": [
+			"textures/items/shuriken_1_2"
+		]
+	},
+	"shuriken_2_2": {
+		"textures": [
+			"textures/items/shuriken_2_2"
+		]
+	},
+	"shuriken_3_2": {
+		"textures": [
+			"textures/items/shuriken_3_2"
+		]
+	},
+	"shuriken_4_2": {
+		"textures": [
+			"textures/items/shuriken_4_2"
+		]
+	},
+	"shuriken_5_2": {
+		"textures": [
+			"textures/items/shuriken_5_2"
+		]
+	},
+	"shuriken_6_2": {
+		"textures": [
+			"textures/items/shuriken_6_2"
+		]
+	},
+	"shuriken_7_2": {
+		"textures": [
+			"textures/items/shuriken_7_2"
+		]
+	},
+	"shuriken_8_2": {
+		"textures": [
+			"textures/items/shuriken_8_2"
+		]
+	},
+	"broadsword_1_2": {
+		"textures": [
+			"textures/items/broadsword_1_2"
+		]
+	},
+	"broadsword_8_2": {
+		"textures": [
+			"textures/items/broadsword_8_2"
+		]
+	},
+	"broadsword_25_2": {
+		"textures": [
+			"textures/items/broadsword_25_2"
+		]
+	},
+	"broadsword_26_2": {
+		"textures": [
+			"textures/items/broadsword_26_2"
+		]
+	},
+	"broadsword_65_2": {
+		"textures": [
+			"textures/items/broadsword_65_2"
+		]
+	},
+	"broadsword_126_2": {
+		"textures": [
+			"textures/items/broadsword_126_2"
+		]
+	},
+	"broadsword_127_2": {
+		"textures": [
+			"textures/items/broadsword_127_2"
+		]
+	},
+	"broadsword_128_2": {
+		"textures": [
+			"textures/items/broadsword_128_2"
+		]
+	},
+	"longsword_1_2": {
+		"textures": [
+			"textures/items/longsword_1_2"
+		]
+	},
+	"longsword_8_2": {
+		"textures": [
+			"textures/items/longsword_8_2"
+		]
+	},
+	"longsword_25_2": {
+		"textures": [
+			"textures/items/longsword_25_2"
+		]
+	},
+	"longsword_26_2": {
+		"textures": [
+			"textures/items/longsword_26_2"
+		]
+	},
+	"longsword_65_2": {
+		"textures": [
+			"textures/items/longsword_65_2"
+		]
+	},
+	"longsword_126_2": {
+		"textures": [
+			"textures/items/longsword_126_2"
+		]
+	},
+	"longsword_127_2": {
+		"textures": [
+			"textures/items/longsword_127_2"
+		]
+	},
+	"longsword_128_2": {
+		"textures": [
+			"textures/items/longsword_128_2"
+		]
+	},
+	"hatchet_1_2": {
+		"textures": [
+			"textures/items/hatchet_1_2"
+		]
+	},
+	"hatchet_8_2": {
+		"textures": [
+			"textures/items/hatchet_8_2"
+		]
+	},
+	"hatchet_25_2": {
+		"textures": [
+			"textures/items/hatchet_25_2"
+		]
+	},
+	"hatchet_26_2": {
+		"textures": [
+			"textures/items/hatchet_26_2"
+		]
+	},
+	"hatchet_65_2": {
+		"textures": [
+			"textures/items/hatchet_65_2"
+		]
+	},
+	"hatchet_126_2": {
+		"textures": [
+			"textures/items/hatchet_126_2"
+		]
+	},
+	"hatchet_127_2": {
+		"textures": [
+			"textures/items/hatchet_127_2"
+		]
+	},
+	"hatchet_128_2": {
+		"textures": [
+			"textures/items/hatchet_128_2"
+		]
+	},
+	"hatchet_1_3": {
+		"textures": [
+			"textures/items/hatchet_1_3"
+		]
+	},
+	"hatchet_8_3": {
+		"textures": [
+			"textures/items/hatchet_8_3"
+		]
+	},
+	"hatchet_25_3": {
+		"textures": [
+			"textures/items/hatchet_25_3"
+		]
+	},
+	"hatchet_26_3": {
+		"textures": [
+			"textures/items/hatchet_26_3"
+		]
+	},
+	"hatchet_65_3": {
+		"textures": [
+			"textures/items/hatchet_65_3"
+		]
+	},
+	"hatchet_126_3": {
+		"textures": [
+			"textures/items/hatchet_126_3"
+		]
+	},
+	"hatchet_127_3": {
+		"textures": [
+			"textures/items/hatchet_127_3"
+		]
+	},
+	"hatchet_128_3": {
+		"textures": [
+			"textures/items/hatchet_128_3"
+		]
+	},
+	"hatchet_1_4": {
+		"textures": [
+			"textures/items/hatchet_1_4"
+		]
+	},
+	"hatchet_8_4": {
+		"textures": [
+			"textures/items/hatchet_8_4"
+		]
+	},
+	"hatchet_25_4": {
+		"textures": [
+			"textures/items/hatchet_25_4"
+		]
+	},
+	"hatchet_26_4": {
+		"textures": [
+			"textures/items/hatchet_26_4"
+		]
+	},
+	"hatchet_65_4": {
+		"textures": [
+			"textures/items/hatchet_65_4"
+		]
+	},
+	"hatchet_126_4": {
+		"textures": [
+			"textures/items/hatchet_126_4"
+		]
+	},
+	"hatchet_127_4": {
+		"textures": [
+			"textures/items/hatchet_127_4"
+		]
+	},
+	"hatchet_128_4": {
+		"textures": [
+			"textures/items/hatchet_128_4"
+		]
+	},
+	"hammer_head_pattern": {
+		"textures": [
+			"textures/items/hammer_head_pattern"
+		]
+	},
+	"hammer_head_cast": {
+		"textures": [
+			"textures/items/hammer_head_cast"
+		]
+	},
+	"wooden_hammer_head": {
+		"textures": [
+			"textures/items/wooden_hammer_head"
+		]
+	},
+	"stone_hammer_head": {
+		"textures": [
+			"textures/items/stone_hammer_head"
+		]
+	},
+	"iron_hammer_head": {
+		"textures": [
+			"textures/items/iron_hammer_head"
+		]
+	},
+	"flint_hammer_head": {
+		"textures": [
+			"textures/items/flint_hammer_head"
+		]
+	},
+	"copper_hammer_head": {
+		"textures": [
+			"textures/items/copper_hammer_head"
+		]
+	},
+	"cobalt_hammer_head": {
+		"textures": [
+			"textures/items/cobalt_hammer_head"
+		]
+	},
+	"ardite_hammer_head": {
+		"textures": [
+			"textures/items/ardite_hammer_head"
+		]
+	},
+	"manyullyn_hammer_head": {
+		"textures": [
+			"textures/items/manyullyn_hammer_head"
+		]
+	},
+	"hammer_1": {
+		"textures": [
+			"textures/items/hammer_1"
+		]
+	},
+	"hammer_8": {
+		"textures": [
+			"textures/items/hammer_8"
+		]
+	},
+	"hammer_25": {
+		"textures": [
+			"textures/items/hammer_25"
+		]
+	},
+	"hammer_26": {
+		"textures": [
+			"textures/items/hammer_26"
+		]
+	},
+	"hammer_65": {
+		"textures": [
+			"textures/items/hammer_65"
+		]
+	},
+	"hammer_126": {
+		"textures": [
+			"textures/items/hammer_126"
+		]
+	},
+	"hammer_127": {
+		"textures": [
+			"textures/items/hammer_127"
+		]
+	},
+	"hammer_128": {
+		"textures": [
+			"textures/items/hammer_128"
+		]
+	},
+	"broad_axe_head_pattern": {
+		"textures": [
+			"textures/items/broad_axe_head_pattern"
+		]
+	},
+	"excavator_head_pattern": {
+		"textures": [
+			"textures/items/excavator_head_pattern"
+		]
+	},
+	"tough_binding_pattern": {
+		"textures": [
+			"textures/items/tough_binding_pattern"
+		]
+	},
+	"broad_axe_head_cast": {
+		"textures": [
+			"textures/items/broad_axe_head_cast"
+		]
+	},
+	"excavator_head_cast": {
+		"textures": [
+			"textures/items/excavator_head_cast"
+		]
+	},
+	"tough_binding_cast": {
+		"textures": [
+			"textures/items/tough_binding_cast"
+		]
+	},
+	"wooden_broad_axe_head": {
+		"textures": [
+			"textures/items/wooden_broad_axe_head"
+		]
+	},
+	"stone_broad_axe_head": {
+		"textures": [
+			"textures/items/stone_broad_axe_head"
+		]
+	},
+	"flint_broad_axe_head": {
+		"textures": [
+			"textures/items/flint_broad_axe_head"
+		]
+	},
+	"iron_broad_axe_head": {
+		"textures": [
+			"textures/items/iron_broad_axe_head"
+		]
+	},
+	"copper_broad_axe_head": {
+		"textures": [
+			"textures/items/copper_broad_axe_head"
+		]
+	},
+	"cobalt_broad_axe_head": {
+		"textures": [
+			"textures/items/cobalt_broad_axe_head"
+		]
+	},
+	"ardite_broad_axe_head": {
+		"textures": [
+			"textures/items/ardite_broad_axe_head"
+		]
+	},
+	"manyullyn_broad_axe_head": {
+		"textures": [
+			"textures/items/manyullyn_broad_axe_head"
+		]
+	},
+	"wooden_excavator_head": {
+		"textures": [
+			"textures/items/wooden_excavator_head"
+		]
+	},
+	"stone_excavator_head": {
+		"textures": [
+			"textures/items/stone_excavator_head"
+		]
+	},
+	"flint_excavator_head": {
+		"textures": [
+			"textures/items/flint_excavator_head"
+		]
+	},
+	"iron_excavator_head": {
+		"textures": [
+			"textures/items/iron_excavator_head"
+		]
+	},
+	"copper_excavator_head": {
+		"textures": [
+			"textures/items/copper_excavator_head"
+		]
+	},
+	"cobalt_excavator_head": {
+		"textures": [
+			"textures/items/cobalt_excavator_head"
+		]
+	},
+	"ardite_excavator_head": {
+		"textures": [
+			"textures/items/ardite_excavator_head"
+		]
+	},
+	"manyullyn_excavator_head": {
+		"textures": [
+			"textures/items/manyullyn_excavator_head"
+		]
+	},
+	"wooden_tough_binding": {
+		"textures": [
+			"textures/items/wooden_tough_binding"
+		]
+	},
+	"stone_tough_binding": {
+		"textures": [
+			"textures/items/stone_tough_binding"
+		]
+	},
+	"flint_tough_binding": {
+		"textures": [
+			"textures/items/flint_tough_binding"
+		]
+	},
+	"iron_tough_binding": {
+		"textures": [
+			"textures/items/iron_tough_binding"
+		]
+	},
+	"copper_tough_binding": {
+		"textures": [
+			"textures/items/copper_tough_binding"
+		]
+	},
+	"cobalt_tough_binding": {
+		"textures": [
+			"textures/items/cobalt_tough_binding"
+		]
+	},
+	"ardite_tough_binding": {
+		"textures": [
+			"textures/items/ardite_tough_binding"
+		]
+	},
+	"manyullyn_tough_binding": {
+		"textures": [
+			"textures/items/manyullyn_tough_binding"
+		]
+	},
+	"excavator_1": {
+		"textures": [
+			"textures/items/excavator_1"
+		]
+	},
+	"excavator_8": {
+		"textures": [
+			"textures/items/excavator_8"
+		]
+	},
+	"excavator_25": {
+		"textures": [
+			"textures/items/excavator_25"
+		]
+	},
+	"excavator_26": {
+		"textures": [
+			"textures/items/excavator_26"
+		]
+	},
+	"excavator_65": {
+		"textures": [
+			"textures/items/excavator_65"
+		]
+	},
+	"excavator_126": {
+		"textures": [
+			"textures/items/excavator_126"
+		]
+	},
+	"excavator_127": {
+		"textures": [
+			"textures/items/excavator_127"
+		]
+	},
+	"excavator_128": {
+		"textures": [
+			"textures/items/excavator_128"
+		]
+	},
+	"lumberaxe_1": {
+		"textures": [
+			"textures/items/lumberaxe_1"
+		]
+	},
+	"lumberaxe_8": {
+		"textures": [
+			"textures/items/lumberaxe_8"
+		]
+	},
+	"lumberaxe_25": {
+		"textures": [
+			"textures/items/lumberaxe_25"
+		]
+	},
+	"lumberaxe_26": {
+		"textures": [
+			"textures/items/lumberaxe_26"
+		]
+	},
+	"lumberaxe_65": {
+		"textures": [
+			"textures/items/lumberaxe_65"
+		]
+	},
+	"lumberaxe_126": {
+		"textures": [
+			"textures/items/lumberaxe_126"
+		]
+	},
+	"lumberaxe_127": {
+		"textures": [
+			"textures/items/lumberaxe_127"
+		]
+	},
+	"lumberaxe_128": {
+		"textures": [
+			"textures/items/lumberaxe_128"
+		]
+	},
+	"necrotic_bone": {
+		"textures": [
+			"textures/items/necrotic_bone"
+		]
+	},
+	"cleaver_128_5": {
+		"textures": [
+			"textures/items/cleaver_128_5"
+		]
+	},
+	"mattock_1_2": {
+		"textures": [
+			"textures/items/mattock_1_2"
+		]
+	},
+	"mattock_1_3": {
+		"textures": [
+			"textures/items/mattock_1_3"
+		]
+	},
+	"mattock_1_4": {
+		"textures": [
+			"textures/items/mattock_1_4"
+		]
+	},
+	"mattock_8_2": {
+		"textures": [
+			"textures/items/mattock_8_2"
+		]
+	},
+	"mattock_8_3": {
+		"textures": [
+			"textures/items/mattock_8_3"
+		]
+	},
+	"mattock_8_4": {
+		"textures": [
+			"textures/items/mattock_8_4"
+		]
+	},
+	"mattock_25_2": {
+		"textures": [
+			"textures/items/mattock_25_2"
+		]
+	},
+	"mattock_25_3": {
+		"textures": [
+			"textures/items/mattock_25_3"
+		]
+	},
+	"mattock_25_4": {
+		"textures": [
+			"textures/items/mattock_25_4"
+		]
+	},
+	"mattock_26_2": {
+		"textures": [
+			"textures/items/mattock_26_2"
+		]
+	},
+	"mattock_26_3": {
+		"textures": [
+			"textures/items/mattock_26_3"
+		]
+	},
+	"mattock_26_4": {
+		"textures": [
+			"textures/items/mattock_26_4"
+		]
+	},
+	"mattock_65_2": {
+		"textures": [
+			"textures/items/mattock_65_2"
+		]
+	},
+	"mattock_65_3": {
+		"textures": [
+			"textures/items/mattock_65_3"
+		]
+	},
+	"mattock_65_4": {
+		"textures": [
+			"textures/items/mattock_65_4"
+		]
+	},
+	"mattock_126_2": {
+		"textures": [
+			"textures/items/mattock_126_2"
+		]
+	},
+	"mattock_126_3": {
+		"textures": [
+			"textures/items/mattock_126_3"
+		]
+	},
+	"mattock_126_4": {
+		"textures": [
+			"textures/items/mattock_126_4"
+		]
+	},
+	"mattock_127_2": {
+		"textures": [
+			"textures/items/mattock_127_2"
+		]
+	},
+	"mattock_127_3": {
+		"textures": [
+			"textures/items/mattock_127_3"
+		]
+	},
+	"mattock_127_4": {
+		"textures": [
+			"textures/items/mattock_127_4"
+		]
+	},
+	"mattock_128_2": {
+		"textures": [
+			"textures/items/mattock_128_2"
+		]
+	},
+	"mattock_128_3": {
+		"textures": [
+			"textures/items/mattock_128_3"
+		]
+	},
+	"mattock_128_4": {
+		"textures": [
+			"textures/items/mattock_128_4"
+		]
+	},
+	"shovel_1_2": {
+		"textures": [
+			"textures/items/shovel_1_2"
+		]
+	},
+	"shovel_1_3": {
+		"textures": [
+			"textures/items/shovel_1_3"
+		]
+	},
+	"shovel_1_4": {
+		"textures": [
+			"textures/items/shovel_1_4"
+		]
+	},
+	"shovel_8_2": {
+		"textures": [
+			"textures/items/shovel_8_2"
+		]
+	},
+	"shovel_8_3": {
+		"textures": [
+			"textures/items/shovel_8_3"
+		]
+	},
+	"shovel_8_4": {
+		"textures": [
+			"textures/items/shovel_8_4"
+		]
+	},
+	"shovel_25_2": {
+		"textures": [
+			"textures/items/shovel_25_2"
+		]
+	},
+	"shovel_25_3": {
+		"textures": [
+			"textures/items/shovel_25_3"
+		]
+	},
+	"shovel_25_4": {
+		"textures": [
+			"textures/items/shovel_25_4"
+		]
+	},
+	"shovel_26_2": {
+		"textures": [
+			"textures/items/shovel_26_2"
+		]
+	},
+	"shovel_26_3": {
+		"textures": [
+			"textures/items/shovel_26_3"
+		]
+	},
+	"shovel_26_4": {
+		"textures": [
+			"textures/items/shovel_26_4"
+		]
+	},
+	"shovel_65_2": {
+		"textures": [
+			"textures/items/shovel_65_2"
+		]
+	},
+	"shovel_65_3": {
+		"textures": [
+			"textures/items/shovel_65_3"
+		]
+	},
+	"shovel_65_4": {
+		"textures": [
+			"textures/items/shovel_65_4"
+		]
+	},
+	"shovel_126_2": {
+		"textures": [
+			"textures/items/shovel_126_2"
+		]
+	},
+	"shovel_126_3": {
+		"textures": [
+			"textures/items/shovel_126_3"
+		]
+	},
+	"shovel_126_4": {
+		"textures": [
+			"textures/items/shovel_126_4"
+		]
+	},
+	"shovel_127_2": {
+		"textures": [
+			"textures/items/shovel_127_2"
+		]
+	},
+	"shovel_127_3": {
+		"textures": [
+			"textures/items/shovel_127_3"
+		]
+	},
+	"shovel_127_4": {
+		"textures": [
+			"textures/items/shovel_127_4"
+		]
+	},
+	"shovel_128_2": {
+		"textures": [
+			"textures/items/shovel_128_2"
+		]
+	},
+	"shovel_128_3": {
+		"textures": [
+			"textures/items/shovel_128_3"
+		]
+	},
+	"shovel_128_4": {
+		"textures": [
+			"textures/items/shovel_128_4"
+		]
+	},
+	"cleaver_128_6": {
+		"textures": [
+			"textures/items/cleaver_128_6"
+		]
+	},
+	"pickaxe_128_5": {
+		"textures": [
+			"textures/items/pickaxe_128_5"
+		]
+	},
+	"pickaxe_128_6": {
+		"textures": [
+			"textures/items/pickaxe_128_6"
+		]
+	},
+	"pickaxe_128_7": {
+		"textures": [
+			"textures/items/pickaxe_128_7"
+		]
+	},
+	"pickaxe_128_8": {
+		"textures": [
+			"textures/items/pickaxe_128_8"
+		]
+	},
+	"hammer_1_2": {
+		"textures": [
+			"textures/items/hammer_1_2"
+		]
+	},
+	"hammer_1_3": {
+		"textures": [
+			"textures/items/hammer_1_3"
+		]
+	},
+	"hammer_1_4": {
+		"textures": [
+			"textures/items/hammer_1_4"
+		]
+	},
+	"hammer_8_2": {
+		"textures": [
+			"textures/items/hammer_8_2"
+		]
+	},
+	"hammer_8_3": {
+		"textures": [
+			"textures/items/hammer_8_3"
+		]
+	},
+	"hammer_8_4": {
+		"textures": [
+			"textures/items/hammer_8_4"
+		]
+	},
+	"hammer_25_2": {
+		"textures": [
+			"textures/items/hammer_25_2"
+		]
+	},
+	"hammer_25_3": {
+		"textures": [
+			"textures/items/hammer_25_3"
+		]
+	},
+	"hammer_25_4": {
+		"textures": [
+			"textures/items/hammer_25_4"
+		]
+	},
+	"hammer_26_2": {
+		"textures": [
+			"textures/items/hammer_26_2"
+		]
+	},
+	"hammer_26_3": {
+		"textures": [
+			"textures/items/hammer_26_3"
+		]
+	},
+	"hammer_26_4": {
+		"textures": [
+			"textures/items/hammer_26_4"
+		]
+	},
+	"hammer_65_2": {
+		"textures": [
+			"textures/items/hammer_65_2"
+		]
+	},
+	"hammer_65_3": {
+		"textures": [
+			"textures/items/hammer_65_3"
+		]
+	},
+	"hammer_65_4": {
+		"textures": [
+			"textures/items/hammer_65_4"
+		]
+	},
+	"hammer_126_2": {
+		"textures": [
+			"textures/items/hammer_126_2"
+		]
+	},
+	"hammer_126_3": {
+		"textures": [
+			"textures/items/hammer_126_3"
+		]
+	},
+	"hammer_126_4": {
+		"textures": [
+			"textures/items/hammer_126_4"
+		]
+	},
+	"hammer_127_2": {
+		"textures": [
+			"textures/items/hammer_127_2"
+		]
+	},
+	"hammer_127_3": {
+		"textures": [
+			"textures/items/hammer_127_3"
+		]
+	},
+	"hammer_127_4": {
+		"textures": [
+			"textures/items/hammer_127_4"
+		]
+	},
+	"hammer_128_2": {
+		"textures": [
+			"textures/items/hammer_128_2"
+		]
+	},
+	"hammer_128_3": {
+		"textures": [
+			"textures/items/hammer_128_3"
+		]
+	},
+	"hammer_128_4": {
+		"textures": [
+			"textures/items/hammer_128_4"
+		]
+	},
+	"excavator_1_2": {
+		"textures": [
+			"textures/items/excavator_1_2"
+		]
+	},
+	"excavator_1_3": {
+		"textures": [
+			"textures/items/excavator_1_3"
+		]
+	},
+	"excavator_1_4": {
+		"textures": [
+			"textures/items/excavator_1_4"
+		]
+	},
+	"excavator_8_2": {
+		"textures": [
+			"textures/items/excavator_8_2"
+		]
+	},
+	"excavator_8_3": {
+		"textures": [
+			"textures/items/excavator_8_3"
+		]
+	},
+	"excavator_8_4": {
+		"textures": [
+			"textures/items/excavator_8_4"
+		]
+	},
+	"excavator_25_2": {
+		"textures": [
+			"textures/items/excavator_25_2"
+		]
+	},
+	"excavator_25_3": {
+		"textures": [
+			"textures/items/excavator_25_3"
+		]
+	},
+	"excavator_25_4": {
+		"textures": [
+			"textures/items/excavator_25_4"
+		]
+	},
+	"excavator_26_2": {
+		"textures": [
+			"textures/items/excavator_26_2"
+		]
+	},
+	"excavator_26_3": {
+		"textures": [
+			"textures/items/excavator_26_3"
+		]
+	},
+	"excavator_26_4": {
+		"textures": [
+			"textures/items/excavator_26_4"
+		]
+	},
+	"excavator_65_2": {
+		"textures": [
+			"textures/items/excavator_65_2"
+		]
+	},
+	"excavator_65_3": {
+		"textures": [
+			"textures/items/excavator_65_3"
+		]
+	},
+	"excavator_65_4": {
+		"textures": [
+			"textures/items/excavator_65_4"
+		]
+	},
+	"excavator_126_2": {
+		"textures": [
+			"textures/items/excavator_126_2"
+		]
+	},
+	"excavator_126_3": {
+		"textures": [
+			"textures/items/excavator_126_3"
+		]
+	},
+	"excavator_126_4": {
+		"textures": [
+			"textures/items/excavator_126_4"
+		]
+	},
+	"excavator_127_2": {
+		"textures": [
+			"textures/items/excavator_127_2"
+		]
+	},
+	"excavator_127_3": {
+		"textures": [
+			"textures/items/excavator_127_3"
+		]
+	},
+	"excavator_127_4": {
+		"textures": [
+			"textures/items/excavator_127_4"
+		]
+	},
+	"excavator_128_2": {
+		"textures": [
+			"textures/items/excavator_128_2"
+		]
+	},
+	"excavator_128_3": {
+		"textures": [
+			"textures/items/excavator_128_3"
+		]
+	},
+	"excavator_128_4": {
+		"textures": [
+			"textures/items/excavator_128_4"
+		]
+	},
+	"lumberaxe_1_2": {
+		"textures": [
+			"textures/items/lumberaxe_1_2"
+		]
+	},
+	"lumberaxe_1_3": {
+		"textures": [
+			"textures/items/lumberaxe_1_3"
+		]
+	},
+	"lumberaxe_1_4": {
+		"textures": [
+			"textures/items/lumberaxe_1_4"
+		]
+	},
+	"lumberaxe_8_2": {
+		"textures": [
+			"textures/items/lumberaxe_8_2"
+		]
+	},
+	"lumberaxe_8_3": {
+		"textures": [
+			"textures/items/lumberaxe_8_3"
+		]
+	},
+	"lumberaxe_8_4": {
+		"textures": [
+			"textures/items/lumberaxe_8_4"
+		]
+	},
+	"lumberaxe_25_2": {
+		"textures": [
+			"textures/items/lumberaxe_25_2"
+		]
+	},
+	"lumberaxe_25_3": {
+		"textures": [
+			"textures/items/lumberaxe_25_3"
+		]
+	},
+	"lumberaxe_25_4": {
+		"textures": [
+			"textures/items/lumberaxe_25_4"
+		]
+	},
+	"lumberaxe_26_2": {
+		"textures": [
+			"textures/items/lumberaxe_26_2"
+		]
+	},
+	"lumberaxe_26_3": {
+		"textures": [
+			"textures/items/lumberaxe_26_3"
+		]
+	},
+	"lumberaxe_26_4": {
+		"textures": [
+			"textures/items/lumberaxe_26_4"
+		]
+	},
+	"lumberaxe_65_2": {
+		"textures": [
+			"textures/items/lumberaxe_65_2"
+		]
+	},
+	"lumberaxe_65_3": {
+		"textures": [
+			"textures/items/lumberaxe_65_3"
+		]
+	},
+	"lumberaxe_65_4": {
+		"textures": [
+			"textures/items/lumberaxe_65_4"
+		]
+	},
+	"lumberaxe_126_2": {
+		"textures": [
+			"textures/items/lumberaxe_126_2"
+		]
+	},
+	"lumberaxe_126_3": {
+		"textures": [
+			"textures/items/lumberaxe_126_3"
+		]
+	},
+	"lumberaxe_126_4": {
+		"textures": [
+			"textures/items/lumberaxe_126_4"
+		]
+	},
+	"lumberaxe_127_2": {
+		"textures": [
+			"textures/items/lumberaxe_127_2"
+		]
+	},
+	"lumberaxe_127_3": {
+		"textures": [
+			"textures/items/lumberaxe_127_3"
+		]
+	},
+	"lumberaxe_127_4": {
+		"textures": [
+			"textures/items/lumberaxe_127_4"
+		]
+	},
+	"lumberaxe_128_2": {
+		"textures": [
+			"textures/items/lumberaxe_128_2"
+		]
+	},
+	"lumberaxe_128_3": {
+		"textures": [
+			"textures/items/lumberaxe_128_3"
+		]
+	},
+	"lumberaxe_128_4": {
+		"textures": [
+			"textures/items/lumberaxe_128_4"
+		]
+	},
+	"hammer_2": {
+		"textures": [
+			"textures/items/hammer_2"
+		]
+	},
+	"hammer_3": {
+		"textures": [
+			"textures/items/hammer_3"
+		]
+	},
+	"hammer_4": {
+		"textures": [
+			"textures/items/hammer_4"
+		]
+	},
+	"hammer_5": {
+		"textures": [
+			"textures/items/hammer_5"
+		]
+	},
+	"hammer_6": {
+		"textures": [
+			"textures/items/hammer_6"
+		]
+	},
+	"hammer_7": {
+		"textures": [
+			"textures/items/hammer_7"
+		]
+	},
+	"hammer_9": {
+		"textures": [
+			"textures/items/hammer_9"
+		]
+	},
+	"hammer_10": {
+		"textures": [
+			"textures/items/hammer_10"
+		]
+	},
+	"hammer_11": {
+		"textures": [
+			"textures/items/hammer_11"
+		]
+	},
+	"hammer_12": {
+		"textures": [
+			"textures/items/hammer_12"
+		]
+	},
+	"hammer_13": {
+		"textures": [
+			"textures/items/hammer_13"
+		]
+	},
+	"hammer_14": {
+		"textures": [
+			"textures/items/hammer_14"
+		]
+	},
+	"hammer_15": {
+		"textures": [
+			"textures/items/hammer_15"
+		]
+	},
+	"hammer_16": {
+		"textures": [
+			"textures/items/hammer_16"
+		]
+	},
+	"hammer_17": {
+		"textures": [
+			"textures/items/hammer_17"
+		]
+	},
+	"hammer_18": {
+		"textures": [
+			"textures/items/hammer_18"
+		]
+	},
+	"hammer_19": {
+		"textures": [
+			"textures/items/hammer_19"
+		]
+	},
+	"hammer_20": {
+		"textures": [
+			"textures/items/hammer_20"
+		]
+	},
+	"hammer_21": {
+		"textures": [
+			"textures/items/hammer_21"
+		]
+	},
+	"hammer_22": {
+		"textures": [
+			"textures/items/hammer_22"
+		]
+	},
+	"hammer_23": {
+		"textures": [
+			"textures/items/hammer_23"
+		]
+	},
+	"hammer_24": {
+		"textures": [
+			"textures/items/hammer_24"
+		]
+	},
+	"hammer_27": {
+		"textures": [
+			"textures/items/hammer_27"
+		]
+	},
+	"hammer_28": {
+		"textures": [
+			"textures/items/hammer_28"
+		]
+	},
+	"hammer_29": {
+		"textures": [
+			"textures/items/hammer_29"
+		]
+	},
+	"hammer_30": {
+		"textures": [
+			"textures/items/hammer_30"
+		]
+	},
+	"hammer_31": {
+		"textures": [
+			"textures/items/hammer_31"
+		]
+	},
+	"hammer_32": {
+		"textures": [
+			"textures/items/hammer_32"
+		]
+	},
+	"hammer_33": {
+		"textures": [
+			"textures/items/hammer_33"
+		]
+	},
+	"hammer_34": {
+		"textures": [
+			"textures/items/hammer_34"
+		]
+	},
+	"hammer_35": {
+		"textures": [
+			"textures/items/hammer_35"
+		]
+	},
+	"hammer_36": {
+		"textures": [
+			"textures/items/hammer_36"
+		]
+	},
+	"hammer_37": {
+		"textures": [
+			"textures/items/hammer_37"
+		]
+	},
+	"hammer_38": {
+		"textures": [
+			"textures/items/hammer_38"
+		]
+	},
+	"hammer_39": {
+		"textures": [
+			"textures/items/hammer_39"
+		]
+	},
+	"hammer_40": {
+		"textures": [
+			"textures/items/hammer_40"
+		]
+	},
+	"hammer_41": {
+		"textures": [
+			"textures/items/hammer_41"
+		]
+	},
+	"hammer_42": {
+		"textures": [
+			"textures/items/hammer_42"
+		]
+	},
+	"hammer_43": {
+		"textures": [
+			"textures/items/hammer_43"
+		]
+	},
+	"hammer_44": {
+		"textures": [
+			"textures/items/hammer_44"
+		]
+	},
+	"hammer_45": {
+		"textures": [
+			"textures/items/hammer_45"
+		]
+	},
+	"hammer_46": {
+		"textures": [
+			"textures/items/hammer_46"
+		]
+	},
+	"hammer_47": {
+		"textures": [
+			"textures/items/hammer_47"
+		]
+	},
+	"hammer_48": {
+		"textures": [
+			"textures/items/hammer_48"
+		]
+	},
+	"hammer_49": {
+		"textures": [
+			"textures/items/hammer_49"
+		]
+	},
+	"hammer_50": {
+		"textures": [
+			"textures/items/hammer_50"
+		]
+	},
+	"hammer_51": {
+		"textures": [
+			"textures/items/hammer_51"
+		]
+	},
+	"hammer_52": {
+		"textures": [
+			"textures/items/hammer_52"
+		]
+	},
+	"hammer_53": {
+		"textures": [
+			"textures/items/hammer_53"
+		]
+	},
+	"hammer_54": {
+		"textures": [
+			"textures/items/hammer_54"
+		]
+	},
+	"hammer_55": {
+		"textures": [
+			"textures/items/hammer_55"
+		]
+	},
+	"hammer_56": {
+		"textures": [
+			"textures/items/hammer_56"
+		]
+	},
+	"hammer_57": {
+		"textures": [
+			"textures/items/hammer_57"
+		]
+	},
+	"hammer_58": {
+		"textures": [
+			"textures/items/hammer_58"
+		]
+	},
+	"hammer_59": {
+		"textures": [
+			"textures/items/hammer_59"
+		]
+	},
+	"hammer_60": {
+		"textures": [
+			"textures/items/hammer_60"
+		]
+	},
+	"hammer_61": {
+		"textures": [
+			"textures/items/hammer_61"
+		]
+	},
+	"hammer_62": {
+		"textures": [
+			"textures/items/hammer_62"
+		]
+	},
+	"hammer_63": {
+		"textures": [
+			"textures/items/hammer_63"
+		]
+	},
+	"hammer_64": {
+		"textures": [
+			"textures/items/hammer_64"
+		]
+	},
+	"excavator_2": {
+		"textures": [
+			"textures/items/excavator_2"
+		]
+	},
+	"excavator_3": {
+		"textures": [
+			"textures/items/excavator_3"
+		]
+	},
+	"excavator_4": {
+		"textures": [
+			"textures/items/excavator_4"
+		]
+	},
+	"excavator_5": {
+		"textures": [
+			"textures/items/excavator_5"
+		]
+	},
+	"excavator_6": {
+		"textures": [
+			"textures/items/excavator_6"
+		]
+	},
+	"excavator_7": {
+		"textures": [
+			"textures/items/excavator_7"
+		]
+	},
+	"excavator_9": {
+		"textures": [
+			"textures/items/excavator_9"
+		]
+	},
+	"excavator_10": {
+		"textures": [
+			"textures/items/excavator_10"
+		]
+	},
+	"excavator_11": {
+		"textures": [
+			"textures/items/excavator_11"
+		]
+	},
+	"excavator_12": {
+		"textures": [
+			"textures/items/excavator_12"
+		]
+	},
+	"excavator_13": {
+		"textures": [
+			"textures/items/excavator_13"
+		]
+	},
+	"excavator_14": {
+		"textures": [
+			"textures/items/excavator_14"
+		]
+	},
+	"excavator_15": {
+		"textures": [
+			"textures/items/excavator_15"
+		]
+	},
+	"excavator_16": {
+		"textures": [
+			"textures/items/excavator_16"
+		]
+	},
+	"excavator_17": {
+		"textures": [
+			"textures/items/excavator_17"
+		]
+	},
+	"excavator_18": {
+		"textures": [
+			"textures/items/excavator_18"
+		]
+	},
+	"excavator_19": {
+		"textures": [
+			"textures/items/excavator_19"
+		]
+	},
+	"excavator_20": {
+		"textures": [
+			"textures/items/excavator_20"
+		]
+	},
+	"excavator_21": {
+		"textures": [
+			"textures/items/excavator_21"
+		]
+	},
+	"excavator_22": {
+		"textures": [
+			"textures/items/excavator_22"
+		]
+	},
+	"excavator_23": {
+		"textures": [
+			"textures/items/excavator_23"
+		]
+	},
+	"excavator_24": {
+		"textures": [
+			"textures/items/excavator_24"
+		]
+	},
+	"excavator_27": {
+		"textures": [
+			"textures/items/excavator_27"
+		]
+	},
+	"excavator_28": {
+		"textures": [
+			"textures/items/excavator_28"
+		]
+	},
+	"excavator_29": {
+		"textures": [
+			"textures/items/excavator_29"
+		]
+	},
+	"excavator_30": {
+		"textures": [
+			"textures/items/excavator_30"
+		]
+	},
+	"excavator_31": {
+		"textures": [
+			"textures/items/excavator_31"
+		]
+	},
+	"excavator_32": {
+		"textures": [
+			"textures/items/excavator_32"
+		]
+	},
+	"excavator_33": {
+		"textures": [
+			"textures/items/excavator_33"
+		]
+	},
+	"excavator_34": {
+		"textures": [
+			"textures/items/excavator_34"
+		]
+	},
+	"excavator_35": {
+		"textures": [
+			"textures/items/excavator_35"
+		]
+	},
+	"excavator_36": {
+		"textures": [
+			"textures/items/excavator_36"
+		]
+	},
+	"excavator_37": {
+		"textures": [
+			"textures/items/excavator_37"
+		]
+	},
+	"excavator_38": {
+		"textures": [
+			"textures/items/excavator_38"
+		]
+	},
+	"excavator_39": {
+		"textures": [
+			"textures/items/excavator_39"
+		]
+	},
+	"excavator_40": {
+		"textures": [
+			"textures/items/excavator_40"
+		]
+	},
+	"excavator_41": {
+		"textures": [
+			"textures/items/excavator_41"
+		]
+	},
+	"excavator_42": {
+		"textures": [
+			"textures/items/excavator_42"
+		]
+	},
+	"excavator_43": {
+		"textures": [
+			"textures/items/excavator_43"
+		]
+	},
+	"excavator_44": {
+		"textures": [
+			"textures/items/excavator_44"
+		]
+	},
+	"excavator_45": {
+		"textures": [
+			"textures/items/excavator_45"
+		]
+	},
+	"excavator_46": {
+		"textures": [
+			"textures/items/excavator_46"
+		]
+	},
+	"excavator_47": {
+		"textures": [
+			"textures/items/excavator_47"
+		]
+	},
+	"excavator_48": {
+		"textures": [
+			"textures/items/excavator_48"
+		]
+	},
+	"excavator_49": {
+		"textures": [
+			"textures/items/excavator_49"
+		]
+	},
+	"excavator_50": {
+		"textures": [
+			"textures/items/excavator_50"
+		]
+	},
+	"excavator_51": {
+		"textures": [
+			"textures/items/excavator_51"
+		]
+	},
+	"excavator_52": {
+		"textures": [
+			"textures/items/excavator_52"
+		]
+	},
+	"excavator_53": {
+		"textures": [
+			"textures/items/excavator_53"
+		]
+	},
+	"excavator_54": {
+		"textures": [
+			"textures/items/excavator_54"
+		]
+	},
+	"excavator_55": {
+		"textures": [
+			"textures/items/excavator_55"
+		]
+	},
+	"excavator_56": {
+		"textures": [
+			"textures/items/excavator_56"
+		]
+	},
+	"excavator_57": {
+		"textures": [
+			"textures/items/excavator_57"
+		]
+	},
+	"excavator_58": {
+		"textures": [
+			"textures/items/excavator_58"
+		]
+	},
+	"excavator_59": {
+		"textures": [
+			"textures/items/excavator_59"
+		]
+	},
+	"excavator_60": {
+		"textures": [
+			"textures/items/excavator_60"
+		]
+	},
+	"excavator_61": {
+		"textures": [
+			"textures/items/excavator_61"
+		]
+	},
+	"excavator_62": {
+		"textures": [
+			"textures/items/excavator_62"
+		]
+	},
+	"excavator_63": {
+		"textures": [
+			"textures/items/excavator_63"
+		]
+	},
+	"excavator_64": {
+		"textures": [
+			"textures/items/excavator_64"
+		]
+	},
+	"lumberaxe_2": {
+		"textures": [
+			"textures/items/lumberaxe_2"
+		]
+	},
+	"lumberaxe_3": {
+		"textures": [
+			"textures/items/lumberaxe_3"
+		]
+	},
+	"lumberaxe_4": {
+		"textures": [
+			"textures/items/lumberaxe_4"
+		]
+	},
+	"lumberaxe_5": {
+		"textures": [
+			"textures/items/lumberaxe_5"
+		]
+	},
+	"lumberaxe_6": {
+		"textures": [
+			"textures/items/lumberaxe_6"
+		]
+	},
+	"lumberaxe_7": {
+		"textures": [
+			"textures/items/lumberaxe_7"
+		]
+	},
+	"lumberaxe_9": {
+		"textures": [
+			"textures/items/lumberaxe_9"
+		]
+	},
+	"lumberaxe_10": {
+		"textures": [
+			"textures/items/lumberaxe_10"
+		]
+	},
+	"lumberaxe_11": {
+		"textures": [
+			"textures/items/lumberaxe_11"
+		]
+	},
+	"lumberaxe_12": {
+		"textures": [
+			"textures/items/lumberaxe_12"
+		]
+	},
+	"lumberaxe_13": {
+		"textures": [
+			"textures/items/lumberaxe_13"
+		]
+	},
+	"lumberaxe_14": {
+		"textures": [
+			"textures/items/lumberaxe_14"
+		]
+	},
+	"lumberaxe_15": {
+		"textures": [
+			"textures/items/lumberaxe_15"
+		]
+	},
+	"lumberaxe_16": {
+		"textures": [
+			"textures/items/lumberaxe_16"
+		]
+	},
+	"lumberaxe_17": {
+		"textures": [
+			"textures/items/lumberaxe_17"
+		]
+	},
+	"lumberaxe_18": {
+		"textures": [
+			"textures/items/lumberaxe_18"
+		]
+	},
+	"lumberaxe_19": {
+		"textures": [
+			"textures/items/lumberaxe_19"
+		]
+	},
+	"lumberaxe_20": {
+		"textures": [
+			"textures/items/lumberaxe_20"
+		]
+	},
+	"lumberaxe_21": {
+		"textures": [
+			"textures/items/lumberaxe_21"
+		]
+	},
+	"lumberaxe_22": {
+		"textures": [
+			"textures/items/lumberaxe_22"
+		]
+	},
+	"lumberaxe_23": {
+		"textures": [
+			"textures/items/lumberaxe_23"
+		]
+	},
+	"lumberaxe_24": {
+		"textures": [
+			"textures/items/lumberaxe_24"
+		]
+	},
+	"lumberaxe_27": {
+		"textures": [
+			"textures/items/lumberaxe_27"
+		]
+	},
+	"lumberaxe_28": {
+		"textures": [
+			"textures/items/lumberaxe_28"
+		]
+	},
+	"lumberaxe_29": {
+		"textures": [
+			"textures/items/lumberaxe_29"
+		]
+	},
+	"lumberaxe_30": {
+		"textures": [
+			"textures/items/lumberaxe_30"
+		]
+	},
+	"lumberaxe_31": {
+		"textures": [
+			"textures/items/lumberaxe_31"
+		]
+	},
+	"lumberaxe_32": {
+		"textures": [
+			"textures/items/lumberaxe_32"
+		]
+	},
+	"lumberaxe_33": {
+		"textures": [
+			"textures/items/lumberaxe_33"
+		]
+	},
+	"lumberaxe_34": {
+		"textures": [
+			"textures/items/lumberaxe_34"
+		]
+	},
+	"lumberaxe_35": {
+		"textures": [
+			"textures/items/lumberaxe_35"
+		]
+	},
+	"lumberaxe_36": {
+		"textures": [
+			"textures/items/lumberaxe_36"
+		]
+	},
+	"lumberaxe_37": {
+		"textures": [
+			"textures/items/lumberaxe_37"
+		]
+	},
+	"lumberaxe_38": {
+		"textures": [
+			"textures/items/lumberaxe_38"
+		]
+	},
+	"lumberaxe_39": {
+		"textures": [
+			"textures/items/lumberaxe_39"
+		]
+	},
+	"lumberaxe_40": {
+		"textures": [
+			"textures/items/lumberaxe_40"
+		]
+	},
+	"lumberaxe_41": {
+		"textures": [
+			"textures/items/lumberaxe_41"
+		]
+	},
+	"lumberaxe_42": {
+		"textures": [
+			"textures/items/lumberaxe_42"
+		]
+	},
+	"lumberaxe_43": {
+		"textures": [
+			"textures/items/lumberaxe_43"
+		]
+	},
+	"lumberaxe_44": {
+		"textures": [
+			"textures/items/lumberaxe_44"
+		]
+	},
+	"lumberaxe_45": {
+		"textures": [
+			"textures/items/lumberaxe_45"
+		]
+	},
+	"lumberaxe_46": {
+		"textures": [
+			"textures/items/lumberaxe_46"
+		]
+	},
+	"lumberaxe_47": {
+		"textures": [
+			"textures/items/lumberaxe_47"
+		]
+	},
+	"lumberaxe_48": {
+		"textures": [
+			"textures/items/lumberaxe_48"
+		]
+	},
+	"lumberaxe_49": {
+		"textures": [
+			"textures/items/lumberaxe_49"
+		]
+	},
+	"lumberaxe_50": {
+		"textures": [
+			"textures/items/lumberaxe_50"
+		]
+	},
+	"lumberaxe_51": {
+		"textures": [
+			"textures/items/lumberaxe_51"
+		]
+	},
+	"lumberaxe_52": {
+		"textures": [
+			"textures/items/lumberaxe_52"
+		]
+	},
+	"lumberaxe_53": {
+		"textures": [
+			"textures/items/lumberaxe_53"
+		]
+	},
+	"lumberaxe_54": {
+		"textures": [
+			"textures/items/lumberaxe_54"
+		]
+	},
+	"lumberaxe_55": {
+		"textures": [
+			"textures/items/lumberaxe_55"
+		]
+	},
+	"lumberaxe_56": {
+		"textures": [
+			"textures/items/lumberaxe_56"
+		]
+	},
+	"lumberaxe_57": {
+		"textures": [
+			"textures/items/lumberaxe_57"
+		]
+	},
+	"lumberaxe_58": {
+		"textures": [
+			"textures/items/lumberaxe_58"
+		]
+	},
+	"lumberaxe_59": {
+		"textures": [
+			"textures/items/lumberaxe_59"
+		]
+	},
+	"lumberaxe_60": {
+		"textures": [
+			"textures/items/lumberaxe_60"
+		]
+	},
+	"lumberaxe_61": {
+		"textures": [
+			"textures/items/lumberaxe_61"
+		]
+	},
+	"lumberaxe_62": {
+		"textures": [
+			"textures/items/lumberaxe_62"
+		]
+	},
+	"lumberaxe_63": {
+		"textures": [
+			"textures/items/lumberaxe_63"
+		]
+	},
+	"lumberaxe_64": {
+		"textures": [
+			"textures/items/lumberaxe_64"
+		]
+	},
+	"materials_and_you": {
+		"textures": [
+			"textures/items/materials_and_you"
+		]
+	},
+	"glowball": {
+		"textures": [
+			"textures/items/glowball"
+		]
+	},
+	"efln": {
+		"textures": [
+			"textures/items/efln"
+		]
+	},
+    		/*"ice_stalagmite_item": { "textures": [ "textures/blocks/ice_stalagmite_tip" ] },
+		"ice_stalactite_item": { "textures": [ "textures/blocks/ice_stalactite_tip" ] },
+		"ice_spikes_item": { "textures": [ "textures/blocks/ice_shards" ] },
+		"ice_shards": { "textures": [ "textures/items/ice_shards" ] },
+		"frozen_iron_ore": { "textures": [ "textures/items/frozen_iron_ore" ] },
+		"blue_iced_iron_ore": { "textures": [ "textures/items/blue_iced_iron_ore" ] },*/
+    "bridge_bacon raw": {
+			"textures": [
+				"textures/items/strats_bacon raw"
+			]
+		},
+		"bridge_bacon cooked": {
+			"textures": [
+				"textures/items/strats_bacon cooked"
+			]
+		},
+		"bridge_flour": {
+			"textures": "textures/items/flour"
+		},
+		"bridge_dough": {
+			"textures": "textures/items/dough"
+		},
+		"bridge_milk bowl": {
+			"textures": "textures/items/milk bowl"
+		},
+		"bridge_cheese": {
+			"textures": "textures/items/cheese"
+		},
+		"bridge_cheese pizza": {
+			"textures": "textures/items/cheese pizza"
+		},
+		"bridge_pepperoni": {
+			"textures": [
+				"textures/items/pepperoni_2"
+			]
+		},
+		"bridge_pepperoni pizza": {
+			"textures": "textures/items/pepperoni pizza"
+		},
+		"bridge_sausage pizza": {
+			"textures": [
+				"textures/items/sausage_pizza"
+			]
+		},
+		"bridge_meat feast pizza": {
+			"textures": "textures/items/meat feast pizza"
+		},
+		"bridge_sausage raw": {
+			"textures": [
+				"textures/items/strats_sausage raw"
+			]
+		},
+		"bridge_sausage cooked": {
+			"textures": [
+				"textures/items/strats_sausage cooked"
+			]
+		},
+		"bridge_hotdog": {
+			"textures": "textures/items/hotdog"
+		},
+		"bridge_potato chips": {
+			"textures": "textures/items/potato chips"
+		},
+		"bridge_cake slice": {
+			"textures": "textures/items/cake slice"
+		},
+		"bridge_bread slice": {
+			"textures": [
+				"textures/items/bread slice"
+			]
+		},
+		"bridge_bacon sandwich": {
+			"textures": [
+				"textures/items/bacon sandwich"
+			]
+		},
+		"bridge_sausage sandwich": {
+			"textures": [
+				"textures/items/sausage sandwich"
+			]
+		},
+		"bridge_toast": {
+			"textures": [
+				"textures/items/toast"
+			]
+		},
+		"bridge_fries": {
+			"textures": [
+				"textures/items/fries"
+			]
+		},
+		"bridge_fish and chips": {
+			"textures": [
+				"textures/items/fish and chips"
+			]
+		},
+		"bridge_cheeseburger": {
+			"textures": [
+				"textures/items/cheese burger"
+			]
+		},
+		"bridge_burger raw": {
+			"textures": [
+				"textures/items/burger raw"
+			]
+		},
+		"bridge_burger cooked": {
+			"textures": [
+				"textures/items/burger cooked"
+			]
+		},
+		"bridge_fried egg": {
+			"textures": [
+				"textures/items/fried egg"
+			]
+		},
+		"bridge_banana": {
+			"textures": [
+				"textures/items/banana"
+			]
+		},
+		"strat_butter": {
+			"textures": [
+				"textures/items/butter"
+			]
+		},
+		"strat_buttered toast": {
+			"textures": [
+				"textures/items/buttered toast"
+			]
+		},
+		"strat_apple pie": {
+			"textures": [
+				"textures/items/apple_pie"
+			]
+		},
+		"strat_tomato": {
+			"textures": [
+				"textures/items/strats_tomato food"
+			]
+		},
+		"strat_tomato seeds": {
+			"textures": [
+				"textures/items/strats_tomato seeds"
+			]
+		},
+		"strat_tomato sauce": {
+			"textures": [
+				"textures/items/tomato sauce"
+			]
+		},
+		"strat_jam": {
+			"textures": [
+				"textures/items/jam"
+			]
+		},
+		"strat_jam on toast": {
+			"textures": [
+				"textures/items/jam on toast"
+			]
+		},
+		"strat_salt": {
+			"textures": [
+				"textures/items/salt"
+			]
+		},
+		"strat_cheese mold item": {
+			"textures": [
+				"textures/items/cheese_mold"
+			]
+		},
+		"strat_cheese block item": {
+			"textures": [
+				"textures/items/cheese_block_item"
+			]
+		},
+		"strat_churn item": {
+			"textures": [
+				"textures/items/churn_item"
+			]
+		},
+		"strat_cheese toastie": {
+			"textures": [
+				"textures/items/cheese toastie"
+			]
+		},
+		"strat_tomato soup": {
+			"textures": [
+				"textures/items/tomato soup"
+			]
+		},
+		"strat_baguette": {
+			"textures": [
+				"textures/items/baguette"
+			]
+		},
+		"strat_lettuce": {
+			"textures": [
+				"textures/items/strats_lettuce"
+			]
+		},
+		"strat_blt sandwich": {
+			"textures": [
+				"textures/items/blt sandwich"
+			]
+		},
+		"strat_salad": {
+			"textures": [
+				"textures/items/salad"
+			]
+		},
+		"strat_pasta": {
+			"textures": [
+				"textures/items/pasta"
+			]
+		},
+		"strat_spaghetti bolognese": {
+			"textures": [
+				"textures/items/spaghetti bolognese"
+			]
+		},
+		"strat_mashed potato": {
+			"textures": [
+				"textures/items/mashed potato"
+			]
+		},
+		"strat_bangers and mash": {
+			"textures": [
+				"textures/items/bangers and mash"
+			]
+		},
+		"strat_bacon and eggs": {
+			"textures": [
+				"textures/items/bacon and eggs"
+			]
+		},
+		"strat_crop_bush": {
+			"textures": [
+				"textures/items/crop_bush"
+			]
+		},
+		"maple_syrup": {
+			"textures": [
+				"textures/items/maple_syrup"
+			]
+		},
+		"strats_sapling_maple": {
+			"textures": [
+				"textures/items/strats_sapling_maple"
+			]
+		},
+		"maple_leaf": {
+			"textures": [
+				"textures/items/maple_leaf"
+			]
+		},
+		"batter": {
+			"textures": [
+				"textures/items/batter"
+			]
+		},
+		"pancake": {
+			"textures": [
+				"textures/items/pancake"
+			]
+		},
+		"buttered_pancake": {
+			"textures": [
+				"textures/items/pancake_2"
+			]
+		},
+		"jam_pancake": {
+			"textures": [
+				"textures/items/jam_pancake"
+			]
+		},
+		"maple_syrup_pancake": {
+			"textures": [
+				"textures/items/maple_syrup_pancake"
+			]
+		},
+		"lettuce_seeds": {
+			"textures": [
+				"textures/items/strats_lettuce seeds"
+			]
+		},
+		"chicken_soup": {
+			"textures": [
+				"textures/items/chicken soup"
+			]
+		},
+		"beef_stew": {
+			"textures": [
+				"textures/items/beef_stew"
+			]
+		},
+		"steak_and_chips": {
+			"textures": [
+				"textures/items/steak_and_chips"
+			]
+		},
+		"chicken_nuggets": {
+			"textures": [
+				"textures/items/chicken_nuggets"
+			]
+		},
+		"nuggets_and_fries": {
+			"textures": [
+				"textures/items/nuggets_and_fries"
+			]
+		},
+		"buttered_potato": {
+			"textures": [
+				"textures/items/jacket potato"
+			]
+		},
+		"pot_item": {
+			"textures": [
+				"textures/items/pot"
+			]
+		},
+		"frying_pan": {
+			"textures": [
+				"textures/items/frying_pan"
+			]
+		},
+		"knife": {
+			"textures": [
+				"textures/items/knife"
+			]
+		},
+		"chicken_slices": {
+			"textures": [
+				"textures/items/chicken_slices"
+			]
+		},
+		"raw_chicken_wing": {
+			"textures": [
+				"textures/items/raw_chicken_wing"
+			]
+		},
+		"cooked_chicken_wing": {
+			"textures": [
+				"textures/items/cooked_chicken_wing"
+			]
+		},
+		"chopping_board_item": {
+			"textures": [
+				"textures/items/chopping_board_item"
+			]
+		},
+		"toaster_item": {
+			"textures": [
+				"textures/items/toaster_item"
+			]
+		},
+		"paper_plate": {
+			"textures": [
+				"textures/items/paper_plate"
+			]
+		},
+		"paper_plate_dirty": {
+			"textures": [
+				"textures/items/paper_plate_dirty"
+			]
+		},
+		"spaghetti": {
+			"textures": [
+				"textures/items/spaghetti"
+			]
+		},
+		"clay_plate": {
+			"textures": [
+				"textures/items/clay_plate"
+			]
+		},
+		"ceramic_plate": {
+			"textures": [
+				"textures/items/ceramic_plate"
+			]
+		},
+		"spaghetti2": {
+			"textures": [
+				"textures/items/spaghetti2"
+			]
+		},
+		"fish_and_chips2": {
+			"textures": [
+				"textures/items/fish and chips2"
+			]
+		},
+		"steak_and_chips2": {
+			"textures": [
+				"textures/items/steak_and_chips2"
+			]
+		},
+		"nuggets_and_fries2": {
+			"textures": [
+				"textures/items/nuggets_and_fries2"
+			]
+		},
+		"bacon_and_eggs2": {
+			"textures": [
+				"textures/items/bacon and eggs2"
+			]
+		},
+		"bangers_and_mash2": {
+			"textures": [
+				"textures/items/bangers and mash2"
+			]
+		},
+		"strat_banana_sapling": {
+			"textures": [
+				"textures/items/strats_sapling_banana"
+			]
+		},
+		"cocoa_powder": {
+			"textures": [
+				"textures/items/cocoa_powder"
+			]
+		},
+		"chocolate_bar": {
+			"textures": [
+				"textures/items/chocolate_bar"
+			]
+		},
+		"mortar_and_pestle_item": {
+			"textures": [
+				"textures/items/mortar_and_pestle_item"
+			]
+		},
+		"chocolate_cake_item": {
+			"textures": [
+				"textures/items/chocolate_cake_item"
+			]
+		},
+		"chocolate_cake_slice": {
+			"textures": [
+				"textures/items/chocolate_cake_slice"
+			]
+		},
+		"marshmallow": {
+			"textures": [
+				"textures/items/marshmallow"
+			]
+		},
+		"smore": {
+			"textures": [
+				"textures/items/smore"
+			]
+		},
+		"orange": {
+			"textures": [
+				"textures/items/orange"
+			]
+		},
+		"marmalade": {
+			"textures": [
+				"textures/items/marmalade"
+			]
+		},
+		"banana_open": {
+			"textures": [
+				"textures/items/banana_open"
+			]
+		},
+		"pizza_dinner": {
+			"textures": [
+				"textures/items/pizza_dinner"
+			]
+		},
+		"pizza_dinner2": {
+			"textures": [
+				"textures/items/pizza_dinner2"
+			]
+		},
+		"marmalade_on_toast": {
+			"textures": [
+				"textures/items/marmalade_on_toast"
+			]
+		},
+		"orange_sapling": {
+			"textures": [
+				"textures/items/sapling_orange"
+			]
+		},
+		"banana_bread": {
+			"textures": [
+				"textures/items/banana_bread"
+			]
+		},
+		"chocolate_banana": {
+			"textures": [
+				"textures/items/chocolate_banana"
+			]
+		},
+		"corn_dog": {
+			"textures": [
+				"textures/items/corn_dog"
+			]
+		},
+		"cook_book": {
+			"textures": [
+				"textures/items/cook_book"
+			]
+		},
+		"raw_cheese_pizza": {
+			"textures": [
+				"textures/items/raw_cheese_pizza"
+			]
+		},
+		"cheese_pizza_block": {
+			"textures": [
+				"textures/items/cheese_pizza_block"
+			]
+		},
+		"pepperoni_pizza_block": {
+			"textures": [
+				"textures/items/pepperoni_pizza_block"
+			]
+		},
+		"sausage_pizza_block": {
+			"textures": [
+				"textures/items/sausage_pizza_block"
+			]
+		},
+		"meat_feast_pizza_block": {
+			"textures": [
+				"textures/items/meat_feast_pizza_block"
+			]
+		},
+		"raw_donut": {
+			"textures": [
+				"textures/items/raw_donut"
+			]
+		},
+		"donut": {
+			"textures": [
+				"textures/items/donut"
+			]
+		},
+		"chocolate_donut": {
+			"textures": [
+				"textures/items/chocolate_donut"
+			]
+		},
+		"ice_cream_cone": {
+			"textures": [
+				"textures/items/ice_cream_cone"
+			]
+		},
+		"ice_cream": {
+			"textures": [
+				"textures/items/ice_cream"
+			]
+		},
+		"chocolate_ice_cream": {
+			"textures": [
+				"textures/items/chocolate_ice_cream"
+			]
+		},
+		"sweet_berry_ice_cream": {
+			"textures": [
+				"textures/items/sweet_berry_ice_cream"
+			]
+		},
+		"waffle": {
+			"textures": [
+				"textures/items/waffle"
+			]
+		},
+		"jam_waffle": {
+			"textures": [
+				"textures/items/jam_waffle"
+			]
+		},
+		"maple_syrup_waffle": {
+			"textures": [
+				"textures/items/maple_syrup_waffle"
+			]
+		},
+		"banana_split": {
+			"textures": [
+				"textures/items/banana_split"
+			]
+		},
+		"cookie_dough": {
+			"textures": [
+				"textures/items/cookie_dough"
+			]
+		},
+		"cookie_dough_ice_cream": {
+			"textures": [
+				"textures/items/cookie_dough_ice_cream"
+			]
+		},
+		"deluxe_burger": {
+			"textures": [
+				"textures/items/deluxe_burger"
+			]
+		},
+		"glass_jar": {
+			"textures": [
+				"textures/items/glass_jar"
+			]
+		},
+		"milk_jar": {
+			"textures": [
+				"textures/items/milk_jar"
+			]
+		},
+		"water_jar": {
+			"textures": [
+				"textures/items/water_jar"
+			]
+		},
+		"chocolate_orange": {
+			"textures": [
+				"textures/items/chocolate_orange"
+			]
+		},
+		"chubby_bunny_trophy": {
+			"textures": [
+				"textures/items/chubby_bunny_trophy"
+			]
+		},
+		"farmers_trophy": {
+			"textures": [
+				"textures/items/farmers_trophy"
+			]
+		},
+		"apple_sapling": {
+			"textures": [
+				"textures/items/sapling_apple"
+			]
+		},
+		"maple_shears": {
+			"textures": [
+				"textures/items/maple_shears"
+			]
+		},
+		"chocolate_sprinkled_donut": {
+			"textures": [
+				"textures/items/chocolate_sprinkled_donut"
+			]
+		},
+		"pumpkin_pie_slice": {
+			"textures": [
+				"textures/items/pumpkin_pie_slice"
+			]
+		},
+		"pumpkin_pie_item": {
+			"textures": [
+				"textures/items/pumpkin_pie_item"
+			]
+		},
+		"apple_pie_slice": {
+			"textures": [
+				"textures/items/apple_pie_slice"
+			]
+		},
+		"cheese_cake_item": {
+			"textures": [
+				"textures/items/cheese_cake_item"
+			]
+		},
+		"cheese_cake_slice": {
+			"textures": [
+				"textures/items/cheese_cake_slice"
+			]
+		},
+		"raw_foodism_trophy": {
+			"textures": [
+				"textures/items/raw_foodism_trophy"
+			]
+		},
+		"chicken_and_waffles": {
+			"textures": [
+				"textures/items/chicken_and_waffles"
+			]
+		},
+		"chicken_and_waffles2": {
+			"textures": [
+				"textures/items/chicken_and_waffles2"
+			]
+		},
+		"christmas_cake_item": {
+			"textures": [
+				"textures/items/christmas_cake_item"
+			]
+		},
+		"christmas_cake_slice": {
+			"textures": [
+				"textures/items/christmas_cake_slice"
+			]
+		},
+		"candy_cane": {
+			"textures": [
+				"textures/items/candy_cane"
+			]
+		},
+		"milk_and_cookies": {
+			"textures": [
+				"textures/items/milk_and_cookies"
+			]
+		},
+		"milk_and_cookies2": {
+			"textures": [
+				"textures/items/milk_and_cookies2"
+			]
+		},
+		"yule_log": {
+			"textures": [
+				"textures/items/yule_log_item"
+			]
+		},
+		"roast_chicken": {
+			"textures": [
+				"textures/items/roast_chicken"
+			]
+		},
+		"roast_chicken2": {
+			"textures": [
+				"textures/items/roast_chicken2"
+			]
+		},
+		"lasagne": {
+			"textures": [
+				"textures/items/lasagne"
+			]
+		},
+		"cornish_pasty": {
+			"textures": [
+				"textures/items/cornish_pasty"
+			]
+		},
+		"ice_cream_sandwich": {
+			"textures": [
+				"textures/items/ice_cream_sandwich"
+			]
+		},
+		/*"ice_stalagmite_item": { "textures": [ "textures/blocks/ice_stalagmite_tip" ] },
+		"ice_stalactite_item": { "textures": [ "textures/blocks/ice_stalactite_tip" ] },
+		"ice_spikes_item": { "textures": [ "textures/blocks/ice_shards" ] },
+		"ice_shards": { "textures": [ "textures/items/ice_shards" ] },
+		"frozen_iron_ore": { "textures": [ "textures/items/frozen_iron_ore" ] },
+		"blue_iced_iron_ore": { "textures": [ "textures/items/blue_iced_iron_ore" ] },*/
+		"luminite_ore": { "textures": [ "textures/items/luminite_ore" ] },
+		"deepslate_luminite_ore": { "textures": [ "textures/items/deepslate_luminite_ore" ] },
+		"glow_mycelium": { "textures": [ "textures/items/glow_mycelium" ] },
+		"radiant_vines_item": { "textures": [ "textures/blocks/radiant_vines_body" ] },
+
+		"luminous_mushroom_item": { "textures": [ "textures/blocks/luminous_mushroom" ] },
+		"luminous_mushroom_block": { "textures": [ "textures/items/luminous_mushroom_block" ] },
+		"luminous_mushroom_stem": { "textures": [ "textures/items/luminous_mushroom_stem" ] },
+		"luminous_mushroom_stew": { "textures": [ "textures/items/luminous_mushroom_stew" ] },
+
+		"luminite": { "textures": [ "textures/items/luminite" ] },
+		"luminite_shard": { "textures": [ "textures/items/luminite_shard" ] },
+		"luminite_block": { "textures": [ "textures/items/luminite_block" ] },
+		"luminite_helmet": { "textures": [ "textures/items/luminite_helmet" ] },
+		"luminite_chestplate": { "textures": [ "textures/items/luminite_chestplate" ] },
+		"luminite_leggings": { "textures": [ "textures/items/luminite_leggings" ] },
+		"luminite_boots": { "textures": [ "textures/items/luminite_boots" ] },
+		"luminite_sword": { "textures": [ "textures/items/luminite_sword" ] },
+		"luminite_pickaxe": { "textures": [ "textures/items/luminite_pickaxe" ] },
+		"luminite_shovel": { "textures": [ "textures/items/luminite_shovel" ] },
+		"luminite_axe": { "textures": [ "textures/items/luminite_axe" ] },
+		"luminite_hoe": { "textures": [ "textures/items/luminite_hoe" ] },
+
+		"slime_soup": { "textures": [ "textures/items/slime_soup" ] },
+		"slimeball_part": { "textures": [ "textures/items/slimeball_part" ] },
+		"dripping_slime_item": { "textures": [ "textures/blocks/dripping_slime_head" ] },
+		"slimy_sprouts_item": { "textures": [ "textures/blocks/slimy_sprouts" ] },
+		"slimy_blossom_item": { "textures": [ "textures/items/slimy_blossom_item" ] },
+		"slimy_stone": { "textures": [ "textures/items/slimy_stone" ] },
+		"slime_layer": { "textures": [ "textures/items/slime_layer" ] },
+		"hardened_slimeball": { "textures": [ "textures/items/hardened_slimeball" ] },
+
+
+		"sand_layer": { "textures": [ "textures/items/sand_layer" ] },
+		"quicksand": { "textures": [ "textures/items/quicksand" ] },
+		"limestone": { "textures": [ "textures/items/limestone" ] },
+		"cobbled_limestone": { "textures": [ "textures/items/cobbled_limestone" ] },
+		"polished_limestone": { "textures": [ "textures/items/polished_limestone" ] },
+		"limestone_bricks": { "textures": [ "textures/items/limestone_bricks" ] },
+		"limestone_bricks_slab": { "textures": [ "textures/items/limestone_bricks_slab" ] },
+		"limestone_bricks_chiseled": { "textures": [ "textures/items/limestone_bricks_chiseled" ] },
+		"limestone_bricks_cracked": { "textures": [ "textures/items/limestone_bricks_cracked" ] },
+		"limestone_bricks_mossy": { "textures": [ "textures/items/limestone_bricks_mossy" ] },
+		"sandy_roots_item": { "textures": [ "textures/blocks/sandy_roots_head" ] },
+		"raw_scorpion": { "textures": [ "textures/items/raw_scorpion" ] },
+		"cooked_scorpion": { "textures": [ "textures/items/cooked_scorpion" ] },
+		"fatal_poison_potion": { "textures": [ "textures/items/fatal_poison_potion" ] },
+
+		"frosted_stone": { "textures": [ "textures/items/frosted_stone" ] },
+		"frosted_pebbles_item": { "textures": [ "textures/items/frosted_pebbles" ] },
+		"pebbles_item": { "textures": [ "textures/items/pebbles" ] },
+		"cobblestone_pebbles_item": { "textures": [ "textures/items/cobblestone_pebbles" ] },
+		"ice_crystal_item": { "textures": [ "textures/blocks/ice_crystal" ] },
+		"ice_shard": { "textures": [ "textures/items/ice_shard" ] },
+		"dripping_icicle_item": { "textures": [ "textures/items/dripping_icicle_item" ] },
+		"crystallized_ice": { "textures": [ "textures/items/crystallized_ice" ] },
+		"deepslate_glow_mycelium": { "textures": [ "textures/items/deepslate_glow_mycelium" ] },
+		"slimy_deepslate": { "textures": [ "textures/items/slimy_deepslate" ] },
+		"luminous_mooshroom_spawn_egg": { "textures": [ "textures/items/luminous_mooshroom_spawn_egg" ] },
+		"frozen_potion": { "textures": [ "textures/items/frozen_potion" ] },
+		"packed_ice_bricks": { "textures": [ "textures/items/packed_ice_bricks" ] },
+		"packed_ice_bricks_slab": { "textures": [ "textures/items/packed_ice_bricks_slab" ] },
+		"packed_ice_bricks_cracked": { "textures": [ "textures/items/packed_ice_bricks_cracked" ] },
+		"packed_ice_chiseled": { "textures": [ "textures/items/packed_ice_chiseled" ] },
+		"suitcase": { "textures": [ "textures/items/suitcase" ] },
+
+		"frosted_deepslate": { "textures": [ "textures/items/frosted_deepslate" ] },
+		"deepslate_pebbles_item": { "textures": [ "textures/items/deepslate_pebbles" ] },
+		"cobbled_deepslate_pebbles_item": { "textures": [ "textures/items/cobbled_deepslate_pebbles" ] },
+		"frosted_deepslate_pebbles_item": { "textures": [ "textures/items/frosted_deepslate_pebbles" ] },
+
+		"limestone_pebbles_item": { "textures": [ "textures/items/limestone_pebbles" ] },
+		"cobbled_limestone_pebbles_item": { "textures": [ "textures/items/cobbled_limestone_pebbles" ] },
+
+		"gloomy_mushroom_item": { "textures": [ "textures/blocks/gloomy_mushroom" ] },
+		"mysterious_fungus_item": { "textures": [ "textures/blocks/mysterious_fungus" ] },
+		"mysterious_stew": { "textures": [ "textures/items/mysterious_stew" ] },
+		"sand_lump": { "textures": [ "textures/items/sand_lump" ] },
+		"sticky_spikes_item": { "textures": [ "textures/blocks/sticky_spikes" ] },
+		"slime_dagger": { "textures": [ "textures/items/slime_dagger" ] },
+    "blazing_fishing_pole": {
+      "textures": "textures/items/blazing_fishing_pole"
+    },
+    "abyssal_lurker": {
+      "textures": "textures/items/abyssal_lurker"
+    },
+    "angelfish": {
+      "textures": "textures/items/angelfish"
+    },
+    "angler_fish": {
+      "textures": "textures/items/angler_fish"
+    },
+    "blaze_pike": {
+      "textures": "textures/items/blaze_pike"
+    },
+    "bonefish": {
+      "textures": "textures/items/bonefish"
+    },
+    "brown_shroomfin": {
+      "textures": "textures/items/brown_shroomfin"
+    },
+    "catfish": {
+      "textures": "textures/items/catfish"
+    },
+    "cave_trout": {
+      "textures": "textures/items/cave_trout"
+    },
+    "charged_bullhead": {
+      "textures": "textures/items/charged_bullhead"
+    },
+    "chorus_koi": {
+      "textures": "textures/items/chorus_koi"
+    },
+    "crystal_mullet": {
+      "textures": "textures/items/crystal_mullet"
+    },
+    "cursed_koi": {
+      "textures": "textures/items/cursed_koi"
+    },
+    "ender_shad": {
+      "textures": "textures/items/ender_shad"
+    },
+    "explosive_crucian": {
+      "textures": "textures/items/explosive_crucian"
+    },
+    "flarefin_koi": {
+      "textures": "textures/items/flarefin_koi"
+    },
+    "frost_minnow": {
+      "textures": "textures/items/frost_minnow"
+    },
+    "fungi_catfish": {
+      "textures": "textures/items/fungi_catfish"
+    },
+    "glacier_anchovy": {
+      "textures": "textures/items/glacier_anchovy"
+    },
+    "golden_koi": {
+      "textures": "textures/items/golden_koi"
+    },
+    "green_jellyfish": {
+      "textures": "textures/items/green_jellyfish"
+    },
+    "jellyfish": {
+      "textures": "textures/items/jellyfish"
+    },
+    "magikarp": {
+      "textures": "textures/items/magikarp"
+    },
+    "magma_jellyfish": {
+      "textures": "textures/items/magma_jellyfish"
+    },
+    "mandarinfish": {
+      "textures": "textures/items/mandarinfish"
+    },
+    "mud_tuna": {
+      "textures": "textures/items/mud_tuna"
+    },
+    "nether_sturgeon": {
+      "textures": "textures/items/nether_sturgeon"
+    },
+    "obsidian_bream": {
+      "textures": "textures/items/obsidian_bream"
+    },
+    "pearl_sardine": {
+      "textures": "textures/items/pearl_sardine"
+    },
+    "pike": {
+      "textures": "textures/items/pike"
+    },
+    "piranha": {
+      "textures": "textures/items/piranha"
+    },
+    "quartz_chub": {
+      "textures": "textures/items/quartz_chub"
+    },
+    "red_shroomfin": {
+      "textures": "textures/items/red_shroomfin"
+    },
+    "ruffe": {
+      "textures": "textures/items/ruffe"
+    },
+    "sandy_bass": {
+      "textures": "textures/items/sandy_bass"
+    },
+    "snowy_walleye": {
+      "textures": "textures/items/snowy_walleye"
+    },
+    "sparkling_eel": {
+      "textures": "textures/items/sparkling_eel"
+    },
+    "specular_snapper": {
+      "textures": "textures/items/specular_snapper"
+    },
+    "sponge_eater": {
+      "textures": "textures/items/sponge_eater"
+    },
+    "spookyfin": {
+      "textures": "textures/items/spookyfin"
+    },
+    "squid": {
+      "textures": "textures/items/squid"
+    },
+    "sunfish": {
+      "textures": "textures/items/sunfish"
+    },
+    "swamp_plaice": {
+      "textures": "textures/items/swamp_plaice"
+    },
+    "withered_crucian": {
+      "textures": "textures/items/withered_crucian"
+    }
+  }
+}

@@ -1,0 +1,520 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\chocolate_orange.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "5e0588e7_44be_4946_939a_a790081710ed",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:chocolate_orange",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 1.6,
+							"minecraft:food": {
+								"nutrition": 9,
+								"saturation_modifier": "max",
+								"can_always_eat": false,
+								"on_consume": {
+									"event": "absorption"
+								}
+							},
+							"minecraft:icon": {
+								"texture": "chocolate_orange"
+							},
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							}
+						},
+						"events": {
+							"absorption": {
+								"randomize": [
+									{
+										"weight": 15
+									},
+									{
+										"run_command": {
+											"command": [
+												"effect @p absorption 20 1"
+											]
+										},
+										"weight": 2
+									},
+									{
+										"run_command": {
+											"command": [
+												"effect @p absorption 30 0"
+											]
+										},
+										"weight": 3
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_orange",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "max",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "absorption"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "chocolate_orange"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							"events": {
+								"absorption": {
+									"randomize": [
+										{
+											"weight": 15
+										},
+										{
+											"run_command": {
+												"command": [
+													"effect @p absorption 20 1"
+												]
+											},
+											"weight": 2
+										},
+										{
+											"run_command": {
+												"command": [
+													"effect @p absorption 30 0"
+												]
+											},
+											"weight": 3
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:chocolate_orange",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_orange",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "max",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "absorption"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "chocolate_orange"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							"events": {
+								"absorption": {
+									"randomize": [
+										{
+											"weight": 15
+										},
+										{
+											"run_command": {
+												"command": [
+													"effect @p absorption 20 1"
+												]
+											},
+											"weight": 2
+										},
+										{
+											"run_command": {
+												"command": [
+													"effect @p absorption 30 0"
+												]
+											},
+											"weight": 3
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1.6",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "max",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "absorption"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "chocolate_orange"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:food",
+								"children": [
+									{
+										"data": "9",
+										"key": "nutrition"
+									},
+									{
+										"data": "max",
+										"key": "saturation_modifier"
+									},
+									{
+										"data": "false",
+										"key": "can_always_eat"
+									},
+									{
+										"open": {
+											"nutrition": 9,
+											"saturation_modifier": "max",
+											"can_always_eat": false,
+											"on_consume": {
+												"event": "absorption"
+											}
+										},
+										"key": "on_consume",
+										"is_minified": true,
+										"children": {
+											"event": "absorption"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "max",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "absorption"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "chocolate_orange"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "chocolate_orange"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_orange",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "max",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "absorption"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "chocolate_orange"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							"events": {
+								"absorption": {
+									"randomize": [
+										{
+											"weight": 15
+										},
+										{
+											"run_command": {
+												"command": [
+													"effect @p absorption 20 1"
+												]
+											},
+											"weight": 2
+										},
+										{
+											"run_command": {
+												"command": [
+													"effect @p absorption 30 0"
+												]
+											},
+											"weight": 3
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"absorption": {
+										"randomize": [
+											{
+												"weight": 15
+											},
+											{
+												"run_command": {
+													"command": [
+														"effect @p absorption 20 1"
+													]
+												},
+												"weight": 2
+											},
+											{
+												"run_command": {
+													"command": [
+														"effect @p absorption 30 0"
+													]
+												},
+												"weight": 3
+											}
+										]
+									}
+								},
+								"key": "absorption",
+								"children": [
+									{
+										"open": {
+											"randomize": [
+												{
+													"weight": 15
+												},
+												{
+													"run_command": {
+														"command": [
+															"effect @p absorption 20 1"
+														]
+													},
+													"weight": 2
+												},
+												{
+													"run_command": {
+														"command": [
+															"effect @p absorption 30 0"
+														]
+													},
+													"weight": 3
+												}
+											]
+										},
+										"key": "randomize",
+										"children": [
+											{
+												"open": [
+													{
+														"weight": 15
+													},
+													{
+														"run_command": {
+															"command": [
+																"effect @p absorption 20 1"
+															]
+														},
+														"weight": 2
+													},
+													{
+														"run_command": {
+															"command": [
+																"effect @p absorption 30 0"
+															]
+														},
+														"weight": 3
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"weight": 15
+												}
+											},
+											{
+												"open": [
+													{
+														"weight": 15
+													},
+													{
+														"run_command": {
+															"command": [
+																"effect @p absorption 20 1"
+															]
+														},
+														"weight": 2
+													},
+													{
+														"run_command": {
+															"command": [
+																"effect @p absorption 30 0"
+															]
+														},
+														"weight": 3
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"effect @p absorption 20 1"
+																]
+															},
+															"weight": 2
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"effect @p absorption 20 1"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"effect @p absorption 20 1"
+																]
+															}
+														]
+													},
+													{
+														"data": "2",
+														"key": "weight"
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"weight": 15
+													},
+													{
+														"run_command": {
+															"command": [
+																"effect @p absorption 20 1"
+															]
+														},
+														"weight": 2
+													},
+													{
+														"run_command": {
+															"command": [
+																"effect @p absorption 30 0"
+															]
+														},
+														"weight": 3
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"effect @p absorption 30 0"
+																]
+															},
+															"weight": 3
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"effect @p absorption 30 0"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"effect @p absorption 30 0"
+																]
+															}
+														]
+													},
+													{
+														"data": "3",
+														"key": "weight"
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

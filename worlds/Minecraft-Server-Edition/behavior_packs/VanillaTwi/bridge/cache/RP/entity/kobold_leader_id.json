@@ -1,0 +1,315 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\kobold_leader_id.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "32b3a316_0c03_401e_a61e_72a900161d27",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vanilla_twilight:kobold_banner",
+							"materials": {
+								"default": "fireball"
+							},
+							"textures": {
+								"default": "textures/items/villagebell"
+							},
+							"geometry": {
+								"default": "geometry.kbid"
+							},
+							"animations": {
+								"face_player": "animation.actor.billboard2"
+							},
+							"scripts": {
+								"scale": 0.25,
+								"animate": [
+									"face_player"
+								]
+							},
+							"render_controllers": [
+								"controller.render.fireball"
+							]
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:kobold_banner",
+								"materials": {
+									"default": "fireball"
+								},
+								"textures": {
+									"default": "textures/items/villagebell"
+								},
+								"geometry": {
+									"default": "geometry.kbid"
+								},
+								"animations": {
+									"face_player": "animation.actor.billboard2"
+								},
+								"scripts": {
+									"scale": 0.25,
+									"animate": [
+										"face_player"
+									]
+								},
+								"render_controllers": [
+									"controller.render.fireball"
+								]
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold_banner",
+									"materials": {
+										"default": "fireball"
+									},
+									"textures": {
+										"default": "textures/items/villagebell"
+									},
+									"geometry": {
+										"default": "geometry.kbid"
+									},
+									"animations": {
+										"face_player": "animation.actor.billboard2"
+									},
+									"scripts": {
+										"scale": 0.25,
+										"animate": [
+											"face_player"
+										]
+									},
+									"render_controllers": [
+										"controller.render.fireball"
+									]
+								},
+								"data": "vanilla_twilight:kobold_banner",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold_banner",
+									"materials": {
+										"default": "fireball"
+									},
+									"textures": {
+										"default": "textures/items/villagebell"
+									},
+									"geometry": {
+										"default": "geometry.kbid"
+									},
+									"animations": {
+										"face_player": "animation.actor.billboard2"
+									},
+									"scripts": {
+										"scale": 0.25,
+										"animate": [
+											"face_player"
+										]
+									},
+									"render_controllers": [
+										"controller.render.fireball"
+									]
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "fireball"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold_banner",
+									"materials": {
+										"default": "fireball"
+									},
+									"textures": {
+										"default": "textures/items/villagebell"
+									},
+									"geometry": {
+										"default": "geometry.kbid"
+									},
+									"animations": {
+										"face_player": "animation.actor.billboard2"
+									},
+									"scripts": {
+										"scale": 0.25,
+										"animate": [
+											"face_player"
+										]
+									},
+									"render_controllers": [
+										"controller.render.fireball"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/items/villagebell"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold_banner",
+									"materials": {
+										"default": "fireball"
+									},
+									"textures": {
+										"default": "textures/items/villagebell"
+									},
+									"geometry": {
+										"default": "geometry.kbid"
+									},
+									"animations": {
+										"face_player": "animation.actor.billboard2"
+									},
+									"scripts": {
+										"scale": 0.25,
+										"animate": [
+											"face_player"
+										]
+									},
+									"render_controllers": [
+										"controller.render.fireball"
+									]
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.kbid"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold_banner",
+									"materials": {
+										"default": "fireball"
+									},
+									"textures": {
+										"default": "textures/items/villagebell"
+									},
+									"geometry": {
+										"default": "geometry.kbid"
+									},
+									"animations": {
+										"face_player": "animation.actor.billboard2"
+									},
+									"scripts": {
+										"scale": 0.25,
+										"animate": [
+											"face_player"
+										]
+									},
+									"render_controllers": [
+										"controller.render.fireball"
+									]
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"face_player": "animation.actor.billboard2"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold_banner",
+									"materials": {
+										"default": "fireball"
+									},
+									"textures": {
+										"default": "textures/items/villagebell"
+									},
+									"geometry": {
+										"default": "geometry.kbid"
+									},
+									"animations": {
+										"face_player": "animation.actor.billboard2"
+									},
+									"scripts": {
+										"scale": 0.25,
+										"animate": [
+											"face_player"
+										]
+									},
+									"render_controllers": [
+										"controller.render.fireball"
+									]
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"scale": 0.25,
+											"animate": [
+												"face_player"
+											]
+										},
+										"data": "0.25",
+										"key": "scale"
+									},
+									{
+										"open": {
+											"scale": 0.25,
+											"animate": [
+												"face_player"
+											]
+										},
+										"key": "animate",
+										"is_minified": true,
+										"children": [
+											"face_player"
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold_banner",
+									"materials": {
+										"default": "fireball"
+									},
+									"textures": {
+										"default": "textures/items/villagebell"
+									},
+									"geometry": {
+										"default": "geometry.kbid"
+									},
+									"animations": {
+										"face_player": "animation.actor.billboard2"
+									},
+									"scripts": {
+										"scale": 0.25,
+										"animate": [
+											"face_player"
+										]
+									},
+									"render_controllers": [
+										"controller.render.fireball"
+									]
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.fireball"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

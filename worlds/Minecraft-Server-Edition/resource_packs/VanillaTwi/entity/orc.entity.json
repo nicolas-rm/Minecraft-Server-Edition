@@ -1,0 +1,46 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mythmob:orc",
+			"materials": {
+				"default": "goblin"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/orc"
+			},
+			"geometry": {
+				"default": "geometry.orc"
+			},
+			"animations": {
+				"vindicator_walk": "animation.ogre.move",
+				"attack.goblin": "animation.orc.attack",
+				"look_at_target_default": "animation.kobold.look_at_target.default",
+				"bob": "animation.humanoid.bob"
+			},
+			"animation_controllers": [
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"vindicator_base": "controller.animation.vindicator.base.v1.0"
+				},
+				{
+					"attack": "controller.animation.goblin.attack"
+				},
+				{
+					"bob": "controller.animation.humanoid.bob"
+				}
+			],
+			"render_controllers": [
+				"controller.render.orc"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"base_color": "#ae5653",
+				"overlay_color": "#4F5A2C"
+			}
+		}
+	}
+}

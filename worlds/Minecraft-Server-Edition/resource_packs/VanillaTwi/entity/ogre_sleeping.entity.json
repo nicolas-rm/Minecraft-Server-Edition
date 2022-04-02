@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mythmob:ogre_sleeping",
+      "materials": { "default": "goblin" },
+	  "textures": {
+        "default": "textures/entity/mythmob/ogre_sleeping"
+      },
+      "geometry": {"default": "geometry.ogre_sleeping"},
+      "render_controllers": [ "controller.render.ogre" ],
+      "enable_attachables": true,
+	  "spawn_egg": {
+        "base_color": "#b98470",
+        "overlay_color": "#cfcfcf"
+      }
+    }
+  }
+}

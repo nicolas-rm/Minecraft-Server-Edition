@@ -1,0 +1,133 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\distillation_chamber.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "a6cad70e_e42e_4310_9105_b0490c52f0e3",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:distillation_chamber"
+						},
+						"components": {
+							"minecraft:destroy_time": 0.8,
+							"minecraft:block_light_emission": 0.4,
+							"minecraft:explosion_resistance": 4,
+							"minecraft:geometry": "geometry.distillation_chamber",
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "distillation chamber",
+									"render_method": "alpha_test"
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:distillation_chamber"
+							},
+							"components": {
+								"minecraft:destroy_time": 0.8,
+								"minecraft:block_light_emission": 0.4,
+								"minecraft:explosion_resistance": 4,
+								"minecraft:geometry": "geometry.distillation_chamber",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "distillation chamber",
+										"render_method": "alpha_test"
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:distillation_chamber"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:distillation_chamber"
+							},
+							"components": {
+								"minecraft:destroy_time": 0.8,
+								"minecraft:block_light_emission": 0.4,
+								"minecraft:explosion_resistance": 4,
+								"minecraft:geometry": "geometry.distillation_chamber",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "distillation chamber",
+										"render_method": "alpha_test"
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "0.8",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"data": "0.4",
+								"key": "minecraft:block_light_emission"
+							},
+							{
+								"data": "4",
+								"key": "minecraft:explosion_resistance"
+							},
+							{
+								"data": "geometry.distillation_chamber",
+								"key": "minecraft:geometry"
+							},
+							{
+								"open": {
+									"minecraft:destroy_time": 0.8,
+									"minecraft:block_light_emission": 0.4,
+									"minecraft:explosion_resistance": 4,
+									"minecraft:geometry": "geometry.distillation_chamber",
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "distillation chamber",
+											"render_method": "alpha_test"
+										}
+									}
+								},
+								"key": "minecraft:material_instances",
+								"children": [
+									{
+										"open": {
+											"*": {
+												"texture": "distillation chamber",
+												"render_method": "alpha_test"
+											}
+										},
+										"key": "*",
+										"is_minified": true,
+										"children": {
+											"texture": "distillation chamber",
+											"render_method": "alpha_test"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

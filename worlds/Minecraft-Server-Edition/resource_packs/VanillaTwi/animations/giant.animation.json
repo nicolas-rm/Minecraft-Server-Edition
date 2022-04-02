@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.giant.attack": {
+			"loop": true,
+			"bones": {
+				"arm0": {
+					"rotation": ["(Math.cos(query.life_time * 20.0 * 3.84) * 2.87) + (variable.attack2 * 126.05 - variable.attack * 22.92)", 0, 0]
+				},
+				"arm1": {
+					"rotation": ["(Math.cos(query.life_time * 20.0 * 3.84) * 2.87) + (variable.attack2 * 126.05 - variable.attack * 22.92)", 0, 0]
+				}
+			}
+		},
+		"animation.giant.default_leg_pose": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

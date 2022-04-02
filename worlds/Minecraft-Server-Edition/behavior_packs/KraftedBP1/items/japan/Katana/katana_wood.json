@@ -1,0 +1,137 @@
+{
+	"format_version": "1.17.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "true:wooden_katana",
+			"category": "equipment"
+		},
+		"components": {
+			"tag:minecraft:is_sword": {},
+			"minecraft:repairable": {
+				"repair_items": [
+				  {
+					"items": [
+					  "minecraft:planks"
+					],
+					"repair_amount": 80
+				  },
+				  {
+					"items": [
+					  "minecraft:crimson_planks"
+					],
+					"repair_amount": 80
+				  },
+				  {
+					"items": [
+					  "minecraft:warped_planks"
+					],
+					"repair_amount": 80
+				  },
+				  {
+					"items": [
+					  "true:wooden_katana"
+					],
+					"repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+				  }
+				]
+			  },
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"third_person": {
+						"position": [0.6,1.9,-1.0],
+						"scale": [
+							0.1,
+							0.04,
+							0.1
+						 ]
+					},
+					"first_person": {
+						"position": [0.45,0.1,-1.1],
+						"scale": [
+						   0.035,
+						   0.02,
+						   0.035
+						]
+					 }
+				}
+			 },
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:mining_speed": 1.5,
+			"minecraft:damage": 5,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 15,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 100,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "minecraft:break",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:icon": {
+				"texture": "wooden_katana"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "sweep_special"
+				}
+			},
+			"minecraft:durability": {
+				"max_durability": 41
+			}
+		},
+		"events": {
+			"sweep_special":{
+				"sequence": [
+                    {
+                        "run_command": {
+                            "command": [
+							 "playsound sound.attack.sweep @a ~ ~ ~ 1",
+							 "particle heavy:sweep ^ ^1.2 ^2.3",
+							 "effect @s weakness 3 0 true"
+                            ]
+                        },
+						"shoot": {
+							"projectile": "true:katana_sweep",
+							"launch_power": 1,
+							"angle_offset": "query.cardinal_facing"
+						  },
+						  "damage": {
+							"type": "durability",
+							"amount": 1
+						}
+                    }
+                ]
+			},
+			"minecraft:break": {
+				"damage": {
+					"type": "durability",
+					"amount": 1
+				}
+			}
+		}
+	}
+}

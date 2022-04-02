@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Modpack By §cRedstone Chicken§b\n\n§*Having problems?? Contact me from my discord server!\nhttps://discord.io/RedstoneChicken",
+    "name": "§l§6Krafted §r§eBP §r§k||§r§b1.1§r§k||§r",
+    "uuid": "e775a1de-73a7-45d0-94a8-bf9e4c44dc2a",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+			1,
+			17,
+			0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Modpack By §cRedstone Chicken§b\n\n§*Having problems?? Contact me from my discord server!\nhttps://discord.io/RedstoneChicken",
+      "type": "data",
+      "uuid": "28105648-14d0-4303-adf4-5454d0afba1e",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "008f2e56-7e74-48b4-8f6b-457208e24e63"
+		}
+	]
+}

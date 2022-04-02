@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.goblin": {
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "rightItem": "query.is_angry" },
+        { "Item": "!(query.is_angry)" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+	"controller.render.goblin_berserker": {
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "rightArm": "!query.is_angry" },
+		{ "leftArm": "!query.is_angry" },
+        { "rightArm2": "query.is_angry" },
+        { "bone8": "query.is_angry" },
+        { "bone9": "query.is_angry" },
+        { "bone10": "query.is_angry" },
+        { "bone12": "query.is_angry" },
+		{ "leftArm2": "query.is_angry" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

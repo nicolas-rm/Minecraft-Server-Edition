@@ -1,0 +1,44 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mashiene:freezer"
+		},
+		"tags": [
+			"mashinery_table"
+		],
+		"pattern": [
+			" W ",
+			"wIw",
+			"SMS"
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:potion"
+			},
+			"w": {
+				"item": "minecraft:wool"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"S": {
+				"item": "minecraft:smooth_stone"
+			},
+			"M": {
+				"item": "minecraft:magma"
+			}
+		},
+		"result": [
+			{
+				"item": "mashiene:freezer",
+				"count": 1
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"data": 0
+			}
+		]
+	}
+}

@@ -1,0 +1,218 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\maple_leaves.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "40ad97b9_2484_4a24_9a34_232220e82723",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:maple_leaves"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"##",
+							"##"
+						],
+						"key": {
+							"#": {
+								"item": "strat:maple_leaf"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:maple_leaves",
+								"count": 1
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_leaves"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##",
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_leaf"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_leaves",
+									"count": 1
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_leaves"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_leaves"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##",
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_leaf"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_leaves",
+									"count": 1
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_leaves"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##",
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_leaf"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_leaves",
+									"count": 1
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"##",
+							"##"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_leaves"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##",
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_leaf"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_leaves",
+									"count": 1
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:maple_leaf"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_leaf"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_leaves"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##",
+								"##"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_leaf"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_leaves",
+									"count": 1
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:maple_leaves",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_leaves",
+									"count": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

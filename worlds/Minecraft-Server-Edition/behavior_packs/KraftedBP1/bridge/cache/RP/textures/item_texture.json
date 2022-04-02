@@ -1,0 +1,2256 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Food Expansion Addon RP\\textures\\item_texture.json",
+	"file_type": "item_texture",
+	"format_version": 1,
+	"file_uuid": "71eb27bc_ac64_4165_b2b9_f43da565dd33",
+	"file_version": 146,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.items",
+				"key": "texture_name"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.items",
+					"texture_data": {
+						"bridge_bacon raw": {
+							"textures": [
+								"textures/items/strats_bacon raw"
+							]
+						},
+						"bridge_bacon cooked": {
+							"textures": [
+								"textures/items/strats_bacon cooked"
+							]
+						},
+						"bridge_flour": {
+							"textures": "textures/items/flour"
+						},
+						"bridge_dough": {
+							"textures": "textures/items/dough"
+						},
+						"bridge_milk bowl": {
+							"textures": "textures/items/milk bowl"
+						},
+						"bridge_cheese": {
+							"textures": "textures/items/cheese"
+						},
+						"bridge_cheese pizza": {
+							"textures": "textures/items/cheese pizza"
+						},
+						"bridge_pepperoni": {
+							"textures": [
+								"textures/items/pepperoni_2"
+							]
+						},
+						"bridge_pepperoni pizza": {
+							"textures": "textures/items/pepperoni pizza"
+						},
+						"bridge_sausage pizza": {
+							"textures": [
+								"textures/items/sausage_pizza"
+							]
+						},
+						"bridge_meat feast pizza": {
+							"textures": "textures/items/meat feast pizza"
+						},
+						"bridge_sausage raw": {
+							"textures": [
+								"textures/items/strats_sausage raw"
+							]
+						},
+						"bridge_sausage cooked": {
+							"textures": [
+								"textures/items/strats_sausage cooked"
+							]
+						},
+						"bridge_hotdog": {
+							"textures": "textures/items/hotdog"
+						},
+						"bridge_potato chips": {
+							"textures": "textures/items/potato chips"
+						},
+						"bridge_cake slice": {
+							"textures": "textures/items/cake slice"
+						},
+						"bridge_bread slice": {
+							"textures": [
+								"textures/items/bread slice"
+							]
+						},
+						"bridge_bacon sandwich": {
+							"textures": [
+								"textures/items/bacon sandwich"
+							]
+						},
+						"bridge_sausage sandwich": {
+							"textures": [
+								"textures/items/sausage sandwich"
+							]
+						},
+						"bridge_toast": {
+							"textures": [
+								"textures/items/toast"
+							]
+						},
+						"bridge_fries": {
+							"textures": [
+								"textures/items/fries"
+							]
+						},
+						"bridge_fish and chips": {
+							"textures": [
+								"textures/items/fish and chips"
+							]
+						},
+						"bridge_cheeseburger": {
+							"textures": [
+								"textures/items/cheese burger"
+							]
+						},
+						"bridge_burger raw": {
+							"textures": [
+								"textures/items/burger raw"
+							]
+						},
+						"bridge_burger cooked": {
+							"textures": [
+								"textures/items/burger cooked"
+							]
+						},
+						"bridge_fried egg": {
+							"textures": [
+								"textures/items/fried egg"
+							]
+						},
+						"bridge_banana": {
+							"textures": [
+								"textures/items/banana"
+							]
+						},
+						"strat_butter": {
+							"textures": [
+								"textures/items/butter"
+							]
+						},
+						"strat_buttered toast": {
+							"textures": [
+								"textures/items/buttered toast"
+							]
+						},
+						"strat_apple pie": {
+							"textures": [
+								"textures/items/apple_pie"
+							]
+						},
+						"strat_tomato": {
+							"textures": [
+								"textures/items/strats_tomato food"
+							]
+						},
+						"strat_tomato seeds": {
+							"textures": [
+								"textures/items/strats_tomato seeds"
+							]
+						},
+						"strat_tomato sauce": {
+							"textures": [
+								"textures/items/tomato sauce"
+							]
+						},
+						"strat_jam": {
+							"textures": [
+								"textures/items/jam"
+							]
+						},
+						"strat_jam on toast": {
+							"textures": [
+								"textures/items/jam on toast"
+							]
+						},
+						"strat_salt": {
+							"textures": [
+								"textures/items/salt"
+							]
+						},
+						"strat_cheese mold item": {
+							"textures": [
+								"textures/items/cheese_mold"
+							]
+						},
+						"strat_cheese block item": {
+							"textures": [
+								"textures/items/cheese_block_item"
+							]
+						},
+						"strat_churn item": {
+							"textures": [
+								"textures/items/churn_item"
+							]
+						},
+						"strat_cheese toastie": {
+							"textures": [
+								"textures/items/cheese toastie"
+							]
+						},
+						"strat_tomato soup": {
+							"textures": [
+								"textures/items/tomato soup"
+							]
+						},
+						"strat_baguette": {
+							"textures": [
+								"textures/items/baguette"
+							]
+						},
+						"strat_lettuce": {
+							"textures": [
+								"textures/items/strats_lettuce"
+							]
+						},
+						"strat_blt sandwich": {
+							"textures": [
+								"textures/items/blt sandwich"
+							]
+						},
+						"strat_salad": {
+							"textures": [
+								"textures/items/salad"
+							]
+						},
+						"strat_pasta": {
+							"textures": [
+								"textures/items/pasta"
+							]
+						},
+						"strat_spaghetti bolognese": {
+							"textures": [
+								"textures/items/spaghetti bolognese"
+							]
+						},
+						"strat_mashed potato": {
+							"textures": [
+								"textures/items/mashed potato"
+							]
+						},
+						"strat_bangers and mash": {
+							"textures": [
+								"textures/items/bangers and mash"
+							]
+						},
+						"strat_bacon and eggs": {
+							"textures": [
+								"textures/items/bacon and eggs"
+							]
+						},
+						"strat_crop_bush": {
+							"textures": [
+								"textures/items/crop_bush"
+							]
+						},
+						"maple_syrup": {
+							"textures": [
+								"textures/items/maple_syrup"
+							]
+						},
+						"strats_sapling_maple": {
+							"textures": [
+								"textures/items/strats_sapling_maple"
+							]
+						},
+						"maple_leaf": {
+							"textures": [
+								"textures/items/maple_leaf"
+							]
+						},
+						"batter": {
+							"textures": [
+								"textures/items/batter"
+							]
+						},
+						"pancake": {
+							"textures": [
+								"textures/items/pancake"
+							]
+						},
+						"buttered_pancake": {
+							"textures": [
+								"textures/items/pancake_2"
+							]
+						},
+						"jam_pancake": {
+							"textures": [
+								"textures/items/jam_pancake"
+							]
+						},
+						"maple_syrup_pancake": {
+							"textures": [
+								"textures/items/maple_syrup_pancake"
+							]
+						},
+						"lettuce_seeds": {
+							"textures": [
+								"textures/items/strats_lettuce seeds"
+							]
+						},
+						"chicken_soup": {
+							"textures": [
+								"textures/items/chicken soup"
+							]
+						},
+						"beef_stew": {
+							"textures": [
+								"textures/items/beef_stew"
+							]
+						},
+						"steak_and_chips": {
+							"textures": [
+								"textures/items/steak_and_chips"
+							]
+						},
+						"chicken_nuggets": {
+							"textures": [
+								"textures/items/chicken_nuggets"
+							]
+						},
+						"nuggets_and_fries": {
+							"textures": [
+								"textures/items/nuggets_and_fries"
+							]
+						},
+						"buttered_potato": {
+							"textures": [
+								"textures/items/jacket potato"
+							]
+						},
+						"pot_item": {
+							"textures": [
+								"textures/items/pot"
+							]
+						},
+						"frying_pan": {
+							"textures": [
+								"textures/items/frying_pan"
+							]
+						},
+						"knife": {
+							"textures": [
+								"textures/items/knife"
+							]
+						},
+						"chicken_slices": {
+							"textures": [
+								"textures/items/chicken_slices"
+							]
+						},
+						"raw_chicken_wing": {
+							"textures": [
+								"textures/items/raw_chicken_wing"
+							]
+						},
+						"cooked_chicken_wing": {
+							"textures": [
+								"textures/items/cooked_chicken_wing"
+							]
+						},
+						"chopping_board_item": {
+							"textures": [
+								"textures/items/chopping_board_item"
+							]
+						},
+						"toaster_item": {
+							"textures": [
+								"textures/items/toaster_item"
+							]
+						},
+						"paper_plate": {
+							"textures": [
+								"textures/items/paper_plate"
+							]
+						},
+						"paper_plate_dirty": {
+							"textures": [
+								"textures/items/paper_plate_dirty"
+							]
+						},
+						"spaghetti": {
+							"textures": [
+								"textures/items/spaghetti"
+							]
+						},
+						"clay_plate": {
+							"textures": [
+								"textures/items/clay_plate"
+							]
+						},
+						"ceramic_plate": {
+							"textures": [
+								"textures/items/ceramic_plate"
+							]
+						},
+						"spaghetti2": {
+							"textures": [
+								"textures/items/spaghetti2"
+							]
+						},
+						"fish_and_chips2": {
+							"textures": [
+								"textures/items/fish and chips2"
+							]
+						},
+						"steak_and_chips2": {
+							"textures": [
+								"textures/items/steak_and_chips2"
+							]
+						},
+						"nuggets_and_fries2": {
+							"textures": [
+								"textures/items/nuggets_and_fries2"
+							]
+						},
+						"bacon_and_eggs2": {
+							"textures": [
+								"textures/items/bacon and eggs2"
+							]
+						},
+						"bangers_and_mash2": {
+							"textures": [
+								"textures/items/bangers and mash2"
+							]
+						},
+						"strat_banana_sapling": {
+							"textures": [
+								"textures/items/strats_sapling_banana"
+							]
+						},
+						"cocoa_powder": {
+							"textures": [
+								"textures/items/cocoa_powder"
+							]
+						},
+						"chocolate_bar": {
+							"textures": [
+								"textures/items/chocolate_bar"
+							]
+						},
+						"mortar_and_pestle_item": {
+							"textures": [
+								"textures/items/mortar_and_pestle_item"
+							]
+						},
+						"chocolate_cake_item": {
+							"textures": [
+								"textures/items/chocolate_cake_item"
+							]
+						},
+						"chocolate_cake_slice": {
+							"textures": [
+								"textures/items/chocolate_cake_slice"
+							]
+						},
+						"marshmallow": {
+							"textures": [
+								"textures/items/marshmallow"
+							]
+						},
+						"smore": {
+							"textures": [
+								"textures/items/smore"
+							]
+						},
+						"orange": {
+							"textures": [
+								"textures/items/orange"
+							]
+						},
+						"marmalade": {
+							"textures": [
+								"textures/items/marmalade"
+							]
+						},
+						"banana_open": {
+							"textures": [
+								"textures/items/banana_open"
+							]
+						},
+						"pizza_dinner": {
+							"textures": [
+								"textures/items/pizza_dinner"
+							]
+						},
+						"pizza_dinner2": {
+							"textures": [
+								"textures/items/pizza_dinner2"
+							]
+						},
+						"marmalade_on_toast": {
+							"textures": [
+								"textures/items/marmalade_on_toast"
+							]
+						},
+						"orange_sapling": {
+							"textures": [
+								"textures/items/sapling_orange"
+							]
+						},
+						"banana_bread": {
+							"textures": [
+								"textures/items/banana_bread"
+							]
+						},
+						"chocolate_banana": {
+							"textures": [
+								"textures/items/chocolate_banana"
+							]
+						},
+						"corn_dog": {
+							"textures": [
+								"textures/items/corn_dog"
+							]
+						},
+						"cook_book": {
+							"textures": [
+								"textures/items/cook_book"
+							]
+						},
+						"raw_cheese_pizza": {
+							"textures": [
+								"textures/items/raw_cheese_pizza"
+							]
+						},
+						"cheese_pizza_block": {
+							"textures": [
+								"textures/items/cheese_pizza_block"
+							]
+						},
+						"pepperoni_pizza_block": {
+							"textures": [
+								"textures/items/pepperoni_pizza_block"
+							]
+						},
+						"sausage_pizza_block": {
+							"textures": [
+								"textures/items/sausage_pizza_block"
+							]
+						},
+						"meat_feast_pizza_block": {
+							"textures": [
+								"textures/items/meat_feast_pizza_block"
+							]
+						},
+						"raw_donut": {
+							"textures": [
+								"textures/items/raw_donut"
+							]
+						},
+						"donut": {
+							"textures": [
+								"textures/items/donut"
+							]
+						},
+						"chocolate_donut": {
+							"textures": [
+								"textures/items/chocolate_donut"
+							]
+						},
+						"ice_cream_cone": {
+							"textures": [
+								"textures/items/ice_cream_cone"
+							]
+						},
+						"ice_cream": {
+							"textures": [
+								"textures/items/ice_cream"
+							]
+						},
+						"chocolate_ice_cream": {
+							"textures": [
+								"textures/items/chocolate_ice_cream"
+							]
+						},
+						"sweet_berry_ice_cream": {
+							"textures": [
+								"textures/items/sweet_berry_ice_cream"
+							]
+						},
+						"waffle": {
+							"textures": [
+								"textures/items/waffle"
+							]
+						},
+						"jam_waffle": {
+							"textures": [
+								"textures/items/jam_waffle"
+							]
+						},
+						"maple_syrup_waffle": {
+							"textures": [
+								"textures/items/maple_syrup_waffle"
+							]
+						},
+						"banana_split": {
+							"textures": [
+								"textures/items/banana_split"
+							]
+						},
+						"cookie_dough": {
+							"textures": [
+								"textures/items/cookie_dough"
+							]
+						},
+						"cookie_dough_ice_cream": {
+							"textures": [
+								"textures/items/cookie_dough_ice_cream"
+							]
+						},
+						"deluxe_burger": {
+							"textures": [
+								"textures/items/deluxe_burger"
+							]
+						},
+						"glass_jar": {
+							"textures": [
+								"textures/items/glass_jar"
+							]
+						},
+						"milk_jar": {
+							"textures": [
+								"textures/items/milk_jar"
+							]
+						},
+						"water_jar": {
+							"textures": [
+								"textures/items/water_jar"
+							]
+						},
+						"chocolate_orange": {
+							"textures": [
+								"textures/items/chocolate_orange"
+							]
+						},
+						"chubby_bunny_trophy": {
+							"textures": [
+								"textures/items/chubby_bunny_trophy"
+							]
+						},
+						"farmers_trophy": {
+							"textures": [
+								"textures/items/farmers_trophy"
+							]
+						},
+						"apple_sapling": {
+							"textures": [
+								"textures/items/sapling_apple"
+							]
+						},
+						"maple_shears": {
+							"textures": [
+								"textures/items/maple_shears"
+							]
+						},
+						"chocolate_sprinkled_donut": {
+							"textures": [
+								"textures/items/chocolate_sprinkled_donut"
+							]
+						},
+						"pumpkin_pie_slice": {
+							"textures": [
+								"textures/items/pumpkin_pie_slice"
+							]
+						},
+						"pumpkin_pie_item": {
+							"textures": [
+								"textures/items/pumpkin_pie_item"
+							]
+						},
+						"apple_pie_slice": {
+							"textures": [
+								"textures/items/apple_pie_slice"
+							]
+						},
+						"cheese_cake_item": {
+							"textures": [
+								"textures/items/cheese_cake_item"
+							]
+						},
+						"cheese_cake_slice": {
+							"textures": [
+								"textures/items/cheese_cake_slice"
+							]
+						},
+						"raw_foodism_trophy": {
+							"textures": [
+								"textures/items/raw_foodism_trophy"
+							]
+						},
+						"chicken_and_waffles": {
+							"textures": [
+								"textures/items/chicken_and_waffles"
+							]
+						},
+						"chicken_and_waffles2": {
+							"textures": [
+								"textures/items/chicken_and_waffles2"
+							]
+						},
+						"christmas_cake_item": {
+							"textures": [
+								"textures/items/christmas_cake_item"
+							]
+						},
+						"christmas_cake_slice": {
+							"textures": [
+								"textures/items/christmas_cake_slice"
+							]
+						},
+						"candy_cane": {
+							"textures": [
+								"textures/items/candy_cane"
+							]
+						},
+						"milk_and_cookies": {
+							"textures": [
+								"textures/items/milk_and_cookies"
+							]
+						},
+						"milk_and_cookies2": {
+							"textures": [
+								"textures/items/milk_and_cookies2"
+							]
+						},
+						"yule_log": {
+							"textures": [
+								"textures/items/yule_log_item"
+							]
+						},
+						"roast_chicken": {
+							"textures": [
+								"textures/items/roast_chicken"
+							]
+						},
+						"roast_chicken2": {
+							"textures": [
+								"textures/items/roast_chicken2"
+							]
+						},
+						"lasagne": {
+							"textures": [
+								"textures/items/lasagne"
+							]
+						},
+						"cornish_pasty": {
+							"textures": [
+								"textures/items/cornish_pasty"
+							]
+						},
+						"ice_cream_sandwich": {
+							"textures": [
+								"textures/items/ice_cream_sandwich"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"key": "bridge_bacon raw",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_bacon raw"
+							]
+						}
+					},
+					{
+						"key": "bridge_bacon cooked",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_bacon cooked"
+							]
+						}
+					},
+					{
+						"key": "bridge_flour",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/flour"
+						}
+					},
+					{
+						"key": "bridge_dough",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/dough"
+						}
+					},
+					{
+						"key": "bridge_milk bowl",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/milk bowl"
+						}
+					},
+					{
+						"key": "bridge_cheese",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/cheese"
+						}
+					},
+					{
+						"key": "bridge_cheese pizza",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/cheese pizza"
+						}
+					},
+					{
+						"key": "bridge_pepperoni",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pepperoni_2"
+							]
+						}
+					},
+					{
+						"key": "bridge_pepperoni pizza",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/pepperoni pizza"
+						}
+					},
+					{
+						"key": "bridge_sausage pizza",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sausage_pizza"
+							]
+						}
+					},
+					{
+						"key": "bridge_meat feast pizza",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/meat feast pizza"
+						}
+					},
+					{
+						"key": "bridge_sausage raw",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_sausage raw"
+							]
+						}
+					},
+					{
+						"key": "bridge_sausage cooked",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_sausage cooked"
+							]
+						}
+					},
+					{
+						"key": "bridge_hotdog",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/hotdog"
+						}
+					},
+					{
+						"key": "bridge_potato chips",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/potato chips"
+						}
+					},
+					{
+						"key": "bridge_cake slice",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/cake slice"
+						}
+					},
+					{
+						"key": "bridge_bread slice",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/bread slice"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/bread slice"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_bacon sandwich",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/bacon sandwich"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/bacon sandwich"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_sausage sandwich",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/sausage sandwich"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/sausage sandwich"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_toast",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/toast"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/toast"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_fries",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/fries"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/fries"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_fish and chips",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/fish and chips"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/fish and chips"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_cheeseburger",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/cheese burger"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/cheese burger"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_burger raw",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/burger raw"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/burger raw"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_burger cooked",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/burger cooked"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/burger cooked"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_fried egg",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/fried egg"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/fried egg"
+								]
+							}
+						]
+					},
+					{
+						"key": "bridge_banana",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/banana"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/banana"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_butter",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/butter"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/butter"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_buttered toast",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/buttered toast"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/buttered toast"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_apple pie",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/apple_pie"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/apple_pie"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_tomato",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_tomato food"
+							]
+						}
+					},
+					{
+						"key": "strat_tomato seeds",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_tomato seeds"
+							]
+						}
+					},
+					{
+						"key": "strat_tomato sauce",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/tomato sauce"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/tomato sauce"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_jam",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/jam"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/jam"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_jam on toast",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/jam on toast"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/jam on toast"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_salt",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/salt"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/salt"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_cheese mold item",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/cheese_mold"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/cheese_mold"
+								]
+							}
+						]
+					},
+					{
+						"key": "strat_cheese block item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cheese_block_item"
+							]
+						}
+					},
+					{
+						"key": "strat_churn item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/churn_item"
+							]
+						}
+					},
+					{
+						"key": "strat_cheese toastie",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cheese toastie"
+							]
+						}
+					},
+					{
+						"key": "strat_tomato soup",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/tomato soup"
+							]
+						}
+					},
+					{
+						"key": "strat_baguette",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/baguette"
+							]
+						}
+					},
+					{
+						"key": "strat_lettuce",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_lettuce"
+							]
+						}
+					},
+					{
+						"key": "strat_blt sandwich",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/blt sandwich"
+							]
+						}
+					},
+					{
+						"key": "strat_salad",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/salad"
+							]
+						}
+					},
+					{
+						"key": "strat_pasta",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pasta"
+							]
+						}
+					},
+					{
+						"key": "strat_spaghetti bolognese",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/spaghetti bolognese"
+							]
+						}
+					},
+					{
+						"key": "strat_mashed potato",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/mashed potato"
+							]
+						}
+					},
+					{
+						"key": "strat_bangers and mash",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/bangers and mash"
+							]
+						}
+					},
+					{
+						"key": "strat_bacon and eggs",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/bacon and eggs"
+							]
+						}
+					},
+					{
+						"key": "strat_crop_bush",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/crop_bush"
+							]
+						}
+					},
+					{
+						"key": "maple_syrup",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/maple_syrup"
+							]
+						}
+					},
+					{
+						"key": "strats_sapling_maple",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_sapling_maple"
+							]
+						}
+					},
+					{
+						"key": "maple_leaf",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/maple_leaf"
+							]
+						}
+					},
+					{
+						"key": "batter",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/batter"
+							]
+						}
+					},
+					{
+						"key": "pancake",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pancake"
+							]
+						}
+					},
+					{
+						"key": "buttered_pancake",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pancake_2"
+							]
+						}
+					},
+					{
+						"key": "jam_pancake",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/jam_pancake"
+							]
+						}
+					},
+					{
+						"key": "maple_syrup_pancake",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/maple_syrup_pancake"
+							]
+						}
+					},
+					{
+						"key": "lettuce_seeds",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_lettuce seeds"
+							]
+						}
+					},
+					{
+						"key": "chicken_soup",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chicken soup"
+							]
+						}
+					},
+					{
+						"key": "beef_stew",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/beef_stew"
+							]
+						}
+					},
+					{
+						"key": "steak_and_chips",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/steak_and_chips"
+							]
+						}
+					},
+					{
+						"key": "chicken_nuggets",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chicken_nuggets"
+							]
+						}
+					},
+					{
+						"key": "nuggets_and_fries",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/nuggets_and_fries"
+							]
+						}
+					},
+					{
+						"key": "buttered_potato",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/jacket potato"
+							]
+						}
+					},
+					{
+						"key": "pot_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pot"
+							]
+						}
+					},
+					{
+						"key": "frying_pan",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/frying_pan"
+							]
+						}
+					},
+					{
+						"key": "knife",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/knife"
+							]
+						}
+					},
+					{
+						"key": "chicken_slices",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chicken_slices"
+							]
+						}
+					},
+					{
+						"key": "raw_chicken_wing",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/raw_chicken_wing"
+							]
+						}
+					},
+					{
+						"key": "cooked_chicken_wing",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cooked_chicken_wing"
+							]
+						}
+					},
+					{
+						"key": "chopping_board_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chopping_board_item"
+							]
+						}
+					},
+					{
+						"key": "toaster_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/toaster_item"
+							]
+						}
+					},
+					{
+						"key": "paper_plate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/paper_plate"
+							]
+						}
+					},
+					{
+						"key": "paper_plate_dirty",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/paper_plate_dirty"
+							]
+						}
+					},
+					{
+						"key": "spaghetti",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/spaghetti"
+							]
+						}
+					},
+					{
+						"key": "clay_plate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/clay_plate"
+							]
+						}
+					},
+					{
+						"key": "ceramic_plate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/ceramic_plate"
+							]
+						}
+					},
+					{
+						"key": "spaghetti2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/spaghetti2"
+							]
+						}
+					},
+					{
+						"key": "fish_and_chips2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/fish and chips2"
+							]
+						}
+					},
+					{
+						"key": "steak_and_chips2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/steak_and_chips2"
+							]
+						}
+					},
+					{
+						"key": "nuggets_and_fries2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/nuggets_and_fries2"
+							]
+						}
+					},
+					{
+						"key": "bacon_and_eggs2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/bacon and eggs2"
+							]
+						}
+					},
+					{
+						"key": "bangers_and_mash2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/bangers and mash2"
+							]
+						}
+					},
+					{
+						"key": "strat_banana_sapling",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/strats_sapling_banana"
+							]
+						}
+					},
+					{
+						"key": "cocoa_powder",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cocoa_powder"
+							]
+						}
+					},
+					{
+						"key": "chocolate_bar",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_bar"
+							]
+						}
+					},
+					{
+						"key": "mortar_and_pestle_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/mortar_and_pestle_item"
+							]
+						}
+					},
+					{
+						"key": "chocolate_cake_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_cake_item"
+							]
+						}
+					},
+					{
+						"key": "chocolate_cake_slice",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_cake_slice"
+							]
+						}
+					},
+					{
+						"key": "marshmallow",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/marshmallow"
+							]
+						}
+					},
+					{
+						"key": "smore",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/smore"
+							]
+						}
+					},
+					{
+						"key": "orange",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/orange"
+							]
+						}
+					},
+					{
+						"key": "marmalade",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/marmalade"
+							]
+						}
+					},
+					{
+						"key": "banana_open",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/banana_open"
+							]
+						}
+					},
+					{
+						"key": "pizza_dinner",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pizza_dinner"
+							]
+						}
+					},
+					{
+						"key": "pizza_dinner2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pizza_dinner2"
+							]
+						}
+					},
+					{
+						"key": "marmalade_on_toast",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/marmalade_on_toast"
+							]
+						}
+					},
+					{
+						"key": "orange_sapling",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sapling_orange"
+							]
+						}
+					},
+					{
+						"key": "banana_bread",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/banana_bread"
+							]
+						}
+					},
+					{
+						"key": "chocolate_banana",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_banana"
+							]
+						}
+					},
+					{
+						"key": "corn_dog",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/corn_dog"
+							]
+						}
+					},
+					{
+						"key": "cook_book",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cook_book"
+							]
+						}
+					},
+					{
+						"key": "raw_cheese_pizza",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/raw_cheese_pizza"
+							]
+						}
+					},
+					{
+						"key": "cheese_pizza_block",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cheese_pizza_block"
+							]
+						}
+					},
+					{
+						"key": "pepperoni_pizza_block",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pepperoni_pizza_block"
+							]
+						}
+					},
+					{
+						"key": "sausage_pizza_block",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sausage_pizza_block"
+							]
+						}
+					},
+					{
+						"key": "meat_feast_pizza_block",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/meat_feast_pizza_block"
+							]
+						}
+					},
+					{
+						"key": "raw_donut",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/raw_donut"
+							]
+						}
+					},
+					{
+						"key": "donut",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/donut"
+							]
+						}
+					},
+					{
+						"key": "chocolate_donut",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_donut"
+							]
+						}
+					},
+					{
+						"key": "ice_cream_cone",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/ice_cream_cone"
+							]
+						}
+					},
+					{
+						"key": "ice_cream",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/ice_cream"
+							]
+						}
+					},
+					{
+						"key": "chocolate_ice_cream",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_ice_cream"
+							]
+						}
+					},
+					{
+						"key": "sweet_berry_ice_cream",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sweet_berry_ice_cream"
+							]
+						}
+					},
+					{
+						"key": "waffle",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/waffle"
+							]
+						}
+					},
+					{
+						"key": "jam_waffle",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/jam_waffle"
+							]
+						}
+					},
+					{
+						"key": "maple_syrup_waffle",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/maple_syrup_waffle"
+							]
+						}
+					},
+					{
+						"key": "banana_split",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/banana_split"
+							]
+						}
+					},
+					{
+						"key": "cookie_dough",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cookie_dough"
+							]
+						}
+					},
+					{
+						"key": "cookie_dough_ice_cream",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cookie_dough_ice_cream"
+							]
+						}
+					},
+					{
+						"key": "deluxe_burger",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/deluxe_burger"
+							]
+						}
+					},
+					{
+						"key": "glass_jar",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/glass_jar"
+							]
+						}
+					},
+					{
+						"key": "milk_jar",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/milk_jar"
+							]
+						}
+					},
+					{
+						"key": "water_jar",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/water_jar"
+							]
+						}
+					},
+					{
+						"key": "chocolate_orange",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_orange"
+							]
+						}
+					},
+					{
+						"key": "chubby_bunny_trophy",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chubby_bunny_trophy"
+							]
+						}
+					},
+					{
+						"key": "farmers_trophy",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/farmers_trophy"
+							]
+						}
+					},
+					{
+						"key": "apple_sapling",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/sapling_apple"
+							]
+						}
+					},
+					{
+						"key": "maple_shears",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/maple_shears"
+							]
+						}
+					},
+					{
+						"key": "chocolate_sprinkled_donut",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chocolate_sprinkled_donut"
+							]
+						}
+					},
+					{
+						"key": "pumpkin_pie_slice",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pumpkin_pie_slice"
+							]
+						}
+					},
+					{
+						"key": "pumpkin_pie_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/pumpkin_pie_item"
+							]
+						}
+					},
+					{
+						"key": "apple_pie_slice",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/apple_pie_slice"
+							]
+						}
+					},
+					{
+						"key": "cheese_cake_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cheese_cake_item"
+							]
+						}
+					},
+					{
+						"key": "cheese_cake_slice",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cheese_cake_slice"
+							]
+						}
+					},
+					{
+						"key": "raw_foodism_trophy",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/raw_foodism_trophy"
+							]
+						}
+					},
+					{
+						"key": "chicken_and_waffles",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chicken_and_waffles"
+							]
+						}
+					},
+					{
+						"key": "chicken_and_waffles2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/chicken_and_waffles2"
+							]
+						}
+					},
+					{
+						"key": "christmas_cake_item",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/christmas_cake_item"
+							]
+						}
+					},
+					{
+						"key": "christmas_cake_slice",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/christmas_cake_slice"
+							]
+						}
+					},
+					{
+						"key": "candy_cane",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/candy_cane"
+							]
+						}
+					},
+					{
+						"key": "milk_and_cookies",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/milk_and_cookies"
+							]
+						}
+					},
+					{
+						"key": "milk_and_cookies2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/milk_and_cookies2"
+							]
+						}
+					},
+					{
+						"key": "yule_log",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/yule_log_item"
+							]
+						}
+					},
+					{
+						"key": "roast_chicken",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/roast_chicken"
+							]
+						}
+					},
+					{
+						"key": "roast_chicken2",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/roast_chicken2"
+							]
+						}
+					},
+					{
+						"key": "lasagne",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/lasagne"
+							]
+						}
+					},
+					{
+						"key": "cornish_pasty",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cornish_pasty"
+							]
+						}
+					},
+					{
+						"key": "ice_cream_sandwich",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/ice_cream_sandwich"
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}

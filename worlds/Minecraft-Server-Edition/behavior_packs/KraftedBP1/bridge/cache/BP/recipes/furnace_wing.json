@@ -1,0 +1,79 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\furnace_wing.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "6f10befd_2fa8_4890_9b2c_1acc193ae1ae",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_furnace": {
+						"description": {
+							"identifier": "strat:furnace_wing"
+						},
+						"tags": [
+							"furnace",
+							"smoker"
+						],
+						"input": "strat:chicken_wing",
+						"output": "strat:cooked_chicken_wing"
+					}
+				},
+				"key": "minecraft:recipe_furnace",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:furnace_wing"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:chicken_wing",
+							"output": "strat:cooked_chicken_wing"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:furnace_wing"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:furnace_wing"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:chicken_wing",
+							"output": "strat:cooked_chicken_wing"
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"furnace",
+							"smoker"
+						]
+					},
+					{
+						"data": "strat:chicken_wing",
+						"key": "input"
+					},
+					{
+						"data": "strat:cooked_chicken_wing",
+						"key": "output"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,28 @@
+//bridge-file-version: #33
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "strat:cleaver_49_repair2"
+		},
+		"tags": [
+			"tool_forge"
+		],
+		"ingredients": [
+			{
+				"item": "strat:cleaver_49",
+				"count": 1
+			},
+			{
+				"item": "minecraft:flint",
+				"count": 1
+			}
+		],
+		"result": [
+			{
+				"item": "strat:cleaver_49",
+				"count": 1
+			}
+		]
+	}
+}

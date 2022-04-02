@@ -1,0 +1,278 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\render_controllers\\orc.render_controllers.json",
+	"file_type": "render_controller",
+	"format_version": 1,
+	"file_uuid": "bdecc63a_88ea_42b6_9977_bd02c9554ac8",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"render_controllers": {
+						"controller.render.orc": {
+							"rebuild_animation_matrices": true,
+							"geometry": "Geometry.default",
+							"materials": [
+								{
+									"*": "Material.default"
+								}
+							],
+							"textures": [
+								"Texture.default"
+							],
+							"part_visibility": [
+								{
+									"leftArm": "query.has_target"
+								},
+								{
+									"rightArm": "query.has_target"
+								},
+								{
+									"leftArm3": "!query.has_target"
+								},
+								{
+									"rightArm3": "!query.has_target"
+								}
+							]
+						}
+					}
+				},
+				"key": "render_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.render.orc": {
+								"rebuild_animation_matrices": true,
+								"geometry": "Geometry.default",
+								"materials": [
+									{
+										"*": "Material.default"
+									}
+								],
+								"textures": [
+									"Texture.default"
+								],
+								"part_visibility": [
+									{
+										"leftArm": "query.has_target"
+									},
+									{
+										"rightArm": "query.has_target"
+									},
+									{
+										"leftArm3": "!query.has_target"
+									},
+									{
+										"rightArm3": "!query.has_target"
+									}
+								]
+							}
+						},
+						"key": "controller.render.orc",
+						"children": [
+							{
+								"data": "true",
+								"key": "rebuild_animation_matrices"
+							},
+							{
+								"data": "Geometry.default",
+								"key": "geometry"
+							},
+							{
+								"open": {
+									"rebuild_animation_matrices": true,
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									],
+									"part_visibility": [
+										{
+											"leftArm": "query.has_target"
+										},
+										{
+											"rightArm": "query.has_target"
+										},
+										{
+											"leftArm3": "!query.has_target"
+										},
+										{
+											"rightArm3": "!query.has_target"
+										}
+									]
+								},
+								"key": "materials",
+								"children": [
+									{
+										"open": [
+											{
+												"*": "Material.default"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"*": "Material.default"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"rebuild_animation_matrices": true,
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									],
+									"part_visibility": [
+										{
+											"leftArm": "query.has_target"
+										},
+										{
+											"rightArm": "query.has_target"
+										},
+										{
+											"leftArm3": "!query.has_target"
+										},
+										{
+											"rightArm3": "!query.has_target"
+										}
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"Texture.default"
+								]
+							},
+							{
+								"open": {
+									"rebuild_animation_matrices": true,
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									],
+									"part_visibility": [
+										{
+											"leftArm": "query.has_target"
+										},
+										{
+											"rightArm": "query.has_target"
+										},
+										{
+											"leftArm3": "!query.has_target"
+										},
+										{
+											"rightArm3": "!query.has_target"
+										}
+									]
+								},
+								"key": "part_visibility",
+								"children": [
+									{
+										"open": [
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm3": "!query.has_target"
+											},
+											{
+												"rightArm3": "!query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"leftArm": "query.has_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm3": "!query.has_target"
+											},
+											{
+												"rightArm3": "!query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"rightArm": "query.has_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm3": "!query.has_target"
+											},
+											{
+												"rightArm3": "!query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"leftArm3": "!query.has_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm3": "!query.has_target"
+											},
+											{
+												"rightArm3": "!query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"rightArm3": "!query.has_target"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

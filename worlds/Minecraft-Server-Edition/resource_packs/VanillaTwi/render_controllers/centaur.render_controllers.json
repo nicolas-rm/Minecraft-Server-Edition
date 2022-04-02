@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.centaur": {
+      "rebuild_animation_matrices": true,
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "rightArm": "query.is_angry" },
+        { "leftArm": "query.is_angry" },
+        { "rightItem": "query.is_angry" },
+        { "rightArm2": "!query.is_angry" },
+		{ "leftArm2": "!query.is_angry" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

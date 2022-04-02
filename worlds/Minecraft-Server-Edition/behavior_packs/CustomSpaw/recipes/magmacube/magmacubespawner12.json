@@ -1,0 +1,23 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.12.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "mrleefy:magmacubespawner12"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "mrleefy:magmacubespawner12"
+			}
+		],
+		"result": [
+			{
+				"item": "mrleefy:magmacubespawner",
+				"count": 12
+			}
+		]
+	}
+}

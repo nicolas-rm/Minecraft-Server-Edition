@@ -1,0 +1,30 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "vanilla_twilight:kobold_banner",
+			"materials": {
+				"default": "fireball"
+			},
+			"textures": {
+				"default": "textures/items/villagebell"
+			},
+			"geometry": {
+				"default": "geometry.kbid"
+			},
+			"animations": {
+				"face_player": "animation.actor.billboard2"
+			},
+			"scripts": {
+				"scale": 0.25,
+				"animate": [
+					"face_player"
+				]
+			},
+			"render_controllers": [
+				"controller.render.fireball"
+			]
+		}
+	}
+}

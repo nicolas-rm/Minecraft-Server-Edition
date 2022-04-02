@@ -1,0 +1,249 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\noteblock_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "6ef72619_cf33_44b5_bcf9_1f5603b44afc",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.16,
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:noteblock_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"AAA",
+							"ABA",
+							"AAA"
+						],
+						"key": {
+							"A": {
+								"item": "strat:maple_planks"
+							},
+							"B": {
+								"item": "redstone"
+							}
+						},
+						"result": {
+							"item": "noteblock",
+							"count": 1
+						},
+						"priority": 50
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:noteblock_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"ABA",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "noteblock",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:noteblock_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:noteblock_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"ABA",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "noteblock",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:noteblock_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"ABA",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "noteblock",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"AAA",
+							"ABA",
+							"AAA"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:noteblock_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"ABA",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "noteblock",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "redstone"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "redstone"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "redstone"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:noteblock_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"ABA",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "noteblock",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "result",
+						"is_minified": true,
+						"children": {
+							"item": "noteblock",
+							"count": 1
+						}
+					},
+					{
+						"data": "50",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.giantspider.default_leg_pose": {
+			"loop": true,
+			"animation_length": 11.68333,
+			"bones": {
+				"leg0": {
+					"rotation": [0, "45.0 - this", "-45.0 - this"]
+				},
+				"leg1": {
+					"rotation": [0, "-45.0 - this", "45.0 - this"]
+				},
+				"leg2": {
+					"rotation": [0, "22.5 - this", "-78.3- this"]
+				},
+				"leg3": {
+					"rotation": [0, "-22.5 - this", "78.3 - this"]
+				},
+				"leg4": {
+					"rotation": [0, "-22.5 - this", "-78.3 - this"]
+				},
+				"leg5": {
+					"rotation": [0, "22.5 - this", "78.3 - this"]
+				},
+				"leg6": {
+					"rotation": [30, "-45- this", "-110- this"]
+				},
+				"leg7": {
+					"rotation": [30, "45.0 - this", "110.0 - this"]
+				},
+				"body0": {
+					"position": [0, 9, 0]
+				}
+			}
+		},
+		"animation.giantspider.sit": {
+			"loop": true,
+			"bones": {
+				"body0": {
+					"position": [0, -7, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 65]
+				},
+				"leg1": {
+					"rotation": [0, 0, -65]
+				},
+				"leg2": {
+					"rotation": [0, 0, 45]
+				},
+				"leg3": {
+					"rotation": [0, 0, -45]
+				},
+				"leg4": {
+					"rotation": [0, 0, 45]
+				},
+				"leg5": {
+					"rotation": [0, 0, -45]
+				},
+				"leg6": {
+					"rotation": [0, 0, 65]
+				},
+				"leg7": {
+					"rotation": [0, 0, -65]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\cheese_toastie.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "d950fee1_c4bb_427c_95e5_3d841a00451e",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:cheese_toastie",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 2.4,
+							"minecraft:food": {
+								"nutrition": 8,
+								"saturation_modifier": "good"
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "strat_cheese toastie"
+							},
+							"minecraft:use_animation": "eat"
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_toastie",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 8,
+									"saturation_modifier": "good"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "strat_cheese toastie"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cheese_toastie",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_toastie",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 8,
+									"saturation_modifier": "good"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "strat_cheese toastie"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 8,
+										"saturation_modifier": "good"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "strat_cheese toastie"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 8,
+									"saturation_modifier": "good"
+								}
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 8,
+										"saturation_modifier": "good"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "strat_cheese toastie"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "strat_cheese toastie"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

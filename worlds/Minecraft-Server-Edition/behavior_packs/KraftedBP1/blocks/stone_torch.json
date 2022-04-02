@@ -1,0 +1,280 @@
+//bridge-file-version: #20
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "strat:stone_torch",
+			"properties": {
+				"bridge:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"strat:state": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "stone_torch",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.torch",
+			"minecraft:entity_collision": false,
+			"minecraft:pick_collision": {
+				"origin": [
+					-1.5,
+					0,
+					-1.5
+				],
+				"size": [
+					3,
+					9.5,
+					3
+				]
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					2,
+					4
+				],
+				"on_tick": {
+					"event": "strat:particles"
+				}
+			},
+			"minecraft:loot": "loot_tables/stone_torch.json",
+			"minecraft:on_player_placing": {
+				"event": "strat:placing"
+			},
+			"minecraft:breakonpush": true,
+			"minecraft:immovable": true,
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.Items",
+				"category": "Items"
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up",
+							"north",
+							"south",
+							"east",
+							"west",
+							"side"
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"strat:placing": {
+				"sequence": [
+					{
+						"condition": "query.block_face != 1.0",
+						"set_block_property": {
+							"strat:state": 1,
+							"bridge:block_rotation": "query.cardinal_facing_2d"
+						}
+					}
+				]
+			},
+			"strat:particles": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_flame_particle ~ ~+0.2 ~",
+								"particle minecraft:basic_smoke_particle ~ ~+0.2 ~"
+							]
+						}
+					}
+				]
+			},
+			"strat:particles2": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_flame_particle ~ ~+0.45 ~-0.25",
+								"particle minecraft:basic_smoke_particle ~ ~+0.45 ~-0.25"
+							]
+						}
+					}
+				]
+			},
+			"strat:particles3": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_flame_particle ~ ~+0.45 ~+0.25",
+								"particle minecraft:basic_smoke_particle ~ ~+0.45 ~+0.25"
+							]
+						}
+					}
+				]
+			},
+			"strat:particles4": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_flame_particle ~-0.25 ~+0.45 ~",
+								"particle minecraft:basic_smoke_particle ~-0.25 ~+0.45 ~"
+							]
+						}
+					}
+				]
+			},
+			"strat:particles5": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_flame_particle ~+0.25 ~+0.45 ~",
+								"particle minecraft:basic_smoke_particle ~+0.25 ~+0.45 ~"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							2,
+							4
+						],
+						"on_tick": {
+							"event": "strat:particles2"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							2,
+							4
+						],
+						"on_tick": {
+							"event": "strat:particles3"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							2,
+							4
+						],
+						"on_tick": {
+							"event": "strat:particles4"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							2,
+							4
+						],
+						"on_tick": {
+							"event": "strat:particles5"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.torch",
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							2,
+							4
+						],
+						"on_tick": {
+							"event": "strat:particles"
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-1.5,
+							0,
+							-1.5
+						],
+						"size": [
+							3,
+							9.5,
+							3
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.torch2",
+					"minecraft:pick_collision": {
+						"origin": [
+							-2,
+							3,
+							4
+						],
+						"size": [
+							4,
+							9.5,
+							4
+						]
+					}
+				}
+			}
+		]
+	}
+}

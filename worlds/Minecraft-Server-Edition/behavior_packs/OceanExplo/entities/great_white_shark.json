@@ -1,0 +1,112 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocean:great_white_shark",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1.2,
+				"height": 1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"fish"
+				]
+			},
+			"minecraft:health": {
+				"value": 40,
+				"max": 40
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 240,
+				"suffocate_time": 0,
+				"breathes_air": true,
+				"breathes_water": false,
+				"generates_bubbles": false
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.2
+			},
+			"minecraft:navigation.generic": {
+				"is_amphibious": false,
+				"can_path_over_water": false,
+				"can_swim": true,
+				"can_walk": false,
+				"can_sink": true
+			},
+			"minecraft:jump.static": {
+				"jump_power": 0.6
+			},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.swim_idle": {
+				"priority": 5
+			},
+			"minecraft:behavior.random_swim": {
+				"priority": 3,
+				"interval": 0,
+				"xz_dist": 20,
+				"y_dist": 5
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:behavior.move_to_water": {
+				"priority": 1,
+				"search_range": 15,
+				"search_height": 5
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:loot": {},
+			"minecraft:behavior.delayed_attack": {
+				"priority": 0,
+				"attack_once": false,
+				"track_target": true,
+				"reach_multiplier": 1.5,
+				"speed_multiplier": 1.5,
+				"attack_duration": 0.5,
+				"hit_delay_pct": 0.5
+			},
+			"minecraft:attack": {
+				"damage": 6
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.swim_wander": {
+				"priority": 4,
+				"interval": 10,
+				"look_ahead": 2
+			}
+		},
+		"component_groups": {},
+		"events": {}
+	}
+}
