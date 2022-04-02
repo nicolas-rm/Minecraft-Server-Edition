@@ -1,0 +1,211 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\flour_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "39a5c2f1_09f6_4e37_80de_5a5eebae372b",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:flour_rec"
+						},
+						"tags": [
+							"mortar_and_pestle"
+						],
+						"pattern": [
+							"#"
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:wheat"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:flour",
+								"count": 2
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:flour_rec"
+							},
+							"tags": [
+								"mortar_and_pestle"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:wheat"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:flour",
+									"count": 2
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:flour_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:flour_rec"
+							},
+							"tags": [
+								"mortar_and_pestle"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:wheat"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:flour",
+									"count": 2
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"mortar_and_pestle"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:flour_rec"
+							},
+							"tags": [
+								"mortar_and_pestle"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:wheat"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:flour",
+									"count": 2
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:flour_rec"
+							},
+							"tags": [
+								"mortar_and_pestle"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:wheat"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:flour",
+									"count": 2
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:wheat"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:wheat"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:flour_rec"
+							},
+							"tags": [
+								"mortar_and_pestle"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:wheat"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:flour",
+									"count": 2
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:flour",
+										"count": 2
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:flour",
+									"count": 2
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

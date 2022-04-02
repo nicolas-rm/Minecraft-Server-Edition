@@ -1,0 +1,163 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\animations\\barnacle.animation.json",
+	"file_type": "animation",
+	"format_version": 1,
+	"file_uuid": "7ce9008d_0e95_42b5_a5ac_1f8f247442f5",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animations": {
+						"animation.barnacle.force_ride": {
+							"loop": true,
+							"animation_length": 0.2,
+							"timeline": {
+								"0.1": [
+									"/event entity @s trap_player"
+								]
+							}
+						},
+						"animation.barnacle.down": {
+							"loop": true,
+							"animation_length": 0.3,
+							"timeline": {
+								"0.1": [
+									"/event entity @s d2"
+								]
+							}
+						},
+						"animation.barnacle.reset": {
+							"loop": true,
+							"animation_length": 1,
+							"timeline": {
+								"0.1": [
+									"/event entity @s normal"
+								]
+							}
+						}
+					}
+				},
+				"key": "animations",
+				"children": [
+					{
+						"key": "animation.barnacle.force_ride",
+						"is_minified": true,
+						"children": {
+							"loop": true,
+							"animation_length": 0.2,
+							"timeline": {
+								"0.1": [
+									"/event entity @s trap_player"
+								]
+							}
+						}
+					},
+					{
+						"key": "animation.barnacle.down",
+						"children": [
+							{
+								"data": "true",
+								"key": "loop"
+							},
+							{
+								"data": "0.3",
+								"key": "animation_length"
+							},
+							{
+								"key": "timeline",
+								"children": [
+									{
+										"open": {
+											"0.1": [
+												"/event entity @s d2"
+											]
+										},
+										"key": "0.1",
+										"is_minified": true,
+										"children": [
+											"/event entity @s d2"
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"animation.barnacle.force_ride": {
+								"loop": true,
+								"animation_length": 0.2,
+								"timeline": {
+									"0.1": [
+										"/event entity @s trap_player"
+									]
+								}
+							},
+							"animation.barnacle.down": {
+								"loop": true,
+								"animation_length": 0.3,
+								"timeline": {
+									"0.1": [
+										"/event entity @s d2"
+									]
+								}
+							},
+							"animation.barnacle.reset": {
+								"loop": true,
+								"animation_length": 1,
+								"timeline": {
+									"0.1": [
+										"/event entity @s normal"
+									]
+								}
+							}
+						},
+						"key": "animation.barnacle.reset",
+						"children": [
+							{
+								"data": "true",
+								"key": "loop"
+							},
+							{
+								"data": "1",
+								"key": "animation_length"
+							},
+							{
+								"open": {
+									"loop": true,
+									"animation_length": 1,
+									"timeline": {
+										"0.1": [
+											"/event entity @s normal"
+										]
+									}
+								},
+								"key": "timeline",
+								"children": [
+									{
+										"open": {
+											"0.1": [
+												"/event entity @s normal"
+											]
+										},
+										"key": "0.1",
+										"is_minified": true,
+										"children": [
+											"/event entity @s normal"
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

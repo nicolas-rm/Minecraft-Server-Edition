@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "minecraft:brew_water_rabbit_foot"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "o:water_bottle",
+    "reagent": "minecraft:rabbit_foot",
+    "output": "minecraft:potion_type:mundane"
+  }
+
+}

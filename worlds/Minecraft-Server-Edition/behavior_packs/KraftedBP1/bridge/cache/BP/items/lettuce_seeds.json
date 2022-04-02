@@ -1,0 +1,148 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\lettuce_seeds.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "3058c1cc_4c91_4d83_9158_444e0d910d74",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:lettuce_seeds",
+							"category": "nature"
+						},
+						"components": {
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.seed"
+							},
+							"minecraft:block_placer": {
+								"block": "strat:lettuce_crop",
+								"use_block_description": true
+							},
+							"minecraft:icon": {
+								"texture": "lettuce_seeds"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:lettuce_seeds",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.seed"
+								},
+								"minecraft:block_placer": {
+									"block": "strat:lettuce_crop",
+									"use_block_description": true
+								},
+								"minecraft:icon": {
+									"texture": "lettuce_seeds"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:lettuce_seeds",
+							"category": "nature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:lettuce_seeds",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.seed"
+								},
+								"minecraft:block_placer": {
+									"block": "strat:lettuce_crop",
+									"use_block_description": true
+								},
+								"minecraft:icon": {
+									"texture": "lettuce_seeds"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.seed"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:lettuce_crop",
+										"use_block_description": true
+									},
+									"minecraft:icon": {
+										"texture": "lettuce_seeds"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.seed"
+								}
+							},
+							{
+								"open": {
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.seed"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:lettuce_crop",
+										"use_block_description": true
+									},
+									"minecraft:icon": {
+										"texture": "lettuce_seeds"
+									}
+								},
+								"key": "minecraft:block_placer",
+								"is_minified": true,
+								"children": {
+									"block": "strat:lettuce_crop",
+									"use_block_description": true
+								}
+							},
+							{
+								"open": {
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.seed"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:lettuce_crop",
+										"use_block_description": true
+									},
+									"minecraft:icon": {
+										"texture": "lettuce_seeds"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "lettuce_seeds"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

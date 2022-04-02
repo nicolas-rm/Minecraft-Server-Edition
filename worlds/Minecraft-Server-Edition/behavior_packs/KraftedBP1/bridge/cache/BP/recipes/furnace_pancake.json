@@ -1,0 +1,79 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\furnace_pancake.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "6712593e_f679_4bde_bb8e_ebde5cb270c3",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_furnace": {
+						"description": {
+							"identifier": "strat:furnace_pancake"
+						},
+						"tags": [
+							"furnace",
+							"smoker"
+						],
+						"input": "strat:pancake_batter",
+						"output": "strat:pancake"
+					}
+				},
+				"key": "minecraft:recipe_furnace",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:furnace_pancake"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:pancake_batter",
+							"output": "strat:pancake"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:furnace_pancake"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:furnace_pancake"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:pancake_batter",
+							"output": "strat:pancake"
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"furnace",
+							"smoker"
+						]
+					},
+					{
+						"data": "strat:pancake_batter",
+						"key": "input"
+					},
+					{
+						"data": "strat:pancake",
+						"key": "output"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,1095 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "isunderrain",
+          "isonfire",
+          "issprinting"
+        ]
+      },
+      "animations": {
+        "isunderrain": "controller.animation.isunderrain",
+        "isonfire": "controller.animation.isonfire",
+        "issprinting": "controller.animation.issprinting"
+      }
+    },
+
+    "component_groups": {
+      "o:no_anim":{
+				"minecraft:variant": {
+				  "value": 0
+				}
+			},
+      "o:arrow_up":{
+				"minecraft:variant": {
+				  "value": 1
+				}
+			},
+      "o:arrow_down":{
+				"minecraft:variant": {
+				  "value": 2
+				}
+			},
+      "o:is_freezing":{
+				"minecraft:mark_variant": {
+				  "value": 1
+				}
+			},
+      "o:is_cold":{
+				"minecraft:mark_variant": {
+				  "value": 2
+				}
+			},
+      "o:is_neutral_temp":{
+				"minecraft:mark_variant": {
+				  "value": 3
+				}
+			},
+      "o:is_warm":{
+				"minecraft:mark_variant": {
+				  "value": 4
+				}
+			},
+      "o:is_burning":{
+				"minecraft:mark_variant": {
+				  "value": 5
+				}
+			},
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(q.player_level * 50, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+			"minecraft:can_fly": {},
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:flying_speed": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "test": "has_damage",
+                "subject": "self",
+                "value": "fatal"
+              },
+              "event": "o:death"
+            },
+            "cause": "all"
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, -0.2, -0.1 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, -0.2, -0.1 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {},
+      "minecraft:environment_sensor": {}
+    },
+
+    "events": {
+      "o:stop_anim": {
+				"add": {
+					"component_groups": [
+						"o:no_anim"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"o:arrow_down",
+            "o:arrow_up"
+					]
+				}
+			},
+      "o:become_hotter": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "scoreboard players set @s arrow_time 21"
+              ]
+            },
+            "add": {
+    					"component_groups": [
+    						"o:arrow_up"
+    					]
+    				},
+    				"remove": {
+    					"component_groups": [
+    						"o:no_anim",
+                "o:arrow_down"
+    					]
+    				}
+          }
+        ]
+			},
+      "o:become_colder": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "scoreboard players set @s arrow_time 21"
+              ]
+            },
+            "add": {
+    					"component_groups": [
+    						"o:arrow_down"
+    					]
+    				},
+    				"remove": {
+    					"component_groups": [
+    						"o:no_anim",
+                "o:arrow_up"
+    					]
+    				}
+          }
+        ]
+			},
+      "o:death": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "scoreboard players set @s thirst 100",
+                "tag @s remove thirst",
+                "scoreboard players set @s thistEffect 0",
+                "scoreboard players set @s temperature 15"
+              ]
+            }
+          }
+        ]
+      },
+      "o:playerUpdate": {
+        "sequence": [
+          {
+            "filters": {
+              "all_of": [
+                { "test": "clock_time", "subject": "self", "operator": ">=", "value": 0.25 },
+                { "test": "clock_time", "subject": "self", "operator": "<=", "value": 0.75 }
+              ]
+            },
+            "run_command": { "command": [ "tag @s add isnight","tag @s remove isday" ] }
+          },
+          {
+            "filters": {
+              "any_of": [
+                { "test": "clock_time", "subject": "self", "operator": "<", "value": 0.25 },
+                { "test": "clock_time", "subject": "self", "operator": ">", "value": 0.75 }
+              ]
+            },
+            "run_command": { "command": [ "tag @s remove isnight","tag @s add isday" ] }
+          },
+
+          {
+            "filters": { "test": "in_block", "subject": "self", "operator": "==", "value": "powder_snow" },
+            "run_command": { "command": [ "tag @s add isinpowdersnow" ] }
+          },
+
+          {
+            "filters": { "test": "has_mob_effect", "subject": "self", "operator": "==", "value": "fire_resistance" },
+            "run_command": { "command": [ "tag @s add fireImmunity" ] }
+          },
+          {
+            "filters": { "test": "has_mob_effect", "subject": "self", "operator": "!=", "value": "fire_resistance" },
+            "run_command": { "command": [ "tag @s remove fireImmunity" ] }
+          },
+
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"head", "operator": "==", "value": "leather_helmet" },
+            "run_command": { "command": [ "tag @s add iswearingleather0" ] }
+          },
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"head", "operator": "!=", "value": "leather_helmet" },
+            "run_command": { "command": [ "tag @s remove iswearingleather0" ] }
+          },
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"torso", "operator": "==", "value": "leather_chestplate" },
+            "run_command": { "command": [ "tag @s add iswearingleather1" ] }
+          },
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"torso", "operator": "!=", "value": "leather_chestplate" },
+            "run_command": { "command": [ "tag @s remove iswearingleather1" ] }
+          },
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"leg", "operator": "==", "value": "leather_leggings" },
+            "run_command": { "command": [ "tag @s add iswearingleather2" ] }
+          },
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"leg", "operator": "!=", "value": "leather_leggings" },
+            "run_command": { "command": [ "tag @s remove iswearingleather2" ] }
+          },
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"feet", "operator": "==", "value": "leather_boots" },
+            "run_command": { "command": [ "tag @s add iswearingleather3" ] }
+          },
+          {
+            "filters": { "test": "has_equipment", "subject": "self", "domain":"feet", "operator": "!=", "value": "leather_boots" },
+            "run_command": { "command": [ "tag @s remove iswearingleather3" ] }
+          },
+
+          {
+            "filters": {
+              "test":"is_underground",
+              "subject":"self",
+              "value": true
+            },
+            "run_command": {
+              "command": [
+                "tag @s add isunderground"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"is_underground",
+              "subject":"self",
+              "operator": "!=",
+              "value": true
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove isunderground"
+              ]
+            }
+          },
+
+          {
+            "filters": {
+              "test":"is_altitude",
+              "subject":"self",
+              "operator": ">=",
+              "value": 60
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove isunderground"
+              ]
+            }
+          },
+
+          {
+            "filters": {
+              "test":"is_altitude",
+              "subject":"self",
+              "operator": ">=",
+              "value": 170
+            },
+            "run_command": {
+              "command": [
+                "tag @s add isveryhigh"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"is_altitude",
+              "subject":"self",
+              "operator": ">=",
+              "value": 150
+            },
+            "run_command": {
+              "command": [
+                "tag @s add ishigh"
+              ]
+            }
+          },
+
+          {
+            "filters": {
+              "test":"is_altitude",
+              "subject":"self",
+              "operator": "<=",
+              "value": -20
+            },
+            "run_command": {
+              "command": [
+                "tag @s add isverylow"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"is_altitude",
+              "subject":"self",
+              "operator": "<=",
+              "value": 10
+            },
+            "run_command": {
+              "command": [
+                "tag @s add islow"
+              ]
+            }
+          },
+
+          {
+            "filters": {
+              "test":"in_nether",
+              "subject":"self",
+              "value": true
+            },
+            "run_command": {
+              "command": [
+                "tag @s add isinnether"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"in_nether",
+              "subject":"self",
+              "operator": "!=",
+              "value": true
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove isinnether"
+              ]
+            }
+          },
+
+          {
+            "filters": {
+                "test": "is_underwater",
+                "subject": "self",
+                "value": true
+            },
+            "run_command": {
+              "command": [
+                "tag @s add isunderwater"
+              ]
+            }
+          },
+          {
+            "filters": {
+                "test": "is_underwater",
+                "subject": "self",
+                "value": false
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove isunderwater"
+              ]
+            }
+          },
+
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "temp_0" },
+            "run_command": { "command": [ "tag @s add isfrozenbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "temp_0" },
+            "run_command": { "command": [ "tag @s remove isfrozenbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "temp_1" },
+            "run_command": { "command": [ "tag @s add iscoldbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "temp_1" },
+            "run_command": { "command": [ "tag @s remove iscoldbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "temp_3" },
+            "run_command": { "command": [ "tag @s add iswarmbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "temp_3" },
+            "run_command": { "command": [ "tag @s remove iswarmbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "temp_4" },
+            "run_command": { "command": [ "tag @s add isburningbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "temp_4" },
+            "run_command": { "command": [ "tag @s remove isburningbiome" ] }
+          },
+
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "humidity_0" },
+            "run_command": { "command": [ "tag @s add isaridbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "humidity_0" },
+            "run_command": { "command": [ "tag @s remove isaridbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "humidity_1" },
+            "run_command": { "command": [ "tag @s add isdrybiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "humidity_1" },
+            "run_command": { "command": [ "tag @s remove isdrybiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "humidity_3" },
+            "run_command": { "command": [ "tag @s add ishumidbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "humidity_3" },
+            "run_command": { "command": [ "tag @s remove ishumidbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "==", "value": "humidity_4" },
+            "run_command": { "command": [ "tag @s add iswetbiome" ] }
+          },
+          {
+            "filters": { "test": "has_biome_tag", "subject": "self", "operator": "!=", "value": "humidity_4" },
+            "run_command": { "command": [ "tag @s remove iswetbiome" ] }
+          },
+
+          { "filters": { "all_of": [ { "test": "light_level", "value": 15, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_15"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 15, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_15"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 14, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_14"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 14, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_14"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 13, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_13"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 13, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_13"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 12, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_12"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 12, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_12"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 11, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_11"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 11, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_11"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 10, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_10"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 10, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_10"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 9, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_9"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 9, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_9"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 8, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_8"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 8, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_8"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 7, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_7"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 7, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_7"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 6, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_6"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 6, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_6"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 5, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_5"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 5, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_5"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 4, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_4"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 4, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_4"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 3, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_3"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 3, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_3"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 2, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_2"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 2, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_2"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 1, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_1"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 1, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_1"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 0, "subject": "self" } ] }, "run_command": { "command": ["tag @s add dark_0"] }},
+          { "filters": { "all_of": [ { "test": "light_level", "value": 0, "subject": "self", "operator": "not" } ] }, "run_command": { "command": ["tag @s remove dark_0"] }},
+
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:potion:0"
+            },
+            "run_command": {
+              "command": [
+                "replaceitem entity @s slot.weapon.mainhand 0 o:water_bottle"
+              ]
+            }
+          },
+
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"o:torch"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light1"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"o:torch"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light1"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:lantern"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light2"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:lantern"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light2"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:glowstone"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light3"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:glowstone"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light3"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:end_rod"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light4"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:end_rod"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light4"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:shroomlight"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light5"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:shroomlight"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light5"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:lit_pumpkin"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light6"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:lit_pumpkin"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light6"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:soul_torch"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light7"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:soul_torch"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light7"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:soul_lantern"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light8"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:soul_lantern"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light8"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:lava_bucket"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light9"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:lava_bucket"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light9"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:redstone_torch"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light10"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:redstone_torch"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light10"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:magma"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light11"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:magma"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light11"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:totem_of_undying"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light12"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:totem_of_undying"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light12"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:glowstone_dust"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light13"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:glowstone_dust"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light13"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "value":"minecraft:glow_ink_sac"
+            },
+            "run_command": {
+              "command": [
+                "tag @s add light14"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test":"has_equipment",
+              "subject":"self",
+              "domain":"hand",
+              "operator": "!=",
+              "value":"minecraft:glow_ink_sac"
+            },
+            "run_command": {
+              "command": [
+                "tag @s remove light14"
+              ]
+            }
+          }
+        ]
+      },
+      "o:become_freezing": {
+				"add": {
+					"component_groups": [
+						"o:is_freezing"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"o:cold",
+            "o:is_neutral_temp",
+            "o:is_warm",
+            "o:is_burning"
+					]
+				}
+			},
+      "o:become_cold": {
+				"add": {
+					"component_groups": [
+						"o:is_cold"
+					]
+				},
+				"remove": {
+          "component_groups": [
+						"o:is_freezing",
+            "o:is_neutral_temp",
+            "o:is_warm",
+            "o:is_burning"
+					]
+				}
+			},
+      "o:become_neutral": {
+				"add": {
+					"component_groups": [
+						"o:is_neutral_temp"
+					]
+				},
+				"remove": {
+          "component_groups": [
+						"o:cold",
+            "o:is_freezing",
+            "o:is_warm",
+            "o:is_burning"
+					]
+				}
+			},
+      "o:become_warm": {
+				"add": {
+					"component_groups": [
+						"o:is_warm"
+					]
+				},
+				"remove": {
+          "component_groups": [
+						"o:cold",
+            "o:is_neutral_temp",
+            "o:is_freezing",
+            "o:is_burning"
+					]
+				}
+			},
+      "o:become_burning": {
+				"add": {
+					"component_groups": [
+						"o:is_burning"
+					]
+				},
+				"remove": {
+          "component_groups": [
+						"o:cold",
+            "o:is_neutral_temp",
+            "o:is_warm",
+            "o:is_freezing"
+					]
+				}
+			},
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      }
+    }
+  }
+}

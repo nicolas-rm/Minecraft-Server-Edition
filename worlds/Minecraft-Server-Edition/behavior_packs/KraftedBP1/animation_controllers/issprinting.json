@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.issprinting": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "state_1": "query.is_sprinting"
+            }
+          ],
+          "on_entry": ["/tag @s remove issprinting"],
+          "on_exit": ["/tag @s add issprinting"]
+        },
+        "state_1": {
+          "transitions": [
+            {
+              "default": "!query.is_sprinting"
+            }
+          ],
+          "on_exit": ["/tag @s remove issprinting"]
+        }
+      }
+    }
+  }
+}

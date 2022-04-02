@@ -1,0 +1,27 @@
+//bridge-file-version: #11
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:shuriken_1"
+		},
+		"tags": [
+			"tool_forge"
+		],
+		"pattern": [
+			"##",
+			"##"
+		],
+		"key": {
+			"#": {
+				"item": "strat:wooden_knife_blade"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:shuriken_1",
+				"count": 1
+			}
+		]
+	}
+}

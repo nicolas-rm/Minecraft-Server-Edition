@@ -1,0 +1,235 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\chopping_board12.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "fbfe5392_ba30_481e_aa33_b78b6da03b5b",
+	"file_version": 20,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:chopping_board"
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:pepperoni_pizza_slice",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 3,
+												"max": 3
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:chopping_board"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:pepperoni_pizza_slice",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 3,
+													"max": 3
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:chopping_board"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:chopping_board"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:chopping_board"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:chopping_board"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:pepperoni_pizza_slice",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 3,
+													"max": 3
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:pepperoni_pizza_slice",
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 3,
+														"max": 3
+													}
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:pepperoni_pizza_slice",
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 3,
+															"max": 3
+														}
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "strat:pepperoni_pizza_slice",
+												"key": "name"
+											},
+											{
+												"open": {
+													"type": "item",
+													"name": "strat:pepperoni_pizza_slice",
+													"functions": [
+														{
+															"function": "set_count",
+															"count": {
+																"min": 3,
+																"max": 3
+															}
+														}
+													]
+												},
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 3,
+																	"max": 3
+																}
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"function": "set_count",
+															"count": {
+																"min": 3,
+																"max": 3
+															}
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.village_guard.base": {
+			"loop": true,
+			"bones": {
+				"arms": {
+					"rotation": ["-42.97-this", 0, 0],
+					"position": [0, "-3.0-this", "-1.0-this"]
+				},
+				"leftArm": {
+					"rotation": ["math.cos(query.life_time*20.0*3.84)*2.87", -9, "-1*(math.cos(query.life_time*20.0*5.16)*2.87+2.87)"]
+				},
+				"rightArm": {
+					"rotation": ["math.cos(query.life_time*20.0*3.84)*2.87", 9, "math.cos(query.life_time*20.0*5.16)*2.87+2.87"]
+				},
+				"leftItem": {
+					"scale": "query.is_angry?1.0:0.0"
+				},
+				"rightItem": {
+					"scale": "query.has_target?1:0"
+				}
+			}
+		}
+	}
+}

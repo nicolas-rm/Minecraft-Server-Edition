@@ -1,0 +1,168 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\hotdog.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "fd108b97_71b5_420a_a35c_8aaf92652ab5",
+	"file_version": 11,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:hotdog",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 1.6,
+							"minecraft:food": {
+								"nutrition": 6,
+								"saturation_modifier": "good"
+							},
+							"minecraft:icon": {
+								"texture": "bridge_hotdog"
+							},
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:hotdog",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 6,
+									"saturation_modifier": "good"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_hotdog"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:hotdog",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:hotdog",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 6,
+									"saturation_modifier": "good"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_hotdog"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1.6",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 6,
+										"saturation_modifier": "good"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_hotdog"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 6,
+									"saturation_modifier": "good"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 6,
+										"saturation_modifier": "good"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_hotdog"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "bridge_hotdog"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 6,
+										"saturation_modifier": "good"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_hotdog"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

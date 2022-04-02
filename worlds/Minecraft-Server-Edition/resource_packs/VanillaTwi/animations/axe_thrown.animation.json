@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.axe_thrown.general": {
+			"loop": true,
+			"animation_length": 0.32,
+			"bones": {
+				"bone5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3167": [360, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "materials": {
+    "version": "1.0.0",
+   "kobold:entity_alphatest": {},
+   "hagbat:entity_alphatest": {},
+   "goblin:entity_alphatest": {},
+   "mimic:entity_alphatest": {},
+   "evocation_villager:entity_alphatest": {},
+    "nymph:entity_alphatest": {}
+  }
+}

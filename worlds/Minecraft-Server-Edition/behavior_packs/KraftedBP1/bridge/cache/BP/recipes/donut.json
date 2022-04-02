@@ -1,0 +1,83 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\donut.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "faa93604_8cf4_4171_b507_8cc397bee10e",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_furnace": {
+						"description": {
+							"identifier": "strat:donut"
+						},
+						"tags": [
+							"furnace",
+							"smoker",
+							"campfire"
+						],
+						"input": "strat:raw_donut",
+						"output": "strat:donut"
+					}
+				},
+				"key": "minecraft:recipe_furnace",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:donut"
+							},
+							"tags": [
+								"furnace",
+								"smoker",
+								"campfire"
+							],
+							"input": "strat:raw_donut",
+							"output": "strat:donut"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:donut"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:donut"
+							},
+							"tags": [
+								"furnace",
+								"smoker",
+								"campfire"
+							],
+							"input": "strat:raw_donut",
+							"output": "strat:donut"
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"furnace",
+							"smoker",
+							"campfire"
+						]
+					},
+					{
+						"data": "strat:raw_donut",
+						"key": "input"
+					},
+					{
+						"data": "strat:donut",
+						"key": "output"
+					}
+				]
+			}
+		]
+	}
+}

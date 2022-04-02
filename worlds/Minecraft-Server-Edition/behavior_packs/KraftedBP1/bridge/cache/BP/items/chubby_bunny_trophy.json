@@ -1,0 +1,144 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\chubby_bunny_trophy.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "d704435b_3682_45ad_8f02_e9a1656ed766",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:chubby_bunny_trophy",
+							"category": "commands"
+						},
+						"components": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:foil": true,
+							"minecraft:explodable": false,
+							"minecraft:should_despawn": false,
+							"minecraft:creative_category": {
+								"parent": "commands"
+							},
+							"minecraft:icon": {
+								"texture": "chubby_bunny_trophy"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chubby_bunny_trophy",
+								"category": "commands"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:foil": true,
+								"minecraft:explodable": false,
+								"minecraft:should_despawn": false,
+								"minecraft:creative_category": {
+									"parent": "commands"
+								},
+								"minecraft:icon": {
+									"texture": "chubby_bunny_trophy"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:chubby_bunny_trophy",
+							"category": "commands"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chubby_bunny_trophy",
+								"category": "commands"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:foil": true,
+								"minecraft:explodable": false,
+								"minecraft:should_despawn": false,
+								"minecraft:creative_category": {
+									"parent": "commands"
+								},
+								"minecraft:icon": {
+									"texture": "chubby_bunny_trophy"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:foil"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:explodable"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:should_despawn"
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:foil": true,
+									"minecraft:explodable": false,
+									"minecraft:should_despawn": false,
+									"minecraft:creative_category": {
+										"parent": "commands"
+									},
+									"minecraft:icon": {
+										"texture": "chubby_bunny_trophy"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "commands"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:foil": true,
+									"minecraft:explodable": false,
+									"minecraft:should_despawn": false,
+									"minecraft:creative_category": {
+										"parent": "commands"
+									},
+									"minecraft:icon": {
+										"texture": "chubby_bunny_trophy"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "chubby_bunny_trophy"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

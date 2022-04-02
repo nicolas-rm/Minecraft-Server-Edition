@@ -1,0 +1,25 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "mashiene:mode_changer"
+		},
+		"tags": [
+			"mashinery_table",
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:lever",
+				"count": 1
+			}
+		],
+		"result": [
+			{
+				"item": "mashiene:mode_changer",
+				"count": 1
+			}
+		]
+	}
+}

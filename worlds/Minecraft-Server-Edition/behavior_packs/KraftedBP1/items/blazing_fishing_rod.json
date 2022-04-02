@@ -1,0 +1,84 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "adv:blazing_fishing_pole",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 570
+      },
+      "minecraft:enchantable": {
+        "slot": "fishing_rod",
+        "value": 8
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "fish"
+        }
+      },
+      "minecraft:cooldown": {
+        "category": "ender_pearl",
+        "duration": 15
+      },
+      "minecraft:icon": {
+        "texture": "blazing_fishing_pole"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:blaze_rod"
+            ],
+            "repair_amount": 142
+          },
+          {
+            "items": [
+              "adv:blazing_fishing_pole"
+            ],
+            "repair_amount": "context.other-\u003equery.remaining_durability + 0.5 * context.other-\u003equery.max_durability"
+          }
+        ]
+      }
+    },
+    "events": {
+      "fish": {
+        "sequence": [
+          {
+            "swing": {}
+          },
+          {
+            "run_command": {
+              "command": [
+                "playsound random.bow @p"
+              ]
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "adv:blazing_hook",
+              "launch_power": 1
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "tp @e [type\u003ditem,r\u003d10] @p"
+              ]
+            }
+          },
+          {
+            "damage": {
+              "type": "magic",
+              "amount": 1,
+              "target": "self"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

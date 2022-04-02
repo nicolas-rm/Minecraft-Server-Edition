@@ -1,0 +1,206 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\space outlaw\\textures\\item_texture.json",
+	"file_type": "item_texture",
+	"format_version": 1,
+	"file_uuid": "b0381513_7463_4a62_8fbf_d2c6cade3cbc",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.items",
+				"key": "texture_name"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.items",
+					"texture_data": {
+						"torch": {
+							"textures": [
+								"textures/items/torch"
+							]
+						},
+						"lava_bucket": {
+							"textures": [
+								"textures/items/lava"
+							]
+						},
+						"soul_torch": {
+							"textures": [
+								"textures/items/soul_torch"
+							]
+						},
+						"redstone_torch": {
+							"textures": [
+								"textures/items/redstone_torch"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"open": {
+							"torch": {
+								"textures": [
+									"textures/items/torch"
+								]
+							},
+							"lava_bucket": {
+								"textures": [
+									"textures/items/lava"
+								]
+							},
+							"soul_torch": {
+								"textures": [
+									"textures/items/soul_torch"
+								]
+							},
+							"redstone_torch": {
+								"textures": [
+									"textures/items/redstone_torch"
+								]
+							}
+						},
+						"key": "torch",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/torch"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/torch"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"torch": {
+								"textures": [
+									"textures/items/torch"
+								]
+							},
+							"lava_bucket": {
+								"textures": [
+									"textures/items/lava"
+								]
+							},
+							"soul_torch": {
+								"textures": [
+									"textures/items/soul_torch"
+								]
+							},
+							"redstone_torch": {
+								"textures": [
+									"textures/items/redstone_torch"
+								]
+							}
+						},
+						"key": "lava_bucket",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/lava"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/lava"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"torch": {
+								"textures": [
+									"textures/items/torch"
+								]
+							},
+							"lava_bucket": {
+								"textures": [
+									"textures/items/lava"
+								]
+							},
+							"soul_torch": {
+								"textures": [
+									"textures/items/soul_torch"
+								]
+							},
+							"redstone_torch": {
+								"textures": [
+									"textures/items/redstone_torch"
+								]
+							}
+						},
+						"key": "soul_torch",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/soul_torch"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/soul_torch"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"torch": {
+								"textures": [
+									"textures/items/torch"
+								]
+							},
+							"lava_bucket": {
+								"textures": [
+									"textures/items/lava"
+								]
+							},
+							"soul_torch": {
+								"textures": [
+									"textures/items/soul_torch"
+								]
+							},
+							"redstone_torch": {
+								"textures": [
+									"textures/items/redstone_torch"
+								]
+							}
+						},
+						"key": "redstone_torch",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/redstone_torch"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/redstone_torch"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

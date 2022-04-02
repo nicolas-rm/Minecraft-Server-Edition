@@ -1,0 +1,86 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\textures\\item_texture.json",
+	"file_type": "item_texture",
+	"format_version": 1,
+	"file_uuid": "82054644_fb9f_4360_9c91_369c036915e7",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.items",
+				"key": "texture_name"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.items",
+					"texture_data": {
+						"azure_scales": {
+							"textures": [
+								"textures/items/azure_scales"
+							]
+						},
+						"barracuda_item": {
+							"textures": [
+								"textures/items/barracuda_item"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"key": "azure_scales",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/azure_scales"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/azure_scales"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"azure_scales": {
+								"textures": [
+									"textures/items/azure_scales"
+								]
+							},
+							"barracuda_item": {
+								"textures": [
+									"textures/items/barracuda_item"
+								]
+							}
+						},
+						"key": "barracuda_item",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/barracuda_item"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/barracuda_item"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

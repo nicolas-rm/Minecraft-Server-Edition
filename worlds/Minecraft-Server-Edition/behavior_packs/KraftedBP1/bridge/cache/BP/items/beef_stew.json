@@ -1,0 +1,419 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\beef_stew.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "3dae2c29_e4bb_4719_9e73_4d0a876474aa",
+	"file_version": 15,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:beef_stew",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 2.4,
+							"minecraft:max_stack_size": 16,
+							"minecraft:use_animation": "eat",
+							"minecraft:food": {
+								"nutrition": 8,
+								"can_always_eat": false,
+								"saturation_modifier": "normal",
+								"using_converts_to": "minecraft:bowl",
+								"on_consume": {
+									"event": "consume"
+								}
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "beef_stew"
+							}
+						},
+						"events": {
+							"consume": {
+								"randomize": [
+									{
+										"weight": 8
+									},
+									{
+										"weight": 2,
+										"run_command": {
+											"command": [
+												"effect @p strength 20 0"
+											]
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beef_stew",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 8,
+									"can_always_eat": false,
+									"saturation_modifier": "normal",
+									"using_converts_to": "minecraft:bowl",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "beef_stew"
+								}
+							},
+							"events": {
+								"consume": {
+									"randomize": [
+										{
+											"weight": 8
+										},
+										{
+											"weight": 2,
+											"run_command": {
+												"command": [
+													"effect @p strength 20 0"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:beef_stew",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beef_stew",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 8,
+									"can_always_eat": false,
+									"saturation_modifier": "normal",
+									"using_converts_to": "minecraft:bowl",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "beef_stew"
+								}
+							},
+							"events": {
+								"consume": {
+									"randomize": [
+										{
+											"weight": 8
+										},
+										{
+											"weight": 2,
+											"run_command": {
+												"command": [
+													"effect @p strength 20 0"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 8,
+										"can_always_eat": false,
+										"saturation_modifier": "normal",
+										"using_converts_to": "minecraft:bowl",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "beef_stew"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 8,
+									"can_always_eat": false,
+									"saturation_modifier": "normal",
+									"using_converts_to": "minecraft:bowl",
+									"on_consume": {
+										"event": "consume"
+									}
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 8,
+										"can_always_eat": false,
+										"saturation_modifier": "normal",
+										"using_converts_to": "minecraft:bowl",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "beef_stew"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 8,
+										"can_always_eat": false,
+										"saturation_modifier": "normal",
+										"using_converts_to": "minecraft:bowl",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "beef_stew"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "beef_stew"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beef_stew",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 8,
+									"can_always_eat": false,
+									"saturation_modifier": "normal",
+									"using_converts_to": "minecraft:bowl",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "beef_stew"
+								}
+							},
+							"events": {
+								"consume": {
+									"randomize": [
+										{
+											"weight": 8
+										},
+										{
+											"weight": 2,
+											"run_command": {
+												"command": [
+													"effect @p strength 20 0"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"consume": {
+										"randomize": [
+											{
+												"weight": 8
+											},
+											{
+												"weight": 2,
+												"run_command": {
+													"command": [
+														"effect @p strength 20 0"
+													]
+												}
+											}
+										]
+									}
+								},
+								"key": "consume",
+								"children": [
+									{
+										"open": {
+											"randomize": [
+												{
+													"weight": 8
+												},
+												{
+													"weight": 2,
+													"run_command": {
+														"command": [
+															"effect @p strength 20 0"
+														]
+													}
+												}
+											]
+										},
+										"key": "randomize",
+										"children": [
+											{
+												"open": [
+													{
+														"weight": 8
+													},
+													{
+														"weight": 2,
+														"run_command": {
+															"command": [
+																"effect @p strength 20 0"
+															]
+														}
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"weight": 8
+												}
+											},
+											{
+												"open": [
+													{
+														"weight": 8
+													},
+													{
+														"weight": 2,
+														"run_command": {
+															"command": [
+																"effect @p strength 20 0"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"data": "2",
+														"key": "weight"
+													},
+													{
+														"open": {
+															"weight": 2,
+															"run_command": {
+																"command": [
+																	"effect @p strength 20 0"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"effect @p strength 20 0"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"effect @p strength 20 0"
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

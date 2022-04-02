@@ -1,0 +1,21 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "strat:ardite_knife_blade"
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Ardite Knife Blade"
+			},
+			"minecraft:icon": {
+				"texture": "ardite_knife_blade"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			}
+		},
+		"events": {}
+	}
+}

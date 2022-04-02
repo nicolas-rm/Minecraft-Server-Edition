@@ -1,0 +1,90 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\apple.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "1763ead6_60d5_4e7d_bffe_a493f5774d55",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:apple"
+						},
+						"components": {
+							"minecraft:use_duration": 8,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "low"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:apple"
+							},
+							"components": {
+								"minecraft:use_duration": 8,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:apple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:apple"
+							},
+							"components": {
+								"minecraft:use_duration": 8,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "8",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 8,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 2,
+									"saturation_modifier": "low"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

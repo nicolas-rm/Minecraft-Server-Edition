@@ -1,0 +1,248 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\pan19.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "fd0e1696_945e_438e_9609_774171536561",
+	"file_version": 26,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:frying_pan_item"
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:sausage",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 2
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:frying_pan_item"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:sausage",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 2
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:frying_pan_item"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:frying_pan_item"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:frying_pan_item"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:frying_pan_item"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:sausage",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 2
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:sausage",
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 2,
+														"max": 2
+													}
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:sausage",
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 2,
+															"max": 2
+														}
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "strat:sausage",
+												"key": "name"
+											},
+											{
+												"open": {
+													"type": "item",
+													"name": "strat:sausage",
+													"functions": [
+														{
+															"function": "set_count",
+															"count": {
+																"min": 2,
+																"max": 2
+															}
+														}
+													]
+												},
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 2,
+																	"max": 2
+																}
+															}
+														],
+														"children": [
+															{
+																"data": "set_count",
+																"key": "function"
+															},
+															{
+																"open": {
+																	"function": "set_count",
+																	"count": {
+																		"min": 2,
+																		"max": 2
+																	}
+																},
+																"key": "count",
+																"is_minified": true,
+																"children": {
+																	"min": 2,
+																	"max": 2
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

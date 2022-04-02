@@ -1,0 +1,31 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mashiene:ash_stone"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SA",
+			"AS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:cobblestone",
+				"data": 0
+			},
+			"A": {
+				"item": "mashiene:ash"
+			}
+		},
+		"result": [
+			{
+				"item": "mashiene:ash_stone",
+				"count": 2
+			}
+		]
+	}
+}

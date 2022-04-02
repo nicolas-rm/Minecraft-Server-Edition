@@ -1,0 +1,249 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\bookshelf_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "2f2ec524_0a5d_4f5d_ae1e_89816ea0d0a0",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.16,
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:bookshelf_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"AAA",
+							"BBB",
+							"AAA"
+						],
+						"key": {
+							"A": {
+								"item": "strat:maple_planks"
+							},
+							"B": {
+								"item": "book"
+							}
+						},
+						"result": {
+							"item": "bookshelf",
+							"count": 1
+						},
+						"priority": 50
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bookshelf_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BBB",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "book"
+								}
+							},
+							"result": {
+								"item": "bookshelf",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:bookshelf_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bookshelf_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BBB",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "book"
+								}
+							},
+							"result": {
+								"item": "bookshelf",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bookshelf_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BBB",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "book"
+								}
+							},
+							"result": {
+								"item": "bookshelf",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"AAA",
+							"BBB",
+							"AAA"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bookshelf_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BBB",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "book"
+								}
+							},
+							"result": {
+								"item": "bookshelf",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "book"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bookshelf_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BBB",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "book"
+								}
+							},
+							"result": {
+								"item": "bookshelf",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "result",
+						"is_minified": true,
+						"children": {
+							"item": "bookshelf",
+							"count": 1
+						}
+					},
+					{
+						"data": "50",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

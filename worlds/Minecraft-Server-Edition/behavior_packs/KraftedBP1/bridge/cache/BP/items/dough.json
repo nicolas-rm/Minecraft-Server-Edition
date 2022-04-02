@@ -1,0 +1,108 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\dough.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "2cdf26b6_f7b8_4ca2_9c80_97ef41fbbb10",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:dough",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:icon": {
+								"texture": "bridge_dough"
+							},
+							"minecraft:creative_category": {
+								"parent": "items"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "bridge_dough"
+								},
+								"minecraft:creative_category": {
+									"parent": "items"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:dough",
+							"category": "items"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "bridge_dough"
+								},
+								"minecraft:creative_category": {
+									"parent": "items"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "bridge_dough"
+									},
+									"minecraft:creative_category": {
+										"parent": "items"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "bridge_dough"
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "bridge_dough"
+									},
+									"minecraft:creative_category": {
+										"parent": "items"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "items"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

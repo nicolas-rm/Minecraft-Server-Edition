@@ -1,0 +1,336 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\piston_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "9eaad792_f5c7_4171_8668_43184b336e22",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.16,
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:piston_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"AAA",
+							"BCB",
+							"BDB"
+						],
+						"key": {
+							"A": {
+								"item": "strat:maple_planks"
+							},
+							"B": {
+								"item": "cobblestone"
+							},
+							"C": {
+								"item": "iron_ingot"
+							},
+							"D": {
+								"item": "redstone"
+							}
+						},
+						"result": {
+							"item": "piston",
+							"count": 1,
+							"data": 1
+						}
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:piston_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BCB",
+								"BDB"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "cobblestone"
+								},
+								"C": {
+									"item": "iron_ingot"
+								},
+								"D": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "piston",
+								"count": 1,
+								"data": 1
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:piston_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:piston_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BCB",
+								"BDB"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "cobblestone"
+								},
+								"C": {
+									"item": "iron_ingot"
+								},
+								"D": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "piston",
+								"count": 1,
+								"data": 1
+							}
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:piston_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BCB",
+								"BDB"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "cobblestone"
+								},
+								"C": {
+									"item": "iron_ingot"
+								},
+								"D": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "piston",
+								"count": 1,
+								"data": 1
+							}
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"AAA",
+							"BCB",
+							"BDB"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:piston_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BCB",
+								"BDB"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "cobblestone"
+								},
+								"C": {
+									"item": "iron_ingot"
+								},
+								"D": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "piston",
+								"count": 1,
+								"data": 1
+							}
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "cobblestone"
+									},
+									"C": {
+										"item": "iron_ingot"
+									},
+									"D": {
+										"item": "redstone"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "cobblestone"
+									},
+									"C": {
+										"item": "iron_ingot"
+									},
+									"D": {
+										"item": "redstone"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "cobblestone"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "cobblestone"
+									},
+									"C": {
+										"item": "iron_ingot"
+									},
+									"D": {
+										"item": "redstone"
+									}
+								},
+								"key": "C",
+								"is_minified": true,
+								"children": {
+									"item": "iron_ingot"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									},
+									"B": {
+										"item": "cobblestone"
+									},
+									"C": {
+										"item": "iron_ingot"
+									},
+									"D": {
+										"item": "redstone"
+									}
+								},
+								"key": "D",
+								"is_minified": true,
+								"children": {
+									"item": "redstone"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:piston_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BCB",
+								"BDB"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								},
+								"B": {
+									"item": "cobblestone"
+								},
+								"C": {
+									"item": "iron_ingot"
+								},
+								"D": {
+									"item": "redstone"
+								}
+							},
+							"result": {
+								"item": "piston",
+								"count": 1,
+								"data": 1
+							}
+						},
+						"key": "result",
+						"is_minified": true,
+						"children": {
+							"item": "piston",
+							"count": 1,
+							"data": 1
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,23 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.12.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "mrleefy:witherskeletonspawner12"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "mrleefy:witherskeletonspawner12"
+			}
+		],
+		"result": [
+			{
+				"item": "mrleefy:witherskeletonspawner",
+				"count": 12
+			}
+		]
+	}
+}

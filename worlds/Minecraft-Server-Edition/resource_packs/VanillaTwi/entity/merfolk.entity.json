@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mythmob:merfolk",
+      "materials": { "default": "vindicator" },
+      "textures": { "default": "textures/entity/mythmob/merfolk" },
+      "geometry": { "default": "geometry.merfolk" },
+      "scripts": {
+        "pre_animation": [
+		  "variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);",
+          "variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+          "variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+        ],
+        "scale": "0.9375"
+      },
+      "animations": {
+		"swim": "animation.merfolk.swim",
+        "vindicator_walk": "animation.merfolk.walk"
+      },
+      "animation_controllers": [
+        { "look_at_target": "controller.animation.humanoid.look_at_target" },
+        { "vindicator_base": "controller.animation.vindicator.base" },
+        { "riding": "controller.animation.humanoid.riding" }
+      ],
+      "render_controllers": [ "controller.render.vindicator" ],
+      "enable_attachables": true,
+	  "spawn_egg": {
+        "base_color": "#ffffff",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

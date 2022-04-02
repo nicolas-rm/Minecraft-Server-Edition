@@ -1,0 +1,17 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\space outlaw\\blocks.json",
+	"file_type": "client_block",
+	"format_version": 1,
+	"file_uuid": "657c6294_5e71_4616_aec4_ae7eb1e24212",
+	"file_version": 1,
+	"cache_content": {
+		"is_minified": true,
+		"children": {
+			"format_version": [
+				1,
+				1,
+				0
+			]
+		}
+	}
+}

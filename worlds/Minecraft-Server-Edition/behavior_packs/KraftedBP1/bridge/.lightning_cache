@@ -1,0 +1,41 @@
+{
+	"client_entity": {
+		"RP/entity/ghost.entity.json": {
+			"identifiers": [
+				"korbon:ghost"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"riding.arms",
+				"riding.legs",
+				"holding",
+				"brandish_spear",
+				"charging",
+				"sneaking",
+				"damage_nearby_mobs",
+				"bow_and_arrow",
+				"swimming",
+				"use_item_progress",
+				"bob",
+				"attack.rotations",
+				"skeleton_attack"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	}
+}

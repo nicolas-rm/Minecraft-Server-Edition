@@ -1,0 +1,26 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ocean:palm_log"
+		},
+		"components": {
+			"minecraft:destroy_time": 2,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "opaque",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "nature"
+			}
+		},
+		"events": {}
+	}
+}

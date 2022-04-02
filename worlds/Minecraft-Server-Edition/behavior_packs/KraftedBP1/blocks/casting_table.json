@@ -1,0 +1,51 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "strat:casting_table"
+		},
+		"components": {
+			"minecraft:destroy_time": 2,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:map_color": "#202020",
+			"minecraft:explosion_resistance": 5,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "strat_casting table",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.casting_table",
+			"minecraft:loot": "loot_tables/casting_table.json",
+			"minecraft:crafting_table": {
+				"custom_description": "Casting Table",
+				"grid_size": 3,
+				"crafting_tags": [
+					"casting_table"
+				]
+			},
+			"minecraft:on_placed": {
+				"event": "strat:commands"
+			},
+			"tag:stone": {},
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.Items",
+				"category": "Items"
+			}
+		},
+		"events": {
+			"strat:commands": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

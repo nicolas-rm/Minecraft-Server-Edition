@@ -1,0 +1,175 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.kobold.general.v1.0": {
+			"loop": true,
+			"bones": {
+				"ear1": {
+					"position": [0, -1, 0],
+					"scale": [1, 3, 1]
+				},
+				"ear2": {
+					"position": [0, -1, 0],
+					"scale": [1, 3, 1]
+				},
+				"armor": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.kobold.sit": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"position": [0, 3, 0]
+				},
+				"body": {
+					"position": [0, -13, 0]
+				},
+				"rightArm": {
+					"rotation": [-50, -15, 0]
+				},
+				"leftArm": {
+					"rotation": [-50, 15, 0]
+				},
+				"rightLeg": {
+					"rotation": [-85, 15, 0]
+				},
+				"rightLeg2": {
+					"position": [0, 0, -1]
+				},
+				"leftLeg": {
+					"rotation": [-85, -15, 0]
+				},
+				"leftLeg2": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.kobold.general_bulldog": {
+			"loop": true,
+			"bones": {
+				"ear1": {
+					"position": [0, -1, 0],
+					"scale": [1, 3, 1]
+				},
+				"all": {
+					"position": [0, "query.is_sitting ? -6 : 0", 0]
+				},
+				"head": {
+					"scale": [1, 0.9, 1]
+				},
+				"leftLeg": {
+					"rotation": ["query.is_sitting ? -90 : 0", "query.is_sitting ? 30 : 0", 0],
+					"position": ["query.is_sitting ? 1 : 0", 0, "query.is_sitting ? 1 : 0"]
+				},
+				"rightLeg": {
+					"rotation": ["query.is_sitting ? -90 : 0", "query.is_sitting ? -30 : 0", 0],
+					"position": ["query.is_sitting ? -1 : 0", 0, "query.is_sitting ? 1 : 0"]
+				}
+			}
+		},
+		"animation.kobold.move": {
+			"loop": true,
+			"animation_length": 8.45,
+			"bones": {
+				"rightArm": {
+					"rotation": ["query.is_admiring ? 0 : variable.tcos0", 0, 0]
+				},
+				"leftArm": {
+					"rotation": ["query.is_admiring ? 0 : variable.tcos1", 0, 0]
+				},
+				"rightArm2": {
+					"rotation": ["query.is_admiring ? 0 : variable.tcos1", 0, 0]
+				},
+				"leftArm2": {
+					"rotation": ["query.is_admiring ? 0 : variable.tcos0", 0, 0]
+				},
+				"rightArm3": {
+					"rotation": ["query.is_admiring ? 0 : variable.tcos1", 0, 0]
+				},
+				"leftArm3": {
+					"rotation": ["query.is_admiring ? 0 : variable.tcos0", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["query.is_sitting ? 0 : (variable.tcos0 * 1.4)", 0, 0]
+				},
+				"leftLeg": {
+					"rotation": ["query.is_sitting ? 0 : (variable.tcos1 * 1.4)", 0, 0]
+				},
+				"rightLeg2": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				},
+				"leftLeg2": {
+					"rotation": ["variable.tcos1 * 1.4", 0, 0]
+				},
+				"rightLeg3": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				},
+				"leftLeg3": {
+					"rotation": ["variable.tcos1 * 1.4", 0, 0]
+				},
+				"ear1": {
+					"scale": 1
+				},
+				"strap": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.kobold.general": {
+			"loop": true,
+			"bones": {
+				"ear1": {
+					"position": [0, -1, 0],
+					"scale": [1, 3, 1]
+				},
+				"all": {
+					"position": [0, "query.is_sitting ? -6 : 0", 0]
+				},
+				"leftLeg": {
+					"rotation": ["query.is_sitting ? -90 : 0", "query.is_sitting ? 30 : 0", 0],
+					"position": ["query.is_sitting ? 1 : 0", 0, "query.is_sitting ? 1 : 0"]
+				},
+				"rightLeg": {
+					"rotation": ["query.is_sitting ? -90 : 0", "query.is_sitting ? -30 : 0", 0],
+					"position": ["query.is_sitting ? -1 : 0", 0, "query.is_sitting ? 1 : 0"]
+				},
+				"head": {
+					"rotation": ["query.is_admiring ? 20 : 0", 0, 0]
+				},
+				"leftArm": {
+					"rotation": ["query.is_admiring ? -60 : 0", "query.is_admiring ? 30 : 0", 0]
+				},
+				"rightArm": {
+					"rotation": ["query.is_admiring ? -60 : 0", "query.is_admiring ? -30 : 0", 0]
+				},
+				"rightItem": {
+					"scale": "query.is_admiring ? 0 : 1"
+				}
+			}
+		},
+		"animation.kobold.look_at_target.default": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				},
+				"head2": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				},
+				"head3": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.vanilla_twilight.kobold.attack": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": ["(math.cos(query.life_time * 20.0 * 3.84) * 2.87) + (math.sin(variable.attack_time * -180.0) * 126.05 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180 )) * 22.92)", 0, 0]
+				}
+			}
+		}
+	}
+}

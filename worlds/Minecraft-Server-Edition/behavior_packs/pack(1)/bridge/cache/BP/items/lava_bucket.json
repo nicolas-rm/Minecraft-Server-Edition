@@ -1,0 +1,208 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\space outlaw\\items\\lava_bucket.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "7f49c22e_2788_48b1_aa2c_ddc600a522a9",
+	"file_version": 20,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"category": "commands",
+							"identifier": "ray:lava_bucket"
+						},
+						"components": {
+							"minecraft:icon": {
+								"texture": "lava_bucket"
+							},
+							"minecraft:display_name": {
+								"value": "Lava Bucket"
+							},
+							"minecraft:max_stack_size": 1,
+							"minecraft:use_animation": "crossbow",
+							"minecraft:block_placer": {
+								"use_block_description": true,
+								"block": "minecraft:flowing_lava"
+							},
+							"minecraft:allow_off_hand": true,
+							"minecraft:fuel": {
+								"duration": 100
+							},
+							"minecraft:on_use_on": {
+								"on_use_on": {
+									"event": "use",
+									"target": "self"
+								}
+							}
+						},
+						"events": {
+							"use": {
+								"run_command": {
+									"command": [
+										"tag @p add lava",
+										"summon pig ~ 1000000000000 ~",
+										"playsound bucket.fill_lava"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"category": "commands",
+							"identifier": "ray:lava_bucket"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"category": "commands",
+								"identifier": "ray:lava_bucket"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "lava_bucket"
+								},
+								"minecraft:display_name": {
+									"value": "Lava Bucket"
+								},
+								"minecraft:max_stack_size": 1,
+								"minecraft:use_animation": "crossbow",
+								"minecraft:block_placer": {
+									"use_block_description": true,
+									"block": "minecraft:flowing_lava"
+								},
+								"minecraft:allow_off_hand": true,
+								"minecraft:fuel": {
+									"duration": 100
+								},
+								"minecraft:on_use_on": {
+									"on_use_on": {
+										"event": "use",
+										"target": "self"
+									}
+								}
+							},
+							"events": {
+								"use": {
+									"run_command": {
+										"command": [
+											"tag @p add lava",
+											"summon pig ~ 1000000000000 ~",
+											"playsound bucket.fill_lava"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "lava_bucket"
+									},
+									"minecraft:display_name": {
+										"value": "Lava Bucket"
+									},
+									"minecraft:max_stack_size": 1,
+									"minecraft:use_animation": "crossbow",
+									"minecraft:block_placer": {
+										"use_block_description": true,
+										"block": "minecraft:flowing_lava"
+									},
+									"minecraft:allow_off_hand": true,
+									"minecraft:fuel": {
+										"duration": 100
+									},
+									"minecraft:on_use_on": {
+										"on_use_on": {
+											"event": "use",
+											"target": "self"
+										}
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "lava_bucket"
+								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {
+									"value": "Lava Bucket"
+								}
+							},
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "crossbow",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:block_placer",
+								"is_minified": true,
+								"children": {
+									"use_block_description": true,
+									"block": "minecraft:flowing_lava"
+								}
+							},
+							{
+								"data": "true",
+								"key": "minecraft:allow_off_hand"
+							},
+							{
+								"key": "minecraft:fuel",
+								"is_minified": true,
+								"children": {
+									"duration": 100
+								}
+							},
+							{
+								"key": "minecraft:on_use_on",
+								"is_minified": true,
+								"children": {
+									"on_use_on": {
+										"event": "use",
+										"target": "self"
+									}
+								}
+							}
+						]
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"use": {
+								"run_command": {
+									"command": [
+										"tag @p add lava",
+										"summon pig ~ 1000000000000 ~",
+										"playsound bucket.fill_lava"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

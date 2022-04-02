@@ -1,0 +1,134 @@
+//bridge-file-version: #12
+{
+	"format_version": "1.17.0",
+	"sound_definitions": {
+		"mob.goblin.idle": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/mob/goblin/rage1",
+					"load_on_low_memory": true,
+					"pitch": 1.6
+				},
+				{
+					"name": "sounds/mob/goblin/rage2",
+					"load_on_low_memory": true,
+					"pitch": 1.6
+				}
+			]
+		},
+		"mob.goblin.ambient": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/goblin/goblinha",
+				"sounds/mob/goblin/goblinhaa"
+			]
+		},
+		"mob.goblin.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/goblin/goblinow",
+				"sounds/mob/goblin/hurt (1)",
+				"sounds/mob/goblin/hurt (2)",
+				"sounds/mob/goblin/hurt (3)",
+				"sounds/mob/goblin/hurt (4)"
+			]
+		},
+		"mob.goblin.angry": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/goblin/angry (5)",
+				"sounds/mob/goblin/angry (1)",
+				"sounds/mob/goblin/angry (2)",
+				"sounds/mob/goblin/angry (3)",
+				"sounds/mob/goblin/angry (6)",
+				"sounds/mob/goblin/angry (4)"
+			]
+		},
+		"mob.goblin.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/goblin/goblinay",
+				"sounds/mob/goblin/death (2)",
+				"sounds/mob/goblin/death"
+			]
+		},
+		"mob.hagbat.flap": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mob/enderdragon/wings1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/mob/enderdragon/wings2",
+					"volume": 1
+				},
+				{
+					"name": "sounds/mob/enderdragon/wings3",
+					"volume": 1
+				},
+				{
+					"name": "sounds/mob/enderdragon/wings4",
+					"volume": 1
+				},
+				{
+					"name": "sounds/mob/enderdragon/wings5",
+					"volume": 1
+				},
+				{
+					"name": "sounds/mob/enderdragon/wings6",
+					"volume": 1
+				}
+			]
+		},
+		"mob.ogre.death.tamed": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/ogre/tamedogre (2)",
+				"sounds/mob/ogre/tamedogre"
+			]
+		},
+		"mob.ogre.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/ogre/hurt (1)",
+				"sounds/mob/ogre/hurt (2)",
+				"sounds/mob/ogre/hurt (3)",
+				"sounds/mob/ogre/hurt (4)",
+				"sounds/mob/ogre/hurt (5)",
+				"sounds/mob/ogre/hurt (6)"
+			]
+		},
+		"mob.ogre.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/ogre/tamedogre (3)",
+				"sounds/mob/ogre/tamedogre (4)",
+				"sounds/mob/ogre/tamedogre (5)"
+			]
+		},
+		"mob.ogre.ambienttamed": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/ogre/tamedambient",
+				"sounds/mob/ogre/tamedambient (1)",
+				"sounds/mob/ogre/tamedambient (2)",
+				"sounds/mob/ogre/tamedambient (3)",
+				"sounds/mob/ogre/tamedambient (4)",
+				"sounds/mob/ogre/tamedambient (5)",
+				"sounds/mob/ogre/tamedambient (6)"
+			]
+		},
+		"mob.ogre.ambient": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/ogre/ambient ogre (1)",
+				"sounds/mob/ogre/ambient ogre (2)",
+				"sounds/mob/ogre/ambient ogre (3)",
+				"sounds/mob/ogre/ambient ogre (4)",
+				"sounds/mob/ogre/ambient ogre (5)"
+			]
+		}
+	}
+}

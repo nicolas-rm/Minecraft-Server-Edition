@@ -1,0 +1,26 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ocean:palm_planks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"L"
+		],
+		"key": {
+			"L": {
+				"item": "ocean:palm_log"
+			}
+		},
+		"result": [
+			{
+				"item": "ocean:palm_planks",
+				"count": 4
+			}
+		]
+	}
+}

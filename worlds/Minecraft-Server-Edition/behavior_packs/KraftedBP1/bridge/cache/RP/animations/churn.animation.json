@@ -1,0 +1,134 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Food Expansion Addon RP\\animations\\churn.animation.json",
+	"file_type": "rp_animation",
+	"format_version": 1,
+	"file_uuid": "ece34f37_7136_4eca_b0db_8cde4338afed",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"animations": {
+						"animation.churn": {
+							"animation_length": 4.16,
+							"bones": {
+								"stick": {
+									"position": {
+										"0.0": [
+											0,
+											0,
+											0
+										],
+										"0.52": [
+											0,
+											-3,
+											0
+										],
+										"1.04": [
+											0,
+											0,
+											0
+										],
+										"1.56": [
+											0,
+											-3,
+											0
+										],
+										"2.08": [
+											0,
+											0,
+											0
+										],
+										"2.6": [
+											0,
+											-3,
+											0
+										],
+										"3.12": [
+											0,
+											0,
+											0
+										],
+										"3.64": [
+											0,
+											-3,
+											0
+										],
+										"4.16": [
+											0,
+											0,
+											0
+										]
+									}
+								}
+							}
+						}
+					}
+				},
+				"key": "animations",
+				"is_minified": true,
+				"children": {
+					"animation.churn": {
+						"animation_length": 4.16,
+						"bones": {
+							"stick": {
+								"position": {
+									"0.0": [
+										0,
+										0,
+										0
+									],
+									"0.52": [
+										0,
+										-3,
+										0
+									],
+									"1.04": [
+										0,
+										0,
+										0
+									],
+									"1.56": [
+										0,
+										-3,
+										0
+									],
+									"2.08": [
+										0,
+										0,
+										0
+									],
+									"2.6": [
+										0,
+										-3,
+										0
+									],
+									"3.12": [
+										0,
+										0,
+										0
+									],
+									"3.64": [
+										0,
+										-3,
+										0
+									],
+									"4.16": [
+										0,
+										0,
+										0
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		]
+	}
+}

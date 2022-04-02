@@ -1,0 +1,212 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\space outlaw\\items\\soul_torch.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "fa325193_2f9e_46f1_ba9b_9ca63f3c1f20",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "ray:soul_torch",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:display_name": {
+								"value": "si"
+							},
+							"minecraft:max_stack_size": 1,
+							"minecraft:icon": {
+								"texture": "soul_torch"
+							},
+							"minecraft:allow_off_hand": true,
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.items"
+							}
+						},
+						"events": {}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "ray:soul_torch",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:display_name": {
+								"value": "si"
+							},
+							"minecraft:max_stack_size": 1,
+							"minecraft:icon": {
+								"texture": "soul_torch"
+							},
+							"minecraft:allow_off_hand": true,
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.items"
+							}
+						},
+						"events": {}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:soul_torch",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:display_name": {
+									"value": "si"
+								},
+								"minecraft:max_stack_size": 1,
+								"minecraft:icon": {
+									"texture": "soul_torch"
+								},
+								"minecraft:allow_off_hand": true,
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.items"
+								}
+							},
+							"events": {}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:soul_torch",
+							"category": "items"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:soul_torch",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:display_name": {
+									"value": "si"
+								},
+								"minecraft:max_stack_size": 1,
+								"minecraft:icon": {
+									"texture": "soul_torch"
+								},
+								"minecraft:allow_off_hand": true,
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.items"
+								}
+							},
+							"events": {}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:display_name": {
+										"value": "si"
+									},
+									"minecraft:max_stack_size": 1,
+									"minecraft:icon": {
+										"texture": "soul_torch"
+									},
+									"minecraft:allow_off_hand": true,
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.items"
+									}
+								},
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {
+									"value": "si"
+								}
+							},
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"open": {
+									"minecraft:display_name": {
+										"value": "si"
+									},
+									"minecraft:max_stack_size": 1,
+									"minecraft:icon": {
+										"texture": "soul_torch"
+									},
+									"minecraft:allow_off_hand": true,
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.items"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "soul_torch"
+								}
+							},
+							{
+								"data": "true",
+								"key": "minecraft:allow_off_hand"
+							},
+							{
+								"open": {
+									"minecraft:display_name": {
+										"value": "si"
+									},
+									"minecraft:max_stack_size": 1,
+									"minecraft:icon": {
+										"texture": "soul_torch"
+									},
+									"minecraft:allow_off_hand": true,
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.items"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.items"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:soul_torch",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:display_name": {
+									"value": "si"
+								},
+								"minecraft:max_stack_size": 1,
+								"minecraft:icon": {
+									"texture": "soul_torch"
+								},
+								"minecraft:allow_off_hand": true,
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.items"
+								}
+							},
+							"events": {}
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {}
+					}
+				]
+			}
+		]
+	}
+}

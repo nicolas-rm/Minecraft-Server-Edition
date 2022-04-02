@@ -1,0 +1,82 @@
+//bridge-file-version: #36
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ray:lava_bucket",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"component_groups": {
+			"lava_sensor": {
+				"minecraft:entity_sensor": {
+					"sensor_range": 10000,
+					"minimum_count": 1,
+					"maximum_count": 1000,
+					"event_filters": {
+						"any_of": [
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:lava_bucket",
+								"domain": "hand",
+								"subject": "other"
+							}
+						]
+					},
+					"event": "replace"
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:nameable": {
+				"always_show": false
+			}
+		},
+		"events": {
+			"replace": {
+				"run_command": {
+					"command": [
+						"replaceitem entity @p slot.weapon.mainhand 0 ray:lava_bucket"
+					]
+				}
+			},
+			"lava_sensor_add": {
+				"add": {
+					"component_groups": [
+						"lava_sensor"
+					]
+				}
+			},
+			"lava_sensor_remove": {
+				"remove": {
+					"component_groups": [
+						"lava_sensor"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

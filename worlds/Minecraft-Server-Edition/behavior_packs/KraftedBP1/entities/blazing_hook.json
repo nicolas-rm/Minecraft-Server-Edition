@@ -1,0 +1,130 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "adv:blazing_hook",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.15,
+        "height": 0.15
+      },
+      "minecraft:projectile": {
+        "should_bounce": false,
+        "liquid_inertia": 0,
+        "on_hit": {
+          "stick_in_ground": {}
+        }
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80,
+          "max_dropped_ticks": 7,
+          "use_motion_prediction_hints": true
+        }
+      },
+      "minecraft:timer": {
+        "time": [
+          10,
+          15
+        ],
+        "time_down_event": {
+          "event": "fish"
+        },
+        "randomInterval": true,
+        "looping": false
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/gameplay/nether_fishing.json"
+      },
+      "minecraft:knockback_resistance": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:health": {
+        "value": 1
+      },
+      "minecraft:floats_in_liquid": {},
+      "minecraft:buoyant": {
+        "apply_gravity": false,
+        "base_buoyancy": 1.0,
+        "big_wave_probability": 0.3,
+        "big_wave_speed": 10,
+        "liquid_blocks": [
+          "minecraft:flowing_water",
+          "minecraft:water"
+        ],
+        "simulate_waves": true,
+        "drag_down_on_buoyancy_removed": 10.0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false,
+            "damage_modifier": 0.0,
+            "damage_multiplier": 0.0,
+            "cause": "all"
+          }
+        ]
+      },
+      "minecraft:despawn": {
+        "filters": {
+          "any_of": [
+            {
+              "test": "on_ground",
+              "subject": "self",
+              "value": true
+            },
+            {
+              "test": "in_lava",
+              "subject": "self",
+              "value": true
+            }
+          ]
+        }
+      }
+    },
+    "events": {
+      "fish": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "particle minecraft:water_wake_particle ~~1~"
+              ]
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "playsound random.splash @p"
+              ]
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "kill @e [r\u003d0.1]"
+              ]
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "tp @e [type\u003ditem,r\u003d10] @p"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

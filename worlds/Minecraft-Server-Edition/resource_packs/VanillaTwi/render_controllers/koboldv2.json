@@ -1,0 +1,39 @@
+//bridge-file-version: #40
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.vanilla_twilight.kobold": {
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default",
+						"Texture.bulldog2",
+						"Texture.shiba",
+						"Texture.shiba2",
+						"Texture.wolf",
+						"Texture.wolf2"
+					]
+				},
+				"geometries": {
+					"Array.geos": [
+						"Geometry.default.bulldog",
+						"Geometry.default.bulldog",
+						"Geometry.default.shiba",
+						"Geometry.default.shiba",
+						"Geometry.default.wolf",
+						"Geometry.default.wolf"
+					]
+				}
+			},
+			"geometry": "Array.geos[query.variant]"
+		}
+	}
+}

@@ -1,0 +1,345 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\giant.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "996a68c1_c75a_4b83_969b_94ab32e8a87f",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:giant",
+							"materials": {
+								"default": "vindicator"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/giant"
+							},
+							"geometry": {
+								"default": "geometry.giant"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180.0;",
+									"variable.attack2 = Math.sin(variable.attack_time * -180.0);"
+								],
+								"scale": 0.9375
+							},
+							"animations": {
+								"vindicator_attack": "animation.giant.attack",
+								"vindicator_walk": "animation.vindicator.walk",
+								"look_at_target_default": "animation.kobold.look_at_target.default"
+							},
+							"animation_controllers": [
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"vindicator_base": "controller.animation.vindicator.base.v1.0"
+								},
+								{
+									"riding": "controller.animation.humanoid.riding"
+								}
+							],
+							"render_controllers": [
+								"controller.render.vindicator"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#BD8B72",
+								"overlay_color": "#6B4F40"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:giant",
+								"materials": {
+									"default": "vindicator"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/giant"
+								},
+								"geometry": {
+									"default": "geometry.giant"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180.0;",
+										"variable.attack2 = Math.sin(variable.attack_time * -180.0);"
+									],
+									"scale": 0.9375
+								},
+								"animations": {
+									"vindicator_attack": "animation.giant.attack",
+									"vindicator_walk": "animation.vindicator.walk",
+									"look_at_target_default": "animation.kobold.look_at_target.default"
+								},
+								"animation_controllers": [
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"vindicator_base": "controller.animation.vindicator.base.v1.0"
+									},
+									{
+										"riding": "controller.animation.humanoid.riding"
+									}
+								],
+								"render_controllers": [
+									"controller.render.vindicator"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#BD8B72",
+									"overlay_color": "#6B4F40"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:giant",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "vindicator"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/giant"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.giant"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180.0;",
+										"variable.attack2 = Math.sin(variable.attack_time * -180.0);"
+									],
+									"scale": 0.9375
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"vindicator_attack": "animation.giant.attack",
+									"vindicator_walk": "animation.vindicator.walk",
+									"look_at_target_default": "animation.kobold.look_at_target.default"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:giant",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/giant"
+									},
+									"geometry": {
+										"default": "geometry.giant"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * -180.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.giant.attack",
+										"vindicator_walk": "animation.vindicator.walk",
+										"look_at_target_default": "animation.kobold.look_at_target.default"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"riding": "controller.animation.humanoid.riding"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#BD8B72",
+										"overlay_color": "#6B4F40"
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"is_minified": true,
+										"children": {
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"riding": "controller.animation.humanoid.riding"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									},
+									{
+										"is_minified": true,
+										"children": {
+											"riding": "controller.animation.humanoid.riding"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "mythmob:giant",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/giant"
+									},
+									"geometry": {
+										"default": "geometry.giant"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * -180.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.giant.attack",
+										"vindicator_walk": "animation.vindicator.walk",
+										"look_at_target_default": "animation.kobold.look_at_target.default"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"riding": "controller.animation.humanoid.riding"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#BD8B72",
+										"overlay_color": "#6B4F40"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.vindicator"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:giant",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/giant"
+									},
+									"geometry": {
+										"default": "geometry.giant"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * -180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * -180.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.giant.attack",
+										"vindicator_walk": "animation.vindicator.walk",
+										"look_at_target_default": "animation.kobold.look_at_target.default"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"riding": "controller.animation.humanoid.riding"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#BD8B72",
+										"overlay_color": "#6B4F40"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#BD8B72",
+									"overlay_color": "#6B4F40"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

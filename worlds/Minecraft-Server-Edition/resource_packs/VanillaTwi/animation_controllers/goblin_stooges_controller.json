@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.gobble": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "query.is_on_ground"
+            }
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "default": "query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+           "/summon mythmob:goblin",
+           "/summon mythmob:goblin",
+           "/summon mythmob:goblin"
+          ]
+        }
+      }
+    },
+	{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+    "controller.animation.goblin123.base" : {
+			"initial_state" : "default",
+			"states" : {
+        "default": {
+          "animations": [ "vindicator_attack" ]
+        }
+			}
+		}
+	}
+}
+  }
+}

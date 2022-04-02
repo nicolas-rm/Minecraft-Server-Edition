@@ -1,0 +1,706 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:iron_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:iron_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:diamond_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:diamond_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:netherite_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:netherite_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tin_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tin_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:bronce_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:bronce_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:ruby_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:ruby_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:jade_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:jade_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:migtinio_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:migtinio_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:paladium_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:paladium_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:onyx_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:onyx_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tourmaline_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:tourmaline_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:cobalto_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:cobalto_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:enderite_pickaxe",
+          "count": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "oh:enderite_pickaxe",
+          "count": 1,
+          "weight": 20,
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "level": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "oh:tin_ore_d",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    }
+  ]
+}

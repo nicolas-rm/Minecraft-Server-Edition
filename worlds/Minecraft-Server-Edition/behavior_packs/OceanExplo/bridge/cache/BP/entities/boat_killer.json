@@ -1,0 +1,1303 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\entities\\boat_killer.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "f3406e84_5b4e_41d5_9969_1ece3f6819bd",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "ocean:boat_killer",
+							"is_experimental": false,
+							"is_summonable": true,
+							"is_spawnable": false,
+							"animations": {
+								"trap": "animation.barnacle.force_ride",
+								"reset": "animation.barnacle.reset",
+								"down": "animation.barnacle.down"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"trap": "query.is_sheared && !query.has_rider"
+									},
+									{
+										"reset": "query.is_sheared && !query.has_target"
+									},
+									{
+										"down": "query.is_sheared"
+									}
+								]
+							}
+						},
+						"component_groups": {
+							"despawn": {
+								"minecraft:instant_despawn": {}
+							}
+						},
+						"components": {
+							"minecraft:health": {
+								"value": 35,
+								"max": 35
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0,
+								"breathes_air": false,
+								"breathes_water": true
+							},
+							"minecraft:loot": {},
+							"minecraft:follow_range": {
+								"value": 32,
+								"max": 32
+							},
+							"minecraft:conditional_bandwidth_optimization": {},
+							"minecraft:physics": {
+								"has_gravity": false,
+								"has_collision": true
+							},
+							"minecraft:collision_box": {
+								"width": 0,
+								"height": 0
+							},
+							"minecraft:custom_hit_test": {
+								"hitboxes": [
+									{
+										"width": 0,
+										"height": 0,
+										"pivot": [
+											0,
+											9999,
+											0
+										]
+									}
+								]
+							},
+							"minecraft:area_attack": {
+								"damage_range": 2,
+								"damage_per_tick": 9999,
+								"cause": "contact",
+								"entity_filter": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "boat"
+								}
+							},
+							"minecraft:timer": {
+								"time": 0.3,
+								"time_down_event": {
+									"event": "despawn"
+								},
+								"looping": false
+							}
+						},
+						"events": {
+							"despawn": {
+								"add": {
+									"component_groups": [
+										"despawn"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:boat_killer",
+								"is_experimental": false,
+								"is_summonable": true,
+								"is_spawnable": false,
+								"animations": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"trap": "query.is_sheared && !query.has_rider"
+										},
+										{
+											"reset": "query.is_sheared && !query.has_target"
+										},
+										{
+											"down": "query.is_sheared"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 35,
+									"max": 35
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								},
+								"minecraft:loot": {},
+								"minecraft:follow_range": {
+									"value": 32,
+									"max": 32
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:physics": {
+									"has_gravity": false,
+									"has_collision": true
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:custom_hit_test": {
+									"hitboxes": [
+										{
+											"width": 0,
+											"height": 0,
+											"pivot": [
+												0,
+												9999,
+												0
+											]
+										}
+									]
+								},
+								"minecraft:area_attack": {
+									"damage_range": 2,
+									"damage_per_tick": 9999,
+									"cause": "contact",
+									"entity_filter": {
+										"test": "is_family",
+										"subject": "other",
+										"value": "boat"
+									}
+								},
+								"minecraft:timer": {
+									"time": 0.3,
+									"time_down_event": {
+										"event": "despawn"
+									},
+									"looping": false
+								}
+							},
+							"events": {
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "ocean:boat_killer",
+								"key": "identifier"
+							},
+							{
+								"data": "false",
+								"key": "is_experimental"
+							},
+							{
+								"data": "true",
+								"key": "is_summonable"
+							},
+							{
+								"data": "false",
+								"key": "is_spawnable"
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								}
+							},
+							{
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"trap": "query.is_sheared && !query.has_rider"
+												},
+												{
+													"reset": "query.is_sheared && !query.has_target"
+												},
+												{
+													"down": "query.is_sheared"
+												}
+											]
+										},
+										"key": "animate",
+										"children": [
+											{
+												"open": [
+													{
+														"trap": "query.is_sheared && !query.has_rider"
+													},
+													{
+														"reset": "query.is_sheared && !query.has_target"
+													},
+													{
+														"down": "query.is_sheared"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"trap": "query.is_sheared && !query.has_rider"
+												}
+											},
+											{
+												"open": [
+													{
+														"trap": "query.is_sheared && !query.has_rider"
+													},
+													{
+														"reset": "query.is_sheared && !query.has_target"
+													},
+													{
+														"down": "query.is_sheared"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"reset": "query.is_sheared && !query.has_target"
+												}
+											},
+											{
+												"open": [
+													{
+														"trap": "query.is_sheared && !query.has_rider"
+													},
+													{
+														"reset": "query.is_sheared && !query.has_target"
+													},
+													{
+														"down": "query.is_sheared"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"down": "query.is_sheared"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:boat_killer",
+								"is_experimental": false,
+								"is_summonable": true,
+								"is_spawnable": false,
+								"animations": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"trap": "query.is_sheared && !query.has_rider"
+										},
+										{
+											"reset": "query.is_sheared && !query.has_target"
+										},
+										{
+											"down": "query.is_sheared"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 35,
+									"max": 35
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								},
+								"minecraft:loot": {},
+								"minecraft:follow_range": {
+									"value": 32,
+									"max": 32
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:physics": {
+									"has_gravity": false,
+									"has_collision": true
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:custom_hit_test": {
+									"hitboxes": [
+										{
+											"width": 0,
+											"height": 0,
+											"pivot": [
+												0,
+												9999,
+												0
+											]
+										}
+									]
+								},
+								"minecraft:area_attack": {
+									"damage_range": 2,
+									"damage_per_tick": 9999,
+									"cause": "contact",
+									"entity_filter": {
+										"test": "is_family",
+										"subject": "other",
+										"value": "boat"
+									}
+								},
+								"minecraft:timer": {
+									"time": 0.3,
+									"time_down_event": {
+										"event": "despawn"
+									},
+									"looping": false
+								}
+							},
+							"events": {
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
+						"children": [
+							{
+								"open": {
+									"despawn": {
+										"minecraft:instant_despawn": {}
+									}
+								},
+								"key": "despawn",
+								"is_minified": true,
+								"children": {
+									"minecraft:instant_despawn": {}
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:boat_killer",
+								"is_experimental": false,
+								"is_summonable": true,
+								"is_spawnable": false,
+								"animations": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"trap": "query.is_sheared && !query.has_rider"
+										},
+										{
+											"reset": "query.is_sheared && !query.has_target"
+										},
+										{
+											"down": "query.is_sheared"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 35,
+									"max": 35
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								},
+								"minecraft:loot": {},
+								"minecraft:follow_range": {
+									"value": 32,
+									"max": 32
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:physics": {
+									"has_gravity": false,
+									"has_collision": true
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:custom_hit_test": {
+									"hitboxes": [
+										{
+											"width": 0,
+											"height": 0,
+											"pivot": [
+												0,
+												9999,
+												0
+											]
+										}
+									]
+								},
+								"minecraft:area_attack": {
+									"damage_range": 2,
+									"damage_per_tick": 9999,
+									"cause": "contact",
+									"entity_filter": {
+										"test": "is_family",
+										"subject": "other",
+										"value": "boat"
+									}
+								},
+								"minecraft:timer": {
+									"time": 0.3,
+									"time_down_event": {
+										"event": "despawn"
+									},
+									"looping": false
+								}
+							},
+							"events": {
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 35,
+									"max": 35
+								}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"children": [
+									{
+										"key": "damage_conditions",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"test": "in_lava",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														},
+														"cause": "lava",
+														"damage_per_tick": 4
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"test": "in_lava",
+																"subject": "self",
+																"operator": "==",
+																"value": true
+															},
+															"cause": "lava",
+															"damage_per_tick": 4
+														},
+														"key": "filters",
+														"is_minified": true,
+														"children": {
+															"test": "in_lava",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														}
+													},
+													{
+														"data": "lava",
+														"key": "cause"
+													},
+													{
+														"data": "4",
+														"key": "damage_per_tick"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 35,
+										"max": 35
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0,
+										"breathes_air": false,
+										"breathes_water": true
+									},
+									"minecraft:loot": {},
+									"minecraft:follow_range": {
+										"value": 32,
+										"max": 32
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:physics": {
+										"has_gravity": false,
+										"has_collision": true
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													9999,
+													0
+												]
+											}
+										]
+									},
+									"minecraft:area_attack": {
+										"damage_range": 2,
+										"damage_per_tick": 9999,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_family",
+											"subject": "other",
+											"value": "boat"
+										}
+									},
+									"minecraft:timer": {
+										"time": 0.3,
+										"time_down_event": {
+											"event": "despawn"
+										},
+										"looping": false
+									}
+								},
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 35,
+										"max": 35
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0,
+										"breathes_air": false,
+										"breathes_water": true
+									},
+									"minecraft:loot": {},
+									"minecraft:follow_range": {
+										"value": 32,
+										"max": 32
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:physics": {
+										"has_gravity": false,
+										"has_collision": true
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													9999,
+													0
+												]
+											}
+										]
+									},
+									"minecraft:area_attack": {
+										"damage_range": 2,
+										"damage_per_tick": 9999,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_family",
+											"subject": "other",
+											"value": "boat"
+										}
+									},
+									"minecraft:timer": {
+										"time": 0.3,
+										"time_down_event": {
+											"event": "despawn"
+										},
+										"looping": false
+									}
+								},
+								"key": "minecraft:follow_range",
+								"is_minified": true,
+								"children": {
+									"value": 32,
+									"max": 32
+								}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 35,
+										"max": 35
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0,
+										"breathes_air": false,
+										"breathes_water": true
+									},
+									"minecraft:loot": {},
+									"minecraft:follow_range": {
+										"value": 32,
+										"max": 32
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:physics": {
+										"has_gravity": false,
+										"has_collision": true
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													9999,
+													0
+												]
+											}
+										]
+									},
+									"minecraft:area_attack": {
+										"damage_range": 2,
+										"damage_per_tick": 9999,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_family",
+											"subject": "other",
+											"value": "boat"
+										}
+									},
+									"minecraft:timer": {
+										"time": 0.3,
+										"time_down_event": {
+											"event": "despawn"
+										},
+										"looping": false
+									}
+								},
+								"key": "minecraft:conditional_bandwidth_optimization",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_gravity": false,
+									"has_collision": true
+								}
+							},
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0,
+									"height": 0
+								}
+							},
+							{
+								"key": "minecraft:custom_hit_test",
+								"children": [
+									{
+										"open": {
+											"hitboxes": [
+												{
+													"width": 0,
+													"height": 0,
+													"pivot": [
+														0,
+														9999,
+														0
+													]
+												}
+											]
+										},
+										"key": "hitboxes",
+										"children": [
+											{
+												"open": [
+													{
+														"width": 0,
+														"height": 0,
+														"pivot": [
+															0,
+															9999,
+															0
+														]
+													}
+												],
+												"children": [
+													{
+														"data": "0",
+														"key": "width"
+													},
+													{
+														"data": "0",
+														"key": "height"
+													},
+													{
+														"open": {
+															"width": 0,
+															"height": 0,
+															"pivot": [
+																0,
+																9999,
+																0
+															]
+														},
+														"key": "pivot",
+														"is_minified": true,
+														"children": [
+															0,
+															9999,
+															0
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 35,
+										"max": 35
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0,
+										"breathes_air": false,
+										"breathes_water": true
+									},
+									"minecraft:loot": {},
+									"minecraft:follow_range": {
+										"value": 32,
+										"max": 32
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:physics": {
+										"has_gravity": false,
+										"has_collision": true
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													9999,
+													0
+												]
+											}
+										]
+									},
+									"minecraft:area_attack": {
+										"damage_range": 2,
+										"damage_per_tick": 9999,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_family",
+											"subject": "other",
+											"value": "boat"
+										}
+									},
+									"minecraft:timer": {
+										"time": 0.3,
+										"time_down_event": {
+											"event": "despawn"
+										},
+										"looping": false
+									}
+								},
+								"key": "minecraft:area_attack",
+								"is_minified": true,
+								"children": {
+									"damage_range": 2,
+									"damage_per_tick": 9999,
+									"cause": "contact",
+									"entity_filter": {
+										"test": "is_family",
+										"subject": "other",
+										"value": "boat"
+									}
+								}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 35,
+										"max": 35
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0,
+										"breathes_air": false,
+										"breathes_water": true
+									},
+									"minecraft:loot": {},
+									"minecraft:follow_range": {
+										"value": 32,
+										"max": 32
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:physics": {
+										"has_gravity": false,
+										"has_collision": true
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													9999,
+													0
+												]
+											}
+										]
+									},
+									"minecraft:area_attack": {
+										"damage_range": 2,
+										"damage_per_tick": 9999,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_family",
+											"subject": "other",
+											"value": "boat"
+										}
+									},
+									"minecraft:timer": {
+										"time": 0.3,
+										"time_down_event": {
+											"event": "despawn"
+										},
+										"looping": false
+									}
+								},
+								"key": "minecraft:timer",
+								"children": [
+									{
+										"data": "0.3",
+										"key": "time"
+									},
+									{
+										"open": {
+											"time": 0.3,
+											"time_down_event": {
+												"event": "despawn"
+											},
+											"looping": false
+										},
+										"key": "time_down_event",
+										"is_minified": true,
+										"children": {
+											"event": "despawn"
+										}
+									},
+									{
+										"data": "false",
+										"key": "looping"
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:boat_killer",
+								"is_experimental": false,
+								"is_summonable": true,
+								"is_spawnable": false,
+								"animations": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"trap": "query.is_sheared && !query.has_rider"
+										},
+										{
+											"reset": "query.is_sheared && !query.has_target"
+										},
+										{
+											"down": "query.is_sheared"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 35,
+									"max": 35
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								},
+								"minecraft:loot": {},
+								"minecraft:follow_range": {
+									"value": 32,
+									"max": 32
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:physics": {
+									"has_gravity": false,
+									"has_collision": true
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:custom_hit_test": {
+									"hitboxes": [
+										{
+											"width": 0,
+											"height": 0,
+											"pivot": [
+												0,
+												9999,
+												0
+											]
+										}
+									]
+								},
+								"minecraft:area_attack": {
+									"damage_range": 2,
+									"damage_per_tick": 9999,
+									"cause": "contact",
+									"entity_filter": {
+										"test": "is_family",
+										"subject": "other",
+										"value": "boat"
+									}
+								},
+								"minecraft:timer": {
+									"time": 0.3,
+									"time_down_event": {
+										"event": "despawn"
+									},
+									"looping": false
+								}
+							},
+							"events": {
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									}
+								},
+								"key": "despawn",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"despawn"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"despawn"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"despawn"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

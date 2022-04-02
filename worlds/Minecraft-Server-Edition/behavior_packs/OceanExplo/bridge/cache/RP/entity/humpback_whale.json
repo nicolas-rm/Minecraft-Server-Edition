@@ -1,0 +1,169 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\entity\\humpback_whale.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "dcc62282_6a15_49ef_87ef_d1a2c8cf1eb4",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "ocean:humpback_whale",
+							"materials": {
+								"default": "entity_alphatest"
+							},
+							"textures": {
+								"default": "textures/entity/humpback_whale"
+							},
+							"geometry": {
+								"default": "geometry.humpback_whale"
+							},
+							"scripts": {
+								"animate": [
+									"move"
+								]
+							},
+							"animations": {
+								"move": "animation.humpback_whale.swim"
+							},
+							"spawn_egg": {
+								"base_color": "#0D1D3A",
+								"overlay_color": "#164E72"
+							},
+							"render_controllers": [
+								"controller.render.default"
+							]
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:humpback_whale",
+								"materials": {
+									"default": "entity_alphatest"
+								},
+								"textures": {
+									"default": "textures/entity/humpback_whale"
+								},
+								"geometry": {
+									"default": "geometry.humpback_whale"
+								},
+								"scripts": {
+									"animate": [
+										"move"
+									]
+								},
+								"animations": {
+									"move": "animation.humpback_whale.swim"
+								},
+								"spawn_egg": {
+									"base_color": "#0D1D3A",
+									"overlay_color": "#164E72"
+								},
+								"render_controllers": [
+									"controller.render.default"
+								]
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "ocean:humpback_whale",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity_alphatest"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/humpback_whale"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.humpback_whale"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"animate": [
+										"move"
+									]
+								}
+							},
+							{
+								"open": {
+									"identifier": "ocean:humpback_whale",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/humpback_whale"
+									},
+									"geometry": {
+										"default": "geometry.humpback_whale"
+									},
+									"scripts": {
+										"animate": [
+											"move"
+										]
+									},
+									"animations": {
+										"move": "animation.humpback_whale.swim"
+									},
+									"spawn_egg": {
+										"base_color": "#0D1D3A",
+										"overlay_color": "#164E72"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"move": "animation.humpback_whale.swim"
+								}
+							},
+							{
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#0D1D3A",
+									"overlay_color": "#164E72"
+								}
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.default"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

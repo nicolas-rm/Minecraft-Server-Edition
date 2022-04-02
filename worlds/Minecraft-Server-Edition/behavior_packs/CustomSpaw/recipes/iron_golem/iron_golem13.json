@@ -1,0 +1,23 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.13.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "mrleefy:iron_golem_spawner13"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "mrleefy:iron_golem_spawner13"
+			}
+		],
+		"result": [
+			{
+				"item": "mrleefy:iron_golem_spawner",
+				"count": 13
+			}
+		]
+	}
+}

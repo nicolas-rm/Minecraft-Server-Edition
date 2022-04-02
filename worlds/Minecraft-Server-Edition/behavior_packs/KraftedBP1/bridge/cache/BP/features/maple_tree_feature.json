@@ -1,0 +1,82 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\features\\maple_tree_feature.json",
+	"file_type": "feature",
+	"format_version": 1,
+	"file_uuid": "c308b699_db02_404d_b63c_048ff6c53c1b",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:structure_template_feature": {
+						"description": {
+							"identifier": "strat:maple_tree_feature"
+						},
+						"structure_name": "mystructure:maple_tree_1",
+						"adjustment_radius": 8,
+						"facing_direction": "north",
+						"constraints": {
+							"grounded": {}
+						}
+					}
+				},
+				"key": "minecraft:structure_template_feature",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_tree_feature"
+							},
+							"structure_name": "mystructure:maple_tree_1",
+							"adjustment_radius": 8,
+							"facing_direction": "north",
+							"constraints": {
+								"grounded": {}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_tree_feature"
+						}
+					},
+					{
+						"data": "mystructure:maple_tree_1",
+						"key": "structure_name"
+					},
+					{
+						"data": "8",
+						"key": "adjustment_radius"
+					},
+					{
+						"data": "north",
+						"key": "facing_direction"
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_tree_feature"
+							},
+							"structure_name": "mystructure:maple_tree_1",
+							"adjustment_radius": 8,
+							"facing_direction": "north",
+							"constraints": {
+								"grounded": {}
+							}
+						},
+						"key": "constraints",
+						"is_minified": true,
+						"children": {
+							"grounded": {}
+						}
+					}
+				]
+			}
+		]
+	}
+}

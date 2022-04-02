@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mythmob:broodspider",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/giantspider"
+      },
+      "geometry": {
+        "default": "geometry.broodspider"
+      },
+      "animations": {
+	    "casting": "animation.evoker.casting",
+        "default_leg_pose": "animation.spider.default_leg_pose",
+        "look_at_target": "animation.spider.look_at_target",
+        "walk": "animation.spider.walk"
+      },
+      "animation_controllers": [
+		{ "general": "controller.animation.evoker.general" },
+        { "move": "controller.animation.spider.move" }
+      ],
+	  "particle_effects": {
+        "spell": "minecraft:evoker_spell"
+      },
+      "render_controllers": [ "controller.render.spider" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "base_color": "#ac0101",
+        "overlay_color": "#679f1d"
+      }
+    }
+  }
+}

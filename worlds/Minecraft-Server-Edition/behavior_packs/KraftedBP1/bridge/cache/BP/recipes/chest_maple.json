@@ -1,0 +1,213 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\chest_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "b84b2ae6_9c70_497f_ac3e_1e458cb897a7",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.16,
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:chest_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"AAA",
+							"A A",
+							"AAA"
+						],
+						"key": {
+							"A": {
+								"item": "strat:maple_planks"
+							}
+						},
+						"result": {
+							"item": "chest",
+							"count": 1
+						},
+						"priority": 50
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chest_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"A A",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": {
+								"item": "chest",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:chest_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chest_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"A A",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": {
+								"item": "chest",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chest_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"A A",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": {
+								"item": "chest",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"AAA",
+							"A A",
+							"AAA"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chest_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"A A",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": {
+								"item": "chest",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"A": {
+										"item": "strat:maple_planks"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chest_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"A A",
+								"AAA"
+							],
+							"key": {
+								"A": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": {
+								"item": "chest",
+								"count": 1
+							},
+							"priority": 50
+						},
+						"key": "result",
+						"is_minified": true,
+						"children": {
+							"item": "chest",
+							"count": 1
+						}
+					},
+					{
+						"data": "50",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

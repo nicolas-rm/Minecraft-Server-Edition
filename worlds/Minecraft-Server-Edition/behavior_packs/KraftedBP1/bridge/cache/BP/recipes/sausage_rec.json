@@ -1,0 +1,225 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\raw_sausage_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "2c5c79be_f1c0_47cd_ac9e_583806703d57",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:sausage_rec"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"#",
+							"#",
+							"#"
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:porkchop"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:sausage",
+								"count": 3
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#",
+								"#",
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:sausage",
+									"count": 3
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:sausage_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#",
+								"#",
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:sausage",
+									"count": 3
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#",
+								"#",
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:sausage",
+									"count": 3
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#",
+							"#",
+							"#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#",
+								"#",
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:sausage",
+									"count": 3
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:porkchop"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:porkchop"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#",
+								"#",
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:porkchop"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:sausage",
+									"count": 3
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:sausage",
+										"count": 3
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:sausage",
+									"count": 3
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

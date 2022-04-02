@@ -1,0 +1,90 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\cookie.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "71d54f7d_8450_4d39_aca5_3d368290758f",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:cookie"
+						},
+						"components": {
+							"minecraft:use_duration": 32,
+							"minecraft:food": {
+								"nutrition": 4,
+								"saturation_modifier": "normal"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cookie"
+							},
+							"components": {
+								"minecraft:use_duration": 32,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "normal"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:cookie"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cookie"
+							},
+							"components": {
+								"minecraft:use_duration": 32,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "normal"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "32",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 32,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "normal"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 4,
+									"saturation_modifier": "normal"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

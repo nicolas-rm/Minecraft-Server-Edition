@@ -1,0 +1,109 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\carrot.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "9cad21d8_3b39_4186_91ee_21b5345ec222",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:carrot"
+						},
+						"components": {
+							"minecraft:use_duration": 8,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "poor"
+							},
+							"minecraft:seed": {
+								"crop_result": "carrots"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:carrot"
+							},
+							"components": {
+								"minecraft:use_duration": 8,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "poor"
+								},
+								"minecraft:seed": {
+									"crop_result": "carrots"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:carrot"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:carrot"
+							},
+							"components": {
+								"minecraft:use_duration": 8,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "poor"
+								},
+								"minecraft:seed": {
+									"crop_result": "carrots"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "8",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 8,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "poor"
+									},
+									"minecraft:seed": {
+										"crop_result": "carrots"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 2,
+									"saturation_modifier": "poor"
+								}
+							},
+							{
+								"key": "minecraft:seed",
+								"is_minified": true,
+								"children": {
+									"crop_result": "carrots"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

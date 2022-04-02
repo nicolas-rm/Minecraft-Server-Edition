@@ -1,0 +1,79 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "outside:millstone_3_e"
+        },
+        "components": {
+            "minecraft:geometry": "geometry.millstone",
+            "minecraft:destroy_time": 999999999,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "millstone",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:on_interact": {
+                "event": "outside:millstone_interact"
+            },
+            "minecraft:rotation": [
+                0,
+                0,
+                0
+            ],
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					0.4,
+					0.4
+				],
+				"on_tick": {
+					"event": "outside:loot",
+					"target": "self"
+				}
+			}
+        },
+        "events": {
+            "outside:millstone_interact": {
+                "sequence": [
+                    {
+                        "condition": "query.get_equipped_item_name == 'remover'",
+                        "run_command": {
+                            "command": [
+                                "setblock ~ ~ ~ outside:unpowered",
+                                "give @p outside:millstone_item"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.get_equipped_item_name == 'goggles'",
+                        "run_command": {
+                            "command": [
+                                "title @p actionbar 2 blocks left"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.get_equipped_item_name == 'cogwheel_item'",
+                        "run_command": {
+                            "command": [
+                                "fill ~1 ~ ~ ~1 ~ ~ outside:cogwheel_2_u_e 0 replace air"
+                            ]
+                        },
+                        "decrement_stack": {}
+                    }
+                ]
+            },
+			"outside:loot": {
+				"run_command": {
+					"command": [
+						"function millstone/millstone_3/automill_3_e"
+					]
+				}
+			}
+        }
+    }
+}

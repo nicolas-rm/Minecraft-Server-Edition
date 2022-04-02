@@ -1,0 +1,414 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\animation_controllers\\penguin.ac.json",
+	"file_type": "rp_animation_controller",
+	"format_version": 1,
+	"file_uuid": "9d22131f_cc00_4053_adb0_134c54c68cc8",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.penguin": {
+							"states": {
+								"default": {
+									"transitions": [
+										{
+											"swimming": "query.is_swimming"
+										},
+										{
+											"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+										}
+									],
+									"blend_transition": 0.2
+								},
+								"swimming": {
+									"animations": [
+										"swim"
+									],
+									"transitions": [
+										{
+											"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+										},
+										{
+											"walking": "!query.is_swimming"
+										}
+									],
+									"blend_transition": 0.2
+								},
+								"walking": {
+									"animations": [
+										"walk"
+									],
+									"transitions": [
+										{
+											"default": "query.modified_move_speed <= 0.1"
+										},
+										{
+											"swimming": "query.is_swimming"
+										}
+									],
+									"blend_transition": 0.2
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.penguin": {
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"swimming": "query.is_swimming"
+											},
+											{
+												"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+											}
+										],
+										"blend_transition": 0.2
+									},
+									"swimming": {
+										"animations": [
+											"swim"
+										],
+										"transitions": [
+											{
+												"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+											},
+											{
+												"walking": "!query.is_swimming"
+											}
+										],
+										"blend_transition": 0.2
+									},
+									"walking": {
+										"animations": [
+											"walk"
+										],
+										"transitions": [
+											{
+												"default": "query.modified_move_speed <= 0.1"
+											},
+											{
+												"swimming": "query.is_swimming"
+											}
+										],
+										"blend_transition": 0.2
+									}
+								}
+							}
+						},
+						"key": "controller.animation.penguin",
+						"children": [
+							{
+								"open": {
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"swimming": "query.is_swimming"
+												},
+												{
+													"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+												}
+											],
+											"blend_transition": 0.2
+										},
+										"swimming": {
+											"animations": [
+												"swim"
+											],
+											"transitions": [
+												{
+													"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+												},
+												{
+													"walking": "!query.is_swimming"
+												}
+											],
+											"blend_transition": 0.2
+										},
+										"walking": {
+											"animations": [
+												"walk"
+											],
+											"transitions": [
+												{
+													"default": "query.modified_move_speed <= 0.1"
+												},
+												{
+													"swimming": "query.is_swimming"
+												}
+											],
+											"blend_transition": 0.2
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"swimming": "query.is_swimming"
+														},
+														{
+															"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+														}
+													],
+													"blend_transition": 0.2
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"swimming": "query.is_swimming"
+															},
+															{
+																"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"swimming": "query.is_swimming"
+														}
+													},
+													{
+														"open": [
+															{
+																"swimming": "query.is_swimming"
+															},
+															{
+																"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+														}
+													}
+												]
+											},
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											}
+										]
+									},
+									{
+										"key": "swimming",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"swim"
+													],
+													"transitions": [
+														{
+															"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+														},
+														{
+															"walking": "!query.is_swimming"
+														}
+													],
+													"blend_transition": 0.2
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"swim"
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														"swim"
+													],
+													"transitions": [
+														{
+															"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+														},
+														{
+															"walking": "!query.is_swimming"
+														}
+													],
+													"blend_transition": 0.2
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+															},
+															{
+																"walking": "!query.is_swimming"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+														}
+													},
+													{
+														"open": [
+															{
+																"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+															},
+															{
+																"walking": "!query.is_swimming"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"walking": "!query.is_swimming"
+														}
+													}
+												]
+											},
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"swimming": "query.is_swimming"
+													},
+													{
+														"walking": "!query.is_swimming && query.modified_move_speed >= 0.1"
+													}
+												],
+												"blend_transition": 0.2
+											},
+											"swimming": {
+												"animations": [
+													"swim"
+												],
+												"transitions": [
+													{
+														"default": "query.is_swimming && !query.modified_move_speed >= 0.1"
+													},
+													{
+														"walking": "!query.is_swimming"
+													}
+												],
+												"blend_transition": 0.2
+											},
+											"walking": {
+												"animations": [
+													"walk"
+												],
+												"transitions": [
+													{
+														"default": "query.modified_move_speed <= 0.1"
+													},
+													{
+														"swimming": "query.is_swimming"
+													}
+												],
+												"blend_transition": 0.2
+											}
+										},
+										"key": "walking",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"walk"
+													],
+													"transitions": [
+														{
+															"default": "query.modified_move_speed <= 0.1"
+														},
+														{
+															"swimming": "query.is_swimming"
+														}
+													],
+													"blend_transition": 0.2
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"walk"
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														"walk"
+													],
+													"transitions": [
+														{
+															"default": "query.modified_move_speed <= 0.1"
+														},
+														{
+															"swimming": "query.is_swimming"
+														}
+													],
+													"blend_transition": 0.2
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "query.modified_move_speed <= 0.1"
+															},
+															{
+																"swimming": "query.is_swimming"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.modified_move_speed <= 0.1"
+														}
+													},
+													{
+														"open": [
+															{
+																"default": "query.modified_move_speed <= 0.1"
+															},
+															{
+																"swimming": "query.is_swimming"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"swimming": "query.is_swimming"
+														}
+													}
+												]
+											},
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

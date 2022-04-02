@@ -1,0 +1,85 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\blocks.json",
+	"file_type": "client_block",
+	"format_version": 1,
+	"file_uuid": "e6bf2e7c_c1de_473e_8e94_0f97c9269ff1",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"key": "format_version",
+				"is_minified": true,
+				"children": [
+					1,
+					1,
+					0
+				]
+			},
+			{
+				"key": "ocean:palm_leaves",
+				"is_minified": true,
+				"children": {
+					"sound": "vines",
+					"textures": "palm_leaves"
+				}
+			},
+			{
+				"key": "ocean:palm_log",
+				"children": [
+					{
+						"data": "wood",
+						"key": "sound"
+					},
+					{
+						"open": {
+							"sound": "wood",
+							"textures": {
+								"side": "palm_log_side",
+								"up": "palm_log_top",
+								"down": "palm_log_top"
+							}
+						},
+						"key": "textures",
+						"is_minified": true,
+						"children": {
+							"side": "palm_log_side",
+							"up": "palm_log_top",
+							"down": "palm_log_top"
+						}
+					}
+				]
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"ocean:palm_leaves": {
+						"sound": "vines",
+						"textures": "palm_leaves"
+					},
+					"ocean:palm_log": {
+						"sound": "wood",
+						"textures": {
+							"side": "palm_log_side",
+							"up": "palm_log_top",
+							"down": "palm_log_top"
+						}
+					},
+					"ocean:palm_planks": {
+						"sound": "wood",
+						"textures": "plam_planks"
+					}
+				},
+				"key": "ocean:palm_planks",
+				"is_minified": true,
+				"children": {
+					"sound": "wood",
+					"textures": "plam_planks"
+				}
+			}
+		]
+	}
+}

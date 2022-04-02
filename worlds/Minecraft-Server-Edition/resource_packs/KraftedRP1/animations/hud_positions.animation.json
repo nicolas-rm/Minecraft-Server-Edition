@@ -1,0 +1,72 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hud_temperature": {
+			"loop": true,
+			"bones": {
+				"hud_temperature": {
+					"position": [0, "(query.is_swimming ? -17.1275 : 0.0) + 695", 0],
+					"scale": 0.68
+				}
+			}
+		},
+		"animation.temp_warning": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"hud_temperature": {
+					"position": {
+						"0.0": [0, 1, 0],
+						"0.1667": [0, 0, 0],
+						"0.3333": [0, -1, 0],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.reset_arrow": {
+			"loop": true,
+			"bones": {
+				"arrow": {
+					"position": [-11, 288, 0]
+				}
+			}
+		},
+		"animation.arrowup": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"arrow": {
+					"position": {
+						"0.0": [0, 390, -1],
+						"0.9": [0, 410, -1]
+					},
+					"scale": {
+						"0.0": [0.68, 0.68, 0.68],
+						"0.9": [0.68, 0.68, 0.68]
+					}
+				}
+			}
+		},
+		"animation.arrowdown": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"arrow": {
+					"rotation": {
+						"0.0": [0, 0, 180],
+						"0.9": [0, 0, 180]
+					},
+					"position": {
+						"0.0": [0, 400, -1],
+						"0.9": [0, 380, -1]
+					},
+					"scale": {
+						"0.0": [0.68, 0.68, 0.68],
+						"0.9": [0.68, 0.68, 0.68]
+					}
+				}
+			}
+		}
+	}
+}

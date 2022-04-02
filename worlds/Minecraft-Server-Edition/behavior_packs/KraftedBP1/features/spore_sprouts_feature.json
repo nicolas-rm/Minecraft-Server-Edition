@@ -1,0 +1,20 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "korbon:spore_sprouts_feature"
+		},
+		"structure_name": "mystructure:spore_sprouts_command",
+		"adjustment_radius": 8,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air"
+				]
+			}
+		}
+	}
+}

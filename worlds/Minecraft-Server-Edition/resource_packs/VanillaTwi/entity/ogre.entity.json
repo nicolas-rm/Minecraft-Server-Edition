@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mythmob:ogre",
+      "materials": { "default": "goblin" },
+	  "textures": {
+        "default": "textures/entity/mythmob/ogre",
+        "tame": "textures/entity/mythmob/ogre_tamed"
+      },
+      "geometry": {"default": "geometry.ogre"},
+      "animations": {
+        "humanoid_base_pose": "animation.ogre.base",
+		"look_at_target_default": "animation.humanoid.look_at_target.default",
+        "move": "animation.ogre.walk",
+		"attack.rotations": "animation.ogre.attacklash",
+		"wolf_sitting": "animation.ogre.sit",
+		"ogre.attack": "animation.ogre.hastarget"
+      },
+      "animation_controllers": [
+        { "humanoid_base_pose": "controller.animation.ogre.general" },
+        { "look_at_target": "controller.animation.humanoid.look_at_target" },
+        { "move": "controller.animation.ogre.move" },
+		{ "wolf_sitting": "controller.animation.wolf.sitting" },
+		{ "attack": "controller.animation.ogre.attack" }
+      ],
+      "render_controllers": [ "controller.render.ogre" ],
+      "enable_attachables": true,
+	  "spawn_egg": {
+        "base_color": "#b98470",
+        "overlay_color": "#cfcfcf"
+      }
+    }
+  }
+}

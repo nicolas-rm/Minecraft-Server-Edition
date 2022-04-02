@@ -1,0 +1,185 @@
+{
+	"function": {
+		"5a3ac41e_9d53_4892_b987_3871d5fdf31d": {},
+		"BP/functions/pulsar.mcfunction": {
+			"custom_commands": [],
+			"scoreboards": [
+				"tick",
+				"soul_luz",
+				"luz",
+				"lava",
+				"summon"
+			],
+			"tags": [
+				"lava"
+			]
+		},
+		"4d52e200_732e_4f9e_9528_0357a6de52a4": {},
+		"682c5c14_26f2_4f07_b947_630c5c48b7d1": {},
+		"efd94b3f_1c72_4379_8f1d_95161bdbe38d": {},
+		"7f49c22e_2788_48b1_aa2c_ddc600a522a9": {
+			"tags": [
+				"lava"
+			]
+		},
+		"ac003c27_6f18_4096_9c24_a395c6e2d9fc": {},
+		"BP/functions/soul_luz.mcfunction": {
+			"custom_commands": []
+		},
+		"BP/functions/redstone.mcfunction": {
+			"custom_commands": []
+		},
+		"BP/functions/luz.mcfunction": {
+			"custom_commands": []
+		},
+		"41cd6533_cf8a_4bf0_aa08_d4afcc6f3d46": {},
+		"fa3a4cf2_6887_4508_bb53_48282f1a25b4": {
+			"tags": [
+				"charge"
+			]
+		}
+	},
+	"entity": {
+		"BP/entities/lava_replace.json": {
+			"events": [
+				"replace",
+				"lava_sensor_add",
+				"lava_sensor_remove",
+				"despawn"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ray:lava_bucket"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/entities/luz.json": {
+			"events": [
+				"light",
+				"add_l",
+				"add_ls",
+				"soul_light",
+				"despawn"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ray:luz"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_components": [],
+			"custom_commands": []
+		},
+		"BP/entities/player.json": {
+			"events": [
+				"minecraft:gain_bad_omen",
+				"minecraft:clear_add_bad_omen",
+				"minecraft:trigger_raid",
+				"minecraft:remove_raid_trigger"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:player"
+			],
+			"animation_references": [],
+			"families": [
+				"player"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/tnt.json": {
+			"events": [
+				"from_explosion"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:tnt"
+			],
+			"animation_references": [],
+			"families": [
+				"tnt",
+				"inanimate"
+			],
+			"custom_components": [],
+			"custom_commands": []
+		}
+	},
+	"client_entity": {
+		"RP/entity/tick.json": {
+			"identifiers": [
+				"ray:tick"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_big_head",
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"move",
+				"riding.arms",
+				"riding.legs",
+				"holding",
+				"brandish_spear",
+				"charging",
+				"attack.rotations",
+				"sneaking",
+				"bob",
+				"damage_nearby_mobs",
+				"bow_and_arrow",
+				"use_item_progress",
+				"zombie_attack_bare_hand",
+				"swimming"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	},
+	"item": {
+		"BP/items/torch.json": {
+			"identifiers": [
+				"ray:torch"
+			],
+			"custom_commands": []
+		},
+		"BP/items/lava_bucket.json": {
+			"identifiers": [
+				"ray:lava_bucket"
+			],
+			"custom_commands": []
+		},
+		"BP/items/soul_torch.json": {
+			"identifiers": [
+				"ray:soul_torch"
+			],
+			"custom_commands": []
+		}
+	},
+	"block": {},
+	"recipe": {
+		"BP/recipes/torch.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/soul_torch.json": {
+			"tags": [
+				"crafting_table"
+			]
+		}
+	}
+}

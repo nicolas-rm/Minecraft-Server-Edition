@@ -1,0 +1,34 @@
+//bridge-file-version: #20
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:cleaver_32"
+		},
+		"tags": [
+			"tool_forge"
+		],
+		"pattern": [
+			"  #",
+			" o~",
+			"o"
+		],
+		"key": {
+			"#": {
+				"item": "strat:stone_large_sword_blade"
+			},
+			"~": {
+				"item": "strat:flint_large_plate"
+			},
+			"o": {
+				"item": "strat:stone_tough_tool_rod"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:cleaver_32",
+				"count": 1
+			}
+		]
+	}
+}

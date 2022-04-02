@@ -1,0 +1,28 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.barnacle.catch": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"catch": "query.variant == 1"
+						}
+					]
+				},
+				"catch": {
+					"animations": [
+						"force_ride"
+					],
+					"transitions": [
+						{
+							"default": "query.variant == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}
