@@ -4369,4 +4369,466 @@
 
 22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
 
-22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 1 | deserializing subchunk
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:amber_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_topaz_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+22:58:18[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:06[Animation][error]-Error: can't find animation walk
+
+03:41:06[Blocks][error]-Loading levelchunk 11 3 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'sp:wooden_box' does not exist. did you just add an updater with a bad block name?
+
+03:41:06[Blocks][error]-Loading levelchunk 10 3 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'sp:wooden_box' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 15 1 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'wr:grimstone_coal' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:topaz_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:amber_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:amber_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 11 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_topaz_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 8 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:amber_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:uranium_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:amber_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk -4 | deserializing subchunk palette | block of name 'sp:deepslate_ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:uranium_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 9 12 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_topaz_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:07[Blocks][error]-Loading levelchunk 10 12 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:andesite_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:topaz_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 15 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk -4 | deserializing subchunk palette | block of name 'sp:deepslate_ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:uranium_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 7 15 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:amber_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_ruby_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_topaz_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:13[Blocks][error]-Loading levelchunk 8 16 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 1 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:citrine_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 2 | deserializing subchunk palette | block of name 'sp:silver_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'sp:zinc_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 3 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:amber_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 4 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 5 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 6 | deserializing subchunk palette | block of name 'sp:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk 7 | deserializing subchunk palette | block of name 'better:ore_salt' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:platinum_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk -3 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_sapphire_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk -2 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_peridot_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'sp:deepslate_tourmaline_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 11 from savegame | subchunk -1 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:deepslate_tin_ore' does not exist. did you just add an updater with a bad block name?
+
+03:41:14[Blocks][error]-Loading levelchunk 7 12 from savegame | subchunk 0 | deserializing subchunk palette | block of name 'better:silver_o
