@@ -1,0 +1,28 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionSimple.h"
+#include "global_function.h"
+
+varying vec4 color;
+varying vec3 pos;
+
+#define linear(a, b, x) clamp((x - a) / (b - a), 0.0, 1.0)
+
+void main()
+{
+     float day = timeset(1);
+     float sun = timeset(4);
+     float night = timeset(2);
+     float rain = timeset(3);
+
+     vec3 skyc = sky_col(length(pos * mix(1.22, 1., max(day, sun))), day, sun, night, rain);
+if(underwater()){
+     skyc = FOG_COLOR.rgb;
+}
+#ifndef VANILLA
+	gl_FragColor = vec4(skyc, 1.);
+#else
+    gl_FragColor = color;
+#endif
+}

@@ -1,0 +1,45 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroid.h"
+#include "uniformShaderConstants.h"
+#include "util.h"
+#include "global_function.h"
+
+varying highp vec3 cpos;
+
+void main()
+{
+
+// time detections
+     float fday = timeset(1);
+     float fsun = timeset(4);
+     float fnight = timeset(2);
+     float frain = timeset(3);
+
+  vec4 albedo = vec4(0.);
+  vec2 cloudpos = (cpos.xz/(cpos.y-.15))/10.;
+  float gpos = max(smoothstep(.2, -.35, -cpos.y), smoothstep(.2, 1., 1.-abs(length(cpos.zy-vec2(.0, .2)))));
+
+  vec4 cloud = cloud_col(albedo, cloudpos, gpos, fsun, fnight, frain, 1.,1., 1.);
+  vec4 skyc = vec4(gradc(fday, fsun, fnight, frain), 1.);
+
+  //skyc.a -= mix(0., mix(1., 0., frain), fnight);
+  
+#if !defined VANILLA && defined(CLOUD)
+  if(-cpos.y > -.2){
+     albedo = cloud;
+}else{ albedo = skyc; }
+#else
+  albedo = albedo
+#endif
+
+if(underwater())albedo = FOG_COLOR;
+
+
+//albedo = vec4(1., .0, .0, 1.)*max(smoothstep(.2, -.2, -cpos.y), smoothstep(.3, 1., 1.-abs(length(cpos.zy-vec2(.0, .2)))));
+//albedo = vec4(1., .0, .0, 1.);
+
+
+	gl_FragColor = albedo;
+}

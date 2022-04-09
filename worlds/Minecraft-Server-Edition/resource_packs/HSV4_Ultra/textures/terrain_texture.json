@@ -1,0 +1,186 @@
+{
+  "resource_pack_name": "detection",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "gold_block": {
+      "textures": [
+        "textures/blocks/gold_block",
+        "textures/blocks/gold_block_d"
+      ]
+    },
+    "emerald_block": {
+      "textures": [
+        "textures/blocks/emerald_block",
+        "textures/blocks/emerald_block_d"
+      ]
+    },
+    "iron_block": {
+      "textures": [
+        "textures/blocks/iron_block",
+        "textures/blocks/iron_block_d",
+        "textures/blocks/iron_block_n"
+      ]
+    },
+    "diamond_block": {
+      "textures": [
+        "textures/blocks/diamond_block",
+        "textures/blocks/diamond_block_d"
+      ]
+    },
+    "copper_ore": {
+      "textures": [
+       "textures/blocks/copper_ore",
+       "textures/blocks/copper_ore_d",
+       "textures/blocks/copper_ore_s"
+     ]
+    },
+   "diamond_ore": {
+     "textures": [
+        "textures/blocks/diamond_ore",
+        "textures/blocks/diamond_ore_d",
+        "textures/blocks/diamond_ore_s"
+       ]
+    },
+   "iron_ore": {
+      "textures": [
+        "textures/blocks/iron_ore",
+        "textures/blocks/iron_ore_d",
+        "textures/blocks/iron_ore_s"
+      ]
+    },
+   "gold_ore": {
+      "textures": [
+        "textures/blocks/gold_ore",
+        "textures/blocks/gold_ore_d",
+        "textures/blocks/gold_ore_s"
+      ]
+    },
+   "emerald_ore": {
+      "textures": [
+        "textures/blocks/emerald_ore",
+        "textures/blocks/emerald_ore_d",
+        "textures/blocks/emerald_ore_s"
+      ]
+    },
+   "lapis_ore": {
+     "textures": [
+        "textures/blocks/lapis_ore",
+        "textures/blocks/lapis_ore_d",
+        "textures/blocks/lapis_ore_s"
+       ]
+     },
+   "redstone_ore": {
+     "textures": [
+        "textures/blocks/redstone_ore",
+        "textures/blocks/redstone_ore_d",
+        "textures/blocks/redstone_ore_s"
+       ]
+     },
+    "quartz_ore": {
+      "textures": [
+        "textures/blocks/quartz_ore",
+        "textures/blocks/quartz_ore_d",
+        "textures/blocks/quartz_ore_s"
+      ]
+    },
+    "nether_gold_ore": {
+      "textures": [
+        "textures/blocks/nether_gold_ore",
+      "textures/blocks/nether_gold_ore_d",
+        "textures/blocks/nether_gold_ore_s"
+      ]
+     },
+"gilded_blackstone": {
+      "textures": [
+        "textures/blocks/gilded_blackstone",
+        "textures/blocks/gilded_blackstone_d",
+        "textures/blocks/gilded_blackstone_s"
+      ]
+     },
+    "redstone_block": {
+      "textures": [
+        "textures/blocks/redstone_block",
+      "textures/blocks/redstone_block_d",
+        "textures/blocks/redstone_block_s"
+      ]
+    },
+    "lapis_block": {
+      "textures": [
+        "textures/blocks/lapis_block",
+      "textures/blocks/lapis_block_d",
+        "textures/blocks/lapis_block_s"
+      ]
+    },
+ "magma": {
+      "textures": [
+        "textures/blocks/magma",
+        "textures/blocks/magma_d",
+        "textures/blocks/magma_s"
+      ]
+    },
+   "brewing_stand": {
+      "textures": [
+      "textures/blocks/brewing_stand",
+      "textures/blocks/brewing_stand_d",
+      "textures/blocks/brewing_stand_s"
+      ]
+    },
+    "mob_spawner": {
+      "textures": [
+      "textures/blocks/mob_spawner",
+      "textures/blocks/mob_spawner_d",
+      "textures/blocks/mob_spawner_s"
+     ]
+    },
+   "deepslate_diamond_ore": {
+     "textures": [
+        "textures/blocks/deepslate/deepslate_diamond_ore",
+        "textures/blocks/deepslate/deepslate_diamond_ore_d",
+        "textures/blocks/deepslate/deepslate_diamond_ore_s"
+       ]
+    },
+   "deepslate_iron_ore": {
+      "textures": [
+        "textures/blocks/deepslate/deepslate_iron_ore",
+        "textures/blocks/deepslate/deepslate_iron_ore_d",
+        "textures/blocks/deepslate/deepslate_iron_ore_s"
+      ]
+    },
+   "deepslate_gold_ore": {
+      "textures": [
+        "textures/blocks/deepslate/deepslate_gold_ore",
+        "textures/blocks/deepslate/deepslate_gold_ore_d",
+        "textures/blocks/deepslate/deepslate_gold_ore_s"
+      ]
+    },
+   "deepslate_emerald_ore": {
+      "textures": [
+        "textures/blocks/deepslate/deepslate_emerald_ore",
+        "textures/blocks/deepslate/deepslate_emerald_ore_d",
+        "textures/blocks/deepslate/deepslate_emerald_ore_s"
+      ]
+    },
+   "deepslate_lapis_ore": {
+     "textures": [
+        "textures/blocks/deepslate/deepslate_lapis_ore",
+        "textures/blocks/deepslate/deepslate_lapis_ore_d",
+        "textures/blocks/deepslate/deepslate_lapis_ore_s"
+       ]
+     },
+   "deepslate_redstone_ore": {
+     "textures": [
+        "textures/blocks/deepslate/deepslate_redstone_ore",
+        "textures/blocks/deepslate/deepslate_redstone_ore_d",
+        "textures/blocks/deepslate/deepslate_redstone_ore_s"
+       ]
+     },
+    "deepslate_copper_ore": {
+      "textures": [
+        "textures/blocks/deepslate/deepslate_copper_ore",
+        "textures/blocks/deepslate/deepslate_copper_ore_d",
+        "textures/blocks/deepslate/deepslate_copper_ore_s"
+      ]
+    }
+  }
+}

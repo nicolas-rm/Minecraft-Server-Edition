@@ -1,0 +1,71 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroid.h"
+
+#if __VERSION__ >= 300
+
+#if defined(TEXEL_AA) && defined(TEXEL_AA_FEATURE)
+_centroid in highp vec2 uv;
+#else
+_centroid in vec2 uv;
+#endif
+
+#else
+
+varying vec2 uv;
+
+#endif
+
+#include "uniformShaderConstants.h"
+#include "global_function.h"
+#include "util.h"
+
+varying highp vec3 position;
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+
+void main()
+{
+   // detection materials
+   float rain = timeset(3);
+   float day = timeset(1);
+   float night = timeset(2);
+   float sun = timeset(4);
+   sun *= 1.-rain;
+   float looksun = timeset(5);
+
+// draw sun
+  float shape = (1.-abs(position.z*70.))-(abs(position.x*70.));
+  shape = mix(shape, mix(step(.0, shape), .4, step(.2, shape)), night);
+  float lp = clamp(pow(1.-length(position), 8.), .0, 1.);
+  vec4 shine = mix(mix(mix(vec4(1.), vec4(1., 1., 1., .25), day), vec4(1., .5, .0, .2), sun), vec4(1., 1., 1., .4), night);
+  shine += mix(0., .2, looksun);
+  shine.a *= lp;
+#ifdef BLOOM_SUN
+  shine.a -= 0.;
+#else
+  shine.a -= .6;
+#endif
+
+// result
+  vec4 calcSun = mix(shine, vec4(1.), clamp(shape, .0, 1.));
+  calcSun.a -= 5. * rain;
+
+#if defined SUN_SHAPE && !defined(VANILLA)
+	gl_FragColor = CURRENT_COLOR * calcSun;
+#else
+#if !defined(TEXEL_AA) || !defined(TEXEL_AA_FEATURE)
+	vec4 diffuse = texture2D( TEXTURE_0, uv );
+#else
+	vec4 diffuse = texture2D_AA(TEXTURE_0, uv );
+#endif
+
+#ifdef ALPHA_TEST
+	if(diffuse.a < 0.5)
+		discard;
+#endif
+
+   gl_FragColor = CURRENT_COLOR * diffuse;
+#endif
+}

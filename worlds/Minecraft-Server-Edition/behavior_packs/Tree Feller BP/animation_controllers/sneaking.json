@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.sneaking": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"sneaking": "query.is_sneaking"
+						}
+					]
+				},
+				"sneaking": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function item_detect",
+						"/function item_detect_ore",
+						"/function item_detect_log"
+					]
+				}
+			}
+		}
+	}
+}

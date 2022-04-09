@@ -1,0 +1,309 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroid.h"
+
+#if __VERSION__ >= 300
+	#ifndef BYPASS_PIXEL_SHADER
+		#if defined(TEXEL_AA) && defined(TEXEL_AA_FEATURE)
+			_centroid in highp vec2 uv0;
+			_centroid in highp vec2 uv1;
+		#else
+			_centroid in vec2 uv0;
+			_centroid in vec2 uv1;
+		#endif
+	#endif
+#else
+	#ifndef BYPASS_PIXEL_SHADER
+		varying vec2 uv0;
+		varying vec2 uv1;
+	#endif
+#endif
+
+   varying vec4 color;
+   varying highp vec3 position;
+   varying highp vec3 worldpos;
+   varying highp vec2 screen;
+
+#ifdef FOG
+varying vec4 fogColor;
+#endif
+
+#include "uniformShaderConstants.h"
+#include "util.h"
+#include "global_function.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+LAYOUT_BINDING(1) uniform sampler2D TEXTURE_1;
+LAYOUT_BINDING(2) uniform sampler2D TEXTURE_2;
+
+#define linear(a, b, x) clamp((x - a) / (b - a), 0.0, 1.0)
+
+bool red_sampler(vec3 x){
+   if(lessThan(x, vec3(.85,.25,.25))==bvec3(true) && 
+   greaterThan(x, vec3(.825,.1,.1))==bvec3(true)){
+ return true; } else { return false;
+  }
+}
+ bool green_sampler(vec3 x){
+   if(lessThanEqual(x, vec3(0., 1., 0.))==bvec3(true) && 
+   greaterThanEqual(x, vec3(0., .8, 0.))==bvec3(true)){
+ return true; } else { return false;
+  }
+}
+  bool pixel_color(vec3 x){
+   if(!(lessThan(x, vec3(.5, .5, .5))==bvec3(true) || 
+   greaterThan(x, vec3(.0, .0, .0))==bvec3(true))){
+ return true; } else { return false;
+  }
+}
+
+highp vec3 water_normal(highp vec3 pos, float tm){
+	float a = .17;
+
+	float b = get_wave(pos, tm) *a;
+	float c = get_wave(pos+vec3(a, 0., 0.), tm) *a;
+	float d = get_wave(pos+vec3(.0, 0., a), tm) *a;
+
+	float e = (c-b)/a*2.0;
+	float f = (d-b)/a*2.0;
+	float g = abs(e+f);
+
+	return -normalize(vec3(e, 1.0-g*g, f));
+}
+
+///// sun reflection
+vec4 specular(vec4 albedo, float transition, vec3 wnorm, float n){
+
+   // calculate position
+   vec3 basepos = normalize(worldpos);
+   vec3 raypos = (basepos*7.5) / abs(basepos.x);
+   raypos.y -= transition;
+   raypos.y -= .8 * (basepos.y * .2);
+   vec3 bloompos = raypos;
+
+   raypos = reflect(raypos, wnorm);
+   bloompos = reflect(bloompos, wnorm * 1.5);
+   basepos = reflect(basepos, wnorm);
+   
+   float bloomshape = clamp(length(bloompos.zy / 10.), .0, 1.);
+   basepos.xz *= 2.5;
+   float ray = smoothstep(1., .0, length(basepos.zy * 2.));
+
+   // result
+   float shape = (1.-abs(raypos.z))-(abs(raypos.y));
+vec3 bloom = mix(mix(vec3(1.4, .75, .75)*2.2, vec3(.8), n), albedo.rgb, bloomshape);
+   vec4 sun = mix(mix(vec4(bloom, 1.), vec4(vec3(1.5, 1., .9) * 1.5, 1.), ray), mix(vec4(vec3(1.8, 1.4, .8) * 1.8, .7), vec4(2.8, 2.8, 2.8,.7), smoothstep(.3, .35, shape)), smoothstep(.13, .2, shape));
+
+#if defined SUN_REF && defined SUN_SHAPE
+    return sun;
+  #else
+    return vec4(bloom, 1.);
+#endif
+}
+
+void main()
+{
+#ifdef BYPASS_PIXEL_SHADER
+	gl_FragColor = vec4(0, 0, 0, 0);
+	return;
+#else 
+
+          vec2 shiftclr = vec2(.019, .0);
+     vec2 shiftpixel = vec2(.03125, .0);
+     vec2 shiftnorm = vec2(.03125, .0);
+
+#if USE_TEXEL_AA
+	vec4 diffuse = texture2D_AA(TEXTURE_0, uv0);
+  vec3 clrsampler = texture2D_AA(TEXTURE_0, uv0+shiftclr).rgb;
+  vec3 clrpixel = texture2D_AA(TEXTURE_0, uv0+shiftpixel).rgb;
+   vec3 normalmap = texture2D_AA(TEXTURE_0, uv0+shiftnorm).rgb;
+#else
+	vec4 diffuse = texture2D(TEXTURE_0, uv0);
+   vec3 clrsampler = texture2D(TEXTURE_0, uv0+shiftclr).rgb;
+   vec3 clrpixel = texture2D(TEXTURE_0, uv0+shiftpixel).rgb;
+   vec3 normalmap = texture2D(TEXTURE_0, uv0+shiftnorm).rgb;
+#endif
+//normalmap = normalize(normalmap * 2. - 1.);
+	
+#ifdef SEASONS_FAR
+	diffuse.a = 1.0;
+#endif
+
+#if USE_ALPHA_TEST
+	#ifdef ALPHA_TO_COVERAGE
+	#define ALPHA_THRESHOLD 0.05
+	#else
+	#define ALPHA_THRESHOLD 0.5
+	#endif
+	if(diffuse.a < ALPHA_THRESHOLD)
+		discard;
+#endif
+	
+vec4 inColor = color;
+vec3 N = normalize(cross(dFdx(position), dFdy(position)));
+
+float u1y = smoothstep(.0, .7, uv1.y), fx0 = float(FOG_CONTROL.x == 0.);
+
+///// detection assets
+     bool underw = underwater(), end_ = end(),  water_ = color.b > color.r && color.b > color.g;
+
+float day = clamp((texture2D(TEXTURE_1, vec2(0., 1.)).r-.5)*2., .0, 1.), fday = timeset(1), sun = .5-abs(.5-day), fsun = timeset(4), night = 1.-day, fnight = timeset(2), indoor = smoothstep(.5, .0, uv1.y), looksun = timeset(5), rain = timeset(3), sunset = max(sun, night) * clamp(-worldpos.x, .0, 1.) * looksun, sunrise = max(sun, night) * clamp(worldpos.x, .0, 1.) * looksun;
+float metal_ = float(green_sampler(clrsampler));
+     
+day *= u1y; sun *= u1y; rain *= u1y; night *= u1y; fsun *= 1.-indoor; fsun *= 1.-fx0; sun *= 1.-fx0;
+
+#if defined(BLEND)
+	diffuse.a *= inColor.a;
+#endif
+
+#ifndef NIGHT_VISION
+#if !defined(ALWAYS_LIT)
+#ifdef GLOWING_ORES
+ if(!(red_sampler(clrsampler) && pixel_color(clrpixel))){
+	diffuse *= texture2D( TEXTURE_1, uv1 );
+}  else  { diffuse *= 1.5; }
+# else
+diffuse *= texture2D( TEXTURE_1, uv1 );
+    #endif
+  #endif
+#endif
+
+#ifndef SEASONS
+	#if !USE_ALPHA_TEST && !defined(BLEND)
+		diffuse.a = inColor.a;
+	#endif
+
+	 ///// reduce AO
+#ifndef ALPHA_TEST
+    inColor.rgb = color.g * 2. > color.b + color.r? inColor.rgb : mix(mix(sqrt(inColor.rgb), normalize(inColor.rgb), .55), vec3(1.), float(underw));
+#else
+    inColor.rgb = inColor.rgb;
+#endif
+    diffuse.rgb *= inColor.rgb;
+
+#else
+	vec2 uv = inColor.xy;
+	diffuse.rgb *= mix(vec3(1.0,1.0,1.0), texture2D( TEXTURE_2, uv).rgb*2.0, inColor.b);
+	diffuse.rgb *= inColor.aaa;
+	diffuse.a = 1.0;
+#endif
+#ifndef VANILLA
+
+float sidex = abs(N.x), sidez = abs(N.z), rim = smoothstep(1., .0, dot(normalize(-worldpos), N)), underArea = smoothstep(.88, .87, uv1.y), gpos = 1.-clamp(length(worldpos.zy/worldpos.x), .0, 1.);
+float fresnel = 1. - dot(normalize(-worldpos), vec3(0, 1, 0));
+float a = 0.;
+vec3 waternorm = vec3(0.);
+
+#ifdef WATER_WAVE
+a = get_wave(position, TIME);
+waternorm = mix(N, water_normal(position, TIME), float(water_));
+#endif
+ 
+vec3 dark = mix(mix(vec3(.35, .35, .65), vec3(.6), indoor), vec3(1.), max(fx0, max(max((uv1.x*2.)-.5, .0), max(night, rain))));
+diffuse.rgb = mix(diffuse.rgb, tonemap(diffuse.rgb, 1.), max(day, rain));
+diffuse.rgb = saturation(diffuse.rgb, 1.15);
+diffuse.rgb *= base_col(day, sun, night, rain)*1.1;
+diffuse.rgb *= mix(mix(vec3(1.), mix(vec3(1.), vec3(1.4, 1.2, .6) *1.4, fsun), sidez), vec3(1.), float(metal_));
+
+highp vec3 bpos = reflect(mix(normalize(worldpos), normalize(worldpos), metal_), N);
+highp vec3 rf = bpos;
+rf = reflect(bpos, mix(vec3(0.), waternorm, .55));
+
+highp vec2 cl = (-rf.zx) / rf.y;
+   cl *= rotate(1.6);
+    cl /= (length(cl) * .15) + 1.;
+    cl /= mix(4.5, 15., abs(N.y));
+float skyline = linear(.15, 0.0, rf.y);
+    skyline = skyline * skyline;
+    float far = linear(1.0, 0.0, bpos.y);
+    float fade = 1.-linear(0.0, -0.15, bpos.y);
+
+vec3 gradientc = gradc(fday, fsun, fnight, rain) + (vec3(.0, .1, .1) * day);
+vec4 skyc = vec4(sky_col(skyline, fday, fsun, fnight, rain), diffuse.a);
+skyc = mix(skyc, diffuse, mix(.3, .45, day));
+
+vec4 cloudc = skyc;
+#if defined CLOUD_REF && defined CLOUD
+cloudc = mix(diffuse, cloud_col(skyc, cl, gpos, fsun, fnight, rain, 0., 0., .7), rim);
+cloudc = mix(cloudc, mix(diffuse, mix(diffuse, cloudc, fade), far), 1.-abs(N.y));
+#endif
+
+
+///// shadow asset
+#if defined SHADOW &&! defined SEASONS
+dark = mix(dark, cloudc.rgb, float(metal_));
+  diffuse.rgb *= mix(vec3(1.), dark, smoothstep(.87, .855, uv1.y));
+  dark = mix(dark, vec3(1.), smoothstep(.87, .855, uv1.y));
+diffuse.rgb *= mix(mix(vec3(1.), dark, max(mix(smoothstep(.6, .3, color.g), 1., abs(N.x)), abs(N.x))), vec3(1.), float((color.g > color.r)));
+#endif
+
+  vec4 sunref1 = mix(cloudc, mix(cloudc, specular(cloudc, mix(-4.6, 1., night),  waternorm, night), sunset), max(sidez, abs(N.y)));
+  vec4 sunref2 = mix(mix(sunref1, mix(sunref1,  specular(sunref1, mix(1., -4.6, day), waternorm, night), sunrise), max(sidez, abs(N.y))), cloudc, max(rain, 1.-uv1.y));
+
+#ifdef BLEND
+   diffuse = sunref2;
+#endif
+   diffuse = mix(diffuse, sunref1, metal_);
+
+
+#if defined WATER_WAVE &&! defined SEASONS
+if(color.b > color.r && color.b > color.g){
+if(!underw){
+  diffuse.a = mix(.1, 1., fresnel);}}
+#endif
+
+   
+if(underw && underArea > 0.){
+    diffuse.rgb *= diffuse.rgb * 1.4;
+     diffuse.rgb = mix(diffuse.rgb*vec3(.6,.8,1.3) *.6, vec3(4.8, 5., 5.2), max(0., a)*diffuse.rgb*uv1.y);
+    diffuse.rgb *= vec3(.6,.8,1.3) *.6;
+}
+
+
+/////=====
+
+#ifdef WET_EFFECT
+diffuse.rgb = mix(diffuse.rgb, mix(diffuse.rgb, mix(vec3(1.), diffuse.rgb, .82), clamp(noise(normalize(-worldpos).xz * 15.), 0., 1.) * rim * rain * (1.-night)), smoothstep(.5, .6, texture2D(TEXTURE_0, uv0).r));
+#endif
+
+if(end_){
+ diffuse.rgb += vec3(1.,.4,1.) *  max((uv1.x * 1.2)-.3, 0.);
+ diffuse.rgb *= vec3(.7, .8, 1.8)*.3;
+} else {
+
+/////light asset
+  vec3 lightC = mix(mix(vec3(1.1, .73, -.8) * 1.5, vec3(1.3, .65, .1) * 2., night), vec3(1., .9, .7), day);
+#ifdef TWINGKLING_LIGHT
+lightC = mix(lightC, lightC * .83, noise(TIME*4.5));
+#endif
+   diffuse.rgb = mix(diffuse.rgb * mix(vec3(1.), lightC, uv1.x * mix(mix(1.8, 2.1, rain), mix(4., .8, max(sun, rain)), night)), diffuse.rgb + mix(vec3(.2, 2.8, 3.), vec3(.0), uv1.y) * max((uv1.x*.7)-.4, 0.) * underArea, float(underw));
+}
+
+#ifdef ATMOSPHERE
+   diffuse.rgb = atmosphere(diffuse.rgb+mix(.0,.05, day), worldpos, uv1.x, fday, fsun, fnight, rain);
+#endif
+
+#ifdef BLOOM_SUN
+vec3 bloomC = mix(diffuse.rgb, mix(pow(vec3(1.2, .95, .5), vec3(1.8)), diffuse.rgb, mix(.8, .6, gpos*3.)), gpos);
+   diffuse.rgb = mix(diffuse.rgb, bloomC, looksun*fsun);
+#endif
+
+#endif
+
+/*
+#ifdef ALPHA_TEST
+diffuse.rgb = vec3(.0);
+#endif
+*/
+
+//diffuse.rgb = normalmap;
+
+#ifdef FOG
+    diffuse.rgb = mix(diffuse.rgb, mix(mix(mix(gradientc, diffuse.rgb, mix(.45, .6, rain)), diffuse.rgb, float(water_)), fogColor.rgb, max(float(fx0), 1.-uv1.y)), fogColor.a);
+#endif
+
+	gl_FragColor = diffuse;
+	
+#endif // BYPASS_PIXEL_SHADER
+}
