@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grimstone_iron_412ecb5c"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:deepslate_iron_ore",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:grimstone_iron",
+      "count": 1
+    }
+  }
+}

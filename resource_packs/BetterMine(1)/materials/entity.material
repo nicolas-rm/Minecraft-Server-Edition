@@ -1,0 +1,16 @@
+{
+  "materials": {
+    "version": "1.0.0",
+     "lights:entity_alphatest": {},
+     "inanimate:entity_alphatest": {},
+     "particles:entity_alphatest": {},
+     "heavens:entity_alphatest": {
+        "+states": [ "Blending" ]
+      },
+     "wings:entity_alphatest": {},
+     "ghost:entity_alphatest": {
+        "+states": [ "Blending" ]
+     },
+     "dead:entity_emissive_alpha": {}
+  }
+}

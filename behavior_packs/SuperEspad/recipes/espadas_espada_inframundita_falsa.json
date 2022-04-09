@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "espada_inframundita_falsa_b163e6c3"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      " C "
+    ],
+    "key": {
+      "A": {
+        "item": "espadas:espada_carton",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:dye",
+        "data": 16
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 5
+      }
+    },
+    "result": {
+      "item": "espadas:espada_inframundita_falsa",
+      "count": 1
+    }
+  }
+}

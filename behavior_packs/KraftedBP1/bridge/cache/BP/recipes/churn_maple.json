@@ -1,0 +1,313 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\churn_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "abf0a2c9_3431_495f_9da7_af862848ada9",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:churn_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							" #",
+							"~ ~",
+							"~-~"
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:stick"
+							},
+							"-": {
+								"item": "minecraft:wooden_slab"
+							},
+							"~": {
+								"item": "strat:maple_planks"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:churn_item",
+								"count": 1
+							}
+						],
+						"priority": 3
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:churn_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							" #",
+							"~ ~",
+							"~-~"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:stick"
+									},
+									"-": {
+										"item": "minecraft:wooden_slab"
+									},
+									"~": {
+										"item": "strat:maple_planks"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:stick"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:stick"
+									},
+									"-": {
+										"item": "minecraft:wooden_slab"
+									},
+									"~": {
+										"item": "strat:maple_planks"
+									}
+								},
+								"key": "-",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:stick"
+									},
+									"-": {
+										"item": "minecraft:wooden_slab"
+									},
+									"~": {
+										"item": "strat:maple_planks"
+									}
+								},
+								"key": "~",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:churn_item",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"data": "3",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

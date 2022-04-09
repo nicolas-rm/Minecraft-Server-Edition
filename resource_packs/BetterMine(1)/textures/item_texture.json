@@ -1,0 +1,429 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "steel_sword": {
+      "textures": "textures/items/steel_sword"
+    },
+    "crown_of_nether_king": {
+      "textures": "textures/items/crown_of_nether_king"
+    },
+    "spawn_egg_food_trader": {
+      "textures": "textures/items/foodt_egg"
+    },
+    "lead_ingot": {
+      "textures": "textures/items/lead_ingot"
+    },
+    "raw_lead": {
+      "textures": "textures/items/raw_lead"
+    },
+    "wizard_sword": {
+      "textures": "textures/items/wizard_sword"
+    },
+    "giants_hearth": {
+      "textures": "textures/items/giants_hearth"
+    },
+    "potion_reinforcement": {
+      "textures": "textures/items/potion_bottle_resistance"
+    },
+    "splash_potion_reinforcement": {
+      "textures": "textures/items/potion_bottle_splash_resistance"
+    },
+    "evil_wizard_sword": {
+      "textures": "textures/items/evil_wizard_sword"
+    },
+    "potion_ghost": {
+      "textures": "textures/items/potion_bottle_ghost"
+    },
+    "illusioner_warhorn": {
+      "textures": "textures/items/illusioner_warhorn"
+    },
+    "copper_dagger": {
+      "textures": "textures/items/copper_dagger"
+    },
+    "egg_wildfire": {
+      "textures": "textures/items/egg_wildfire"
+    },
+    "bronze_dagger": {
+      "textures": "textures/items/bronze_dagger"
+    },
+    "steel_dagger": {
+      "textures": "textures/items/steel_dagger"
+    },
+    "golden_dagger": {
+      "textures": "textures/items/golden_dagger"
+    },
+    "silver_dagger": {
+      "textures": "textures/items/silver_dagger"
+    },
+    "lead_nugget": {
+      "textures": "textures/items/lead_nugget"
+    },
+    "blueberry_juice": {
+      "textures": "textures/items/blueberry_juice"
+    },
+    "blueberries": {
+      "textures": "textures/items/blueberries"
+    },
+    "jhens_sword": {
+      "textures": "textures/items/jhens_sword"
+    },
+    "ugha_mace": {
+      "textures": "textures/items/ugha_mace"
+    },
+    "day_helmet": {
+      "textures": "textures/items/day_helmet"
+    },
+    "day_chestplate": {
+      "textures": "textures/items/day_chestplate"
+    },
+    "day_leggings": {
+      "textures": "textures/items/day_leggings"
+    },
+    "day_boots": {
+      "textures": "textures/items/day_boots"
+    },
+    "night_helmet": {
+      "textures": "textures/items/night_helmet"
+    },
+    "night_chestplate": {
+      "textures": "textures/items/night_chesplate"
+    },
+    "night_leggings": {
+      "textures": "textures/items/night_leggings"
+    },
+    "night_boots": {
+      "textures": "textures/items/night_boots"
+    },
+    "raw_tin": {
+      "textures": "textures/items/raw_tin"
+    },
+    "raw_silver": {
+      "textures": "textures/items/raw_silver"
+    },
+    "illusioner_spawn_egg": {
+      "textures": "textures/items/illusioner_spawn_egg"
+    },
+    "cherries": {
+      "textures": "textures/items/cherries"
+    },
+    "day_sword": {
+      "textures": "textures/items/day_sword"
+    },
+    "wooden_warhammer": {
+      "textures": "textures/items/wooden_warhammer"
+    },
+    "zombie_pillager": {
+      "textures": "textures/items/z/mob_zombie_pillager"
+    },
+    "zombie_vindicator": {
+      "textures": "textures/items/z/mob_zombie_vindicator"
+    },
+    "zombie_witch": {
+      "textures": "textures/items/z/mob_zombie_witch"
+    },
+    "zombie_evoker": {
+      "textures": "textures/items/z/mob_zombie_evoker"
+    },
+    "adamantit_hoe": {
+      "textures": "textures/items/adamantit_hoe"
+    },
+    "hbstatue": {
+      "textures": "textures/items/hbstatue"
+    },
+    "lead_pickaxe": {
+      "textures": "textures/items/lead_pickaxe"
+    },
+    "steel_hoe": {
+      "textures": "textures/items/steel_hoe"
+    },
+    "silver_hoe": {
+      "textures": "textures/items/silver_hoe"
+    },
+    "bronze_hoe": {
+      "textures": "textures/items/bronze_hoe"
+    },
+    "golden_warhammer": {
+      "textures": "textures/items/golden_warhammer"
+    },
+    "stone_warhammer": {
+      "textures": "textures/items/stone_warhammer"
+    },
+    "iron_warhammer": {
+      "textures": "textures/items/iron_warhammer"
+    },
+    "bronze_warhammer": {
+      "textures": "textures/items/bronze_warhammer"
+    },
+    "steel_warhammer": {
+      "textures": "textures/items/steel_warhammer"
+    },
+    "diamond_warhammer": {
+      "textures": "textures/items/diamond_warhammer"
+    },
+    "silver_warhammer": {
+      "textures": "textures/items/silver_warhammer"
+    },
+    "netherite_warhammer": {
+      "textures": "textures/items/netherite_warhammer"
+    },
+    "adamantit_warhammer": {
+      "textures": "textures/items/adamantit_warhammer"
+    },
+    "sword_42dbp": {
+      "textures": "textures/items/sword_42dbp"
+    },
+    "cooked_deer": {
+      "textures": "textures/items/cooked_deer"
+    },
+    "musket": {
+      "textures": "textures/items/musket"
+    },
+    "musket_ammo": {
+      "textures": "textures/items/musket_ammo"
+    },
+    "raw_deer": {
+      "textures": "textures/items/raw_deer"
+    },
+    "bad": {
+      "textures": "textures/items/bad"
+    },
+    "sword_42d": {
+      "textures": "textures/items/sword_42d"
+    },
+    "sword_4bpf": {
+      "textures": "textures/items/sword_4bpf"
+    },
+    "sword_42dbs": {
+      "textures": "textures/items/sword_42dbs"
+    },
+    "sword_42db": {
+      "textures": "textures/items/sword_42db"
+    },
+    "sword_42dhs": {
+      "textures": "textures/items/sword_42dhs"
+    },
+    "sword_42dh": {
+      "textures": "textures/items/sword_42dh"
+    },
+    "ruby": {
+      "textures": "textures/items/ruby"
+    },
+    "topaz": {
+      "textures": "textures/items/topaz"
+    },
+    "amber": {
+      "textures": "textures/items/amber"
+    },
+    "opal": {
+      "textures": "textures/items/opal"
+    },
+    "sapphire": {
+      "textures": "textures/items/sapphire"
+    },
+    "knight_chestplate": {
+      "textures": "textures/items/knight_chestplate"
+    },
+    "knight_boots": {
+      "textures": "textures/items/knight_boots"
+    },
+    "knight_leggings": {
+      "textures": "textures/items/knight_leggings"
+    },
+    "knight_helmet": {
+      "textures": "textures/items/knight_helmet"
+    },
+    "corn": {
+      "textures": "textures/items/corn"
+    },
+    "corn_cob": {
+      "textures": "textures/items/corn_cob"
+    },
+    "cornbread": {
+      "textures": "textures/items/cornbread"
+    },
+    "cooked_corn": {
+      "textures": "textures/items/cooked_corn"
+    },
+    "night_sword": {
+      "textures": "textures/items/night_sword"
+    },
+    "tin_ingot": {
+      "textures": "textures/items/tin_ingot"
+    },
+    "steel_axe": {
+      "textures": "textures/items/steel_axe"
+    },
+    "bronze_nugget": {
+      "textures": "textures/items/bronze_nugget"
+    },
+    "steel_pickaxe": {
+      "textures": "textures/items/steel_pickaxe"
+    },
+    "steel_shovel": {
+      "textures": "textures/items/steel_shovel"
+    },
+    "steel_helmet": {
+      "textures": "textures/items/steel_helmet"
+    },
+    "steel_leggings": {
+      "textures": "textures/items/steel_leggings"
+    },
+    "steel_chestplate": {
+      "textures": "textures/items/steel_chestplate"
+    },
+    "steel_boots": {
+      "textures": "textures/items/steel_boots"
+    },
+    "steel_ingot": {
+      "textures": "textures/items/steel_ingot"
+    },
+    "flour": {
+      "textures": "textures/items/flour"
+    },
+    "bronze_axe": {
+      "textures": "textures/items/bronze_axe"
+    },
+    "bronze_pickaxe": {
+      "textures": "textures/items/bronze_pickaxe"
+    },
+    "bronze_shovel": {
+      "textures": "textures/items/bronze_shovel"
+    },
+    "bronze_helmet": {
+      "textures": "textures/items/bronze_helmet"
+    },
+    "bronze_leggings": {
+      "textures": "textures/items/bronze_leggings"
+    },
+    "bronze_chestplate": {
+      "textures": "textures/items/bronze_chestplate"
+    },
+    "bronze_boots": {
+      "textures": "textures/items/bronze_boots"
+    },
+    "bronze_ingot": {
+      "textures": "textures/items/bronze_ingot"
+    },
+    "bronze_sword": {
+      "textures": "textures/items/bronze_sword"
+    },
+    "adamantit_axe": {
+      "textures": "textures/items/adamantit_axe"
+    },
+    "adamantit_pickaxe": {
+      "textures": "textures/items/adamantit_pickaxe"
+    },
+    "adamantit_shovel": {
+      "textures": "textures/items/adamantit_shovel"
+    },
+    "adamantit_helmet": {
+      "textures": "textures/items/adamantit_helmet"
+    },
+    "adamantit_leggings": {
+      "textures": "textures/items/adamantit_leggings"
+    },
+    "adamantit_chestplate": {
+      "textures": "textures/items/adamantit_chestplate"
+    },
+    "adamantit_boots": {
+      "textures": "textures/items/adamantit_boots"
+    },
+    "adamantit_crystal": {
+      "textures": "textures/items/adamantit_crystal"
+    },
+    "adamantit_sword": {
+      "textures": "textures/items/adamantit_sword"
+    },
+    "silver_axe": {
+      "textures": "textures/items/silver_axe"
+    },
+    "silver_pickaxe": {
+      "textures": "textures/items/silver_pickaxe"
+    },
+    "silver_shovel": {
+      "textures": "textures/items/silver_shovel"
+    },
+    "silver_helmet": {
+      "textures": "textures/items/silver_helmet"
+    },
+    "silver_leggings": {
+      "textures": "textures/items/silver_leggings"
+    },
+    "silver_chestplate": {
+      "textures": "textures/items/silver_chestplate"
+    },
+    "silver_boots": {
+      "textures": "textures/items/silver_boots"
+    },
+    "silver_ingot": {
+      "textures": "textures/items/silver_ingot"
+    },
+    "silver_sword": {
+      "textures": "textures/items/silver_sword"
+    },
+    "bread_loaf": {
+      "textures": "textures/items/bread_loaf"
+    },
+    "bacon": {
+      "textures": "textures/items/bacon"
+    },
+    "chcake": {
+      "textures": "textures/items/chcake"
+    },
+    "tomato": {
+      "textures": "textures/items/tomato"
+    },
+    "pastry": {
+      "textures": "textures/items/pastry"
+    },
+    "herobrines_hearth": {
+      "textures": "textures/items/herobrines_hearth"
+    },
+    "grapesred": {
+      "textures": "textures/items/grapered"
+    },
+    "duck_spawn": {
+      "textures": "textures/items/duck_spawn"
+    },
+    "salt": {
+      "textures": "textures/items/salt"
+    },
+    "mango": {
+      "textures": "textures/items/mango"
+    },
+    "olives": {
+      "textures": "textures/items/olives"
+    },
+    "orange": {
+      "textures": "textures/items/orange"
+    },
+    "pear": {
+      "textures": "textures/items/pear"
+    },
+    "red_wine": {
+      "textures": "textures/items/red_wine"
+    },
+    "white_wine": {
+      "textures": "textures/items/white_wine"
+    },
+    "grapeswhite": {
+      "textures": "textures/items/grapewhite"
+    },
+    "wineglass": {
+      "textures": "textures/items/wineglass"
+    },
+    "vineyard": {
+      "textures": "textures/items/vineyard_spawn"
+    },
+    "spawn_warrior": {
+      "textures": "textures/items/spawn_warrior"
+    },
+    "raw_duck": {
+      "textures": "textures/items/raw_duck"
+    },
+    "cooked_duck": {
+      "textures": "textures/items/cooked_duck"
+    }
+  }
+}

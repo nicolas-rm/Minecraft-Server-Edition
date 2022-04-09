@@ -1,0 +1,354 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\sausage.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "f2c0a075_3f8f_45ce_a2ec_4bbecbaa9af1",
+	"file_version": 11,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:sausage",
+							"category": "nature"
+						},
+						"components": {
+							"minecraft:use_duration": 0.4,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "low",
+								"can_always_eat": false,
+								"on_consume": {
+									"event": "strat:raw_foodism"
+								}
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.rawFood"
+							},
+							"minecraft:icon": {
+								"texture": "bridge_sausage raw"
+							},
+							"minecraft:use_animation": "eat"
+						},
+						"events": {
+							"strat:raw_foodism": {
+								"randomize": [
+									{
+										"weight": 199
+									},
+									{
+										"run_command": {
+											"command": [
+												"gamerule sendcommandfeedback false",
+												"give @s strat:raw_foodism_trophy",
+												"playsound strat.trophy_collected @s",
+												"effect @s nausea 10 1",
+												"gamerule sendcommandfeedback true"
+											],
+											"target": "holder"
+										},
+										"weight": 1
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "strat:raw_foodism"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_sausage raw"
+								},
+								"minecraft:use_animation": "eat"
+							},
+							"events": {
+								"strat:raw_foodism": {
+									"randomize": [
+										{
+											"weight": 199
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:raw_foodism_trophy",
+													"playsound strat.trophy_collected @s",
+													"effect @s nausea 10 1",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "holder"
+											},
+											"weight": 1
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:sausage",
+							"category": "nature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "strat:raw_foodism"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_sausage raw"
+								},
+								"minecraft:use_animation": "eat"
+							},
+							"events": {
+								"strat:raw_foodism": {
+									"randomize": [
+										{
+											"weight": 199
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:raw_foodism_trophy",
+													"playsound strat.trophy_collected @s",
+													"effect @s nausea 10 1",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "holder"
+											},
+											"weight": 1
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "0.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "strat:raw_foodism"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_sausage raw"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:food",
+								"children": [
+									{
+										"data": "2",
+										"key": "nutrition"
+									},
+									{
+										"data": "low",
+										"key": "saturation_modifier"
+									},
+									{
+										"data": "false",
+										"key": "can_always_eat"
+									},
+									{
+										"open": {
+											"nutrition": 2,
+											"saturation_modifier": "low",
+											"can_always_eat": false,
+											"on_consume": {
+												"event": "strat:raw_foodism"
+											}
+										},
+										"key": "on_consume",
+										"is_minified": true,
+										"children": {
+											"event": "strat:raw_foodism"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "strat:raw_foodism"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_sausage raw"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.rawFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "strat:raw_foodism"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_sausage raw"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "bridge_sausage raw"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "strat:raw_foodism"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_sausage raw"
+								},
+								"minecraft:use_animation": "eat"
+							},
+							"events": {
+								"strat:raw_foodism": {
+									"randomize": [
+										{
+											"weight": 199
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:raw_foodism_trophy",
+													"playsound strat.trophy_collected @s",
+													"effect @s nausea 10 1",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "holder"
+											},
+											"weight": 1
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"strat:raw_foodism": {
+								"randomize": [
+									{
+										"weight": 199
+									},
+									{
+										"run_command": {
+											"command": [
+												"gamerule sendcommandfeedback false",
+												"give @s strat:raw_foodism_trophy",
+												"playsound strat.trophy_collected @s",
+												"effect @s nausea 10 1",
+												"gamerule sendcommandfeedback true"
+											],
+											"target": "holder"
+										},
+										"weight": 1
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

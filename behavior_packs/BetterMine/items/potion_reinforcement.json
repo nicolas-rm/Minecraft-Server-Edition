@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:potion_reinforcement"
+    },
+
+    "components": {
+      "minecraft:stacked_by_data": false,
+      "minecraft:use_duration": 32,
+      "minecraft:foil": true,
+  
+      "minecraft:food": {
+        "can_always_eat": true,
+        "using_converts_to": "glass_bottle",
+        "effects": [
+          {
+            "name": "resistance",
+            "chance": 100.0,
+            "duration": 142,
+            "amplifier": 2
+          },
+          {
+            "name": "health_boost",
+            "chance": 100.0,
+            "duration": 200,
+            "amplifier": 8
+          },
+          {
+            "name": "strength",
+            "chance": 100.0,
+            "duration": 142,
+            "amplifier": 3
+          }
+        ]
+      }
+    }
+  }
+}

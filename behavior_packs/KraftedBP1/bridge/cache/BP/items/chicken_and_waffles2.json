@@ -1,0 +1,169 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\chicken_and_waffles2.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "11359739_b457_4d0b_b25f_c3689f2a2593",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:chicken_and_waffles2",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 3.2,
+							"minecraft:food": {
+								"nutrition": 11,
+								"saturation_modifier": "max",
+								"using_converts_to": "strat:ceramic_plate"
+							},
+							"minecraft:icon": {
+								"texture": "chicken_and_waffles2"
+							},
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:max_stack_size": 16
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chicken_and_waffles2",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 3.2,
+								"minecraft:food": {
+									"nutrition": 11,
+									"saturation_modifier": "max",
+									"using_converts_to": "strat:ceramic_plate"
+								},
+								"minecraft:icon": {
+									"texture": "chicken_and_waffles2"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:max_stack_size": 16
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:chicken_and_waffles2",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chicken_and_waffles2",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 3.2,
+								"minecraft:food": {
+									"nutrition": 11,
+									"saturation_modifier": "max",
+									"using_converts_to": "strat:ceramic_plate"
+								},
+								"minecraft:icon": {
+									"texture": "chicken_and_waffles2"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:max_stack_size": 16
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "3.2",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 3.2,
+									"minecraft:food": {
+										"nutrition": 11,
+										"saturation_modifier": "max",
+										"using_converts_to": "strat:ceramic_plate"
+									},
+									"minecraft:icon": {
+										"texture": "chicken_and_waffles2"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:max_stack_size": 16
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 11,
+									"saturation_modifier": "max",
+									"using_converts_to": "strat:ceramic_plate"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 3.2,
+									"minecraft:food": {
+										"nutrition": 11,
+										"saturation_modifier": "max",
+										"using_converts_to": "strat:ceramic_plate"
+									},
+									"minecraft:icon": {
+										"texture": "chicken_and_waffles2"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:max_stack_size": 16
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "chicken_and_waffles2"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

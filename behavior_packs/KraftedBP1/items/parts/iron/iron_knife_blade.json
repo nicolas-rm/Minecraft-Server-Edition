@@ -1,0 +1,21 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "strat:iron_knife_blade"
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Iron Knife Blade"
+			},
+			"minecraft:icon": {
+				"texture": "iron_knife_blade"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			}
+		},
+		"events": {}
+	}
+}

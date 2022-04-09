@@ -1,0 +1,144 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\recipes\\palm_crafting_table.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "842cb8e4_8cba_4e5e_9709_bb6876ac6242",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ocean:palm_crafting_table"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"PP",
+							"PP"
+						],
+						"key": {
+							"P": {
+								"item": "ocean:palm_planks"
+							}
+						},
+						"result": [
+							{
+								"item": "minecraft:crafting_table"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ocean:palm_crafting_table"
+						}
+					},
+					{
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:palm_crafting_table"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"PP",
+								"PP"
+							],
+							"key": {
+								"P": {
+									"item": "ocean:palm_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "minecraft:crafting_table"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"PP",
+							"PP"
+						]
+					},
+					{
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"P": {
+										"item": "ocean:palm_planks"
+									}
+								},
+								"key": "P",
+								"is_minified": true,
+								"children": {
+									"item": "ocean:palm_planks"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:palm_crafting_table"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"PP",
+								"PP"
+							],
+							"key": {
+								"P": {
+									"item": "ocean:palm_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "minecraft:crafting_table"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:crafting_table"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:crafting_table"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

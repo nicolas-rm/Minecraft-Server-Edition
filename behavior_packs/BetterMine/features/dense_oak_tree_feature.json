@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "better:dense_oak_tree_feature"
+    },
+    "features": [
+      [ "better:skinny_dense_oak_tree_feature", 1 ],
+      [ "better:fancy_dense_oak_tree_feature", 1 ]
+    ]
+  }
+}

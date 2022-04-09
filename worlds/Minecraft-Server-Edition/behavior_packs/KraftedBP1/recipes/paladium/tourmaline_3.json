@@ -1,0 +1,13 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "oh:paladium_3"
+		},
+		"tags": [
+			"blast_furnace"
+		],
+		"input": "oh:paladium_ore_d",
+		"output": "oh:paladium"
+	}
+}

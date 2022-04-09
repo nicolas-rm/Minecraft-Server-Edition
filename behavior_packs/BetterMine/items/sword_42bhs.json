@@ -1,0 +1,16 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:sword_42dhs"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Knob of sword of 42 dimensions"
+      },
+      "minecraft:icon": {
+        "texture": "sword_42dhs"
+      }
+    }
+  }
+}

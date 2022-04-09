@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:furnace_pastry"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "better:pastry",
+    "output": "minecraft:bread"
+  }
+  
+}

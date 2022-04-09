@@ -1,0 +1,21 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "strat:wooden_knife_blade"
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Wooden Knife Blade"
+			},
+			"minecraft:icon": {
+				"texture": "wooden_knife_blade"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			}
+		},
+		"events": {}
+	}
+}

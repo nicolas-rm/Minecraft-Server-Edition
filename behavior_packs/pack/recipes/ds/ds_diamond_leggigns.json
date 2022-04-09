@@ -1,0 +1,25 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shapeless": {
+		"tags": [
+			"smithing_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:diamond_leggings"
+			},
+			{
+				"item": "ds_book:netherite_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "ray:ds_diamond_leggings"
+			}
+		],
+		"description": {
+			"identifier": "ray:ds_diamond_leggigns"
+		}
+	}
+}

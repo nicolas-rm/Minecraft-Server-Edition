@@ -1,0 +1,347 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:giant",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "melee_attack": {
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        },
+        "minecraft:ageable": {
+          "duration": 15,
+          "grow_up": {
+            "event": "minecraft:switch_to_ranged",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/giant_equipment.json"
+        },
+        "minecraft:behavior.leap_at_target": {
+          "set_persistent": false,
+          "yd": 2.0,
+          "priority": 1
+        }
+      },
+      "minecraft:death": {
+        "minecraft:transformation": {
+          "into": "better:giant_body"
+        }
+      },
+      "ranged_attack": {
+        "minecraft:behavior.ranged_attack": {
+          "priority": 1,
+          "attack_radius": 64,
+          "charge_shoot_trigger": 2,
+          "charge_charged_trigger": 1
+        },
+        "minecraft:ageable": {
+          "duration": 15,
+          "grow_up": {
+            "event": "minecraft:switch_from_ranged",
+            "target": "self"
+          }
+        },
+        "minecraft:shooter": {
+          "def": "better:boulder"
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/giant_boulder.json"
+        }
+      },
+      "summon_attack": {
+        "minecraft:ageable": {
+          "duration": 15,
+          "grow_up": {
+            "event": "minecraft:switch_to_melee",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 2,
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 35.0,
+              "cooldown_time": 5.0,
+              "weight": 3,
+              "cast_duration": 1.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 16,
+                  "entity_type": "better:army_zombie",
+                  "size": 8,
+                  "sound_event": "prepare.attack"
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/giant_totem.json"
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:on_death": {
+        "event": "minecraft:die",
+        "target": "self"
+      },
+      "minecraft:experience_reward": {
+        "on_death": "24"
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "zombie", "brutal", "undead", "monster", "mob" ]
+      },
+      "minecraft:equip_item": {
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:scale": {
+        "value":6.0
+      },
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "name": "Giant",
+        "hud_range": 128
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_walk": true,
+        "can_break_doors": true
+      },
+      "minecraft:annotation.break_door": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:attack": {
+        "damage": 4
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:behavior.equip_item": {
+        "priority": 2
+      },
+      "minecraft:area_attack": {
+        "damage_per_tick": 10,
+        "damage_range": 0.6
+      },
+      "minecraft:behavior.stomp_turtle_egg": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "search_range": 10,
+        "search_height": 2,
+        "goal_radius": 1.14,
+        "interval": 20
+      },
+      "minecraft:behavior.pickup_items": {
+        "priority": 6,
+        "max_dist": 3,
+        "goal_radius": 2,
+        "speed_multiplier": 1.0,
+        "pickup_based_on_chance": true,
+        "can_pickup_any_item": true
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 25.0,
+        "must_see_forget_duration": 17.0,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "is_family", "subject": "other", "value": "snowgolem" },
+                { "test": "is_family", "subject": "other", "value": "irongolem" }
+              ]
+            },
+            "max_dist": 35
+          },
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "villager" },
+                { "test": "is_family", "subject": "other", "value": "illager" },
+                { "test": "is_family", "subject": "other", "value": "wandering_trader" }
+              ]
+            },
+            "max_dist": 35,
+            "must_see": true
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "baby_turtle" },
+                { "test": "in_water", "subject": "other", "operator": "!=", "value": true }
+              ]
+            },
+            "max_dist": 35
+          }
+        ]
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "ranged_attack"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "melee_attack"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:switch_to_melee": {
+        "add": {
+          "component_groups": [
+            "melee_attack"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "ranged_attack",
+            "summon_attack"
+          ]
+        }
+      },
+      "minecraft:switch_from_ranged": {
+        "randomize": [
+          {
+            "weight": 6,
+            "remove": {
+              "component_groups": [
+                "ranged_attack"
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "summon_attack"
+              ]
+            }
+          },
+          {
+            "weight": 4,
+            "remove": {
+              "component_groups": [
+                "ranged_attack"
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "melee_attack"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:die": {
+        "add": {
+          "component_groups": [
+            "minecraft:death"
+          ]
+        }
+      },
+      "minecraft:switch_to_ranged": {
+        "remove": {
+          "component_groups": [
+            "melee_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ranged_attack"
+          ]
+        }
+      }
+    }
+  }
+}

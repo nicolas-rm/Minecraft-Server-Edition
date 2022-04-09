@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "corrupted_vein_aade9c69"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:corrupted_sculk",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:corrupted_vein",
+      "count": 2
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "block_of_bone_8f98f00f"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:bone_block",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 15
+      }
+    },
+    "result": {
+      "item": "wr:block_of_bone",
+      "count": 1
+    }
+  }
+}

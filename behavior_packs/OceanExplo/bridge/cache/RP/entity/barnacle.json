@@ -1,0 +1,243 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\entity\\barnacle.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "44e2157a_affb_4427_b1a1_a7e52f2c3ad1",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "ocean:barnacle",
+							"materials": {
+								"default": "entity_alphatest"
+							},
+							"textures": {
+								"default": "textures/entity/barnacle"
+							},
+							"geometry": {
+								"default": "geometry.barnacle"
+							},
+							"scripts": {
+								"animate": [
+									"controller"
+								]
+							},
+							"animations": {
+								"controller": "controller.animation.barnacle",
+								"swim": "animation.barnacle.swim",
+								"constrict": "animation.barnacle.constrict"
+							},
+							"spawn_egg": {
+								"base_color": "#0B2740",
+								"overlay_color": "#8D7EFF"
+							},
+							"render_controllers": [
+								"controller.render.default"
+							]
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:barnacle",
+								"materials": {
+									"default": "entity_alphatest"
+								},
+								"textures": {
+									"default": "textures/entity/barnacle"
+								},
+								"geometry": {
+									"default": "geometry.barnacle"
+								},
+								"scripts": {
+									"animate": [
+										"controller"
+									]
+								},
+								"animations": {
+									"controller": "controller.animation.barnacle",
+									"swim": "animation.barnacle.swim",
+									"constrict": "animation.barnacle.constrict"
+								},
+								"spawn_egg": {
+									"base_color": "#0B2740",
+									"overlay_color": "#8D7EFF"
+								},
+								"render_controllers": [
+									"controller.render.default"
+								]
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "ocean:barnacle",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity_alphatest"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/barnacle"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.barnacle"
+								}
+							},
+							{
+								"open": {
+									"identifier": "ocean:barnacle",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/barnacle"
+									},
+									"geometry": {
+										"default": "geometry.barnacle"
+									},
+									"scripts": {
+										"animate": [
+											"controller"
+										]
+									},
+									"animations": {
+										"controller": "controller.animation.barnacle",
+										"swim": "animation.barnacle.swim",
+										"constrict": "animation.barnacle.constrict"
+									},
+									"spawn_egg": {
+										"base_color": "#0B2740",
+										"overlay_color": "#8D7EFF"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												"controller"
+											]
+										},
+										"key": "animate",
+										"is_minified": true,
+										"children": [
+											"controller"
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "ocean:barnacle",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/barnacle"
+									},
+									"geometry": {
+										"default": "geometry.barnacle"
+									},
+									"scripts": {
+										"animate": [
+											"controller"
+										]
+									},
+									"animations": {
+										"controller": "controller.animation.barnacle",
+										"swim": "animation.barnacle.swim",
+										"constrict": "animation.barnacle.constrict"
+									},
+									"spawn_egg": {
+										"base_color": "#0B2740",
+										"overlay_color": "#8D7EFF"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"controller": "controller.animation.barnacle",
+									"swim": "animation.barnacle.swim",
+									"constrict": "animation.barnacle.constrict"
+								}
+							},
+							{
+								"open": {
+									"identifier": "ocean:barnacle",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/barnacle"
+									},
+									"geometry": {
+										"default": "geometry.barnacle"
+									},
+									"scripts": {
+										"animate": [
+											"controller"
+										]
+									},
+									"animations": {
+										"controller": "controller.animation.barnacle",
+										"swim": "animation.barnacle.swim",
+										"constrict": "animation.barnacle.constrict"
+									},
+									"spawn_egg": {
+										"base_color": "#0B2740",
+										"overlay_color": "#8D7EFF"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#0B2740",
+									"overlay_color": "#8D7EFF"
+								}
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.default"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,246 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\magma_walker.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "653381b6_12a0_4225_9fdc_1d68eb3d5e9b",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:magma_walker"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"pattern": [
+							"SBS",
+							"S#S"
+						],
+						"key": {
+							"S": {
+								"item": "minecraft:magma"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						},
+						"result": [
+							{
+								"item": "ray:mw_enchanted_book"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:magma_walker"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:magma"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:magma_walker"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:magma_walker"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:magma"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:magma_walker"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:magma"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"SBS",
+							"S#S"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:magma_walker"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:magma"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"S": {
+										"item": "minecraft:magma"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "S",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:magma"
+								}
+							},
+							{
+								"open": {
+									"S": {
+										"item": "minecraft:magma"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:magma_walker"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:magma"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:mw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:mw_enchanted_book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

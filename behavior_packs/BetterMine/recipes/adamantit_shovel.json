@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:adamantit_shovel"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "better:adamantit_crystal"
+      },
+      "X": {
+        "item": "minecraft:netherite_shovel"
+      }
+    },
+    "result": {
+      "item": "better:adamantit_shovel",
+      "data": 0
+    }
+  }
+}

@@ -1,0 +1,397 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\cheese_cake.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "4b951bc0_79eb_4715_b0de_e7e017b53b2e",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:cheese_cake"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"AOA",
+							"BEB",
+							"CCC"
+						],
+						"key": {
+							"A": {
+								"item": "strat:cheese"
+							},
+							"O": {
+								"item": "minecraft:sweet_berries"
+							},
+							"B": {
+								"item": "minecraft:sugar"
+							},
+							"C": {
+								"item": "minecraft:cookie"
+							},
+							"E": {
+								"item": "minecraft:egg"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:cheese_cake_item"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AOA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "strat:cheese"
+								},
+								"O": {
+									"item": "minecraft:sweet_berries"
+								},
+								"B": {
+									"item": "minecraft:sugar"
+								},
+								"C": {
+									"item": "minecraft:cookie"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:cheese_cake_item"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cheese_cake"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AOA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "strat:cheese"
+								},
+								"O": {
+									"item": "minecraft:sweet_berries"
+								},
+								"B": {
+									"item": "minecraft:sugar"
+								},
+								"C": {
+									"item": "minecraft:cookie"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:cheese_cake_item"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AOA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "strat:cheese"
+								},
+								"O": {
+									"item": "minecraft:sweet_berries"
+								},
+								"B": {
+									"item": "minecraft:sugar"
+								},
+								"C": {
+									"item": "minecraft:cookie"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:cheese_cake_item"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"AOA",
+							"BEB",
+							"CCC"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AOA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "strat:cheese"
+								},
+								"O": {
+									"item": "minecraft:sweet_berries"
+								},
+								"B": {
+									"item": "minecraft:sugar"
+								},
+								"C": {
+									"item": "minecraft:cookie"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:cheese_cake_item"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"A": {
+										"item": "strat:cheese"
+									},
+									"O": {
+										"item": "minecraft:sweet_berries"
+									},
+									"B": {
+										"item": "minecraft:sugar"
+									},
+									"C": {
+										"item": "minecraft:cookie"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "strat:cheese"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:cheese"
+									},
+									"O": {
+										"item": "minecraft:sweet_berries"
+									},
+									"B": {
+										"item": "minecraft:sugar"
+									},
+									"C": {
+										"item": "minecraft:cookie"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "O",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:sweet_berries"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:cheese"
+									},
+									"O": {
+										"item": "minecraft:sweet_berries"
+									},
+									"B": {
+										"item": "minecraft:sugar"
+									},
+									"C": {
+										"item": "minecraft:cookie"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:sugar"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:cheese"
+									},
+									"O": {
+										"item": "minecraft:sweet_berries"
+									},
+									"B": {
+										"item": "minecraft:sugar"
+									},
+									"C": {
+										"item": "minecraft:cookie"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "C",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:cookie"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "strat:cheese"
+									},
+									"O": {
+										"item": "minecraft:sweet_berries"
+									},
+									"B": {
+										"item": "minecraft:sugar"
+									},
+									"C": {
+										"item": "minecraft:cookie"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "E",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:egg"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AOA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "strat:cheese"
+								},
+								"O": {
+									"item": "minecraft:sweet_berries"
+								},
+								"B": {
+									"item": "minecraft:sugar"
+								},
+								"C": {
+									"item": "minecraft:cookie"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:cheese_cake_item"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:cheese_cake_item"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:cheese_cake_item"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

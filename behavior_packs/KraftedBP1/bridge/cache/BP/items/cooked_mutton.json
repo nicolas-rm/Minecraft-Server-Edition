@@ -1,0 +1,90 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\cooked_mutton.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "e153882a_a5aa_4535_831c_ed00293ec71b",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:cooked_mutton"
+						},
+						"components": {
+							"minecraft:use_duration": 16,
+							"minecraft:food": {
+								"nutrition": 3,
+								"saturation_modifier": "good"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cooked_mutton"
+							},
+							"components": {
+								"minecraft:use_duration": 16,
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation_modifier": "good"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:cooked_mutton"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cooked_mutton"
+							},
+							"components": {
+								"minecraft:use_duration": 16,
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation_modifier": "good"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "16",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 16,
+									"minecraft:food": {
+										"nutrition": 3,
+										"saturation_modifier": "good"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 3,
+									"saturation_modifier": "good"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

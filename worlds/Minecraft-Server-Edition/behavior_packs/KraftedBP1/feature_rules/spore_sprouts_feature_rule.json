@@ -1,0 +1,45 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "korbon:spore_sprouts_feature_rule",
+			"places_feature": "korbon:spore_sprouts_feature"
+		},
+		"conditions": {
+			"placement_pass": "before_surface_pass",
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"any_of": [
+							{
+								"test": "has_biome_tag",
+								"operator": "==",
+								"value": "the_end"
+							}
+						]
+					}
+				]
+			}
+		},
+		"distribution": {
+			"scatter_chance": 20,
+			"iterations": 1,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					8
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					8
+				]
+			},
+			"y": "(q.noise(v.worldx / 1024, v.worldz / 1024) + q.noise(v.worldx, v.worldz) * 0.02 > 0.6 && (math.abs(v.worldx) > 200 || math.abs(v.worldz) > 200)) ? (q.heightmap(v.worldx, v.worldz) - 1) : 4"
+		}
+	}
+}

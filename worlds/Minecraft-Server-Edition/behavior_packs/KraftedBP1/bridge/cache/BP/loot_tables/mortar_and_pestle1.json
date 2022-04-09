@@ -1,0 +1,176 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\mortar_and_pestle_2.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "1723c832_2579_498c_a382_0108c3146b37",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": {
+								"min": 1,
+								"max": 1
+							},
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:mortar_and_pestle"
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:cocoa_beans"
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 1
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:mortar_and_pestle"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:cocoa_beans"
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:mortar_and_pestle"
+										}
+									]
+								},
+								"key": "rolls",
+								"is_minified": true,
+								"children": {
+									"min": 1,
+									"max": 1
+								}
+							},
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:mortar_and_pestle"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:mortar_and_pestle"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:mortar_and_pestle"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 1
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:mortar_and_pestle"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:cocoa_beans"
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "minecraft:cocoa_beans"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "minecraft:cocoa_beans"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "minecraft:cocoa_beans"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

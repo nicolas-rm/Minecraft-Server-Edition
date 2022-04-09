@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "better:rawduck"
+    },
+
+    
+    "tags": ["furnace", "campfire", "smoker"],
+    "input": "better:rawduck",
+    "output": "better:cookedduck"
+  }
+  
+}

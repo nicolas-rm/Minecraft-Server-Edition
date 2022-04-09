@@ -1,0 +1,199 @@
+{
+  "wr:cracked_grimstone_tile": {
+    "textures": "wr_cracked_grimstone_tile",
+    "sound": "normal"
+  },
+  "wr:grimstone_tile": {
+    "textures": "wr_grimstone_tile",
+    "sound": "normal"
+  },
+  "wr:grimstone_copper": {
+    "textures": "wr_grimstone_copper",
+    "sound": "normal"
+  },
+  "wr:grimstone_iron": {
+    "textures": "wr_grimstone_iron",
+    "sound": "normal"
+  },
+  "wr:grow_bone": {
+    "textures": "wr_grow_bone",
+    "sound": "normal"
+  },
+  "wr:grimstone_lapis": {
+    "textures": "wr_grimstone_lapis",
+    "sound": "normal"
+  },
+  "wr:grimstone_brick": {
+    "textures": "wr_grimstone_brick",
+    "sound": "normal"
+  },
+  "wr:cracked_grimstone_brick": {
+    "textures": "wr_cracked_grimstone_brick",
+    "sound": "normal"
+  },
+  "wr:chiseled_grimstone": {
+    "textures": "wr_chiseled_grimstone",
+    "sound": "normal"
+  },
+  "wr:rust_catalyst": {
+    "textures": "wr_rust_catalyst",
+    "sound": "normal"
+  },
+  "wr:grimstone_gold": {
+    "textures": "wr_grimstone_gold",
+    "sound": "normal"
+  },
+  "wr:rust": {
+    "textures": "wr_rust",
+    "sound": "normal"
+  },
+  "wr:grimstone_coal": {
+    "textures": "wr_grimstone_coal",
+    "sound": "normal"
+  },
+  "wr:bone_ribs": {
+    "textures": "wr_bone_ribs",
+    "sound": "normal"
+  },
+  "wr:trypo_vein": {
+    "textures": "wr_trypo_vein",
+    "sound": "normal"
+  },
+  "wr:corrupted_catalyst": {
+    "textures": "wr_corrupted_catalyst",
+    "sound": "normal"
+  },
+  "wr:rusted_vein": {
+    "textures": "wr_rusted_vein",
+    "sound": "normal"
+  },
+  "wr:grimstone_diamond": {
+    "textures": "wr_grimstone_diamond",
+    "sound": "normal"
+  },
+  "wr:corruption2": {
+    "textures": "wr_corruption2",
+    "sound": "normal"
+  },
+  "wr:grimstone_redstone": {
+    "textures": "wr_grimstone_redstone",
+    "sound": "normal"
+  },
+  "wr:fossiled_bone1": {
+    "textures": "wr_fossiled_bone1",
+    "sound": "normal"
+  },
+  "wr:void_vein": {
+    "textures": "wr_void_vein",
+    "sound": "normal"
+  },
+  "wr:fossile_bone2": {
+    "textures": "wr_fossile_bone2",
+    "sound": "normal"
+  },
+  "wr:corruption1": {
+    "textures": "wr_corruption1",
+    "sound": "normal"
+  },
+  "wr:pitch_vein": {
+    "textures": "wr_pitch_vein",
+    "sound": "normal"
+  },
+  "wr:grimstone_emerald": {
+    "textures": "wr_grimstone_emerald",
+    "sound": "normal"
+  },
+  "wr:corrupted_sculk": {
+    "textures": "wr_corrupted_sculk",
+    "sound": "normal"
+  },
+  "wr:cobbled_grimstone": {
+    "textures": "wr_cobbled_grimstone",
+    "sound": "normal"
+  },
+  "wr:corrupted_vein": {
+    "textures": "wr_corrupted_vein",
+    "sound": "normal"
+  },
+  "wr:dark_void": {
+    "textures": "wr_dark_void",
+    "sound": "normal"
+  },
+  "wr:corrupted_vein2": {
+    "textures": "wr_corrupted_vein2",
+    "sound": "normal"
+  },
+  "wr:block_of_bone": {
+    "textures": "wr_block_of_bone",
+    "sound": "normal"
+  },
+  "wr:pitch_catalyst": {
+    "textures": "ani_wr_pitch_catalyst",
+    "sound": "normal"
+  },
+  "wr:pitch_sculk": {
+    "textures": "ani_wr_pitch_sculk",
+    "sound": "normal"
+  },
+  "wr:trypo_catalyst": {
+    "textures": "wr_trypo_catalyst",
+    "sound": "normal"
+  },
+  "wr:trypo_sculk": {
+    "textures": "ani_wr_trypo_sculk",
+    "sound": "normal"
+  },
+  "wr:trypo_sensor": {
+    "textures": "ani_wr_trypo_sensor",
+    "sound": "normal"
+  },
+  "wr:dark_sculk": {
+    "textures": {
+      "up": "wr_dark_sculk_up",
+      "down": "wr_dark_sculk_down",
+      "north": "wr_dark_sculk_north",
+      "south": "wr_dark_sculk_south",
+      "east": "wr_dark_sculk_east",
+      "west": "wr_dark_sculk_west"
+    },
+    "sound": "normal"
+  },
+  "wr:bone_catalyst": {
+    "textures": {
+      "up": "wr_bone_catalyst_up",
+      "down": "wr_bone_catalyst_down",
+      "north": "wr_bone_catalyst_north",
+      "south": "wr_bone_catalyst_south",
+      "east": "wr_bone_catalyst_east",
+      "west": "wr_bone_catalyst_west"
+    },
+    "sound": "normal"
+  },
+  "wr:grimstone": {
+    "textures": {
+      "up": "wr_grimstone_up",
+      "down": "wr_grimstone_down",
+      "north": "wr_grimstone_north",
+      "south": "wr_grimstone_south",
+      "east": "wr_grimstone_east",
+      "west": "wr_grimstone_west"
+    },
+    "sound": "normal"
+  },
+  "wr:trypo_shrieker": {
+    "textures": {
+      "up": "wr_trypo_shrieker_up",
+      "down": "wr_trypo_shrieker_down",
+      "north": "wr_trypo_shrieker_north",
+      "south": "wr_trypo_shrieker_south",
+      "east": "wr_trypo_shrieker_east",
+      "west": "wr_trypo_shrieker_west"
+    },
+    "sound": "normal"
+  },
+  "format_version": [
+    1,
+    1,
+    0
+  ]
+}

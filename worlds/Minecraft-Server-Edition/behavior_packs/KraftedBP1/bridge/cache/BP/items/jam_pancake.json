@@ -1,0 +1,175 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\jam_pancake.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "2c52ec88_4209_482a_b061_e8c2d1bfec3e",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:jam_pancake",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:icon": {
+								"texture": "jam_pancake"
+							},
+							"minecraft:food": {
+								"nutrition": 9,
+								"saturation_modifier": "good",
+								"can_always_eat": false
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:use_animation": "eat",
+							"minecraft:use_duration": 2.4
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:jam_pancake",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "jam_pancake"
+								},
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"can_always_eat": false
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:use_duration": 2.4
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:jam_pancake",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:jam_pancake",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "jam_pancake"
+								},
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"can_always_eat": false
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:use_duration": 2.4
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "jam_pancake"
+									},
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "good",
+										"can_always_eat": false
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:use_duration": 2.4
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "jam_pancake"
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "jam_pancake"
+									},
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "good",
+										"can_always_eat": false
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:use_duration": 2.4
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"can_always_eat": false
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "jam_pancake"
+									},
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "good",
+										"can_always_eat": false
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:use_duration": 2.4
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

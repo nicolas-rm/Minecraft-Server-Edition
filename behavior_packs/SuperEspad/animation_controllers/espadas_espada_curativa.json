@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.espadas_espada_curativa": {
+      "initial_state": "preshoot",
+      "states": {
+        "preshoot": {
+          "transitions": [
+            {
+              "shoot": "q.get_equipped_item_name(0) == 'espada_curativa' && q.is_using_item"
+            }
+          ]
+        },
+        "shooting": {
+          "on_entry": [
+            "v.delaytime = q.life_time;"
+          ],
+          "transitions": [
+            {
+              "preshoot": "q.get_equipped_item_name(0) != 'espada_curativa' || !q.is_using_item"
+            },
+            {
+              "shoot": "q.get_equipped_item_name(0) != 'espada_curativa' || !q.is_using_item"
+            }
+          ]
+        },
+        "shoot": {
+          "on_entry": [
+            "@s espadas:espada_curativa_fire",
+            "/playsound espadas_espada_curativa_shot"
+          ],
+          "transitions": [
+            {
+              "shooting": "1.0"
+            }
+          ],
+          "on_exit": [
+            "v.bullet_fire = q.life_time;",
+            "/clear @s espadas:espada_curativa 0 1"
+          ]
+        }
+      }
+    }
+  }
+}

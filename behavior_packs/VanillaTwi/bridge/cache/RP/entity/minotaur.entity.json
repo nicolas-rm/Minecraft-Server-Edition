@@ -1,0 +1,484 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\minotaur.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "8a79c111_86a2_4797_8f47_4ff39f01f1b0",
+	"file_version": 9,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:minotaur",
+							"materials": {
+								"default": "vindicator"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/minotaur"
+							},
+							"geometry": {
+								"default": "geometry.minotaur"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+									"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+								],
+								"scale": 0.9375
+							},
+							"animations": {
+								"minotaur_base": "animation.minotaur.base",
+								"move": "animation.minotaur.move",
+								"attack": "animation.minotaur.attack",
+								"look_at_target_default": "animation.kobold.look_at_target.default",
+								"minotaur_angry": "animation.minotaur.base_angry"
+							},
+							"animation_controllers": [
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"minotaur_base": "controller.animation.minotaur.base"
+								},
+								{
+									"move": "controller.animation.minotaur.move"
+								},
+								{
+									"attack": "controller.animation.minotaur.attack"
+								}
+							],
+							"render_controllers": [
+								"controller.render.vindicator"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#3D3123",
+								"overlay_color": "#E9967A"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:minotaur",
+								"materials": {
+									"default": "vindicator"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/minotaur"
+								},
+								"geometry": {
+									"default": "geometry.minotaur"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+										"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+									],
+									"scale": 0.9375
+								},
+								"animations": {
+									"minotaur_base": "animation.minotaur.base",
+									"move": "animation.minotaur.move",
+									"attack": "animation.minotaur.attack",
+									"look_at_target_default": "animation.kobold.look_at_target.default",
+									"minotaur_angry": "animation.minotaur.base_angry"
+								},
+								"animation_controllers": [
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"minotaur_base": "controller.animation.minotaur.base"
+									},
+									{
+										"move": "controller.animation.minotaur.move"
+									},
+									{
+										"attack": "controller.animation.minotaur.attack"
+									}
+								],
+								"render_controllers": [
+									"controller.render.vindicator"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#3D3123",
+									"overlay_color": "#E9967A"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:minotaur",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "vindicator"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/minotaur"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.minotaur"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:minotaur",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/minotaur"
+									},
+									"geometry": {
+										"default": "geometry.minotaur"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"minotaur_base": "animation.minotaur.base",
+										"move": "animation.minotaur.move",
+										"attack": "animation.minotaur.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"minotaur_angry": "animation.minotaur.base_angry"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"minotaur_base": "controller.animation.minotaur.base"
+										},
+										{
+											"move": "controller.animation.minotaur.move"
+										},
+										{
+											"attack": "controller.animation.minotaur.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#3D3123",
+										"overlay_color": "#E9967A"
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"pre_animation": [
+												"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+												"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+											],
+											"scale": 0.9375
+										},
+										"key": "pre_animation",
+										"is_minified": true,
+										"children": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										]
+									},
+									{
+										"data": "0.9375",
+										"key": "scale"
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "mythmob:minotaur",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/minotaur"
+									},
+									"geometry": {
+										"default": "geometry.minotaur"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"minotaur_base": "animation.minotaur.base",
+										"move": "animation.minotaur.move",
+										"attack": "animation.minotaur.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"minotaur_angry": "animation.minotaur.base_angry"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"minotaur_base": "controller.animation.minotaur.base"
+										},
+										{
+											"move": "controller.animation.minotaur.move"
+										},
+										{
+											"attack": "controller.animation.minotaur.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#3D3123",
+										"overlay_color": "#E9967A"
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"minotaur_base": "animation.minotaur.base",
+									"move": "animation.minotaur.move",
+									"attack": "animation.minotaur.attack",
+									"look_at_target_default": "animation.kobold.look_at_target.default",
+									"minotaur_angry": "animation.minotaur.base_angry"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:minotaur",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/minotaur"
+									},
+									"geometry": {
+										"default": "geometry.minotaur"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"minotaur_base": "animation.minotaur.base",
+										"move": "animation.minotaur.move",
+										"attack": "animation.minotaur.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"minotaur_angry": "animation.minotaur.base_angry"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"minotaur_base": "controller.animation.minotaur.base"
+										},
+										{
+											"move": "controller.animation.minotaur.move"
+										},
+										{
+											"attack": "controller.animation.minotaur.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#3D3123",
+										"overlay_color": "#E9967A"
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"minotaur_base": "controller.animation.minotaur.base"
+											},
+											{
+												"move": "controller.animation.minotaur.move"
+											},
+											{
+												"attack": "controller.animation.minotaur.attack"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"minotaur_base": "controller.animation.minotaur.base"
+											},
+											{
+												"move": "controller.animation.minotaur.move"
+											},
+											{
+												"attack": "controller.animation.minotaur.attack"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"minotaur_base": "controller.animation.minotaur.base"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"minotaur_base": "controller.animation.minotaur.base"
+											},
+											{
+												"move": "controller.animation.minotaur.move"
+											},
+											{
+												"attack": "controller.animation.minotaur.attack"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"move": "controller.animation.minotaur.move"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"minotaur_base": "controller.animation.minotaur.base"
+											},
+											{
+												"move": "controller.animation.minotaur.move"
+											},
+											{
+												"attack": "controller.animation.minotaur.attack"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"attack": "controller.animation.minotaur.attack"
+										}
+									}
+								]
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.vindicator"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:minotaur",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/minotaur"
+									},
+									"geometry": {
+										"default": "geometry.minotaur"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"minotaur_base": "animation.minotaur.base",
+										"move": "animation.minotaur.move",
+										"attack": "animation.minotaur.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"minotaur_angry": "animation.minotaur.base_angry"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"minotaur_base": "controller.animation.minotaur.base"
+										},
+										{
+											"move": "controller.animation.minotaur.move"
+										},
+										{
+											"attack": "controller.animation.minotaur.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#3D3123",
+										"overlay_color": "#E9967A"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#3D3123",
+									"overlay_color": "#E9967A"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

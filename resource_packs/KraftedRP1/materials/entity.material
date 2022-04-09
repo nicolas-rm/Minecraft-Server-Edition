@@ -1,0 +1,10 @@
+//bridge-file-version: #8
+{
+  "materials": {
+    "version": "1.0.0",
+
+    "blastling:entity_emissive_alpha": {
+      "+defines": [ "USE_UV_ANIM", "BLEND" ]
+    }
+  }
+}

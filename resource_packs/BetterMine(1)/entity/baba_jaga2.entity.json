@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "better:baba_jaga2",
+			"materials": {
+				"default": "phantom",
+				"invisible": "phantom_invisible"
+			},
+			"textures": {
+				"default": "textures/entity/baba_jaga"
+			},
+			"geometry": {
+				"default": "geometry.baba_jaga"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.runtimeid = 0;",
+					"variable.tailrotx = -5.0;",
+					"variable.wingrotz = 0.0;"
+				],
+				"animate": [
+					"phantom_base_pose_controller",
+					"move"
+				]
+			},
+			"animations": {
+				"move": "animation.phantom.move"
+			},
+			"particle_effects": {
+				"wing_dust": "witchspell"
+			},
+			"sound_effects": {
+				"flap": "mob.phantom.flap"
+			},
+			"render_controllers": [ "controller.render.phantom" ],
+			"spawn_egg": {
+				"texture": "illusioner_spawn_egg",
+				"texture_index": 0
+			}
+		}
+	}
+}

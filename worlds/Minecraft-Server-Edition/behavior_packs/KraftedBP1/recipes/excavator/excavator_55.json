@@ -1,0 +1,37 @@
+//bridge-file-version: #13
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:excavator_55"
+		},
+		"tags": [
+			"tool_forge"
+		],
+		"pattern": [
+			" ~#",
+			" o",
+			"x"
+		],
+		"key": {
+			"#": {
+				"item": "strat:flint_excavator_head"
+			},
+			"~": {
+				"item": "strat:stone_large_plate"
+			},
+			"o": {
+				"item": "strat:stone_tough_tool_rod"
+			},
+			"x": {
+				"item": "strat:stone_tough_binding"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:excavator_55",
+				"count": 1
+			}
+		]
+	}
+}

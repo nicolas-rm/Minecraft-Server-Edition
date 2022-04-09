@@ -1,0 +1,30 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:maple_shears"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#~",
+			"~"
+		],
+		"key": {
+			"#": {
+				"item": "strat:maple_planks"
+			},
+			"~": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:maple_shears",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:power"
+    },
+
+    
+    "tags": [ "epigraphist" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "#|#"
+    ],
+    "key": {
+      "X": {
+        "item": "better:m_guide"
+      },
+      "#": {
+        "item": "minecraft:book"
+      },
+      "|": {
+        "item": "minecraft:blaze_rod"
+      }
+    },
+    "result": [
+      { "item": "better:power", "count": 1, "data": 0 },
+      { "item": "better:m_guide", "count": 1, "data": 0 }
+    ]
+  }
+}

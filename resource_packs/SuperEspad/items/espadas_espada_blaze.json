@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:espada_blaze",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:espada_blaze",
+      "minecraft:use_animation": "bow",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

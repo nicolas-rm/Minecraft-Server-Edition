@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "Nuevas super espadas  by Shadogshow ",
+    "name": "Super Espadas ",
+    "uuid": "133d87b1-dd0f-44b5-9766-ce3f1965428b",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Nuevas super espadas  by Shadogshow ",
+      "type": "resources",
+      "uuid": "87f95f14-910f-4c78-a6aa-e3ec35a63662",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a7a0e9db-9e8e-4c5c-a399-4a550d8075f2",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

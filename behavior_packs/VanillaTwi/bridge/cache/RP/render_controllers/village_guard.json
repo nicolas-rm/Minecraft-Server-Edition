@@ -1,0 +1,212 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\render_controllers\\village_guard.json",
+	"file_type": "render_controller",
+	"format_version": 1,
+	"file_uuid": "f6ef5f0b_95f4_44a2_ac7e_9ab9a07183cd",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"render_controllers": {
+						"controller.render.villager_guard": {
+							"geometry": "Geometry.default",
+							"part_visibility": [
+								{
+									"rightArm": "query.has_target"
+								},
+								{
+									"leftArm": "query.has_target"
+								},
+								{
+									"arms": "!query.has_target"
+								},
+								{
+									"rightItem": "query.has_target"
+								}
+							],
+							"materials": [
+								{
+									"*": "Material.default"
+								}
+							],
+							"textures": [
+								"Texture.default"
+							]
+						}
+					}
+				},
+				"key": "render_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.render.villager_guard": {
+								"geometry": "Geometry.default",
+								"part_visibility": [
+									{
+										"rightArm": "query.has_target"
+									},
+									{
+										"leftArm": "query.has_target"
+									},
+									{
+										"arms": "!query.has_target"
+									},
+									{
+										"rightItem": "query.has_target"
+									}
+								],
+								"materials": [
+									{
+										"*": "Material.default"
+									}
+								],
+								"textures": [
+									"Texture.default"
+								]
+							}
+						},
+						"key": "controller.render.villager_guard",
+						"children": [
+							{
+								"data": "Geometry.default",
+								"key": "geometry"
+							},
+							{
+								"open": {
+									"geometry": "Geometry.default",
+									"part_visibility": [
+										{
+											"rightArm": "query.has_target"
+										},
+										{
+											"leftArm": "query.has_target"
+										},
+										{
+											"arms": "!query.has_target"
+										},
+										{
+											"rightItem": "query.has_target"
+										}
+									],
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									]
+								},
+								"key": "part_visibility",
+								"children": [
+									{
+										"open": [
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"arms": "!query.has_target"
+											},
+											{
+												"rightItem": "query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"rightArm": "query.has_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"arms": "!query.has_target"
+											},
+											{
+												"rightItem": "query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"leftArm": "query.has_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"arms": "!query.has_target"
+											},
+											{
+												"rightItem": "query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"arms": "!query.has_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"rightArm": "query.has_target"
+											},
+											{
+												"leftArm": "query.has_target"
+											},
+											{
+												"arms": "!query.has_target"
+											},
+											{
+												"rightItem": "query.has_target"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"rightItem": "query.has_target"
+										}
+									}
+								]
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": [
+									{
+										"*": "Material.default"
+									}
+								]
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"Texture.default"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

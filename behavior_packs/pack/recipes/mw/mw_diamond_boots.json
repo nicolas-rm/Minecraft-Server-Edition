@@ -1,0 +1,25 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "ray:mw_diamond_boots"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:diamond_boots"
+			},
+			{
+				"item": "mw_book:netherite_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "ray:mw_diamond_boots"
+			}
+		]
+	}
+}

@@ -1,0 +1,230 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\gameplay\\fishing\\fish.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "4a3f62d4_a7a5_4fb8_8ec0_1698f85a7b32",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:cod",
+									"weight": 60
+								},
+								{
+									"type": "item",
+									"name": "strat:salmon",
+									"weight": 25
+								},
+								{
+									"type": "item",
+									"name": "minecraft:clownfish",
+									"weight": 2
+								},
+								{
+									"type": "item",
+									"name": "minecraft:pufferfish",
+									"weight": 13
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:cod",
+										"weight": 60
+									},
+									{
+										"type": "item",
+										"name": "strat:salmon",
+										"weight": 25
+									},
+									{
+										"type": "item",
+										"name": "minecraft:clownfish",
+										"weight": 2
+									},
+									{
+										"type": "item",
+										"name": "minecraft:pufferfish",
+										"weight": 13
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:cod",
+											"weight": 60
+										},
+										{
+											"type": "item",
+											"name": "strat:salmon",
+											"weight": 25
+										},
+										{
+											"type": "item",
+											"name": "minecraft:clownfish",
+											"weight": 2
+										},
+										{
+											"type": "item",
+											"name": "minecraft:pufferfish",
+											"weight": 13
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:cod",
+												"weight": 60
+											},
+											{
+												"type": "item",
+												"name": "strat:salmon",
+												"weight": 25
+											},
+											{
+												"type": "item",
+												"name": "minecraft:clownfish",
+												"weight": 2
+											},
+											{
+												"type": "item",
+												"name": "minecraft:pufferfish",
+												"weight": 13
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:cod",
+											"weight": 60
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:cod",
+												"weight": 60
+											},
+											{
+												"type": "item",
+												"name": "strat:salmon",
+												"weight": 25
+											},
+											{
+												"type": "item",
+												"name": "minecraft:clownfish",
+												"weight": 2
+											},
+											{
+												"type": "item",
+												"name": "minecraft:pufferfish",
+												"weight": 13
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:salmon",
+											"weight": 25
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:cod",
+												"weight": 60
+											},
+											{
+												"type": "item",
+												"name": "strat:salmon",
+												"weight": 25
+											},
+											{
+												"type": "item",
+												"name": "minecraft:clownfish",
+												"weight": 2
+											},
+											{
+												"type": "item",
+												"name": "minecraft:pufferfish",
+												"weight": 13
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "minecraft:clownfish",
+											"weight": 2
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:cod",
+												"weight": 60
+											},
+											{
+												"type": "item",
+												"name": "strat:salmon",
+												"weight": 25
+											},
+											{
+												"type": "item",
+												"name": "minecraft:clownfish",
+												"weight": 2
+											},
+											{
+												"type": "item",
+												"name": "minecraft:pufferfish",
+												"weight": 13
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "minecraft:pufferfish",
+											"weight": 13
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

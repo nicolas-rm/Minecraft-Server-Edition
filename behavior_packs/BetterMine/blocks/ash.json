@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:ash"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/ash.json",
+      "minecraft:destroy_time": 0.3,
+      "minecraft:friction": 0.1,
+      "minecraft:map_color": "#033603",
+      "minecraft:entity_collision": {
+        "origin":  [-8, 0, -8],
+        "size":    [16, 10, 16]
+      },
+      "minecraft:flammable": {
+        "flame_odds": 0,
+        "burn_odds": 0
+    },
+     "minecraft:block_light_absorption": 15.0,
+     "minecraft:block_light_emission": 0.0
+    }
+  }
+}

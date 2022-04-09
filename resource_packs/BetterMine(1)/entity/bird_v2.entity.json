@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:bird_v2",
+      "materials": { "default": "skeleton" },
+      "textures": {
+        "b0": "textures/entity/bird/0",
+        "b1": "textures/entity/bird/1",
+        "b2": "textures/entity/bird/2",
+        "b3": "textures/entity/bird/3",
+        "b4": "textures/entity/bird/4",
+        "b5": "textures/entity/bird/5",
+        "b6": "textures/entity/bird/6",
+        "b7": "textures/entity/bird/7",
+        "b8": "textures/entity/bird/8"
+      },
+      "geometry": {
+        "default": "geometry.bird.v2"
+      },
+      "animations": {
+        "flying": "animation.bird.flying",
+        "default": "animation.bird.default",
+        "bird_root_controller": "controller.animation.bird.root2"
+      },      
+
+      "scripts": {
+        "animate": [
+          "bird_root_controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.bird_v2" ],
+      "spawn_egg": {
+        "base_color": "#a2a7d1",
+	     "overlay_color": "#bec5dd"
+      }
+    }
+  }
+}

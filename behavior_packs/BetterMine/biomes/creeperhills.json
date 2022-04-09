@@ -1,0 +1,68 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "creeperhills"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 2.0,
+        "ash": 0.1
+      },
+      "minecraft:overworld_height": {
+          "noise_params": [ 2.6, 0.64 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:obsidian",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:obsidian",
+        "top_material": "minecraft:obsidian",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:mountain_parameters": {
+        "peaks_factor": 2,
+        "top_slide": {
+          "enabled": false
+        }
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "minecraft:dirt",
+              "top_material": "minecraft:grass"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.121, 1.0 ]
+          },
+          {
+            "materials": {
+              "mid_material": "minecraft:deepslate",
+              "top_material": "minecraft:deepslate"
+            },
+            "noise_frequency_scale": 0.1,
+            "noise_range": [ 0.4, 1.0 ]
+          },
+          {
+            "materials": {
+              "mid_material": "minecraft:stone",
+              "top_material": "minecraft:gravel"
+            },
+            "noise_range": [ 0.25, 1.0 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "shore_transformation": "beach"
+      },
+
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "creeperhills": {}
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wr:rusted_hunch",
+      "textures": {
+        "default": "textures/entity/pamobile/wr_rusted_hunch"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.wr_rusted_hunch"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "wr:rusted_hunch",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.wr_rusted_hunch.walk",
+        "idle": "animation.wr_rusted_hunch.idle",
+        "mad": "animation.wr_rusted_hunch.attackplayer"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "mad": "query.is_moving && query.is_angry"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

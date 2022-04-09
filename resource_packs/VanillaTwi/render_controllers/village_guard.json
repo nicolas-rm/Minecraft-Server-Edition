@@ -1,0 +1,31 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.villager_guard": {
+			"geometry": "Geometry.default",
+			"part_visibility": [
+				{
+					"rightArm": "query.has_target"
+				},
+				{
+					"leftArm": "query.has_target"
+				},
+				{
+					"arms": "!query.has_target"
+				},
+				{
+					"rightItem": "query.has_target"
+				}
+			],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			]
+		}
+	}
+}

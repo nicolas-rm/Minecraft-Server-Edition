@@ -1,0 +1,8 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\More Enchantments Addon\\texts\\en_US.lang",
+	"file_type": "client_lang",
+	"format_version": 0,
+	"file_uuid": "eccf8a30_be6a_47f3_bd33_72cb423ae850",
+	"file_version": 5,
+	"cache_content": "pack.name=More Enchantments Addon\r\npack.description=By Raiyon\r\ntile.ray:arcane_table.name=Netherite Enchantment Table\r\naction.hint.exit.ray:trident=§b\r\n"
+}

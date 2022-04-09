@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wr:hollowed",
+      "textures": {
+        "default": "textures/entity/pamobile/wr_hollowed"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.wr_hollowed"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "wr:hollowed",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.wr_hollowed.walk",
+        "idle": "animation.wr_hollowed.idle_1",
+        "mad": "animation.wr_hollowed.roar"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "mad": "query.is_moving && query.is_angry"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

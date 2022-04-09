@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "furnace"
+    ],
+    "output": {
+      "item": "espadas:lingote_titanio",
+      "data": 0
+    },
+    "input": {
+      "item": "espadas:mineral_titanio",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_93b32eaf"
+    }
+  }
+}

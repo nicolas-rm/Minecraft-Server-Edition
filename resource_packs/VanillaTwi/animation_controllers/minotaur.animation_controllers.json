@@ -1,0 +1,71 @@
+//bridge-file-version: #19
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.minotaur.base": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"minotaur_base"
+					],
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"flying": "query.has_target"
+						}
+					]
+				},
+				"flying": {
+					"blend_transition": 0.2,
+					"animations": [
+						{
+							"minotaur_angry": "!query.is_delayed_attacking"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.minotaur.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"move": "query.modified_move_speed"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.minotaur.attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"flying": "query.is_delayed_attacking"
+						}
+					]
+				},
+				"flying": {
+					"blend_transition": 0.2,
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		}
+	}
+}

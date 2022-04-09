@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "better:red_town_surface_prarie_hamlet_houses_feature",
+      "places_feature": "better:prarie_hamlet_houses"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "red_town"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": 0
+    }
+  }
+}

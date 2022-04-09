@@ -1,0 +1,120 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\manifest.json",
+	"file_type": "manifest_bp",
+	"format_version": 1,
+	"file_uuid": "0be1775d_18e0_44b5_ac31_c2fd56afc84b",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "2",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "Strat's Food Expansion!",
+						"description": "Food Add-on by Stratospheer!",
+						"uuid": "c84d5910-8a27-4c7b-b776-918eaa0686f5",
+						"version": [
+							1,
+							0,
+							3
+						],
+						"min_engine_version": [
+							1,
+							13,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "a08a7741-b18f-4283-b946-e811d619f08b",
+							"version": [
+								1,
+								0,
+								3
+							]
+						}
+					],
+					"dependencies": [
+						{
+							"version": [
+								1,
+								0,
+								3
+							],
+							"uuid": "091728a7-0489-4088-8144-f58c1ebb6b2b"
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.3"
+							]
+						}
+					}
+				},
+				"key": "header",
+				"is_minified": true,
+				"children": {
+					"name": "Strat's Food Expansion!",
+					"description": "Food Add-on by Stratospheer!",
+					"uuid": "c84d5910-8a27-4c7b-b776-918eaa0686f5",
+					"version": [
+						1,
+						0,
+						3
+					],
+					"min_engine_version": [
+						1,
+						13,
+						0
+					]
+				}
+			},
+			{
+				"key": "modules",
+				"is_minified": true,
+				"children": [
+					{
+						"type": "data",
+						"uuid": "a08a7741-b18f-4283-b946-e811d619f08b",
+						"version": [
+							1,
+							0,
+							3
+						]
+					}
+				]
+			},
+			{
+				"key": "dependencies",
+				"is_minified": true,
+				"children": [
+					{
+						"version": [
+							1,
+							0,
+							3
+						],
+						"uuid": "091728a7-0489-4088-8144-f58c1ebb6b2b"
+					}
+				]
+			},
+			{
+				"key": "metadata",
+				"is_minified": true,
+				"children": {
+					"generated_with": {
+						"bridge": [
+							"1.8.3"
+						]
+					}
+				}
+			}
+		]
+	}
+}

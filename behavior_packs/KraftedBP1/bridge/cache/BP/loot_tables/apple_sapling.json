@@ -1,0 +1,100 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\apple_sapling.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "b1ebcc35_7287_45cb_80f3_7bc84bb352f4",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": {
+								"min": 1,
+								"max": 1
+							},
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:apple_sapling_item"
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 1
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:apple_sapling_item"
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:apple_sapling_item"
+										}
+									]
+								},
+								"key": "rolls",
+								"is_minified": true,
+								"children": {
+									"min": 1,
+									"max": 1
+								}
+							},
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:apple_sapling_item"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:apple_sapling_item"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:apple_sapling_item"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

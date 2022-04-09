@@ -1,0 +1,40 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:batter_4"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#~",
+			"-A"
+		],
+		"key": {
+			"#": {
+				"item": "strat:flour"
+			},
+			"~": {
+				"item": "strat:fried_egg"
+			},
+			"-": {
+				"item": "strat:milk_jar"
+			},
+			"A": {
+				"item": "minecraft:bowl"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:batter",
+				"count": 1
+			},
+			{
+				"item": "strat:glass_jar",
+				"count": 1
+			}
+		]
+	}
+}

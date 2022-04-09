@@ -1,0 +1,152 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\golden_apple.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "0b84a771_f144_4f68_a7b1_b448daff4a54",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:golden_apple"
+						},
+						"components": {
+							"minecraft:stacked_by_data": true,
+							"minecraft:use_duration": 32,
+							"minecraft:foil": false,
+							"minecraft:food": {
+								"nutrition": 3,
+								"saturation_modifier": "supernatural",
+								"can_always_eat": true,
+								"effects": [
+									{
+										"name": "regeneration",
+										"chance": 1,
+										"duration": 5,
+										"amplifier": 1
+									},
+									{
+										"name": "absorption",
+										"chance": 1,
+										"duration": 120,
+										"amplifier": 0
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:golden_apple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:golden_apple"
+							},
+							"components": {
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 32,
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation_modifier": "supernatural",
+									"can_always_eat": true,
+									"effects": [
+										{
+											"name": "regeneration",
+											"chance": 1,
+											"duration": 5,
+											"amplifier": 1
+										},
+										{
+											"name": "absorption",
+											"chance": 1,
+											"duration": 120,
+											"amplifier": 0
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "32",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"open": {
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 32,
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 3,
+										"saturation_modifier": "supernatural",
+										"can_always_eat": true,
+										"effects": [
+											{
+												"name": "regeneration",
+												"chance": 1,
+												"duration": 5,
+												"amplifier": 1
+											},
+											{
+												"name": "absorption",
+												"chance": 1,
+												"duration": 120,
+												"amplifier": 0
+											}
+										]
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 3,
+									"saturation_modifier": "supernatural",
+									"can_always_eat": true,
+									"effects": [
+										{
+											"name": "regeneration",
+											"chance": 1,
+											"duration": 5,
+											"amplifier": 1
+										},
+										{
+											"name": "absorption",
+											"chance": 1,
+											"duration": 120,
+											"amplifier": 0
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

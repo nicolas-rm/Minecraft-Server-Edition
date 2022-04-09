@@ -1,0 +1,124 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:sword_42d",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "sword_42d"
+      },
+      "minecraft:display_name": {
+        "value": "§5Sword of §b42 §5dimensions"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 4042
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "better:sword_42dbs"
+            ],
+            "repair_amount": 20
+          }
+        ]
+      },
+      "minecraft:mining_speed": 1,
+      "minecraft:foil": true,
+      "minecraft:damage": 90,
+      "minecraft:enchantable": {
+        "value": 22,
+        "slot": "sword"
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "on_dig": {"event": "hurt"},
+        "destroy_speeds": [
+          {
+            "block": "minecraft:web",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "minecraft:bamboo",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "better:pine_log",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "better:fruit_log",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "better:fir_log",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "better:beech_log",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "minecraft:log2",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "minecraft:wood",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "minecraft:crafting_table",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "minecraft:wooden_slab",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+          {
+            "block": "minecraft:planks",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          },
+	  {
+	    "block": {
+	      "tags": "query.any_tag('wood', 'pumpkin', 'plant')"
+	    },
+            "on_dig": {"event": "hurt"},
+	    "speed": 16
+          },
+          {
+            "block": "minecraft:melon_block",
+            "on_dig": {"event": "hurt"},
+            "speed": 16
+          }
+        ]
+      },
+      "minecraft:weapon": {
+        "on_hurt_entity": {"event": "hurt"},
+        "on_not_hurt_entity": {"event": "hurt"}
+      }
+    },
+    "events": {
+      "hurt": {
+        "damage": {"type": "none", "amount": 1, "target": "self"}
+      }
+    }
+  }
+}

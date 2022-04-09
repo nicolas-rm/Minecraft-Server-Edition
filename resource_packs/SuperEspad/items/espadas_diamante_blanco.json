@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:diamante_blanco",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:diamante_blanco",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sp:onyx_helmet",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 25,
+				"slot": "armor_head"
+			},
+			"minecraft:durability": {
+				"max_durability": 1570,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:display_name": {
+				"value": "§bOnyx Helmet"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.helmet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"sp:onyx"
+						],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			},
+			"minecraft:icon": {
+				"texture": "sp_onyx_helmet"
+			},
+			"minecraft:render_offsets": "helmets",
+			"minecraft:armor": {
+				"protection": 4
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.head"
+			}
+		},
+		"events": {}
+	}
+}

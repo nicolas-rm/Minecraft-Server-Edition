@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\smelt_iron_pickaxe.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "7936f5c7_c256_45b8_b657_8d5bcfb12dc5",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:smelt_iron_pickaxe"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:iron_pickaxe"
+							},
+							{
+								"item": "ray:sh_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:smelt_iron_pickaxe"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:smelt_iron_pickaxe"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:iron_pickaxe"
+							},
+							{
+								"item": "ray:sh_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:smelt_iron_pickaxe"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:smelt_iron_pickaxe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_pickaxe"
+								},
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:smelt_iron_pickaxe"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:smelt_iron_pickaxe"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:smelt_iron_pickaxe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_pickaxe"
+								},
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:smelt_iron_pickaxe"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:smelt_iron_pickaxe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_pickaxe"
+								},
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:smelt_iron_pickaxe"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:iron_pickaxe"
+									},
+									{
+										"item": "ray:sh_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:iron_pickaxe"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:iron_pickaxe"
+									},
+									{
+										"item": "ray:sh_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:sh_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:smelt_iron_pickaxe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_pickaxe"
+								},
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:smelt_iron_pickaxe"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:smelt_iron_pickaxe"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:smelt_iron_pickaxe"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

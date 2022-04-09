@@ -1,0 +1,427 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\kobold.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "d1151907_1d86_4b6e_8a81_1a09ab225d61",
+	"file_version": 51,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vanilla_twilight:kobold",
+							"materials": {
+								"default": "husk"
+							},
+							"textures": {
+								"default": "textures/entity/koboldv2_bulldog",
+								"bulldog2": "textures/entity/koboldv2_bulldog_var2",
+								"shiba": "textures/entity/koboldv2_shiba",
+								"shiba2": "textures/entity/koboldv2_shiba_var2",
+								"wolf": "textures/entity/koboldv2_wolf",
+								"wolf2": "textures/entity/koboldv2_wolf_var2"
+							},
+							"geometry": {
+								"default": "geometry.vanilla_twilight.kobold_weapon",
+								"default.bulldog": "geometry.vanilla_twilight.kobold_bulldog",
+								"default.shiba": "geometry.vanilla_twilight.kobold_shiba",
+								"default.wolf": "geometry.vanilla_twilight.kobold_wolf",
+								"armor.bulldog": "geometry.vanilla_twilight.kobold_bulldog_armor",
+								"armor.shiba": "geometry.vanilla_twilight.kobold_shiba_armor",
+								"armor.wolf": "geometry.vanilla_twilight.kobold_wolf_armor"
+							},
+							"animations": {
+								"humanoid_base_pose": "animation.kobold.general",
+								"look_at_target_default": "animation.kobold.look_at_target.default",
+								"move": "animation.kobold.move",
+								"attack.rotations": "animation.vanilla_twilight.kobold.attack"
+							},
+							"render_controllers": [
+								"controller.render.vanilla_twilight.kobold_weapon",
+								"controller.render.vanilla_twilight.kobold",
+								"controller.render.vanilla_twilight.kobold_armor"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#D3CFCF",
+								"overlay_color": "#957965"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+									"variable.tcos1 = -variable.tcos0;",
+									"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+									"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+									"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+									"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+									"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+									"variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+									"variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+									"variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+								]
+							},
+							"animation_controllers": [
+								{
+									"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+								},
+								{
+									"look_at_target": "controller.animation.kobold.look_at_target"
+								},
+								{
+									"move": "controller.animation.humanoid.move"
+								},
+								{
+									"attack": "controller.animation.ogre.attack"
+								}
+							],
+							"sound_effects": {
+								"equip_sound": "armor.equip_iron"
+							}
+						}
+					}
+				},
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vanilla_twilight:kobold",
+							"materials": {
+								"default": "husk"
+							},
+							"textures": {
+								"default": "textures/entity/koboldv2_bulldog",
+								"bulldog2": "textures/entity/koboldv2_bulldog_var2",
+								"shiba": "textures/entity/koboldv2_shiba",
+								"shiba2": "textures/entity/koboldv2_shiba_var2",
+								"wolf": "textures/entity/koboldv2_wolf",
+								"wolf2": "textures/entity/koboldv2_wolf_var2"
+							},
+							"geometry": {
+								"default": "geometry.vanilla_twilight.kobold_weapon",
+								"default.bulldog": "geometry.vanilla_twilight.kobold_bulldog",
+								"default.shiba": "geometry.vanilla_twilight.kobold_shiba",
+								"default.wolf": "geometry.vanilla_twilight.kobold_wolf",
+								"armor.bulldog": "geometry.vanilla_twilight.kobold_bulldog_armor",
+								"armor.shiba": "geometry.vanilla_twilight.kobold_shiba_armor",
+								"armor.wolf": "geometry.vanilla_twilight.kobold_wolf_armor"
+							},
+							"animations": {
+								"humanoid_base_pose": "animation.kobold.general",
+								"look_at_target_default": "animation.kobold.look_at_target.default",
+								"move": "animation.kobold.move",
+								"attack.rotations": "animation.vanilla_twilight.kobold.attack"
+							},
+							"render_controllers": [
+								"controller.render.vanilla_twilight.kobold_weapon",
+								"controller.render.vanilla_twilight.kobold",
+								"controller.render.vanilla_twilight.kobold_armor"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#D3CFCF",
+								"overlay_color": "#957965"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+									"variable.tcos1 = -variable.tcos0;",
+									"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+									"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+									"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+									"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+									"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+									"variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+									"variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+									"variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+								]
+							},
+							"animation_controllers": [
+								{
+									"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+								},
+								{
+									"look_at_target": "controller.animation.kobold.look_at_target"
+								},
+								{
+									"move": "controller.animation.humanoid.move"
+								},
+								{
+									"attack": "controller.animation.ogre.attack"
+								}
+							],
+							"sound_effects": {
+								"equip_sound": "armor.equip_iron"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:kobold",
+								"materials": {
+									"default": "husk"
+								},
+								"textures": {
+									"default": "textures/entity/koboldv2_bulldog",
+									"bulldog2": "textures/entity/koboldv2_bulldog_var2",
+									"shiba": "textures/entity/koboldv2_shiba",
+									"shiba2": "textures/entity/koboldv2_shiba_var2",
+									"wolf": "textures/entity/koboldv2_wolf",
+									"wolf2": "textures/entity/koboldv2_wolf_var2"
+								},
+								"geometry": {
+									"default": "geometry.vanilla_twilight.kobold_weapon",
+									"default.bulldog": "geometry.vanilla_twilight.kobold_bulldog",
+									"default.shiba": "geometry.vanilla_twilight.kobold_shiba",
+									"default.wolf": "geometry.vanilla_twilight.kobold_wolf",
+									"armor.bulldog": "geometry.vanilla_twilight.kobold_bulldog_armor",
+									"armor.shiba": "geometry.vanilla_twilight.kobold_shiba_armor",
+									"armor.wolf": "geometry.vanilla_twilight.kobold_wolf_armor"
+								},
+								"animations": {
+									"humanoid_base_pose": "animation.kobold.general",
+									"look_at_target_default": "animation.kobold.look_at_target.default",
+									"move": "animation.kobold.move",
+									"attack.rotations": "animation.vanilla_twilight.kobold.attack"
+								},
+								"render_controllers": [
+									"controller.render.vanilla_twilight.kobold_weapon",
+									"controller.render.vanilla_twilight.kobold",
+									"controller.render.vanilla_twilight.kobold_armor"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#D3CFCF",
+									"overlay_color": "#957965"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+										"variable.tcos1 = -variable.tcos0;",
+										"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+										"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+										"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+										"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+										"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+										"variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+										"variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+										"variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+									]
+								},
+								"animation_controllers": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.kobold.look_at_target"
+									},
+									{
+										"move": "controller.animation.humanoid.move"
+									},
+									{
+										"attack": "controller.animation.ogre.attack"
+									}
+								],
+								"sound_effects": {
+									"equip_sound": "armor.equip_iron"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "vanilla_twilight:kobold",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "husk"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/koboldv2_bulldog",
+									"bulldog2": "textures/entity/koboldv2_bulldog_var2",
+									"shiba": "textures/entity/koboldv2_shiba",
+									"shiba2": "textures/entity/koboldv2_shiba_var2",
+									"wolf": "textures/entity/koboldv2_wolf",
+									"wolf2": "textures/entity/koboldv2_wolf_var2"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.vanilla_twilight.kobold_weapon",
+									"default.bulldog": "geometry.vanilla_twilight.kobold_bulldog",
+									"default.shiba": "geometry.vanilla_twilight.kobold_shiba",
+									"default.wolf": "geometry.vanilla_twilight.kobold_wolf",
+									"armor.bulldog": "geometry.vanilla_twilight.kobold_bulldog_armor",
+									"armor.shiba": "geometry.vanilla_twilight.kobold_shiba_armor",
+									"armor.wolf": "geometry.vanilla_twilight.kobold_wolf_armor"
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"humanoid_base_pose": "animation.kobold.general",
+									"look_at_target_default": "animation.kobold.look_at_target.default",
+									"move": "animation.kobold.move",
+									"attack.rotations": "animation.vanilla_twilight.kobold.attack"
+								}
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.vanilla_twilight.kobold_weapon",
+									"controller.render.vanilla_twilight.kobold",
+									"controller.render.vanilla_twilight.kobold_armor"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#D3CFCF",
+									"overlay_color": "#957965"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+										"variable.tcos1 = -variable.tcos0;",
+										"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+										"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+										"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+										"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+										"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+										"variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+										"variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+										"variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+									]
+								}
+							},
+							{
+								"key": "animation_controllers",
+								"is_minified": true,
+								"children": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.kobold.look_at_target"
+									},
+									{
+										"move": "controller.animation.humanoid.move"
+									},
+									{
+										"attack": "controller.animation.ogre.attack"
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:kobold",
+									"materials": {
+										"default": "husk"
+									},
+									"textures": {
+										"default": "textures/entity/koboldv2_bulldog",
+										"bulldog2": "textures/entity/koboldv2_bulldog_var2",
+										"shiba": "textures/entity/koboldv2_shiba",
+										"shiba2": "textures/entity/koboldv2_shiba_var2",
+										"wolf": "textures/entity/koboldv2_wolf",
+										"wolf2": "textures/entity/koboldv2_wolf_var2"
+									},
+									"geometry": {
+										"default": "geometry.vanilla_twilight.kobold_weapon",
+										"default.bulldog": "geometry.vanilla_twilight.kobold_bulldog",
+										"default.shiba": "geometry.vanilla_twilight.kobold_shiba",
+										"default.wolf": "geometry.vanilla_twilight.kobold_wolf",
+										"armor.bulldog": "geometry.vanilla_twilight.kobold_bulldog_armor",
+										"armor.shiba": "geometry.vanilla_twilight.kobold_shiba_armor",
+										"armor.wolf": "geometry.vanilla_twilight.kobold_wolf_armor"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.kobold.general",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"move": "animation.kobold.move",
+										"attack.rotations": "animation.vanilla_twilight.kobold.attack"
+									},
+									"render_controllers": [
+										"controller.render.vanilla_twilight.kobold_weapon",
+										"controller.render.vanilla_twilight.kobold",
+										"controller.render.vanilla_twilight.kobold_armor"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#D3CFCF",
+										"overlay_color": "#957965"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+											"variable.tcos1 = -variable.tcos0;",
+											"variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+											"variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+											"variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+											"variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+											"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+											"variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+											"variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+										]
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.kobold.look_at_target"
+										},
+										{
+											"move": "controller.animation.humanoid.move"
+										},
+										{
+											"attack": "controller.animation.ogre.attack"
+										}
+									],
+									"sound_effects": {
+										"equip_sound": "armor.equip_iron"
+									}
+								},
+								"key": "sound_effects",
+								"is_minified": true,
+								"children": {
+									"equip_sound": "armor.equip_iron"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:icecloud",
+      "materials": {
+        "default": "cow"
+      },
+      "textures": {
+        "default": "textures/entity/illager/icecloud"
+      },
+      "geometry": {
+        "default": "geometry.icecloud"
+      },
+      "animations": {
+        "summoned": "animation.icecloud.evocated"
+      },
+      "scripts": {
+        "animate": [
+          "summoned"
+        ]
+      },
+      "render_controllers": [ "controller.render.arrow" ]
+    }
+  }
+}

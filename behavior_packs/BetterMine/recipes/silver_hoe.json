@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "better:silver_hoe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            " B",
+            " B"
+        ],
+        "key": {
+            "A": {
+                "item": "better:silver_ingot"
+            },
+            "B": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "better:silver_hoe",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

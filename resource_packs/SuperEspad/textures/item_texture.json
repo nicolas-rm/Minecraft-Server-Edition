@@ -1,0 +1,288 @@
+{
+  "resource_pack_name": "Addon Maker Resource",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_camel": {
+      "textures": "textures/items/egg_camel"
+    },
+    "egg_lion": {
+      "textures": "textures/items/egg_lion"
+    },
+    "egg_penguin": {
+      "textures": "textures/items/egg_penguin"
+    },
+    "egg_tiger": {
+      "textures": "textures/items/egg_tiger"
+    },
+    "egg_elephant": {
+      "textures": "textures/items/egg_elephant"
+    },
+    "egg_deer": {
+      "textures": "textures/items/egg_deer"
+    },
+    "egg_panther": {
+      "textures": "textures/items/egg_panther"
+    },
+    "egg_frog": {
+      "textures": "textures/items/egg_frog"
+    },
+    "egg_crocodile": {
+      "textures": "textures/items/egg_crocodile"
+    },
+    "egg_mouse": {
+      "textures": "textures/items/egg_mouse"
+    },
+    "gallardo": {
+      "textures": "textures/items/gallardo"
+    },
+    "bench": {
+      "textures": "textures/items/bench"
+    },
+    "christmas_tree": {
+      "textures": "textures/items/christmas_tree"
+    },
+    "tivi": {
+      "textures": "textures/items/tivi"
+    },
+    "closet": {
+      "textures": "textures/items/closet"
+    },
+    "laptop": {
+      "textures": "textures/items/laptop"
+    },
+    "piano": {
+      "textures": "textures/items/piano"
+    },
+    "armchairs": {
+      "textures": "textures/items/armchairs"
+    },
+    "chair": {
+      "textures": "textures/items/chair"
+    },
+    "big_table": {
+      "textures": "textures/items/big_table"
+    },
+    "small_table": {
+      "textures": "textures/items/small_table"
+    },
+    "drone": {
+      "textures": "textures/items/drone"
+    },
+    "colorful_gifts": {
+      "textures": "textures/items/colorful_gifts"
+    },
+    "espadas_espada_blaze": {
+      "textures": "textures/items/pamobile/espadas_espada_blaze"
+    },
+    "espadas_espada_nieve": {
+      "textures": "textures/items/pamobile/espadas_espada_nieve"
+    },
+    "espadas_espada_hueso": {
+      "textures": "textures/items/pamobile/espadas_espada_hueso"
+    },
+    "espadas_espada_oro_mejorada": {
+      "textures": "textures/items/pamobile/espadas_espada_oro_mejorada"
+    },
+    "espadas_espada_ender_pearl": {
+      "textures": "textures/items/pamobile/espadas_espada_ender_pearl"
+    },
+    "espadas_espada_almas": {
+      "textures": "textures/items/pamobile/espadas_espada_almas"
+    },
+    "espadas_espada_wither": {
+      "textures": "textures/items/pamobile/espadas_espada_wither"
+    },
+    "espadas_espada_ladrillo": {
+      "textures": "textures/items/pamobile/espadas_espada_ladrillo"
+    },
+    "espadas_espada_antigua": {
+      "textures": "textures/items/pamobile/espadas_espada_antigua"
+    },
+    "espadas_espada_prismania": {
+      "textures": "textures/items/pamobile/espadas_espada_prismania"
+    },
+    "espadas:carton": {
+      "textures": "textures/items/pamobile/espadas_carton"
+    },
+    "espadas:espada_galleta": {
+      "textures": "textures/items/pamobile/espadas_espada_galleta"
+    },
+    "espadas_espada_papel": {
+      "textures": "textures/items/pamobile/espadas_espada_papel"
+    },
+    "espadas_espada_lana": {
+      "textures": "textures/items/pamobile/espadas_espada_lana"
+    },
+    "espadas_espada_bedrock": {
+      "textures": "textures/items/pamobile/espadas_espada_bedrock"
+    },
+    "espadas_espada_netherstar": {
+      "textures": "textures/items/pamobile/espadas_espada_netherstar"
+    },
+    "espadas:lingote_estano": {
+      "textures": "textures/items/pamobile/espadas_lingote_estano"
+    },
+    "espadas_espada_maldita": {
+      "textures": "textures/items/pamobile/espadas_espada_maldita"
+    },
+    "espadas:rubi": {
+      "textures": "textures/items/pamobile/espadas_rubi"
+    },
+    "espadas_espada_mistica": {
+      "textures": "textures/items/pamobile/espadas_espada_mistica"
+    },
+    "espadas_espada_inmortalidad": {
+      "textures": "textures/items/pamobile/espadas_espada_inmortalidad"
+    },
+    "espadas_guadana": {
+      "textures": "textures/items/pamobile/espadas_guadana"
+    },
+    "espadas_espada_cuarzo": {
+      "textures": "textures/items/pamobile/espadas_espada_cuarzo"
+    },
+    "espadas_espada_esmeralda": {
+      "textures": "textures/items/pamobile/espadas_espada_esmeralda"
+    },
+    "espadas:espada_madera_falsa": {
+      "textures": "textures/items/pamobile/espadas_espada_madera_falsa"
+    },
+    "espadas_espada_slime": {
+      "textures": "textures/items/pamobile/espadas_espada_slime"
+    },
+    "espadas_espada_cristal": {
+      "textures": "textures/items/pamobile/espadas_espada_cristal"
+    },
+    "espadas:cuarzo_rosa": {
+      "textures": "textures/items/pamobile/espadas_cuarzo_rosa"
+    },
+    "espadas:lingote_plomo": {
+      "textures": "textures/items/pamobile/espadas_lingote_plomo"
+    },
+    "espadas_botella": {
+      "textures": "textures/items/pamobile/espadas_botella"
+    },
+    "espadas_espada_poder": {
+      "textures": "textures/items/pamobile/espadas_espada_poder"
+    },
+    "espadas:espada_hierro_falsa": {
+      "textures": "textures/items/pamobile/espadas_espada_hierro_falsa"
+    },
+    "espadas_espada_nuclear": {
+      "textures": "textures/items/pamobile/espadas_espada_nuclear"
+    },
+    "espadas_espada_obsidiana": {
+      "textures": "textures/items/pamobile/espadas_espada_obsidiana"
+    },
+    "espadas_espada_hielo": {
+      "textures": "textures/items/pamobile/espadas_espada_hielo"
+    },
+    "espadas:lingote_titanio": {
+      "textures": "textures/items/pamobile/espadas_lingote_titanio"
+    },
+    "espadas:lingote_cobre": {
+      "textures": "textures/items/pamobile/espadas_lingote_cobre"
+    },
+    "espadas_espada_carbon": {
+      "textures": "textures/items/pamobile/espadas_espada_carbon"
+    },
+    "espadas_super_espada": {
+      "textures": "textures/items/pamobile/espadas_super_espada"
+    },
+    "espadas_espada_mar": {
+      "textures": "textures/items/pamobile/espadas_espada_mar"
+    },
+    "espadas_espada_lava": {
+      "textures": "textures/items/pamobile/espadas_espada_lava"
+    },
+    "espadas_espada_pedernal": {
+      "textures": "textures/items/pamobile/espadas_espada_pedernal"
+    },
+    "espadas_espada_redstone": {
+      "textures": "textures/items/pamobile/espadas_espada_redstone"
+    },
+    "espadas_mega_sword": {
+      "textures": "textures/items/pamobile/espadas_mega_sword"
+    },
+    "espadas:amatista": {
+      "textures": "textures/items/pamobile/espadas_amatista"
+    },
+    "espadas_espada_hojas": {
+      "textures": "textures/items/pamobile/espadas_espada_hojas"
+    },
+    "espadas_espada_lapislazuli": {
+      "textures": "textures/items/pamobile/espadas_espada_lapislazuli"
+    },
+    "espadas_espada_dano": {
+      "textures": "textures/items/pamobile/espadas_espada_dano"
+    },
+    "espadas_espada_tnt": {
+      "textures": "textures/items/pamobile/espadas_espada_tnt"
+    },
+    "espadas:espada_oro_falsa": {
+      "textures": "textures/items/pamobile/espadas_espada_oro_falsa"
+    },
+    "espadas_espada_infiedra": {
+      "textures": "textures/items/pamobile/espadas_espada_infiedra"
+    },
+    "espadas_espada_curativa": {
+      "textures": "textures/items/pamobile/espadas_espada_curativa"
+    },
+    "espadas:espada_inframundita_falsa": {
+      "textures": "textures/items/pamobile/espadas_espada_inframundita_falsa"
+    },
+    "espadas:espada_diamante_falsa": {
+      "textures": "textures/items/pamobile/espadas_espada_diamante_falsa"
+    },
+    "espadas:espada_carton": {
+      "textures": "textures/items/pamobile/espadas_espada_carton"
+    },
+    "espadas:espada_piedra_falsa": {
+      "textures": "textures/items/pamobile/espadas_espada_piedra_falsa"
+    },
+    "espadas_espada_estano": {
+      "textures": "textures/items/pamobile/espadas_espada_estano"
+    },
+    "espadas_espada_cobre": {
+      "textures": "textures/items/pamobile/espadas_espada_cobre"
+    },
+    "espadas_espada_niquel": {
+      "textures": "textures/items/pamobile/espadas_espada_niquel"
+    },
+    "espadas_espada_zafiro": {
+      "textures": "textures/items/pamobile/espadas_espada_zafiro"
+    },
+    "espadas_espada_plomo": {
+      "textures": "textures/items/pamobile/espadas_espada_plomo"
+    },
+    "espadas:zafiro": {
+      "textures": "textures/items/pamobile/espadas_zafiro"
+    },
+    "espadas_espada_platino": {
+      "textures": "textures/items/pamobile/espadas_espada_platino"
+    },
+    "espadas_espada_rubi": {
+      "textures": "textures/items/pamobile/espadas_espada_rubi"
+    },
+    "espadas:lingote_niquel": {
+      "textures": "textures/items/pamobile/espadas_lingote_niquel"
+    },
+    "espadas:diamante_blanco": {
+      "textures": "textures/items/pamobile/espadas_diamante_blanco"
+    },
+    "espadas_espada_diamante_blanco": {
+      "textures": "textures/items/pamobile/espadas_espada_diamante_blanco"
+    },
+    "espadas_espada_amatista": {
+      "textures": "textures/items/pamobile/espadas_espada_amatista"
+    },
+    "espadas_espada_titanio": {
+      "textures": "textures/items/pamobile/espadas_espada_titanio"
+    },
+    "espadas_espada_cuarzo_rosa": {
+      "textures": "textures/items/pamobile/espadas_espada_cuarzo_rosa"
+    },
+    "espadas:lingote_platino": {
+      "textures": "textures/items/pamobile/espadas_lingote_platino"
+    }
+  }
+}

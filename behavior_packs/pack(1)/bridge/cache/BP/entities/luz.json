@@ -1,0 +1,3749 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\pack(5)\\entities\\luz.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "4d52e200_732e_4f9e_9528_0357a6de52a4",
+	"file_version": 59,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "ray:luz",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"components": {
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"cause": "all",
+										"deals_damage": false
+									}
+								]
+							},
+							"minecraft:physics": {
+								"has_gravity": true,
+								"has_collision": true
+							},
+							"minecraft:nameable": {
+								"always_show": false
+							}
+						},
+						"events": {
+							"light": {
+								"run_command": {
+									"command": [
+										"scoreboard players set @p luz 0"
+									]
+								}
+							},
+							"add_l": {
+								"add": {
+									"component_groups": [
+										"light"
+									]
+								},
+								"remove": {
+									"component_groups": [
+										"soul_light"
+									]
+								}
+							},
+							"add_ls": {
+								"add": {
+									"component_groups": [
+										"soul_light"
+									]
+								},
+								"remove": {
+									"component_groups": [
+										"light"
+									]
+								}
+							},
+							"soul_light": {
+								"run_command": {
+									"command": [
+										"scoreboard players set @p soul_luz 0"
+									]
+								}
+							},
+							"despawn": {
+								"add": {
+									"component_groups": [
+										"despawn"
+									]
+								}
+							}
+						},
+						"component_groups": {
+							"light": {
+								"minecraft:entity_sensor": {
+									"sensor_range": 16,
+									"minimum_count": 1,
+									"maximum_count": 1,
+									"event_filters": {
+										"any_of": [
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "ray:torch",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"domain": "hand",
+												"subject": "other",
+												"value": "ray:lava_bucket"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"domain": "hand",
+												"subject": "other",
+												"value": "minecraft:shroomlight"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:lantern",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:blaze_rod",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:blaze_powder",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:glowstone",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:lit_pumpkin",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:glowstone_dust",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"domain": "hand",
+												"subject": "other",
+												"value": "minecraft:beacon"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:campfire",
+												"domain": "hand",
+												"subject": "other"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"value": "minecraft:torch",
+												"domain": "hand",
+												"subject": "other"
+											}
+										]
+									},
+									"event": "light"
+								}
+							},
+							"soul_light": {
+								"minecraft:entity_sensor": {
+									"sensor_range": 16,
+									"minimum_count": 1,
+									"maximum_count": 1,
+									"event_filters": {
+										"any_of": [
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "ray:soul_torch"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:soul_campfire"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:soul_lantern"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:sea_pickle"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:glow_ink_sac"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:glow_frame"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:magma_cream"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:magma"
+											},
+											{
+												"test": "has_equipment",
+												"operator": "==",
+												"subject": "other",
+												"value": "minecraft:soul_torch"
+											}
+										]
+									},
+									"event": "soul_light"
+								}
+							},
+							"despawn": {
+								"minecraft:instant_despawn": {}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:luz",
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:luz",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"deals_damage": false
+										}
+									]
+								},
+								"minecraft:physics": {
+									"has_gravity": true,
+									"has_collision": true
+								},
+								"minecraft:nameable": {
+									"always_show": false
+								}
+							},
+							"events": {
+								"light": {
+									"run_command": {
+										"command": [
+											"scoreboard players set @p luz 0"
+										]
+									}
+								},
+								"add_l": {
+									"add": {
+										"component_groups": [
+											"light"
+										]
+									},
+									"remove": {
+										"component_groups": [
+											"soul_light"
+										]
+									}
+								},
+								"add_ls": {
+									"add": {
+										"component_groups": [
+											"soul_light"
+										]
+									},
+									"remove": {
+										"component_groups": [
+											"light"
+										]
+									}
+								},
+								"soul_light": {
+									"run_command": {
+										"command": [
+											"scoreboard players set @p soul_luz 0"
+										]
+									}
+								},
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							},
+							"component_groups": {
+								"light": {
+									"minecraft:entity_sensor": {
+										"sensor_range": 16,
+										"minimum_count": 1,
+										"maximum_count": 1,
+										"event_filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "ray:torch",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "ray:lava_bucket"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:shroomlight"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:lantern",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:blaze_rod",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:blaze_powder",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:glowstone",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:lit_pumpkin",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:glowstone_dust",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:beacon"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:campfire",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:torch",
+													"domain": "hand",
+													"subject": "other"
+												}
+											]
+										},
+										"event": "light"
+									}
+								},
+								"soul_light": {
+									"minecraft:entity_sensor": {
+										"sensor_range": 16,
+										"minimum_count": 1,
+										"maximum_count": 1,
+										"event_filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "ray:soul_torch"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_campfire"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_lantern"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:sea_pickle"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:glow_ink_sac"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:glow_frame"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:magma_cream"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:magma"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_torch"
+												}
+											]
+										},
+										"event": "soul_light"
+									}
+								},
+								"despawn": {
+									"minecraft:instant_despawn": {}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"cause": "all",
+												"deals_damage": false
+											}
+										]
+									},
+									"minecraft:physics": {
+										"has_gravity": true,
+										"has_collision": true
+									},
+									"minecraft:nameable": {
+										"always_show": false
+									}
+								},
+								"key": "minecraft:damage_sensor",
+								"children": [
+									{
+										"open": {
+											"triggers": [
+												{
+													"cause": "all",
+													"deals_damage": false
+												}
+											]
+										},
+										"key": "triggers",
+										"children": [
+											{
+												"open": [
+													{
+														"cause": "all",
+														"deals_damage": false
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"cause": "all",
+													"deals_damage": false
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_gravity": true,
+									"has_collision": true
+								}
+							},
+							{
+								"key": "minecraft:nameable",
+								"is_minified": true,
+								"children": {
+									"always_show": false
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:luz",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"deals_damage": false
+										}
+									]
+								},
+								"minecraft:physics": {
+									"has_gravity": true,
+									"has_collision": true
+								},
+								"minecraft:nameable": {
+									"always_show": false
+								}
+							},
+							"events": {
+								"light": {
+									"run_command": {
+										"command": [
+											"scoreboard players set @p luz 0"
+										]
+									}
+								},
+								"add_l": {
+									"add": {
+										"component_groups": [
+											"light"
+										]
+									},
+									"remove": {
+										"component_groups": [
+											"soul_light"
+										]
+									}
+								},
+								"add_ls": {
+									"add": {
+										"component_groups": [
+											"soul_light"
+										]
+									},
+									"remove": {
+										"component_groups": [
+											"light"
+										]
+									}
+								},
+								"soul_light": {
+									"run_command": {
+										"command": [
+											"scoreboard players set @p soul_luz 0"
+										]
+									}
+								},
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							},
+							"component_groups": {
+								"light": {
+									"minecraft:entity_sensor": {
+										"sensor_range": 16,
+										"minimum_count": 1,
+										"maximum_count": 1,
+										"event_filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "ray:torch",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "ray:lava_bucket"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:shroomlight"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:lantern",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:blaze_rod",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:blaze_powder",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:glowstone",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:lit_pumpkin",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:glowstone_dust",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:beacon"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:campfire",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:torch",
+													"domain": "hand",
+													"subject": "other"
+												}
+											]
+										},
+										"event": "light"
+									}
+								},
+								"soul_light": {
+									"minecraft:entity_sensor": {
+										"sensor_range": 16,
+										"minimum_count": 1,
+										"maximum_count": 1,
+										"event_filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "ray:soul_torch"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_campfire"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_lantern"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:sea_pickle"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:glow_ink_sac"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:glow_frame"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:magma_cream"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:magma"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_torch"
+												}
+											]
+										},
+										"event": "soul_light"
+									}
+								},
+								"despawn": {
+									"minecraft:instant_despawn": {}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p luz 0"
+											]
+										}
+									},
+									"add_l": {
+										"add": {
+											"component_groups": [
+												"light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"soul_light"
+											]
+										}
+									},
+									"add_ls": {
+										"add": {
+											"component_groups": [
+												"soul_light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"light"
+											]
+										}
+									},
+									"soul_light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p soul_luz 0"
+											]
+										}
+									},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									}
+								},
+								"key": "light",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"scoreboard players set @p luz 0"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"scoreboard players set @p luz 0"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"scoreboard players set @p luz 0"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p luz 0"
+											]
+										}
+									},
+									"add_l": {
+										"add": {
+											"component_groups": [
+												"light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"soul_light"
+											]
+										}
+									},
+									"add_ls": {
+										"add": {
+											"component_groups": [
+												"soul_light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"light"
+											]
+										}
+									},
+									"soul_light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p soul_luz 0"
+											]
+										}
+									},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									}
+								},
+								"key": "add_l",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"light"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"soul_light"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"light"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"light"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"light"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"soul_light"
+												]
+											}
+										},
+										"key": "remove",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"soul_light"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"soul_light"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p luz 0"
+											]
+										}
+									},
+									"add_l": {
+										"add": {
+											"component_groups": [
+												"light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"soul_light"
+											]
+										}
+									},
+									"add_ls": {
+										"add": {
+											"component_groups": [
+												"soul_light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"light"
+											]
+										}
+									},
+									"soul_light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p soul_luz 0"
+											]
+										}
+									},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									}
+								},
+								"key": "add_ls",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"soul_light"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"light"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"soul_light"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"soul_light"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"soul_light"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"light"
+												]
+											}
+										},
+										"key": "remove",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"light"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"light"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p luz 0"
+											]
+										}
+									},
+									"add_l": {
+										"add": {
+											"component_groups": [
+												"light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"soul_light"
+											]
+										}
+									},
+									"add_ls": {
+										"add": {
+											"component_groups": [
+												"soul_light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"light"
+											]
+										}
+									},
+									"soul_light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p soul_luz 0"
+											]
+										}
+									},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									}
+								},
+								"key": "soul_light",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"scoreboard players set @p soul_luz 0"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"scoreboard players set @p soul_luz 0"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"scoreboard players set @p soul_luz 0"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p luz 0"
+											]
+										}
+									},
+									"add_l": {
+										"add": {
+											"component_groups": [
+												"light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"soul_light"
+											]
+										}
+									},
+									"add_ls": {
+										"add": {
+											"component_groups": [
+												"soul_light"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"light"
+											]
+										}
+									},
+									"soul_light": {
+										"run_command": {
+											"command": [
+												"scoreboard players set @p soul_luz 0"
+											]
+										}
+									},
+									"despawn": {
+										"add": {
+											"component_groups": [
+												"despawn"
+											]
+										}
+									}
+								},
+								"key": "despawn",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"despawn"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"despawn"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"despawn"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:luz",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"deals_damage": false
+										}
+									]
+								},
+								"minecraft:physics": {
+									"has_gravity": true,
+									"has_collision": true
+								},
+								"minecraft:nameable": {
+									"always_show": false
+								}
+							},
+							"events": {
+								"light": {
+									"run_command": {
+										"command": [
+											"scoreboard players set @p luz 0"
+										]
+									}
+								},
+								"add_l": {
+									"add": {
+										"component_groups": [
+											"light"
+										]
+									},
+									"remove": {
+										"component_groups": [
+											"soul_light"
+										]
+									}
+								},
+								"add_ls": {
+									"add": {
+										"component_groups": [
+											"soul_light"
+										]
+									},
+									"remove": {
+										"component_groups": [
+											"light"
+										]
+									}
+								},
+								"soul_light": {
+									"run_command": {
+										"command": [
+											"scoreboard players set @p soul_luz 0"
+										]
+									}
+								},
+								"despawn": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							},
+							"component_groups": {
+								"light": {
+									"minecraft:entity_sensor": {
+										"sensor_range": 16,
+										"minimum_count": 1,
+										"maximum_count": 1,
+										"event_filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "ray:torch",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "ray:lava_bucket"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:shroomlight"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:lantern",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:blaze_rod",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:blaze_powder",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:glowstone",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:lit_pumpkin",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:glowstone_dust",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:beacon"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:campfire",
+													"domain": "hand",
+													"subject": "other"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"value": "minecraft:torch",
+													"domain": "hand",
+													"subject": "other"
+												}
+											]
+										},
+										"event": "light"
+									}
+								},
+								"soul_light": {
+									"minecraft:entity_sensor": {
+										"sensor_range": 16,
+										"minimum_count": 1,
+										"maximum_count": 1,
+										"event_filters": {
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "ray:soul_torch"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_campfire"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_lantern"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:sea_pickle"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:glow_ink_sac"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:glow_frame"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:magma_cream"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:magma"
+												},
+												{
+													"test": "has_equipment",
+													"operator": "==",
+													"subject": "other",
+													"value": "minecraft:soul_torch"
+												}
+											]
+										},
+										"event": "soul_light"
+									}
+								},
+								"despawn": {
+									"minecraft:instant_despawn": {}
+								}
+							}
+						},
+						"key": "component_groups",
+						"children": [
+							{
+								"open": {
+									"light": {
+										"minecraft:entity_sensor": {
+											"sensor_range": 16,
+											"minimum_count": 1,
+											"maximum_count": 1,
+											"event_filters": {
+												"any_of": [
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "ray:torch",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "ray:lava_bucket"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "minecraft:shroomlight"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:lantern",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:blaze_rod",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:blaze_powder",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:glowstone",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:lit_pumpkin",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:glowstone_dust",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "minecraft:beacon"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:campfire",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:torch",
+														"domain": "hand",
+														"subject": "other"
+													}
+												]
+											},
+											"event": "light"
+										}
+									},
+									"soul_light": {
+										"minecraft:entity_sensor": {
+											"sensor_range": 16,
+											"minimum_count": 1,
+											"maximum_count": 1,
+											"event_filters": {
+												"any_of": [
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "ray:soul_torch"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_campfire"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_lantern"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:sea_pickle"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:glow_ink_sac"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:glow_frame"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:magma_cream"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:magma"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_torch"
+													}
+												]
+											},
+											"event": "soul_light"
+										}
+									},
+									"despawn": {
+										"minecraft:instant_despawn": {}
+									}
+								},
+								"key": "light",
+								"children": [
+									{
+										"open": {
+											"minecraft:entity_sensor": {
+												"sensor_range": 16,
+												"minimum_count": 1,
+												"maximum_count": 1,
+												"event_filters": {
+													"any_of": [
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "ray:torch",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"domain": "hand",
+															"subject": "other",
+															"value": "ray:lava_bucket"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"domain": "hand",
+															"subject": "other",
+															"value": "minecraft:shroomlight"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:lantern",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:blaze_rod",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:blaze_powder",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:glowstone",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:lit_pumpkin",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:glowstone_dust",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"domain": "hand",
+															"subject": "other",
+															"value": "minecraft:beacon"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:campfire",
+															"domain": "hand",
+															"subject": "other"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"value": "minecraft:torch",
+															"domain": "hand",
+															"subject": "other"
+														}
+													]
+												},
+												"event": "light"
+											}
+										},
+										"key": "minecraft:entity_sensor",
+										"children": [
+											{
+												"open": {
+													"sensor_range": 16,
+													"minimum_count": 1,
+													"maximum_count": 1,
+													"event_filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "ray:torch",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "ray:lava_bucket"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "minecraft:shroomlight"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:lantern",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:blaze_rod",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:blaze_powder",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:glowstone",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:lit_pumpkin",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:glowstone_dust",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "minecraft:beacon"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:campfire",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:torch",
+																"domain": "hand",
+																"subject": "other"
+															}
+														]
+													},
+													"event": "light"
+												},
+												"data": "16",
+												"key": "sensor_range"
+											},
+											{
+												"data": "1",
+												"key": "minimum_count"
+											},
+											{
+												"open": {
+													"sensor_range": 16,
+													"minimum_count": 1,
+													"maximum_count": 1,
+													"event_filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "ray:torch",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "ray:lava_bucket"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "minecraft:shroomlight"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:lantern",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:blaze_rod",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:blaze_powder",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:glowstone",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:lit_pumpkin",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:glowstone_dust",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "minecraft:beacon"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:campfire",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:torch",
+																"domain": "hand",
+																"subject": "other"
+															}
+														]
+													},
+													"event": "light"
+												},
+												"data": "1",
+												"key": "maximum_count"
+											},
+											{
+												"open": {
+													"sensor_range": 16,
+													"minimum_count": 1,
+													"maximum_count": 1,
+													"event_filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "ray:torch",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "ray:lava_bucket"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "minecraft:shroomlight"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:lantern",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:blaze_rod",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:blaze_powder",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:glowstone",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:lit_pumpkin",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:glowstone_dust",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"domain": "hand",
+																"subject": "other",
+																"value": "minecraft:beacon"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:campfire",
+																"domain": "hand",
+																"subject": "other"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"value": "minecraft:torch",
+																"domain": "hand",
+																"subject": "other"
+															}
+														]
+													},
+													"event": "light"
+												},
+												"key": "event_filters",
+												"children": [
+													{
+														"open": {
+															"any_of": [
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "ray:torch",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"domain": "hand",
+																	"subject": "other",
+																	"value": "ray:lava_bucket"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"domain": "hand",
+																	"subject": "other",
+																	"value": "minecraft:shroomlight"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:lantern",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:blaze_rod",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:blaze_powder",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:glowstone",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:lit_pumpkin",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:glowstone_dust",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"domain": "hand",
+																	"subject": "other",
+																	"value": "minecraft:beacon"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:campfire",
+																	"domain": "hand",
+																	"subject": "other"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:torch",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															]
+														},
+														"key": "any_of",
+														"children": [
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "ray:torch",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"domain": "hand",
+																		"subject": "other",
+																		"value": "ray:lava_bucket"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"domain": "hand",
+																		"subject": "other",
+																		"value": "minecraft:shroomlight"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:lantern",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:blaze_rod",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:blaze_powder",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:glowstone",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:lit_pumpkin",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:glowstone_dust",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"domain": "hand",
+																		"subject": "other",
+																		"value": "minecraft:beacon"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:campfire",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:torch",
+																		"domain": "hand",
+																		"subject": "other"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "ray:torch",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"domain": "hand",
+																	"subject": "other",
+																	"value": "ray:lava_bucket"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"domain": "hand",
+																	"subject": "other",
+																	"value": "minecraft:shroomlight"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:lantern",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:blaze_rod",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:blaze_powder",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:glowstone",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:lit_pumpkin",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:glowstone_dust",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"domain": "hand",
+																	"subject": "other",
+																	"value": "minecraft:beacon"
+																}
+															},
+															{
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:campfire",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "ray:torch",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"domain": "hand",
+																		"subject": "other",
+																		"value": "ray:lava_bucket"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"domain": "hand",
+																		"subject": "other",
+																		"value": "minecraft:shroomlight"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:lantern",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:blaze_rod",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:blaze_powder",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:glowstone",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:lit_pumpkin",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:glowstone_dust",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"domain": "hand",
+																		"subject": "other",
+																		"value": "minecraft:beacon"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:campfire",
+																		"domain": "hand",
+																		"subject": "other"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"value": "minecraft:torch",
+																		"domain": "hand",
+																		"subject": "other"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"value": "minecraft:torch",
+																	"domain": "hand",
+																	"subject": "other"
+																}
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": "light",
+												"key": "event"
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"light": {
+										"minecraft:entity_sensor": {
+											"sensor_range": 16,
+											"minimum_count": 1,
+											"maximum_count": 1,
+											"event_filters": {
+												"any_of": [
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "ray:torch",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "ray:lava_bucket"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "minecraft:shroomlight"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:lantern",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:blaze_rod",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:blaze_powder",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:glowstone",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:lit_pumpkin",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:glowstone_dust",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "minecraft:beacon"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:campfire",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:torch",
+														"domain": "hand",
+														"subject": "other"
+													}
+												]
+											},
+											"event": "light"
+										}
+									},
+									"soul_light": {
+										"minecraft:entity_sensor": {
+											"sensor_range": 16,
+											"minimum_count": 1,
+											"maximum_count": 1,
+											"event_filters": {
+												"any_of": [
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "ray:soul_torch"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_campfire"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_lantern"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:sea_pickle"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:glow_ink_sac"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:glow_frame"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:magma_cream"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:magma"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_torch"
+													}
+												]
+											},
+											"event": "soul_light"
+										}
+									},
+									"despawn": {
+										"minecraft:instant_despawn": {}
+									}
+								},
+								"key": "soul_light",
+								"children": [
+									{
+										"open": {
+											"minecraft:entity_sensor": {
+												"sensor_range": 16,
+												"minimum_count": 1,
+												"maximum_count": 1,
+												"event_filters": {
+													"any_of": [
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "ray:soul_torch"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:soul_campfire"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:soul_lantern"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:sea_pickle"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:glow_ink_sac"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:glow_frame"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:magma_cream"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:magma"
+														},
+														{
+															"test": "has_equipment",
+															"operator": "==",
+															"subject": "other",
+															"value": "minecraft:soul_torch"
+														}
+													]
+												},
+												"event": "soul_light"
+											}
+										},
+										"key": "minecraft:entity_sensor",
+										"children": [
+											{
+												"open": {
+													"sensor_range": 16,
+													"minimum_count": 1,
+													"maximum_count": 1,
+													"event_filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "ray:soul_torch"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_campfire"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_lantern"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:sea_pickle"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:glow_ink_sac"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:glow_frame"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:magma_cream"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:magma"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_torch"
+															}
+														]
+													},
+													"event": "soul_light"
+												},
+												"data": "16",
+												"key": "sensor_range"
+											},
+											{
+												"data": "1",
+												"key": "minimum_count"
+											},
+											{
+												"open": {
+													"sensor_range": 16,
+													"minimum_count": 1,
+													"maximum_count": 1,
+													"event_filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "ray:soul_torch"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_campfire"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_lantern"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:sea_pickle"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:glow_ink_sac"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:glow_frame"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:magma_cream"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:magma"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_torch"
+															}
+														]
+													},
+													"event": "soul_light"
+												},
+												"data": "1",
+												"key": "maximum_count"
+											},
+											{
+												"open": {
+													"sensor_range": 16,
+													"minimum_count": 1,
+													"maximum_count": 1,
+													"event_filters": {
+														"any_of": [
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "ray:soul_torch"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_campfire"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_lantern"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:sea_pickle"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:glow_ink_sac"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:glow_frame"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:magma_cream"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:magma"
+															},
+															{
+																"test": "has_equipment",
+																"operator": "==",
+																"subject": "other",
+																"value": "minecraft:soul_torch"
+															}
+														]
+													},
+													"event": "soul_light"
+												},
+												"key": "event_filters",
+												"children": [
+													{
+														"open": {
+															"any_of": [
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "ray:soul_torch"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:soul_campfire"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:soul_lantern"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:sea_pickle"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:glow_ink_sac"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:glow_frame"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:magma_cream"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:magma"
+																},
+																{
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:soul_torch"
+																}
+															]
+														},
+														"key": "any_of",
+														"children": [
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "ray:soul_torch"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:soul_campfire"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:soul_lantern"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:sea_pickle"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:glow_ink_sac"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:glow_frame"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:magma_cream"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:magma"
+																}
+															},
+															{
+																"open": [
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "ray:soul_torch"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_campfire"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_lantern"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:sea_pickle"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_ink_sac"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:glow_frame"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma_cream"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:magma"
+																	},
+																	{
+																		"test": "has_equipment",
+																		"operator": "==",
+																		"subject": "other",
+																		"value": "minecraft:soul_torch"
+																	}
+																],
+																"is_minified": true,
+																"children": {
+																	"test": "has_equipment",
+																	"operator": "==",
+																	"subject": "other",
+																	"value": "minecraft:soul_torch"
+																}
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": "soul_light",
+												"key": "event"
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"light": {
+										"minecraft:entity_sensor": {
+											"sensor_range": 16,
+											"minimum_count": 1,
+											"maximum_count": 1,
+											"event_filters": {
+												"any_of": [
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "ray:torch",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "ray:lava_bucket"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "minecraft:shroomlight"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:lantern",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:blaze_rod",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:blaze_powder",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:glowstone",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:lit_pumpkin",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:glowstone_dust",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"domain": "hand",
+														"subject": "other",
+														"value": "minecraft:beacon"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:campfire",
+														"domain": "hand",
+														"subject": "other"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"value": "minecraft:torch",
+														"domain": "hand",
+														"subject": "other"
+													}
+												]
+											},
+											"event": "light"
+										}
+									},
+									"soul_light": {
+										"minecraft:entity_sensor": {
+											"sensor_range": 16,
+											"minimum_count": 1,
+											"maximum_count": 1,
+											"event_filters": {
+												"any_of": [
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "ray:soul_torch"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_campfire"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_lantern"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:sea_pickle"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:glow_ink_sac"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:glow_frame"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:magma_cream"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:magma"
+													},
+													{
+														"test": "has_equipment",
+														"operator": "==",
+														"subject": "other",
+														"value": "minecraft:soul_torch"
+													}
+												]
+											},
+											"event": "soul_light"
+										}
+									},
+									"despawn": {
+										"minecraft:instant_despawn": {}
+									}
+								},
+								"key": "despawn",
+								"is_minified": true,
+								"children": {
+									"minecraft:instant_despawn": {}
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "minecraft:stonecutter_snowy_stone_brick"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "better:snowy_stone",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "better:snowy_stone_brick",
+      "data": 0,
+      "count": 1
+    }
+  }
+  
+}

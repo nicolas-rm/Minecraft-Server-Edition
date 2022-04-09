@@ -1,0 +1,246 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\ag_enchanted_book.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "6b0dd6ad_ee5c_4162_a623_1f17ccaa43fd",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:ag_enchanted_book"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:ag_enchanted_book"
+							}
+						],
+						"key": {
+							"S": {
+								"item": "minecraft:sugar"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						},
+						"pattern": [
+							"SBS",
+							"S#S"
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:sugar"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"SBS",
+								"S#S"
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:ag_enchanted_book"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:sugar"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"SBS",
+								"S#S"
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:sugar"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"SBS",
+								"S#S"
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:ag_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ag_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:sugar"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"SBS",
+								"S#S"
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"S": {
+										"item": "minecraft:sugar"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "S",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:sugar"
+								}
+							},
+							{
+								"open": {
+									"S": {
+										"item": "minecraft:sugar"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:sugar"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"SBS",
+								"S#S"
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"SBS",
+							"S#S"
+						]
+					}
+				]
+			}
+		]
+	}
+}

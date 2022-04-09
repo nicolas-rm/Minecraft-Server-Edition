@@ -1,0 +1,37 @@
+//bridge-file-version: #14
+{
+	"format_version": "1.16.200",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:lumberaxe_46"
+		},
+		"tags": [
+			"tool_forge"
+		],
+		"pattern": [
+			" #~",
+			" o",
+			"x"
+		],
+		"key": {
+			"#": {
+				"item": "strat:iron_broad_axe_head"
+			},
+			"~": {
+				"item": "strat:flint_large_plate"
+			},
+			"o": {
+				"item": "strat:wooden_tough_tool_rod"
+			},
+			"x": {
+				"item": "strat:wooden_tough_binding"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:lumberaxe_46",
+				"count": 1
+			}
+		]
+	}
+}

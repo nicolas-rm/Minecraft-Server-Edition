@@ -1,0 +1,37 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mashiene:transmorfer"
+		},
+		"tags": [
+			"mashinery_table"
+		],
+		"pattern": [
+			"OCO",
+			"BEB",
+			"OOO"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:obsidian"
+			},
+			"C": {
+				"item": "minecraft:comparator"
+			},
+			"B": {
+				"item": "minecraft:blaze_rod"
+			},
+			"E": {
+				"item": "minecraft:ender_eye"
+			}
+		},
+		"result": [
+			{
+				"item": "mashiene:transmorfer",
+				"count": 1
+			}
+		]
+	}
+}

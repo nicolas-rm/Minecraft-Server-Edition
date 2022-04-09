@@ -1,0 +1,50 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\More Enchantments Addon\\blocks.json",
+	"file_type": "client_block",
+	"format_version": 1,
+	"file_uuid": "60bcded5_ab0e_4f18_bc4b_a9231b413747",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": [
+						0,
+						0,
+						1
+					],
+					"ray:arcane_table": {
+						"textures": "arcane_table",
+						"sound": "stone"
+					}
+				},
+				"key": "format_version",
+				"is_minified": true,
+				"children": [
+					0,
+					0,
+					1
+				]
+			},
+			{
+				"open": {
+					"format_version": [
+						0,
+						0,
+						1
+					],
+					"ray:arcane_table": {
+						"textures": "arcane_table",
+						"sound": "stone"
+					}
+				},
+				"key": "ray:arcane_table",
+				"is_minified": true,
+				"children": {
+					"textures": "arcane_table",
+					"sound": "stone"
+				}
+			}
+		]
+	}
+}

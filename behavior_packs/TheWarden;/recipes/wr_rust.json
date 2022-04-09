@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "rust_121c0be3"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:dripstone_block",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:rust",
+      "count": 1
+    }
+  }
+}

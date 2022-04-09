@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.ogre": {
+      "geometry": "Geometry.default",
+	  "part_visibility": [
+        { "bone14": "!query.is_sitting" },
+        { "bone15": "query.is_sitting" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [
+        "query.is_tamed ? Texture.tame : Texture.default"
+      ]
+    }
+  }
+}

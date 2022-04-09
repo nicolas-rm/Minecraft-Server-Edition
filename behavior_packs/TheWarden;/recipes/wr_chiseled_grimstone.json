@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "chiseled_grimstone_d390bf1b"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:cracked_grimstone_tile",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:chiseled_grimstone",
+      "count": 1
+    }
+  }
+}

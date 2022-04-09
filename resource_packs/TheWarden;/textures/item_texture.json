@@ -1,0 +1,135 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_camel": {
+      "textures": "textures/items/egg_camel"
+    },
+    "egg_lion": {
+      "textures": "textures/items/egg_lion"
+    },
+    "egg_penguin": {
+      "textures": "textures/items/egg_penguin"
+    },
+    "egg_tiger": {
+      "textures": "textures/items/egg_tiger"
+    },
+    "egg_elephant": {
+      "textures": "textures/items/egg_elephant"
+    },
+    "egg_deer": {
+      "textures": "textures/items/egg_deer"
+    },
+    "egg_panther": {
+      "textures": "textures/items/egg_panther"
+    },
+    "egg_frog": {
+      "textures": "textures/items/egg_frog"
+    },
+    "egg_crocodile": {
+      "textures": "textures/items/egg_crocodile"
+    },
+    "egg_mouse": {
+      "textures": "textures/items/egg_mouse"
+    },
+    "gallardo": {
+      "textures": "textures/items/gallardo"
+    },
+    "bench": {
+      "textures": "textures/items/bench"
+    },
+    "christmas_tree": {
+      "textures": "textures/items/christmas_tree"
+    },
+    "tivi": {
+      "textures": "textures/items/tivi"
+    },
+    "closet": {
+      "textures": "textures/items/closet"
+    },
+    "laptop": {
+      "textures": "textures/items/laptop"
+    },
+    "piano": {
+      "textures": "textures/items/piano"
+    },
+    "armchairs": {
+      "textures": "textures/items/armchairs"
+    },
+    "chair": {
+      "textures": "textures/items/chair"
+    },
+    "big_table": {
+      "textures": "textures/items/big_table"
+    },
+    "small_table": {
+      "textures": "textures/items/small_table"
+    },
+    "drone": {
+      "textures": "textures/items/drone"
+    },
+    "colorful_gifts": {
+      "textures": "textures/items/colorful_gifts"
+    },
+    "wr:undead_stalker": {
+      "textures": "textures/items/pamobile/wr_undead_stalker"
+    },
+    "wr:hunger": {
+      "textures": "textures/items/pamobile/wr_hunger"
+    },
+    "wr:stalker": {
+      "textures": "textures/items/pamobile/wr_stalker"
+    },
+    "wr:stalker2": {
+      "textures": "textures/items/pamobile/wr_stalker2"
+    },
+    "wr:deep_dark_trader": {
+      "textures": "textures/items/pamobile/wr_deep_dark_trader"
+    },
+    "wr:rusted_hunch": {
+      "textures": "textures/items/pamobile/wr_rusted_hunch"
+    },
+    "wr:bat_face": {
+      "textures": "textures/items/pamobile/wr_bat_face"
+    },
+    "wr:hunchkin": {
+      "textures": "textures/items/pamobile/wr_hunchkin"
+    },
+    "wr:sculk_chute": {
+      "textures": "textures/items/pamobile/wr_sculk_chute"
+    },
+    "wr:half_rotten": {
+      "textures": "textures/items/pamobile/wr_half_rotten"
+    },
+    "wr:warden": {
+      "textures": "textures/items/pamobile/wr_warden"
+    },
+    "wr:glowing_fly": {
+      "textures": "textures/items/pamobile/wr_glowing_fly"
+    },
+    "wr:hunchback": {
+      "textures": "textures/items/pamobile/wr_hunchback"
+    },
+    "wr:batter": {
+      "textures": "textures/items/pamobile/wr_batter"
+    },
+    "wr:watchman": {
+      "textures": "textures/items/pamobile/wr_watchman"
+    },
+    "wr:creator": {
+      "textures": "textures/items/pamobile/wr_creator"
+    },
+    "wr:moss_stalker": {
+      "textures": "textures/items/pamobile/wr_moss_stalker"
+    },
+    "wr:lush_stalker": {
+      "textures": "textures/items/pamobile/wr_lush_stalker"
+    },
+    "wr:dead_stalker": {
+      "textures": "textures/items/pamobile/wr_dead_stalker"
+    },
+    "wr:hollowed": {
+      "textures": "textures/items/pamobile/wr_hollowed"
+    }
+  }
+}

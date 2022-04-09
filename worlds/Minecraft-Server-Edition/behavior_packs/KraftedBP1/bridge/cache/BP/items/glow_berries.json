@@ -1,0 +1,161 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\glow_berries.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "87fbb381_2879_4630_951d_64a4254e3d1e",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:glow_berries"
+						},
+						"components": {
+							"minecraft:use_duration": 8,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "low",
+								"is_meat": false
+							},
+							"minecraft:seed": {
+								"crop_result": "cave_vines",
+								"plant_at": [
+									"cave_vines",
+									"cave_vines_head_with_berries"
+								],
+								"plant_at_any_solid_surface": true,
+								"plant_at_face": "DOWN"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:glow_berries"
+							},
+							"components": {
+								"minecraft:use_duration": 8,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"is_meat": false
+								},
+								"minecraft:seed": {
+									"crop_result": "cave_vines",
+									"plant_at": [
+										"cave_vines",
+										"cave_vines_head_with_berries"
+									],
+									"plant_at_any_solid_surface": true,
+									"plant_at_face": "DOWN"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:glow_berries"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:glow_berries"
+							},
+							"components": {
+								"minecraft:use_duration": 8,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"is_meat": false
+								},
+								"minecraft:seed": {
+									"crop_result": "cave_vines",
+									"plant_at": [
+										"cave_vines",
+										"cave_vines_head_with_berries"
+									],
+									"plant_at_any_solid_surface": true,
+									"plant_at_face": "DOWN"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "8",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 8,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"is_meat": false
+									},
+									"minecraft:seed": {
+										"crop_result": "cave_vines",
+										"plant_at": [
+											"cave_vines",
+											"cave_vines_head_with_berries"
+										],
+										"plant_at_any_solid_surface": true,
+										"plant_at_face": "DOWN"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 2,
+									"saturation_modifier": "low",
+									"is_meat": false
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 8,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "low",
+										"is_meat": false
+									},
+									"minecraft:seed": {
+										"crop_result": "cave_vines",
+										"plant_at": [
+											"cave_vines",
+											"cave_vines_head_with_berries"
+										],
+										"plant_at_any_solid_surface": true,
+										"plant_at_face": "DOWN"
+									}
+								},
+								"key": "minecraft:seed",
+								"is_minified": true,
+								"children": {
+									"crop_result": "cave_vines",
+									"plant_at": [
+										"cave_vines",
+										"cave_vines_head_with_berries"
+									],
+									"plant_at_any_solid_surface": true,
+									"plant_at_face": "DOWN"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,19 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "korbon:select_viscosa_feature"
+		},
+		"features": [
+			[
+				"korbon:viscosa_scatter_feature",
+				10
+			],
+			[
+				"korbon:viscosa_tall_scatter_feature",
+				8
+			]
+		]
+	}
+}

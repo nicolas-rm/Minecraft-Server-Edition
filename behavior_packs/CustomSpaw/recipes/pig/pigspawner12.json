@@ -1,0 +1,23 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.12.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "mrleefy:pigspawner12"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "mrleefy:pigspawner12"
+			}
+		],
+		"result": [
+			{
+				"item": "mrleefy:pigspawner",
+				"count": 12
+			}
+		]
+	}
+}

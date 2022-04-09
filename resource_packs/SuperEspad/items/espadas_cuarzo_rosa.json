@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:cuarzo_rosa",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:cuarzo_rosa",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

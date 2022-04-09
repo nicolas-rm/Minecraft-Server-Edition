@@ -1,0 +1,327 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\ally_fang.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "16c96afa_5f96_4f40_9fc6_6988c70d6c96",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vanilla_twilight:ally_evocation_fang",
+							"materials": {
+								"default": "fang"
+							},
+							"textures": {
+								"default": "textures/entity/ally_evocation_fang"
+							},
+							"geometry": {
+								"default": "geometry.evocation_fang"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+									"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+									"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+									"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+								],
+								"animate": [
+									"bite"
+								],
+								"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+							},
+							"animations": {
+								"bite": "animation.evocation_fang.bite"
+							},
+							"render_controllers": [
+								"controller.render.evocation_fang"
+							]
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:ally_evocation_fang",
+								"materials": {
+									"default": "fang"
+								},
+								"textures": {
+									"default": "textures/entity/ally_evocation_fang"
+								},
+								"geometry": {
+									"default": "geometry.evocation_fang"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+										"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+										"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+										"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+									],
+									"animate": [
+										"bite"
+									],
+									"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+								},
+								"animations": {
+									"bite": "animation.evocation_fang.bite"
+								},
+								"render_controllers": [
+									"controller.render.evocation_fang"
+								]
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "vanilla_twilight:ally_evocation_fang",
+									"materials": {
+										"default": "fang"
+									},
+									"textures": {
+										"default": "textures/entity/ally_evocation_fang"
+									},
+									"geometry": {
+										"default": "geometry.evocation_fang"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+											"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+											"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+											"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+										],
+										"animate": [
+											"bite"
+										],
+										"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+									},
+									"animations": {
+										"bite": "animation.evocation_fang.bite"
+									},
+									"render_controllers": [
+										"controller.render.evocation_fang"
+									]
+								},
+								"data": "vanilla_twilight:ally_evocation_fang",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:ally_evocation_fang",
+									"materials": {
+										"default": "fang"
+									},
+									"textures": {
+										"default": "textures/entity/ally_evocation_fang"
+									},
+									"geometry": {
+										"default": "geometry.evocation_fang"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+											"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+											"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+											"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+										],
+										"animate": [
+											"bite"
+										],
+										"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+									},
+									"animations": {
+										"bite": "animation.evocation_fang.bite"
+									},
+									"render_controllers": [
+										"controller.render.evocation_fang"
+									]
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "fang"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:ally_evocation_fang",
+									"materials": {
+										"default": "fang"
+									},
+									"textures": {
+										"default": "textures/entity/ally_evocation_fang"
+									},
+									"geometry": {
+										"default": "geometry.evocation_fang"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+											"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+											"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+											"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+										],
+										"animate": [
+											"bite"
+										],
+										"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+									},
+									"animations": {
+										"bite": "animation.evocation_fang.bite"
+									},
+									"render_controllers": [
+										"controller.render.evocation_fang"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/ally_evocation_fang"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.evocation_fang"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:ally_evocation_fang",
+									"materials": {
+										"default": "fang"
+									},
+									"textures": {
+										"default": "textures/entity/ally_evocation_fang"
+									},
+									"geometry": {
+										"default": "geometry.evocation_fang"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+											"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+											"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+											"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+										],
+										"animate": [
+											"bite"
+										],
+										"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+									},
+									"animations": {
+										"bite": "animation.evocation_fang.bite"
+									},
+									"render_controllers": [
+										"controller.render.evocation_fang"
+									]
+								},
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+										"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+										"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+										"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+									],
+									"animate": [
+										"bite"
+									],
+									"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:ally_evocation_fang",
+									"materials": {
+										"default": "fang"
+									},
+									"textures": {
+										"default": "textures/entity/ally_evocation_fang"
+									},
+									"geometry": {
+										"default": "geometry.evocation_fang"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+											"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+											"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+											"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+										],
+										"animate": [
+											"bite"
+										],
+										"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+									},
+									"animations": {
+										"bite": "animation.evocation_fang.bite"
+									},
+									"render_controllers": [
+										"controller.render.evocation_fang"
+									]
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"bite": "animation.evocation_fang.bite"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:ally_evocation_fang",
+									"materials": {
+										"default": "fang"
+									},
+									"textures": {
+										"default": "textures/entity/ally_evocation_fang"
+									},
+									"geometry": {
+										"default": "geometry.evocation_fang"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.remaining_life = (query.life_span - 2.0) - (query.life_time*20.0);",
+											"variable.animation_progress = query.life_span == 0.0 ? 0.0 : (variable.remaining_life < 1.0 ? 1.0 : 1.0 - Math.min(1.0, variable.remaining_life / 20.0));",
+											"variable.bite_amount = (1 - Math.Pow(Math.Clamp(variable.animation_progress*2.0, 0, 1.0), 3.0)) * 0.35 * 180;",
+											"variable.y_offset = (variable.animation_progress + Math.sin(variable.animation_progress*2.7*80.0)) * 0.6 * 12.0;"
+										],
+										"animate": [
+											"bite"
+										],
+										"scale": "variable.animation_progress > 0.9 ? (1.0 - variable.animation_progress) / 0.1 : 1.0"
+									},
+									"animations": {
+										"bite": "animation.evocation_fang.bite"
+									},
+									"render_controllers": [
+										"controller.render.evocation_fang"
+									]
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.evocation_fang"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

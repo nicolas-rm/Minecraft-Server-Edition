@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "iron"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+            {
+                "item": "heavy:multi_backpack"
+            },
+			{
+                "item": "minecraft:iron_ingot"
+            }
+		],
+		"result": [
+			{
+				"item": "heavy:multi_backpack_iron"
+			}
+		]
+	}
+}

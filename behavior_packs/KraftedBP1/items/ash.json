@@ -1,0 +1,23 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mashiene:ash",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:stacked_by_data": true,
+			"minecraft:icon": {
+				"texture": "ash"
+			},
+			"minecraft:block_placer": {
+				"block": "mashiene:keep_ash_block"
+			},
+			"minecraft:dye_powder": {
+				"color": 15
+			}
+		},
+		"events": {}
+	}
+}

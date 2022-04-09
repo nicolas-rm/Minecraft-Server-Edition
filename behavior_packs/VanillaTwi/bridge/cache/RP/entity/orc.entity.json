@@ -1,0 +1,557 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\orc.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "e39e4ec6_10da_4309_99d8_098b40ed4cd1",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:orc",
+							"materials": {
+								"default": "goblin"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/orc"
+							},
+							"geometry": {
+								"default": "geometry.orc"
+							},
+							"animations": {
+								"vindicator_walk": "animation.ogre.move",
+								"attack.goblin": "animation.orc.attack",
+								"look_at_target_default": "animation.kobold.look_at_target.default",
+								"bob": "animation.humanoid.bob"
+							},
+							"animation_controllers": [
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"vindicator_base": "controller.animation.vindicator.base.v1.0"
+								},
+								{
+									"attack": "controller.animation.goblin.attack"
+								},
+								{
+									"bob": "controller.animation.humanoid.bob"
+								}
+							],
+							"render_controllers": [
+								"controller.render.orc"
+							],
+							"enable_attachables": false,
+							"spawn_egg": {
+								"base_color": "#ae5653",
+								"overlay_color": "#4F5A2C"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:orc",
+								"materials": {
+									"default": "goblin"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/orc"
+								},
+								"geometry": {
+									"default": "geometry.orc"
+								},
+								"animations": {
+									"vindicator_walk": "animation.ogre.move",
+									"attack.goblin": "animation.orc.attack",
+									"look_at_target_default": "animation.kobold.look_at_target.default",
+									"bob": "animation.humanoid.bob"
+								},
+								"animation_controllers": [
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"vindicator_base": "controller.animation.vindicator.base.v1.0"
+									},
+									{
+										"attack": "controller.animation.goblin.attack"
+									},
+									{
+										"bob": "controller.animation.humanoid.bob"
+									}
+								],
+								"render_controllers": [
+									"controller.render.orc"
+								],
+								"enable_attachables": false,
+								"spawn_egg": {
+									"base_color": "#ae5653",
+									"overlay_color": "#4F5A2C"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:orc",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "goblin"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/orc"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.orc"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"vindicator_walk": "animation.ogre.move",
+									"attack.goblin": "animation.orc.attack",
+									"look_at_target_default": "animation.kobold.look_at_target.default",
+									"bob": "animation.humanoid.bob"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"is_minified": true,
+										"children": {
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"attack": "controller.animation.goblin.attack"
+											},
+											{
+												"bob": "controller.animation.humanoid.bob"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"attack": "controller.animation.goblin.attack"
+											},
+											{
+												"bob": "controller.animation.humanoid.bob"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"attack": "controller.animation.goblin.attack"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"attack": "controller.animation.goblin.attack"
+											},
+											{
+												"bob": "controller.animation.humanoid.bob"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"bob": "controller.animation.humanoid.bob"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.orc"
+								]
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"data": "false",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:orc",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/orc"
+									},
+									"geometry": {
+										"default": "geometry.orc"
+									},
+									"animations": {
+										"vindicator_walk": "animation.ogre.move",
+										"attack.goblin": "animation.orc.attack",
+										"look_at_target_default": "animation.kobold.look_at_target.default",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"attack": "controller.animation.goblin.attack"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.orc"
+									],
+									"enable_attachables": false,
+									"spawn_egg": {
+										"base_color": "#ae5653",
+										"overlay_color": "#4F5A2C"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#ae5653",
+									"overlay_color": "#4F5A2C"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "tonfa"
+		},
+		"tags": [
+			"advanced_crafting_table"
+		],
+		"pattern": [
+			"A",
+			"AA",
+			"AC"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"C": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": [
+			{
+				"item": "true:tonfa"
+			}
+		]
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "better:emerald_hills_emerald_ore_feature"
+    },
+    "count": 9,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "minecraft:emerald_ore"
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:stone"
+          }
+        ]
+      }
+    ]
+  }
+}

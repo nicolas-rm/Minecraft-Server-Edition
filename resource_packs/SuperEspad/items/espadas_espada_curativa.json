@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:espada_curativa",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:espada_curativa",
+      "minecraft:use_animation": "bow",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

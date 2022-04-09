@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:cooked_deer",
+      "category": "Items"
+    },
+
+    "components": {
+      "minecraft:icon": "cooked_deer",
+      "minecraft:use_animation": "eat",
+
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

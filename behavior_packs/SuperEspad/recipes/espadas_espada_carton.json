@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "espada_carton_dcc4a556"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A",
+      "A"
+    ],
+    "key": {
+      "A": {
+        "item": "espadas:carton",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "espadas:espada_carton",
+      "count": 1
+    }
+  }
+}

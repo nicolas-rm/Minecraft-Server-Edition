@@ -1,0 +1,53 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hud_temperature",
+				"texture_width": 22,
+				"texture_height": 22,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 69,
+				"visible_bounds_offset": [0, 11.5, 0]
+			},
+			"bones": [
+				{
+					"name": "hud_temperature",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-11, -11, 0],
+							"size": [22, 22, 0],
+							"uv": {
+								"north": {"uv": [5, 0], "uv_size": [12, 12]},
+								"east": {"uv": [0, 0], "uv_size": [0, 22]},
+								"south": {"uv": [22, 0], "uv_size": [22, 22]},
+								"west": {"uv": [22, 0], "uv_size": [0, 22]},
+								"up": {"uv": [0, 0], "uv_size": [22, 0]},
+								"down": {"uv": [22, 0], "uv_size": [22, 0]}
+							}
+						}
+					]
+				},
+				{
+					"name": "arrow",
+					"pivot": [0, 299, 0],
+					"cubes": [
+						{
+							"origin": [-11, 288, 0],
+							"size": [22, 22, 0],
+							"uv": {
+								"north": {"uv": [6, 12], "uv_size": [10, 10]},
+								"east": {"uv": [0, 0], "uv_size": [0, 22]},
+								"south": {"uv": [22, 0], "uv_size": [22, 22]},
+								"west": {"uv": [22, 0], "uv_size": [0, 22]},
+								"up": {"uv": [0, 0], "uv_size": [22, 0]},
+								"down": {"uv": [22, 0], "uv_size": [22, 0]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

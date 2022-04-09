@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "better:stone_pickaxe_from_compresed_dripstone"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      " # ",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "better:compresed_dripstone"
+      }
+    },
+    "result": {
+      "item": "minecraft:stone_pickaxe"
+    },
+    "priority": 2
+  }
+}

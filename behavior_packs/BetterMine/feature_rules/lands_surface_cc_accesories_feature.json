@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+      "description": {
+        "identifier": "better:lands_surface_cc_accesories_feature",
+        "places_feature": "better:cc_accesories_feature"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "lands"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": 5.55,
+      "x": 0,
+      "y": "query.heightmap(variable.worldx, variable.worldz) - 1",
+      "z": 0
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "minecraft:bone",
+              "quantity": {
+                "min": 9,
+                "max": 19
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 2,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "better:ash",
+              "quantity": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:crossbow",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 3,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:stick",
+              "quantity": {
+                "min": 32,
+                "max": 64
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "better:ugha_mace",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 18,
+                "max": 40
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:potion:36",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 18,
+                "max": 40
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:saddle",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 5,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:music_disc_11",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:music_disc_13",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:music_disc_pigstep",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:music_disc_ward",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "better:herobrine_chestplate",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 32,
+                "max": 42
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "better:night_sword",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 12,
+                "max": 20
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:obsidian",
+              "quantity": {
+                "min": 5,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 20,
+                "max": 22
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "better:sword_42dbs",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 25,
+                "max": 25
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:sandstone",
+              "quantity": {
+                "min": 9,
+                "max": 19
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:rotten_flesh",
+              "quantity": {
+                "min": 29,
+                "max": 29
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 3,
+                "max": 3
+                      }
+                  }
+              ]
+           },
+		{
+          "wants": [
+            {
+              "item": "minecraft:totem_of_undying"
+            }
+          ],
+          "gives": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 32,
+                "max": 32
+                      }
+                  }
+              ]
+           },
+          {
+          "wants": [
+            {
+              "item": "better:hbstatue",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "better:silver_ingot",
+              "quantity": {
+                "min": 16,
+                "max": 32
+                      }
+                  }
+              ]
+           }
+        ]
+     }
+  ]
+}

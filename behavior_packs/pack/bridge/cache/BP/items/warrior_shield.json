@@ -1,0 +1,187 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\items\\warrior_shield.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "37a345f2_6cae_457f_bcac_8c00b837e174",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "ray:shield",
+							"category": "commands"
+						},
+						"components": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:durability": {
+								"max_damage": 336,
+								"max_durability": 336
+							},
+							"minecraft:allow_off_hand": true,
+							"minecraft:wearable": {
+								"slot": "slot.weapon.offhand"
+							},
+							"minecraft:display_name": {
+								"value": "a"
+							},
+							"minecraft:foil": true
+						}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "ray:shield",
+							"category": "commands"
+						},
+						"components": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:durability": {
+								"max_damage": 336,
+								"max_durability": 336
+							},
+							"minecraft:allow_off_hand": true,
+							"minecraft:wearable": {
+								"slot": "slot.weapon.offhand"
+							},
+							"minecraft:display_name": {
+								"value": "a"
+							},
+							"minecraft:foil": true
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:shield",
+								"category": "commands"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:durability": {
+									"max_damage": 336,
+									"max_durability": 336
+								},
+								"minecraft:allow_off_hand": true,
+								"minecraft:wearable": {
+									"slot": "slot.weapon.offhand"
+								},
+								"minecraft:display_name": {
+									"value": "a"
+								},
+								"minecraft:foil": true
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:shield",
+							"category": "commands"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:shield",
+								"category": "commands"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:durability": {
+									"max_damage": 336,
+									"max_durability": 336
+								},
+								"minecraft:allow_off_hand": true,
+								"minecraft:wearable": {
+									"slot": "slot.weapon.offhand"
+								},
+								"minecraft:display_name": {
+									"value": "a"
+								},
+								"minecraft:foil": true
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_damage": 336,
+										"max_durability": 336
+									},
+									"minecraft:allow_off_hand": true,
+									"minecraft:wearable": {
+										"slot": "slot.weapon.offhand"
+									},
+									"minecraft:display_name": {
+										"value": "a"
+									},
+									"minecraft:foil": true
+								},
+								"key": "minecraft:durability",
+								"is_minified": true,
+								"children": {
+									"max_damage": 336,
+									"max_durability": 336
+								}
+							},
+							{
+								"data": "true",
+								"key": "minecraft:allow_off_hand"
+							},
+							{
+								"key": "minecraft:wearable",
+								"is_minified": true,
+								"children": {
+									"slot": "slot.weapon.offhand"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_damage": 336,
+										"max_durability": 336
+									},
+									"minecraft:allow_off_hand": true,
+									"minecraft:wearable": {
+										"slot": "slot.weapon.offhand"
+									},
+									"minecraft:display_name": {
+										"value": "a"
+									},
+									"minecraft:foil": true
+								},
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {
+									"value": "a"
+								}
+							},
+							{
+								"data": "true",
+								"key": "minecraft:foil"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,1463 @@
+{
+	"rp_animation_controller": {
+		"RP/animation_controllers/goblin.animation_controllers.json": {
+			"ids": [
+				"controller.animation.goblin.attack",
+				"controller.animation.goblin.spawn",
+				"controller.animation.goblin_archer.attack",
+				"controller.animation.goblin.idle",
+				"controller.animation.kobold.look_at_target",
+				"controller.animation.kobold.equip_sound"
+			]
+		},
+		"RP/animation_controllers/hagbat.animation_controllers.json": {
+			"ids": [
+				"controller.animation.minotaur.base",
+				"controller.animation.minotaur.move",
+				"controller.animation.minotaur.attack"
+			]
+		},
+		"RP/animation_controllers/minotaur.animation_controllers.json": {
+			"ids": [
+				"controller.animation.minotaur.base",
+				"controller.animation.minotaur.move",
+				"controller.animation.minotaur.attack"
+			]
+		}
+	},
+	"client_entity": {
+		"RP/entity/goblin.archer.entity.json": {
+			"identifiers": [
+				"mythmob:goblin.archer"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"move",
+				"attack.goblin",
+				"scared"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"geometry.goblin_archer"
+			]
+		},
+		"RP/entity/goblin.berserker.entity.json": {
+			"identifiers": [
+				"mythmob:goblin.berserker"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"move",
+				"attack.goblin",
+				"scared"
+			],
+			"sound_references": [
+				"laugh"
+			],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/goblin.stooges.entity.json": {
+			"identifiers": [
+				"mythmob:goblin_stooges"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"move",
+				"attack.rotations"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/mimic.entity.json": {
+			"identifiers": [
+				"mythmob:mimic"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"attack.rotations"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/hagbat.entity.json": {
+			"identifiers": [
+				"vanilla_twilight:hagbat"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"move",
+				"attack.goblin",
+				"flying"
+			],
+			"sound_references": [
+				"hagbat_flap"
+			],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/minotaur.entity.json": {
+			"identifiers": [
+				"mythmob:minotaur"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"minotaur_base",
+				"move",
+				"attack",
+				"look_at_target_default",
+				"minotaur_angry"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/cockatrice.entity.json": {
+			"identifiers": [
+				"vanilla_twilight:cockatrice"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"vindicator_attack",
+				"vindicator_walk"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/werewolf.entity.json": {
+			"identifiers": [
+				"mythmob:werewolf2"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"vindicator_attack",
+				"vindicator_walk"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default",
+				"head"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/troll.entity.json": {
+			"identifiers": [
+				"mythmob:troll"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"move",
+				"riding.arms",
+				"riding.legs",
+				"holding",
+				"brandish_spear",
+				"charging",
+				"attack.rotations",
+				"sneaking",
+				"bob",
+				"damage_nearby_mobs",
+				"bow_and_arrow",
+				"swimming",
+				"use_item_progress",
+				"skeleton_attack"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/necromancer_villager.entity.json": {
+			"identifiers": [
+				"mythmob:necromancer_illager"
+			],
+			"particle_references": [
+				"spell"
+			],
+			"animation_references": [
+				"general",
+				"casting",
+				"look_at_target",
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/centaur.entity.json": {
+			"identifiers": [
+				"mythmob:centaur"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"riding.arms",
+				"riding.legs",
+				"vindicator_base",
+				"vindicator_attack",
+				"vindicator_walk",
+				"bob"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/orc.entity.json": {
+			"identifiers": [
+				"mythmob:orc"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"vindicator_walk",
+				"attack.goblin",
+				"look_at_target_default",
+				"bob"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/giantspider.entity.json": {
+			"identifiers": [
+				"mythmob:giantspider"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"default_leg_pose",
+				"look_at_target",
+				"wolf_sitting",
+				"walk"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default",
+				"tame"
+			],
+			"material_references": [
+				"default",
+				"invisible"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/kobold.entity.json": {
+			"identifiers": [
+				"vanilla_twilight:kobold"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"look_at_target_default",
+				"move",
+				"attack.rotations"
+			],
+			"sound_references": [
+				"equip_sound"
+			],
+			"texture_references": [
+				"default",
+				"bulldog2",
+				"shiba",
+				"shiba2",
+				"wolf",
+				"wolf2"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default",
+				"default.bulldog",
+				"default.shiba",
+				"default.wolf",
+				"armor.bulldog",
+				"armor.shiba",
+				"armor.wolf"
+			],
+			"geometry_identifiers": [
+				"default",
+				"default.bulldog",
+				"default.shiba",
+				"default.wolf",
+				"armor.bulldog",
+				"armor.shiba",
+				"armor.wolf"
+			]
+		},
+		"RP/entity/satyr.entity.json": {
+			"identifiers": [
+				"mythmob:satyr"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"move",
+				"riding.arms",
+				"riding.legs",
+				"holding",
+				"attack.rotations",
+				"bob",
+				"crossbow_hold",
+				"crossbow_charge"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/giant.entity.json": {
+			"identifiers": [
+				"mythmob:giant"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"vindicator_attack",
+				"vindicator_walk",
+				"look_at_target_default"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/mushroom2.entity.json": {
+			"identifiers": [
+				"mythmob:mushroom2"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"move",
+				"riding.arms",
+				"riding.legs",
+				"brandish_spear",
+				"charging",
+				"sneaking",
+				"bow_and_arrow",
+				"swimming",
+				"use_item_progress"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/mushroom.entity.json": {
+			"identifiers": [
+				"mythmob:mushroom"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_base_pose",
+				"move",
+				"riding.arms",
+				"riding.legs",
+				"brandish_spear",
+				"charging",
+				"sneaking",
+				"bow_and_arrow",
+				"swimming",
+				"use_item_progress"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/swordsman_villager.entity.json": {
+			"identifiers": [
+				"vanilla_twilight:swordsman_villager"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"riding.arms",
+				"riding.legs",
+				"vindicator_base",
+				"vindicator_attack",
+				"vindicator_walk"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/archer_villager.entity.json": {
+			"identifiers": [
+				"vanilla_twilight:archer_villager"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"riding.arms",
+				"riding.legs",
+				"vindicator_base",
+				"vindicator_attack",
+				"vindicator_walk"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/evocation_villager.entity.json": {
+			"identifiers": [
+				"vanilla_twilight:evocation_villager"
+			],
+			"particle_references": [
+				"spell"
+			],
+			"animation_references": [
+				"general",
+				"casting",
+				"look_at_target",
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/ally_fang.json": {
+			"identifiers": [
+				"vanilla_twilight:ally_evocation_fang"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"bite"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/nitwit.entity.json": {
+			"identifiers": [
+				"mythmob:werewolf"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"riding.arms",
+				"riding.legs",
+				"vindicator_base",
+				"vindicator_attack",
+				"vindicator_walk"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/marked_arrow.json": {
+			"identifiers": [
+				"vt:arrow"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/kobold_leader_id.json": {
+			"identifiers": [
+				"vanilla_twilight:kobold_banner"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"face_player"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	},
+	"entity": {
+		"BP/entities/goblin.json": {
+			"events": [
+				"become_scared",
+				"minecraft:become_aggro",
+				"minecraft:stop_aggro",
+				"minecraft:entity_spawned"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:goblin"
+			],
+			"animation_references": [],
+			"families": [
+				"goblin",
+				"monster"
+			],
+			"custom_commands": []
+		},
+		"BP/entities/goblin_archer.json": {
+			"events": [
+				"become_scared",
+				"minecraft:become_aggro",
+				"minecraft:stop_aggro",
+				"minecraft:entity_spawned"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:goblin.archer"
+			],
+			"animation_references": [],
+			"families": [
+				"goblin",
+				"monster"
+			],
+			"custom_commands": []
+		},
+		"BP/entities/goblin_berserker.json": {
+			"events": [
+				"become_scared",
+				"minecraft:become_aggro",
+				"minecraft:stop_aggro",
+				"minecraft:entity_spawned"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:goblin.berserker"
+			],
+			"animation_references": [],
+			"families": [
+				"goblin",
+				"monster"
+			],
+			"custom_commands": []
+		},
+		"BP/entities/mimic.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:become_calm",
+				"minecraft:become_aggressive"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:mimic"
+			],
+			"animation_references": [],
+			"families": [
+				"mimic"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/hagbat.json": {
+			"events": [
+				"hagbat_fly",
+				"minecraft:entity_transformed",
+				"minecraft:entity_spawned",
+				"minecraft:on_calm",
+				"minecraft:become_angry",
+				"hagbat_ground"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vanilla_twilight:hagbat"
+			],
+			"animation_references": [],
+			"families": [
+				"hagbat",
+				"monster",
+				"zombie"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/minotuar.json": {
+			"events": [
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:minotaur"
+			],
+			"animation_references": [],
+			"families": [
+				"monster",
+				"minotaur"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/troll.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:spring_trap",
+				"minecraft:melee_mode",
+				"minecraft:ranged_mode"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:troll"
+			],
+			"animation_references": [],
+			"families": [
+				"troll"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/villager_v2.json": {
+			"events": [
+				"convert_to_swordsman",
+				"convert_to_archer",
+				"convert_to_evoker",
+				"become_witch",
+				"become_zombie",
+				"minecraft:entity_spawned",
+				"minecraft:spawn_from_village",
+				"minecraft:entity_transformed",
+				"minecraft:entity_born",
+				"minecraft:spawn_farmer",
+				"minecraft:spawn_librarian",
+				"minecraft:spawn_cleric",
+				"minecraft:spawn_armorer",
+				"minecraft:spawn_butcher",
+				"minecraft:ageable_grow_up",
+				"minecraft:become_unskilled",
+				"minecraft:become_cleric",
+				"minecraft:become_farmer",
+				"minecraft:become_fisherman",
+				"minecraft:become_fletcher",
+				"minecraft:become_librarian",
+				"minecraft:become_cartographer",
+				"minecraft:become_armorer",
+				"minecraft:become_weaponsmith",
+				"minecraft:become_toolsmith",
+				"minecraft:become_butcher",
+				"minecraft:become_leatherworker",
+				"minecraft:become_sheperd",
+				"minecraft:become_mason",
+				"minecraft:schedule_wander_villager",
+				"minecraft:schedule_gather_villager",
+				"minecraft:schedule_home_villager",
+				"minecraft:schedule_bed_villager",
+				"minecraft:schedule_play_villager",
+				"minecraft:schedule_work_pro_villager",
+				"minecraft:schedule_work_farmer",
+				"minecraft:schedule_work_fisher",
+				"minecraft:schedule_work_librarian",
+				"minecraft:resupply_trades"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:villager_v2"
+			],
+			"animation_references": [],
+			"families": [
+				"villager",
+				"mob",
+				"villager",
+				"peasant",
+				"mob",
+				"villager",
+				"peasant",
+				"farmer",
+				"mob",
+				"villager",
+				"peasant",
+				"fisherman",
+				"mob",
+				"villager",
+				"peasant",
+				"shepherd",
+				"mob",
+				"villager",
+				"peasant",
+				"fletcher",
+				"mob",
+				"villager",
+				"librarian",
+				"mob",
+				"villager",
+				"cartographer",
+				"mob",
+				"villager",
+				"priest",
+				"cleric",
+				"mob",
+				"villager",
+				"blacksmith",
+				"armorer",
+				"mob",
+				"villager",
+				"blacksmith",
+				"weaponsmith",
+				"mob",
+				"villager",
+				"blacksmith",
+				"toolsmith",
+				"mob",
+				"villager",
+				"artisan",
+				"butcher",
+				"mob",
+				"villager",
+				"artisan",
+				"leatherworker",
+				"mob",
+				"villager",
+				"artisan",
+				"stone_mason",
+				"mob",
+				"villager",
+				"peasant",
+				"nitwit",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/swordsman_villager.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:entity_transformed"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vanilla_twilight:swordsman_villager"
+			],
+			"animation_references": [],
+			"families": [
+				"swordsman",
+				"villagedefender",
+				"villager"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/archer_villager.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:entity_transformed"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vanilla_twilight:archer_villager"
+			],
+			"animation_references": [],
+			"families": [
+				"archer",
+				"villagedefender",
+				"villager"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/evocation_villager.json": {
+			"events": [
+				"minecraft:become_calm",
+				"minecraft:become_aggressive",
+				"minecraft:start_exploding",
+				"minecraft:stop_exploding"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vanilla_twilight:evocation_villager"
+			],
+			"animation_references": [],
+			"families": [
+				"evocation_villager",
+				"villagedefender",
+				"villager"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/cockatrice.json": {
+			"events": [
+				"minecraft:switch_to_melee",
+				"minecraft:switch_to_ranged",
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vanilla_twilight:cockatrice"
+			],
+			"animation_references": [],
+			"families": [
+				"monster",
+				"undead",
+				"skeleton"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/spiritgoblin.json": {
+			"events": [
+				"minecraft:entity_transformed",
+				"minecraft:entity_spawned",
+				"minecraft:on_calm",
+				"minecraft:become_angry",
+				"despawn"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:goblin_spirit"
+			],
+			"animation_references": [],
+			"families": [
+				"spirit",
+				"villager"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/marked_arrow.json": {
+			"events": [
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vt:arrow"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/kobold.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:on_tame",
+				"minecraft:become_angry",
+				"minecraft:on_calm",
+				"suit_up_bulldog",
+				"suit_up_shiba",
+				"suit_up_wolf",
+				"equip",
+				"equip2",
+				"equip3",
+				"equip_sound",
+				"equip_sound_stop",
+				"minecraft:entity_spawned_from_bell",
+				"minecraft:entity_spawned_from_bell_bearer"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vanilla_twilight:kobold"
+			],
+			"animation_references": [],
+			"families": [
+				"kobold",
+				"kobold",
+				"wild_kobold"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/kobold_banner.behavior.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"despawn",
+				"kill_lead"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"vanilla_twilight:kobold_banner"
+			],
+			"animation_references": [],
+			"families": [
+				"kobold_banner"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/giant.json": {
+			"events": [
+				"minecraft:entity_transformed",
+				"minecraft:entity_spawned",
+				"minecraft:on_calm",
+				"minecraft:become_angry"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:giant"
+			],
+			"animation_references": [],
+			"families": [
+				"giant",
+				"monster"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/giantspider.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:on_tame",
+				"saddled",
+				"unsaddled",
+				"minecraft:become_hostile",
+				"minecraft:become_neutral",
+				"minecraft:become_angry",
+				"minecraft:become_calm"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:giantspider"
+			],
+			"animation_references": [],
+			"families": [
+				"tamed",
+				"spider",
+				"monster",
+				"arthropod",
+				"spider",
+				"monster",
+				"arthropod"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/knight_skeleton.json": {
+			"events": [
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:skeletonknight"
+			],
+			"animation_references": [],
+			"families": [
+				"monster",
+				"undead",
+				"skeleton"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/mushroom.json": {
+			"events": [
+				"minecraft:entity_transformed",
+				"minecraft:entity_spawned",
+				"minecraft:on_calm",
+				"minecraft:become_angry"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:mushroom"
+			],
+			"animation_references": [],
+			"families": [
+				"goblin"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/mushroom2.json": {
+			"events": [
+				"minecraft:entity_transformed",
+				"minecraft:entity_spawned",
+				"minecraft:on_calm",
+				"minecraft:become_angry"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:mushroom2"
+			],
+			"animation_references": [],
+			"families": [
+				"goblin"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/necromancer.json": {
+			"events": [
+				"minecraft:spawn_for_raid"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:necromancer_illager"
+			],
+			"animation_references": [],
+			"families": [
+				"necromancer",
+				"monster",
+				"illager"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/nymph.json": {
+			"events": [
+				"become_invisible",
+				"minecraft:entity_spawned",
+				"minecraft:become_angry"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:nymph"
+			],
+			"animation_references": [],
+			"families": [
+				"nymph",
+				"monster"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/nymph2.json": {
+			"events": [
+				"become_invisible",
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:nymph2"
+			],
+			"animation_references": [],
+			"families": [
+				"husk",
+				"monster",
+				"undead",
+				"zombie"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/ogre.json": {
+			"events": [
+				"become_scared",
+				"minecraft:on_tame",
+				"dozing_off",
+				"sleeping",
+				"wakeywakey",
+				"berserk",
+				"minecraft:become_aggro",
+				"minecraft:tamed_aggro",
+				"minecraft:stop_aggro",
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:ogre"
+			],
+			"animation_references": [],
+			"families": [
+				"monster",
+				"ogre",
+				"tamed",
+				"monster",
+				"ogre"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/ogre_sleeping.json": {
+			"events": [
+				"minecraft:on_tame",
+				"wakeywakey",
+				"minecraft:become_aggro",
+				"minecraft:stop_aggro"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:ogre_sleeping"
+			],
+			"animation_references": [],
+			"families": [
+				"boat",
+				"inanimate",
+				"ogre",
+				"monster",
+				"ogre"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/orc.json": {
+			"events": [
+				"minecraft:become_aggro",
+				"minecraft:stop_aggro",
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:orc"
+			],
+			"animation_references": [],
+			"families": [
+				"zombie_pigman",
+				"orc",
+				"undead",
+				"monster"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/satyr.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:start_despawn",
+				"minecraft:become_scared",
+				"minecraft:become_calm"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:satyr"
+			],
+			"animation_references": [],
+			"families": [
+				"satyr",
+				"wandering_trader",
+				"wandering_trader",
+				"wandering_trader_despawning"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/wraith.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:wraith"
+			],
+			"animation_references": [],
+			"families": [
+				"wraith",
+				"undead",
+				"monster"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/werewolf2.json": {
+			"events": [
+				"become_normal",
+				"calm",
+				"aggressive",
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:werewolf2"
+			],
+			"animation_references": [],
+			"families": [
+				"husk",
+				"monster",
+				"undead",
+				"zombie"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/werewolf.json": {
+			"events": [
+				"become_werewolf",
+				"minecraft:start_roar",
+				"minecraft:entity_spawned",
+				"minecraft:become_angry"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"mythmob:werewolf"
+			],
+			"animation_references": [],
+			"families": [
+				"nymph",
+				"monster"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"render_controller": {
+		"RP/render_controllers/village_guard.json": {
+			"ids": [
+				"controller.render.villager_guard"
+			]
+		},
+		"RP/render_controllers/orc.render_controllers.json": {
+			"ids": [
+				"controller.render.orc"
+			]
+		},
+		"RP/render_controllers/koboldv2.json": {
+			"ids": [
+				"controller.render.vanilla_twilight.kobold"
+			]
+		},
+		"RP/render_controllers/kobold_weapon.json": {
+			"ids": [
+				"controller.render.vanilla_twilight.kobold_weapon"
+			]
+		},
+		"RP/render_controllers/koboldv2_armor.json": {
+			"ids": [
+				"controller.render.vanilla_twilight.kobold"
+			]
+		}
+	},
+	"rp_animation": {},
+	"sound_definition": {
+		"RP/sounds/sound_definitions.json": {
+			"ids": [
+				"mob.goblin.idle",
+				"mob.goblin.ambient",
+				"mob.goblin.hurt",
+				"mob.goblin.angry",
+				"mob.goblin.death",
+				"mob.hagbat.flap",
+				"mob.ogre.death.tamed",
+				"mob.ogre.hurt",
+				"mob.ogre.death",
+				"mob.ogre.ambienttamed",
+				"mob.ogre.ambient"
+			]
+		}
+	},
+	"function": {
+		"166d9a2b_ff76_4ca1_86a2_bd45b62d4dd8": {}
+	}
+}

@@ -1,0 +1,262 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\maple_leaves.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "7b8c3b19_a84d_413f_9b78_c5cf83b197c1",
+	"file_version": 15,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": {
+								"min": 1,
+								"max": 1
+							},
+							"entries": [
+								{
+									"type": "empty",
+									"weight": 31
+								},
+								{
+									"type": "item",
+									"name": "minecraft:stick",
+									"weight": 1
+								},
+								{
+									"type": "item",
+									"name": "strat:maple_sapling_item",
+									"weight": 5
+								},
+								{
+									"type": "item",
+									"name": "strat:maple_leaf",
+									"weight": 3
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 1
+								},
+								"entries": [
+									{
+										"type": "empty",
+										"weight": 31
+									},
+									{
+										"type": "item",
+										"name": "minecraft:stick",
+										"weight": 1
+									},
+									{
+										"type": "item",
+										"name": "strat:maple_sapling_item",
+										"weight": 5
+									},
+									{
+										"type": "item",
+										"name": "strat:maple_leaf",
+										"weight": 3
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "empty",
+											"weight": 31
+										},
+										{
+											"type": "item",
+											"name": "minecraft:stick",
+											"weight": 1
+										},
+										{
+											"type": "item",
+											"name": "strat:maple_sapling_item",
+											"weight": 5
+										},
+										{
+											"type": "item",
+											"name": "strat:maple_leaf",
+											"weight": 3
+										}
+									]
+								},
+								"key": "rolls",
+								"is_minified": true,
+								"children": {
+									"min": 1,
+									"max": 1
+								}
+							},
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 1
+									},
+									"entries": [
+										{
+											"type": "empty",
+											"weight": 31
+										},
+										{
+											"type": "item",
+											"name": "minecraft:stick",
+											"weight": 1
+										},
+										{
+											"type": "item",
+											"name": "strat:maple_sapling_item",
+											"weight": 5
+										},
+										{
+											"type": "item",
+											"name": "strat:maple_leaf",
+											"weight": 3
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "empty",
+												"weight": 31
+											},
+											{
+												"type": "item",
+												"name": "minecraft:stick",
+												"weight": 1
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_sapling_item",
+												"weight": 5
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_leaf",
+												"weight": 3
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "empty",
+											"weight": 31
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "empty",
+												"weight": 31
+											},
+											{
+												"type": "item",
+												"name": "minecraft:stick",
+												"weight": 1
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_sapling_item",
+												"weight": 5
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_leaf",
+												"weight": 3
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "minecraft:stick",
+											"weight": 1
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "empty",
+												"weight": 31
+											},
+											{
+												"type": "item",
+												"name": "minecraft:stick",
+												"weight": 1
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_sapling_item",
+												"weight": 5
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_leaf",
+												"weight": 3
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:maple_sapling_item",
+											"weight": 5
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "empty",
+												"weight": 31
+											},
+											{
+												"type": "item",
+												"name": "minecraft:stick",
+												"weight": 1
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_sapling_item",
+												"weight": 5
+											},
+											{
+												"type": "item",
+												"name": "strat:maple_leaf",
+												"weight": 3
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:maple_leaf",
+											"weight": 3
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

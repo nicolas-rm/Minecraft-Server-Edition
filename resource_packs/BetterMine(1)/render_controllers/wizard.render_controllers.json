@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.wizard": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.grey", "Texture.white", "Texture.blue", "Texture.red", "Texture.black" ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "query.get_name == 'Gandalf' ? Texture.blue : Array.skins[query.variant]" ]
+    }
+  }
+}

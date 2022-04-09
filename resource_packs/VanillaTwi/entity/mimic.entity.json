@@ -1,0 +1,38 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mythmob:mimic",
+			"materials": {
+				"default": "goblin"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/mimic_chest"
+			},
+			"geometry": {
+				"default": "geometry.mimic.armor"
+			},
+			"animations": {
+				"humanoid_base_pose": "animation.mimic.move",
+				"attack.rotations": "animation.mimic.attack"
+			},
+			"animation_controllers": [
+				{
+					"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+				},
+				{
+					"attack": "controller.animation.ogre.attack"
+				}
+			],
+			"render_controllers": [
+				"controller.render.goblin"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#9CD490",
+				"overlay_color": "#ab792d"
+			}
+		}
+	}
+}

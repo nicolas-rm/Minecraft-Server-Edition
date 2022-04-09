@@ -1,0 +1,20 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.16.100",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "ocean:palm_island1_structure_feature"
+		},
+		"structure_name": "ocean:palm_island1",
+		"adjustment_radius": 4,
+		"facing_direction": "random",
+		"constraints": {
+			"block_intersection": {
+				"block_allowlist": [
+					"minecraft:air",
+					"minecraft:water"
+				]
+			}
+		}
+	}
+}

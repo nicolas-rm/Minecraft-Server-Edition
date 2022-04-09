@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "equipment",
+			"identifier": "better:bronze_shovel"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.shovel"
+			},
+			"minecraft:icon": {
+				"texture": "bronze_shovel"
+			},
+			"minecraft:render_offsets": "tool",
+			"minecraft:display_name": {
+				"value": "item.better:bronze_shovel.name"
+			},
+			"minecraft:hover_text_color": "white"
+		}
+	}
+}

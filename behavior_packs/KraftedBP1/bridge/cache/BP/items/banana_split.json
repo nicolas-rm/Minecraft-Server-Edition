@@ -1,0 +1,336 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\banana_split.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "e3de7a2d_8c03_41f5_bbb2_f304eb418fe7",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:banana_split",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 3.2,
+							"minecraft:max_stack_size": 16,
+							"minecraft:use_animation": "eat",
+							"minecraft:food": {
+								"nutrition": 12,
+								"can_always_eat": false,
+								"using_converts_to": "minecraft:bowl",
+								"saturation_modifier": "max",
+								"on_consume": {
+									"event": "consume"
+								}
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "banana_split"
+							}
+						},
+						"events": {
+							"consume": {
+								"sequence": [
+									{
+										"remove_mob_effect": {
+											"effect": "all"
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:banana_split",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 3.2,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 12,
+									"can_always_eat": false,
+									"using_converts_to": "minecraft:bowl",
+									"saturation_modifier": "max",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "banana_split"
+								}
+							},
+							"events": {
+								"consume": {
+									"sequence": [
+										{
+											"remove_mob_effect": {
+												"effect": "all"
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:banana_split",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:banana_split",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 3.2,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 12,
+									"can_always_eat": false,
+									"using_converts_to": "minecraft:bowl",
+									"saturation_modifier": "max",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "banana_split"
+								}
+							},
+							"events": {
+								"consume": {
+									"sequence": [
+										{
+											"remove_mob_effect": {
+												"effect": "all"
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "3.2",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 3.2,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 12,
+										"can_always_eat": false,
+										"using_converts_to": "minecraft:bowl",
+										"saturation_modifier": "max",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "banana_split"
+									}
+								},
+								"key": "minecraft:food",
+								"children": [
+									{
+										"data": "12",
+										"key": "nutrition"
+									},
+									{
+										"data": "false",
+										"key": "can_always_eat"
+									},
+									{
+										"data": "minecraft:bowl",
+										"key": "using_converts_to"
+									},
+									{
+										"data": "max",
+										"key": "saturation_modifier"
+									},
+									{
+										"open": {
+											"nutrition": 12,
+											"can_always_eat": false,
+											"using_converts_to": "minecraft:bowl",
+											"saturation_modifier": "max",
+											"on_consume": {
+												"event": "consume"
+											}
+										},
+										"key": "on_consume",
+										"is_minified": true,
+										"children": {
+											"event": "consume"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 3.2,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 12,
+										"can_always_eat": false,
+										"using_converts_to": "minecraft:bowl",
+										"saturation_modifier": "max",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "banana_split"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 3.2,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 12,
+										"can_always_eat": false,
+										"using_converts_to": "minecraft:bowl",
+										"saturation_modifier": "max",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "banana_split"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "banana_split"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:banana_split",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 3.2,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 12,
+									"can_always_eat": false,
+									"using_converts_to": "minecraft:bowl",
+									"saturation_modifier": "max",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "banana_split"
+								}
+							},
+							"events": {
+								"consume": {
+									"sequence": [
+										{
+											"remove_mob_effect": {
+												"effect": "all"
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"consume": {
+										"sequence": [
+											{
+												"remove_mob_effect": {
+													"effect": "all"
+												}
+											}
+										]
+									}
+								},
+								"key": "consume",
+								"is_minified": true,
+								"children": {
+									"sequence": [
+										{
+											"remove_mob_effect": {
+												"effect": "all"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

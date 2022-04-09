@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "better:grass_path_feature"
+    },
+    "count": 15,
+    "places_block": "minecraft:grass_path",
+    "may_replace": [
+      {
+        "name": "minecraft:grass",
+        "states": {
+        }
+      },
+      {
+        "name": "minecraft:dirt",
+        "states": {
+        }
+      }
+    ]
+  }
+}

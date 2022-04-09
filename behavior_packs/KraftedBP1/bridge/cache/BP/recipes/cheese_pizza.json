@@ -1,0 +1,79 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\cheese_pizza.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "05861721_a3bc_4e7d_b0d6_5e6f3eebac89",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_furnace": {
+						"description": {
+							"identifier": "strat:cheese_pizza"
+						},
+						"tags": [
+							"furnace",
+							"smoker"
+						],
+						"input": "strat:raw_cheese_pizza",
+						"output": "strat:cheese_pizza"
+					}
+				},
+				"key": "minecraft:recipe_furnace",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_pizza"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:raw_cheese_pizza",
+							"output": "strat:cheese_pizza"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cheese_pizza"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheese_pizza"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:raw_cheese_pizza",
+							"output": "strat:cheese_pizza"
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"furnace",
+							"smoker"
+						]
+					},
+					{
+						"data": "strat:raw_cheese_pizza",
+						"key": "input"
+					},
+					{
+						"data": "strat:cheese_pizza",
+						"key": "output"
+					}
+				]
+			}
+		]
+	}
+}

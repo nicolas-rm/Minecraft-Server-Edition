@@ -1,0 +1,120 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\manifest.json",
+	"file_type": "manifest_bp",
+	"format_version": 1,
+	"file_uuid": "66e83640_658d_4e03_9a39_9e3d571c32c5",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "2",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "OceanExplorationBP",
+						"description": "An addon created by YouTuber Mr. Mastery",
+						"uuid": "e780d5a8-7183-4e23-96c6-6086cae398af",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							16,
+							100
+						]
+					},
+					"modules": [
+						{
+							"type": "data",
+							"uuid": "7ff99ecd-afd6-4c62-88e2-f3927805c335",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					],
+					"metadata": {
+						"generated_with": {
+							"bridge": [
+								"1.8.4"
+							]
+						}
+					},
+					"dependencies": [
+						{
+							"version": [
+								1,
+								0,
+								0
+							],
+							"uuid": "e1df037b-565e-4adc-9fb4-4a90f29c8958"
+						}
+					]
+				},
+				"key": "header",
+				"is_minified": true,
+				"children": {
+					"name": "OceanExplorationBP",
+					"description": "An addon created by YouTuber Mr. Mastery",
+					"uuid": "e780d5a8-7183-4e23-96c6-6086cae398af",
+					"version": [
+						1,
+						0,
+						0
+					],
+					"min_engine_version": [
+						1,
+						16,
+						100
+					]
+				}
+			},
+			{
+				"key": "modules",
+				"is_minified": true,
+				"children": [
+					{
+						"type": "data",
+						"uuid": "7ff99ecd-afd6-4c62-88e2-f3927805c335",
+						"version": [
+							1,
+							0,
+							0
+						]
+					}
+				]
+			},
+			{
+				"key": "metadata",
+				"is_minified": true,
+				"children": {
+					"generated_with": {
+						"bridge": [
+							"1.8.4"
+						]
+					}
+				}
+			},
+			{
+				"key": "dependencies",
+				"is_minified": true,
+				"children": [
+					{
+						"version": [
+							1,
+							0,
+							0
+						],
+						"uuid": "e1df037b-565e-4adc-9fb4-4a90f29c8958"
+					}
+				]
+			}
+		]
+	}
+}

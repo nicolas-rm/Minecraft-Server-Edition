@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:mango"
+    },
+
+    "components": {
+      "minecraft:use_duration": 64,
+      "minecraft:food": {
+        "nutrition": 7,
+        "saturation_modifier": "low"
+      }
+    }
+  }
+}

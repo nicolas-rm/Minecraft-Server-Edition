@@ -1,0 +1,69 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\More Enchantments Addon\\textures\\terrain_texture.json",
+	"file_type": "terrain_texture",
+	"format_version": 1,
+	"file_uuid": "038205e2_4075_4f5c_a76e_8bcef0008df9",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.terrain",
+				"key": "texture_name"
+			},
+			{
+				"data": "8",
+				"key": "padding"
+			},
+			{
+				"data": "4",
+				"key": "num_mip_levels"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.terrain",
+					"padding": 8,
+					"num_mip_levels": 4,
+					"texture_data": {
+						"arcane_table": {
+							"textures": [
+								"textures/blocks/arcane_table"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"open": {
+							"arcane_table": {
+								"textures": [
+									"textures/blocks/arcane_table"
+								]
+							}
+						},
+						"key": "arcane_table",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/arcane_table"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/arcane_table"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

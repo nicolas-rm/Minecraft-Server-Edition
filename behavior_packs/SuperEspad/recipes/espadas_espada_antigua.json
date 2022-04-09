@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "espada_antigua_5101df7d"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      "ACA",
+      "DA "
+    ],
+    "key": {
+      "A": {
+        "item": "espadas:lingote_titanio",
+        "data": 0
+      },
+      "B": {
+        "item": "espadas:espada_bedrock",
+        "data": 0
+      },
+      "C": {
+        "item": "espadas:espada_obsidiana",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:blaze_rod",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "espadas:espada_antigua",
+      "count": 1
+    }
+  }
+}

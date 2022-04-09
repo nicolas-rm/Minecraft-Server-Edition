@@ -1,0 +1,79 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\cookie_from_cookie_dough.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "33f8ebd8_de9b_465c_a739_050a2814996d",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_furnace": {
+						"description": {
+							"identifier": "strat:cookie_from_cookie_dough"
+						},
+						"tags": [
+							"furnace",
+							"smoker"
+						],
+						"input": "strat:cookie_dough",
+						"output": "minecraft:cookie"
+					}
+				},
+				"key": "minecraft:recipe_furnace",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cookie_from_cookie_dough"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:cookie_dough",
+							"output": "minecraft:cookie"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cookie_from_cookie_dough"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cookie_from_cookie_dough"
+							},
+							"tags": [
+								"furnace",
+								"smoker"
+							],
+							"input": "strat:cookie_dough",
+							"output": "minecraft:cookie"
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"furnace",
+							"smoker"
+						]
+					},
+					{
+						"data": "strat:cookie_dough",
+						"key": "input"
+					},
+					{
+						"data": "minecraft:cookie",
+						"key": "output"
+					}
+				]
+			}
+		]
+	}
+}

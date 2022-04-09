@@ -1,0 +1,154 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\candy_cane.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "f9f98369_5051_4634_9378_3ec87088f6bf",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:candy_cane",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 1.6,
+							"minecraft:food": {
+								"nutrition": 4,
+								"saturation_modifier": "good"
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "candy_cane"
+							},
+							"minecraft:use_animation": "eat"
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:candy_cane",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "good"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "candy_cane"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:candy_cane",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:candy_cane",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "good"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "candy_cane"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1.6",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "good"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "candy_cane"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 4,
+									"saturation_modifier": "good"
+								}
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "good"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "candy_cane"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "candy_cane"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

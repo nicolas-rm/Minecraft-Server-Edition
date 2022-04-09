@@ -1,0 +1,233 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\water_jar_block.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "4a02c352_a66d_4234_aaad_9a3eb79558fa",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:water_jar_block"
+						},
+						"components": {
+							"minecraft:destroy_time": 1,
+							"minecraft:block_light_absorption": 0,
+							"minecraft:explosion_resistance": 20,
+							"minecraft:loot": "loot_tables/water_jar.json",
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "jar_block_water",
+									"render_method": "alpha_test"
+								}
+							},
+							"minecraft:geometry": "geometry.jar",
+							"minecraft:pick_collision": {
+								"origin": [
+									-3,
+									0,
+									-3
+								],
+								"size": [
+									6,
+									10,
+									6
+								]
+							},
+							"minecraft:entity_collision": {
+								"origin": [
+									-3,
+									0,
+									-3
+								],
+								"size": [
+									6,
+									10,
+									6
+								]
+							},
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"allowed_faces": [
+											"up"
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:water_jar_block"
+							},
+							"components": {
+								"minecraft:destroy_time": 1,
+								"minecraft:block_light_absorption": 0,
+								"minecraft:explosion_resistance": 20,
+								"minecraft:loot": "loot_tables/water_jar.json",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "jar_block_water",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:geometry": "geometry.jar",
+								"minecraft:pick_collision": {
+									"origin": [
+										-3,
+										0,
+										-3
+									],
+									"size": [
+										6,
+										10,
+										6
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-3,
+										0,
+										-3
+									],
+									"size": [
+										6,
+										10,
+										6
+									]
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:water_jar_block"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:water_jar_block"
+							},
+							"components": {
+								"minecraft:destroy_time": 1,
+								"minecraft:block_light_absorption": 0,
+								"minecraft:explosion_resistance": 20,
+								"minecraft:loot": "loot_tables/water_jar.json",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "jar_block_water",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:geometry": "geometry.jar",
+								"minecraft:pick_collision": {
+									"origin": [
+										-3,
+										0,
+										-3
+									],
+									"size": [
+										6,
+										10,
+										6
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-3,
+										0,
+										-3
+									],
+									"size": [
+										6,
+										10,
+										6
+									]
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:destroy_time": 1,
+							"minecraft:block_light_absorption": 0,
+							"minecraft:explosion_resistance": 20,
+							"minecraft:loot": "loot_tables/water_jar.json",
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "jar_block_water",
+									"render_method": "alpha_test"
+								}
+							},
+							"minecraft:geometry": "geometry.jar",
+							"minecraft:pick_collision": {
+								"origin": [
+									-3,
+									0,
+									-3
+								],
+								"size": [
+									6,
+									10,
+									6
+								]
+							},
+							"minecraft:entity_collision": {
+								"origin": [
+									-3,
+									0,
+									-3
+								],
+								"size": [
+									6,
+									10,
+									6
+								]
+							},
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"allowed_faces": [
+											"up"
+										]
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

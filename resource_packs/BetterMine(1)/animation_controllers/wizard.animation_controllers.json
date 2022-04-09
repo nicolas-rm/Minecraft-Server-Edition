@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.wizard.bow_and_arrow" : {
+			"initial_state" : "default",
+			"states" : {
+				"bow_and_arrow" : {
+					"animations" : [ "bow_and_arrow" ],
+					"transitions" : [
+						{
+							"default" : "!query.has_target || query.is_item_equipped"
+						}
+					]
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"bow_and_arrow" : "!query.is_item_equipped && query.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

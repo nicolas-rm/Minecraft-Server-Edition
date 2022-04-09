@@ -1,0 +1,29 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ray:slime_feet"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"pattern": [
+			"SBS",
+			"S#S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:slime_ball"
+			},
+			"B": {
+				"item": "minecraft:book"
+			}
+		},
+		"result": [
+			{
+				"item": "sf_book:netherite_ingot"
+			}
+		]
+	}
+}

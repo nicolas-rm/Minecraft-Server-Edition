@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "better:silver_boots",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.boots"
+			},
+			"minecraft:icon": {
+				"texture": "silver_boots"
+			},
+			"minecraft:display_name": {
+				"value": "Silver Boots"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_feet"
+			},
+			"minecraft:durability": {
+				"max_durability": 440,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				},
+				"repair_items": [
+					"better:silver_ingot",
+					"better:silver_boots"
+				]
+			},
+			"minecraft:explodable": false,
+			"minecraft:knockback_resistance": {
+				"protection": 0.1
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+                            "better:silver_ingot"
+						],
+						"repair_amount": 20
+					}
+				]
+			},
+			"minecraft:armor": {
+				"protection": 3
+			}
+		}
+	}
+}

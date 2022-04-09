@@ -1,0 +1,526 @@
+//bridge-file-version: #25
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "strat:pot",
+			"properties": {
+				"strat:state": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:map_color": "#7C7C7C",
+			"minecraft:explosion_resistance": 10,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pot",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.pot",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"minecraft:furnace",
+							"minecraft:lit_furnace",
+							"minecraft:smoker",
+							"minecraft:lit_smoker",
+							"minecraft:campfire",
+							"minecraft:soul_campfire",
+							"minecraft:fire"
+						]
+					}
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					8,
+					14
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					8,
+					14
+				]
+			},
+			"minecraft:immovable": true,
+			"minecraft:on_interact": {
+				"event": "strat:interact"
+			},
+			"minecraft:loot": "loot_tables/pot.json",
+			"tag:metal": {}
+		},
+		"events": {
+			"strat:interact": {
+				"sequence": [
+					{
+						"sequence": [
+							{
+								"condition": "query.block_property('strat:state') == 0 && query.get_equipped_item_name('main_hand') == 'water_bucket'",
+								"set_block_property": {
+									"strat:state": 1
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p bucket",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.fill_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') >= 1 && query.block_property('strat:state') <= 3 && query.get_equipped_item_name('main_hand') == 'bucket'",
+								"set_block_property": {
+									"strat:state": 0
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p water_bucket",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.empty_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 0 && query.get_equipped_item_name('main_hand') == 'potion'",
+								"set_block_property": {
+									"strat:state": 1
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p glass_bottle",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.fill_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') >= 1 && query.block_property('strat:state') <= 3 && query.get_equipped_item_name('main_hand') == 'glass_bottle'",
+								"set_block_property": {
+									"strat:state": 0
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p potion",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.empty_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 0 && query.get_equipped_item_name('main_hand') == 'water_jar'",
+								"set_block_property": {
+									"strat:state": 1
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p strat:glass_jar",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.fill_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') >= 1 && query.block_property('strat:state') <= 3 && query.get_equipped_item_name('main_hand') == 'glass_jar'",
+								"set_block_property": {
+									"strat:state": 0
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p strat:water_jar",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.empty_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 4",
+								"set_block_property": {
+									"strat:state": 0
+								},
+								"spawn_loot": {
+									"table": "loot_tables/salt.json"
+								}
+							}
+						]
+					},
+					{
+						"sequence": [
+							{
+								"condition": "query.block_property('strat:state') == 0 && query.get_equipped_item_name('main_hand') == 'milk_bucket'",
+								"set_block_property": {
+									"strat:state": 5
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p bucket",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.fill_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 5 && query.get_equipped_item_name('main_hand') == 'bucket'",
+								"set_block_property": {
+									"strat:state": 0
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p milk_bucket",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.empty_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 5 && query.get_equipped_item_name('main_hand') == 'salt'",
+								"set_block_property": {
+									"strat:state": 6
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 9",
+								"set_block_property": {
+									"strat:state": 0
+								},
+								"spawn_loot": {
+									"table": "loot_tables/cheese_block.json"
+								},
+								"run_command": {
+									"command": [
+										"playsound use.slime @a ~~~"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 0 && query.get_equipped_item_name('main_hand') == 'cheese_block_item'",
+								"set_block_property": {
+									"strat:state": 9
+								},
+								"decrement_stack": {},
+								"run_command": {
+									"command": [
+										"playsound use.slime @a ~~~"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 0 && query.get_equipped_item_name('main_hand') == 'cheese_block'",
+								"set_block_property": {
+									"strat:state": 9
+								},
+								"decrement_stack": {},
+								"run_command": {
+									"command": [
+										"playsound use.slime @a ~~~"
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 0 && query.get_equipped_item_name('main_hand') == 'milk_jar'",
+								"set_block_property": {
+									"strat:state": 5
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p strat:glass_jar",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.fill_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							},
+							{
+								"condition": "query.block_property('strat:state') == 5 && query.get_equipped_item_name('main_hand') == 'glass_jar'",
+								"set_block_property": {
+									"strat:state": 0
+								},
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @p strat:milk_jar",
+										"gamerule sendcommandfeedback true",
+										"playsound bucket.empty_water @a ~~~"
+									]
+								},
+								"decrement_stack": {}
+							}
+						]
+					}
+				]
+			},
+			"strat:transform_salt": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"strat:state": "query.block_property('strat:state') + 1"
+						},
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_smoke_particle ~~~",
+								"playsound fire.ingite @p"
+							]
+						}
+					}
+				]
+			},
+			"strat:transform_cheese": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"strat:state": "query.block_property('strat:state') + 1"
+						},
+						"run_command": {
+							"command": [
+								"particle minecraft:basic_smoke_particle ~~~",
+								"playsound fire.ingite @p"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('strat:state') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.pot",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:ticking": {
+						"range": [
+							2,
+							2
+						],
+						"looping": false,
+						"on_tick": {
+							"event": "strat:transform_salt"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:ticking": {
+						"range": [
+							2,
+							2
+						],
+						"looping": false,
+						"on_tick": {
+							"event": "strat:transform_salt"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:ticking": {
+						"range": [
+							2,
+							2
+						],
+						"looping": false,
+						"on_tick": {
+							"event": "strat:transform_salt"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.pot3",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot_2.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot_milk",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot_milk2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:ticking": {
+						"range": [
+							2,
+							2
+						],
+						"looping": false,
+						"on_tick": {
+							"event": "strat:transform_cheese"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 7",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot_milk2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:ticking": {
+						"range": [
+							2,
+							2
+						],
+						"looping": false,
+						"on_tick": {
+							"event": "strat:transform_cheese"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 8",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot_milk2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:ticking": {
+						"range": [
+							2,
+							2
+						],
+						"looping": false,
+						"on_tick": {
+							"event": "strat:transform_cheese"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot.json"
+				}
+			},
+			{
+				"condition": "query.block_property('strat:state') == 9",
+				"components": {
+					"minecraft:geometry": "geometry.pot2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pot_milk3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/pot_3.json"
+				}
+			}
+		]
+	}
+}

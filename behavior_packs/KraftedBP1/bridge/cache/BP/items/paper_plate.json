@@ -1,0 +1,108 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\paper_plate.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "9db4f8d0_0e4f_404e_8ed1_9f93c25964b0",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:paper_plate",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:icon": {
+								"texture": "paper_plate"
+							},
+							"minecraft:creative_category": {
+								"parent": "items"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:paper_plate",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "paper_plate"
+								},
+								"minecraft:creative_category": {
+									"parent": "items"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:paper_plate",
+							"category": "items"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:paper_plate",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "paper_plate"
+								},
+								"minecraft:creative_category": {
+									"parent": "items"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "paper_plate"
+									},
+									"minecraft:creative_category": {
+										"parent": "items"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "paper_plate"
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "paper_plate"
+									},
+									"minecraft:creative_category": {
+										"parent": "items"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "items"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

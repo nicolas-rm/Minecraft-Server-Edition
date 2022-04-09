@@ -1,0 +1,49 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Vanilla Twilight",
+		"description": "Adding new mobs to the game!",
+		"uuid": "dffc5d24-689f-4f3d-a6a5-355b59ea2a65",
+		"version": [
+			1,
+			1,
+			2
+		],
+		"min_engine_version": [
+			1,
+			17,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "ba5957f6-1b9b-4d45-b053-ecd5f6c52427",
+			"version": [
+				1,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "a31ecca6-69d0-452c-b9b7-78c3cbb794d3",
+			"version": [
+				1,
+				1,
+				2
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.3"
+			],
+			"blockbench_entity_wizard": [
+				"1.0.6"
+			]
+		}
+	}
+}

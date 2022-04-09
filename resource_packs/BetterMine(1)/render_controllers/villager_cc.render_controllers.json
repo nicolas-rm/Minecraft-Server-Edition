@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.villager_cc": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.baker", "Texture.blacksmith", "Texture.cook", "Texture.enchanter", "Texture.gemtrader", "Texture.goldsmith", "Texture.nitwit", "Texture.wizard", "Texture.miner", "Texture.money_exchanger", "Texture.wood_loger" ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

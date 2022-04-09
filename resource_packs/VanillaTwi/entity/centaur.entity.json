@@ -1,0 +1,54 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mythmob:centaur",
+			"materials": {
+				"default": "vindicator"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/centaur"
+			},
+			"geometry": {
+				"default": "geometry.centaur"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+					"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+				]
+			},
+			"animations": {
+				"riding.arms": "animation.humanoid.riding.arms",
+				"riding.legs": "animation.humanoid.riding.legs",
+				"vindicator_base": "animation.centaur.base",
+				"vindicator_attack": "animation.archer.attack",
+				"vindicator_walk": "animation.centaur.move",
+				"bob": "animation.humanoid.bob"
+			},
+			"animation_controllers": [
+				{
+					"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+				},
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"vindicator_base": "controller.animation.vindicator.base.v1.0"
+				},
+				{
+					"bob": "controller.animation.humanoid.bob"
+				}
+			],
+			"render_controllers": [
+				"controller.render.centaur"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#878787",
+				"overlay_color": "#E3AF7F"
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:house"
+    },
+
+    
+    "tags": [ "epigraphist" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "#|#"
+    ],
+    "key": {
+      "X": {
+        "item": "better:am_guide"
+      },
+      "#": {
+        "item": "minecraft:book"
+      },
+      "|": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": [
+      { "item": "better:house", "count": 1, "data": 0 },
+      { "item": "better:am_guide", "count": 1, "data": 0 }
+    ]
+  }
+}

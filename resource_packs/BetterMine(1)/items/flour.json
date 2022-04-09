@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:flour",
+      "category": "Items"
+    },
+
+    "components": {
+      "minecraft:icon": "flour",
+      "minecraft:use_animation": "eat",
+
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

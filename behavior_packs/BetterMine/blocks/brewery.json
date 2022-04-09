@@ -1,0 +1,40 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "better:brewery",
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "brewery",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 16, 16]
+            },
+            "minecraft:loot": "loot_tables/blocks/brewery.json",
+            "minecraft:destroy_time": 1.5,
+            "minecraft:preventsjumping": false,
+            "minecraft:immovable": true,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:friction": 0.6,
+            "minecraft:crafting_table": {
+                "grid_size": 3,
+                "crafting_tags": [
+                    "brewery"
+                ]
+            },
+            "minecraft:map_color": "#efefef",
+            "minecraft:flammable": {
+                "flame_odds": 5,
+                "burn_odds": 5
+            },
+            "minecraft:block_light_emission": 0.0
+            }
+		}
+    }
+}

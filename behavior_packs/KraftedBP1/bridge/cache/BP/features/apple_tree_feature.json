@@ -1,0 +1,82 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\features\\apple_tree_feature.json",
+	"file_type": "feature",
+	"format_version": 1,
+	"file_uuid": "2a3ca53e_bda3_4bd5_9991_d38ca2c2def7",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:structure_template_feature": {
+						"description": {
+							"identifier": "strat:apple_tree_feature"
+						},
+						"structure_name": "mystructure:apple_tree2",
+						"adjustment_radius": 8,
+						"facing_direction": "north",
+						"constraints": {
+							"grounded": {}
+						}
+					}
+				},
+				"key": "minecraft:structure_template_feature",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:apple_tree_feature"
+							},
+							"structure_name": "mystructure:apple_tree2",
+							"adjustment_radius": 8,
+							"facing_direction": "north",
+							"constraints": {
+								"grounded": {}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:apple_tree_feature"
+						}
+					},
+					{
+						"data": "mystructure:apple_tree2",
+						"key": "structure_name"
+					},
+					{
+						"data": "8",
+						"key": "adjustment_radius"
+					},
+					{
+						"data": "north",
+						"key": "facing_direction"
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:apple_tree_feature"
+							},
+							"structure_name": "mystructure:apple_tree2",
+							"adjustment_radius": 8,
+							"facing_direction": "north",
+							"constraints": {
+								"grounded": {}
+							}
+						},
+						"key": "constraints",
+						"is_minified": true,
+						"children": {
+							"grounded": {}
+						}
+					}
+				]
+			}
+		]
+	}
+}

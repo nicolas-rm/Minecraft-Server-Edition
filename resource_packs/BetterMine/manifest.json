@@ -1,0 +1,59 @@
+{
+    "format_version" : 1,
+    "header" : {
+       "description" : "§aAPPLY IT AFTER RESOURCE PACK IS ENABLED NOT BEFORE",
+       "name" : "Better Minecraft mod additional texture packs",
+       "uuid" : "03fd8131-b0d3-4765-aebf-0097712bf726",
+       "version" : [ 1, 1, 4 ]
+    },
+    "modules" : [
+       {
+          "description" : "§aAPPLY IT AFTER RESOURCE PACK IS ENABLED NOT BEFORE",
+          "type" : "resources",
+          "uuid" : "d9cc06be-8c88-48f6-a247-a7ca8b18180f",
+          "version" : [ 1, 1, 4 ]
+       }
+    ],
+    "subpacks": [
+   {
+      "folder_name": "aqua",
+      "name": "Update Aquatic UI (1.13)",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "bees",
+      "name": "Buzzy Bees update (1.15.0)",
+      "memory_tier": 2
+      },
+   {
+      "folder_name": "nether",
+      "name": "Nether Update (1.16.0)",
+      "memory_tier": 3
+      },
+   {
+      "folder_name": "original",
+      "name": "Better Together Update UI (1.2.0-1.12)",
+      "memory_tier": 4
+      },
+   {
+      "folder_name": "panda",
+      "name": "Village&Pillage Update (1.14.0 Panda)",
+      "memory_tier": 5
+      },
+   {
+      "folder_name": "village",
+      "name": "Village&Pillage Update (1.14.1 Village)",
+      "memory_tier": 6
+      },
+   {
+      "folder_name": "better",
+      "name": "Better Minecraft ui",
+      "memory_tier": 7
+      },
+   {
+      "folder_name": "cavescliffs",
+      "name": "Caves&Cliffs Update ui (1.17.0)",
+      "memory_tier": 8
+      }
+   ]
+}

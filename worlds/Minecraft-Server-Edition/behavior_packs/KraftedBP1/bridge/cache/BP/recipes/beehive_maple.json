@@ -1,0 +1,263 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\beehive_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "5d95c3f6_32c8_419b_b3e4_69d7c95991f5",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.14",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.14,
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:beehive_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"###",
+							"ooo",
+							"###"
+						],
+						"key": {
+							"#": {
+								"item": "strat:maple_planks"
+							},
+							"o": {
+								"item": "minecraft:honeycomb"
+							}
+						},
+						"result": [
+							{
+								"item": "minecraft:beehive"
+							}
+						],
+						"priority": 50
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beehive_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"###",
+								"ooo",
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								},
+								"o": {
+									"item": "minecraft:honeycomb"
+								}
+							},
+							"result": [
+								{
+									"item": "minecraft:beehive"
+								}
+							],
+							"priority": 50
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:beehive_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beehive_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"###",
+								"ooo",
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								},
+								"o": {
+									"item": "minecraft:honeycomb"
+								}
+							},
+							"result": [
+								{
+									"item": "minecraft:beehive"
+								}
+							],
+							"priority": 50
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beehive_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"###",
+								"ooo",
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								},
+								"o": {
+									"item": "minecraft:honeycomb"
+								}
+							},
+							"result": [
+								{
+									"item": "minecraft:beehive"
+								}
+							],
+							"priority": 50
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"###",
+							"ooo",
+							"###"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beehive_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"###",
+								"ooo",
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								},
+								"o": {
+									"item": "minecraft:honeycomb"
+								}
+							},
+							"result": [
+								{
+									"item": "minecraft:beehive"
+								}
+							],
+							"priority": 50
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:maple_planks"
+									},
+									"o": {
+										"item": "minecraft:honeycomb"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:maple_planks"
+									},
+									"o": {
+										"item": "minecraft:honeycomb"
+									}
+								},
+								"key": "o",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:honeycomb"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:beehive_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"###",
+								"ooo",
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								},
+								"o": {
+									"item": "minecraft:honeycomb"
+								}
+							},
+							"result": [
+								{
+									"item": "minecraft:beehive"
+								}
+							],
+							"priority": 50
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:beehive"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:beehive"
+								}
+							}
+						]
+					},
+					{
+						"data": "50",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

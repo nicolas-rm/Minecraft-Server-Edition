@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "minecraft:farmland_feature"
+    },
+    "features": [
+      [ "minecraft:farmland_position", 1 ],
+      [ "minecraft:f1_position", 1 ],
+      [ "minecraft:f2_position", 1 ],
+      [ "minecraft:f3_position", 1 ],
+      [ "minecraft:f4_position", 1 ],
+      [ "minecraft:f5_position", 1 ],
+      [ "minecraft:f6_position", 1 ],
+      [ "minecraft:f7_position", 1 ],
+      [ "minecraft:f8_position", 1 ],
+      [ "minecraft:f9_position", 1 ]
+    ]
+  }
+}

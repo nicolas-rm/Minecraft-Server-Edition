@@ -1,0 +1,242 @@
+//bridge-file-version: #59
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ray:luz",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:nameable": {
+				"always_show": false
+			}
+		},
+		"events": {
+			"light": {
+				"run_command": {
+					"command": [
+						"scoreboard players set @p luz 0"
+					]
+				}
+			},
+			"add_l": {
+				"add": {
+					"component_groups": [
+						"light"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"soul_light"
+					]
+				}
+			},
+			"add_ls": {
+				"add": {
+					"component_groups": [
+						"soul_light"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"light"
+					]
+				}
+			},
+			"soul_light": {
+				"run_command": {
+					"command": [
+						"scoreboard players set @p soul_luz 0"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"light": {
+				"minecraft:entity_sensor": {
+					"sensor_range": 16,
+					"minimum_count": 1,
+					"maximum_count": 1,
+					"event_filters": {
+						"any_of": [
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "ray:torch",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"domain": "hand",
+								"subject": "other",
+								"value": "ray:lava_bucket"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"domain": "hand",
+								"subject": "other",
+								"value": "minecraft:shroomlight"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:lantern",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:blaze_rod",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:blaze_powder",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:glowstone",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:lit_pumpkin",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:glowstone_dust",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"domain": "hand",
+								"subject": "other",
+								"value": "minecraft:beacon"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:campfire",
+								"domain": "hand",
+								"subject": "other"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"value": "minecraft:torch",
+								"domain": "hand",
+								"subject": "other"
+							}
+						]
+					},
+					"event": "light"
+				}
+			},
+			"soul_light": {
+				"minecraft:entity_sensor": {
+					"sensor_range": 16,
+					"minimum_count": 1,
+					"maximum_count": 1,
+					"event_filters": {
+						"any_of": [
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "ray:soul_torch"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:soul_campfire"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:soul_lantern"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:sea_pickle"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:glow_ink_sac"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:glow_frame"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:magma_cream"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:magma"
+							},
+							{
+								"test": "has_equipment",
+								"operator": "==",
+								"subject": "other",
+								"value": "minecraft:soul_torch"
+							}
+						]
+					},
+					"event": "soul_light"
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		}
+	}
+}

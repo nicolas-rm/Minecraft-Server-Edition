@@ -1,0 +1,22 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/wr_trypo_sensor",
+    "atlas_tile": "ani_wr_trypo_sensor",
+    "ticks_per_frame": 42
+  },
+  {
+    "flipbook_texture": "textures/blocks/wr_trypo_sculk",
+    "atlas_tile": "ani_wr_trypo_sculk",
+    "ticks_per_frame": 42
+  },
+  {
+    "flipbook_texture": "textures/blocks/wr_pitch_sculk",
+    "atlas_tile": "ani_wr_pitch_sculk",
+    "ticks_per_frame": 42
+  },
+  {
+    "flipbook_texture": "textures/blocks/wr_pitch_catalyst",
+    "atlas_tile": "ani_wr_pitch_catalyst",
+    "ticks_per_frame": 42
+  }
+]

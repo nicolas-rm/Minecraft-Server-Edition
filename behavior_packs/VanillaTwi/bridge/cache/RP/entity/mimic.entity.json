@@ -1,0 +1,288 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\mimic.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "f538b004_c0d6_4216_877e_1fa45f7f8b46",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:mimic",
+							"materials": {
+								"default": "goblin"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/mimic_chest"
+							},
+							"geometry": {
+								"default": "geometry.mimic.armor"
+							},
+							"animations": {
+								"humanoid_base_pose": "animation.mimic.move",
+								"attack.rotations": "animation.mimic.attack"
+							},
+							"animation_controllers": [
+								{
+									"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+								},
+								{
+									"attack": "controller.animation.ogre.attack"
+								}
+							],
+							"render_controllers": [
+								"controller.render.goblin"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#9CD490",
+								"overlay_color": "#ab792d"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:mimic",
+								"materials": {
+									"default": "goblin"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/mimic_chest"
+								},
+								"geometry": {
+									"default": "geometry.mimic.armor"
+								},
+								"animations": {
+									"humanoid_base_pose": "animation.mimic.move",
+									"attack.rotations": "animation.mimic.attack"
+								},
+								"animation_controllers": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"attack": "controller.animation.ogre.attack"
+									}
+								],
+								"render_controllers": [
+									"controller.render.goblin"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#9CD490",
+									"overlay_color": "#ab792d"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:mimic",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:mimic",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/mimic_chest"
+									},
+									"geometry": {
+										"default": "geometry.mimic.armor"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.mimic.move",
+										"attack.rotations": "animation.mimic.attack"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"attack": "controller.animation.ogre.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#9CD490",
+										"overlay_color": "#ab792d"
+									}
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "goblin"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:mimic",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/mimic_chest"
+									},
+									"geometry": {
+										"default": "geometry.mimic.armor"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.mimic.move",
+										"attack.rotations": "animation.mimic.attack"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"attack": "controller.animation.ogre.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#9CD490",
+										"overlay_color": "#ab792d"
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/mimic_chest"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:mimic",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/mimic_chest"
+									},
+									"geometry": {
+										"default": "geometry.mimic.armor"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.mimic.move",
+										"attack.rotations": "animation.mimic.attack"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"attack": "controller.animation.ogre.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#9CD490",
+										"overlay_color": "#ab792d"
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.mimic.armor"
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"humanoid_base_pose": "animation.mimic.move",
+									"attack.rotations": "animation.mimic.attack"
+								}
+							},
+							{
+								"key": "animation_controllers",
+								"is_minified": true,
+								"children": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"attack": "controller.animation.ogre.attack"
+									}
+								]
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.goblin"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:mimic",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/mimic_chest"
+									},
+									"geometry": {
+										"default": "geometry.mimic.armor"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.mimic.move",
+										"attack.rotations": "animation.mimic.attack"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"attack": "controller.animation.ogre.attack"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#9CD490",
+										"overlay_color": "#ab792d"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#9CD490",
+									"overlay_color": "#ab792d"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,51 @@
+{
+  "espadas:mineral_diamante_blanco": {
+    "textures": "espadas_mineral_diamante_blanco",
+    "sound": "normal"
+  },
+  "espadas:mineral_amatista": {
+    "textures": "espadas_mineral_amatista",
+    "sound": "normal"
+  },
+  "espadas:mineral_cobre": {
+    "textures": "espadas_mineral_cobre",
+    "sound": "normal"
+  },
+  "espadas:mineral_plomo": {
+    "textures": "espadas_mineral_plomo",
+    "sound": "normal"
+  },
+  "espadas:mineral_titanio": {
+    "textures": "espadas_mineral_titanio",
+    "sound": "normal"
+  },
+  "espadas:mineral_rubi": {
+    "textures": "espadas_mineral_rubi",
+    "sound": "normal"
+  },
+  "espadas:mineral_zafiro": {
+    "textures": "espadas_mineral_zafiro",
+    "sound": "normal"
+  },
+  "espadas:mineral_cuarzo_rosa": {
+    "textures": "espadas_mineral_cuarzo_rosa",
+    "sound": "normal"
+  },
+  "espadas:mineral_niquel": {
+    "textures": "espadas_mineral_niquel",
+    "sound": "normal"
+  },
+  "espadas:mineral_estano": {
+    "textures": "espadas_mineral_estano",
+    "sound": "normal"
+  },
+  "espadas:mineral_platino": {
+    "textures": "espadas_mineral_platino",
+    "sound": "normal"
+  },
+  "format_version": [
+    1,
+    1,
+    0
+  ]
+}

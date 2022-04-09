@@ -1,0 +1,1 @@
+give @s wr:grimstone_brick

@@ -1,0 +1,8 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\texts\\en_US.lang",
+	"file_type": "client_lang",
+	"format_version": 0,
+	"file_uuid": "31c4b8ec_a01b_43f2_9850_7e1647be497c",
+	"file_version": 10,
+	"cache_content": "pack.name=OceanExplorationRP\r\npack.description=Adds new content to minecraft oceans\r\n=Spawn Humpback Whale\r\nentity.ocean:humpback_whale.name=Humpback Whale\r\nitem.spawn_egg.entity.ocean:great_white_shark.name=Spawn Great White Shark\r\nentity.ocean:great_white_shark.name=Great White Shark\r\n=Spawn Emperor Penguin\r\nentity.ocean:emperor_penguin.name=Emperor Penguin\r\n\r\nentity.ocean:azure_serpent.name=Azure Serpent\r\ntile.ocean:palm_leaves.name=Palm Leaves\r\ntile.ocean:palm_planks.name=Palm Planks\r\ntile.ocean:palm_log.name=Palm Log\r\nitem.ocean:azure_scale=Azure Scales\r\n=Spawn Barnacle\r\nentity.ocean:barnacle.name=Barnacle\r\n=Spawn Barracuda\r\nentity.ocean:barracuda.name=Barracuda\r\nitem.ocean:barracuda_item=Barracuda"
+}

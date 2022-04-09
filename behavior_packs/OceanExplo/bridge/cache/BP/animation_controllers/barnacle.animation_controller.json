@@ -1,0 +1,262 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\animation_controllers\\barnacle.animation_controller.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "7f000465_dac9_4dd8_a50b_47e061ee16c6",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.barnacle.damage_rider": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"transitions": [
+										{
+											"has_rider": "query.has_rider == 1"
+										}
+									]
+								},
+								"has_rider": {
+									"animations": [
+										"damage_rider"
+									],
+									"transitions": [
+										{
+											"default": "query.has_rider == 0"
+										}
+									],
+									"on_exit": [
+										"/effect @p[r=2] clear"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.barnacle.damage_rider": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"has_rider": "query.has_rider == 1"
+											}
+										]
+									},
+									"has_rider": {
+										"animations": [
+											"damage_rider"
+										],
+										"transitions": [
+											{
+												"default": "query.has_rider == 0"
+											}
+										],
+										"on_exit": [
+											"/effect @p[r=2] clear"
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.barnacle.damage_rider",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"has_rider": "query.has_rider == 1"
+												}
+											]
+										},
+										"has_rider": {
+											"animations": [
+												"damage_rider"
+											],
+											"transitions": [
+												{
+													"default": "query.has_rider == 0"
+												}
+											],
+											"on_exit": [
+												"/effect @p[r=2] clear"
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"has_rider": "query.has_rider == 1"
+													}
+												]
+											},
+											"has_rider": {
+												"animations": [
+													"damage_rider"
+												],
+												"transitions": [
+													{
+														"default": "query.has_rider == 0"
+													}
+												],
+												"on_exit": [
+													"/effect @p[r=2] clear"
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"has_rider": "query.has_rider == 1"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"has_rider": "query.has_rider == 1"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"has_rider": "query.has_rider == 1"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"has_rider": "query.has_rider == 1"
+													}
+												]
+											},
+											"has_rider": {
+												"animations": [
+													"damage_rider"
+												],
+												"transitions": [
+													{
+														"default": "query.has_rider == 0"
+													}
+												],
+												"on_exit": [
+													"/effect @p[r=2] clear"
+												]
+											}
+										},
+										"key": "has_rider",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"damage_rider"
+													],
+													"transitions": [
+														{
+															"default": "query.has_rider == 0"
+														}
+													],
+													"on_exit": [
+														"/effect @p[r=2] clear"
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"damage_rider"
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														"damage_rider"
+													],
+													"transitions": [
+														{
+															"default": "query.has_rider == 0"
+														}
+													],
+													"on_exit": [
+														"/effect @p[r=2] clear"
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "query.has_rider == 0"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.has_rider == 0"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														"damage_rider"
+													],
+													"transitions": [
+														{
+															"default": "query.has_rider == 0"
+														}
+													],
+													"on_exit": [
+														"/effect @p[r=2] clear"
+													]
+												},
+												"key": "on_exit",
+												"is_minified": true,
+												"children": [
+													"/effect @p[r=2] clear"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

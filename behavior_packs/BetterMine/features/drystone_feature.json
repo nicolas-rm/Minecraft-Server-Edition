@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "better:drystone_feature"
+    },
+    "count": 32,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "better:drystone"
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:stone"
+          }
+        ]
+      }
+    ]
+  }
+}

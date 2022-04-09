@@ -1,0 +1,7 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/beech_leaves",
+    "atlas_tile": "beech_leaves",
+    "ticks_per_frame": 42000
+  }
+]

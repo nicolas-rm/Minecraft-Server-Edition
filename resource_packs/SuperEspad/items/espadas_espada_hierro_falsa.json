@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:espada_hierro_falsa",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:espada_hierro_falsa",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

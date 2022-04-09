@@ -1,0 +1,1091 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\VanillaTwi\\entities\\mimic.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "a60c33d6_6fe6_4f1e_b86b_dea48db58155",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "mythmob:mimic",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"component_groups": {
+							"mimic": {
+								"minecraft:collision_box": {
+									"width": 0.8,
+									"height": 0.8
+								},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:movement": {
+									"value": 0.4
+								},
+								"minecraft:attack": {
+									"damage": 3
+								}
+							},
+							"minecraft:slime_calm": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								}
+							},
+							"minecraft:slime_aggressive": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.16,
+										0.5
+									]
+								}
+							}
+						},
+						"components": {
+							"minecraft:type_family": {
+								"family": [
+									"mimic"
+								]
+							},
+							"minecraft:nameable": {
+								"alwaysShow": true,
+								"allowNameTagRenaming": false
+							},
+							"minecraft:breathable": {
+								"totalSupply": 15,
+								"suffocateTime": 0,
+								"breathesWater": true
+							},
+							"minecraft:health": {
+								"value": 20,
+								"max": 20
+							},
+							"minecraft:attack": {
+								"damage": 4
+							},
+							"minecraft:loot": {
+								"table": "loot_tables/entities/mimic.json"
+							},
+							"minecraft:movement": {
+								"value": 0.25
+							},
+							"minecraft:navigation.walk": {
+								"is_amphibious": false,
+								"avoid_sun": false,
+								"avoid_water": true
+							},
+							"minecraft:movement.jump": {
+								"jump_delay": [
+									0.5,
+									1.5
+								]
+							},
+							"minecraft:jump.static": {},
+							"minecraft:can_climb": {},
+							"minecraft:collision_box": {
+								"width": 0.7,
+								"height": 0.7
+							},
+							"minecraft:knockback_resistance": {
+								"value": 1
+							},
+							"minecraft:behavior.random_stroll": {
+								"priority": 5,
+								"speed_multiplier": 1
+							},
+							"minecraft:behavior.look_at_player": {
+								"priority": 6,
+								"look_distance": 8
+							},
+							"minecraft:behavior.random_look_around": {
+								"priority": 6
+							},
+							"minecraft:behavior.hurt_by_target": {
+								"priority": 1
+							},
+							"minecraft:on_target_acquired": {
+								"event": "minecraft:become_aggressive",
+								"target": "self"
+							},
+							"minecraft:on_target_escape": {
+								"event": "minecraft:become_calm",
+								"target": "self"
+							},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:physics": {},
+							"minecraft:behavior.slime_float": {
+								"priority": 1,
+								"jump_chance_percentage": 0.8,
+								"speed_multiplier": 1.2
+							},
+							"minecraft:behavior.slime_random_direction": {
+								"priority": 4,
+								"add_random_time_range": 3,
+								"turn_range": 360,
+								"min_change_direction_time": 2
+							},
+							"minecraft:behavior.slime_keep_on_jumping": {
+								"priority": 5,
+								"speed_multiplier": 1
+							},
+							"minecraft:behavior.slime_attack": {
+								"priority": 3
+							},
+							"minecraft:despawn": {
+								"despawn_from_distance": {}
+							}
+						},
+						"events": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm",
+										"mimic"
+									]
+								}
+							},
+							"minecraft:become_calm": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm"
+									]
+								}
+							},
+							"minecraft:become_aggressive": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_aggressive"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "mythmob:mimic",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:mimic",
+								"is_spawnable": true,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"mimic": {
+									"minecraft:collision_box": {
+										"width": 0.8,
+										"height": 0.8
+									},
+									"minecraft:health": {
+										"value": 20,
+										"max": 20
+									},
+									"minecraft:movement": {
+										"value": 0.4
+									},
+									"minecraft:attack": {
+										"damage": 3
+									}
+								},
+								"minecraft:slime_calm": {
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.5,
+											1.5
+										]
+									}
+								},
+								"minecraft:slime_aggressive": {
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.16,
+											0.5
+										]
+									}
+								}
+							},
+							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"mimic"
+									]
+								},
+								"minecraft:nameable": {
+									"alwaysShow": true,
+									"allowNameTagRenaming": false
+								},
+								"minecraft:breathable": {
+									"totalSupply": 15,
+									"suffocateTime": 0,
+									"breathesWater": true
+								},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:attack": {
+									"damage": 4
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/mimic.json"
+								},
+								"minecraft:movement": {
+									"value": 0.25
+								},
+								"minecraft:navigation.walk": {
+									"is_amphibious": false,
+									"avoid_sun": false,
+									"avoid_water": true
+								},
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:collision_box": {
+									"width": 0.7,
+									"height": 0.7
+								},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 6,
+									"look_distance": 8
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 6
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1
+								},
+								"minecraft:on_target_acquired": {
+									"event": "minecraft:become_aggressive",
+									"target": "self"
+								},
+								"minecraft:on_target_escape": {
+									"event": "minecraft:become_calm",
+									"target": "self"
+								},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:physics": {},
+								"minecraft:behavior.slime_float": {
+									"priority": 1,
+									"jump_chance_percentage": 0.8,
+									"speed_multiplier": 1.2
+								},
+								"minecraft:behavior.slime_random_direction": {
+									"priority": 4,
+									"add_random_time_range": 3,
+									"turn_range": 360,
+									"min_change_direction_time": 2
+								},
+								"minecraft:behavior.slime_keep_on_jumping": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.slime_attack": {
+									"priority": 3
+								},
+								"minecraft:despawn": {
+									"despawn_from_distance": {}
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_calm",
+											"mimic"
+										]
+									}
+								},
+								"minecraft:become_calm": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_calm"
+										]
+									}
+								},
+								"minecraft:become_aggressive": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_aggressive"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {
+							"mimic": {
+								"minecraft:collision_box": {
+									"width": 0.8,
+									"height": 0.8
+								},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:movement": {
+									"value": 0.4
+								},
+								"minecraft:attack": {
+									"damage": 3
+								}
+							},
+							"minecraft:slime_calm": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								}
+							},
+							"minecraft:slime_aggressive": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.16,
+										0.5
+									]
+								}
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:mimic",
+								"is_spawnable": true,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"mimic": {
+									"minecraft:collision_box": {
+										"width": 0.8,
+										"height": 0.8
+									},
+									"minecraft:health": {
+										"value": 20,
+										"max": 20
+									},
+									"minecraft:movement": {
+										"value": 0.4
+									},
+									"minecraft:attack": {
+										"damage": 3
+									}
+								},
+								"minecraft:slime_calm": {
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.5,
+											1.5
+										]
+									}
+								},
+								"minecraft:slime_aggressive": {
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.16,
+											0.5
+										]
+									}
+								}
+							},
+							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"mimic"
+									]
+								},
+								"minecraft:nameable": {
+									"alwaysShow": true,
+									"allowNameTagRenaming": false
+								},
+								"minecraft:breathable": {
+									"totalSupply": 15,
+									"suffocateTime": 0,
+									"breathesWater": true
+								},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:attack": {
+									"damage": 4
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/mimic.json"
+								},
+								"minecraft:movement": {
+									"value": 0.25
+								},
+								"minecraft:navigation.walk": {
+									"is_amphibious": false,
+									"avoid_sun": false,
+									"avoid_water": true
+								},
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:collision_box": {
+									"width": 0.7,
+									"height": 0.7
+								},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 6,
+									"look_distance": 8
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 6
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1
+								},
+								"minecraft:on_target_acquired": {
+									"event": "minecraft:become_aggressive",
+									"target": "self"
+								},
+								"minecraft:on_target_escape": {
+									"event": "minecraft:become_calm",
+									"target": "self"
+								},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:physics": {},
+								"minecraft:behavior.slime_float": {
+									"priority": 1,
+									"jump_chance_percentage": 0.8,
+									"speed_multiplier": 1.2
+								},
+								"minecraft:behavior.slime_random_direction": {
+									"priority": 4,
+									"add_random_time_range": 3,
+									"turn_range": 360,
+									"min_change_direction_time": 2
+								},
+								"minecraft:behavior.slime_keep_on_jumping": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.slime_attack": {
+									"priority": 3
+								},
+								"minecraft:despawn": {
+									"despawn_from_distance": {}
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_calm",
+											"mimic"
+										]
+									}
+								},
+								"minecraft:become_calm": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_calm"
+										]
+									}
+								},
+								"minecraft:become_aggressive": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_aggressive"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"mimic"
+										]
+									},
+									"minecraft:nameable": {
+										"alwaysShow": true,
+										"allowNameTagRenaming": false
+									},
+									"minecraft:breathable": {
+										"totalSupply": 15,
+										"suffocateTime": 0,
+										"breathesWater": true
+									},
+									"minecraft:health": {
+										"value": 20,
+										"max": 20
+									},
+									"minecraft:attack": {
+										"damage": 4
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/entities/mimic.json"
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"is_amphibious": false,
+										"avoid_sun": false,
+										"avoid_water": true
+									},
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.5,
+											1.5
+										]
+									},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:collision_box": {
+										"width": 0.7,
+										"height": 0.7
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:behavior.random_stroll": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.look_at_player": {
+										"priority": 6,
+										"look_distance": 8
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 6
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1
+									},
+									"minecraft:on_target_acquired": {
+										"event": "minecraft:become_aggressive",
+										"target": "self"
+									},
+									"minecraft:on_target_escape": {
+										"event": "minecraft:become_calm",
+										"target": "self"
+									},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:physics": {},
+									"minecraft:behavior.slime_float": {
+										"priority": 1,
+										"jump_chance_percentage": 0.8,
+										"speed_multiplier": 1.2
+									},
+									"minecraft:behavior.slime_random_direction": {
+										"priority": 4,
+										"add_random_time_range": 3,
+										"turn_range": 360,
+										"min_change_direction_time": 2
+									},
+									"minecraft:behavior.slime_keep_on_jumping": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.slime_attack": {
+										"priority": 3
+									},
+									"minecraft:despawn": {
+										"despawn_from_distance": {}
+									}
+								},
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"mimic"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"mimic"
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:nameable",
+								"is_minified": true,
+								"children": {
+									"alwaysShow": true,
+									"allowNameTagRenaming": false
+								}
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"totalSupply": 15,
+									"suffocateTime": 0,
+									"breathesWater": true
+								}
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 20,
+									"max": 20
+								}
+							},
+							{
+								"key": "minecraft:attack",
+								"is_minified": true,
+								"children": {
+									"damage": 4
+								}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {
+									"table": "loot_tables/entities/mimic.json"
+								}
+							},
+							{
+								"key": "minecraft:movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.25
+								}
+							},
+							{
+								"key": "minecraft:navigation.walk",
+								"is_minified": true,
+								"children": {
+									"is_amphibious": false,
+									"avoid_sun": false,
+									"avoid_water": true
+								}
+							},
+							{
+								"key": "minecraft:movement.jump",
+								"is_minified": true,
+								"children": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:can_climb",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0.7,
+									"height": 0.7
+								}
+							},
+							{
+								"key": "minecraft:knockback_resistance",
+								"is_minified": true,
+								"children": {
+									"value": 1
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_stroll",
+								"is_minified": true,
+								"children": {
+									"priority": 5,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"key": "minecraft:behavior.look_at_player",
+								"is_minified": true,
+								"children": {
+									"priority": 6,
+									"look_distance": 8
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_look_around",
+								"is_minified": true,
+								"children": {
+									"priority": 6
+								}
+							},
+							{
+								"key": "minecraft:behavior.hurt_by_target",
+								"is_minified": true,
+								"children": {
+									"priority": 1
+								}
+							},
+							{
+								"key": "minecraft:on_target_acquired",
+								"is_minified": true,
+								"children": {
+									"event": "minecraft:become_aggressive",
+									"target": "self"
+								}
+							},
+							{
+								"key": "minecraft:on_target_escape",
+								"is_minified": true,
+								"children": {
+									"event": "minecraft:become_calm",
+									"target": "self"
+								}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:behavior.slime_float",
+								"is_minified": true,
+								"children": {
+									"priority": 1,
+									"jump_chance_percentage": 0.8,
+									"speed_multiplier": 1.2
+								}
+							},
+							{
+								"key": "minecraft:behavior.slime_random_direction",
+								"is_minified": true,
+								"children": {
+									"priority": 4,
+									"add_random_time_range": 3,
+									"turn_range": 360,
+									"min_change_direction_time": 2
+								}
+							},
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"mimic"
+										]
+									},
+									"minecraft:nameable": {
+										"alwaysShow": true,
+										"allowNameTagRenaming": false
+									},
+									"minecraft:breathable": {
+										"totalSupply": 15,
+										"suffocateTime": 0,
+										"breathesWater": true
+									},
+									"minecraft:health": {
+										"value": 20,
+										"max": 20
+									},
+									"minecraft:attack": {
+										"damage": 4
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/entities/mimic.json"
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"is_amphibious": false,
+										"avoid_sun": false,
+										"avoid_water": true
+									},
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.5,
+											1.5
+										]
+									},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:collision_box": {
+										"width": 0.7,
+										"height": 0.7
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:behavior.random_stroll": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.look_at_player": {
+										"priority": 6,
+										"look_distance": 8
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 6
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1
+									},
+									"minecraft:on_target_acquired": {
+										"event": "minecraft:become_aggressive",
+										"target": "self"
+									},
+									"minecraft:on_target_escape": {
+										"event": "minecraft:become_calm",
+										"target": "self"
+									},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:physics": {},
+									"minecraft:behavior.slime_float": {
+										"priority": 1,
+										"jump_chance_percentage": 0.8,
+										"speed_multiplier": 1.2
+									},
+									"minecraft:behavior.slime_random_direction": {
+										"priority": 4,
+										"add_random_time_range": 3,
+										"turn_range": 360,
+										"min_change_direction_time": 2
+									},
+									"minecraft:behavior.slime_keep_on_jumping": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.slime_attack": {
+										"priority": 3
+									},
+									"minecraft:despawn": {
+										"despawn_from_distance": {}
+									}
+								},
+								"key": "minecraft:behavior.slime_keep_on_jumping",
+								"is_minified": true,
+								"children": {
+									"priority": 5,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"mimic"
+										]
+									},
+									"minecraft:nameable": {
+										"alwaysShow": true,
+										"allowNameTagRenaming": false
+									},
+									"minecraft:breathable": {
+										"totalSupply": 15,
+										"suffocateTime": 0,
+										"breathesWater": true
+									},
+									"minecraft:health": {
+										"value": 20,
+										"max": 20
+									},
+									"minecraft:attack": {
+										"damage": 4
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/entities/mimic.json"
+									},
+									"minecraft:movement": {
+										"value": 0.25
+									},
+									"minecraft:navigation.walk": {
+										"is_amphibious": false,
+										"avoid_sun": false,
+										"avoid_water": true
+									},
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.5,
+											1.5
+										]
+									},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:collision_box": {
+										"width": 0.7,
+										"height": 0.7
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:behavior.random_stroll": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.look_at_player": {
+										"priority": 6,
+										"look_distance": 8
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 6
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1
+									},
+									"minecraft:on_target_acquired": {
+										"event": "minecraft:become_aggressive",
+										"target": "self"
+									},
+									"minecraft:on_target_escape": {
+										"event": "minecraft:become_calm",
+										"target": "self"
+									},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:physics": {},
+									"minecraft:behavior.slime_float": {
+										"priority": 1,
+										"jump_chance_percentage": 0.8,
+										"speed_multiplier": 1.2
+									},
+									"minecraft:behavior.slime_random_direction": {
+										"priority": 4,
+										"add_random_time_range": 3,
+										"turn_range": 360,
+										"min_change_direction_time": 2
+									},
+									"minecraft:behavior.slime_keep_on_jumping": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.slime_attack": {
+										"priority": 3
+									},
+									"minecraft:despawn": {
+										"despawn_from_distance": {}
+									}
+								},
+								"key": "minecraft:behavior.slime_attack",
+								"is_minified": true,
+								"children": {
+									"priority": 3
+								}
+							},
+							{
+								"key": "minecraft:despawn",
+								"is_minified": true,
+								"children": {
+									"despawn_from_distance": {}
+								}
+							}
+						]
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm",
+										"mimic"
+									]
+								}
+							},
+							"minecraft:become_calm": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm"
+									]
+								}
+							},
+							"minecraft:become_aggressive": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_aggressive"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

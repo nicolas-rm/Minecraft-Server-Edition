@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cracked_grimstone_tile_b72de8dd"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:grimstone_tile",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:cracked_grimstone_tile",
+      "count": 1
+    }
+  }
+}

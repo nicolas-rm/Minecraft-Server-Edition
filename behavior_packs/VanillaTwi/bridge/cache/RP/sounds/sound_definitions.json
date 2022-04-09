@@ -1,0 +1,1415 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\sounds\\sound_definitions.json",
+	"file_type": "sound_definition",
+	"format_version": 1,
+	"file_uuid": "b74c4158_bc00_4282_a040_deb656449b03",
+	"file_version": 12,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"sound_definitions": {
+						"mob.goblin.idle": {
+							"category": "neutral",
+							"sounds": [
+								{
+									"name": "sounds/mob/goblin/rage1",
+									"load_on_low_memory": true,
+									"pitch": 1.6
+								},
+								{
+									"name": "sounds/mob/goblin/rage2",
+									"load_on_low_memory": true,
+									"pitch": 1.6
+								}
+							]
+						},
+						"mob.goblin.ambient": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/goblinha",
+								"sounds/mob/goblin/goblinhaa"
+							]
+						},
+						"mob.goblin.hurt": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/goblinow",
+								"sounds/mob/goblin/hurt (1)",
+								"sounds/mob/goblin/hurt (2)",
+								"sounds/mob/goblin/hurt (3)",
+								"sounds/mob/goblin/hurt (4)"
+							]
+						},
+						"mob.goblin.angry": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/angry (5)",
+								"sounds/mob/goblin/angry (1)",
+								"sounds/mob/goblin/angry (2)",
+								"sounds/mob/goblin/angry (3)",
+								"sounds/mob/goblin/angry (6)",
+								"sounds/mob/goblin/angry (4)"
+							]
+						},
+						"mob.goblin.death": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/goblinay",
+								"sounds/mob/goblin/death (2)",
+								"sounds/mob/goblin/death"
+							]
+						},
+						"mob.hagbat.flap": {
+							"category": "hostile",
+							"sounds": [
+								{
+									"name": "sounds/mob/enderdragon/wings1",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings2",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings3",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings4",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings5",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings6",
+									"volume": 1
+								}
+							]
+						},
+						"mob.ogre.death.tamed": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/tamedogre (2)",
+								"sounds/mob/ogre/tamedogre"
+							]
+						},
+						"mob.ogre.hurt": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/hurt (1)",
+								"sounds/mob/ogre/hurt (2)",
+								"sounds/mob/ogre/hurt (3)",
+								"sounds/mob/ogre/hurt (4)",
+								"sounds/mob/ogre/hurt (5)",
+								"sounds/mob/ogre/hurt (6)"
+							]
+						},
+						"mob.ogre.death": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/tamedogre (3)",
+								"sounds/mob/ogre/tamedogre (4)",
+								"sounds/mob/ogre/tamedogre (5)"
+							]
+						},
+						"mob.ogre.ambienttamed": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/tamedambient",
+								"sounds/mob/ogre/tamedambient (1)",
+								"sounds/mob/ogre/tamedambient (2)",
+								"sounds/mob/ogre/tamedambient (3)",
+								"sounds/mob/ogre/tamedambient (4)",
+								"sounds/mob/ogre/tamedambient (5)",
+								"sounds/mob/ogre/tamedambient (6)"
+							]
+						},
+						"mob.ogre.ambient": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/ambient ogre (1)",
+								"sounds/mob/ogre/ambient ogre (2)",
+								"sounds/mob/ogre/ambient ogre (3)",
+								"sounds/mob/ogre/ambient ogre (4)",
+								"sounds/mob/ogre/ambient ogre (5)"
+							]
+						}
+					}
+				},
+				"key": "sound_definitions",
+				"children": [
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.goblin.idle",
+						"children": [
+							{
+								"data": "neutral",
+								"key": "category"
+							},
+							{
+								"open": {
+									"category": "neutral",
+									"sounds": [
+										{
+											"name": "sounds/mob/goblin/rage1",
+											"load_on_low_memory": true,
+											"pitch": 1.6
+										},
+										{
+											"name": "sounds/mob/goblin/rage2",
+											"load_on_low_memory": true,
+											"pitch": 1.6
+										}
+									]
+								},
+								"key": "sounds",
+								"children": [
+									{
+										"open": [
+											{
+												"name": "sounds/mob/goblin/rage1",
+												"load_on_low_memory": true,
+												"pitch": 1.6
+											},
+											{
+												"name": "sounds/mob/goblin/rage2",
+												"load_on_low_memory": true,
+												"pitch": 1.6
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"name": "sounds/mob/goblin/rage1",
+											"load_on_low_memory": true,
+											"pitch": 1.6
+										}
+									},
+									{
+										"open": [
+											{
+												"name": "sounds/mob/goblin/rage1",
+												"load_on_low_memory": true,
+												"pitch": 1.6
+											},
+											{
+												"name": "sounds/mob/goblin/rage2",
+												"load_on_low_memory": true,
+												"pitch": 1.6
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"name": "sounds/mob/goblin/rage2",
+											"load_on_low_memory": true,
+											"pitch": 1.6
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.goblin.ambient",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/goblinha",
+								"sounds/mob/goblin/goblinhaa"
+							]
+						}
+					},
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.goblin.hurt",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/goblinow",
+								"sounds/mob/goblin/hurt (1)",
+								"sounds/mob/goblin/hurt (2)",
+								"sounds/mob/goblin/hurt (3)",
+								"sounds/mob/goblin/hurt (4)"
+							]
+						}
+					},
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.goblin.angry",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/angry (5)",
+								"sounds/mob/goblin/angry (1)",
+								"sounds/mob/goblin/angry (2)",
+								"sounds/mob/goblin/angry (3)",
+								"sounds/mob/goblin/angry (6)",
+								"sounds/mob/goblin/angry (4)"
+							]
+						}
+					},
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.goblin.death",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/goblin/goblinay",
+								"sounds/mob/goblin/death (2)",
+								"sounds/mob/goblin/death"
+							]
+						}
+					},
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.hagbat.flap",
+						"is_minified": true,
+						"children": {
+							"category": "hostile",
+							"sounds": [
+								{
+									"name": "sounds/mob/enderdragon/wings1",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings2",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings3",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings4",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings5",
+									"volume": 1
+								},
+								{
+									"name": "sounds/mob/enderdragon/wings6",
+									"volume": 1
+								}
+							]
+						}
+					},
+					{
+						"key": "mob.ogre.death.tamed",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/tamedogre (2)",
+								"sounds/mob/ogre/tamedogre"
+							]
+						}
+					},
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.ogre.hurt",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/hurt (1)",
+								"sounds/mob/ogre/hurt (2)",
+								"sounds/mob/ogre/hurt (3)",
+								"sounds/mob/ogre/hurt (4)",
+								"sounds/mob/ogre/hurt (5)",
+								"sounds/mob/ogre/hurt (6)"
+							]
+						}
+					},
+					{
+						"key": "mob.ogre.death",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/tamedogre (3)",
+								"sounds/mob/ogre/tamedogre (4)",
+								"sounds/mob/ogre/tamedogre (5)"
+							]
+						}
+					},
+					{
+						"open": {
+							"mob.goblin.idle": {
+								"category": "neutral",
+								"sounds": [
+									{
+										"name": "sounds/mob/goblin/rage1",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									},
+									{
+										"name": "sounds/mob/goblin/rage2",
+										"load_on_low_memory": true,
+										"pitch": 1.6
+									}
+								]
+							},
+							"mob.goblin.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinha",
+									"sounds/mob/goblin/goblinhaa"
+								]
+							},
+							"mob.goblin.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinow",
+									"sounds/mob/goblin/hurt (1)",
+									"sounds/mob/goblin/hurt (2)",
+									"sounds/mob/goblin/hurt (3)",
+									"sounds/mob/goblin/hurt (4)"
+								]
+							},
+							"mob.goblin.angry": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/angry (5)",
+									"sounds/mob/goblin/angry (1)",
+									"sounds/mob/goblin/angry (2)",
+									"sounds/mob/goblin/angry (3)",
+									"sounds/mob/goblin/angry (6)",
+									"sounds/mob/goblin/angry (4)"
+								]
+							},
+							"mob.goblin.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/goblin/goblinay",
+									"sounds/mob/goblin/death (2)",
+									"sounds/mob/goblin/death"
+								]
+							},
+							"mob.hagbat.flap": {
+								"category": "hostile",
+								"sounds": [
+									{
+										"name": "sounds/mob/enderdragon/wings1",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings2",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings3",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings4",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings5",
+										"volume": 1
+									},
+									{
+										"name": "sounds/mob/enderdragon/wings6",
+										"volume": 1
+									}
+								]
+							},
+							"mob.ogre.death.tamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (2)",
+									"sounds/mob/ogre/tamedogre"
+								]
+							},
+							"mob.ogre.hurt": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/hurt (1)",
+									"sounds/mob/ogre/hurt (2)",
+									"sounds/mob/ogre/hurt (3)",
+									"sounds/mob/ogre/hurt (4)",
+									"sounds/mob/ogre/hurt (5)",
+									"sounds/mob/ogre/hurt (6)"
+								]
+							},
+							"mob.ogre.death": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedogre (3)",
+									"sounds/mob/ogre/tamedogre (4)",
+									"sounds/mob/ogre/tamedogre (5)"
+								]
+							},
+							"mob.ogre.ambienttamed": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/tamedambient",
+									"sounds/mob/ogre/tamedambient (1)",
+									"sounds/mob/ogre/tamedambient (2)",
+									"sounds/mob/ogre/tamedambient (3)",
+									"sounds/mob/ogre/tamedambient (4)",
+									"sounds/mob/ogre/tamedambient (5)",
+									"sounds/mob/ogre/tamedambient (6)"
+								]
+							},
+							"mob.ogre.ambient": {
+								"category": "neutral",
+								"sounds": [
+									"sounds/mob/ogre/ambient ogre (1)",
+									"sounds/mob/ogre/ambient ogre (2)",
+									"sounds/mob/ogre/ambient ogre (3)",
+									"sounds/mob/ogre/ambient ogre (4)",
+									"sounds/mob/ogre/ambient ogre (5)"
+								]
+							}
+						},
+						"key": "mob.ogre.ambienttamed",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/tamedambient",
+								"sounds/mob/ogre/tamedambient (1)",
+								"sounds/mob/ogre/tamedambient (2)",
+								"sounds/mob/ogre/tamedambient (3)",
+								"sounds/mob/ogre/tamedambient (4)",
+								"sounds/mob/ogre/tamedambient (5)",
+								"sounds/mob/ogre/tamedambient (6)"
+							]
+						}
+					},
+					{
+						"key": "mob.ogre.ambient",
+						"is_minified": true,
+						"children": {
+							"category": "neutral",
+							"sounds": [
+								"sounds/mob/ogre/ambient ogre (1)",
+								"sounds/mob/ogre/ambient ogre (2)",
+								"sounds/mob/ogre/ambient ogre (3)",
+								"sounds/mob/ogre/ambient ogre (4)",
+								"sounds/mob/ogre/ambient ogre (5)"
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}

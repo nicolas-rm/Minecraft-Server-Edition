@@ -1,0 +1,33 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.8.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "ocean:humpback_whale",
+			"population_control": "animal"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_underwater": {},
+				"minecraft:weight": {
+					"default": 2
+				},
+				"minecraft:herd": {
+					"min_size": 1,
+					"max_size": 1
+				},
+				"minecraft:density_limit": {
+					"surface": 1,
+					"underground": 0
+				},
+				"minecraft:biome_filter": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "ocean"
+					}
+				]
+			}
+		]
+	}
+}

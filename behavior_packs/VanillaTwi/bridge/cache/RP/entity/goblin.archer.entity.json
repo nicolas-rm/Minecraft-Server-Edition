@@ -1,0 +1,236 @@
+{
+	"file_path": "C:\\Users\\Sad\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwilightRP\\entity\\goblin.archer.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "19d23e66_ca30_42a7_8757_3d2c2c4643d1",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:goblin.archer",
+							"materials": {
+								"default": "goblin"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/goblin_archer"
+							},
+							"geometry": {
+								"default": "geometry.goblin_archer"
+							},
+							"animations": {
+								"humanoid_base_pose": "animation.goblin.archer.general",
+								"move": "animation.goblin.walk",
+								"attack.goblin": "animation.goblin_archer.attack",
+								"scared": "animation.goblin.scared"
+							},
+							"animation_controllers": [
+								{
+									"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+								},
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"move": "controller.animation.villager.move"
+								},
+								{
+									"attack": "controller.animation.goblin_archer.attack"
+								},
+								{
+									"idle": "controller.animation.goblin.idle"
+								}
+							],
+							"render_controllers": [
+								"controller.render.goblin"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#0a2603",
+								"overlay_color": "#123e07"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:goblin.archer",
+								"materials": {
+									"default": "goblin"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/goblin_archer"
+								},
+								"geometry": {
+									"default": "geometry.goblin_archer"
+								},
+								"animations": {
+									"humanoid_base_pose": "animation.goblin.archer.general",
+									"move": "animation.goblin.walk",
+									"attack.goblin": "animation.goblin_archer.attack",
+									"scared": "animation.goblin.scared"
+								},
+								"animation_controllers": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"move": "controller.animation.villager.move"
+									},
+									{
+										"attack": "controller.animation.goblin_archer.attack"
+									},
+									{
+										"idle": "controller.animation.goblin.idle"
+									}
+								],
+								"render_controllers": [
+									"controller.render.goblin"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#0a2603",
+									"overlay_color": "#123e07"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:goblin.archer",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "goblin"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/goblin_archer"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.goblin_archer"
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"humanoid_base_pose": "animation.goblin.archer.general",
+									"move": "animation.goblin.walk",
+									"attack.goblin": "animation.goblin_archer.attack",
+									"scared": "animation.goblin.scared"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:goblin.archer",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/goblin_archer"
+									},
+									"geometry": {
+										"default": "geometry.goblin_archer"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.goblin.archer.general",
+										"move": "animation.goblin.walk",
+										"attack.goblin": "animation.goblin_archer.attack",
+										"scared": "animation.goblin.scared"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										},
+										{
+											"attack": "controller.animation.goblin_archer.attack"
+										},
+										{
+											"idle": "controller.animation.goblin.idle"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#0a2603",
+										"overlay_color": "#123e07"
+									}
+								},
+								"key": "animation_controllers",
+								"is_minified": true,
+								"array": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"move": "controller.animation.villager.move"
+									},
+									{
+										"attack": "controller.animation.goblin_archer.attack"
+									},
+									{
+										"idle": "controller.animation.goblin.idle"
+									}
+								]
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"array": [
+									"controller.render.goblin"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#0a2603",
+									"overlay_color": "#123e07"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

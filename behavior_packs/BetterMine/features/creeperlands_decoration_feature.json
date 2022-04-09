@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "minecraft:creeperlands_decoration_feature"
+    },
+    "features": [
+      [ "minecraft:cr_deco_tent", 1 ],
+      [ "minecraft:cr_deco_tent1", 1 ],
+      [ "minecraft:cr_deco_tent2", 1 ],
+      [ "minecraft:cr_deco_target", 1 ],
+      [ "minecraft:cr_deco_cage", 1 ],
+      [ "minecraft:cr_deco_logs", 1]
+    ]
+  }
+}

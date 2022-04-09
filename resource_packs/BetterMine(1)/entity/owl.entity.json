@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:owl",
+      "textures": {
+        "default": "textures/entity/owl"
+      },
+      "materials": {
+        "default": "bat"
+      },
+
+      "render_controllers": [
+        "controller.render.owl"
+      ],
+      "spawn_egg": {
+         "base_color": "#E0DEFA",
+         "overlay_color": "#EA981B"
+      },
+      "geometry": {
+        "default": "geometry.owl"
+      },
+      "animations": {
+
+        "base": "animation.owl.base",
+
+        "flying": "animation.owl.moving",
+        "baby_transform": "animation.owl.baby_transform",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "setup": "controller.animation.owl.setup" },
+        { "move": "controller.animation.owl.moving" },
+        { "baby": "controller.animation.owl.baby" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "better:furnace_bark_fruit"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "better:fruit_bark",
+    "output": "minecraft:coal:1"
+  }
+  
+}

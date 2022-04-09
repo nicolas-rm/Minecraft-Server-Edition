@@ -1,0 +1,25 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "ray:ar_iron_chestplate"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:iron_chestplate"
+			},
+			{
+				"item": "ar_book:netherite_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "ray:ar_iron_chestplate"
+			}
+		]
+	}
+}

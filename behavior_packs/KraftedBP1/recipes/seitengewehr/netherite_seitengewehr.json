@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "netherite_seitengewehr"
+		},
+		"tags": [ "smithing_table" ],
+		"ingredients": [
+			{
+				"item": "true:diamond_seitengewehr"
+			},
+			{
+				"item": "minecraft:netherite_ingot"
+			}
+		],
+		"result": 
+			{
+				"item": "true:netherite_seitengewehr"
+			}
+	}
+}

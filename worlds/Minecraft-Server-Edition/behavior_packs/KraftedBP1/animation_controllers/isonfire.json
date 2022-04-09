@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.isonfire": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "state_1": "query.is_onfire"
+            }
+          ],
+          "on_exit": ["/tag @s add isonfire"]
+        },
+        "state_1": {
+          "transitions": [
+            {
+              "default": "!query.is_onfire || query.is_onfire"
+            }
+          ],
+          "on_entry": ["/tag @s add isonfire"]
+        }
+      }
+    }
+  }
+}

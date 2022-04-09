@@ -1,0 +1,168 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\chocolate_sprinkled_donut.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "519105ce_bedd_47ab_8895_80cf80de919b",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:chocolate_sprinkled_donut",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 2.4,
+							"minecraft:food": {
+								"nutrition": 10,
+								"saturation_modifier": "good"
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "chocolate_sprinkled_donut"
+							},
+							"minecraft:use_animation": "eat"
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_sprinkled_donut",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 10,
+									"saturation_modifier": "good"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "chocolate_sprinkled_donut"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:chocolate_sprinkled_donut",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_sprinkled_donut",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 10,
+									"saturation_modifier": "good"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "chocolate_sprinkled_donut"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 10,
+										"saturation_modifier": "good"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "chocolate_sprinkled_donut"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 10,
+									"saturation_modifier": "good"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 10,
+										"saturation_modifier": "good"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "chocolate_sprinkled_donut"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 10,
+										"saturation_modifier": "good"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "chocolate_sprinkled_donut"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "chocolate_sprinkled_donut"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

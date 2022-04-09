@@ -1,0 +1,420 @@
+//bridge-file-version: #15
+{
+	"entity_sounds": {
+		"entities": {
+			"vanilla_twilight:archer_villager": {
+				"volume": 1,
+				"pitch": [
+					0.6,
+					0.8
+				],
+				"events": {
+					"ambient": "mob.villager.idle",
+					"hurt": "mob.villager.hit",
+					"death": "mob.villager.death",
+					"mad": {
+						"sound": "mob.villager.no",
+						"volume": 1.5,
+						"pitch": [
+							0.6,
+							0.7
+						]
+					}
+				}
+			},
+			"vanilla_twilight:swordsman_villager": {
+				"volume": 1,
+				"pitch": [
+					0.6,
+					0.8
+				],
+				"events": {
+					"ambient": "mob.villager.idle",
+					"hurt": "mob.villager.hit",
+					"death": "mob.villager.death",
+					"mad": {
+						"sound": "mob.villager.no",
+						"volume": 1.5,
+						"pitch": [
+							0.6,
+							0.7
+						]
+					}
+				}
+			},
+			"vanilla_twilight:evocation_villager": {
+				"volume": 1,
+				"pitch": [
+					0.6,
+					0.9
+				],
+				"events": {
+					"ambient": "mob.villager.idle",
+					"hurt": "mob.villager.hit",
+					"death": "mob.villager.death",
+					"cast.spell": "mob.evocation_illager.cast_spell",
+					"prepare.attack": "mob.evocation_illager.prepare_attack",
+					"prepare.summon": "mob.evocation_illager.prepare_summon",
+					"prepare.wololo": "mob.evocation_illager.prepare_wololo"
+				}
+			},
+			"vanilla_twilight:kobold": {
+				"volume": 1,
+				"pitch": [
+					0.5,
+					0.9
+				],
+				"events": {
+					"ambient": "mob.wolf.bark",
+					"hurt": "mob.wolf.growl",
+					"death": "mob.wolf.death",
+					"admire": {
+						"sound": "armor.equip_iron",
+						"pitch": 1
+					}
+				}
+			},
+			"vanilla_twilight:cockatrice": {
+				"volume": 1.5,
+				"pitch": [
+					0.4,
+					0.8
+				],
+				"events": {
+					"ambient": "mob.chicken.say",
+					"hurt": "mob.chicken.hurt",
+					"death": "mob.chicken.hurt",
+					"step": {
+						"sound": "mob.chicken.step",
+						"volume": 0.3,
+						"pitch": 1
+					}
+				}
+			},
+			"vanilla_twilight:hagbat": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.witch.ambient",
+					"hurt": "mob.witch.hurt",
+					"death": "mob.witch.death"
+				}
+			},
+			"mythmob:goblin": {
+				"volume": 1,
+				"pitch": [
+					1.2,
+					1.6
+				],
+				"events": {
+					"ambient": "mob.goblin.ambient",
+					"hurt": "mob.goblin.hurt",
+					"death": "mob.goblin.death",
+					"attack": "mob.goblin.angry"
+				}
+			},
+			"mythmob:goblin.archer": {
+				"volume": 1,
+				"pitch": [
+					1.2,
+					1.6
+				],
+				"events": {
+					"ambient": "mob.goblin.ambient",
+					"hurt": "mob.goblin.hurt",
+					"death": "mob.goblin.death",
+					"attack": "mob.goblin.angry"
+				}
+			},
+			"mythmob:goblin.berserker": {
+				"volume": 1,
+				"pitch": [
+					1.2,
+					1.6
+				],
+				"events": {
+					"ambient": "mob.goblin.ambient",
+					"hurt": "mob.goblin.hurt",
+					"death": "mob.goblin.death",
+					"attack": "mob.goblin.angry"
+				}
+			},
+			"mythmob:mimic": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": {},
+					"hurt": "dig.wood",
+					"death": "use.wood",
+					"squish.small": {
+						"sound": "fall.wood",
+						"pitch": [
+							0.64,
+							0.96
+						]
+					},
+					"attack": {
+						"sound": "mob.attack",
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"mythmob:werewolf": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.villager.idle",
+					"hurt": "mob.villager.hit",
+					"death": "mob.villager.death"
+				}
+			},
+			"mythmob:werewolf2": {
+				"volume": 1.5,
+				"pitch": [
+					0.4,
+					0.6
+				],
+				"events": {
+					"ambient": "mob.wolf.growl",
+					"hurt": "mob.wolf.bark",
+					"death": "mob.wolf.death"
+				}
+			},
+			"mythmob:nymph2": {
+				"volume": 1,
+				"pitch": [
+					0.3,
+					0.7
+				],
+				"events": {
+					"ambient": "mob.spider.say",
+					"hurt": "mob.phantom.bite",
+					"death": "mob.phantom.death",
+					"step": {
+						"sound": "mob.spider.step",
+						"volume": 1,
+						"pitch": 1
+					}
+				}
+			},
+			"mythmob:giant": {
+				"volume": 2,
+				"pitch": [
+					0.3,
+					0.5
+				],
+				"events": {
+					"ambient": "mob.villager.idle",
+					"hurt": "mob.villager.hit",
+					"death": "mob.villager.death",
+					"mad": {
+						"sound": "mob.villager.no",
+						"volume": 2.5,
+						"pitch": [
+							0.4,
+							0.5
+						]
+					}
+				}
+			},
+			"mythmob:skeletonknight": {
+				"volume": 0.8,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.skeleton.say",
+					"hurt": {
+						"sound": "mob.skeleton.hurt",
+						"volume": 0.7
+					},
+					"death": "mob.skeleton.death",
+					"step": {
+						"sound": "mob.skeleton.step",
+						"volume": 0.8,
+						"pitch": 0.8
+					}
+				}
+			},
+			"mythmob:necromancer_illager": {
+				"volume": 1,
+				"pitch": [
+					0.6,
+					1
+				],
+				"events": {
+					"ambient": "mob.evocation_illager.ambient",
+					"death": "mob.evocation_illager.death",
+					"hurt": "mob.evocation_illager.hurt",
+					"cast.spell": "mob.evocation_illager.cast_spell",
+					"prepare.attack": "mob.evocation_illager.prepare_attack",
+					"prepare.summon": "mob.evocation_illager.prepare_summon",
+					"prepare.wololo": "mob.evocation_illager.prepare_wololo"
+				}
+			},
+			"mythmob:giantspider": {
+				"volume": 1.5,
+				"pitch": [
+					0.5,
+					0.9
+				],
+				"events": {
+					"ambient": "mob.spider.say",
+					"hurt": "mob.spider.say",
+					"death": "mob.spider.death",
+					"step": {
+						"sound": "mob.spider.step",
+						"volume": 1.5,
+						"pitch": 1.5
+					}
+				}
+			},
+			"mythmob:minotaur": {
+				"volume": 2,
+				"pitch": [
+					0.3,
+					0.5
+				],
+				"events": {
+					"ambient": "mob.cow.say",
+					"hurt": "mob.cow.hurt",
+					"death": "mob.cow.hurt",
+					"step": {
+						"sound": "mob.cow.step",
+						"volume": 0.3,
+						"pitch": 1
+					}
+				}
+			},
+			"mythmob:centaur": {
+				"volume": 2,
+				"pitch": [
+					0.3,
+					0.5
+				],
+				"events": {
+					"ambient": "mob.horse.idle",
+					"hurt": "mob.horse.angry",
+					"death": "mob.horse.death",
+					"step": {
+						"sound": "mob.horse.jump",
+						"volume": 0.3,
+						"pitch": 1
+					}
+				}
+			},
+			"mythmob:satyr": {
+				"volume": 1,
+				"pitch": [
+					0.5,
+					0.7
+				],
+				"events": {
+					"ambient": "mob.sheep.say",
+					"hurt": "mob.sheep.say",
+					"death": "mob.sheep.say",
+					"step": {
+						"sound": "mob.horse.jump",
+						"volume": 0.7,
+						"pitch": 0.1
+					}
+				}
+			},
+			"mythmob:mushroom": {
+				"volume": 0.75,
+				"pitch": [
+					1.2,
+					1.7
+				],
+				"events": {
+					"hurt": "mob.creeper.say",
+					"death": "mob.creeper.death",
+					"fuse": {
+						"sound": "random.fuse",
+						"volume": 1,
+						"pitch": 0.5
+					}
+				}
+			},
+			"mythmob:mushroom2": {
+				"volume": 0.75,
+				"pitch": [
+					1.2,
+					1.7
+				],
+				"events": {
+					"hurt": "mob.creeper.say",
+					"death": "mob.creeper.death",
+					"fuse": {
+						"sound": "random.fuse",
+						"volume": 1,
+						"pitch": 0.5
+					}
+				}
+			},
+			"mythmob:ogre": {
+				"volume": 2,
+				"pitch": [
+					0.9,
+					1.1
+				],
+				"events": {
+					"ambient.tame": "mob.ogre.ambienttamed",
+					"ambient": "mob.ogre.ambient",
+					"hurt": "mob.ogre.hurt",
+					"death": "mob.ogre.death",
+					"death.tamed": "mob.ogre.death.tamed"
+				}
+			},
+			"mythmob:orc": {
+				"volume": 2,
+				"pitch": [
+					0.4,
+					1.8
+				],
+				"events": {
+					"ambient": "mob.zombiepig.zpig",
+					"hurt": "mob.zombiepig.zpigangry",
+					"death": "mob.zombiepig.zpigdeath"
+				}
+			},
+			"mythmob:wraith": {
+				"volume": 0.6,
+				"pitch": [
+					1.2,
+					1.6
+				],
+				"events": {
+					"ambient": "mob.wither.ambient",
+					"hurt": "mob.wither.hurt",
+					"death": "mob.wither.death"
+				}
+			},
+			"mythmob:troll": {
+				"volume": 1,
+				"pitch": [
+					1.2,
+					1.6
+				],
+				"events": {
+					"ambient": "mob.pillager.idle",
+					"hurt": "mob.pillager.hurt",
+					"death": "mob.pillager.death"
+				}
+			}
+		}
+	}
+}

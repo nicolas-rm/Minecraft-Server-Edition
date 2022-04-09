@@ -1,0 +1,69 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "mega_coniferous_taiga"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.8,
+        "snow_accumulation": [ 0.0, 0.25 ],
+        "temperature": 0.3
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 0.66, 0.55 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:mountain_parameters": {
+        "top_slide": {
+          "enabled": false
+        }
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": {
+                "name": "minecraft:dirt",
+                "states": {
+                  "dirt_type": "coarse"
+                }
+              }
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.212, 1.0 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:podzol"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ -0.115, 0.212 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "shore_transformation": "stone_beach",
+        "generate_for_climates": [
+          [ "cold", 1 ]
+        ]
+      },
+
+      "animal": {},
+      "bushes": {},
+      "rare": {},
+      "forest_rock": {},
+      "taiga_bushes": {},
+      "mountain_h": {},
+      "monster": {},
+      "overworld": {}
+    }
+  }
+}

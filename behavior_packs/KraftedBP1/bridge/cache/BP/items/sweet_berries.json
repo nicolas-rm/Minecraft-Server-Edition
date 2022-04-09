@@ -1,0 +1,118 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\sweet_berries.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "0615c98a_b5f9_4fd6_9094_ace175b38485",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:sweet_berries"
+						},
+						"components": {
+							"minecraft:use_duration": 8,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "poor",
+								"is_meat": false
+							},
+							"minecraft:seed": {
+								"crop_result": "sweet_berry_bush",
+								"plant_at": [
+									"grass",
+									"dirt",
+									"podzol"
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:sweet_berries"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:sweet_berries"
+							},
+							"components": {
+								"minecraft:use_duration": 8,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "poor",
+									"is_meat": false
+								},
+								"minecraft:seed": {
+									"crop_result": "sweet_berry_bush",
+									"plant_at": [
+										"grass",
+										"dirt",
+										"podzol"
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "8",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 8,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "poor",
+										"is_meat": false
+									},
+									"minecraft:seed": {
+										"crop_result": "sweet_berry_bush",
+										"plant_at": [
+											"grass",
+											"dirt",
+											"podzol"
+										]
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 2,
+									"saturation_modifier": "poor",
+									"is_meat": false
+								}
+							},
+							{
+								"key": "minecraft:seed",
+								"is_minified": true,
+								"children": {
+									"crop_result": "sweet_berry_bush",
+									"plant_at": [
+										"grass",
+										"dirt",
+										"podzol"
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

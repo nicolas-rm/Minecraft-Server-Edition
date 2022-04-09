@@ -1,0 +1,33 @@
+//bridge-file-version: #4
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mrleefy:slimespawner"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ODO",
+			"DPD",
+			"ODO"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:iron_bars"
+			},
+			"D": {
+				"item": "minecraft:slime_ball"
+			},
+			"P": {
+				"item": "minecraft:netherite_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "mrleefy:slimespawner"
+			}
+		]
+	}
+}

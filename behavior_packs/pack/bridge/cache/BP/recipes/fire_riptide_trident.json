@@ -1,0 +1,319 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\fire_riptide_trident.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "c4f686ab_e550_43fe_b238_03ea870c61a7",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:fire_riptide_trident"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"pattern": [
+							"bfb",
+							"btb"
+						],
+						"key": {
+							"b": {
+								"item": "minecraft:blaze_powder"
+							},
+							"f": {
+								"item": "minecraft:fireball"
+							},
+							"t": {
+								"item": "minecraft:trident"
+							}
+						},
+						"result": [
+							{
+								"item": "ray:fire_trident"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:fire_riptide_trident"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"pattern": [
+							"bfb",
+							"btb"
+						],
+						"key": {
+							"b": {
+								"item": "minecraft:blaze_powder"
+							},
+							"f": {
+								"item": "minecraft:fireball"
+							},
+							"t": {
+								"item": "minecraft:trident"
+							}
+						},
+						"result": [
+							{
+								"item": "ray:fire_trident"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:fire_riptide_trident"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"bfb",
+								"btb"
+							],
+							"key": {
+								"b": {
+									"item": "minecraft:blaze_powder"
+								},
+								"f": {
+									"item": "minecraft:fireball"
+								},
+								"t": {
+									"item": "minecraft:trident"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:fire_trident"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:fire_riptide_trident"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:fire_riptide_trident"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"bfb",
+								"btb"
+							],
+							"key": {
+								"b": {
+									"item": "minecraft:blaze_powder"
+								},
+								"f": {
+									"item": "minecraft:fireball"
+								},
+								"t": {
+									"item": "minecraft:trident"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:fire_trident"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:fire_riptide_trident"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"bfb",
+								"btb"
+							],
+							"key": {
+								"b": {
+									"item": "minecraft:blaze_powder"
+								},
+								"f": {
+									"item": "minecraft:fireball"
+								},
+								"t": {
+									"item": "minecraft:trident"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:fire_trident"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"bfb",
+							"btb"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:fire_riptide_trident"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"bfb",
+								"btb"
+							],
+							"key": {
+								"b": {
+									"item": "minecraft:blaze_powder"
+								},
+								"f": {
+									"item": "minecraft:fireball"
+								},
+								"t": {
+									"item": "minecraft:trident"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:fire_trident"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"b": {
+										"item": "minecraft:blaze_powder"
+									},
+									"f": {
+										"item": "minecraft:fireball"
+									},
+									"t": {
+										"item": "minecraft:trident"
+									}
+								},
+								"key": "b",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:blaze_powder"
+								}
+							},
+							{
+								"open": {
+									"b": {
+										"item": "minecraft:blaze_powder"
+									},
+									"f": {
+										"item": "minecraft:fireball"
+									},
+									"t": {
+										"item": "minecraft:trident"
+									}
+								},
+								"key": "f",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:fireball"
+								}
+							},
+							{
+								"open": {
+									"b": {
+										"item": "minecraft:blaze_powder"
+									},
+									"f": {
+										"item": "minecraft:fireball"
+									},
+									"t": {
+										"item": "minecraft:trident"
+									}
+								},
+								"key": "t",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:trident"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:fire_riptide_trident"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"bfb",
+								"btb"
+							],
+							"key": {
+								"b": {
+									"item": "minecraft:blaze_powder"
+								},
+								"f": {
+									"item": "minecraft:fireball"
+								},
+								"t": {
+									"item": "minecraft:trident"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:fire_trident"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:fire_trident"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:fire_trident"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

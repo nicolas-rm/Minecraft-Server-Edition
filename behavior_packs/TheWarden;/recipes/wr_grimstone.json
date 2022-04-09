@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grimstone_8bdcf4a0"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:cobbled_grimstone",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:grimstone",
+      "count": 1
+    }
+  }
+}

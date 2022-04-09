@@ -1,0 +1,247 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.wr_undead_stalker",
+        "texture_width": 96,
+        "texture_height": 96,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 6.5,
+        "visible_bounds_offset": [
+          0,
+          2.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "Body",
+          "pivot": [
+            0,
+            53,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.0,
+                44.0,
+                -4.0
+              ],
+              "size": [
+                20.0,
+                18.0,
+                8.0
+              ],
+              "uv": [
+                21,
+                0
+              ],
+              "inflate": 0
+            }
+          ]
+        },
+        {
+          "name": "head",
+          "pivot": [
+            0,
+            55,
+            -2
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8.0,
+                62.0,
+                -4.0
+              ],
+              "size": [
+                16.0,
+                12.0,
+                8.0
+              ],
+              "uv": [
+                21,
+                27
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Body"
+        },
+        {
+          "name": "arms2",
+          "pivot": [
+            11,
+            57,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                10.0,
+                0.0,
+                -3.0
+              ],
+              "size": [
+                4.0,
+                60.0,
+                6.0
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Body"
+        },
+        {
+          "name": "hand2",
+          "pivot": [
+            12,
+            0,
+            -3
+          ],
+          "cubes": [
+            {
+              "origin": [
+                10.0,
+                0.0,
+                -13.0
+              ],
+              "size": [
+                4.0,
+                0.0,
+                10.0
+              ],
+              "uv": [
+                38,
+                48
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "arms2"
+        },
+        {
+          "name": "arms1",
+          "pivot": [
+            -11,
+            57,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -14.0,
+                0.0,
+                -3.0
+              ],
+              "size": [
+                4.0,
+                60.0,
+                6.0
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "inflate": 0,
+              "mirror": true
+            }
+          ],
+          "parent": "Body"
+        },
+        {
+          "name": "hand",
+          "pivot": [
+            -12,
+            0,
+            -3
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -14.0,
+                0.0,
+                -13.0
+              ],
+              "size": [
+                4.0,
+                0.0,
+                10.0
+              ],
+              "uv": [
+                38,
+                48
+              ],
+              "inflate": 0,
+              "mirror": true
+            }
+          ],
+          "parent": "arms1"
+        },
+        {
+          "name": "legl",
+          "pivot": [
+            4,
+            44,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2.0,
+                0.0,
+                -2.0
+              ],
+              "size": [
+                4.0,
+                44.0,
+                4.0
+              ],
+              "uv": [
+                21,
+                48
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Body"
+        },
+        {
+          "name": "leglr",
+          "pivot": [
+            -4,
+            44,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6.0,
+                0.0,
+                -2.0
+              ],
+              "size": [
+                4.0,
+                44.0,
+                4.0
+              ],
+              "uv": [
+                21,
+                48
+              ],
+              "inflate": 0,
+              "mirror": true
+            }
+          ],
+          "parent": "Body"
+        }
+      ]
+    }
+  ]
+}

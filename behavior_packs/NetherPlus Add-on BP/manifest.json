@@ -1,0 +1,40 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§l§6NetherPlus §fAdd-on §4[B]",
+		"description": "New Nether Plus 1.18.+ Update! §6[By: TwitchTube and MarcoGamer]",
+		"uuid": "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "fd5ed3b2-12f4-49f2-842f-54e5a2a70e0a",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.3",
+				"2.2.5"
+			],
+			"dash": [
+				"0.8.3"
+			]
+		}
+	}
+}

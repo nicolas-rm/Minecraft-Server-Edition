@@ -1,0 +1,115 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\maple_planks.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "2dac5d5a_cff2_4320_bd73_5943c8624e27",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:maple_planks"
+						},
+						"components": {
+							"minecraft:destroy_time": 2,
+							"minecraft:map_color": "#C9C39A",
+							"minecraft:explosion_resistance": 4,
+							"tag:wood": {},
+							"minecraft:creative_category": {
+								"group": "itemGroup.name.Construction",
+								"category": "Construction"
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_planks"
+							},
+							"components": {
+								"minecraft:destroy_time": 2,
+								"minecraft:map_color": "#C9C39A",
+								"minecraft:explosion_resistance": 4,
+								"tag:wood": {},
+								"minecraft:creative_category": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_planks"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_planks"
+							},
+							"components": {
+								"minecraft:destroy_time": 2,
+								"minecraft:map_color": "#C9C39A",
+								"minecraft:explosion_resistance": 4,
+								"tag:wood": {},
+								"minecraft:creative_category": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"data": "#C9C39A",
+								"key": "minecraft:map_color"
+							},
+							{
+								"data": "4",
+								"key": "minecraft:explosion_resistance"
+							},
+							{
+								"key": "tag:wood",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:destroy_time": 2,
+									"minecraft:map_color": "#C9C39A",
+									"minecraft:explosion_resistance": 4,
+									"tag:wood": {},
+									"minecraft:creative_category": {
+										"group": "itemGroup.name.Construction",
+										"category": "Construction"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

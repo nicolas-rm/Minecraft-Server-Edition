@@ -1,0 +1,23 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\functions\\tick.json",
+	"file_type": "function_tick",
+	"format_version": 1,
+	"file_uuid": "47e19d93_279a_4ec4_8ab8_8cdac2da118b",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"values": [
+						"tick"
+					]
+				},
+				"key": "values",
+				"is_minified": true,
+				"children": [
+					"tick"
+				]
+			}
+		]
+	}
+}

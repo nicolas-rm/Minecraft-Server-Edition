@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:espada_hueso",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "espadas:espada_hueso",
+      "minecraft:use_animation": "bow",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

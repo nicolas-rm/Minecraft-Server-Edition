@@ -1,0 +1,572 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\entities\\book.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "1f209757_60ef_4ba9_8c3b_31d0a8b9ebff",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "ray:book",
+							"runtime_identifier": {},
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"component_groups": {
+							"des": {
+								"minecraft:instant_despawn": {}
+							}
+						},
+						"components": {
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"cause": "all",
+										"deals_damage": false
+									}
+								]
+							},
+							"minecraft:timer": {
+								"looping": false,
+								"time": [
+									0,
+									0
+								],
+								"time_down_event": {
+									"event": "command",
+									"target": "self"
+								}
+							},
+							"minecraft:knockback_resistance": {
+								"value": 100
+							}
+						},
+						"events": {
+							"command": {
+								"run_command": {
+									"command": [
+										"tag @s add anee"
+									]
+								}
+							},
+							"des": {
+								"add": {
+									"component_groups": [
+										"des"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:book",
+								"runtime_identifier": {},
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {
+								"des": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"deals_damage": false
+										}
+									]
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": [
+										0,
+										0
+									],
+									"time_down_event": {
+										"event": "command",
+										"target": "self"
+									}
+								},
+								"minecraft:knockback_resistance": {
+									"value": 100
+								}
+							},
+							"events": {
+								"command": {
+									"run_command": {
+										"command": [
+											"tag @s add anee"
+										]
+									}
+								},
+								"des": {
+									"add": {
+										"component_groups": [
+											"des"
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:book",
+							"runtime_identifier": {},
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:book",
+								"runtime_identifier": {},
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {
+								"des": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"deals_damage": false
+										}
+									]
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": [
+										0,
+										0
+									],
+									"time_down_event": {
+										"event": "command",
+										"target": "self"
+									}
+								},
+								"minecraft:knockback_resistance": {
+									"value": 100
+								}
+							},
+							"events": {
+								"command": {
+									"run_command": {
+										"command": [
+											"tag @s add anee"
+										]
+									}
+								},
+								"des": {
+									"add": {
+										"component_groups": [
+											"des"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
+						"children": [
+							{
+								"open": {
+									"des": {
+										"minecraft:instant_despawn": {}
+									}
+								},
+								"key": "des",
+								"is_minified": true,
+								"children": {
+									"minecraft:instant_despawn": {}
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:book",
+								"runtime_identifier": {},
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {
+								"des": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"deals_damage": false
+										}
+									]
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": [
+										0,
+										0
+									],
+									"time_down_event": {
+										"event": "command",
+										"target": "self"
+									}
+								},
+								"minecraft:knockback_resistance": {
+									"value": 100
+								}
+							},
+							"events": {
+								"command": {
+									"run_command": {
+										"command": [
+											"tag @s add anee"
+										]
+									}
+								},
+								"des": {
+									"add": {
+										"component_groups": [
+											"des"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"cause": "all",
+												"deals_damage": false
+											}
+										]
+									},
+									"minecraft:timer": {
+										"looping": false,
+										"time": [
+											0,
+											0
+										],
+										"time_down_event": {
+											"event": "command",
+											"target": "self"
+										}
+									},
+									"minecraft:knockback_resistance": {
+										"value": 100
+									}
+								},
+								"key": "minecraft:damage_sensor",
+								"children": [
+									{
+										"open": {
+											"triggers": [
+												{
+													"cause": "all",
+													"deals_damage": false
+												}
+											]
+										},
+										"key": "triggers",
+										"children": [
+											{
+												"open": [
+													{
+														"cause": "all",
+														"deals_damage": false
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"cause": "all",
+													"deals_damage": false
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"cause": "all",
+												"deals_damage": false
+											}
+										]
+									},
+									"minecraft:timer": {
+										"looping": false,
+										"time": [
+											0,
+											0
+										],
+										"time_down_event": {
+											"event": "command",
+											"target": "self"
+										}
+									},
+									"minecraft:knockback_resistance": {
+										"value": 100
+									}
+								},
+								"key": "minecraft:timer",
+								"children": [
+									{
+										"data": "false",
+										"key": "looping"
+									},
+									{
+										"open": {
+											"looping": false,
+											"time": [
+												0,
+												0
+											],
+											"time_down_event": {
+												"event": "command",
+												"target": "self"
+											}
+										},
+										"key": "time",
+										"is_minified": true,
+										"children": [
+											0,
+											0
+										]
+									},
+									{
+										"open": {
+											"looping": false,
+											"time": [
+												0,
+												0
+											],
+											"time_down_event": {
+												"event": "command",
+												"target": "self"
+											}
+										},
+										"key": "time_down_event",
+										"is_minified": true,
+										"children": {
+											"event": "command",
+											"target": "self"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"cause": "all",
+												"deals_damage": false
+											}
+										]
+									},
+									"minecraft:timer": {
+										"looping": false,
+										"time": [
+											0,
+											0
+										],
+										"time_down_event": {
+											"event": "command",
+											"target": "self"
+										}
+									},
+									"minecraft:knockback_resistance": {
+										"value": 100
+									}
+								},
+								"key": "minecraft:knockback_resistance",
+								"is_minified": true,
+								"children": {
+									"value": 100
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:book",
+								"runtime_identifier": {},
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {
+								"des": {
+									"minecraft:instant_despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"cause": "all",
+											"deals_damage": false
+										}
+									]
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": [
+										0,
+										0
+									],
+									"time_down_event": {
+										"event": "command",
+										"target": "self"
+									}
+								},
+								"minecraft:knockback_resistance": {
+									"value": 100
+								}
+							},
+							"events": {
+								"command": {
+									"run_command": {
+										"command": [
+											"tag @s add anee"
+										]
+									}
+								},
+								"des": {
+									"add": {
+										"component_groups": [
+											"des"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"command": {
+										"run_command": {
+											"command": [
+												"tag @s add anee"
+											]
+										}
+									},
+									"des": {
+										"add": {
+											"component_groups": [
+												"des"
+											]
+										}
+									}
+								},
+								"key": "command",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"tag @s add anee"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"tag @s add anee"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"tag @s add anee"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"command": {
+										"run_command": {
+											"command": [
+												"tag @s add anee"
+											]
+										}
+									},
+									"des": {
+										"add": {
+											"component_groups": [
+												"des"
+											]
+										}
+									}
+								},
+								"key": "des",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"des"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"des"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"des"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

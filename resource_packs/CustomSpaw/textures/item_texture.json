@@ -1,0 +1,12 @@
+//bridge-file-version: #0
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"stack_killer": {
+			"textures": [
+				"textures/items/stack_killer"
+			]
+		}
+	}
+}

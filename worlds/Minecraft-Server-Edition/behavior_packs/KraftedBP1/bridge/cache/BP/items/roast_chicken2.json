@@ -1,0 +1,153 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\roast_chicken2.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "245ffee8_adfc_4959_b39a_23272d2ffa96",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:roast_chicken2",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 3.2,
+							"minecraft:food": {
+								"nutrition": 10,
+								"using_converts_to": "strat:ceramic_plate",
+								"saturation_modifier": "good"
+							},
+							"minecraft:icon": {
+								"texture": "roast_chicken2"
+							},
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:max_stack_size": 16
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:roast_chicken2",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 3.2,
+								"minecraft:food": {
+									"nutrition": 10,
+									"using_converts_to": "strat:ceramic_plate",
+									"saturation_modifier": "good"
+								},
+								"minecraft:icon": {
+									"texture": "roast_chicken2"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:max_stack_size": 16
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:roast_chicken2",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:roast_chicken2",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 3.2,
+								"minecraft:food": {
+									"nutrition": 10,
+									"using_converts_to": "strat:ceramic_plate",
+									"saturation_modifier": "good"
+								},
+								"minecraft:icon": {
+									"texture": "roast_chicken2"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:max_stack_size": 16
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "3.2",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 3.2,
+									"minecraft:food": {
+										"nutrition": 10,
+										"using_converts_to": "strat:ceramic_plate",
+										"saturation_modifier": "good"
+									},
+									"minecraft:icon": {
+										"texture": "roast_chicken2"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:max_stack_size": 16
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 10,
+									"using_converts_to": "strat:ceramic_plate",
+									"saturation_modifier": "good"
+								}
+							},
+							{
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "roast_chicken2"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

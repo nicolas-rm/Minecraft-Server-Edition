@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grimstone_coal_083ac796"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:cobbled_deepslate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:grimstone_coal",
+      "count": 1
+    }
+  }
+}

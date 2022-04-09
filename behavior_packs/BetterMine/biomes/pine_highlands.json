@@ -1,0 +1,61 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "pine_highlands"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.10,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.3
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 2.073, 0.745 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:stone",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "better:chalk"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.212, 1.0 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": [
+          [ "forest_hills", 3 ],
+          [ "beech_forest", 1 ],
+          [ "pine_forest", 1 ],
+          [ "pine_forest_hills", 1 ],
+          [ "pine_forest_mutated", 1 ],
+          [ "alps", 2 ],
+          [ "spruce_taiga", 2 ],
+          [ "taiga_mutated", 2 ]
+        ],
+        "river_transformation": "deep_cold_ocean",
+        "generate_for_climates": [
+          [ "cold", 1 ]
+        ]
+      },
+
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "woodland": {},
+      "plateau": {},
+      "pine_highland": {},
+      "bushes": {}
+    }
+  }
+}

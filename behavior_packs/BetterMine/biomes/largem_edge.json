@@ -1,0 +1,69 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "largem_edge"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.3,
+        "snow_accumulation": [ 0.0, 0.25 ],
+        "temperature": 0.0
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 6.4, 0.3 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:stone",
+        "top_material": "minecraft:snow",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "minecraft:stone",
+              "top_material": "better:snowy_stone"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.121, 1.0 ]
+          }
+        ]
+      },
+      "minecraft:mountain_parameters": {
+        "peaks_factor": 26,
+        "steep_material_adjustment": {
+          "material": "minecraft:snow",
+          "north_slopes": true,
+          "south_slopes": true,
+          "west_slopes": true,
+          "east_slopes": true
+        },
+        "top_slide": {
+          "enabled": false
+        }
+      },
+      "minecraft:overworld_generation_rules": {
+        "shore_transformation": "taiga",
+        "hills_transformation": [
+          [ "largem_ice", 2],
+          [ "largem", 4]
+        ],
+        "generate_for_climates": [
+          [ "cold", 1 ]
+        ],
+        "river_transformation": "extreme_hills"
+      },
+
+      "animal": {},
+      "monster": {},
+      "rare": {},
+      "overworld": {},
+      "largem": {},
+      "edge": {}
+    }
+  }
+}

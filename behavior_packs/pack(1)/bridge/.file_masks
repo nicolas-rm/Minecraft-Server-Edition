@@ -1,0 +1,75 @@
+{
+	"RP/entity/tick.json": {
+		"data": {}
+	},
+	"RP/textures/item_texture.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/bridge/custom_item_behavior.json": {
+		"data": {
+			"efd94b3f_1c72_4379_8f1d_95161bdbe38d": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"7f49c22e_2788_48b1_aa2c_ddc600a522a9": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"fa325193_2f9e_46f1_ba9b_9ca63f3c1f20": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			}
+		}
+	},
+	"BP/items/torch.json": {
+		"data": {}
+	},
+	"BP/items/lava_bucket.json": {
+		"data": {}
+	},
+	"BP/entities/lava_replace.json": {
+		"data": {}
+	},
+	"RP/blocks.json": {
+		"data": {}
+	},
+	"RP/textures/terrain_texture.json": {
+		"data": {}
+	},
+	"BP/entities/luz.json": {
+		"data": {}
+	},
+	"BP/items/soul_torch.json": {
+		"data": {}
+	},
+	"BP/entities/player.json": {
+		"data": {}
+	},
+	"BP/entities/tnt.json": {
+		"data": {}
+	},
+	"BP/recipes/torch.json": {
+		"data": {}
+	},
+	"BP/recipes/soul_torch.json": {
+		"data": {}
+	}
+}

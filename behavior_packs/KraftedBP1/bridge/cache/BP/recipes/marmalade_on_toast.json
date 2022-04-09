@@ -1,0 +1,341 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\marmalade_on_toast.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "dc6f0a7f_f5bb_45d6_ab48_70d990603e0d",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:marmalade_on_toast"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"#~",
+							"o"
+						],
+						"key": {
+							"#": {
+								"item": "strat:toast"
+							},
+							"~": {
+								"item": "strat:butter"
+							},
+							"o": {
+								"item": "strat:marmalade"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:marmalade_on_toast",
+								"count": 1
+							},
+							{
+								"item": "strat:glass_jar",
+								"count": 1
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:marmalade_on_toast"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~",
+								"o"
+							],
+							"key": {
+								"#": {
+									"item": "strat:toast"
+								},
+								"~": {
+									"item": "strat:butter"
+								},
+								"o": {
+									"item": "strat:marmalade"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:marmalade_on_toast",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:marmalade_on_toast"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:marmalade_on_toast"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~",
+								"o"
+							],
+							"key": {
+								"#": {
+									"item": "strat:toast"
+								},
+								"~": {
+									"item": "strat:butter"
+								},
+								"o": {
+									"item": "strat:marmalade"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:marmalade_on_toast",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:marmalade_on_toast"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~",
+								"o"
+							],
+							"key": {
+								"#": {
+									"item": "strat:toast"
+								},
+								"~": {
+									"item": "strat:butter"
+								},
+								"o": {
+									"item": "strat:marmalade"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:marmalade_on_toast",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#~",
+							"o"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:marmalade_on_toast"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~",
+								"o"
+							],
+							"key": {
+								"#": {
+									"item": "strat:toast"
+								},
+								"~": {
+									"item": "strat:butter"
+								},
+								"o": {
+									"item": "strat:marmalade"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:marmalade_on_toast",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:toast"
+									},
+									"~": {
+										"item": "strat:butter"
+									},
+									"o": {
+										"item": "strat:marmalade"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:toast"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:toast"
+									},
+									"~": {
+										"item": "strat:butter"
+									},
+									"o": {
+										"item": "strat:marmalade"
+									}
+								},
+								"key": "~",
+								"is_minified": true,
+								"children": {
+									"item": "strat:butter"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:toast"
+									},
+									"~": {
+										"item": "strat:butter"
+									},
+									"o": {
+										"item": "strat:marmalade"
+									}
+								},
+								"key": "o",
+								"is_minified": true,
+								"children": {
+									"item": "strat:marmalade"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:marmalade_on_toast"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~",
+								"o"
+							],
+							"key": {
+								"#": {
+									"item": "strat:toast"
+								},
+								"~": {
+									"item": "strat:butter"
+								},
+								"o": {
+									"item": "strat:marmalade"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:marmalade_on_toast",
+									"count": 1
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:marmalade_on_toast",
+										"count": 1
+									},
+									{
+										"item": "strat:glass_jar",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:marmalade_on_toast",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:marmalade_on_toast",
+										"count": 1
+									},
+									{
+										"item": "strat:glass_jar",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,1 @@
+give @s wr:fossile_bone2

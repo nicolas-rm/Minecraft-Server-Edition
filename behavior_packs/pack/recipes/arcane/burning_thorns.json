@@ -1,0 +1,25 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "ray:bt_book"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:flint_and_steel"
+			},
+			{
+				"item": "minecraft:book"
+			}
+		],
+		"result": [
+			{
+				"item": "bt_book:netherite_ingot"
+			}
+		]
+	}
+}

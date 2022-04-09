@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:potion_reinforcement",
+      "category": "Items"
+    },
+
+    "components": {
+      "minecraft:icon": "potion_reinforcement",
+      "minecraft:use_animation": "eat",
+
+      "minecraft:render_offsets": "potion"
+    }
+  }
+}

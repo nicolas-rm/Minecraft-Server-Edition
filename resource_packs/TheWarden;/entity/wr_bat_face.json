@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "wr:bat_face",
+      "textures": {
+        "default": "textures/entity/pamobile/wr_bat_face"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.wr_bat_face"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "wr:bat_face",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.wr_bat_face.walk",
+        "idle": "animation.wr_bat_face.idle",
+        "mad": "animation.wr_bat_face.attackplayer"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "mad": "query.is_moving && query.is_angry"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

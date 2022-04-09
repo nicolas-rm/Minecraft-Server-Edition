@@ -1,0 +1,16 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:lead_ingot"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "lead_ingot"
+      },
+      "minecraft:display_name": {
+        "value": "Lead Ingot"
+      }
+    }
+  }
+}

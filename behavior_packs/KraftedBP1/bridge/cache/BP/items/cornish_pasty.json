@@ -1,0 +1,178 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\cornish_pasty.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "9559309e_fdc1_4da9_82e2_c33adb76124f",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:cornish_pasty",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:stacked_by_data": true,
+							"minecraft:use_duration": 2.4,
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "cornish_pasty"
+							},
+							"minecraft:foil": false,
+							"minecraft:food": {
+								"nutrition": 6,
+								"saturation_modifier": "max",
+								"can_always_eat": false
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cornish_pasty",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 2.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "cornish_pasty"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 6,
+									"saturation_modifier": "max",
+									"can_always_eat": false
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cornish_pasty",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cornish_pasty",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 2.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "cornish_pasty"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 6,
+									"saturation_modifier": "max",
+									"can_always_eat": false
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 2.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "cornish_pasty"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 6,
+										"saturation_modifier": "max",
+										"can_always_eat": false
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "cornish_pasty"
+								}
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"open": {
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 2.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "cornish_pasty"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 6,
+										"saturation_modifier": "max",
+										"can_always_eat": false
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 6,
+									"saturation_modifier": "max",
+									"can_always_eat": false
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

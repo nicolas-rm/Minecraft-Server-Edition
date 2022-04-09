@@ -1,0 +1,61 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.18.0",
+	"minecraft:item": {
+		"description": {
+			"category": "commands",
+			"identifier": "ray:bt_netherite_chestplate"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "armor_torso"
+			},
+			"minecraft:durability": {
+				"max_damage": 592,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				},
+				"max_durability": 592
+			},
+			"minecraft:mining_speed": 9,
+			"minecraft:damage": 4,
+			"minecraft:armor": {
+				"protection": 8
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:knockback_resistance": {
+				"protection": 0.1
+			},
+			"minecraft:icon": {
+				"texture": "netherite_chestplate\\"
+			},
+			"minecraft:display_name": {
+				"value": "§bNetherite Chestplate\n\n§9+2 Knockback Resistance\n§7Burning Thorns"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:netherite_chestplate",
+							"ray:hb_netherite_chestplate"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"minecraft:netherite_ingot"
+						],
+						"repair_amount": 15
+					}
+				]
+			},
+			"minecraft:foil": true
+		},
+		"events": {}
+	}
+}

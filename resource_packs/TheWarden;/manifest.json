@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "This addon adds a few old wardens from the Concept arts given by Mojang and also the old Sculks from concept arts. Keep in mind that this is very unfinished addon and everything is bugged and missing and just textures are done yet. Everything is subjected to change yet\n\nI hope you'll enjoy! ;) by It's Akshad ",
+    "name": "The Warden; Across Generations Beta 1.0.3",
+    "uuid": "6dcaa06d-498c-4bef-b10b-86fe75e0f318",
+    "version": [
+      1,
+      0,
+      3
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "This addon adds a few old wardens from the Concept arts given by Mojang and also the old Sculks from concept arts. Keep in mind that this is very unfinished addon and everything is bugged and missing and just textures are done yet. Everything is subjected to change yet\n\nI hope you'll enjoy! ;) by It's Akshad ",
+      "type": "resources",
+      "uuid": "8e605537-c816-4046-aff4-c084de90df0c",
+      "version": [
+        1,
+        0,
+        3
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "0bc49f5a-c049-4399-b122-02ae4f9799c0",
+      "version": [
+        1,
+        0,
+        3
+      ]
+    }
+  ]
+}

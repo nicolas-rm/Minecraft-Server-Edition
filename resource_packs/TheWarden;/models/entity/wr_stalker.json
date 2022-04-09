@@ -1,0 +1,263 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.wr_stalker",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 8,
+        "visible_bounds_offset": [
+          0,
+          3,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "MAIN",
+          "rotation": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "name": "Head",
+          "cubes": [
+            {
+              "origin": [
+                -9.0,
+                73.025,
+                -7.0
+              ],
+              "size": [
+                12.0,
+                28.0,
+                14.0
+              ],
+              "uv": [
+                60,
+                0
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        },
+        {
+          "name": "Ear",
+          "cubes": [
+            {
+              "origin": [
+                -7.0,
+                92.025,
+                -14.0
+              ],
+              "size": [
+                8.0,
+                7.0,
+                7.0
+              ],
+              "uv": [
+                98,
+                0
+              ],
+              "inflate": 0
+            },
+            {
+              "origin": [
+                -7.0,
+                92.025,
+                7.0
+              ],
+              "size": [
+                8.0,
+                7.0,
+                7.0
+              ],
+              "uv": [
+                44,
+                0
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Head"
+        },
+        {
+          "name": "Body",
+          "cubes": [
+            {
+              "origin": [
+                -10.0,
+                27.025,
+                -8.0
+              ],
+              "size": [
+                14.0,
+                46.0,
+                16.0
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        },
+        {
+          "name": "Rightarm",
+          "cubes": [
+            {
+              "origin": [
+                -7.0,
+                17.025,
+                -16.0
+              ],
+              "size": [
+                8.0,
+                55.0,
+                8.0
+              ],
+              "uv": [
+                52,
+                54
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        },
+        {
+          "name": "Leftarm",
+          "cubes": [
+            {
+              "origin": [
+                -7.0,
+                18.025,
+                8.0
+              ],
+              "size": [
+                8.0,
+                55.0,
+                8.0
+              ],
+              "uv": [
+                0,
+                62
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        },
+        {
+          "name": "LeftLeg",
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                0.025,
+                2.0
+              ],
+              "size": [
+                7.0,
+                27.0,
+                6.0
+              ],
+              "uv": [
+                84,
+                75
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        },
+        {
+          "name": "Rightleg",
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                0.025,
+                -8.0
+              ],
+              "size": [
+                7.0,
+                27.0,
+                6.0
+              ],
+              "uv": [
+                84,
+                42
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        },
+        {
+          "name": "GlowingEar",
+          "pivot": [
+            0,
+            92,
+            -11
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.01833,
+                92.37509,
+                -14.0
+              ],
+              "size": [
+                8.0,
+                7.0,
+                7.0
+              ],
+              "uv": [
+                98,
+                114
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        },
+        {
+          "name": "Glowing_Ear2",
+          "pivot": [
+            0,
+            123,
+            12
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -17.72016,
+                92.49305,
+                7.0
+              ],
+              "size": [
+                8.0,
+                7.0,
+                7.0
+              ],
+              "uv": [
+                98,
+                114
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "MAIN"
+        }
+      ]
+    }
+  ]
+}

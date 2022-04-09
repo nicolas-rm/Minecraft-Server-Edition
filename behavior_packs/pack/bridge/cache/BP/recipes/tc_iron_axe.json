@@ -1,0 +1,191 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\tc_iron_axe.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "3cd94cd9_b2c9_4fd8_bee1_1f66a39de250",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.12",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.12,
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:tc_iron_axe"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:iron_axe"
+							},
+							{
+								"item": "ray:tc_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "custom:iron_axe"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:tc_iron_axe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_axe"
+								},
+								{
+									"item": "ray:tc_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "custom:iron_axe"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:tc_iron_axe"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:tc_iron_axe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_axe"
+								},
+								{
+									"item": "ray:tc_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "custom:iron_axe"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:tc_iron_axe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_axe"
+								},
+								{
+									"item": "ray:tc_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "custom:iron_axe"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:iron_axe"
+									},
+									{
+										"item": "ray:tc_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:iron_axe"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:iron_axe"
+									},
+									{
+										"item": "ray:tc_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:tc_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:tc_iron_axe"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:iron_axe"
+								},
+								{
+									"item": "ray:tc_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "custom:iron_axe"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "custom:iron_axe"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "custom:iron_axe"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

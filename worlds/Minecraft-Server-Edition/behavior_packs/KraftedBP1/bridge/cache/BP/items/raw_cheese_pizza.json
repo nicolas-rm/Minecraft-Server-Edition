@@ -1,0 +1,108 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\raw_cheese_pizza.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "9e7daa33_0102_4c6e_9f04_d84101c8c001",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:raw_cheese_pizza",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:icon": {
+								"texture": "raw_cheese_pizza"
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:raw_cheese_pizza",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "raw_cheese_pizza"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:raw_cheese_pizza",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:raw_cheese_pizza",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "raw_cheese_pizza"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "raw_cheese_pizza"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "raw_cheese_pizza"
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "raw_cheese_pizza"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

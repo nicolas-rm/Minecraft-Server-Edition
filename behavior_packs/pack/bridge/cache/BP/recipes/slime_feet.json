@@ -1,0 +1,246 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\slime_feet.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "698d94ca_1d80_4c8f_8ec5_f17a9de976c4",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:slime_feet"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"pattern": [
+							"SBS",
+							"S#S"
+						],
+						"key": {
+							"S": {
+								"item": "minecraft:slime_ball"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						},
+						"result": [
+							{
+								"item": "ray:sf_enchanted_book"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:slime_feet"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:slime_ball"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:sf_enchanted_book"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:slime_feet"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:slime_feet"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:slime_ball"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:sf_enchanted_book"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:slime_feet"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:slime_ball"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:sf_enchanted_book"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"SBS",
+							"S#S"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:slime_feet"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:slime_ball"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:sf_enchanted_book"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"S": {
+										"item": "minecraft:slime_ball"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "S",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:slime_ball"
+								}
+							},
+							{
+								"open": {
+									"S": {
+										"item": "minecraft:slime_ball"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:slime_feet"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"pattern": [
+								"SBS",
+								"S#S"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:slime_ball"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"result": [
+								{
+									"item": "ray:sf_enchanted_book"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:sf_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:sf_enchanted_book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

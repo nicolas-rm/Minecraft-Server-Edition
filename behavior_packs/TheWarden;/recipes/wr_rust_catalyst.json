@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "rust_catalyst_6ca40c59"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "AAA",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "wr:rust",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:rust_catalyst",
+      "count": 1
+    }
+  }
+}

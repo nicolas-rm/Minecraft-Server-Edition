@@ -1,0 +1,36 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:beech_fence"
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "beech_planks",
+          "render_method": "blend",
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/beech_fence.json",
+      "minecraft:destroy_time": 0.8,
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#dda867",
+      "minecraft:entity_collision": {
+        "origin":  [-4, 0, -4],
+        "size":    [8, 16, 8]
+      },
+      "minecraft:pick_collision": {
+        "origin":  [-4, 0, -4],
+        "size":    [8, 16, 8]
+      },
+      "minecraft:flammable": {
+        "flame_odds": 15,
+        "burn_odds": 15
+    },
+     "minecraft:block_light_absorption": 0,
+     "minecraft:block_light_emission": 0.0,
+     "tag:wood": {}
+    }
+  }
+}

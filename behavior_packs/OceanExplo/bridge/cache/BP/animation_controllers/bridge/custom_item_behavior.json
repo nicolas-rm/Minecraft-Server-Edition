@@ -1,0 +1,14 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\animation_controllers\\bridge\\custom_item_behavior.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "b4ca584a_5148_4924_952a_5a9544592638",
+	"file_version": 2,
+	"cache_content": {
+		"is_minified": true,
+		"children": {
+			"format_version": "1.10.0",
+			"animation_controllers": {}
+		}
+	}
+}

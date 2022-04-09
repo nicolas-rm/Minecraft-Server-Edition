@@ -1,0 +1,393 @@
+{
+	"resource_pack_name": "block_tutorial",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"glowing_ice": {
+			"textures": "textures/blocks/glowing_ice"
+		},
+		"smithing_table_bottom": {
+			"textures": "textures/blocks/smithing_table_bottom"
+		},
+		"smithing_table_front": {
+			"textures": "textures/blocks/smithing_table_front"
+		},
+		"smithing_table_top": {
+			"textures": "textures/blocks/smithing_table_top"
+		},
+		"smithing_table_side": {
+			"textures": "textures/blocks/smithing_table_side"
+		},
+		"crafting_table_side": {
+			"textures": "textures/blocks/crafting_table_side"
+		},
+		"crafting_table_front": {
+			"textures": "textures/blocks/crafting_table_front"
+		},
+		"butoi": {
+			"textures": "textures/blocks/rainbow_ore"
+		},
+		"pizza": {
+			"textures": [
+				"textures/blocks/pizza"
+			]
+		},
+		"pizza2": {
+			"textures": [
+				"textures/blocks/pizza2"
+			]
+		},
+		"sadface": {
+			"textures": "textures/blocks/sad"
+		},
+		"smileyface": {
+			"textures": "textures/blocks/smiley"
+		},
+		"cage": {
+			"textures": [
+				"textures/blocks/cage"
+			]
+		},
+		"ncage": {
+			"textures": [
+				"textures/blocks/newcage"
+			]
+		},
+		"salut": {
+			"textures": [
+				"textures/blocks/cheese"
+			]
+		},
+		"cheese2": {
+			"textures": [
+				"textures/blocks/cheese2"
+			]
+		},
+		"cheese3": {
+			"textures": [
+				"textures/blocks/cheese3"
+			]
+		},
+		"cheese4": {
+			"textures": [
+				"textures/blocks/cheese4"
+			]
+		},
+		"cheese5": {
+			"textures": [
+				"textures/blocks/cheese5"
+			]
+		},
+		"table1": {
+			"textures": [
+				"textures/blocks/table1"
+			]
+		},
+		"red_planks": {
+			"textures": "textures/blocks/red_planks"
+		},
+		"green_planks": {
+			"textures": "textures/blocks/green_planks"
+		},
+		"blue_planks": {
+			"textures": "textures/blocks/blue_planks"
+		},
+		"yellow_planks": {
+			"textures": "textures/blocks/yellow_planks"
+		},
+		"eupgrade_top": {
+			"textures": [
+				"textures/blocks/eupgrade_top"
+			]
+		},
+		"eupgrade_front": {
+			"textures": [
+				"textures/blocks/eupgrade_front"
+			]
+		},
+		"eupgrade_side": {
+			"textures": [
+				"textures/blocks/eupgrade_side"
+			]
+		},
+		"eupgrade_bottom": {
+			"textures": [
+				"textures/blocks/eupgrade_bottom"
+			]
+		},
+		"enderite_block": {
+			"textures": "textures/blocks/enderite_block"
+		},
+		"purple_planks": {
+			"textures": "textures/blocks/purple_planks"
+		},
+		"steel_block": {
+			"textures": "textures/blocks/steel_block"
+		},
+		"sp_enderite_ore": {
+			"textures": "textures/blocks/enderite_ore"
+		},
+		"sp_purple_shroomlight": {
+			"textures": "textures/blocks/purple_shroomlight"
+		},
+		"sp_lime_shroomlight": {
+			"textures": "textures/blocks/lime_shroomlight"
+		},
+		"sp_red_shroomlight": {
+			"textures": "textures/blocks/red_shroomlight"
+		},
+		"sp_blue_shroomlight": {
+			"textures": "textures/blocks/blue_shroomlight"
+		},
+		"sp_ruby_block": {
+			"textures": "textures/blocks/ruby_block"
+		},
+		"sp_ruby_ore": {
+			"textures": "textures/blocks/ruby_ore"
+		},
+		"sp_ruby1": {
+			"textures": "textures/blocks/ruby1"
+		},
+		"sp_sapphire_ore": {
+			"textures": "textures/blocks/sapphire_ore"
+		},
+		"sp_sapphire_block": {
+			"textures": "textures/blocks/sapphire_block"
+		},
+		"sp_topaz_block": {
+			"textures": "textures/blocks/topaz_block"
+		},
+		"sp_topaz_ore": {
+			"textures": "textures/blocks/topaz_ore"
+		},
+
+
+		"sp_deepslate_topaz_ore": {
+			"textures": "textures/blocks/deepslate_topaz_ore"
+		},
+		"sp_andesite_topaz_ore": {
+			"textures": "textures/blocks/andesite_topaz_ore"
+		},
+		"sp_diorite_topaz_ore": {
+			"textures": "textures/blocks/diorite_topaz_ore"
+		},
+		"sp_granite_topaz_ore": {
+			"textures": "textures/blocks/granite_topaz_ore"
+		},// MCPEDL:SorYPMod
+
+
+
+		"sp_deepslate_ruby_ore": {
+			"textures": "textures/blocks/deepslate_ruby_ore"
+		},
+		"sp_andesite_ruby_ore": {
+			"textures": "textures/blocks/andesite_ruby_ore"
+		},
+		"sp_diorite_ruby_ore": {
+			"textures": "textures/blocks/diorite_ruby_ore"
+		},
+		"sp_granite_ruby_ore": {
+			"textures": "textures/blocks/granite_ruby_ore"
+		},// MCPEDL:SorYPMod
+
+
+		"sp_deepslate_peridot_ore": {
+			"textures": "textures/blocks/deepslate_peridot_ore"
+		},
+		"sp_netherrack_silver_ore": {
+			"textures": "textures/blocks/netherrack_silver_ore"
+		},
+		"sp_netherrack_jade_ore": {
+			"textures": "textures/blocks/netherrack_jade_ore"
+		},
+		"sp_netherrack_onyx_ore": {
+			"textures": "textures/blocks/netherrack_onyx_ore"
+		},
+		"sp_netherrack_uranium_ore": {
+			"textures": "textures/blocks/netherrack_uranium_ore"
+		},
+		"sp_uranium_ore": {
+			"textures": "textures/blocks/uranium_ore"
+		},
+		"sp_uranium_block": {
+			"textures": "textures/blocks/uranium_block"
+		},
+		"sp_sulfur_block": {
+			"textures": "textures/blocks/sulfur_block"
+		},
+		"sp_netherrack_sulfur_ore": {
+			"textures": "textures/blocks/netherrack_sulfur_ore"
+		},
+		"sp_netherrack_rose_gold_ore": {
+			"textures": "textures/blocks/netherrack_rose_gold_ore"
+		},
+		"sp_andesite_peridot_ore": {
+			"textures": "textures/blocks/andesite_peridot_ore"
+		},
+		"sp_diorite_peridot_ore": {
+			"textures": "textures/blocks/diorite_peridot_ore"
+		},
+		"sp_granite_peridot_ore": {
+			"textures": "textures/blocks/granite_peridot_ore"
+		},// MCPEDL:SorYPMod
+
+
+		"sp_deepslate_sapphire_ore": {
+			"textures": "textures/blocks/deepslate_sapphire_ore"
+		},
+		"sp_andesite_sapphire_ore": {
+			"textures": "textures/blocks/andesite_sapphire_ore"
+		},
+		"sp_diorite_sapphire_ore": {
+			"textures": "textures/blocks/diorite_sapphire_ore"
+		},
+		"sp_granite_sapphire_ore": {
+			"textures": "textures/blocks/granite_sapphire_ore"
+		},// MCPEDL:SorYPMod
+
+
+		"sp_deepslate_citrine_ore": {
+			"textures": "textures/blocks/deepslate_citrine_ore"
+		},
+		"sp_andesite_citrine_ore": {
+			"textures": "textures/blocks/andesite_citrine_ore"
+		},
+		"sp_diorite_citrine_ore": {
+			"textures": "textures/blocks/diorite_citrine_ore"
+		},
+		"sp_granite_citrine_ore": {
+			"textures": "textures/blocks/granite_citrine_ore"
+		},// MCPEDL:SorYPMod
+
+
+		"sp_deepslate_tourmaline_ore": {
+			"textures": "textures/blocks/deepslate_tourmaline_ore"
+		},
+		"sp_andesite_tourmaline_ore": {
+			"textures": "textures/blocks/andesite_tourmaline_ore"
+		},
+		"sp_diorite_tourmaline_ore": {
+			"textures": "textures/blocks/diorite_tourmaline_ore"
+		},
+		"sp_granite_tourmaline_ore": {
+			"textures": "textures/blocks/granite_tourmaline_ore"
+		},// MCPEDL:SorYPMod
+
+		"sp_peridot_ore": {
+			"textures": "textures/blocks/peridot_ore"
+		},
+		"sp_tin_block": {
+			"textures": "textures/blocks/tin_block"
+		},
+		"sp_tin_ore": {
+			"textures": "textures/blocks/tin_ore"
+		},
+		"sp_citrine_ore": {
+			"textures": "textures/blocks/citrine_ore"
+		},
+		"sp_tourmaline_block": {
+			"textures": "textures/blocks/tourmaline_block"
+		},
+		"sp_tourmaline_ore": {
+			"textures": "textures/blocks/tourmaline_ore"
+		},
+		"sp_brass_block": {
+			"textures": "textures/blocks/brass_block"
+		},
+		"sp_zinc_block": {
+			"textures": "textures/blocks/zinc_block"
+		},
+		"sp_rose_gold_block": {
+			"textures": "textures/blocks/rose_gold_block"
+		},
+		"sp_zinc_ore": {
+			"textures": "textures/blocks/zinc_ore"
+		},
+
+		"sp_raw_silver_block": {
+			"textures": "textures/blocks/raw_silver_block"
+		},
+		"sp_raw_amber_block": {
+			"textures": "textures/blocks/raw_amber_block"
+		},
+		"sp_raw_rose_gold_block": {
+			"textures": "textures/blocks/raw_rose_gold_block"
+		},
+		"sp_amber_ore": {
+			"textures": "textures/blocks/amber_ore"
+		},
+		"sp_silver_block": {
+			"textures": "textures/blocks/silver_block"
+		},
+		"sp_jade_block": {
+			"textures": "textures/blocks/jade_block"
+		},
+		"sp_silver_ore": {
+			"textures": "textures/blocks/silver_ore"
+		},
+		"sp_cobalt_ore": {
+			"textures": "textures/blocks/netherrack_cobalt_ore"
+		},
+		"sp_cobalt_block": {
+			"textures": "textures/blocks/cobalt_block"
+		},
+
+
+		"sp_platinum_ore": {
+			"textures": "textures/blocks/platinum_ore"
+		},
+		"sp_platinum_block": {
+			"textures": "textures/blocks/platinum_block"
+		},
+
+
+		"sp_raw_cobalt_block": {
+			"textures": "textures/blocks/raw_cobalt_block"
+		},
+
+
+		"sp_citrine_block": {
+			"textures": "textures/blocks/citrine_block"
+		},//@sori662_pop
+		"sp_onyx_block": {
+			"textures": "textures/blocks/onyx_block"
+		},
+		"sp_aetherium_block": {
+			"textures": "textures/blocks/aetherium_block"
+		},
+		"sp_endstone_aetherium_ore": {
+			"textures": "textures/blocks/endstone_aetherium_ore"
+		},
+
+		"sp_visinium_block": {
+			"textures": "textures/blocks/visinium_block"
+		},
+		"sp_endstone_visinium_ore": {
+			"textures": "textures/blocks/endstone_visinium_ore"
+		},
+
+		"sp_enderium_block": {
+			"textures": "textures/blocks/enderium_block"
+		},
+		"sp_endstone_enderium_ore": {
+			"textures": "textures/blocks/endstone_enderium_ore"
+		},
+
+		"sp_lonsdaleite_block": {
+			"textures": "textures/blocks/lonsdaleite_block"
+		},
+		"sp_endstone_lonsdaleite_ore": {
+			"textures": "textures/blocks/endstone_lonsdaleite_ore"
+		},
+		"sp_bronze_block": {
+			"textures": "textures/blocks/bronze_block"
+		},
+		"sp_sp_soul_block": {
+			"textures": "textures/blocks/sp_soul_block"
+		},
+		"sp_peridot_block": {
+			"textures": "textures/blocks/peridot_block"
+		}
+	}
+}

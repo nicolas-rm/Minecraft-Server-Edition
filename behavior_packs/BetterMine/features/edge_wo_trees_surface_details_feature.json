@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "better:edge_wo_trees_surface_details_feature"
+    },
+    "features": [
+      [ "better:oak_bush_feature", 5 ],
+      [ "better:spruce_bush_feature", 5 ],
+      [ "minecraft:legacy:extreme_hills_plus_trees_tree_feature", 1 ],
+      [ "better:spine_tree_feature", 1 ]
+    ]
+  }
+}

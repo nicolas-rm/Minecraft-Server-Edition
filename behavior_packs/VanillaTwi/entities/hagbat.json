@@ -1,0 +1,406 @@
+//bridge-file-version: #23
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "vanilla_twilight:hagbat",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"hagbat_ground": {
+				"minecraft:physics": {},
+				"minecraft:behavior.random_look_around": {
+					"priority": 9
+				},
+				"minecraft:behavior.look_at_player": {
+					"priority": 8,
+					"look_distance": 6,
+					"probability": 0.02
+				},
+				"minecraft:behavior.random_stroll": {
+					"priority": 7,
+					"speed_multiplier": 1
+				},
+				"minecraft:behavior.move_towards_restriction": {
+					"priority": 5
+				},
+				"minecraft:behavior.stomp_turtle_egg": {
+					"priority": 4,
+					"speed_multiplier": 1,
+					"search_range": 10,
+					"search_height": 3,
+					"goal_radius": 1.14,
+					"search_count": 4,
+					"interval": 20
+				},
+				"minecraft:behavior.melee_attack": {
+					"priority": 3,
+					"speed_multiplier": 1.5,
+					"track_target": false
+				},
+				"minecraft:attack": {
+					"damage": 5
+				},
+				"minecraft:target_nearby_sensor": {
+					"inside_range": 10,
+					"on_inside_range": {
+						"event": "hagbat_fly",
+						"target": "self"
+					}
+				},
+				"minecraft:movement": {
+					"value": 0.2
+				},
+				"minecraft:movement.basic": {},
+				"minecraft:navigation.walk": {
+					"can_path_over_water": true,
+					"avoid_damage_blocks": true
+				},
+				"minecraft:balloonable": {
+					"mass": 0.5
+				}
+			},
+			"hagbat_fly": {
+				"minecraft:physics": {
+					"has_gravity": false
+				},
+				"minecraft:attack": {
+					"damage": 6
+				},
+				"minecraft:breathable": {
+					"totalSupply": 15,
+					"suffocateTime": 0,
+					"breathesAir": true,
+					"breathesWater": false
+				},
+				"minecraft:collision_box": {
+					"width": 1,
+					"height": 2
+				},
+				"minecraft:movement": {
+					"value": 1.8
+				},
+				"minecraft:movement.glide": {
+					"start_speed": 0.1,
+					"speed_when_turning": 1
+				},
+				"minecraft:follow_range": {
+					"value": 64,
+					"max": 64
+				},
+				"minecraft:timer": {
+					"time": [
+						25,
+						30
+					],
+					"looping": true,
+					"time_down_event": {
+						"event": "hagbat_ground"
+					}
+				},
+				"minecraft:behavior.swoop_attack": {
+					"priority": 2,
+					"delay_range": [
+						1,
+						5
+					]
+				},
+				"minecraft:behavior.circle_around_anchor": {
+					"priority": 3,
+					"radius_range": [
+						5,
+						15
+					],
+					"radius_change_chance": 250,
+					"height_above_target_range": [
+						10,
+						30
+					],
+					"height_offset_range": [
+						-4,
+						5
+					],
+					"height_change_chance": 350,
+					"goal_radius": 1
+				},
+				"minecraft:break_blocks": {
+					"breakable_blocks": [
+						"minecraft:leaves",
+						"minecraft:leaves2"
+					]
+				},
+				"minecraft:rideable": {
+					"seat_count": 1,
+					"pull_in_entities": true,
+					"seats": {
+						"position": [
+							0,
+							-1.6,
+							0
+						]
+					},
+					"rider_can_interact": false,
+					"family_types": [
+						"villager"
+					]
+				}
+			},
+			"minecraft:pig_zombie_baby": {
+				"minecraft:is_baby": {},
+				"minecraft:scale": {
+					"value": 0.5
+				}
+			},
+			"minecraft:pig_zombie_adult": {},
+			"minecraft:pig_zombie_angry": {
+				"minecraft:angry": {
+					"duration": 25,
+					"broadcastAnger": true,
+					"broadcastRange": 16,
+					"broadcast_targets": [
+						"hagbat"
+					],
+					"minecraft:movement": {
+						"value": 1.8
+					},
+					"minecraft:physics": {
+						"has_gravity": false
+					},
+					"minecraft:movement.glide": {
+						"start_speed": 0.1,
+						"speed_when_turning": 0.2
+					},
+					"minecraft:follow_range": {
+						"value": 64,
+						"max": 64
+					},
+					"minecraft:behavior.circle_around_anchor": {
+						"priority": 3,
+						"radius_range": [
+							5,
+							15
+						],
+						"radius_change_chance": 250,
+						"height_above_target_range": [
+							20,
+							40
+						],
+						"height_offset_range": [
+							-4,
+							5
+						],
+						"height_change_chance": 350,
+						"goal_radius": 1
+					},
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:pig_zombie_calm": {
+				"minecraft:behavior.random_fly": {
+					"priority": 2,
+					"xz_dist": 15,
+					"y_dist": 1,
+					"y_offset": 0,
+					"speed_multiplier": 1,
+					"can_land_on_trees": true,
+					"avoid_damage_blocks": true
+				},
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? 5 : 0"
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:nameable": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:burns_in_daylight": true,
+			"minecraft:type_family": {
+				"family": [
+					"hagbat",
+					"monster",
+					"zombie"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/witch.json"
+			},
+			"minecraft:health": {
+				"value": 20,
+				"max": 20
+			},
+			"minecraft:fall_damage": {
+				"value": 0
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"within_radius": 64,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "troll"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 64
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "villager"
+								},
+								{
+									"subject": "other",
+									"operator": "!=",
+									"test": "is_riding",
+									"value": true
+								}
+							]
+						},
+						"max_dist": 16
+					}
+				],
+				"must_see": false,
+				"must_see_forget_duration": 0.5,
+				"scan_interval": 20,
+				"target_search_height": 80
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"events": {
+			"hagbat_fly": {
+				"remove": {
+					"component_groups": [
+						"hagbat_ground"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"hagbat_fly"
+					]
+				}
+			},
+			"minecraft:entity_transformed": {
+				"remove": {},
+				"add": {
+					"component_groups": [
+						"minecraft:pig_zombie_adult",
+						"minecraft:pig_zombie_calm"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 100,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"minecraft:pig_zombie_adult",
+								"minecraft:pig_zombie_calm",
+								"hagbat_ground"
+							]
+						}
+					},
+					{
+						"weight": 0,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"minecraft:pig_zombie_baby",
+								"minecraft:pig_zombie_calm",
+								"hagbat_ground"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:on_calm": {
+				"remove": {
+					"component_groups": [
+						"minecraft:pig_zombie_angry"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:pig_zombie_calm"
+					]
+				}
+			},
+			"minecraft:become_angry": {
+				"remove": {
+					"component_groups": [
+						"minecraft:pig_zombie_calm"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:pig_zombie_angry"
+					]
+				}
+			},
+			"hagbat_ground": {
+				"remove": {
+					"component_groups": [
+						"hagbat_fly"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"hagbat_ground"
+					]
+				}
+			}
+		}
+	}
+}

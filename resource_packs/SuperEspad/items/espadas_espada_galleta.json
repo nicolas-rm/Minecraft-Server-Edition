@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "espadas:espada_galleta",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "espadas:espada_galleta",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

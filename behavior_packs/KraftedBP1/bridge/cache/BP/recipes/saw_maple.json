@@ -1,0 +1,306 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\saw_maple.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "da78205c_e018_45bb_9475_9a92f23e2d19",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:saw_maple"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"##~",
+							" -~"
+						],
+						"key": {
+							"#": {
+								"item": "strat:steel_ingot"
+							},
+							"~": {
+								"item": "strat:maple_planks"
+							},
+							"-": {
+								"item": "minecraft:stick"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:saw",
+								"count": 1
+							}
+						],
+						"priority": 50
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:saw_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##~",
+								" -~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:steel_ingot"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								},
+								"-": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:saw",
+									"count": 1
+								}
+							],
+							"priority": 50
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:saw_maple"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:saw_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##~",
+								" -~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:steel_ingot"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								},
+								"-": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:saw",
+									"count": 1
+								}
+							],
+							"priority": 50
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:saw_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##~",
+								" -~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:steel_ingot"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								},
+								"-": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:saw",
+									"count": 1
+								}
+							],
+							"priority": 50
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"##~",
+							" -~"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:saw_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##~",
+								" -~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:steel_ingot"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								},
+								"-": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:saw",
+									"count": 1
+								}
+							],
+							"priority": 50
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:steel_ingot"
+									},
+									"~": {
+										"item": "strat:maple_planks"
+									},
+									"-": {
+										"item": "minecraft:stick"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:steel_ingot"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:steel_ingot"
+									},
+									"~": {
+										"item": "strat:maple_planks"
+									},
+									"-": {
+										"item": "minecraft:stick"
+									}
+								},
+								"key": "~",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:steel_ingot"
+									},
+									"~": {
+										"item": "strat:maple_planks"
+									},
+									"-": {
+										"item": "minecraft:stick"
+									}
+								},
+								"key": "-",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:stick"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:saw_maple"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"##~",
+								" -~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:steel_ingot"
+								},
+								"~": {
+									"item": "strat:maple_planks"
+								},
+								"-": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:saw",
+									"count": 1
+								}
+							],
+							"priority": 50
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:saw",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:saw",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"data": "50",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

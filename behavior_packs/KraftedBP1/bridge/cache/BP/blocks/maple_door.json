@@ -1,0 +1,3872 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\maple_door.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "27fbfd36_ea9e_4284_970f_92300ae0da46",
+	"file_version": 15,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:maple_door",
+							"properties": {
+								"bridge:block_rotation": [
+									2,
+									3,
+									4,
+									5
+								],
+								"strat:open": [
+									0,
+									1
+								],
+								"strat:flip": [
+									0,
+									1
+								]
+							}
+						},
+						"components": {
+							"minecraft:on_player_placing": {
+								"event": "bridge:update_rotation"
+							},
+							"minecraft:destroy_time": 1,
+							"minecraft:block_light_absorption": 0,
+							"minecraft:explosion_resistance": 5,
+							"minecraft:geometry": "geometry.door",
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "maple_door",
+									"render_method": "blend"
+								}
+							},
+							"minecraft:pick_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									3
+								]
+							},
+							"minecraft:entity_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									3
+								]
+							},
+							"minecraft:on_interact": {
+								"event": "strat:interact"
+							},
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"allowed_faces": [
+											"up"
+										]
+									}
+								]
+							},
+							"minecraft:on_placed": {
+								"event": "strat:top_block"
+							},
+							"minecraft:loot": "loot_tables/maple_door.json"
+						},
+						"events": {
+							"bridge:update_rotation": {
+								"sequence": [
+									{
+										"set_block_property": {
+											"bridge:block_rotation": "query.cardinal_facing_2d"
+										}
+									},
+									{
+										"condition": "query.is_sneaking",
+										"set_block_property": {
+											"strat:flip": 1
+										}
+									}
+								]
+							},
+							"strat:interact": {
+								"sequence": [
+									{
+										"condition": "query.block_property('strat:open') == 0",
+										"set_block_property": {
+											"strat:open": 1
+										},
+										"run_command": {
+											"command": [
+												"playsound random.door_open @a ~~~"
+											]
+										},
+										"trigger": {
+											"event": "strat:top_block"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 1",
+										"set_block_property": {
+											"strat:open": 0
+										},
+										"run_command": {
+											"command": [
+												"playsound random.door_close @a ~~~"
+											]
+										},
+										"trigger": {
+											"event": "strat:top_block"
+										}
+									}
+								]
+							},
+							"strat:top_block": {
+								"sequence": [
+									{
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_south",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_north",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_east",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_west",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											}
+										]
+									},
+									{
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_west",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_east",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_south",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_north",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											}
+										]
+									},
+									{
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_east",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_west",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_north",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+												"set_block_at_pos": {
+													"block_type": "strat:top_door_south",
+													"block_offset": [
+														0,
+														1,
+														0
+													]
+												}
+											}
+										]
+									}
+								]
+							}
+						},
+						"permutations": [
+							{
+								"condition": "query.block_property('bridge:block_rotation') == 2",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										180,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('bridge:block_rotation') == 3",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										0,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('bridge:block_rotation') == 4",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										270,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('bridge:block_rotation') == 5",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										90,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+								"components": {
+									"minecraft:geometry": "geometry.door",
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											3
+										]
+									},
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											3
+										]
+									},
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "maple_door",
+											"render_method": "blend"
+										}
+									}
+								}
+							},
+							{
+								"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+								"components": {
+									"minecraft:geometry": "geometry.door_open",
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											3,
+											16,
+											16
+										]
+									},
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											3,
+											16,
+											16
+										]
+									},
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "maple_door",
+											"render_method": "blend"
+										}
+									}
+								}
+							},
+							{
+								"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+								"components": {
+									"minecraft:geometry": "geometry.door",
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											3
+										]
+									},
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											3
+										]
+									},
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "maple_door_2",
+											"render_method": "blend"
+										}
+									}
+								}
+							},
+							{
+								"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+								"components": {
+									"minecraft:geometry": "geometry.door_open_flip",
+									"minecraft:pick_collision": {
+										"origin": [
+											5,
+											0,
+											-8
+										],
+										"size": [
+											3,
+											16,
+											16
+										]
+									},
+									"minecraft:entity_collision": {
+										"origin": [
+											5,
+											0,
+											-8
+										],
+										"size": [
+											3,
+											16,
+											16
+										]
+									},
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "maple_door_2",
+											"render_method": "blend"
+										}
+									}
+								}
+							}
+						]
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_door",
+								"properties": {
+									"bridge:block_rotation": [
+										2,
+										3,
+										4,
+										5
+									],
+									"strat:open": [
+										0,
+										1
+									],
+									"strat:flip": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:on_player_placing": {
+									"event": "bridge:update_rotation"
+								},
+								"minecraft:destroy_time": 1,
+								"minecraft:block_light_absorption": 0,
+								"minecraft:explosion_resistance": 5,
+								"minecraft:geometry": "geometry.door",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "maple_door",
+										"render_method": "blend"
+									}
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:on_interact": {
+									"event": "strat:interact"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								},
+								"minecraft:on_placed": {
+									"event": "strat:top_block"
+								},
+								"minecraft:loot": "loot_tables/maple_door.json"
+							},
+							"events": {
+								"bridge:update_rotation": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"bridge:block_rotation": "query.cardinal_facing_2d"
+											}
+										},
+										{
+											"condition": "query.is_sneaking",
+											"set_block_property": {
+												"strat:flip": 1
+											}
+										}
+									]
+								},
+								"strat:interact": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:open') == 0",
+											"set_block_property": {
+												"strat:open": 1
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_open @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										},
+										{
+											"condition": "query.block_property('strat:open') == 1",
+											"set_block_property": {
+												"strat:open": 0
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_close @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										}
+									]
+								},
+								"strat:top_block": {
+									"sequence": [
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 4",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 5",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door_open",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door_open_flip",
+										"minecraft:pick_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_door",
+							"properties": {
+								"bridge:block_rotation": [
+									2,
+									3,
+									4,
+									5
+								],
+								"strat:open": [
+									0,
+									1
+								],
+								"strat:flip": [
+									0,
+									1
+								]
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_door",
+								"properties": {
+									"bridge:block_rotation": [
+										2,
+										3,
+										4,
+										5
+									],
+									"strat:open": [
+										0,
+										1
+									],
+									"strat:flip": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:on_player_placing": {
+									"event": "bridge:update_rotation"
+								},
+								"minecraft:destroy_time": 1,
+								"minecraft:block_light_absorption": 0,
+								"minecraft:explosion_resistance": 5,
+								"minecraft:geometry": "geometry.door",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "maple_door",
+										"render_method": "blend"
+									}
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:on_interact": {
+									"event": "strat:interact"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								},
+								"minecraft:on_placed": {
+									"event": "strat:top_block"
+								},
+								"minecraft:loot": "loot_tables/maple_door.json"
+							},
+							"events": {
+								"bridge:update_rotation": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"bridge:block_rotation": "query.cardinal_facing_2d"
+											}
+										},
+										{
+											"condition": "query.is_sneaking",
+											"set_block_property": {
+												"strat:flip": 1
+											}
+										}
+									]
+								},
+								"strat:interact": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:open') == 0",
+											"set_block_property": {
+												"strat:open": 1
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_open @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										},
+										{
+											"condition": "query.block_property('strat:open') == 1",
+											"set_block_property": {
+												"strat:open": 0
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_close @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										}
+									]
+								},
+								"strat:top_block": {
+									"sequence": [
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 4",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 5",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door_open",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door_open_flip",
+										"minecraft:pick_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								}
+							]
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:on_player_placing": {
+								"event": "bridge:update_rotation"
+							},
+							"minecraft:destroy_time": 1,
+							"minecraft:block_light_absorption": 0,
+							"minecraft:explosion_resistance": 5,
+							"minecraft:geometry": "geometry.door",
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "maple_door",
+									"render_method": "blend"
+								}
+							},
+							"minecraft:pick_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									3
+								]
+							},
+							"minecraft:entity_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									3
+								]
+							},
+							"minecraft:on_interact": {
+								"event": "strat:interact"
+							},
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"allowed_faces": [
+											"up"
+										]
+									}
+								]
+							},
+							"minecraft:on_placed": {
+								"event": "strat:top_block"
+							},
+							"minecraft:loot": "loot_tables/maple_door.json"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_door",
+								"properties": {
+									"bridge:block_rotation": [
+										2,
+										3,
+										4,
+										5
+									],
+									"strat:open": [
+										0,
+										1
+									],
+									"strat:flip": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:on_player_placing": {
+									"event": "bridge:update_rotation"
+								},
+								"minecraft:destroy_time": 1,
+								"minecraft:block_light_absorption": 0,
+								"minecraft:explosion_resistance": 5,
+								"minecraft:geometry": "geometry.door",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "maple_door",
+										"render_method": "blend"
+									}
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:on_interact": {
+									"event": "strat:interact"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								},
+								"minecraft:on_placed": {
+									"event": "strat:top_block"
+								},
+								"minecraft:loot": "loot_tables/maple_door.json"
+							},
+							"events": {
+								"bridge:update_rotation": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"bridge:block_rotation": "query.cardinal_facing_2d"
+											}
+										},
+										{
+											"condition": "query.is_sneaking",
+											"set_block_property": {
+												"strat:flip": 1
+											}
+										}
+									]
+								},
+								"strat:interact": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:open') == 0",
+											"set_block_property": {
+												"strat:open": 1
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_open @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										},
+										{
+											"condition": "query.block_property('strat:open') == 1",
+											"set_block_property": {
+												"strat:open": 0
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_close @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										}
+									]
+								},
+								"strat:top_block": {
+									"sequence": [
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 4",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 5",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door_open",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door_open_flip",
+										"minecraft:pick_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								}
+							]
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"bridge:update_rotation": {
+										"sequence": [
+											{
+												"set_block_property": {
+													"bridge:block_rotation": "query.cardinal_facing_2d"
+												}
+											},
+											{
+												"condition": "query.is_sneaking",
+												"set_block_property": {
+													"strat:flip": 1
+												}
+											}
+										]
+									},
+									"strat:interact": {
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:open') == 0",
+												"set_block_property": {
+													"strat:open": 1
+												},
+												"run_command": {
+													"command": [
+														"playsound random.door_open @a ~~~"
+													]
+												},
+												"trigger": {
+													"event": "strat:top_block"
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1",
+												"set_block_property": {
+													"strat:open": 0
+												},
+												"run_command": {
+													"command": [
+														"playsound random.door_close @a ~~~"
+													]
+												},
+												"trigger": {
+													"event": "strat:top_block"
+												}
+											}
+										]
+									},
+									"strat:top_block": {
+										"sequence": [
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											},
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											},
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											}
+										]
+									}
+								},
+								"key": "bridge:update_rotation",
+								"is_minified": true,
+								"children": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"bridge:block_rotation": "query.cardinal_facing_2d"
+											}
+										},
+										{
+											"condition": "query.is_sneaking",
+											"set_block_property": {
+												"strat:flip": 1
+											}
+										}
+									]
+								}
+							},
+							{
+								"open": {
+									"bridge:update_rotation": {
+										"sequence": [
+											{
+												"set_block_property": {
+													"bridge:block_rotation": "query.cardinal_facing_2d"
+												}
+											},
+											{
+												"condition": "query.is_sneaking",
+												"set_block_property": {
+													"strat:flip": 1
+												}
+											}
+										]
+									},
+									"strat:interact": {
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:open') == 0",
+												"set_block_property": {
+													"strat:open": 1
+												},
+												"run_command": {
+													"command": [
+														"playsound random.door_open @a ~~~"
+													]
+												},
+												"trigger": {
+													"event": "strat:top_block"
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1",
+												"set_block_property": {
+													"strat:open": 0
+												},
+												"run_command": {
+													"command": [
+														"playsound random.door_close @a ~~~"
+													]
+												},
+												"trigger": {
+													"event": "strat:top_block"
+												}
+											}
+										]
+									},
+									"strat:top_block": {
+										"sequence": [
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											},
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											},
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											}
+										]
+									}
+								},
+								"key": "strat:interact",
+								"is_minified": true,
+								"children": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:open') == 0",
+											"set_block_property": {
+												"strat:open": 1
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_open @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										},
+										{
+											"condition": "query.block_property('strat:open') == 1",
+											"set_block_property": {
+												"strat:open": 0
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_close @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										}
+									]
+								}
+							},
+							{
+								"open": {
+									"bridge:update_rotation": {
+										"sequence": [
+											{
+												"set_block_property": {
+													"bridge:block_rotation": "query.cardinal_facing_2d"
+												}
+											},
+											{
+												"condition": "query.is_sneaking",
+												"set_block_property": {
+													"strat:flip": 1
+												}
+											}
+										]
+									},
+									"strat:interact": {
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:open') == 0",
+												"set_block_property": {
+													"strat:open": 1
+												},
+												"run_command": {
+													"command": [
+														"playsound random.door_open @a ~~~"
+													]
+												},
+												"trigger": {
+													"event": "strat:top_block"
+												}
+											},
+											{
+												"condition": "query.block_property('strat:open') == 1",
+												"set_block_property": {
+													"strat:open": 0
+												},
+												"run_command": {
+													"command": [
+														"playsound random.door_close @a ~~~"
+													]
+												},
+												"trigger": {
+													"event": "strat:top_block"
+												}
+											}
+										]
+									},
+									"strat:top_block": {
+										"sequence": [
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											},
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											},
+											{
+												"sequence": [
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_east",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_west",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_north",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+														"set_block_at_pos": {
+															"block_type": "strat:top_door_south",
+															"block_offset": [
+																0,
+																1,
+																0
+															]
+														}
+													}
+												]
+											}
+										]
+									}
+								},
+								"key": "strat:top_block",
+								"is_minified": true,
+								"children": {
+									"sequence": [
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_door",
+								"properties": {
+									"bridge:block_rotation": [
+										2,
+										3,
+										4,
+										5
+									],
+									"strat:open": [
+										0,
+										1
+									],
+									"strat:flip": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:on_player_placing": {
+									"event": "bridge:update_rotation"
+								},
+								"minecraft:destroy_time": 1,
+								"minecraft:block_light_absorption": 0,
+								"minecraft:explosion_resistance": 5,
+								"minecraft:geometry": "geometry.door",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "maple_door",
+										"render_method": "blend"
+									}
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										3
+									]
+								},
+								"minecraft:on_interact": {
+									"event": "strat:interact"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											]
+										}
+									]
+								},
+								"minecraft:on_placed": {
+									"event": "strat:top_block"
+								},
+								"minecraft:loot": "loot_tables/maple_door.json"
+							},
+							"events": {
+								"bridge:update_rotation": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"bridge:block_rotation": "query.cardinal_facing_2d"
+											}
+										},
+										{
+											"condition": "query.is_sneaking",
+											"set_block_property": {
+												"strat:flip": 1
+											}
+										}
+									]
+								},
+								"strat:interact": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:open') == 0",
+											"set_block_property": {
+												"strat:open": 1
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_open @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										},
+										{
+											"condition": "query.block_property('strat:open') == 1",
+											"set_block_property": {
+												"strat:open": 0
+											},
+											"run_command": {
+												"command": [
+													"playsound random.door_close @a ~~~"
+												]
+											},
+											"trigger": {
+												"event": "strat:top_block"
+											}
+										}
+									]
+								},
+								"strat:top_block": {
+									"sequence": [
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										},
+										{
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 2",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_east",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 3",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_west",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 4",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_north",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1 && query.block_property('bridge:block_rotation') == 5",
+													"set_block_at_pos": {
+														"block_type": "strat:top_door_south",
+														"block_offset": [
+															0,
+															1,
+															0
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 4",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('bridge:block_rotation') == 5",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door_open",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+									"components": {
+										"minecraft:geometry": "geometry.door_open_flip",
+										"minecraft:pick_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												5,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door_2",
+												"render_method": "blend"
+											}
+										}
+									}
+								}
+							]
+						},
+						"key": "permutations",
+						"children": [
+							{
+								"is_minified": true,
+								"children": {
+									"condition": "query.block_property('bridge:block_rotation') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								}
+							},
+							{
+								"is_minified": true,
+								"children": {
+									"condition": "query.block_property('bridge:block_rotation') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								}
+							},
+							{
+								"is_minified": true,
+								"children": {
+									"condition": "query.block_property('bridge:block_rotation') == 4",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								}
+							},
+							{
+								"is_minified": true,
+								"children": {
+									"condition": "query.block_property('bridge:block_rotation') == 5",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								}
+							},
+							{
+								"is_minified": true,
+								"children": {
+									"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												3
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								}
+							},
+							{
+								"is_minified": true,
+								"children": {
+									"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+									"components": {
+										"minecraft:geometry": "geometry.door_open",
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												3,
+												16,
+												16
+											]
+										},
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "maple_door",
+												"render_method": "blend"
+											}
+										}
+									}
+								}
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 2",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												180,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 3",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												0,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 4",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												270,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 5",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												90,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+										"components": {
+											"minecraft:geometry": "geometry.door",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door",
+													"render_method": "blend"
+												}
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+										"components": {
+											"minecraft:geometry": "geometry.door_open",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door",
+													"render_method": "blend"
+												}
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+										"components": {
+											"minecraft:geometry": "geometry.door",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door_2",
+													"render_method": "blend"
+												}
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+										"components": {
+											"minecraft:geometry": "geometry.door_open_flip",
+											"minecraft:pick_collision": {
+												"origin": [
+													5,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													5,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door_2",
+													"render_method": "blend"
+												}
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+											"components": {
+												"minecraft:geometry": "geometry.door",
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														3
+													]
+												},
+												"minecraft:entity_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														3
+													]
+												},
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "maple_door_2",
+														"render_method": "blend"
+													}
+												}
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:geometry": "geometry.door",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door_2",
+													"render_method": "blend"
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 2",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												180,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 3",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												0,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 4",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												270,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('bridge:block_rotation') == 5",
+										"components": {
+											"minecraft:rotation": [
+												0,
+												90,
+												0
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 0",
+										"components": {
+											"minecraft:geometry": "geometry.door",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door",
+													"render_method": "blend"
+												}
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 0",
+										"components": {
+											"minecraft:geometry": "geometry.door_open",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door",
+													"render_method": "blend"
+												}
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 0 && query.block_property('strat:flip') == 1",
+										"components": {
+											"minecraft:geometry": "geometry.door",
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													3
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door_2",
+													"render_method": "blend"
+												}
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+										"components": {
+											"minecraft:geometry": "geometry.door_open_flip",
+											"minecraft:pick_collision": {
+												"origin": [
+													5,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													5,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door_2",
+													"render_method": "blend"
+												}
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:open') == 1 && query.block_property('strat:flip') == 1",
+											"components": {
+												"minecraft:geometry": "geometry.door_open_flip",
+												"minecraft:pick_collision": {
+													"origin": [
+														5,
+														0,
+														-8
+													],
+													"size": [
+														3,
+														16,
+														16
+													]
+												},
+												"minecraft:entity_collision": {
+													"origin": [
+														5,
+														0,
+														-8
+													],
+													"size": [
+														3,
+														16,
+														16
+													]
+												},
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "maple_door_2",
+														"render_method": "blend"
+													}
+												}
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:geometry": "geometry.door_open_flip",
+											"minecraft:pick_collision": {
+												"origin": [
+													5,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:entity_collision": {
+												"origin": [
+													5,
+													0,
+													-8
+												],
+												"size": [
+													3,
+													16,
+													16
+												]
+											},
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "maple_door_2",
+													"render_method": "blend"
+												}
+											}
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

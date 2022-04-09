@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mythmob:thrown_spear",
+      "textures": {
+        "default": "textures/entity/trident"
+      },
+      "geometry": {
+        "default": "geometry.trident"
+      }
+    }
+  }
+}

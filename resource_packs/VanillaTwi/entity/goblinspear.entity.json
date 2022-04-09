@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mythmob:thrown_goblinspear",
+      "textures": {
+        "default": "textures/entity/mythmob/goblinspear",
+        "loyalty_rope": "textures/entity/loyalty_rope"
+      },
+      "geometry": {
+        "default": "geometry.goblinspear"
+      }
+    }
+  }
+}

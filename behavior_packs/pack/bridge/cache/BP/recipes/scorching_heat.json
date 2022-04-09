@@ -1,0 +1,274 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\scorching_heat.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "6ae762f0_ab15_4ea3_b216_04088f15f632",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:scorching_heat"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:sh_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:lava_bucket"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:scorching_heat"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:sh_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:lava_bucket"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:scorching_heat"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:lava_bucket"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:scorching_heat"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:scorching_heat"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:lava_bucket"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:scorching_heat"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:lava_bucket"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:sh_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:sh_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:scorching_heat"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:lava_bucket"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#L#",
+							"LBL",
+							"#L#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:scorching_heat"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sh_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:lava_bucket"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "key",
+						"children": [
+							{
+								"key": "L",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:lava_bucket"
+								}
+							},
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:lava_bucket"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

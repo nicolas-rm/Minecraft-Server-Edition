@@ -1,0 +1,90 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\cooked_chicken.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "6bf14854_1f4a_4680_bb97_206721e937e3",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:cooked_chicken"
+						},
+						"components": {
+							"minecraft:use_duration": 16,
+							"minecraft:food": {
+								"nutrition": 3,
+								"saturation_modifier": "low"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cooked_chicken"
+							},
+							"components": {
+								"minecraft:use_duration": 16,
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation_modifier": "low"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:cooked_chicken"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:cooked_chicken"
+							},
+							"components": {
+								"minecraft:use_duration": 16,
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation_modifier": "low"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "16",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 16,
+									"minecraft:food": {
+										"nutrition": 3,
+										"saturation_modifier": "low"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 3,
+									"saturation_modifier": "low"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

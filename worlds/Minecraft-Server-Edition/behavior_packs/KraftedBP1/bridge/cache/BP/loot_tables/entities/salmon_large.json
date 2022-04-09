@@ -1,0 +1,252 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\salmon_large.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "3c44bd06_ed1c_4b22_ab4b_01beff9133e6",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "strat:salmon",
+									"weight": 1,
+									"functions": [
+										{
+											"function": "furnace_smelt",
+											"conditions": [
+												{
+													"condition": "entity_properties",
+													"entity": "this",
+													"properties": {
+														"on_fire": true
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"conditions": [
+								{
+									"condition": "random_chance_with_looting",
+									"chance": 0.25,
+									"looting_multiplier": 0.01
+								}
+							],
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:bone",
+									"weight": 2,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 2
+											}
+										},
+										{
+											"function": "looting_enchant",
+											"count": {
+												"min": 1,
+												"max": 2
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "strat:salmon",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "furnace_smelt",
+												"conditions": [
+													{
+														"condition": "entity_properties",
+														"entity": "this",
+														"properties": {
+															"on_fire": true
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"conditions": [
+									{
+										"condition": "random_chance_with_looting",
+										"chance": 0.25,
+										"looting_multiplier": 0.01
+									}
+								],
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:bone",
+										"weight": 2,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 2
+												}
+											},
+											{
+												"function": "looting_enchant",
+												"count": {
+													"min": 1,
+													"max": 2
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "strat:salmon",
+											"weight": 1,
+											"functions": [
+												{
+													"function": "furnace_smelt",
+													"conditions": [
+														{
+															"condition": "entity_properties",
+															"entity": "this",
+															"properties": {
+																"on_fire": true
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "strat:salmon",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "furnace_smelt",
+														"conditions": [
+															{
+																"condition": "entity_properties",
+																"entity": "this",
+																"properties": {
+																	"on_fire": true
+																}
+															}
+														]
+													}
+												]
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "strat:salmon",
+											"weight": 1,
+											"functions": [
+												{
+													"function": "furnace_smelt",
+													"conditions": [
+														{
+															"condition": "entity_properties",
+															"entity": "this",
+															"properties": {
+																"on_fire": true
+															}
+														}
+													]
+												}
+											]
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"is_minified": true,
+						"children": {
+							"rolls": 1,
+							"conditions": [
+								{
+									"condition": "random_chance_with_looting",
+									"chance": 0.25,
+									"looting_multiplier": 0.01
+								}
+							],
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:bone",
+									"weight": 2,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 2
+											}
+										},
+										{
+											"function": "looting_enchant",
+											"count": {
+												"min": 1,
+												"max": 2
+											}
+										}
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}

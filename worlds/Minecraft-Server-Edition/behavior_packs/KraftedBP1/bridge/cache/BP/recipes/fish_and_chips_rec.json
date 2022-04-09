@@ -1,0 +1,263 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\fish_and_chips_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "aef1793d_f5d9_4cd3_85ad_1eefe94503d4",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "strat:fish_and_chips_rec"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:cooked_fish",
+								"count": 1
+							},
+							{
+								"item": "strat:fries",
+								"count": 1
+							},
+							{
+								"item": "strat:paper_plate",
+								"count": 1
+							}
+						],
+						"result": [
+							{
+								"item": "strat:fish_and_chips",
+								"count": 1
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:fish_and_chips_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_fish",
+									"count": 1
+								},
+								{
+									"item": "strat:fries",
+									"count": 1
+								},
+								{
+									"item": "strat:paper_plate",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:fish_and_chips",
+									"count": 1
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:fish_and_chips_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:fish_and_chips_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_fish",
+									"count": 1
+								},
+								{
+									"item": "strat:fries",
+									"count": 1
+								},
+								{
+									"item": "strat:paper_plate",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:fish_and_chips",
+									"count": 1
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:fish_and_chips_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_fish",
+									"count": 1
+								},
+								{
+									"item": "strat:fries",
+									"count": 1
+								},
+								{
+									"item": "strat:paper_plate",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:fish_and_chips",
+									"count": 1
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:cooked_fish",
+										"count": 1
+									},
+									{
+										"item": "strat:fries",
+										"count": 1
+									},
+									{
+										"item": "strat:paper_plate",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:cooked_fish",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:cooked_fish",
+										"count": 1
+									},
+									{
+										"item": "strat:fries",
+										"count": 1
+									},
+									{
+										"item": "strat:paper_plate",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:fries",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:cooked_fish",
+										"count": 1
+									},
+									{
+										"item": "strat:fries",
+										"count": 1
+									},
+									{
+										"item": "strat:paper_plate",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:paper_plate",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:fish_and_chips_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_fish",
+									"count": 1
+								},
+								{
+									"item": "strat:fries",
+									"count": 1
+								},
+								{
+									"item": "strat:paper_plate",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:fish_and_chips",
+									"count": 1
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:fish_and_chips",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:fish_and_chips",
+									"count": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

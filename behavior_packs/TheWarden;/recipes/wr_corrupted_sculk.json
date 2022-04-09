@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "corrupted_sculk_a4e25806"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:copper_block",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:corrupted_sculk",
+      "count": 1
+    }
+  }
+}

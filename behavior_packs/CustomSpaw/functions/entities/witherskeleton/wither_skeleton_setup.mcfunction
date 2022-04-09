@@ -1,0 +1,9 @@
+scoreboard players add @s witherskeleton 1
+execute @s ~~~ execute @e[type=mrleefy:witherskeletonstill,tag=main,name=!"§eWitherskeleton",r=20,c=1] ~~~ scoreboard players operation @s witherskeleton += @e[type=mrleefy:witherskeletonstill,tag=!main,name="§eWitherskeleton",r=20,c=1] witherskeleton
+execute @s ~~~ execute @e[type=mrleefy:witherskeletonstill,tag=main,name=!"§eWitherskeleton",r=20,c=1] ~~~ tp @e[type=mrleefy:witherskeletonstill,tag=!main,name="§eWitherskeleton",r=20] 999999999 999999999 999999999
+execute @s ~~~ execute @e[type=mrleefy:witherskeletonstill,r=20,scores={witherskeleton=1}] ~~~ summon mrleefy:witherskeletonstill ~~~ minecraft:ageable_grow_up "§dMobGrinder §r§eWitherskeleton"
+execute @s ~~~ execute @e[type=mrleefy:witherskeletonstill,tag=!main,name=!"§ewitherskeleton",r=20,c=1] ~~~ scoreboard players operation @s witherskeleton += @e[type=mrleefy:witherskeletonstill,tag=!main,name="§eWitherskeleton",r=20,c=1] witherskeleton
+execute @s[type=mrleefy:witherskeletonstill,tag=main,name=!"§eWitherskeleton",r=20,c=1] ~~~ tp @e[type=mrleefy:witherskeletonstill,tag=main,name="§eWitherskeleton",r=20,c=1] 999999999 999999999 999999999
+execute @s ~~~ execute @e[type=mrleefy:witherskeletonstill,tag=!main,name=!"§eWitherskeleton",r=20,c=1] ~~~ tag @s add main
+execute @s ~~~ execute @e[type=mrleefy:witherskeletonstill,name=!"§eWitherskeleton",tag=main,r=20,c=1] ~~~ execute @e[type=mrleefy:witherskeletonstill,name=!"§eWitherskeleton",tag=main,r=20,c=1,rm=0.01] ~~~ tp @e[type=mrleefy:witherskeletonstill,name=!"§eWitherskeleton",tag=main,r=20,c=1,rm=0.01] 999999999 999999999 999999999
+tp @s 999999999 999999999 999999999

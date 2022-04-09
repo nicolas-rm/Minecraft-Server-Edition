@@ -1,0 +1,193 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\salad.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "6333f46d_1797_4983_bd3a_2e123fda6d55",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:salad",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 1.6,
+							"minecraft:max_stack_size": 16,
+							"minecraft:use_animation": "eat",
+							"minecraft:food": {
+								"nutrition": 7,
+								"can_always_eat": false,
+								"saturation_modifier": "normal",
+								"using_converts_to": "minecraft:bowl",
+								"on_consume": {
+									"event": "consume"
+								}
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "strat_salad"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:salad",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 7,
+									"can_always_eat": false,
+									"saturation_modifier": "normal",
+									"using_converts_to": "minecraft:bowl",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "strat_salad"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:salad",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:salad",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 1.6,
+								"minecraft:max_stack_size": 16,
+								"minecraft:use_animation": "eat",
+								"minecraft:food": {
+									"nutrition": 7,
+									"can_always_eat": false,
+									"saturation_modifier": "normal",
+									"using_converts_to": "minecraft:bowl",
+									"on_consume": {
+										"event": "consume"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "strat_salad"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1.6",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 7,
+										"can_always_eat": false,
+										"saturation_modifier": "normal",
+										"using_converts_to": "minecraft:bowl",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "strat_salad"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 7,
+									"can_always_eat": false,
+									"saturation_modifier": "normal",
+									"using_converts_to": "minecraft:bowl",
+									"on_consume": {
+										"event": "consume"
+									}
+								}
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 1.6,
+									"minecraft:max_stack_size": 16,
+									"minecraft:use_animation": "eat",
+									"minecraft:food": {
+										"nutrition": 7,
+										"can_always_eat": false,
+										"saturation_modifier": "normal",
+										"using_converts_to": "minecraft:bowl",
+										"on_consume": {
+											"event": "consume"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "strat_salad"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "strat_salad"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,703 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "better:pine_planks": {
+    "textures": "planks_pine",
+    "sound": "wood"
+  },
+  "better:tomato_crop": {
+    "carried_textures" : "tomato_seeds",
+    "sound": "grass"
+  },
+  "better:blueberry_bush": {
+    "carried_textures" : "blueberry_bush_stage3",
+    "sound": "grass"
+  },
+  "better:opal_ore": {
+    "textures" : "opal_ore",
+    "sound": "stone"
+  },
+  "better:end_grass": {
+    "blockshape": "cross_texture",
+    "textures" : "end_grass",
+    "sound": "grass"
+  },
+  "better:lead_ore": {
+    "textures" : "lead_ore",
+    "sound": "stone"
+  },
+  "better:glistering_ore": {
+    "textures" : "glistering_ore",
+    "sound": "stone"
+  },
+  "better:drystone": {
+    "textures" : "drystone",
+    "sound": "stone"
+  },
+  "better:smooth_cobblestone": {
+    "textures" : "smooth_cobblestone",
+    "sound": "stone"
+  },
+  "better:dryslate_slab": {
+    "textures" : "dryslate_slab",
+    "sound": "stone"
+  },
+  "better:chiseled_dryslate": {
+    "textures" : {
+      "up": "stonebrick",
+      "side": "chiseled_dryslate",
+      "down": "stonebrick"
+    },
+    "sound": "stone"
+  },
+  "better:dryslate_bricks": {
+    "textures" : "dryslate_bricks",
+    "sound": "stone"
+  },
+  "better:sandystone": {
+    "textures" : "sandystone",
+    "sound": "stone"
+  },
+  "better:sandystone_tiles": {
+    "textures" : "sandystone_tiles",
+    "sound": "stone"
+  },
+  "better:sandystone_brick": {
+    "textures" : "sandystone_brick",
+    "sound": "stone"
+  },
+  "better:sandystone_cobble": {
+    "textures" : "sandystone_cobble",
+    "sound": "stone"
+  },
+  "better:marble": {
+    "textures" : "marble",
+    "sound": "stone"
+  },
+  "better:chiseled_marble": {
+    "textures" : "chiseled_marble",
+    "sound": "stone"
+  },
+  "better:marble_brick": {
+    "textures" : "marble_brick",
+    "sound": "stone"
+  },
+  "better:marble_cobble": {
+    "textures" : "marble_cobble",
+    "sound": "stone"
+  },
+  "better:snowy_stone": {
+    "textures" : {
+      "side": "snowy_stone",
+      "up": "snow",
+      "down": "stone"
+    },
+    "sound": "stone"
+  },
+  "better:snowy_stone_brick": {
+    "textures" : {
+      "side": "snowy_stone_brick",
+      "up": "snowy_stone_brick",
+      "down": "stonebrick"
+    },
+    "sound": "stone"
+  },
+  "better:compresed_dripstone": {
+    "textures" : "compresed_dripstone",
+    "sound": "stone"
+  },
+  "better:caverock_brick": {
+    "textures" : {
+      "up": "caverock_brick_top",
+      "side": "caverock_brick_side",
+      "down": "caverock_brick_top"
+    },
+    "sound": "stone"
+  },
+  "better:caverock_brick_wall": {
+    "blockshape": "cobblestone_wall",
+    "textures" : {
+      "up": "caverock_brick_top",
+      "side": "caverock_brick_side",
+      "down": "caverock_brick_top"
+    },
+    "sound": "stone"
+  },
+  "better:chiseled_caverock": {
+    "textures" : {
+      "up": "chiseled_caverock_top",
+      "side": "chiseled_caverock_side",
+      "down": "chiseled_caverock_top"
+    },
+    "sound": "stone"
+  },
+  "better:shining_moss": {
+    "textures" : "shining_moss",
+    "sound": "stone"
+  },
+  "better:golden_moss": {
+    "textures" : "golden_moss",
+    "sound": "stone"
+  },
+  "better:granite_tiles": {
+    "textures" : "granite_tiles",
+    "sound": "stone"
+  },
+  "better:granite_cobble": {
+    "textures" : "granite_cobble",
+    "sound": "stone"
+  },
+  "better:diorite_brick": {
+    "textures" : "diorite_brick",
+    "sound": "stone"
+  },
+  "better:diorite_cobble": {
+    "textures" : "diorite_cobble",
+    "sound": "stone"
+  },
+  "better:andesite_tiles": {
+    "textures" : "andesite_tiles",
+    "sound": "stone"
+  },
+  "better:andesite_brick": {
+    "textures" : "andesite_brick",
+    "sound": "stone"
+  },
+  "better:andesite_cobble": {
+    "textures" : "andesite_cobble",
+    "sound": "stone"
+  },
+  "better:sapphire_lantern": {
+    "carried_textures" : "SLC",
+    "blockshape": "lantern",
+    "textures" : "sapphire_lantern",
+    "sound": "lantern"
+  },
+  "better:ruby_lantern": {
+    "carried_textures" : "RLC",
+    "blockshape": "lantern",
+    "textures" : "ruby_lantern",
+    "sound": "lantern"
+  },
+  "better:amber_lantern": {
+    "carried_textures" : "ALC",
+    "blockshape": "lantern",
+    "textures" : "amber_lantern",
+    "sound": "lantern"
+  },
+  "better:opal_lantern": {
+    "carried_textures" : "OLC",
+    "blockshape": "lantern",
+    "textures" : "opal_lantern",
+    "sound": "lantern"
+  },
+  "better:topaz_lantern": {
+    "carried_textures" : "TLC",
+    "blockshape": "lantern",
+    "textures" : "topaz_lantern",
+    "sound": "lantern"
+  },
+  "better:sick_leaves": {
+    "textures" : "sick_leaves",
+    "sound": "grass"
+  },
+  "better:larch_bark": {
+    "textures" : "larch_log",
+    "sound": "wood"
+  },
+  "better:larch_log": {
+    "sound": "wood"
+  },
+  "better:larch_leaves": {
+    "sound": "grass"
+  },
+  "better:ruby_ore": {
+    "textures" : "ruby_ore",
+    "sound": "stone"
+  },
+  "better:sapphire_ore": {
+    "textures" : "sapphire_ore",
+    "sound": "stone"
+  },
+  "better:topaz_ore": {
+    "textures" : "topaz_ore",
+    "sound": "stone"
+  },
+  "better:amber_ore": {
+    "textures" : "amber_ore",
+    "sound": "stone"
+  },
+  "better:corn_crop": {
+    "carried_textures" : "corn",
+    "sound": "grass"
+  },
+  "better:gray_pine_log": {
+    "textures": {
+      "up": "gray_top",
+      "down": "gray_top",
+      "side": "gray"
+    },
+    "sound": "wood"
+  },
+  "better:barley": {
+    "blockshape": "rows",
+    "textures": "barley",
+    "sound": "grass"
+  },
+  "better:ash": {
+    "textures": "ash",
+    "sound": "sand"
+  },
+  "better:chalk": {
+    "textures": "chalk",
+    "sound": "stone"
+  },
+  "better:fir_planks": {
+    "textures": "planks_fir",
+    "sound": "wood"
+  },
+  "better:sulphur_ore": {
+    "textures": "sulphur_ore",
+    "sound": "stone"
+  },
+  "better:dead_grass": {
+    "textures": {
+      "up": "dead_grass_top",
+      "down": "dirt",
+      "side": "dead_grass_side"
+    },
+    "sound": "grass"
+  },
+  "better:brewery": {
+    "textures" : {
+       "down" : "barrel_side",
+       "east" : "barrel_side",
+       "north" : "barrel_top",
+       "south" : "barrel_bottom",
+       "up" : "barrel_side",
+       "west" : "barrel_side"
+    },
+    "sound": "wood"
+  },
+  "better:advanced_crafting": {
+    "textures" : {
+       "down" : "advanced_crafting_top",
+       "east" : "advanced_crafting_side",
+       "north" : "advanced_crafting_tools",
+       "south" : "advanced_crafting_tools",
+       "up" : "advanced_crafting_top",
+       "west" : "advanced_crafting_side"
+    },
+    "sound": "wood"
+  },
+  "better:epigraphist_table": {
+    "textures" : {
+       "down" : "epigraphist_table_top",
+       "east" : "epigraphist_table_books",
+       "north" : "epigraphist_table_tools",
+       "south" : "epigraphist_table_tools",
+       "up" : "epigraphist_table_top",
+       "west" : "epigraphist_table_books"
+    },
+    "sound": "wood"
+  },
+  "better:tin_ore": {
+    "textures": "tin_ore",
+    "sound": "stone"
+  },
+  "better:beech_planks": {
+    "textures": "beech_planks",
+    "sound": "wood"
+  },
+  "better:beech_fence": {
+    "blockshape": "fence",
+    "textures": "beech_planks",
+    "sound": "wood"
+  },
+  "better:beech_fence_gate": {
+    "blockshape": "fence_gate",
+    "textures": "beech_planks",
+    "sound": "wood"
+  },
+  "better:beech_stairs": {
+    "blockshape": "stairs",
+    "textures": "beech_planks",
+    "sound": "wood"
+  },
+  "better:beech_slab": {
+    "blockshape": "half_block",
+    "textures": "beech_planks",
+    "sound": "wood"
+  },
+  "better:beech_log": {
+    "textures": {
+      "up": "beech_log_top",
+      "down": "beech_log_top",
+      "side": "beech_log_side"
+    },
+    "sound": "wood"
+  },
+  "better:beech_leaves": {
+    "textures" : {
+       "down" : "beech_leaves",
+       "east" : "beech_leaves",
+       "north" : "beech_leaves",
+       "south" : "beech_leaves",
+       "up" : "beech_leaves",
+       "west" : "beech_leaves"
+    },
+    "sound": "grass"
+  },
+  "better:beech_bark": {
+    "textures": "beech_log_side",
+    "sound": "stone"
+  },
+  "better:cherry_planks": {
+    "textures": "cherry_planks",
+    "sound": "wood"
+  },
+  "better:cherry_fence": {
+    "blockshape": "fence",
+    "textures": "cherry_planks",
+    "sound": "wood"
+  },
+  "better:cherry_fence_gate": {
+    "blockshape": "fence_gate",
+    "textures": "cherry_planks",
+    "sound": "wood"
+  },
+  "better:cherry_stairs": {
+    "blockshape": "stairs",
+    "textures": "cherry_planks",
+    "sound": "wood"
+  },
+  "better:cherry_slab": {
+    "blockshape": "half_block",
+    "textures": "cherry_planks",
+    "sound": "wood"
+  },
+  "better:cherry_log": {
+    "textures": {
+      "up": "cherry_log_top",
+      "down": "cherry_log_top",
+      "side": "cherry_log_side"
+    },
+    "sound": "wood"
+  },
+  "better:cherry_leaves": {
+    "textures" : {
+       "down" : "cherry_leaves",
+       "east" : "cherry_leaves",
+       "north" : "cherry_leaves",
+       "south" : "cherry_leaves",
+       "up" : "cherry_leaves",
+       "west" : "cherry_leaves"
+    },
+    "sound": "grass"
+  },
+  "better:cherry_bark": {
+    "textures": "cherry_log_side",
+    "sound": "stone"
+  },
+  "better:silver_ore": {
+    "textures": "silver_ore",
+    "sound": "stone"
+  },
+  "better:adamantit_ore": {
+    "textures": "adamantit_ore",
+    "sound": "stone"
+  },
+  "better:adamantit_ore_nether": {
+    "textures": "adamantit_ore_nether",
+    "sound": "stone"
+  },
+  "better:adamantit_ore_end": {
+    "textures": "adamantit_ore_end",
+    "sound": "stone"
+  },
+  "better:steel_lamp": {
+    "textures": "steel_lamp",
+    "sound": "glass"
+  },
+  "better:pine_log": {
+    "blockshape": "tree",
+    "textures": {
+      "up": "wood_pine_top",
+      "down": "wood_pine_top",
+      "side": "wood_pine_side"
+    },
+    "sound": "wood"
+  },
+  "better:fir_log": {
+    "textures": {
+      "up": "wood_fir_top",
+      "down": "wood_fir_top",
+      "side": "wood_fir_side"
+    },
+    "sound": "wood"
+  },
+  "better:pine_bark": {
+    "textures": "wood_pine_side",
+    "sound": "wood"
+  },
+  "better:ore_salt": {
+    "textures": "ore_salt",
+    "sound": "stone"
+  },
+  "better:fir_bark": {
+    "textures": "wood_fir_side",
+    "sound": "wood"
+  },
+  "jigsaw:villager_random_spawn": {
+    "blockshape": "air",
+    "textures": {
+      "up": "jigsaw_spawn",
+      "down": "jigsaw_spawn",
+      "side": "jigsaw_spawn"
+    },
+    "sound": "wood"
+  },
+  "better:pine_stairs": {
+  "blockshape": "stairs",
+    "textures": {
+      "up": "planks_pine",
+      "down": "planks_pine",
+      "side": "planks_pine"
+    },
+    "sound": "wood"
+  },
+  "better:fir_fence_gate": {
+  "blockshape": "fence_gate",
+    "textures": {
+      "up": "planks_fir",
+      "down": "planks_fir",
+      "side": "planks_fir"
+    },
+    "sound": "wood"
+  },
+  "better:fir_fence": {
+  "blockshape": "fence",
+    "textures": {
+      "up": "planks_fir",
+      "down": "planks_fir",
+      "side": "planks_fir"
+    },
+    "sound": "wood"
+  },
+  "better:dirtpatched": {
+    "textures": {
+      "up": "dirtpatched",
+      "down": "dirt",
+      "side": "dirtpatched"
+    },
+    "sound": "dirt"
+  },
+  "better:fir_stairs": {
+  "blockshape": "stairs",
+    "textures": {
+      "up": "planks_fir",
+      "down": "planks_fir",
+      "side": "planks_fir"
+    },
+    "sound": "wood"
+  },
+  "better:fir_slab": {
+  "blockshape": "half_block",
+    "textures": {
+      "up": "planks_fir",
+      "down": "planks_fir",
+      "side": "planks_fir"
+    },
+    "sound": "wood"
+  },
+  "better:pine_slab": {
+  "blockshape": "half_block",
+    "textures": {
+      "up": "planks_pine",
+      "down": "planks_pine",
+      "side": "planks_pine"
+    },
+    "sound": "wood"
+  },
+  "better:pine_fence": {
+  "blockshape": "fence",
+    "textures": {
+      "up": "planks_pine",
+      "down": "planks_pine",
+      "side": "planks_pine"
+    },
+    "sound": "wood"
+  },
+  "better:pine_fence_gate": {
+  "blockshape": "fence_gate",
+    "textures": {
+      "up": "planks_pine",
+      "down": "planks_pine",
+      "side": "planks_pine"
+    },
+    "sound": "wood"
+  },
+  "better:fir_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "leaves_fir_fancy",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "leaves_fir"
+  },
+  "better:testificted_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "leaves_fir_fancy",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "leaves_fir_fancy"
+  },
+  "better:fruit_stairs": {
+  "blockshape": "stairs",
+    "textures": {
+      "up": "planks_fruit_wood",
+      "down": "planks_fruit_wood",
+      "side": "planks_fruit_wood"
+    },
+    "sound": "wood"
+  },
+  "better:fruit_slab": {
+  "blockshape": "half_block",
+    "textures": {
+      "up": "planks_fruit_wood",
+      "down": "planks_fruit_wood",
+      "side": "planks_fruit_wood"
+    },
+    "sound": "wood"
+  },
+  "better:fruit_fence": {
+  "blockshape": "fence",
+    "textures": {
+      "up": "planks_fruit_wood",
+      "down": "planks_fruit_wood",
+      "side": "planks_fruit_wood"
+    },
+    "sound": "wood"
+  },
+  "better:fruit_fence_gate": {
+  "blockshape": "fence_gate",
+    "textures": {
+      "up": "planks_fruit_wood",
+      "down": "planks_fruit_wood",
+      "side": "planks_fruit_wood"
+    },
+    "sound": "wood"
+  },
+  "better:sick_darkwood": {
+    "textures": {
+      "up": "sick_darkwood_top",
+      "down": "sick_darkwood_side",
+      "side": "sick_darkwood_top"
+    },
+    "sound": "wood"
+  },
+  "better:fruit_planks": {
+    "textures": {
+      "up": "planks_fruit_wood",
+      "down": "planks_fruit_wood",
+      "side": "planks_fruit_wood"
+    },
+    "sound": "wood"
+  },
+  "better:fruit_log": {
+    "textures": {
+      "up": "fruit_wood_top",
+      "down": "fruit_wood_top",
+      "side": "fruit_wood_side"
+    },
+    "sound": "wood"
+  },
+  "better:apple_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "apple_leaves",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "apple_leaves"
+  },
+  "better:mango_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "mango_leaves",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "mango_leaves"
+  },
+  "better:olive_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "olive_leaves",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "olive_leaves"
+  },
+  "better:orange_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "orange_leaves",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "orange_leaves"
+  },
+  "better:pear_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "pear_leaves",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "pear_leaves"
+  },
+  "better:pine_leaves" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "leaves_pine_carried",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "leaves_pine"
+  },
+  "better:pine_leaves_gray" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "leaves_pine_carried",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "leaves_pine_gray"
+  },
+  "better:pine_leaves_saturated" : {
+     "brightness_gamma" : 0.80,
+     "carried_textures" : "leaves_pine_carried",
+     "isotropic": {
+        "down": true,
+        "up": true
+     },
+     "sound": "grass",
+     "textures": "leaves_pine_saturated"
+  }
+}

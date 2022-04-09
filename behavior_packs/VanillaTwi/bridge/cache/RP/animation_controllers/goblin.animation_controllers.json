@@ -1,0 +1,1245 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\animation_controllers\\goblin.animation_controllers.json",
+	"file_type": "rp_animation_controller",
+	"format_version": 1,
+	"file_uuid": "d6ba3110_8e7c_4b3c_a1f6_93162448ca5d",
+	"file_version": 9,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.goblin.attack": {
+							"initial_state": "default",
+							"states": {
+								"attacking": {
+									"animations": [
+										"attack.goblin"
+									],
+									"transitions": [
+										{
+											"default": "!query.is_angry"
+										}
+									]
+								},
+								"default": {
+									"transitions": [
+										{
+											"attacking": "query.is_angry"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.goblin.spawn": {
+							"initial_state": "default",
+							"states": {
+								"attacking": {
+									"animations": [
+										"attack.rotations"
+									],
+									"transitions": [
+										{
+											"default": "variable.attack_time < 0.0"
+										}
+									]
+								},
+								"default": {
+									"transitions": [
+										{
+											"attacking": "variable.attack_time >= 0.0"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.goblin_archer.attack": {
+							"initial_state": "default",
+							"states": {
+								"attacking": {
+									"animations": [
+										"attack.goblin"
+									],
+									"transitions": [
+										{
+											"default": "!query.is_angry"
+										}
+									]
+								},
+								"default": {
+									"transitions": [
+										{
+											"attacking": "query.is_angry"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.goblin.idle": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										{
+											"scared": "query.is_avoiding_mobs"
+										}
+									]
+								}
+							}
+						},
+						"controller.animation.kobold.look_at_target": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										"look_at_target_default"
+									]
+								}
+							}
+						},
+						"controller.animation.kobold.equip_sound": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"transitions": [
+										{
+											"sound": "query.is_shaking"
+										}
+									]
+								},
+								"sound": {
+									"transitions": [
+										{
+											"default": "!query.is_shaking"
+										}
+									],
+									"sound_effects": [
+										{
+											"effect": "equip_sound"
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.goblin.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.spawn": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.rotations"
+										],
+										"transitions": [
+											{
+												"default": "variable.attack_time < 0.0"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "variable.attack_time >= 0.0"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin_archer.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.idle": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"scared": "query.is_avoiding_mobs"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.look_at_target": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"look_at_target_default"
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.equip_sound": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"sound": "query.is_shaking"
+											}
+										]
+									},
+									"sound": {
+										"transitions": [
+											{
+												"default": "!query.is_shaking"
+											}
+										],
+										"sound_effects": [
+											{
+												"effect": "equip_sound"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.goblin.attack",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"attacking": {
+											"animations": [
+												"attack.goblin"
+											],
+											"transitions": [
+												{
+													"default": "!query.is_angry"
+												}
+											]
+										},
+										"default": {
+											"transitions": [
+												{
+													"attacking": "query.is_angry"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"attacking": {
+												"animations": [
+													"attack.goblin"
+												],
+												"transitions": [
+													{
+														"default": "!query.is_angry"
+													}
+												]
+											},
+											"default": {
+												"transitions": [
+													{
+														"attacking": "query.is_angry"
+													}
+												]
+											}
+										},
+										"key": "attacking",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"attack.goblin"
+													],
+													"transitions": [
+														{
+															"default": "!query.is_angry"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"attack.goblin"
+												]
+											},
+											{
+												"key": "transitions",
+												"is_minified": true,
+												"children": [
+													{
+														"default": "!query.is_angry"
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"attacking": {
+												"animations": [
+													"attack.goblin"
+												],
+												"transitions": [
+													{
+														"default": "!query.is_angry"
+													}
+												]
+											},
+											"default": {
+												"transitions": [
+													{
+														"attacking": "query.is_angry"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"is_minified": true,
+										"children": {
+											"transitions": [
+												{
+													"attacking": "query.is_angry"
+												}
+											]
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"key": "controller.animation.goblin.spawn",
+						"is_minified": true,
+						"children": {
+							"initial_state": "default",
+							"states": {
+								"attacking": {
+									"animations": [
+										"attack.rotations"
+									],
+									"transitions": [
+										{
+											"default": "variable.attack_time < 0.0"
+										}
+									]
+								},
+								"default": {
+									"transitions": [
+										{
+											"attacking": "variable.attack_time >= 0.0"
+										}
+									]
+								}
+							}
+						}
+					},
+					{
+						"open": {
+							"controller.animation.goblin.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.spawn": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.rotations"
+										],
+										"transitions": [
+											{
+												"default": "variable.attack_time < 0.0"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "variable.attack_time >= 0.0"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin_archer.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.idle": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"scared": "query.is_avoiding_mobs"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.look_at_target": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"look_at_target_default"
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.equip_sound": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"sound": "query.is_shaking"
+											}
+										]
+									},
+									"sound": {
+										"transitions": [
+											{
+												"default": "!query.is_shaking"
+											}
+										],
+										"sound_effects": [
+											{
+												"effect": "equip_sound"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.goblin_archer.attack",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"attacking": {
+											"animations": [
+												"attack.goblin"
+											],
+											"transitions": [
+												{
+													"default": "!query.is_angry"
+												}
+											]
+										},
+										"default": {
+											"transitions": [
+												{
+													"attacking": "query.is_angry"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"attacking": {
+												"animations": [
+													"attack.goblin"
+												],
+												"transitions": [
+													{
+														"default": "!query.is_angry"
+													}
+												]
+											},
+											"default": {
+												"transitions": [
+													{
+														"attacking": "query.is_angry"
+													}
+												]
+											}
+										},
+										"key": "attacking",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"attack.goblin"
+													],
+													"transitions": [
+														{
+															"default": "!query.is_angry"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"attack.goblin"
+												]
+											},
+											{
+												"key": "transitions",
+												"is_minified": true,
+												"children": [
+													{
+														"default": "!query.is_angry"
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"attacking": {
+												"animations": [
+													"attack.goblin"
+												],
+												"transitions": [
+													{
+														"default": "!query.is_angry"
+													}
+												]
+											},
+											"default": {
+												"transitions": [
+													{
+														"attacking": "query.is_angry"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"is_minified": true,
+										"children": {
+											"transitions": [
+												{
+													"attacking": "query.is_angry"
+												}
+											]
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"controller.animation.goblin.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.spawn": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.rotations"
+										],
+										"transitions": [
+											{
+												"default": "variable.attack_time < 0.0"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "variable.attack_time >= 0.0"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin_archer.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.idle": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"scared": "query.is_avoiding_mobs"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.look_at_target": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"look_at_target_default"
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.equip_sound": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"sound": "query.is_shaking"
+											}
+										]
+									},
+									"sound": {
+										"transitions": [
+											{
+												"default": "!query.is_shaking"
+											}
+										],
+										"sound_effects": [
+											{
+												"effect": "equip_sound"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.goblin.idle",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"animations": [
+												{
+													"scared": "query.is_avoiding_mobs"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"animations": [
+													{
+														"scared": "query.is_avoiding_mobs"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														{
+															"scared": "query.is_avoiding_mobs"
+														}
+													]
+												},
+												"key": "animations",
+												"children": [
+													{
+														"open": [
+															{
+																"scared": "query.is_avoiding_mobs"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"scared": "query.is_avoiding_mobs"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"controller.animation.goblin.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.spawn": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.rotations"
+										],
+										"transitions": [
+											{
+												"default": "variable.attack_time < 0.0"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "variable.attack_time >= 0.0"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin_archer.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.idle": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"scared": "query.is_avoiding_mobs"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.look_at_target": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"look_at_target_default"
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.equip_sound": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"sound": "query.is_shaking"
+											}
+										]
+									},
+									"sound": {
+										"transitions": [
+											{
+												"default": "!query.is_shaking"
+											}
+										],
+										"sound_effects": [
+											{
+												"effect": "equip_sound"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.kobold.look_at_target",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"animations": [
+												"look_at_target_default"
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"look_at_target_default"
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"look_at_target_default"
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"look_at_target_default"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"controller.animation.goblin.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.spawn": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.rotations"
+										],
+										"transitions": [
+											{
+												"default": "variable.attack_time < 0.0"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "variable.attack_time >= 0.0"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin_archer.attack": {
+								"initial_state": "default",
+								"states": {
+									"attacking": {
+										"animations": [
+											"attack.goblin"
+										],
+										"transitions": [
+											{
+												"default": "!query.is_angry"
+											}
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"attacking": "query.is_angry"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.goblin.idle": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											{
+												"scared": "query.is_avoiding_mobs"
+											}
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.look_at_target": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"look_at_target_default"
+										]
+									}
+								}
+							},
+							"controller.animation.kobold.equip_sound": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"sound": "query.is_shaking"
+											}
+										]
+									},
+									"sound": {
+										"transitions": [
+											{
+												"default": "!query.is_shaking"
+											}
+										],
+										"sound_effects": [
+											{
+												"effect": "equip_sound"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.kobold.equip_sound",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"sound": "query.is_shaking"
+												}
+											]
+										},
+										"sound": {
+											"transitions": [
+												{
+													"default": "!query.is_shaking"
+												}
+											],
+											"sound_effects": [
+												{
+													"effect": "equip_sound"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"sound": "query.is_shaking"
+													}
+												]
+											},
+											"sound": {
+												"transitions": [
+													{
+														"default": "!query.is_shaking"
+													}
+												],
+												"sound_effects": [
+													{
+														"effect": "equip_sound"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"sound": "query.is_shaking"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"sound": "query.is_shaking"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"sound": "query.is_shaking"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"sound": "query.is_shaking"
+													}
+												]
+											},
+											"sound": {
+												"transitions": [
+													{
+														"default": "!query.is_shaking"
+													}
+												],
+												"sound_effects": [
+													{
+														"effect": "equip_sound"
+													}
+												]
+											}
+										},
+										"key": "sound",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "!query.is_shaking"
+														}
+													],
+													"sound_effects": [
+														{
+															"effect": "equip_sound"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "!query.is_shaking"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "!query.is_shaking"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "!query.is_shaking"
+														}
+													],
+													"sound_effects": [
+														{
+															"effect": "equip_sound"
+														}
+													]
+												},
+												"key": "sound_effects",
+												"children": [
+													{
+														"open": [
+															{
+																"effect": "equip_sound"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"effect": "equip_sound"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

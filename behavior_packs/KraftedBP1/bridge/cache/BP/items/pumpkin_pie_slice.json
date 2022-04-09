@@ -1,0 +1,187 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\pumpkin_pie_slice.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "fce77837_f5d4_4946_968b_61647f0e0f3a",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:pumpkin_pie_slice",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:hand_equipped": false,
+							"minecraft:stacked_by_data": true,
+							"minecraft:use_duration": 0.8,
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "pumpkin_pie_slice"
+							},
+							"minecraft:foil": false,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "normal",
+								"can_always_eat": false
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:pumpkin_pie_slice",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.8,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "pumpkin_pie_slice"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:pumpkin_pie_slice",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:pumpkin_pie_slice",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.8,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "pumpkin_pie_slice"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "false",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "0.8",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.8,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "pumpkin_pie_slice"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "pumpkin_pie_slice"
+								}
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.8,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "pumpkin_pie_slice"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 2,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

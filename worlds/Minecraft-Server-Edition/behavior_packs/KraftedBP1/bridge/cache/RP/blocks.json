@@ -1,0 +1,4523 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Food Expansion Addon RP\\blocks.json",
+	"file_type": "client_block",
+	"format_version": 1,
+	"file_uuid": "cd07f583_6eb6_406a_a666_909e34cbf900",
+	"file_version": 52,
+	"cache_content": {
+		"children": [
+			{
+				"key": "format_version",
+				"is_minified": true,
+				"children": [
+					1,
+					1,
+					0
+				]
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:salt_ore",
+				"is_minified": true,
+				"children": {
+					"textures": "strat_salt ore",
+					"sound": "stone"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:tomato_crop",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:toaster",
+				"is_minified": true,
+				"children": {
+					"sound": "metal"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:cheese_block",
+				"is_minified": true,
+				"children": {
+					"sound": "slime"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:cheese_mold",
+				"is_minified": true,
+				"children": {
+					"sound": "wood"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:churn",
+				"is_minified": true,
+				"children": {
+					"sound": "wood"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:lettuce_crop",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:crop_bush",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:maple_leaves",
+				"is_minified": true,
+				"children": {
+					"textures": "strats_leaves_maple",
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:maple_log",
+				"is_minified": true,
+				"children": {
+					"sound": "wood"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:maple_planks",
+				"is_minified": true,
+				"children": {
+					"textures": "strats_planks_maple",
+					"sound": "wood"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:maple_sapling",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:chopping_board",
+				"is_minified": true,
+				"children": {
+					"sound": "wood"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:banana_crop",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:banana_sapling",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:maple_slab",
+				"is_minified": true,
+				"children": {
+					"sound": "wood"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:orange_sapling",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:orange_crop",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:chocolate_cake",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:cheese_pizza_block",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:pepperoni_pizza_block",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:sausage_pizza_block",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:meat_feast_pizza_block",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:jar_block",
+				"is_minified": true,
+				"children": {
+					"sound": "glass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:jam_jar_block",
+				"is_minified": true,
+				"children": {
+					"sound": "glass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:marmalade_jar_block",
+				"is_minified": true,
+				"children": {
+					"sound": "glass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:maple_syrup_jar_block",
+				"is_minified": true,
+				"children": {
+					"sound": "glass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:milk_jar_block",
+				"is_minified": true,
+				"children": {
+					"sound": "glass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:water_jar_block",
+				"is_minified": true,
+				"children": {
+					"sound": "glass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:apple_crop",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:apple_sapling",
+				"is_minified": true,
+				"children": {
+					"sound": "grass"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:pumpkin_pie_block",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:apple_pie_block",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:cheese_cake",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:christmas_cake",
+				"is_minified": true,
+				"children": {
+					"sound": "cloth"
+				}
+			},
+			{
+				"open": {
+					"format_version": [
+						1,
+						1,
+						0
+					],
+					"strat:salt_ore": {
+						"textures": "strat_salt ore",
+						"sound": "stone"
+					},
+					"strat:tomato_crop": {
+						"sound": "grass"
+					},
+					"strat:toaster": {
+						"sound": "metal"
+					},
+					"strat:cheese_block": {
+						"sound": "slime"
+					},
+					"strat:cheese_mold": {
+						"sound": "wood"
+					},
+					"strat:churn": {
+						"sound": "wood"
+					},
+					"strat:lettuce_crop": {
+						"sound": "grass"
+					},
+					"strat:crop_bush": {
+						"sound": "grass"
+					},
+					"strat:maple_leaves": {
+						"textures": "strats_leaves_maple",
+						"sound": "grass"
+					},
+					"strat:maple_log": {
+						"sound": "wood"
+					},
+					"strat:maple_planks": {
+						"textures": "strats_planks_maple",
+						"sound": "wood"
+					},
+					"strat:maple_sapling": {
+						"sound": "grass"
+					},
+					"strat:chopping_board": {
+						"sound": "wood"
+					},
+					"strat:banana_crop": {
+						"sound": "grass"
+					},
+					"strat:banana_sapling": {
+						"sound": "grass"
+					},
+					"strat:maple_slab": {
+						"sound": "wood"
+					},
+					"strat:orange_sapling": {
+						"sound": "grass"
+					},
+					"strat:orange_crop": {
+						"sound": "grass"
+					},
+					"strat:chocolate_cake": {
+						"sound": "cloth"
+					},
+					"strat:cheese_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:pepperoni_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:sausage_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:meat_feast_pizza_block": {
+						"sound": "cloth"
+					},
+					"strat:jar_block": {
+						"sound": "glass"
+					},
+					"strat:jam_jar_block": {
+						"sound": "glass"
+					},
+					"strat:marmalade_jar_block": {
+						"sound": "glass"
+					},
+					"strat:maple_syrup_jar_block": {
+						"sound": "glass"
+					},
+					"strat:milk_jar_block": {
+						"sound": "glass"
+					},
+					"strat:water_jar_block": {
+						"sound": "glass"
+					},
+					"strat:apple_crop": {
+						"sound": "grass"
+					},
+					"strat:apple_sapling": {
+						"sound": "grass"
+					},
+					"strat:pumpkin_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:apple_pie_block": {
+						"sound": "cloth"
+					},
+					"strat:cheese_cake": {
+						"sound": "cloth"
+					},
+					"strat:christmas_cake": {
+						"sound": "cloth"
+					},
+					"strat:ceramic_plate_block": {
+						"sound": "brick"
+					}
+				},
+				"key": "strat:ceramic_plate_block",
+				"is_minified": true,
+				"children": {
+					"sound": "brick"
+				}
+			}
+		]
+	}
+}

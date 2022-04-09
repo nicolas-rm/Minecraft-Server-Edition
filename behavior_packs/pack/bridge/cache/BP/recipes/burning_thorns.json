@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\burning_thorns.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "326366e7_e9a1_4377_b9d1_f0e27dd51368",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": 1.12,
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "minecraft:netherite_axe"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:flint_and_steel"
+							},
+							{
+								"item": "minecraft:book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:bt_book"
+							}
+						]
+					}
+				},
+				"data": "1.12",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.12,
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "minecraft:netherite_axe"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:flint_and_steel"
+							},
+							{
+								"item": "minecraft:book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:bt_book"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:netherite_axe"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:flint_and_steel"
+								},
+								{
+									"item": "minecraft:book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:bt_book"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:netherite_axe"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:netherite_axe"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:flint_and_steel"
+								},
+								{
+									"item": "minecraft:book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:bt_book"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:netherite_axe"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:flint_and_steel"
+								},
+								{
+									"item": "minecraft:book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:bt_book"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:flint_and_steel"
+									},
+									{
+										"item": "minecraft:book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:flint_and_steel"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:flint_and_steel"
+									},
+									{
+										"item": "minecraft:book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:netherite_axe"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:flint_and_steel"
+								},
+								{
+									"item": "minecraft:book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:bt_book"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:bt_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:bt_book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

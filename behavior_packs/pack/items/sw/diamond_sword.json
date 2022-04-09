@@ -1,0 +1,85 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.17.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ray:sw_diamond_sword",
+			"category": "commands"
+		},
+		"events": {
+			"dmg": {
+				"damage": {
+					"amount": 1,
+					"type": "none",
+					"target": "self"
+				},
+				"run_command": {
+					"command": [
+						"execute @p ~ ~ ~ function sweep"
+					],
+					"target": "other"
+				}
+			}
+		},
+		"components": {
+			"minecraft:foil": true,
+			"minecraft:display_name": {
+				"value": "§bDiamond Sword\n§7Sweeping Edge"
+			},
+			"minecraft:icon": {
+				"texture": "diamond_sword"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "dmg"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 3600,
+			"minecraft:hand_equipped": true,
+			"minecraft:damageable": {
+				"max_damage": 1561
+			},
+			"minecraft:mining_speed": 1.5,
+			"minecraft:damage": 7,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "sword"
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:digger": {
+				"use_efficiency": false,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 15
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 100
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 1562
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"repair_amount": 250,
+						"items": [
+							"minecraft:diamond"
+						]
+					},
+					{
+						"items": [
+							"minecraft:diamond_sword",
+							"ray:sw_diamond_sword"
+						],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,118 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.goblin.attack": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"attack.goblin"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_angry"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attacking": "query.is_angry"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.goblin.spawn": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"attack.rotations"
+					],
+					"transitions": [
+						{
+							"default": "variable.attack_time < 0.0"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attacking": "variable.attack_time >= 0.0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.goblin_archer.attack": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"attack.goblin"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_angry"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attacking": "query.is_angry"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.goblin.idle": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"scared": "query.is_avoiding_mobs"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.kobold.look_at_target": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target_default"
+					]
+				}
+			}
+		},
+		"controller.animation.kobold.equip_sound": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"sound": "query.is_shaking"
+						}
+					]
+				},
+				"sound": {
+					"transitions": [
+						{
+							"default": "!query.is_shaking"
+						}
+					],
+					"sound_effects": [
+						{
+							"effect": "equip_sound"
+						}
+					]
+				}
+			}
+		}
+	}
+}

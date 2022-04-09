@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "espadas:mineral_estano"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/espadas_mineral_estano.json",
+      "minecraft:destroy_time": 1.0,
+      "minecraft:friction": 0.7,
+      "minecraft:map_color": "#FFFFFF",
+      "minecraft:block_light_absorption": 15.0,
+      "minecraft:block_light_emission": 0.0,
+      "minecraft:explosion_resistance": 1.0
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\cheeseburger_rec_2.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "705a7dc5_9c92_4773_bf86_c6abcd355ddf",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "strat:cheeseburger_rec_2"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:cooked_beef",
+								"count": 1
+							},
+							{
+								"item": "strat:bread_slice",
+								"count": 2
+							},
+							{
+								"item": "strat:cheese",
+								"count": 1
+							}
+						],
+						"result": [
+							{
+								"item": "strat:cheeseburger",
+								"count": 1
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheeseburger_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_beef",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cheese",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:cheeseburger",
+									"count": 1
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cheeseburger_rec_2"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheeseburger_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_beef",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cheese",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:cheeseburger",
+									"count": 1
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheeseburger_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_beef",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cheese",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:cheeseburger",
+									"count": 1
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:cooked_beef",
+										"count": 1
+									},
+									{
+										"item": "strat:bread_slice",
+										"count": 2
+									},
+									{
+										"item": "strat:cheese",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:cooked_beef",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:cooked_beef",
+										"count": 1
+									},
+									{
+										"item": "strat:bread_slice",
+										"count": 2
+									},
+									{
+										"item": "strat:cheese",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:bread_slice",
+									"count": 2
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:cooked_beef",
+										"count": 1
+									},
+									{
+										"item": "strat:bread_slice",
+										"count": 2
+									},
+									{
+										"item": "strat:cheese",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:cheese",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cheeseburger_rec_2"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:cooked_beef",
+									"count": 1
+								},
+								{
+									"item": "strat:bread_slice",
+									"count": 2
+								},
+								{
+									"item": "strat:cheese",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:cheeseburger",
+									"count": 1
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:cheeseburger",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:cheeseburger",
+									"count": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

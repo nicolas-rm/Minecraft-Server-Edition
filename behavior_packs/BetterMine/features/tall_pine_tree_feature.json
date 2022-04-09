@@ -1,0 +1,114 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "better:tall_pine_tree_feature"
+    },
+    "mega_trunk": {
+      "trunk_width": 1,
+      "trunk_height": {
+        "base": 8,
+        "intervals": [ 6, 8 ]
+      },
+      "trunk_block": {
+        "name": "better:pine_log",
+        "states": {
+        }
+      },
+      "branches": {
+        "branch_length": 1,
+        "branch_slope": 0.1,
+        "branch_interval": {
+          "range_min": 2,
+          "range_max": 6
+        },
+        "branch_altitude_factor": {
+          "min": 0.5,
+          "max": 1.0
+        },
+        "branch_canopy": {
+          "acacia_canopy": {
+            "canopy_size": 1,
+            "leaf_block": {
+              "name": "better:pine_leaves",
+              "states": {
+              }
+            },
+            "simplify_canopy": true
+          }
+        }
+      }
+    },
+    "pine_canopy": {
+      "base_radius": 1,
+      "canopy_height": {
+        "range_min": 3,
+        "range_max": 6
+      },
+      "leaf_block": {
+        "name": "better:pine_leaves",
+        "states": {
+        }
+      }
+    },
+    "base_block": [
+      "minecraft:dirt",
+      {
+        "name": "minecraft:dirt",
+        "states": {
+          "dirt_type": "coarse"
+        }
+      }
+    ],
+    "may_grow_on": [
+      "minecraft:dirt",
+      "minecraft:podzol",
+      "minecraft:grass",
+      {
+        "name": "minecraft:dirt",
+        "states": {
+          "dirt_type": "coarse"
+        }
+      }
+    ],
+    "may_replace": [
+      "minecraft:air",
+      {
+        "name": "minecraft:leaves",
+        "states": {
+          "old_leaf_type": "oak"
+        }
+      },
+      {
+        "name": "minecraft:leaves",
+        "states": {
+          "old_leaf_type": "spruce"
+        }
+      },
+      {
+        "name": "minecraft:leaves",
+        "states": {
+          "old_leaf_type": "birch"
+        }
+      },
+      {
+        "name": "minecraft:leaves",
+        "states": {
+          "old_leaf_type": "jungle"
+        }
+      },
+      {
+        "name": "minecraft:leaves2",
+        "states": {
+          "new_leaf_type": "acacia"
+        }
+      },
+      {
+        "name": "minecraft:leaves2",
+        "states": {
+          "new_leaf_type": "dark_oak"
+        }
+      }
+    ]
+  }
+}

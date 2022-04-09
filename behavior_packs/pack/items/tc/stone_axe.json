@@ -1,0 +1,149 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "custom:stone_axe",
+			"category": "commands"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_damage": 133,
+				"max_durability": 133
+			},
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 4,
+			"minecraft:enchantable": {
+				"value": 22,
+				"slot": "axe"
+			},
+			"tag:minecraft:is_axe": {},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "dmg"
+				},
+				"on_not_hurt_entity": {
+					"event": "dmg"
+				},
+				"on_hit_block": {
+					"event": "dmg"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "§bStone Axe\n§7Tree Capitator"
+			},
+			"minecraft:icon": {
+				"texture": "stone_axe"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.axe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"on_dig": {
+					"event": "dmg"
+				},
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "q.any_tag('wood', 'pumpkin', 'plant')"
+						},
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:chest",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:melon_block",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crafting_table",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": {
+							"tags": "query.any_tag('wood', 'pumpkin', 'plant')"
+						},
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:bookshelf",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:cartography_table",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"speed": 4,
+						"block": "minecraft:lectern",
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:composter",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:crimson_stem",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					},
+					{
+						"block": "minecraft:warped_stem",
+						"speed": 4,
+						"on_dig": {
+							"event": "dmg"
+						}
+					}
+				]
+			},
+			"minecraft:foil": true
+		},
+		"events": {
+			"dmg": {
+				"damage": {
+					"type": "none",
+					"amount": 1,
+					"target": "self"
+				},
+				"run_command": {
+					"command": [
+						"function tree"
+					]
+				}
+			}
+		}
+	}
+}

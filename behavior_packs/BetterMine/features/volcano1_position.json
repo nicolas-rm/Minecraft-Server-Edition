@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "minecraft:volcano1_position"
+    },
+    "iterations": 1,
+    "x": 0,
+    "y": -3,
+    "z": 0,
+    "project_input_to_floor": false,
+    "places_feature": "minecraft:volcano1"
+  }
+}

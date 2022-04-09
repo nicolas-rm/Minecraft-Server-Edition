@@ -1,0 +1,92 @@
+//bridge-file-version: #13
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mob:sweep",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"vanish": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"sweep"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:scale": {
+				"value": 0.5
+			},
+			"minecraft:behavior.knockback_roar": {
+				"priority": 1,
+				"duration": 0.2,
+				"attack_time": 0.1,
+				"knockback_damage": 4,
+				"knockback_strength": 0,
+				"knockback_range": 1.5,
+				"on_roar_end": {
+					"event": "vanish"
+				},
+				"cooldown_time": 1,
+				"damage_filters": {
+					"any_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "player"
+						}
+					]
+				},
+				"knockback_filters": {
+					"any_of": [
+						{
+							"test": "is_family",
+							"operator": "!=",
+							"subject": "other",
+							"value": "player"
+						},
+						{
+							"test": "is_family",
+							"operator": "!=",
+							"subject": "other",
+							"value": "wolf"
+						},
+						{
+							"test": "is_family",
+							"operator": "!=",
+							"subject": "other",
+							"value": "villager"
+						}
+					]
+				}
+			}
+		},
+		"events": {
+			"vanish": {
+				"add": {
+					"component_groups": [
+						"vanish"
+					]
+				}
+			}
+		}
+	}
+}

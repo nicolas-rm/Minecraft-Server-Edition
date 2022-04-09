@@ -1,0 +1,175 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\tomato.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "1d984342_f7e4_496d_8b5b_712b279dc520",
+	"file_version": 18,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:tomato",
+							"category": "nature"
+						},
+						"components": {
+							"minecraft:use_duration": 0.4,
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.crop"
+							},
+							"minecraft:icon": {
+								"texture": "strat_tomato"
+							},
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "normal",
+								"can_always_eat": false
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.crop"
+								},
+								"minecraft:icon": {
+									"texture": "strat_tomato"
+								},
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:tomato",
+							"category": "nature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.crop"
+								},
+								"minecraft:icon": {
+									"texture": "strat_tomato"
+								},
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "0.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.crop"
+									},
+									"minecraft:icon": {
+										"texture": "strat_tomato"
+									},
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.crop"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.crop"
+									},
+									"minecraft:icon": {
+										"texture": "strat_tomato"
+									},
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "strat_tomato"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.crop"
+									},
+									"minecraft:icon": {
+										"texture": "strat_tomato"
+									},
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "normal",
+										"can_always_eat": false
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 2,
+									"saturation_modifier": "normal",
+									"can_always_eat": false
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

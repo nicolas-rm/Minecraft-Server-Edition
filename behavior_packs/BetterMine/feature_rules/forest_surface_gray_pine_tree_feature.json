@@ -1,0 +1,107 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "better:forest_surface_gray_pine_tree_feature",
+      "places_feature": "minecraft:gray_pine_position"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "forest"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "hills"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "elven"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "birch"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "beech"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "canada"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "dense"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "mutated"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "cold"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "frozen"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "fir"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "pine"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": {
+        "numerator": 1,
+        "denominator": 10
+      },
+      "coordinate_eval_order": "zxy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          16
+        ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [
+          "query.heightmap(variable.worldx, variable.worldz) + 0",
+          "query.heightmap(variable.worldx, variable.worldz) + 1 + 0"
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          16
+        ]
+      }
+    }
+  }
+}

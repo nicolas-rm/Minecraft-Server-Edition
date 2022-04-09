@@ -1,0 +1,161 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\VanillaTwi\\spawn_rules\\mushroom.json",
+	"file_type": "spawn_rule",
+	"format_version": 1,
+	"file_uuid": "c4aef22a_35b7_4022_947d_bd15bc954fc4",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:spawn_rules": {
+						"description": {
+							"identifier": "mythmob:mushroom",
+							"population_control": "animal"
+						},
+						"conditions": [
+							{
+								"minecraft:spawns_on_surface": {},
+								"minecraft:spawns_on_block_filter": "minecraft:brown_mushroom_block",
+								"minecraft:brightness_filter": {
+									"min": 0,
+									"max": 15,
+									"adjust_for_weather": true
+								},
+								"minecraft:difficulty_filter": {
+									"min": "easy",
+									"max": "hard"
+								},
+								"minecraft:weight": {
+									"default": 5
+								},
+								"minecraft:herd": {
+									"min_size": 0,
+									"max_size": 2
+								},
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "mooshroom_island"
+								}
+							}
+						]
+					}
+				},
+				"key": "minecraft:spawn_rules",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:mushroom",
+								"population_control": "animal"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:spawns_on_block_filter": "minecraft:brown_mushroom_block",
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 15,
+										"adjust_for_weather": true
+									},
+									"minecraft:difficulty_filter": {
+										"min": "easy",
+										"max": "hard"
+									},
+									"minecraft:weight": {
+										"default": 5
+									},
+									"minecraft:herd": {
+										"min_size": 0,
+										"max_size": 2
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "mooshroom_island"
+									}
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "mythmob:mushroom",
+							"population_control": "animal"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:mushroom",
+								"population_control": "animal"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:spawns_on_block_filter": "minecraft:brown_mushroom_block",
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 15,
+										"adjust_for_weather": true
+									},
+									"minecraft:difficulty_filter": {
+										"min": "easy",
+										"max": "hard"
+									},
+									"minecraft:weight": {
+										"default": 5
+									},
+									"minecraft:herd": {
+										"min_size": 0,
+										"max_size": 2
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "mooshroom_island"
+									}
+								}
+							]
+						},
+						"key": "conditions",
+						"is_minified": true,
+						"children": [
+							{
+								"minecraft:spawns_on_surface": {},
+								"minecraft:spawns_on_block_filter": "minecraft:brown_mushroom_block",
+								"minecraft:brightness_filter": {
+									"min": 0,
+									"max": 15,
+									"adjust_for_weather": true
+								},
+								"minecraft:difficulty_filter": {
+									"min": "easy",
+									"max": "hard"
+								},
+								"minecraft:weight": {
+									"default": 5
+								},
+								"minecraft:herd": {
+									"min_size": 0,
+									"max_size": 2
+								},
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "mooshroom_island"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

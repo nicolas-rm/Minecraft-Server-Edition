@@ -1,0 +1,23 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "korbon:select_void_turf_grass_feature"
+		},
+		"features": [
+			[
+				"korbon:void_turf_grass_short_scatter_feature",
+				1
+			],
+			[
+				"korbon:void_turf_grass_scatter_feature",
+				3
+			],
+			[
+				"korbon:void_turf_grass_tall_scatter_feature",
+				1
+			]
+		]
+	}
+}

@@ -1,0 +1,182 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\spaghetti_bolognese.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "fef470aa_520e_4334_83bf_39d817f24456",
+	"file_version": 9,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:spaghetti_bolognese",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:hand_equipped": false,
+							"minecraft:stacked_by_data": true,
+							"minecraft:use_duration": 2.4,
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "spaghetti"
+							},
+							"minecraft:foil": false,
+							"minecraft:food": {
+								"nutrition": 9,
+								"saturation_modifier": "good",
+								"using_converts_to": "strat:dirty_paper_plate",
+								"can_always_eat": false
+							},
+							"minecraft:max_stack_size": 16
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:spaghetti_bolognese",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 2.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "spaghetti"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"using_converts_to": "strat:dirty_paper_plate",
+									"can_always_eat": false
+								},
+								"minecraft:max_stack_size": 16
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:spaghetti_bolognese",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:spaghetti_bolognese",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 2.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "spaghetti"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"using_converts_to": "strat:dirty_paper_plate",
+									"can_always_eat": false
+								},
+								"minecraft:max_stack_size": 16
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "false",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "spaghetti"
+								}
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 2.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "spaghetti"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "good",
+										"using_converts_to": "strat:dirty_paper_plate",
+										"can_always_eat": false
+									},
+									"minecraft:max_stack_size": 16
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"using_converts_to": "strat:dirty_paper_plate",
+									"can_always_eat": false
+								}
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,175 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\meat_feast_pizza_slice.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "966f8ffa_f948_4fc1_906e_3dade024b827",
+	"file_version": 20,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:meat_feast_pizza_slice",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 2.4,
+							"minecraft:food": {
+								"nutrition": 9,
+								"can_always_eat": false,
+								"saturation_modifier": "good"
+							},
+							"minecraft:icon": {
+								"texture": "bridge_meat feast pizza"
+							},
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:meat_feast_pizza_slice",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 9,
+									"can_always_eat": false,
+									"saturation_modifier": "good"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_meat feast pizza"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:meat_feast_pizza_slice",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:meat_feast_pizza_slice",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 9,
+									"can_always_eat": false,
+									"saturation_modifier": "good"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_meat feast pizza"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 9,
+										"can_always_eat": false,
+										"saturation_modifier": "good"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_meat feast pizza"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 9,
+									"can_always_eat": false,
+									"saturation_modifier": "good"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 9,
+										"can_always_eat": false,
+										"saturation_modifier": "good"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_meat feast pizza"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "bridge_meat feast pizza"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 9,
+										"can_always_eat": false,
+										"saturation_modifier": "good"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_meat feast pizza"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

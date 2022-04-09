@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.isunderrain": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "state_1": "query.is_in_water_or_rain && !query.is_in_water"
+            }
+          ],
+          "on_entry": ["/tag @s remove isunderrain"],
+          "on_exit": ["/tag @s add isunderrain"]
+        },
+        "state_1": {
+          "transitions": [
+            {
+              "default": "!query.is_in_water_or_rain && !query.is_in_water"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

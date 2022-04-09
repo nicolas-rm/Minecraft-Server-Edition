@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:babuska",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "skeleton", "mob" ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.3,
+        "height": 0.3
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+    }
+  }
+}

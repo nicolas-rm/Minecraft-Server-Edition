@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wraith.move": {
+			"loop": true,
+			"animation_length": 32.38333,
+			"bones": {
+				"bone4": {
+					"rotation": [0, "Math.abs(Math.cos(query.anim_time * 90.34 + 180 * 5) * 25.92)", 0]
+				},
+				"bone5": {
+					"rotation": {
+						"0.0": [0, "-Math.abs(Math.cos(query.anim_time * 90.34 + 180 * 5) * 25.92)", 0],
+						"32.3833": [0, "-Math.abs(Math.cos(query.anim_time * 76.34 + 90 * 0) * 22.92", 0]
+					}
+				},
+				"bone6": {
+					"rotation": [0, "-Math.abs(Math.cos(query.anim_time * 80.34 + 180 * 5) * 25.92)", 0]
+				},
+				"bone7": {
+					"rotation": [0, "Math.abs(Math.cos(query.anim_time * 80.34 + 180 * 5) * 25.92)", 0]
+				},
+				"bone8": {
+					"rotation": ["-Math.abs(Math.cos(query.anim_time * 70.34 + 180 * 5) * 15.92)", 0, "Math.abs(Math.cos(query.anim_time * 70.34 + 180 * 5) * 15.92)"]
+				},
+				"bone9": {
+					"rotation": ["Math.abs(Math.cos(query.anim_time * 70.34 + 180 * 5) * 15.92)", 0, "-Math.abs(Math.cos(query.anim_time * 70.34 + 180 * 5) * 15.92)"]
+				}
+			}
+		}
+	}
+}

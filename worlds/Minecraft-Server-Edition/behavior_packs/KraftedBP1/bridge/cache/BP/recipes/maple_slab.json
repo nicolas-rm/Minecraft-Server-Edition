@@ -1,0 +1,221 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\maple_slab.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "18a9e505_f02a_4d93_9812_97171919a245",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:maple_slab"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"group": "wooden_slab",
+						"pattern": [
+							"###"
+						],
+						"key": {
+							"#": {
+								"item": "strat:maple_planks"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:maple_slab",
+								"count": 6
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"group": "wooden_slab",
+							"pattern": [
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_slab",
+									"count": 6
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_slab"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"group": "wooden_slab",
+							"pattern": [
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_slab",
+									"count": 6
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"data": "wooden_slab",
+						"key": "group"
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"group": "wooden_slab",
+							"pattern": [
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_slab",
+									"count": 6
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"###"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"group": "wooden_slab",
+							"pattern": [
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_slab",
+									"count": 6
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:maple_planks"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"group": "wooden_slab",
+							"pattern": [
+								"###"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_slab",
+									"count": 6
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:maple_slab",
+										"count": 6
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_slab",
+									"count": 6
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

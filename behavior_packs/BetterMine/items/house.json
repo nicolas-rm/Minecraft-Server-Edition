@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "items",
+			"identifier": "better:house"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.enchantedBook"
+			},
+			"minecraft:icon": {
+				"texture": "book_enchanted"
+			},
+			"minecraft:display_name": {
+				"value": "§5Magic Book §b(Summon House)"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 99999,
+			"minecraft:foil": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "better:cast_spell",
+					"target": "self"
+				}
+			},
+			"minecraft:cooldown": {
+				"category": "magic",
+				"duration": 256.5
+			}
+		},
+		"events": {
+			"better:cast_spell": {
+				"sequence": [
+					{
+						"add_mob_effect": {
+							"effect": "slowness",
+							"target": "holder",
+							"duration": 2,
+							"amplifier": 2
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"function house"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,289 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\pufferfish.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "4a749337_693d_48e1_b884_e13a187f8e39",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:pufferfish"
+						},
+						"components": {
+							"minecraft:use_duration": 0.4,
+							"minecraft:stacked_by_data": true,
+							"minecraft:food": {
+								"nutrition": 1,
+								"saturation_modifier": "poor",
+								"on_consume": {
+									"event": "consumed",
+									"target": "self"
+								}
+							}
+						},
+						"events": {
+							"consumed": {
+								"sequence": [
+									{
+										"add_mob_effect": {
+											"effect": "poison",
+											"duration": 60,
+											"amplifier": 3,
+											"target": "holder"
+										}
+									},
+									{
+										"add_mob_effect": {
+											"effect": "nausea",
+											"duration": 15,
+											"amplifier": 1,
+											"target": "holder"
+										}
+									},
+									{
+										"add_mob_effect": {
+											"effect": "hunger",
+											"duration": 15,
+											"amplifier": 2,
+											"target": "holder"
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:pufferfish"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:stacked_by_data": true,
+								"minecraft:food": {
+									"nutrition": 1,
+									"saturation_modifier": "poor",
+									"on_consume": {
+										"event": "consumed",
+										"target": "self"
+									}
+								}
+							},
+							"events": {
+								"consumed": {
+									"sequence": [
+										{
+											"add_mob_effect": {
+												"effect": "poison",
+												"duration": 60,
+												"amplifier": 3,
+												"target": "holder"
+											}
+										},
+										{
+											"add_mob_effect": {
+												"effect": "nausea",
+												"duration": 15,
+												"amplifier": 1,
+												"target": "holder"
+											}
+										},
+										{
+											"add_mob_effect": {
+												"effect": "hunger",
+												"duration": 15,
+												"amplifier": 2,
+												"target": "holder"
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:pufferfish"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:pufferfish"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:stacked_by_data": true,
+								"minecraft:food": {
+									"nutrition": 1,
+									"saturation_modifier": "poor",
+									"on_consume": {
+										"event": "consumed",
+										"target": "self"
+									}
+								}
+							},
+							"events": {
+								"consumed": {
+									"sequence": [
+										{
+											"add_mob_effect": {
+												"effect": "poison",
+												"duration": 60,
+												"amplifier": 3,
+												"target": "holder"
+											}
+										},
+										{
+											"add_mob_effect": {
+												"effect": "nausea",
+												"duration": 15,
+												"amplifier": 1,
+												"target": "holder"
+											}
+										},
+										{
+											"add_mob_effect": {
+												"effect": "hunger",
+												"duration": 15,
+												"amplifier": 2,
+												"target": "holder"
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "0.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:stacked_by_data": true,
+									"minecraft:food": {
+										"nutrition": 1,
+										"saturation_modifier": "poor",
+										"on_consume": {
+											"event": "consumed",
+											"target": "self"
+										}
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 1,
+									"saturation_modifier": "poor",
+									"on_consume": {
+										"event": "consumed",
+										"target": "self"
+									}
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:pufferfish"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:stacked_by_data": true,
+								"minecraft:food": {
+									"nutrition": 1,
+									"saturation_modifier": "poor",
+									"on_consume": {
+										"event": "consumed",
+										"target": "self"
+									}
+								}
+							},
+							"events": {
+								"consumed": {
+									"sequence": [
+										{
+											"add_mob_effect": {
+												"effect": "poison",
+												"duration": 60,
+												"amplifier": 3,
+												"target": "holder"
+											}
+										},
+										{
+											"add_mob_effect": {
+												"effect": "nausea",
+												"duration": 15,
+												"amplifier": 1,
+												"target": "holder"
+											}
+										},
+										{
+											"add_mob_effect": {
+												"effect": "hunger",
+												"duration": 15,
+												"amplifier": 2,
+												"target": "holder"
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"consumed": {
+								"sequence": [
+									{
+										"add_mob_effect": {
+											"effect": "poison",
+											"duration": 60,
+											"amplifier": 3,
+											"target": "holder"
+										}
+									},
+									{
+										"add_mob_effect": {
+											"effect": "nausea",
+											"duration": 15,
+											"amplifier": 1,
+											"target": "holder"
+										}
+									},
+									{
+										"add_mob_effect": {
+											"effect": "hunger",
+											"duration": 15,
+											"amplifier": 2,
+											"target": "holder"
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,33 @@
+//bridge-file-version: #4
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mrleefy:creeperspawner"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ODO",
+			"DPD",
+			"ODO"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:iron_bars"
+			},
+			"D": {
+				"item": "minecraft:gunpowder"
+			},
+			"P": {
+				"item": "minecraft:netherite_scrap"
+			}
+		},
+		"result": [
+			{
+				"item": "mrleefy:creeperspawner"
+			}
+		]
+	}
+}

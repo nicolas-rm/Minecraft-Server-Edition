@@ -1,0 +1,75 @@
+##bridge-file-version: #14
+action.interact.swordsman=Give Sword
+action.interact.archer=Give Bow
+action.interact.mage=Give Totem
+action.hint.exit.mythmob:giantspider=Tap sneak to dismount
+
+entity.satyr_trader.name = Satyr Trader
+entity.mythmob:satyr.name = Satyr Trader
+
+entity.vanilla_twilight:kobold.name=Kobold
+
+entity.vanilla_twilight:hagbat.name=Hagbat
+
+entity.mythmob:nymph.name=Nymph
+entity.mythmob:nymph2.name=Nymph
+
+entity.mythmob:werewolf.name=Werewolf
+entity.mythmob:werewolf2.name=Werewolf
+
+entity.mythmob:goblin.name=Goblin Peon
+entity.mythmob:goblin.archer.name=Goblin Archer
+entity.mythmob:goblin.berserker.name=Goblin Berserker
+
+entity.mythmob:mimic.name=Mimic
+
+entity.vanilla_twilight:evocation_villager.name=Villager Mage
+entity.vanilla_twilight:swordsman_villager.name=Villager Swordsman
+entity.vanilla_twilight:archer_villager.name=Villager Archer
+
+entity.mythmob:giant.name=Giant
+
+entity.mythmob:necromancer_illager.name=Necromancer
+entity.mythmob:skeletonknight.name=Skeleton Warrior
+
+entity.mythmob:giantspider.name=Giant Spider
+
+entity.mythmob:mushroom.name=Walking Mushroom
+entity.mythmob:ogre.name=Ogre
+
+entity.mythmob:orc.name=Orc
+
+entity.mythmob:troll.name=Troll
+
+entity.mythmob:minotaur.name=Minotaur
+
+entity.mythmob:centaur.name=Centaur
+
+entity.vanilla_twilight:cockatrice.name=Cockatrice
+
+
+item.spawn_egg.entity.vanilla_twilight:kobold.name=Spawn Kobold
+item.spawn_egg.entity.vanilla_twilight:hagbat.name=Spawn Hagbat
+item.spawn_egg.entity.mythmob:nymph.name=Spawn Nymph
+item.spawn_egg.entity.mythmob:goblin_stooges.name=Spawn Goblins
+item.spawn_egg.entity.mythmob:mimic.name=Spawn Mimic
+item.spawn_egg.entity.vanilla_twilight:evocation_villager.name=Spawn Villager Mage
+item.spawn_egg.entity.vanilla_twilight:swordsman_villager.name=Spawn Villager Swordsman
+item.spawn_egg.entity.vanilla_twilight:archer_villager.name=Spawn Villager Archer
+item.spawn_egg.entity.mythmob:giant.name=Spawn Giant
+item.spawn_egg.entity.mythmob:werewolf.name=Spawn Werewolf
+item.spawn_egg.entity.mythmob:necromancer_illager.name=Spawn Illager Necromancer
+item.spawn_egg.entity.mythmob:skeletonknight.name=Spawn Skeleton Warrior
+item.spawn_egg.entity.mythmob:giantspider.name=Spawn Giant Spider
+item.spawn_egg.entity.mythmob:mushroom.name=Spawn Brown Mushroom
+item.spawn_egg.entity.mythmob:mushroom2.name=Spawn Red Mushroom
+item.spawn_egg.entity.mythmob:ogre.name=Spawn Ogre
+item.spawn_egg.entity.mythmob:satyr.name=Spawn Satyr
+item.spawn_egg.entity.mythmob:troll.name=Spawn Troll
+item.spawn_egg.entity.mythmob:minotaur.name=Spawn Minotaur
+item.spawn_egg.entity.mythmob:centaur.name=Spawn Centaur
+item.spawn_egg.entity.mythmob:orc.name=Spawn Orc
+item.spawn_egg.entity.mythmob:wraith.name=Spawn Wraith
+item.spawn_egg.entity.vanilla_twilight:cockatrice.name=Spawn Cockatrice
+item.spawn_egg.entity.mythmob:broodspider.name=Spawn Broodmother
+entity.vanilla_twilight:kobold_banner.name=Kobold Banner

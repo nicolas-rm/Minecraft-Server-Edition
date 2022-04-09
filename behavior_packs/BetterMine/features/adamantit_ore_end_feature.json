@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "better:adamantit_ore_end_feature"
+    },
+    "count": 3,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "better:adamantit_ore_end"
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:stone"
+          },
+          {
+            "name": "minecraft:end_stone"
+          },
+          {
+            "name": "minecraft:deepslate"
+          }
+        ]
+      }
+    ]
+  }
+}

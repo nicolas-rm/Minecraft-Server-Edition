@@ -1,0 +1,143 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\items\\ds\\ds_book.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "8f8aea77_ca30_4020_a6a9_3cff145da982",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.18.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.18.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "ray:ds_book",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:icon": {
+								"texture": "book"
+							},
+							"minecraft:display_name": {
+								"value": "§eEnchanted book\n§7Drowned Step"
+							},
+							"minecraft:max_stack_size": 1,
+							"minecraft:foil": true,
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.enchantedBook"
+							}
+						},
+						"events": {}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ds_book",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "book"
+								},
+								"minecraft:display_name": {
+									"value": "§eEnchanted book\n§7Drowned Step"
+								},
+								"minecraft:max_stack_size": 1,
+								"minecraft:foil": true,
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.enchantedBook"
+								}
+							},
+							"events": {}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:ds_book",
+							"category": "items"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ds_book",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "book"
+								},
+								"minecraft:display_name": {
+									"value": "§eEnchanted book\n§7Drowned Step"
+								},
+								"minecraft:max_stack_size": 1,
+								"minecraft:foil": true,
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.enchantedBook"
+								}
+							},
+							"events": {}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "book"
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "book"
+									},
+									"minecraft:display_name": {
+										"value": "§eEnchanted book\n§7Drowned Step"
+									},
+									"minecraft:max_stack_size": 1,
+									"minecraft:foil": true,
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.enchantedBook"
+									}
+								},
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {
+									"value": "§eEnchanted book\n§7Drowned Step"
+								}
+							},
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:foil"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.enchantedBook"
+								}
+							}
+						]
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {}
+					}
+				]
+			}
+		]
+	}
+}

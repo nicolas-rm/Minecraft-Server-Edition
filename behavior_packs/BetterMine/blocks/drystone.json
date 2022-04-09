@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:drystone"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/drystone.json",
+      "minecraft:destroy_time": 2.9,
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#404040",
+      "minecraft:flammable": {
+        "flame_odds": 0,
+        "burn_odds": 0
+    },
+     "minecraft:block_light_absorption": 0.0,
+     "minecraft:block_light_emission": 0.0,
+     "tag:diamond_pick_diggable": {},
+     "tag:stone": {}
+    }
+  }
+}

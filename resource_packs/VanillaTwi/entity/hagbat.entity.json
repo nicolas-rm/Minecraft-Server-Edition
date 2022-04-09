@@ -1,0 +1,46 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "vanilla_twilight:hagbat",
+			"materials": {
+				"default": "goblin"
+			},
+			"textures": {
+				"default": "textures/entity/mythmob/hagbat"
+			},
+			"geometry": {
+				"default": "geometry.hagbat_fold"
+			},
+			"animations": {
+				"humanoid_base_pose": "animation.hagbat.default",
+				"move": "animation.hagbat_fold.walk",
+				"attack.goblin": "animation.hagbat_fold.attack_ready",
+				"flying": "animation.hagbat.flying"
+			},
+			"animation_controllers": [
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"move": "controller.animation.hagbat.move"
+				},
+				{
+					"default_pose": "controller.animation.hagbat_pose"
+				}
+			],
+			"render_controllers": [
+				"controller.render.goblin"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#AB9F8D",
+				"overlay_color": "#7A5E70"
+			},
+			"sound_effects": {
+				"hagbat_flap": "mob.hagbat.flap"
+			}
+		}
+	}
+}

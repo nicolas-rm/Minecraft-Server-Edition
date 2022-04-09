@@ -1,0 +1,424 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:specter",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [ "walk" ]
+      },
+      "animations": {
+        "walk": "controller.animation.specter"
+      }
+    },
+    "component_groups": {
+      "apearance1": {
+        "minecraft:variant": { "value": 0 },
+        "minecraft:timer": {
+          "looping": true,
+          "random_time_choices": [
+            { "weight": 50, "value": 2 },
+            { "weight": 50, "value": 4 }
+          ],
+          "time_down_event": {
+            "event": "minecraft:switch_behaviour",
+            "target": "self"
+          }
+        },
+        "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.8
+        }
+      },
+      "apearance2": {
+        "minecraft:variant": { "value": 1 },
+        "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.8
+        }
+      },
+      "apearance3": {
+        "minecraft:variant": { "value": 2 },
+        "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.8
+        }
+      },
+      "hostile": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": false,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "max_dist": 128
+            }
+          ]
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 2
+        },
+        "minecraft:variant": { 
+          "value": 3
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:collision_box": {
+          "width": 0.01,
+          "height": 0.01
+        }
+      },
+      "nausea": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": false,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "max_dist": 128
+            }
+          ]
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 2
+        },
+        "minecraft:variant": { 
+          "value": 3
+        },
+        "minecraft:attack": {
+          "damage": 0,
+          "effect_name": "nausea",
+          "effect_duration": 8
+        },
+        "minecraft:collision_box": {
+          "width": 0.01,
+          "height": 0.01
+        }
+      },
+      "blindness": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": false,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "max_dist": 128
+            }
+          ]
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 2
+        },
+        "minecraft:variant": { 
+          "value": 3
+        },
+        "minecraft:attack": {
+          "damage": 0,
+          "effect_name": "blindness",
+          "effect_duration": 8
+        }
+      },
+      "summon": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": false,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "max_dist": 128
+            }
+          ]
+        },
+        "minecraft:variant": { 
+          "value": 3
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 2,
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 128.0,
+              "cooldown_time": 5.0,
+              "weight": 3,
+              "cast_duration": 1.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 5,
+                  "entity_type": "minecraft:skeleton",
+                  "size": 1.5,
+                  "sound_event": "prepare.attack"
+                },
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.15,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 8,
+                  "entity_type": "minecraft:zombie",
+                  "size": 2.5
+                }
+              ]
+            },
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 128.0,
+              "weight": 3,
+              "cooldown_time": 5.0,
+              "cast_duration": 1.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 5,
+                  "entity_type": "minecraft:creeper",
+                  "size": 1.5,
+                  "sound_event": "prepare.attack"
+                },
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.15,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 8,
+                  "entity_type": "minecraft:spider",
+                  "size": 2.5
+                }
+              ]
+            },
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 128.0,
+              "weight": 3,
+              "cooldown_time": 5.0,
+              "cast_duration": 1.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 2,
+                  "entity_type": "better:specter",
+                  "size": 1.5,
+                  "sound_event": "prepare.attack"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "burning": {
+        "minecraft:burns_in_daylight": {
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "random_time_choices": [
+            { "weight": 50, "value": 0.5 },
+            { "weight": 50, "value": 1 }
+          ],
+          "time_down_event": {
+            "event": "minecraft:switch_behaviour",
+            "target": "self"
+          }
+        },
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": { "test": "in_lava", "subject": "self", "operator": "!=", "value": true },
+              "cause": "lava",
+              "damage_per_tick": 20
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "100"
+      },
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "specter",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:variant": { 
+        "value": 3
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "random_time_choices": [
+          { "weight": 50, "value": 2 },
+          { "weight": 50, "value": 8 }
+        ],
+        "time_down_event": {
+          "event": "minecraft:switch_behaviour",
+          "target": "self"
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:behavior.raid_garden": {
+        "priority": 5,
+        "blocks": [
+          "minecraft:carrots",
+          "minecraft:wheat",
+          "minecraft:potatoes",
+          "minecraft:beetroot",
+          "better:corn_crop",
+          "better:tomato_crop"
+        ],
+        "search_range": 16,
+        "goal_radius": 0.8
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:health": {
+        "value": 320,
+        "max": 320
+      },
+      "minecraft:teleport": {
+        "random_teleports": true,
+        "max_random_teleport_time": 30,
+        "random_teleport_cube": [ 8, 8, 8 ],
+        "target_distance": 64,
+        "target_teleport_chance": 0.45,
+        "light_teleport_chance": 0.25
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "avoid_water": true
+      },
+      "minecraft:ambient_sound_interval": {
+        "value": 2.0,
+        "range": 4.0,
+        "event_name": "ambient"
+      },
+      "minecraft:follow_range": {
+        "value": 512
+      },
+      "minecraft:jump.static": {},
+      "minecraft:physics": {},
+      "minecraft:annotation.open_door": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.random_look_around": {
+        "priority": 4
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 10,
+        "speed_multiplier": 0.9
+      }
+    },
+    "events": {
+      "start_fire": {
+        "add": { "component_groups": [ "burning" ] }
+      },
+      "minecraft:switch_behaviour": {
+        "randomize": [
+          {
+            "weight": 2,
+            "add": { "component_groups": [ "apearance1" ] },
+            "remove": { "component_groups": [ "apearance2", "apearance3", "hostile", "nausea", "blindness", "summon" ] }
+          },
+          {
+            "weight": 2,
+            "add": { "component_groups": [ "apearance2" ] },
+            "remove": { "component_groups": [ "apearance1", "apearance3", "hostile", "nausea", "blindness", "summon" ] }
+          },
+          {
+            "weight": 2,
+            "add": { "component_groups": [ "apearance3" ] },
+            "remove": { "component_groups": [ "apearance1", "apearance2", "hostile", "nausea", "blindness", "summon" ] }
+          },
+          {
+            "weight": 2,
+            "add": { "component_groups": [ "hostile" ] },
+            "remove": { "component_groups": [ "apearance2", "apearance3", "apearance1", "nausea", "blindness", "summon" ] }
+          },
+          {
+            "weight": 2,
+            "add": { "component_groups": [ "nausea" ] },
+            "remove": { "component_groups": [ "apearance2", "apearance3", "apearance1", "hostile", "blindness", "summon" ] }
+          },
+          {
+            "weight": 2,
+            "add": { "component_groups": [ "blindness" ] },
+            "remove": { "component_groups": [ "apearance2", "apearance3", "apearance1", "nausea", "hostile", "summon" ] }
+          },
+          {
+            "weight": 1,
+            "add": {},
+            "remove": { "component_groups": [ "apearance2", "apearance3", "apearance1", "nausea", "hostile", "summon", "blindness" ] }
+          },
+          {
+            "weight": 2,
+            "add": { "component_groups": [ "summon" ] },
+            "remove": { "component_groups": [ "apearance2", "apearance3", "apearance1", "nausea", "blindness", "hostile" ] }
+          }
+        ]
+      }
+    }
+  }
+}

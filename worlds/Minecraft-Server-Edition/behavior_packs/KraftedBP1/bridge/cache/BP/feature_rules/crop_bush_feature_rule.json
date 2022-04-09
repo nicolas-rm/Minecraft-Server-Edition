@@ -1,0 +1,287 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\feature_rules\\crop_bush_feature_rule.json",
+	"file_type": "feature_rule",
+	"format_version": 1,
+	"file_uuid": "acdd107f_15bc_4816_b4b9_e87f4da3e888",
+	"file_version": 11,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:feature_rules": {
+						"description": {
+							"identifier": "strat:crop_bush_feature_rule",
+							"places_feature": "strat:scatter_crop_bush_feature"
+						},
+						"conditions": {
+							"placement_pass": "surface_pass",
+							"minecraft:biome_filter": {
+								"any_of": [
+									{
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "plains"
+									}
+								]
+							}
+						},
+						"distribution": {
+							"iterations": "(query.noise((variable.originx + 4) / 50.0, (variable.originz + 4) / 50.0) < -0.2) ? 2 : 4",
+							"scatter_chance": "variable.is_legacy ? 0.0 : 50.0",
+							"x": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							},
+							"y": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									"query.heightmap(variable.worldx, variable.worldz) * 2"
+								]
+							},
+							"z": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:feature_rules",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:crop_bush_feature_rule",
+								"places_feature": "strat:scatter_crop_bush_feature"
+							},
+							"conditions": {
+								"placement_pass": "surface_pass",
+								"minecraft:biome_filter": {
+									"any_of": [
+										{
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "plains"
+										}
+									]
+								}
+							},
+							"distribution": {
+								"iterations": "(query.noise((variable.originx + 4) / 50.0, (variable.originz + 4) / 50.0) < -0.2) ? 2 : 4",
+								"scatter_chance": "variable.is_legacy ? 0.0 : 50.0",
+								"x": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								},
+								"y": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										"query.heightmap(variable.worldx, variable.worldz) * 2"
+									]
+								},
+								"z": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:crop_bush_feature_rule",
+							"places_feature": "strat:scatter_crop_bush_feature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:crop_bush_feature_rule",
+								"places_feature": "strat:scatter_crop_bush_feature"
+							},
+							"conditions": {
+								"placement_pass": "surface_pass",
+								"minecraft:biome_filter": {
+									"any_of": [
+										{
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "plains"
+										}
+									]
+								}
+							},
+							"distribution": {
+								"iterations": "(query.noise((variable.originx + 4) / 50.0, (variable.originz + 4) / 50.0) < -0.2) ? 2 : 4",
+								"scatter_chance": "variable.is_legacy ? 0.0 : 50.0",
+								"x": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								},
+								"y": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										"query.heightmap(variable.worldx, variable.worldz) * 2"
+									]
+								},
+								"z": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								}
+							}
+						},
+						"key": "conditions",
+						"children": [
+							{
+								"data": "surface_pass",
+								"key": "placement_pass"
+							},
+							{
+								"open": {
+									"placement_pass": "surface_pass",
+									"minecraft:biome_filter": {
+										"any_of": [
+											{
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "plains"
+											}
+										]
+									}
+								},
+								"key": "minecraft:biome_filter",
+								"children": [
+									{
+										"open": {
+											"any_of": [
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "plains"
+												}
+											]
+										},
+										"key": "any_of",
+										"children": [
+											{
+												"open": [
+													{
+														"test": "has_biome_tag",
+														"operator": "==",
+														"value": "plains"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "plains"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:crop_bush_feature_rule",
+								"places_feature": "strat:scatter_crop_bush_feature"
+							},
+							"conditions": {
+								"placement_pass": "surface_pass",
+								"minecraft:biome_filter": {
+									"any_of": [
+										{
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "plains"
+										}
+									]
+								}
+							},
+							"distribution": {
+								"iterations": "(query.noise((variable.originx + 4) / 50.0, (variable.originz + 4) / 50.0) < -0.2) ? 2 : 4",
+								"scatter_chance": "variable.is_legacy ? 0.0 : 50.0",
+								"x": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								},
+								"y": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										"query.heightmap(variable.worldx, variable.worldz) * 2"
+									]
+								},
+								"z": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								}
+							}
+						},
+						"key": "distribution",
+						"is_minified": true,
+						"children": {
+							"iterations": "(query.noise((variable.originx + 4) / 50.0, (variable.originz + 4) / 50.0) < -0.2) ? 2 : 4",
+							"scatter_chance": "variable.is_legacy ? 0.0 : 50.0",
+							"x": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							},
+							"y": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									"query.heightmap(variable.worldx, variable.worldz) * 2"
+								]
+							},
+							"z": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

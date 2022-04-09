@@ -1,0 +1,213 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\feature_rules\\palm_island_feature_rule.json",
+	"file_type": "feature_rule",
+	"format_version": 1,
+	"file_uuid": "70cc9990_d782_464f_b44f_497417cc9822",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:feature_rules": {
+						"description": {
+							"identifier": "ocean:palm_island_feature_rule",
+							"places_feature": "ocean:palm_island1_structure_feature"
+						},
+						"conditions": {
+							"placement_pass": "first_pass",
+							"minecraft:biome_filter": {
+								"test": "has_biome_tag",
+								"operator": "==",
+								"value": "ocean"
+							}
+						},
+						"distribution": {
+							"iterations": 1,
+							"x": {
+								"extent": [
+									0,
+									16
+								],
+								"distribution": "uniform"
+							},
+							"y": 61,
+							"z": {
+								"extent": [
+									0,
+									16
+								],
+								"distribution": "uniform"
+							},
+							"scatter_chance": {
+								"numerator": 1,
+								"denominator": 200
+							}
+						}
+					}
+				},
+				"key": "minecraft:feature_rules",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ocean:palm_island_feature_rule",
+							"places_feature": "ocean:palm_island1_structure_feature"
+						}
+					},
+					{
+						"key": "conditions",
+						"is_minified": true,
+						"children": {
+							"placement_pass": "first_pass",
+							"minecraft:biome_filter": {
+								"test": "has_biome_tag",
+								"operator": "==",
+								"value": "ocean"
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:palm_island_feature_rule",
+								"places_feature": "ocean:palm_island1_structure_feature"
+							},
+							"conditions": {
+								"placement_pass": "first_pass",
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "ocean"
+								}
+							},
+							"distribution": {
+								"iterations": 1,
+								"x": {
+									"extent": [
+										0,
+										16
+									],
+									"distribution": "uniform"
+								},
+								"y": 61,
+								"z": {
+									"extent": [
+										0,
+										16
+									],
+									"distribution": "uniform"
+								},
+								"scatter_chance": {
+									"numerator": 1,
+									"denominator": 200
+								}
+							}
+						},
+						"key": "distribution",
+						"children": [
+							{
+								"data": "1",
+								"key": "iterations"
+							},
+							{
+								"key": "x",
+								"children": [
+									{
+										"open": {
+											"extent": [
+												0,
+												16
+											],
+											"distribution": "uniform"
+										},
+										"key": "extent",
+										"is_minified": true,
+										"children": [
+											0,
+											16
+										]
+									},
+									{
+										"data": "uniform",
+										"key": "distribution"
+									}
+								]
+							},
+							{
+								"data": "61",
+								"key": "y"
+							},
+							{
+								"key": "z",
+								"children": [
+									{
+										"open": {
+											"extent": [
+												0,
+												16
+											],
+											"distribution": "uniform"
+										},
+										"key": "extent",
+										"is_minified": true,
+										"children": [
+											0,
+											16
+										]
+									},
+									{
+										"open": {
+											"extent": [
+												0,
+												16
+											],
+											"distribution": "uniform"
+										},
+										"data": "uniform",
+										"key": "distribution"
+									}
+								]
+							},
+							{
+								"open": {
+									"iterations": 1,
+									"x": {
+										"extent": [
+											0,
+											16
+										],
+										"distribution": "uniform"
+									},
+									"y": 61,
+									"z": {
+										"extent": [
+											0,
+											16
+										],
+										"distribution": "uniform"
+									},
+									"scatter_chance": {
+										"numerator": 1,
+										"denominator": 200
+									}
+								},
+								"key": "scatter_chance",
+								"is_minified": true,
+								"children": {
+									"numerator": 1,
+									"denominator": 200
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

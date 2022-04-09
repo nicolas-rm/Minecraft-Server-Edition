@@ -1,0 +1,101 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:potion_ghost"
+    },
+
+    "components": {
+      "minecraft:stacked_by_data": false,
+      "minecraft:use_duration": 32,
+      "minecraft:foil": true,
+  
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "using_converts_to": "glass_bottle",
+        "effects": [
+          {
+            "name": "nausea",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 0
+          },
+          {
+            "name": "instant_damage",
+            "chance": 0.2,
+            "duration": 4,
+            "amplifier": 2
+          },
+          {
+            "name": "speed",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 5
+          },
+          {
+            "name": "jump_boost",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 32
+          },
+          {
+            "name": "slow_falling",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 32
+          },
+          {
+            "name": "saturation",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 32
+          },
+          {
+            "name": "invisibility",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 0
+          },
+          {
+            "name": "levitation",
+            "chance": 100.0,
+            "duration": 5,
+            "amplifier": 2
+          },
+          {
+            "name": "blindness",
+            "chance": 100.0,
+            "duration": 5,
+            "amplifier": 0
+          },
+          {
+            "name": "mining_fatigue",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 6
+          },
+          {
+            "name": "resistance",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 255
+          },
+          {
+            "name": "weakness",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 10
+          },
+          {
+            "name": "night_vision",
+            "chance": 100.0,
+            "duration": 260,
+            "amplifier": 0
+          }
+        ]
+      }
+    }
+  }
+}

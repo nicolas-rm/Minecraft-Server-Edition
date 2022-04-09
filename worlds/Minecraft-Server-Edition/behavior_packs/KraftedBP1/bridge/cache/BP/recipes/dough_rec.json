@@ -1,0 +1,351 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\dough_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "38d96906_9016_48ba_af54_e9011b9f59dd",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:dough_rec"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"#o",
+							"~"
+						],
+						"key": {
+							"#": {
+								"item": "strat:flour"
+							},
+							"~": {
+								"item": "strat:water_jar"
+							},
+							"o": {
+								"item": "strat:salt"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:dough",
+								"count": 2
+							},
+							{
+								"item": "strat:glass_jar",
+								"count": 1
+							}
+						],
+						"priority": 2
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "strat:water_jar"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							],
+							"priority": 2
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:dough_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "strat:water_jar"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							],
+							"priority": 2
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "strat:water_jar"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							],
+							"priority": 2
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#o",
+							"~"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "strat:water_jar"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							],
+							"priority": 2
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:flour"
+									},
+									"~": {
+										"item": "strat:water_jar"
+									},
+									"o": {
+										"item": "strat:salt"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:flour"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:flour"
+									},
+									"~": {
+										"item": "strat:water_jar"
+									},
+									"o": {
+										"item": "strat:salt"
+									}
+								},
+								"key": "~",
+								"is_minified": true,
+								"children": {
+									"item": "strat:water_jar"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:flour"
+									},
+									"~": {
+										"item": "strat:water_jar"
+									},
+									"o": {
+										"item": "strat:salt"
+									}
+								},
+								"key": "o",
+								"is_minified": true,
+								"children": {
+									"item": "strat:salt"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "strat:water_jar"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							],
+							"priority": 2
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:dough",
+										"count": 2
+									},
+									{
+										"item": "strat:glass_jar",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:dough",
+									"count": 2
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:dough",
+										"count": 2
+									},
+									{
+										"item": "strat:glass_jar",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:glass_jar",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"data": "2",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

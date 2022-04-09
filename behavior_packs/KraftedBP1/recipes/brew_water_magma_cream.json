@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "minecraft:brew_water_magma_cream"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "o:water_bottle",
+    "reagent": "minecraft:magma_cream",
+    "output": "minecraft:potion_type:mundane"
+  }
+
+}

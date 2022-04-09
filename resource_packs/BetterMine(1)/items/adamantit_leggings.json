@@ -1,0 +1,53 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "better:adamantit_leggings",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.armor"
+			},
+			"minecraft:icon": {
+				"texture": "adamantit_leggings"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_legs"
+			},
+			"minecraft:durability": {
+				"max_durability": 710,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				},
+				"repair_items": [
+					"better:adamantit_crystal",
+					"better:adamantit_leggings"
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"protection": 0.1
+			},
+			"minecraft:armor": {
+				"protection": 6
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"better:adamantit_crystal",
+							"better:adamantit_leggings"
+						],
+						"repair_amount": 15
+					}
+				]
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs"
+			}
+		}
+	}
+}

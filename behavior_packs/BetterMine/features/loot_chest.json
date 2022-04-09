@@ -1,0 +1,12 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "minecraft:loot_chest"
+        },
+        "structure_name": "mystructure:loot_chest",
+        "adjustment_radius": 8,
+        "facing_direction": "random",
+        "constraints": {}
+    }
+}

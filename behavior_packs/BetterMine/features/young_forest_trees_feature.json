@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "better:young_forest_trees_feature"
+    },
+    "features": [
+      [ "minecraft:roofed_tree_with_vines_feature", 1 ],
+      [ "better:oak_bush_feature", 16 ],
+      [ "minecraft:spruce_tree_feature", 1 ],
+      [ "better:spruce_sapling_feature", 8 ],
+      [ "better:oak_sapling_feature", 8 ],
+      [ "better:birch_sapling_feature", 8 ],
+      [ "minecraft:pine_tree_feature", 1 ],
+      [ "minecraft:scatter_fern_feature", 1 ],
+      [ "better:beech_tree_feature", 1 ],
+      [ "minecraft:birch_tree_feature", 1 ]
+    ]
+  }
+}

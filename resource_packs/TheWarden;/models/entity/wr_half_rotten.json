@@ -1,0 +1,306 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.wr_half_rotten",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 8.5,
+        "visible_bounds_offset": [
+          0,
+          3.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "Hunchback"
+        },
+        {
+          "name": "Body",
+          "pivot": [
+            0,
+            12.6038,
+            2.11649
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -9.0,
+                8.09411,
+                -1.43579
+              ],
+              "size": [
+                18.0,
+                22.0,
+                17.0
+              ],
+              "pivot": [
+                0.0,
+                10.0,
+                0.0
+              ],
+              "rotation": [
+                7.5,
+                0.0,
+                0.0
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Hunchback"
+        },
+        {
+          "name": "Hands",
+          "pivot": [
+            0,
+            31,
+            9
+          ],
+          "parent": "Body"
+        },
+        {
+          "name": "RightHands",
+          "pivot": [
+            -12.05842,
+            31,
+            3.37624
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -15.0,
+                2.0,
+                -4.0
+              ],
+              "size": [
+                6.0,
+                30.0,
+                9.0
+              ],
+              "uv": [
+                97,
+                5
+              ],
+              "inflate": 0,
+              "mirror": true
+            }
+          ],
+          "parent": "Hands"
+        },
+        {
+          "name": "LeftHands",
+          "pivot": [
+            12.47374,
+            31,
+            1.12583
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9.0,
+                2.0,
+                -4.0
+              ],
+              "size": [
+                6.0,
+                30.0,
+                9.0
+              ],
+              "uv": [
+                97,
+                5
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Hands"
+        },
+        {
+          "name": "Head",
+          "pivot": [
+            -0.52262,
+            31.54325,
+            5.07564
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7.0,
+                28.48448,
+                -7.9997
+              ],
+              "size": [
+                14.0,
+                21.0,
+                14.0
+              ],
+              "pivot": [
+                0.0,
+                32.60743,
+                -1.99143
+              ],
+              "rotation": [
+                12.5,
+                0.0,
+                0.0
+              ],
+              "uv": [
+                0,
+                42
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Body",
+          "rotation": [
+            -7.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Ears",
+          "pivot": [
+            0,
+            -10.39257,
+            4.00857
+          ],
+          "parent": "Head",
+          "rotation": [
+            10,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftEar",
+          "pivot": [
+            0,
+            -10.39257,
+            4.00857
+          ],
+          "cubes": [
+            {
+              "origin": [
+                7.0,
+                37.60743,
+                4.00857
+              ],
+              "size": [
+                10.0,
+                9.0,
+                0.0
+              ],
+              "uv": [
+                76,
+                81
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Ears"
+        },
+        {
+          "name": "RightEar",
+          "pivot": [
+            0,
+            -10.39257,
+            4.00857
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -17.0,
+                37.60743,
+                4.00857
+              ],
+              "size": [
+                10.0,
+                9.0,
+                0.0
+              ],
+              "uv": [
+                56,
+                81
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Ears"
+        },
+        {
+          "name": "Feets",
+          "pivot": [
+            0,
+            0,
+            3
+          ],
+          "parent": "Hunchback"
+        },
+        {
+          "name": "RightFeets",
+          "pivot": [
+            -4,
+            11,
+            5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8.0,
+                0.0,
+                0.0
+              ],
+              "size": [
+                7.0,
+                10.0,
+                7.0
+              ],
+              "uv": [
+                0,
+                81
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Feets"
+        },
+        {
+          "name": "LeftFeets",
+          "pivot": [
+            5,
+            11,
+            5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "size": [
+                7.0,
+                10.0,
+                7.0
+              ],
+              "uv": [
+                28,
+                81
+              ],
+              "inflate": 0
+            }
+          ],
+          "parent": "Feets"
+        }
+      ]
+    }
+  ]
+}

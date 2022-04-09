@@ -1,0 +1,51 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "v4.6 More Tools Addon BP",
+		"description": "§b|God bless the §epeople of Ukraine!| §cYoutube.com/c/SoriPop §bTwitter @sori662_pop §aCreator MCPEDL:SorYPMod",
+		"uuid": "86bb4632-3521-443c-9b6a-c375e871ee64",
+		"version": [
+			4,
+			6,
+			5
+		],
+		"min_engine_version": [
+			1,
+			17,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "0cacb9ad-e78f-4a83-857f-d4cdc1a8969f",
+			"version": [
+				4,
+				6,
+				5
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				4,
+				6,
+				5
+			],
+			"uuid": "4315677f-08d3-456d-b982-d3d21f39dbd2"
+		}
+	],
+	"metadata": {
+		"authors": [
+			"SorYPMod"
+		],
+		"license": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+		"url": "https://mcpedl.com/more-tools-addon/",
+		"generated_with": {
+			"bridge": [
+				"1.8.3"
+			]
+		}
+	}
+}

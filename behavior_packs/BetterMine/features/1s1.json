@@ -1,0 +1,12 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "minecraft:1s1"
+        },
+        "structure_name": "mystructure:1s1",
+        "adjustment_radius": 8,
+        "facing_direction": "random",
+        "constraints": {}
+    }
+}

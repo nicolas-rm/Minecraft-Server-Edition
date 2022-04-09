@@ -1,0 +1,3398 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\tomato_crop.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "0a500a68_5a19_4cc7_9c6b_a179890c1d36",
+	"file_version": 36,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:tomato_crop",
+							"properties": {
+								"strat:growth_stage": [
+									0,
+									1,
+									2,
+									3,
+									4,
+									5
+								]
+							}
+						},
+						"components": {
+							"minecraft:geometry": "geometry.crop2",
+							"minecraft:random_ticking": {
+								"on_tick": {
+									"event": "grow_stage"
+								}
+							},
+							"minecraft:breathability": "air",
+							"minecraft:entity_collision": false,
+							"minecraft:pick_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									16
+								]
+							},
+							"minecraft:map_color": "#1EB809",
+							"minecraft:on_interact": {
+								"event": "bone_meal",
+								"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+							},
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"allowed_faces": [
+											"up"
+										],
+										"block_filter": [
+											"farmland"
+										]
+									}
+								]
+							},
+							"minecraft:loot": "loot_tables/tomato_seeds.json",
+							"minecraft:block_light_absorption": 0,
+							"minecraft:breakonpush": true
+						},
+						"events": {
+							"bone_meal": {
+								"sequence": [
+									{
+										"decrement_stack": {},
+										"run_command": {
+											"command": [
+												"particle minecraft:crop_growth_emitter ~~~"
+											]
+										},
+										"trigger": {
+											"event": "grow_stage_2"
+										}
+									}
+								]
+							},
+							"grow_stage": {
+								"randomize": [
+									{
+										"weight": 2
+									},
+									{
+										"weight": 1,
+										"set_block_property": {
+											"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+										}
+									}
+								]
+							},
+							"grow_stage_2": {
+								"randomize": [
+									{
+										"weight": 1
+									},
+									{
+										"weight": 3,
+										"set_block_property": {
+											"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+										}
+									}
+								]
+							},
+							"final_stage": {
+								"sequence": [
+									{
+										"set_block_property": {
+											"strat:growth_stage": 3
+										},
+										"spawn_loot": {
+											"table": "loot_tables/tomato_crop.json"
+										}
+									},
+									{
+										"trigger": {
+											"event": "trophy"
+										}
+									}
+								]
+							},
+							"trophy": {
+								"randomize": [
+									{
+										"weight": 99
+									},
+									{
+										"run_command": {
+											"command": [
+												"gamerule sendcommandfeedback false",
+												"give @s strat:farmers_trophy",
+												"playsound strat.trophy_collected @s",
+												"gamerule sendcommandfeedback true"
+											],
+											"target": "player"
+										},
+										"weight": 1
+									}
+								]
+							}
+						},
+						"permutations": [
+							{
+								"condition": "query.block_property('strat:growth_stage') == 0",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strat_tomato_crop_0",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											2,
+											16
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_seeds.json"
+								}
+							},
+							{
+								"condition": "query.block_property('strat:growth_stage') == 1",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strat_tomato_crop_1",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_seeds.json"
+								}
+							},
+							{
+								"condition": "query.block_property('strat:growth_stage') == 2",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strat_tomato_crop_2",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											12,
+											16
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_seeds.json"
+								}
+							},
+							{
+								"condition": "query.block_property('strat:growth_stage') == 3",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strat_tomato_crop_3",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_seeds.json"
+								}
+							},
+							{
+								"condition": "query.block_property('strat:growth_stage') == 4",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strat_tomato_crop_4",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_seeds.json"
+								}
+							},
+							{
+								"condition": "query.block_property('strat:growth_stage') == 5",
+								"components": {
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strat_tomato_crop_5",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_crop.json",
+									"minecraft:on_interact": {
+										"event": "final_stage"
+									},
+									"minecraft:on_player_destroyed": {
+										"event": "trophy"
+									}
+								}
+							}
+						]
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2,
+										3,
+										4,
+										5
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop2",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											],
+											"block_filter": [
+												"farmland"
+											]
+										}
+									]
+								},
+								"minecraft:loot": "loot_tables/tomato_seeds.json",
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 3
+											},
+											"spawn_loot": {
+												"table": "loot_tables/tomato_crop.json"
+											}
+										},
+										{
+											"trigger": {
+												"event": "trophy"
+											}
+										}
+									]
+								},
+								"trophy": {
+									"randomize": [
+										{
+											"weight": 99
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:farmers_trophy",
+													"playsound strat.trophy_collected @s",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "player"
+											},
+											"weight": 1
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												2,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 3",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_3",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 4",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_4",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 5",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_5",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_crop.json",
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										},
+										"minecraft:on_player_destroyed": {
+											"event": "trophy"
+										}
+									}
+								}
+							]
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "strat:tomato_crop",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "strat:tomato_crop",
+									"properties": {
+										"strat:growth_stage": [
+											0,
+											1,
+											2,
+											3,
+											4,
+											5
+										]
+									}
+								},
+								"key": "properties",
+								"is_minified": true,
+								"children": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2,
+										3,
+										4,
+										5
+									]
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2,
+										3,
+										4,
+										5
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop2",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											],
+											"block_filter": [
+												"farmland"
+											]
+										}
+									]
+								},
+								"minecraft:loot": "loot_tables/tomato_seeds.json",
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 3
+											},
+											"spawn_loot": {
+												"table": "loot_tables/tomato_crop.json"
+											}
+										},
+										{
+											"trigger": {
+												"event": "trophy"
+											}
+										}
+									]
+								},
+								"trophy": {
+									"randomize": [
+										{
+											"weight": 99
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:farmers_trophy",
+													"playsound strat.trophy_collected @s",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "player"
+											},
+											"weight": 1
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												2,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 3",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_3",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 4",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_4",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 5",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_5",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_crop.json",
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										},
+										"minecraft:on_player_destroyed": {
+											"event": "trophy"
+										}
+									}
+								}
+							]
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "geometry.crop2",
+								"key": "minecraft:geometry"
+							},
+							{
+								"key": "minecraft:random_ticking",
+								"is_minified": true,
+								"children": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								}
+							},
+							{
+								"data": "air",
+								"key": "minecraft:breathability"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:entity_collision"
+							},
+							{
+								"key": "minecraft:pick_collision",
+								"is_minified": true,
+								"children": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								}
+							},
+							{
+								"data": "#1EB809",
+								"key": "minecraft:map_color"
+							},
+							{
+								"open": {
+									"minecraft:geometry": "geometry.crop2",
+									"minecraft:random_ticking": {
+										"on_tick": {
+											"event": "grow_stage"
+										}
+									},
+									"minecraft:breathability": "air",
+									"minecraft:entity_collision": false,
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:map_color": "#1EB809",
+									"minecraft:on_interact": {
+										"event": "bone_meal",
+										"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+									},
+									"minecraft:placement_filter": {
+										"conditions": [
+											{
+												"allowed_faces": [
+													"up"
+												],
+												"block_filter": [
+													"farmland"
+												]
+											}
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_seeds.json",
+									"minecraft:block_light_absorption": 0,
+									"minecraft:breakonpush": true
+								},
+								"key": "minecraft:on_interact",
+								"is_minified": true,
+								"children": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+								}
+							},
+							{
+								"open": {
+									"minecraft:geometry": "geometry.crop2",
+									"minecraft:random_ticking": {
+										"on_tick": {
+											"event": "grow_stage"
+										}
+									},
+									"minecraft:breathability": "air",
+									"minecraft:entity_collision": false,
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:map_color": "#1EB809",
+									"minecraft:on_interact": {
+										"event": "bone_meal",
+										"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+									},
+									"minecraft:placement_filter": {
+										"conditions": [
+											{
+												"allowed_faces": [
+													"up"
+												],
+												"block_filter": [
+													"farmland"
+												]
+											}
+										]
+									},
+									"minecraft:loot": "loot_tables/tomato_seeds.json",
+									"minecraft:block_light_absorption": 0,
+									"minecraft:breakonpush": true
+								},
+								"key": "minecraft:placement_filter",
+								"is_minified": true,
+								"children": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											],
+											"block_filter": [
+												"farmland"
+											]
+										}
+									]
+								}
+							},
+							{
+								"data": "loot_tables/tomato_seeds.json",
+								"key": "minecraft:loot"
+							},
+							{
+								"data": "0",
+								"key": "minecraft:block_light_absorption"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:breakonpush"
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2,
+										3,
+										4,
+										5
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop2",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											],
+											"block_filter": [
+												"farmland"
+											]
+										}
+									]
+								},
+								"minecraft:loot": "loot_tables/tomato_seeds.json",
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 3
+											},
+											"spawn_loot": {
+												"table": "loot_tables/tomato_crop.json"
+											}
+										},
+										{
+											"trigger": {
+												"event": "trophy"
+											}
+										}
+									]
+								},
+								"trophy": {
+									"randomize": [
+										{
+											"weight": 99
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:farmers_trophy",
+													"playsound strat.trophy_collected @s",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "player"
+											},
+											"weight": 1
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												2,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 3",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_3",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 4",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_4",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 5",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_5",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_crop.json",
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										},
+										"minecraft:on_player_destroyed": {
+											"event": "trophy"
+										}
+									}
+								}
+							]
+						},
+						"key": "events",
+						"children": [
+							{
+								"key": "bone_meal",
+								"is_minified": true,
+								"children": {
+									"sequence": [
+										{
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								}
+							},
+							{
+								"key": "grow_stage",
+								"is_minified": true,
+								"children": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								}
+							},
+							{
+								"key": "grow_stage_2",
+								"is_minified": true,
+								"children": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								}
+							},
+							{
+								"open": {
+									"bone_meal": {
+										"sequence": [
+											{
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"particle minecraft:crop_growth_emitter ~~~"
+													]
+												},
+												"trigger": {
+													"event": "grow_stage_2"
+												}
+											}
+										]
+									},
+									"grow_stage": {
+										"randomize": [
+											{
+												"weight": 2
+											},
+											{
+												"weight": 1,
+												"set_block_property": {
+													"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+												}
+											}
+										]
+									},
+									"grow_stage_2": {
+										"randomize": [
+											{
+												"weight": 1
+											},
+											{
+												"weight": 3,
+												"set_block_property": {
+													"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+												}
+											}
+										]
+									},
+									"final_stage": {
+										"sequence": [
+											{
+												"set_block_property": {
+													"strat:growth_stage": 3
+												},
+												"spawn_loot": {
+													"table": "loot_tables/tomato_crop.json"
+												}
+											},
+											{
+												"trigger": {
+													"event": "trophy"
+												}
+											}
+										]
+									},
+									"trophy": {
+										"randomize": [
+											{
+												"weight": 99
+											},
+											{
+												"run_command": {
+													"command": [
+														"gamerule sendcommandfeedback false",
+														"give @s strat:farmers_trophy",
+														"playsound strat.trophy_collected @s",
+														"gamerule sendcommandfeedback true"
+													],
+													"target": "player"
+												},
+												"weight": 1
+											}
+										]
+									}
+								},
+								"key": "final_stage",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"set_block_property": {
+														"strat:growth_stage": 3
+													},
+													"spawn_loot": {
+														"table": "loot_tables/tomato_crop.json"
+													}
+												},
+												{
+													"trigger": {
+														"event": "trophy"
+													}
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"set_block_property": {
+															"strat:growth_stage": 3
+														},
+														"spawn_loot": {
+															"table": "loot_tables/tomato_crop.json"
+														}
+													},
+													{
+														"trigger": {
+															"event": "trophy"
+														}
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"set_block_property": {
+														"strat:growth_stage": 3
+													},
+													"spawn_loot": {
+														"table": "loot_tables/tomato_crop.json"
+													}
+												}
+											},
+											{
+												"open": [
+													{
+														"set_block_property": {
+															"strat:growth_stage": 3
+														},
+														"spawn_loot": {
+															"table": "loot_tables/tomato_crop.json"
+														}
+													},
+													{
+														"trigger": {
+															"event": "trophy"
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"trigger": {
+																"event": "trophy"
+															}
+														},
+														"key": "trigger",
+														"is_minified": true,
+														"children": {
+															"event": "trophy"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"bone_meal": {
+										"sequence": [
+											{
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"particle minecraft:crop_growth_emitter ~~~"
+													]
+												},
+												"trigger": {
+													"event": "grow_stage_2"
+												}
+											}
+										]
+									},
+									"grow_stage": {
+										"randomize": [
+											{
+												"weight": 2
+											},
+											{
+												"weight": 1,
+												"set_block_property": {
+													"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+												}
+											}
+										]
+									},
+									"grow_stage_2": {
+										"randomize": [
+											{
+												"weight": 1
+											},
+											{
+												"weight": 3,
+												"set_block_property": {
+													"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+												}
+											}
+										]
+									},
+									"final_stage": {
+										"sequence": [
+											{
+												"set_block_property": {
+													"strat:growth_stage": 3
+												},
+												"spawn_loot": {
+													"table": "loot_tables/tomato_crop.json"
+												}
+											},
+											{
+												"trigger": {
+													"event": "trophy"
+												}
+											}
+										]
+									},
+									"trophy": {
+										"randomize": [
+											{
+												"weight": 99
+											},
+											{
+												"run_command": {
+													"command": [
+														"gamerule sendcommandfeedback false",
+														"give @s strat:farmers_trophy",
+														"playsound strat.trophy_collected @s",
+														"gamerule sendcommandfeedback true"
+													],
+													"target": "player"
+												},
+												"weight": 1
+											}
+										]
+									}
+								},
+								"key": "trophy",
+								"children": [
+									{
+										"open": {
+											"randomize": [
+												{
+													"weight": 99
+												},
+												{
+													"run_command": {
+														"command": [
+															"gamerule sendcommandfeedback false",
+															"give @s strat:farmers_trophy",
+															"playsound strat.trophy_collected @s",
+															"gamerule sendcommandfeedback true"
+														],
+														"target": "player"
+													},
+													"weight": 1
+												}
+											]
+										},
+										"key": "randomize",
+										"children": [
+											{
+												"open": [
+													{
+														"weight": 99
+													},
+													{
+														"run_command": {
+															"command": [
+																"gamerule sendcommandfeedback false",
+																"give @s strat:farmers_trophy",
+																"playsound strat.trophy_collected @s",
+																"gamerule sendcommandfeedback true"
+															],
+															"target": "player"
+														},
+														"weight": 1
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"weight": 99
+												}
+											},
+											{
+												"open": [
+													{
+														"weight": 99
+													},
+													{
+														"run_command": {
+															"command": [
+																"gamerule sendcommandfeedback false",
+																"give @s strat:farmers_trophy",
+																"playsound strat.trophy_collected @s",
+																"gamerule sendcommandfeedback true"
+															],
+															"target": "player"
+														},
+														"weight": 1
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"gamerule sendcommandfeedback false",
+																	"give @s strat:farmers_trophy",
+																	"playsound strat.trophy_collected @s",
+																	"gamerule sendcommandfeedback true"
+																],
+																"target": "player"
+															},
+															"weight": 1
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"gamerule sendcommandfeedback false",
+																		"give @s strat:farmers_trophy",
+																		"playsound strat.trophy_collected @s",
+																		"gamerule sendcommandfeedback true"
+																	],
+																	"target": "player"
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"gamerule sendcommandfeedback false",
+																	"give @s strat:farmers_trophy",
+																	"playsound strat.trophy_collected @s",
+																	"gamerule sendcommandfeedback true"
+																]
+															},
+															{
+																"data": "player",
+																"key": "target"
+															}
+														]
+													},
+													{
+														"data": "1",
+														"key": "weight"
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:tomato_crop",
+								"properties": {
+									"strat:growth_stage": [
+										0,
+										1,
+										2,
+										3,
+										4,
+										5
+									]
+								}
+							},
+							"components": {
+								"minecraft:geometry": "geometry.crop2",
+								"minecraft:random_ticking": {
+									"on_tick": {
+										"event": "grow_stage"
+									}
+								},
+								"minecraft:breathability": "air",
+								"minecraft:entity_collision": false,
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										16
+									]
+								},
+								"minecraft:map_color": "#1EB809",
+								"minecraft:on_interact": {
+									"event": "bone_meal",
+									"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal' && query.block_property('strat:growth_stage') < 5"
+								},
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"allowed_faces": [
+												"up"
+											],
+											"block_filter": [
+												"farmland"
+											]
+										}
+									]
+								},
+								"minecraft:loot": "loot_tables/tomato_seeds.json",
+								"minecraft:block_light_absorption": 0,
+								"minecraft:breakonpush": true
+							},
+							"events": {
+								"bone_meal": {
+									"sequence": [
+										{
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"particle minecraft:crop_growth_emitter ~~~"
+												]
+											},
+											"trigger": {
+												"event": "grow_stage_2"
+											}
+										}
+									]
+								},
+								"grow_stage": {
+									"randomize": [
+										{
+											"weight": 2
+										},
+										{
+											"weight": 1,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"grow_stage_2": {
+									"randomize": [
+										{
+											"weight": 1
+										},
+										{
+											"weight": 3,
+											"set_block_property": {
+												"strat:growth_stage": "(query.block_property('strat:growth_stage')<5) ? query.block_property('strat:growth_stage') + 1 : 5"
+											}
+										}
+									]
+								},
+								"final_stage": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:growth_stage": 3
+											},
+											"spawn_loot": {
+												"table": "loot_tables/tomato_crop.json"
+											}
+										},
+										{
+											"trigger": {
+												"event": "trophy"
+											}
+										}
+									]
+								},
+								"trophy": {
+									"randomize": [
+										{
+											"weight": 99
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:farmers_trophy",
+													"playsound strat.trophy_collected @s",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "player"
+											},
+											"weight": 1
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:growth_stage') == 0",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_0",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												2,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 1",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_1",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 2",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_2",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												12,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 3",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_3",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 4",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_4",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_seeds.json"
+									}
+								},
+								{
+									"condition": "query.block_property('strat:growth_stage') == 5",
+									"components": {
+										"minecraft:material_instances": {
+											"*": {
+												"texture": "strat_tomato_crop_5",
+												"render_method": "alpha_test"
+											}
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:loot": "loot_tables/tomato_crop.json",
+										"minecraft:on_interact": {
+											"event": "final_stage"
+										},
+										"minecraft:on_player_destroyed": {
+											"event": "trophy"
+										}
+									}
+								}
+							]
+						},
+						"key": "permutations",
+						"children": [
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													2,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 3",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_3",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 4",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_4",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 5",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_5",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_crop.json",
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											},
+											"minecraft:on_player_destroyed": {
+												"event": "trophy"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 0",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 0",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "strat_tomato_crop_0",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														2,
+														16
+													]
+												},
+												"minecraft:loot": "loot_tables/tomato_seeds.json"
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													2,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													2,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 3",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_3",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 4",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_4",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 5",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_5",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_crop.json",
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											},
+											"minecraft:on_player_destroyed": {
+												"event": "trophy"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 1",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 1",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "strat_tomato_crop_1",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														8,
+														16
+													]
+												},
+												"minecraft:loot": "loot_tables/tomato_seeds.json"
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													2,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 3",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_3",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 4",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_4",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 5",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_5",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_crop.json",
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											},
+											"minecraft:on_player_destroyed": {
+												"event": "trophy"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 2",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 2",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "strat_tomato_crop_2",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														12,
+														16
+													]
+												},
+												"minecraft:loot": "loot_tables/tomato_seeds.json"
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													2,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 3",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_3",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 4",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_4",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 5",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_5",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_crop.json",
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											},
+											"minecraft:on_player_destroyed": {
+												"event": "trophy"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 3",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 3",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "strat_tomato_crop_3",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												},
+												"minecraft:loot": "loot_tables/tomato_seeds.json"
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_3",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													2,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 3",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_3",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 4",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_4",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 5",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_5",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_crop.json",
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											},
+											"minecraft:on_player_destroyed": {
+												"event": "trophy"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 4",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 4",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "strat_tomato_crop_4",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												},
+												"minecraft:loot": "loot_tables/tomato_seeds.json"
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_4",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:growth_stage') == 0",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_0",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													2,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 1",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_1",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 2",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_2",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													12,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 3",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_3",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 4",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_4",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_seeds.json"
+										}
+									},
+									{
+										"condition": "query.block_property('strat:growth_stage') == 5",
+										"components": {
+											"minecraft:material_instances": {
+												"*": {
+													"texture": "strat_tomato_crop_5",
+													"render_method": "alpha_test"
+												}
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:loot": "loot_tables/tomato_crop.json",
+											"minecraft:on_interact": {
+												"event": "final_stage"
+											},
+											"minecraft:on_player_destroyed": {
+												"event": "trophy"
+											}
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:growth_stage') == 5",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:growth_stage') == 5",
+											"components": {
+												"minecraft:material_instances": {
+													"*": {
+														"texture": "strat_tomato_crop_5",
+														"render_method": "alpha_test"
+													}
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												},
+												"minecraft:loot": "loot_tables/tomato_crop.json",
+												"minecraft:on_interact": {
+													"event": "final_stage"
+												},
+												"minecraft:on_player_destroyed": {
+													"event": "trophy"
+												}
+											}
+										},
+										"key": "components",
+										"children": [
+											{
+												"key": "minecraft:material_instances",
+												"is_minified": true,
+												"children": {
+													"*": {
+														"texture": "strat_tomato_crop_5",
+														"render_method": "alpha_test"
+													}
+												}
+											},
+											{
+												"key": "minecraft:pick_collision",
+												"is_minified": true,
+												"children": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												}
+											},
+											{
+												"data": "loot_tables/tomato_crop.json",
+												"key": "minecraft:loot"
+											},
+											{
+												"key": "minecraft:on_interact",
+												"is_minified": true,
+												"children": {
+													"event": "final_stage"
+												}
+											},
+											{
+												"open": {
+													"minecraft:material_instances": {
+														"*": {
+															"texture": "strat_tomato_crop_5",
+															"render_method": "alpha_test"
+														}
+													},
+													"minecraft:pick_collision": {
+														"origin": [
+															-8,
+															0,
+															-8
+														],
+														"size": [
+															16,
+															16,
+															16
+														]
+													},
+													"minecraft:loot": "loot_tables/tomato_crop.json",
+													"minecraft:on_interact": {
+														"event": "final_stage"
+													},
+													"minecraft:on_player_destroyed": {
+														"event": "trophy"
+													}
+												},
+												"key": "minecraft:on_player_destroyed",
+												"is_minified": true,
+												"children": {
+													"event": "trophy"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
