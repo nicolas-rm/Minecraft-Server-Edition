@@ -1,1 +1,0 @@
-give @p espadas:mineral_diamante_blanco
