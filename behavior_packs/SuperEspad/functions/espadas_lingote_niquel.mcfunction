@@ -1,1 +1,0 @@
-give @p espadas:lingote_niquel

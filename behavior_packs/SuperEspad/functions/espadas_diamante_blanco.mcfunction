@@ -1,1 +1,0 @@
-give @p espadas:diamante_blanco

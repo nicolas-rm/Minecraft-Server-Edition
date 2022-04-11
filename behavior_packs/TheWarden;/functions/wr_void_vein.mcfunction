@@ -1,1 +1,0 @@
-give @s wr:void_vein

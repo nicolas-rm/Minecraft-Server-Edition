@@ -1,1 +1,0 @@
-give @s wr:grimstone_diamond

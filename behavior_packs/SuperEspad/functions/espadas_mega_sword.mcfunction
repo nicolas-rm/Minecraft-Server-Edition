@@ -1,1 +1,0 @@
-give @p espadas:mega_sword

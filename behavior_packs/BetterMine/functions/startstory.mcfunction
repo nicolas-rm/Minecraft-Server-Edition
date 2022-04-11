@@ -1,1 +1,0 @@
-structure load strange_pillar 42 31 42 0_degrees none layer_by_layer 42

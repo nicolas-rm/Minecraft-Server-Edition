@@ -1,1 +1,0 @@
-give @s wr:bone_catalyst
