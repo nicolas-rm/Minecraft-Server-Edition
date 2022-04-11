@@ -1,0 +1,89 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wildfire",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "upperBodyParts1",
+					"pivot": [0, 16, 0]
+				},
+				{
+					"name": "rotater1",
+					"parent": "upperBodyParts1",
+					"pivot": [0, 16, -12],
+					"cubes": [
+						{"origin": [-5, 7, -13], "size": [10, 18, 2], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "upperBodyParts4",
+					"pivot": [0, 14.5, 0],
+					"cubes": [
+						{"origin": [-2, 3, -2], "size": [4, 22, 4], "uv": [48, 18]}
+					],
+					"locators": {
+						"emitter": [-2, 8, -2]
+					}
+				},
+				{
+					"name": "head",
+					"pivot": [0, 31.5, 0],
+					"cubes": [
+						{"origin": [-4, 27, -4], "size": [8, 8, 8], "uv": [0, 0]},
+						{"origin": [-4, 27, -4], "size": [8, 10, 8], "inflate": 0.5, "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "upperBodyParts2",
+					"pivot": [0, 16, 0],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "rotater2",
+					"parent": "upperBodyParts2",
+					"pivot": [0, 16, -12],
+					"cubes": [
+						{"origin": [-5, 7, -13], "size": [10, 18, 2], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "upperBodyParts5",
+					"pivot": [0, 16, 0],
+					"rotation": [0, -90, 0]
+				},
+				{
+					"name": "rotater3",
+					"parent": "upperBodyParts5",
+					"pivot": [0, 16, -12],
+					"cubes": [
+						{"origin": [-5, 7, -13], "size": [10, 18, 2], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "upperBodyParts3",
+					"pivot": [0, 16, 0]
+				},
+				{
+					"name": "rotater4",
+					"parent": "upperBodyParts3",
+					"pivot": [0, 16, 12],
+					"cubes": [
+						{"origin": [-5, 7, 11], "size": [10, 18, 2], "uv": [0, 36]}
+					]
+				},
+				{
+					"name": "rightItem",
+					"pivot": [0, 11, 0]
+				}
+			]
+		}
+	]
+}

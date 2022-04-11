@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:salted_chicken",
+      "category": "Items"
+    },
+
+    "components": {
+      "minecraft:icon": "chicken_cooked",
+      "minecraft:use_animation": "eat",
+
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

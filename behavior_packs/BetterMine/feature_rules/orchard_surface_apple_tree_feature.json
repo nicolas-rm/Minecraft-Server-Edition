@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "better:orchard_surface_apple_tree_feature",
+      "places_feature": "better:orchard_trees_feature"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "orchard"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": 0
+    }
+
+  }
+}

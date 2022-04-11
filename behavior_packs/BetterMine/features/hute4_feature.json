@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "minecraft:hute4_feature"
+    },
+    "features": [
+      [ "minecraft:hute4_position", 1 ],
+      [ "minecraft:hute41_position", 1 ],
+      [ "minecraft:hute42_position", 1 ],
+      [ "minecraft:hute51_position", 1 ],
+      [ "minecraft:hute52_position", 1 ],
+      [ "minecraft:hute53_position", 1 ]
+    ]
+  }
+}

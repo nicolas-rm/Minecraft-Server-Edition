@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.villager_attack_freehands.raise_arms": {
+            "loop": true,
+			"bones": {
+				"arms": {
+					"rotation": [-80, 0, 0]
+				}
+			}
+        },
+		"animation.villager_attack_freehands.attack" : {
+			"loop" : true,
+			"bones" : {
+				"leftArm" : {
+					"rotation" : [ 0, 0, 0]
+				},
+				"rightArm" : {
+					"rotation" : [ "(-108 + math.cos(query.life_time * 20.0 * 3.84) * 2.87) + (math.sin(variable.attack_time * 180.0) * 126.05 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0)) * 22.92)", 0.0, 0.0 ]
+				}
+			}
+		}
+	}
+}

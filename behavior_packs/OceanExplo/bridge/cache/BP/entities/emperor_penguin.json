@@ -1,0 +1,344 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\entities\\emperor_penguin.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "1230aae0_e656_490b_8a57_a17fbc1f7834",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "ocean:emperor_penguin",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"components": {
+							"minecraft:is_hidden_when_invisible": {},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0,
+								"breathes_water": true,
+								"breathes_air": true,
+								"generates_bubbles": false
+							},
+							"minecraft:nameable": {},
+							"minecraft:health": {
+								"value": 20
+							},
+							"minecraft:damage_sensor": {
+								"triggers": {
+									"cause": "lightning",
+									"deals_damage": true,
+									"damage_multiplier": 2000
+								}
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:movement": {
+								"value": 0.2
+							},
+							"minecraft:water_movement": {
+								"drag_factor": 0.2
+							},
+							"minecraft:navigation.generic": {
+								"is_amphibious": true,
+								"can_path_over_water": false,
+								"can_swim": true,
+								"can_walk": true,
+								"can_sink": false,
+								"avoid_damage_blocks": true
+							},
+							"minecraft:jump.static": {},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:follow_range": {
+								"value": 1024
+							},
+							"minecraft:despawn": {
+								"despawn_from_distance": {}
+							},
+							"minecraft:behavior.panic": {
+								"priority": 0,
+								"speed_multiplier": 1.2
+							},
+							"minecraft:behavior.hurt_by_target": {
+								"priority": 1
+							},
+							"minecraft:behavior.tempt": {
+								"priority": 3,
+								"speed_multiplier": 1.1,
+								"items": [
+									"minecraft:fish"
+								]
+							},
+							"minecraft:behavior.random_swim": {
+								"priority": 7,
+								"interval": 0,
+								"xz_dist": 30,
+								"y_dist": 15
+							},
+							"minecraft:behavior.look_at_player": {
+								"priority": 8,
+								"target_distance": 6,
+								"probability": 0.02
+							},
+							"minecraft:conditional_bandwidth_optimization": {},
+							"minecraft:underwater_movement": {
+								"value": 0.25
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:behavior.random_stroll": {
+								"priority": 4
+							},
+							"minecraft:collision_box": {
+								"width": 1,
+								"height": 1.2
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ocean:emperor_penguin",
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:emperor_penguin",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"components": {
+								"minecraft:is_hidden_when_invisible": {},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_water": true,
+									"breathes_air": true,
+									"generates_bubbles": false
+								},
+								"minecraft:nameable": {},
+								"minecraft:health": {
+									"value": 20
+								},
+								"minecraft:damage_sensor": {
+									"triggers": {
+										"cause": "lightning",
+										"deals_damage": true,
+										"damage_multiplier": 2000
+									}
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement": {
+									"value": 0.2
+								},
+								"minecraft:water_movement": {
+									"drag_factor": 0.2
+								},
+								"minecraft:navigation.generic": {
+									"is_amphibious": true,
+									"can_path_over_water": false,
+									"can_swim": true,
+									"can_walk": true,
+									"can_sink": false,
+									"avoid_damage_blocks": true
+								},
+								"minecraft:jump.static": {},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:follow_range": {
+									"value": 1024
+								},
+								"minecraft:despawn": {
+									"despawn_from_distance": {}
+								},
+								"minecraft:behavior.panic": {
+									"priority": 0,
+									"speed_multiplier": 1.2
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1
+								},
+								"minecraft:behavior.tempt": {
+									"priority": 3,
+									"speed_multiplier": 1.1,
+									"items": [
+										"minecraft:fish"
+									]
+								},
+								"minecraft:behavior.random_swim": {
+									"priority": 7,
+									"interval": 0,
+									"xz_dist": 30,
+									"y_dist": 15
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 8,
+									"target_distance": 6,
+									"probability": 0.02
+								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:underwater_movement": {
+									"value": 0.25
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:behavior.random_stroll": {
+									"priority": 4
+								},
+								"minecraft:collision_box": {
+									"width": 1,
+									"height": 1.2
+								}
+							}
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:is_hidden_when_invisible": {},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0,
+								"breathes_water": true,
+								"breathes_air": true,
+								"generates_bubbles": false
+							},
+							"minecraft:nameable": {},
+							"minecraft:health": {
+								"value": 20
+							},
+							"minecraft:damage_sensor": {
+								"triggers": {
+									"cause": "lightning",
+									"deals_damage": true,
+									"damage_multiplier": 2000
+								}
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:movement": {
+								"value": 0.2
+							},
+							"minecraft:water_movement": {
+								"drag_factor": 0.2
+							},
+							"minecraft:navigation.generic": {
+								"is_amphibious": true,
+								"can_path_over_water": false,
+								"can_swim": true,
+								"can_walk": true,
+								"can_sink": false,
+								"avoid_damage_blocks": true
+							},
+							"minecraft:jump.static": {},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:follow_range": {
+								"value": 1024
+							},
+							"minecraft:despawn": {
+								"despawn_from_distance": {}
+							},
+							"minecraft:behavior.panic": {
+								"priority": 0,
+								"speed_multiplier": 1.2
+							},
+							"minecraft:behavior.hurt_by_target": {
+								"priority": 1
+							},
+							"minecraft:behavior.tempt": {
+								"priority": 3,
+								"speed_multiplier": 1.1,
+								"items": [
+									"minecraft:fish"
+								]
+							},
+							"minecraft:behavior.random_swim": {
+								"priority": 7,
+								"interval": 0,
+								"xz_dist": 30,
+								"y_dist": 15
+							},
+							"minecraft:behavior.look_at_player": {
+								"priority": 8,
+								"target_distance": 6,
+								"probability": 0.02
+							},
+							"minecraft:conditional_bandwidth_optimization": {},
+							"minecraft:underwater_movement": {
+								"value": 0.25
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:behavior.random_stroll": {
+								"priority": 4
+							},
+							"minecraft:collision_box": {
+								"width": 1,
+								"height": 1.2
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

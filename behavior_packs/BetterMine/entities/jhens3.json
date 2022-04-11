@@ -1,0 +1,305 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:jhens3",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:2": {
+        "minecraft:transformation": {
+          "into": "better:jhens0"
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "50"
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_water": true
+      },
+      "minecraft:fire_immune": {
+      },
+      "minecraft:health": {
+        "value": 200,
+        "max": 200
+      },
+      "minecraft:equip_item": {
+      },
+      "minecraft:boss": {
+        "should_darken_sky": false,
+        "name": "Jhens (Final Stage)",
+        "hud_range": 128
+      },
+      "minecraft:on_death": {
+        "event": "minecraft:2",
+        "target": "self"
+      },
+      "minecraft:collision_box": {
+        "width": 0.72,
+        "height": 2.01
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/jhens.json"
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:behavior.summon_entity": {
+        "priority": 2,
+
+        "summon_choices": [
+          {
+            "min_activation_range": 0.0,
+            "cooldown_time": 0.0,
+            "weight": 4,
+            "cast_duration": 1.0,
+            "particle_color": "#FF664D59",
+            "start_sound_event": "cast.spell",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 1.0,
+                "delay_per_summon": 0.0,
+                "num_entities_spawned": 8,
+                "entity_type": "better:elfm",
+                "size": 1.5,
+                "sound_event": "prepare.attack"
+              },
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 0.15,
+                "delay_per_summon": 0.0,
+                "num_entities_spawned": 8,
+                "entity_type": "better:elff"
+              }
+            ]
+          },
+          {
+            "min_activation_range": 0.0,
+            "weight": 4,
+            "cooldown_time": 1.0,
+            "cast_duration": 1.0,
+            "particle_color": "#FF664D59",
+            "start_sound_event": "cast.spell",
+            "sequence": [
+              {
+                "shape": "line",
+                "target": "self",
+                "base_delay": 1.0,
+                "delay_per_summon": 0.05,
+                "num_entities_spawned": 5,
+                "entity_type": "better:archer",
+                "size": 1
+              }
+            ]
+          },
+          {
+            "weight": 3,
+            "cooldown_time": 1.0,
+            "cast_duration": 4.0,
+            "particle_color": "#FFB3B3CC",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 1.0,
+                "num_entities_spawned": 8,
+                "entity_type": "better:warrior",
+                "summon_cap": 8,
+                "summon_cap_radius": 16.0,
+                "size": 1.0,
+                "sound_event": "prepare.summon"
+              }
+            ]
+          },
+          {
+            "weight": 3,
+            "cooldown_time": 1.0,
+            "cast_duration": 4.0,
+            "particle_color": "#FFB3B3CC",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 1.0,
+                "num_entities_spawned": 16,
+                "entity_type": "better:red_knight",
+                "summon_cap": 8,
+                "summon_cap_radius": 16.0,
+                "size": 1.0,
+                "sound_event": "prepare.summon"
+              }
+            ]
+          },
+          {
+            "weight": 2,
+            "cooldown_time": 1.0,
+            "cast_duration": 4.0,
+            "particle_color": "#FFB3B3CC",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 1.0,
+                "num_entities_spawned": 8,
+                "entity_type": "better:heavy",
+                "summon_cap": 8,
+                "summon_cap_radius": 16.0,
+                "size": 1.0,
+                "sound_event": "prepare.summon"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "cooldown_time": 1.0,
+            "cast_duration": 4.0,
+            "particle_color": "#FFB3B3CC",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 1.0,
+                "num_entities_spawned": 2,
+                "entity_type": "better:jhens3",
+                "summon_cap": 8,
+                "summon_cap_radius": 16.0,
+                "entity_lifespan": 9,
+                "size": 1.0,
+                "sound_event": "prepare.summon"
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": false,
+        "avoid_sun": false,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "reselect_targets": true,
+        "must_see": true,
+        "entity_types": [
+          {
+            "filters": {  
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "head",
+                  "operator": "==",
+                  "value": "better:bad"
+                }
+              ]
+            },
+            "max_dist": 20
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "illager"
+                }
+              ]
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "monster"
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "ghast"
+                },
+                {
+                  "test": "in_water",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": true
+                }
+              ]
+            },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:behavior.equip_item": {
+        "priority": 3
+      },
+      "minecraft:behavior.pickup_items": {
+        "priority": 5,
+        "max_dist": 3,
+        "goal_radius": 2,
+        "speed_multiplier": 1.0,
+        "pickup_based_on_chance": true
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:type_family": {
+        "family": [ "villager", "god", "player", "npc", "mob" ]
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+
+      },
+      "minecraft:2": {
+        "add": { "component_groups": [ "minecraft:2" ] }
+      }
+    }
+  }
+}

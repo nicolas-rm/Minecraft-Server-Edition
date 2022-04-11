@@ -1,0 +1,23 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.13.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "mrleefy:creeperspawner13"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "mrleefy:creeperspawner13"
+			}
+		],
+		"result": [
+			{
+				"item": "mrleefy:creeperspawner",
+				"count": 13
+			}
+		]
+	}
+}

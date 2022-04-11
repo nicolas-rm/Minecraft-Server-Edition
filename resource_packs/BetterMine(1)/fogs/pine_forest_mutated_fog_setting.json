@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "better:fog_pine_forest_mutated"
+    },
+    "distance": {
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 15.0,
+        "fog_color": "#287082",
+        "render_distance_type": "fixed"
+      },
+      "air": {
+        "fog_start": 0.92,
+        "fog_end": 1.0,
+        "fog_color": "#a1ba95",
+        "render_distance_type": "render"
+      }
+    }
+  }
+}

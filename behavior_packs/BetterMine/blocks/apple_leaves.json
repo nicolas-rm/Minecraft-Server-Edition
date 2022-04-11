@@ -1,0 +1,140 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:apple_leaves",
+      "properties": {
+        "better:growth_stage": [0, 1, 2, 3]
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/apple_leaves.json",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "apple_leaves",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:unit_cube": {},
+      "minecraft:destroy_time": 0.3,
+      "minecraft:on_interact": {
+        "event": "start_new_life",
+        "condition": "query.get_equipped_item_name('main_hand') == 'shears'"
+      },
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#033603",
+      "minecraft:flammable": {
+        "flame_odds": 1,
+        "burn_odds": 1
+      },
+      "minecraft:block_light_absorption": 15.0,
+      "minecraft:block_light_emission": 0.0,
+      "tag:leaves": {}
+    },
+    "events": {
+      "grow_stage": {
+        "randomize": [
+          {
+            "weight": 2
+          },
+          {
+            "weight": 1,
+            "set_block_property": {
+              "better:growth_stage": "(query.block_property('better:growth_stage')<3) ? query.block_property('better:growth_stage') + 1 : 3"
+            }
+          }
+        ]
+      },
+      "start_new_life": {
+        "sequence": [
+          {
+            "set_block_property": {
+              "better:growth_stage": 1
+            }
+          },
+          {
+            "spawn_loot": {
+              "table": "loot_tables/blocks/apple_leaves.json"
+            }
+          }
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('better:growth_stage') == 0",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/apple_leaves.json",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "apple_leaves",
+              "render_method": "blend"
+            }
+          },
+          "minecraft:on_interact": {
+            "event": "start_new_life",
+            "condition": "query.get_equipped_item_name('main_hand') == 'shears'"
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('better:growth_stage') == 1",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/oak_leaves.json",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "apple_leaves_empty",
+              "render_method": "blend"
+            }
+          },
+          "minecraft:on_interact": {
+            "event": "graw_stage",
+            "condition": "query.get_equipped_item_name('main_hand') == 'command_block'"
+          },
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "grow_stage"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('better:growth_stage') == 2",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/oak_leaves.json",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "apple_leaves_green",
+              "render_method": "blend"
+            }
+          },
+          "minecraft:on_interact": {
+            "event": "grow_stage",
+            "condition": "query.get_equipped_item_name('main_hand') == 'command_block'"
+          },
+          "minecraft:random_ticking": {
+            "on_tick": {
+              "event": "grow_stage"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('better:growth_stage') == 3",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/apple_leaves.json",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "apple_leaves",
+              "render_method": "blend"
+            }
+          },
+          "minecraft:on_interact": {
+            "event": "start_new_life",
+            "condition": "query.get_equipped_item_name('main_hand') == 'shears'"
+          }
+        }
+      }
+    ]
+  }
+}

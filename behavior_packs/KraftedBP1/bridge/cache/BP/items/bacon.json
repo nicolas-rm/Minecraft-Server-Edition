@@ -1,0 +1,511 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\bacon.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "88365c2a_781a_4cd7_9c68_0d41148dec60",
+	"file_version": 19,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:bacon",
+							"category": "nature"
+						},
+						"components": {
+							"minecraft:hand_equipped": false,
+							"minecraft:stacked_by_data": true,
+							"minecraft:use_duration": 0.4,
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.rawFood"
+							},
+							"minecraft:icon": {
+								"texture": "bridge_bacon raw"
+							},
+							"minecraft:foil": false,
+							"minecraft:food": {
+								"nutrition": 2,
+								"saturation_modifier": "poor",
+								"can_always_eat": false,
+								"on_consume": {
+									"event": "strat:raw_foodism"
+								}
+							}
+						},
+						"events": {
+							"strat:raw_foodism": {
+								"randomize": [
+									{
+										"weight": 199
+									},
+									{
+										"run_command": {
+											"command": [
+												"gamerule sendcommandfeedback false",
+												"give @s strat:raw_foodism_trophy",
+												"playsound strat.trophy_collected @s",
+												"effect @s nausea 10 1",
+												"gamerule sendcommandfeedback true"
+											],
+											"target": "holder"
+										},
+										"weight": 1
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_bacon raw"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "poor",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "strat:raw_foodism"
+									}
+								}
+							},
+							"events": {
+								"strat:raw_foodism": {
+									"randomize": [
+										{
+											"weight": 199
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:raw_foodism_trophy",
+													"playsound strat.trophy_collected @s",
+													"effect @s nausea 10 1",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "holder"
+											},
+											"weight": 1
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:bacon",
+							"category": "nature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_bacon raw"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "poor",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "strat:raw_foodism"
+									}
+								}
+							},
+							"events": {
+								"strat:raw_foodism": {
+									"randomize": [
+										{
+											"weight": 199
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:raw_foodism_trophy",
+													"playsound strat.trophy_collected @s",
+													"effect @s nausea 10 1",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "holder"
+											},
+											"weight": 1
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "false",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "0.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_bacon raw"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "poor",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "strat:raw_foodism"
+										}
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.rawFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_bacon raw"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "poor",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "strat:raw_foodism"
+										}
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "bridge_bacon raw"
+								}
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"open": {
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:use_duration": 0.4,
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.rawFood"
+									},
+									"minecraft:icon": {
+										"texture": "bridge_bacon raw"
+									},
+									"minecraft:foil": false,
+									"minecraft:food": {
+										"nutrition": 2,
+										"saturation_modifier": "poor",
+										"can_always_eat": false,
+										"on_consume": {
+											"event": "strat:raw_foodism"
+										}
+									}
+								},
+								"key": "minecraft:food",
+								"children": [
+									{
+										"data": "2",
+										"key": "nutrition"
+									},
+									{
+										"data": "poor",
+										"key": "saturation_modifier"
+									},
+									{
+										"data": "false",
+										"key": "can_always_eat"
+									},
+									{
+										"open": {
+											"nutrition": 2,
+											"saturation_modifier": "poor",
+											"can_always_eat": false,
+											"on_consume": {
+												"event": "strat:raw_foodism"
+											}
+										},
+										"key": "on_consume",
+										"is_minified": true,
+										"children": {
+											"event": "strat:raw_foodism"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:bacon",
+								"category": "nature"
+							},
+							"components": {
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:use_duration": 0.4,
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.rawFood"
+								},
+								"minecraft:icon": {
+									"texture": "bridge_bacon raw"
+								},
+								"minecraft:foil": false,
+								"minecraft:food": {
+									"nutrition": 2,
+									"saturation_modifier": "poor",
+									"can_always_eat": false,
+									"on_consume": {
+										"event": "strat:raw_foodism"
+									}
+								}
+							},
+							"events": {
+								"strat:raw_foodism": {
+									"randomize": [
+										{
+											"weight": 199
+										},
+										{
+											"run_command": {
+												"command": [
+													"gamerule sendcommandfeedback false",
+													"give @s strat:raw_foodism_trophy",
+													"playsound strat.trophy_collected @s",
+													"effect @s nausea 10 1",
+													"gamerule sendcommandfeedback true"
+												],
+												"target": "holder"
+											},
+											"weight": 1
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"strat:raw_foodism": {
+										"randomize": [
+											{
+												"weight": 199
+											},
+											{
+												"run_command": {
+													"command": [
+														"gamerule sendcommandfeedback false",
+														"give @s strat:raw_foodism_trophy",
+														"playsound strat.trophy_collected @s",
+														"effect @s nausea 10 1",
+														"gamerule sendcommandfeedback true"
+													],
+													"target": "holder"
+												},
+												"weight": 1
+											}
+										]
+									}
+								},
+								"key": "strat:raw_foodism",
+								"children": [
+									{
+										"open": {
+											"randomize": [
+												{
+													"weight": 199
+												},
+												{
+													"run_command": {
+														"command": [
+															"gamerule sendcommandfeedback false",
+															"give @s strat:raw_foodism_trophy",
+															"playsound strat.trophy_collected @s",
+															"effect @s nausea 10 1",
+															"gamerule sendcommandfeedback true"
+														],
+														"target": "holder"
+													},
+													"weight": 1
+												}
+											]
+										},
+										"key": "randomize",
+										"children": [
+											{
+												"open": [
+													{
+														"weight": 199
+													},
+													{
+														"run_command": {
+															"command": [
+																"gamerule sendcommandfeedback false",
+																"give @s strat:raw_foodism_trophy",
+																"playsound strat.trophy_collected @s",
+																"effect @s nausea 10 1",
+																"gamerule sendcommandfeedback true"
+															],
+															"target": "holder"
+														},
+														"weight": 1
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"weight": 199
+												}
+											},
+											{
+												"open": [
+													{
+														"weight": 199
+													},
+													{
+														"run_command": {
+															"command": [
+																"gamerule sendcommandfeedback false",
+																"give @s strat:raw_foodism_trophy",
+																"playsound strat.trophy_collected @s",
+																"effect @s nausea 10 1",
+																"gamerule sendcommandfeedback true"
+															],
+															"target": "holder"
+														},
+														"weight": 1
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"gamerule sendcommandfeedback false",
+																	"give @s strat:raw_foodism_trophy",
+																	"playsound strat.trophy_collected @s",
+																	"effect @s nausea 10 1",
+																	"gamerule sendcommandfeedback true"
+																],
+																"target": "holder"
+															},
+															"weight": 1
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"gamerule sendcommandfeedback false",
+																		"give @s strat:raw_foodism_trophy",
+																		"playsound strat.trophy_collected @s",
+																		"effect @s nausea 10 1",
+																		"gamerule sendcommandfeedback true"
+																	],
+																	"target": "holder"
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"gamerule sendcommandfeedback false",
+																	"give @s strat:raw_foodism_trophy",
+																	"playsound strat.trophy_collected @s",
+																	"effect @s nausea 10 1",
+																	"gamerule sendcommandfeedback true"
+																]
+															},
+															{
+																"data": "holder",
+																"key": "target"
+															}
+														]
+													},
+													{
+														"data": "1",
+														"key": "weight"
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

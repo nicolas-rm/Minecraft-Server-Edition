@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:bird",
+      "materials": { "default": "phantom" },
+      "textures": {
+        "BirdColorBlue": "textures/entity/bird/blue",
+        "BirdColorCyan": "textures/entity/bird/cyan",
+        "BirdColorGreen": "textures/entity/bird/green",
+        "BirdColorMagenta": "textures/entity/bird/magenta",
+        "BirdColorOrange": "textures/entity/bird/orange",
+        "BirdColorRed": "textures/entity/bird/red"
+      },
+      "geometry": {
+        "default": "geometry.bird"
+      },
+      "animations": {
+        "flying": "animation.bird.flying",
+        "default": "animation.bird.default",
+        "bird_root_controller": "controller.animation.bird.root2"
+      },      
+
+      "scripts": {
+        "animate": [
+          "bird_root_controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.bird" ],
+      "spawn_egg": {
+        "base_color": "#a2a7d1",
+	     "overlay_color": "#bec5dd"
+      }
+    }
+  }
+}

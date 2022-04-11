@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "super_espada_777c19cd"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      "ACA",
+      "DA "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:gold_ingot",
+        "data": 0
+      },
+      "B": {
+        "item": "espadas:espada_bedrock",
+        "data": 0
+      },
+      "C": {
+        "item": "espadas:espada_obsidiana",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:blaze_rod",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "espadas:super_espada",
+      "count": 1
+    }
+  }
+}

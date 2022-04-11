@@ -1,0 +1,469 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\hagbat.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "407be35c_b2b7_4a0d_964f_401a4bebb20a",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vanilla_twilight:hagbat",
+							"materials": {
+								"default": "goblin"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/hagbat"
+							},
+							"geometry": {
+								"default": "geometry.hagbat_fold"
+							},
+							"animations": {
+								"humanoid_base_pose": "animation.hagbat.default",
+								"move": "animation.hagbat_fold.walk",
+								"attack.goblin": "animation.hagbat_fold.attack_ready",
+								"flying": "animation.hagbat.flying"
+							},
+							"animation_controllers": [
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"move": "controller.animation.hagbat.move"
+								},
+								{
+									"default_pose": "controller.animation.hagbat_pose"
+								}
+							],
+							"render_controllers": [
+								"controller.render.goblin"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#AB9F8D",
+								"overlay_color": "#7A5E70"
+							},
+							"sound_effects": {
+								"hagbat_flap": "mob.hagbat.flap"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:hagbat",
+								"materials": {
+									"default": "goblin"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/hagbat"
+								},
+								"geometry": {
+									"default": "geometry.hagbat_fold"
+								},
+								"animations": {
+									"humanoid_base_pose": "animation.hagbat.default",
+									"move": "animation.hagbat_fold.walk",
+									"attack.goblin": "animation.hagbat_fold.attack_ready",
+									"flying": "animation.hagbat.flying"
+								},
+								"animation_controllers": [
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"move": "controller.animation.hagbat.move"
+									},
+									{
+										"default_pose": "controller.animation.hagbat_pose"
+									}
+								],
+								"render_controllers": [
+									"controller.render.goblin"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#AB9F8D",
+									"overlay_color": "#7A5E70"
+								},
+								"sound_effects": {
+									"hagbat_flap": "mob.hagbat.flap"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "vanilla_twilight:hagbat",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/hagbat"
+									},
+									"geometry": {
+										"default": "geometry.hagbat_fold"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.hagbat.default",
+										"move": "animation.hagbat_fold.walk",
+										"attack.goblin": "animation.hagbat_fold.attack_ready",
+										"flying": "animation.hagbat.flying"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.hagbat.move"
+										},
+										{
+											"default_pose": "controller.animation.hagbat_pose"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#AB9F8D",
+										"overlay_color": "#7A5E70"
+									},
+									"sound_effects": {
+										"hagbat_flap": "mob.hagbat.flap"
+									}
+								},
+								"data": "vanilla_twilight:hagbat",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "goblin"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/hagbat"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.hagbat_fold"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:hagbat",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/hagbat"
+									},
+									"geometry": {
+										"default": "geometry.hagbat_fold"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.hagbat.default",
+										"move": "animation.hagbat_fold.walk",
+										"attack.goblin": "animation.hagbat_fold.attack_ready",
+										"flying": "animation.hagbat.flying"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.hagbat.move"
+										},
+										{
+											"default_pose": "controller.animation.hagbat_pose"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#AB9F8D",
+										"overlay_color": "#7A5E70"
+									},
+									"sound_effects": {
+										"hagbat_flap": "mob.hagbat.flap"
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"humanoid_base_pose": "animation.hagbat.default",
+									"move": "animation.hagbat_fold.walk",
+									"attack.goblin": "animation.hagbat_fold.attack_ready",
+									"flying": "animation.hagbat.flying"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:hagbat",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/hagbat"
+									},
+									"geometry": {
+										"default": "geometry.hagbat_fold"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.hagbat.default",
+										"move": "animation.hagbat_fold.walk",
+										"attack.goblin": "animation.hagbat_fold.attack_ready",
+										"flying": "animation.hagbat.flying"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.hagbat.move"
+										},
+										{
+											"default_pose": "controller.animation.hagbat_pose"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#AB9F8D",
+										"overlay_color": "#7A5E70"
+									},
+									"sound_effects": {
+										"hagbat_flap": "mob.hagbat.flap"
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"move": "controller.animation.hagbat.move"
+											},
+											{
+												"default_pose": "controller.animation.hagbat_pose"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"move": "controller.animation.hagbat.move"
+											},
+											{
+												"default_pose": "controller.animation.hagbat_pose"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"move": "controller.animation.hagbat.move"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"move": "controller.animation.hagbat.move"
+											},
+											{
+												"default_pose": "controller.animation.hagbat_pose"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"default_pose": "controller.animation.hagbat_pose"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:hagbat",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/hagbat"
+									},
+									"geometry": {
+										"default": "geometry.hagbat_fold"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.hagbat.default",
+										"move": "animation.hagbat_fold.walk",
+										"attack.goblin": "animation.hagbat_fold.attack_ready",
+										"flying": "animation.hagbat.flying"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.hagbat.move"
+										},
+										{
+											"default_pose": "controller.animation.hagbat_pose"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#AB9F8D",
+										"overlay_color": "#7A5E70"
+									},
+									"sound_effects": {
+										"hagbat_flap": "mob.hagbat.flap"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.goblin"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:hagbat",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/hagbat"
+									},
+									"geometry": {
+										"default": "geometry.hagbat_fold"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.hagbat.default",
+										"move": "animation.hagbat_fold.walk",
+										"attack.goblin": "animation.hagbat_fold.attack_ready",
+										"flying": "animation.hagbat.flying"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.hagbat.move"
+										},
+										{
+											"default_pose": "controller.animation.hagbat_pose"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#AB9F8D",
+										"overlay_color": "#7A5E70"
+									},
+									"sound_effects": {
+										"hagbat_flap": "mob.hagbat.flap"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#AB9F8D",
+									"overlay_color": "#7A5E70"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:hagbat",
+									"materials": {
+										"default": "goblin"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/hagbat"
+									},
+									"geometry": {
+										"default": "geometry.hagbat_fold"
+									},
+									"animations": {
+										"humanoid_base_pose": "animation.hagbat.default",
+										"move": "animation.hagbat_fold.walk",
+										"attack.goblin": "animation.hagbat_fold.attack_ready",
+										"flying": "animation.hagbat.flying"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"move": "controller.animation.hagbat.move"
+										},
+										{
+											"default_pose": "controller.animation.hagbat_pose"
+										}
+									],
+									"render_controllers": [
+										"controller.render.goblin"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#AB9F8D",
+										"overlay_color": "#7A5E70"
+									},
+									"sound_effects": {
+										"hagbat_flap": "mob.hagbat.flap"
+									}
+								},
+								"key": "sound_effects",
+								"is_minified": true,
+								"children": {
+									"hagbat_flap": "mob.hagbat.flap"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

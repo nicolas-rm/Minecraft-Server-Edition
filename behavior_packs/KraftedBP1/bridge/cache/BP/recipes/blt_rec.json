@@ -1,0 +1,394 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\blt_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "9208ed5e_af47_4431_9614_4c833bda776d",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "strat:blt_rec"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "strat:baguette",
+								"count": 1
+							},
+							{
+								"item": "strat:cooked_bacon",
+								"count": 1
+							},
+							{
+								"item": "strat:lettuce",
+								"count": 1
+							},
+							{
+								"item": "strat:tomato",
+								"count": 1
+							},
+							{
+								"item": "strat:butter",
+								"count": 1
+							}
+						],
+						"result": [
+							{
+								"item": "strat:blt",
+								"count": 1
+							}
+						],
+						"priority": 5
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:blt_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:baguette",
+									"count": 1
+								},
+								{
+									"item": "strat:cooked_bacon",
+									"count": 1
+								},
+								{
+									"item": "strat:lettuce",
+									"count": 1
+								},
+								{
+									"item": "strat:tomato",
+									"count": 1
+								},
+								{
+									"item": "strat:butter",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:blt",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:blt_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:blt_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:baguette",
+									"count": 1
+								},
+								{
+									"item": "strat:cooked_bacon",
+									"count": 1
+								},
+								{
+									"item": "strat:lettuce",
+									"count": 1
+								},
+								{
+									"item": "strat:tomato",
+									"count": 1
+								},
+								{
+									"item": "strat:butter",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:blt",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:blt_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:baguette",
+									"count": 1
+								},
+								{
+									"item": "strat:cooked_bacon",
+									"count": 1
+								},
+								{
+									"item": "strat:lettuce",
+									"count": 1
+								},
+								{
+									"item": "strat:tomato",
+									"count": 1
+								},
+								{
+									"item": "strat:butter",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:blt",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:baguette",
+										"count": 1
+									},
+									{
+										"item": "strat:cooked_bacon",
+										"count": 1
+									},
+									{
+										"item": "strat:lettuce",
+										"count": 1
+									},
+									{
+										"item": "strat:tomato",
+										"count": 1
+									},
+									{
+										"item": "strat:butter",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:baguette",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:baguette",
+										"count": 1
+									},
+									{
+										"item": "strat:cooked_bacon",
+										"count": 1
+									},
+									{
+										"item": "strat:lettuce",
+										"count": 1
+									},
+									{
+										"item": "strat:tomato",
+										"count": 1
+									},
+									{
+										"item": "strat:butter",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:cooked_bacon",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:baguette",
+										"count": 1
+									},
+									{
+										"item": "strat:cooked_bacon",
+										"count": 1
+									},
+									{
+										"item": "strat:lettuce",
+										"count": 1
+									},
+									{
+										"item": "strat:tomato",
+										"count": 1
+									},
+									{
+										"item": "strat:butter",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:lettuce",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:baguette",
+										"count": 1
+									},
+									{
+										"item": "strat:cooked_bacon",
+										"count": 1
+									},
+									{
+										"item": "strat:lettuce",
+										"count": 1
+									},
+									{
+										"item": "strat:tomato",
+										"count": 1
+									},
+									{
+										"item": "strat:butter",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:tomato",
+									"count": 1
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:baguette",
+										"count": 1
+									},
+									{
+										"item": "strat:cooked_bacon",
+										"count": 1
+									},
+									{
+										"item": "strat:lettuce",
+										"count": 1
+									},
+									{
+										"item": "strat:tomato",
+										"count": 1
+									},
+									{
+										"item": "strat:butter",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:butter",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:blt_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "strat:baguette",
+									"count": 1
+								},
+								{
+									"item": "strat:cooked_bacon",
+									"count": 1
+								},
+								{
+									"item": "strat:lettuce",
+									"count": 1
+								},
+								{
+									"item": "strat:tomato",
+									"count": 1
+								},
+								{
+									"item": "strat:butter",
+									"count": 1
+								}
+							],
+							"result": [
+								{
+									"item": "strat:blt",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:blt",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:blt",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"data": "5",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

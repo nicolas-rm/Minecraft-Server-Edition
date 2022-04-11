@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.elf": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.brown", "Texture.white", "Texture.black", "Texture.zero", "Texture.one" ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "query.get_name == 'Dance' ? Texture.white : Array.skins[query.variant]" ]
+    }
+  }
+}

@@ -1,0 +1,2214 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\blocks\\maple_slab.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "3940b39a_c37f_449b_b1f7_1c6b274b494a",
+	"file_version": 24,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:block": {
+						"description": {
+							"identifier": "strat:maple_slab",
+							"properties": {
+								"strat:slab": [
+									0,
+									1
+								],
+								"strat:block": [
+									0,
+									1
+								]
+							}
+						},
+						"components": {
+							"minecraft:destroy_time": 2,
+							"minecraft:explosion_resistance": 3,
+							"minecraft:map_color": "#C9C39A",
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "strats_planks_maple",
+									"render_method": "alpha_test"
+								}
+							},
+							"minecraft:geometry": "geometry.slab",
+							"minecraft:entity_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									8,
+									16
+								]
+							},
+							"minecraft:pick_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									8,
+									16
+								]
+							},
+							"minecraft:block_light_absorption": 0,
+							"minecraft:on_player_placing": {
+								"event": "strat:upper_slab"
+							},
+							"tag:wood": {},
+							"minecraft:creative_category": {
+								"group": "itemGroup.name.Construction",
+								"category": "Construction"
+							}
+						},
+						"events": {
+							"strat:upper_slab": {
+								"sequence": [
+									{
+										"set_block_property": {
+											"strat:slab": "query.block_face"
+										}
+									}
+								]
+							},
+							"strat:make_block": {
+								"sequence": [
+									{
+										"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+										"set_block_property": {
+											"strat:block": 1
+										},
+										"decrement_stack": {},
+										"run_command": {
+											"command": [
+												"playsound use.wood @a ~~~"
+											]
+										}
+									},
+									{
+										"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+										"set_block_property": {
+											"strat:block": 1
+										},
+										"decrement_stack": {},
+										"run_command": {
+											"command": [
+												"playsound use.wood @a ~~~"
+											]
+										}
+									}
+								]
+							}
+						},
+						"permutations": [
+							{
+								"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+								"components": {
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											8,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											8,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:geometry": "geometry.top_slab",
+									"minecraft:loot": "loot_tables/maple_slab.json",
+									"minecraft:on_interact": {
+										"event": "strat:make_block",
+										"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+									}
+								}
+							},
+							{
+								"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+								"components": {
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									},
+									"minecraft:geometry": "geometry.slab",
+									"minecraft:loot": "loot_tables/maple_slab.json",
+									"minecraft:on_interact": {
+										"event": "strat:make_block",
+										"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+									}
+								}
+							},
+							{
+								"condition": "query.block_property('strat:block') == 1",
+								"components": {
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											16
+										]
+									},
+									"minecraft:unit_cube": {},
+									"minecraft:loot": "loot_tables/maple_slab_2.json"
+								}
+							}
+						]
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab",
+								"properties": {
+									"strat:slab": [
+										0,
+										1
+									],
+									"strat:block": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:destroy_time": 2,
+								"minecraft:explosion_resistance": 3,
+								"minecraft:map_color": "#C9C39A",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "strats_planks_maple",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:geometry": "geometry.slab",
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:on_player_placing": {
+									"event": "strat:upper_slab"
+								},
+								"tag:wood": {},
+								"minecraft:creative_category": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							},
+							"events": {
+								"strat:upper_slab": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:slab": "query.block_face"
+											}
+										}
+									]
+								},
+								"strat:make_block": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										},
+										{
+											"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.top_slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:block') == 1",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:unit_cube": {},
+										"minecraft:loot": "loot_tables/maple_slab_2.json"
+									}
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_slab",
+							"properties": {
+								"strat:slab": [
+									0,
+									1
+								],
+								"strat:block": [
+									0,
+									1
+								]
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab",
+								"properties": {
+									"strat:slab": [
+										0,
+										1
+									],
+									"strat:block": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:destroy_time": 2,
+								"minecraft:explosion_resistance": 3,
+								"minecraft:map_color": "#C9C39A",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "strats_planks_maple",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:geometry": "geometry.slab",
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:on_player_placing": {
+									"event": "strat:upper_slab"
+								},
+								"tag:wood": {},
+								"minecraft:creative_category": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							},
+							"events": {
+								"strat:upper_slab": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:slab": "query.block_face"
+											}
+										}
+									]
+								},
+								"strat:make_block": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										},
+										{
+											"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.top_slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:block') == 1",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:unit_cube": {},
+										"minecraft:loot": "loot_tables/maple_slab_2.json"
+									}
+								}
+							]
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"data": "3",
+								"key": "minecraft:explosion_resistance"
+							},
+							{
+								"data": "#C9C39A",
+								"key": "minecraft:map_color"
+							},
+							{
+								"open": {
+									"minecraft:destroy_time": 2,
+									"minecraft:explosion_resistance": 3,
+									"minecraft:map_color": "#C9C39A",
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strats_planks_maple",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:geometry": "geometry.slab",
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									},
+									"minecraft:block_light_absorption": 0,
+									"minecraft:on_player_placing": {
+										"event": "strat:upper_slab"
+									},
+									"tag:wood": {},
+									"minecraft:creative_category": {
+										"group": "itemGroup.name.Construction",
+										"category": "Construction"
+									}
+								},
+								"key": "minecraft:material_instances",
+								"children": [
+									{
+										"open": {
+											"*": {
+												"texture": "strats_planks_maple",
+												"render_method": "alpha_test"
+											}
+										},
+										"key": "*",
+										"is_minified": true,
+										"children": {
+											"texture": "strats_planks_maple",
+											"render_method": "alpha_test"
+										}
+									}
+								]
+							},
+							{
+								"data": "geometry.slab",
+								"key": "minecraft:geometry"
+							},
+							{
+								"key": "minecraft:entity_collision",
+								"is_minified": true,
+								"children": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								}
+							},
+							{
+								"key": "minecraft:pick_collision",
+								"is_minified": true,
+								"children": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								}
+							},
+							{
+								"data": "0",
+								"key": "minecraft:block_light_absorption"
+							},
+							{
+								"open": {
+									"minecraft:destroy_time": 2,
+									"minecraft:explosion_resistance": 3,
+									"minecraft:map_color": "#C9C39A",
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "strats_planks_maple",
+											"render_method": "alpha_test"
+										}
+									},
+									"minecraft:geometry": "geometry.slab",
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											8,
+											16
+										]
+									},
+									"minecraft:block_light_absorption": 0,
+									"minecraft:on_player_placing": {
+										"event": "strat:upper_slab"
+									},
+									"tag:wood": {},
+									"minecraft:creative_category": {
+										"group": "itemGroup.name.Construction",
+										"category": "Construction"
+									}
+								},
+								"key": "minecraft:on_player_placing",
+								"is_minified": true,
+								"children": {
+									"event": "strat:upper_slab"
+								}
+							},
+							{
+								"key": "tag:wood",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab",
+								"properties": {
+									"strat:slab": [
+										0,
+										1
+									],
+									"strat:block": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:destroy_time": 2,
+								"minecraft:explosion_resistance": 3,
+								"minecraft:map_color": "#C9C39A",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "strats_planks_maple",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:geometry": "geometry.slab",
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:on_player_placing": {
+									"event": "strat:upper_slab"
+								},
+								"tag:wood": {},
+								"minecraft:creative_category": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							},
+							"events": {
+								"strat:upper_slab": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:slab": "query.block_face"
+											}
+										}
+									]
+								},
+								"strat:make_block": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										},
+										{
+											"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.top_slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:block') == 1",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:unit_cube": {},
+										"minecraft:loot": "loot_tables/maple_slab_2.json"
+									}
+								}
+							]
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"strat:upper_slab": {
+										"sequence": [
+											{
+												"set_block_property": {
+													"strat:slab": "query.block_face"
+												}
+											}
+										]
+									},
+									"strat:make_block": {
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+												"set_block_property": {
+													"strat:block": 1
+												},
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"playsound use.wood @a ~~~"
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+												"set_block_property": {
+													"strat:block": 1
+												},
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"playsound use.wood @a ~~~"
+													]
+												}
+											}
+										]
+									}
+								},
+								"key": "strat:upper_slab",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"set_block_property": {
+														"strat:slab": "query.block_face"
+													}
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"set_block_property": {
+															"strat:slab": "query.block_face"
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"set_block_property": {
+																"strat:slab": "query.block_face"
+															}
+														},
+														"key": "set_block_property",
+														"is_minified": true,
+														"children": {
+															"strat:slab": "query.block_face"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"strat:upper_slab": {
+										"sequence": [
+											{
+												"set_block_property": {
+													"strat:slab": "query.block_face"
+												}
+											}
+										]
+									},
+									"strat:make_block": {
+										"sequence": [
+											{
+												"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+												"set_block_property": {
+													"strat:block": 1
+												},
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"playsound use.wood @a ~~~"
+													]
+												}
+											},
+											{
+												"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+												"set_block_property": {
+													"strat:block": 1
+												},
+												"decrement_stack": {},
+												"run_command": {
+													"command": [
+														"playsound use.wood @a ~~~"
+													]
+												}
+											}
+										]
+									}
+								},
+								"key": "strat:make_block",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+													"set_block_property": {
+														"strat:block": 1
+													},
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"playsound use.wood @a ~~~"
+														]
+													}
+												},
+												{
+													"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+													"set_block_property": {
+														"strat:block": 1
+													},
+													"decrement_stack": {},
+													"run_command": {
+														"command": [
+															"playsound use.wood @a ~~~"
+														]
+													}
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+														"set_block_property": {
+															"strat:block": 1
+														},
+														"decrement_stack": {},
+														"run_command": {
+															"command": [
+																"playsound use.wood @a ~~~"
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+														"set_block_property": {
+															"strat:block": 1
+														},
+														"decrement_stack": {},
+														"run_command": {
+															"command": [
+																"playsound use.wood @a ~~~"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"data": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+														"key": "condition"
+													},
+													{
+														"open": {
+															"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+															"set_block_property": {
+																"strat:block": 1
+															},
+															"decrement_stack": {},
+															"run_command": {
+																"command": [
+																	"playsound use.wood @a ~~~"
+																]
+															}
+														},
+														"key": "set_block_property",
+														"is_minified": true,
+														"children": {
+															"strat:block": 1
+														}
+													},
+													{
+														"key": "decrement_stack",
+														"is_minified": true,
+														"children": {}
+													},
+													{
+														"open": {
+															"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+															"set_block_property": {
+																"strat:block": 1
+															},
+															"decrement_stack": {},
+															"run_command": {
+																"command": [
+																	"playsound use.wood @a ~~~"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"playsound use.wood @a ~~~"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"playsound use.wood @a ~~~"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+														"set_block_property": {
+															"strat:block": 1
+														},
+														"decrement_stack": {},
+														"run_command": {
+															"command": [
+																"playsound use.wood @a ~~~"
+															]
+														}
+													},
+													{
+														"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+														"set_block_property": {
+															"strat:block": 1
+														},
+														"decrement_stack": {},
+														"run_command": {
+															"command": [
+																"playsound use.wood @a ~~~"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"data": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+														"key": "condition"
+													},
+													{
+														"open": {
+															"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+															"set_block_property": {
+																"strat:block": 1
+															},
+															"decrement_stack": {},
+															"run_command": {
+																"command": [
+																	"playsound use.wood @a ~~~"
+																]
+															}
+														},
+														"key": "set_block_property",
+														"is_minified": true,
+														"children": {
+															"strat:block": 1
+														}
+													},
+													{
+														"key": "decrement_stack",
+														"is_minified": true,
+														"children": {}
+													},
+													{
+														"open": {
+															"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+															"set_block_property": {
+																"strat:block": 1
+															},
+															"decrement_stack": {},
+															"run_command": {
+																"command": [
+																	"playsound use.wood @a ~~~"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"playsound use.wood @a ~~~"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"playsound use.wood @a ~~~"
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_slab",
+								"properties": {
+									"strat:slab": [
+										0,
+										1
+									],
+									"strat:block": [
+										0,
+										1
+									]
+								}
+							},
+							"components": {
+								"minecraft:destroy_time": 2,
+								"minecraft:explosion_resistance": 3,
+								"minecraft:map_color": "#C9C39A",
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "strats_planks_maple",
+										"render_method": "alpha_test"
+									}
+								},
+								"minecraft:geometry": "geometry.slab",
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										8,
+										16
+									]
+								},
+								"minecraft:block_light_absorption": 0,
+								"minecraft:on_player_placing": {
+									"event": "strat:upper_slab"
+								},
+								"tag:wood": {},
+								"minecraft:creative_category": {
+									"group": "itemGroup.name.Construction",
+									"category": "Construction"
+								}
+							},
+							"events": {
+								"strat:upper_slab": {
+									"sequence": [
+										{
+											"set_block_property": {
+												"strat:slab": "query.block_face"
+											}
+										}
+									]
+								},
+								"strat:make_block": {
+									"sequence": [
+										{
+											"condition": "query.block_property('strat:slab') == 0 && query.block_face == 0.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										},
+										{
+											"condition": "query.block_property('strat:slab') == 1 && query.block_face == 1.0",
+											"set_block_property": {
+												"strat:block": 1
+											},
+											"decrement_stack": {},
+											"run_command": {
+												"command": [
+													"playsound use.wood @a ~~~"
+												]
+											}
+										}
+									]
+								}
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												8,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.top_slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												8,
+												16
+											]
+										},
+										"minecraft:geometry": "geometry.slab",
+										"minecraft:loot": "loot_tables/maple_slab.json",
+										"minecraft:on_interact": {
+											"event": "strat:make_block",
+											"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+										}
+									}
+								},
+								{
+									"condition": "query.block_property('strat:block') == 1",
+									"components": {
+										"minecraft:entity_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:pick_collision": {
+											"origin": [
+												-8,
+												0,
+												-8
+											],
+											"size": [
+												16,
+												16,
+												16
+											]
+										},
+										"minecraft:unit_cube": {},
+										"minecraft:loot": "loot_tables/maple_slab_2.json"
+									}
+								}
+							]
+						},
+						"key": "permutations",
+						"children": [
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:geometry": "geometry.top_slab",
+											"minecraft:loot": "loot_tables/maple_slab.json",
+											"minecraft:on_interact": {
+												"event": "strat:make_block",
+												"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:geometry": "geometry.slab",
+											"minecraft:loot": "loot_tables/maple_slab.json",
+											"minecraft:on_interact": {
+												"event": "strat:make_block",
+												"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:block') == 1",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:unit_cube": {},
+											"minecraft:loot": "loot_tables/maple_slab_2.json"
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+											"components": {
+												"minecraft:entity_collision": {
+													"origin": [
+														-8,
+														8,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														8,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												},
+												"minecraft:geometry": "geometry.top_slab",
+												"minecraft:loot": "loot_tables/maple_slab.json",
+												"minecraft:on_interact": {
+													"event": "strat:make_block",
+													"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+												}
+											}
+										},
+										"key": "components",
+										"children": [
+											{
+												"key": "minecraft:entity_collision",
+												"is_minified": true,
+												"children": {
+													"origin": [
+														-8,
+														8,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												}
+											},
+											{
+												"key": "minecraft:pick_collision",
+												"is_minified": true,
+												"children": {
+													"origin": [
+														-8,
+														8,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												}
+											},
+											{
+												"data": "geometry.top_slab",
+												"key": "minecraft:geometry"
+											},
+											{
+												"data": "loot_tables/maple_slab.json",
+												"key": "minecraft:loot"
+											},
+											{
+												"open": {
+													"minecraft:entity_collision": {
+														"origin": [
+															-8,
+															8,
+															-8
+														],
+														"size": [
+															16,
+															16,
+															16
+														]
+													},
+													"minecraft:pick_collision": {
+														"origin": [
+															-8,
+															8,
+															-8
+														],
+														"size": [
+															16,
+															16,
+															16
+														]
+													},
+													"minecraft:geometry": "geometry.top_slab",
+													"minecraft:loot": "loot_tables/maple_slab.json",
+													"minecraft:on_interact": {
+														"event": "strat:make_block",
+														"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+													}
+												},
+												"key": "minecraft:on_interact",
+												"is_minified": true,
+												"children": {
+													"event": "strat:make_block",
+													"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:geometry": "geometry.top_slab",
+											"minecraft:loot": "loot_tables/maple_slab.json",
+											"minecraft:on_interact": {
+												"event": "strat:make_block",
+												"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:geometry": "geometry.slab",
+											"minecraft:loot": "loot_tables/maple_slab.json",
+											"minecraft:on_interact": {
+												"event": "strat:make_block",
+												"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:block') == 1",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:unit_cube": {},
+											"minecraft:loot": "loot_tables/maple_slab_2.json"
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+											"components": {
+												"minecraft:entity_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														8,
+														16
+													]
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														8,
+														16
+													]
+												},
+												"minecraft:geometry": "geometry.slab",
+												"minecraft:loot": "loot_tables/maple_slab.json",
+												"minecraft:on_interact": {
+													"event": "strat:make_block",
+													"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+												}
+											}
+										},
+										"key": "components",
+										"children": [
+											{
+												"key": "minecraft:entity_collision",
+												"is_minified": true,
+												"children": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														8,
+														16
+													]
+												}
+											},
+											{
+												"key": "minecraft:pick_collision",
+												"is_minified": true,
+												"children": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														8,
+														16
+													]
+												}
+											},
+											{
+												"data": "geometry.slab",
+												"key": "minecraft:geometry"
+											},
+											{
+												"data": "loot_tables/maple_slab.json",
+												"key": "minecraft:loot"
+											},
+											{
+												"open": {
+													"minecraft:entity_collision": {
+														"origin": [
+															-8,
+															0,
+															-8
+														],
+														"size": [
+															16,
+															8,
+															16
+														]
+													},
+													"minecraft:pick_collision": {
+														"origin": [
+															-8,
+															0,
+															-8
+														],
+														"size": [
+															16,
+															8,
+															16
+														]
+													},
+													"minecraft:geometry": "geometry.slab",
+													"minecraft:loot": "loot_tables/maple_slab.json",
+													"minecraft:on_interact": {
+														"event": "strat:make_block",
+														"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+													}
+												},
+												"key": "minecraft:on_interact",
+												"is_minified": true,
+												"children": {
+													"event": "strat:make_block",
+													"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": [
+									{
+										"condition": "query.block_property('strat:slab') == 0 && query.block_property('strat:block') == 0",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													8,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:geometry": "geometry.top_slab",
+											"minecraft:loot": "loot_tables/maple_slab.json",
+											"minecraft:on_interact": {
+												"event": "strat:make_block",
+												"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 0.0"
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:slab') == 1 && query.block_property('strat:block') == 0",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													8,
+													16
+												]
+											},
+											"minecraft:geometry": "geometry.slab",
+											"minecraft:loot": "loot_tables/maple_slab.json",
+											"minecraft:on_interact": {
+												"event": "strat:make_block",
+												"condition": "query.get_equipped_item_name('main_hand') == 'maple_slab' && query.block_face == 1.0"
+											}
+										}
+									},
+									{
+										"condition": "query.block_property('strat:block') == 1",
+										"components": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:unit_cube": {},
+											"minecraft:loot": "loot_tables/maple_slab_2.json"
+										}
+									}
+								],
+								"children": [
+									{
+										"data": "query.block_property('strat:block') == 1",
+										"key": "condition"
+									},
+									{
+										"open": {
+											"condition": "query.block_property('strat:block') == 1",
+											"components": {
+												"minecraft:entity_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												},
+												"minecraft:pick_collision": {
+													"origin": [
+														-8,
+														0,
+														-8
+													],
+													"size": [
+														16,
+														16,
+														16
+													]
+												},
+												"minecraft:unit_cube": {},
+												"minecraft:loot": "loot_tables/maple_slab_2.json"
+											}
+										},
+										"key": "components",
+										"is_minified": true,
+										"children": {
+											"minecraft:entity_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:pick_collision": {
+												"origin": [
+													-8,
+													0,
+													-8
+												],
+												"size": [
+													16,
+													16,
+													16
+												]
+											},
+											"minecraft:unit_cube": {},
+											"minecraft:loot": "loot_tables/maple_slab_2.json"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

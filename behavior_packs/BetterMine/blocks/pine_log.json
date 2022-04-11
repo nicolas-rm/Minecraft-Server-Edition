@@ -1,0 +1,74 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:pine_log",
+       "properties":{
+
+            "better:rotation": [ 0, 1, 2 ]
+         }
+    },
+    "components": {
+        "minecraft:material_instances": {
+            "*": {
+                "texture": "wood_pine_side",
+                "render_method": "opaque",
+            "ambient_occlusion": true
+            },
+            "up": {
+              "texture": "wood_pine_top",
+              "render_method": "opaque",
+            "ambient_occlusion": true
+            },
+            "down": {
+             "texture": "wood_pine_top",
+              "render_method": "opaque",
+            "ambient_occlusion": true
+          }
+       },
+      "minecraft:unit_cube": {},
+      "minecraft:destroy_time": 0.3,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:loot": "loot_tables/blocks/pine_log.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_emission": 0,
+      "minecraft:map_color": "#53300e",
+      "minecraft:flammable": {
+        "flame_odds": 5,
+        "burn_odds": 5
+      },
+      "minecraft:on_player_placing": {
+        "event": "better:placing"
+      },
+      "tag:wood": {}
+    },
+    "events": {
+      "better:placing": {
+        "set_block_property": {
+          "better:rotation": "math.floor(query.cardinal_block_face_placed_on/2)"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('better:rotation') == 0",
+        "components": {
+          "minecraft:rotation": [0, 0, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('better:rotation') == 1",
+        "components": {
+           "minecraft:rotation": [ 90, 0, 0 ]
+        }
+      },
+      {
+        "condition": "query.block_property('better:rotation') == 2",
+        "components": {
+          "minecraft:rotation": [ 0, 0, 90 ]
+        }
+      }
+    ]
+  }
+}

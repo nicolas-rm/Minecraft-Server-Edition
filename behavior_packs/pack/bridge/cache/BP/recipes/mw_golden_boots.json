@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\mw_golden_boots.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "6c7ea67e_8c1a_4496_921d_47123a881381",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:mw_golden_boots"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:golden_boots"
+							},
+							{
+								"item": "ray:mw_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:mw_golden_boots"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:mw_golden_boots"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:golden_boots"
+							},
+							{
+								"item": "ray:mw_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:mw_golden_boots"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_golden_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_golden_boots"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:mw_golden_boots"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_golden_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_golden_boots"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_golden_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_golden_boots"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:golden_boots"
+									},
+									{
+										"item": "ray:mw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:golden_boots"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:golden_boots"
+									},
+									{
+										"item": "ray:mw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:mw_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_golden_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_golden_boots"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:mw_golden_boots"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:mw_golden_boots"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

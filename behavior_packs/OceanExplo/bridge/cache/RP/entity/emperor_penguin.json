@@ -1,0 +1,243 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\entity\\emperor_penguin.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "99f9053c_806c_4d9c_842e_a5fdb87a878f",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "ocean:emperor_penguin",
+							"materials": {
+								"default": "entity_alphatest"
+							},
+							"textures": {
+								"default": "textures/entity/emperor_penguin"
+							},
+							"geometry": {
+								"default": "geometry.emperor_penguin"
+							},
+							"scripts": {
+								"animate": [
+									"animation_controller"
+								]
+							},
+							"animations": {
+								"walk": "animation.emperor_penguin.walk",
+								"swim": "animation.emperor_penguin.swim",
+								"animation_controller": "controller.animation.penguin"
+							},
+							"spawn_egg": {
+								"base_color": "#203A52",
+								"overlay_color": "#A3D2FE"
+							},
+							"render_controllers": [
+								"controller.render.default"
+							]
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:emperor_penguin",
+								"materials": {
+									"default": "entity_alphatest"
+								},
+								"textures": {
+									"default": "textures/entity/emperor_penguin"
+								},
+								"geometry": {
+									"default": "geometry.emperor_penguin"
+								},
+								"scripts": {
+									"animate": [
+										"animation_controller"
+									]
+								},
+								"animations": {
+									"walk": "animation.emperor_penguin.walk",
+									"swim": "animation.emperor_penguin.swim",
+									"animation_controller": "controller.animation.penguin"
+								},
+								"spawn_egg": {
+									"base_color": "#203A52",
+									"overlay_color": "#A3D2FE"
+								},
+								"render_controllers": [
+									"controller.render.default"
+								]
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "ocean:emperor_penguin",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity_alphatest"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/emperor_penguin"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.emperor_penguin"
+								}
+							},
+							{
+								"open": {
+									"identifier": "ocean:emperor_penguin",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/emperor_penguin"
+									},
+									"geometry": {
+										"default": "geometry.emperor_penguin"
+									},
+									"scripts": {
+										"animate": [
+											"animation_controller"
+										]
+									},
+									"animations": {
+										"walk": "animation.emperor_penguin.walk",
+										"swim": "animation.emperor_penguin.swim",
+										"animation_controller": "controller.animation.penguin"
+									},
+									"spawn_egg": {
+										"base_color": "#203A52",
+										"overlay_color": "#A3D2FE"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												"animation_controller"
+											]
+										},
+										"key": "animate",
+										"is_minified": true,
+										"children": [
+											"animation_controller"
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "ocean:emperor_penguin",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/emperor_penguin"
+									},
+									"geometry": {
+										"default": "geometry.emperor_penguin"
+									},
+									"scripts": {
+										"animate": [
+											"animation_controller"
+										]
+									},
+									"animations": {
+										"walk": "animation.emperor_penguin.walk",
+										"swim": "animation.emperor_penguin.swim",
+										"animation_controller": "controller.animation.penguin"
+									},
+									"spawn_egg": {
+										"base_color": "#203A52",
+										"overlay_color": "#A3D2FE"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"walk": "animation.emperor_penguin.walk",
+									"swim": "animation.emperor_penguin.swim",
+									"animation_controller": "controller.animation.penguin"
+								}
+							},
+							{
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#203A52",
+									"overlay_color": "#A3D2FE"
+								}
+							},
+							{
+								"open": {
+									"identifier": "ocean:emperor_penguin",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/emperor_penguin"
+									},
+									"geometry": {
+										"default": "geometry.emperor_penguin"
+									},
+									"scripts": {
+										"animate": [
+											"animation_controller"
+										]
+									},
+									"animations": {
+										"walk": "animation.emperor_penguin.walk",
+										"swim": "animation.emperor_penguin.swim",
+										"animation_controller": "controller.animation.penguin"
+									},
+									"spawn_egg": {
+										"base_color": "#203A52",
+										"overlay_color": "#A3D2FE"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.default"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,37 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "strat:milk_and_cookies3"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"##",
+			"~o"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:cookie"
+			},
+			"~": {
+				"item": "strat:milk_jar"
+			},
+			"o": {
+				"item": "strat:paper_plate"
+			}
+		},
+		"result": [
+			{
+				"item": "strat:milk_and_cookies",
+				"count": 1
+			},
+			{
+				"item": "strat:glass_jar",
+				"count": 1
+			}
+		]
+	}
+}

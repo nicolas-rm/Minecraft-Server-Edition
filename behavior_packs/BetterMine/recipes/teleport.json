@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:teleport"
+    },
+
+    
+    "tags": [ "epigraphist" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "#|#"
+    ],
+    "key": {
+      "X": {
+        "item": "better:am_guide"
+      },
+      "#": {
+        "item": "minecraft:book"
+      },
+      "|": {
+        "item": "minecraft:chorus_fruit"
+      }
+    },
+    "result": [
+      { "item": "better:teleport", "count": 1, "data": 0 },
+      { "item": "better:am_guide", "count": 1, "data": 0 }
+    ]
+  }
+}

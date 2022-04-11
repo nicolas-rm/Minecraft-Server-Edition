@@ -1,0 +1,2287 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:villager_cc",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+  
+    "component_groups": {
+      "become_vindicator": {
+        "minecraft:transformation": {
+          "into": "better:vildicator",
+          "delay": 0.5
+        }
+      },
+
+      "become_zombie": {
+        "minecraft:transformation": {
+          "into": "minecraft:zombie_villager"
+        }
+      },
+
+      "become_guard": {
+        "minecraft:transformation": {
+          "into": "better:warrior"
+        }
+      },
+
+      "become_vanilla": {
+        "minecraft:transformation": {
+          "into": "minecraft:villager_v2"
+        }
+      },
+
+      "trade_resupply_component_group": {
+        "minecraft:trade_resupply": {}
+      },
+
+      "work_shcedule_villager": {
+        "minecraft:behavior.move_to_block": {
+          "priority": 5,
+          "speed_multiplier": 0.5,
+          "tick_interval": 1,
+          "start_chance": 0.5,
+          "search_range": 64,
+          "search_height": 16,
+          "goal_radius": 1.0,
+          "stay_duration": 16.0,
+          "target_selection_method": "random",
+          "target_offset": [0, 0.25, 0],
+          "target_blocks": [
+            "minecraft:crafting_table",
+            "minecraft:chest"
+          ],
+          "on_stay_completed": [
+            {
+              "event": "minecraft:resupply_trades",
+              "target": "self"
+            }
+          ]
+        }
+      },
+
+      "work_shcedule_blacksmith": {
+        "minecraft:behavior.move_to_block": {
+          "priority": 5,
+          "speed_multiplier": 0.5,
+          "tick_interval": 1,
+          "start_chance": 0.5,
+          "search_range": 64,
+          "search_height": 16,
+          "goal_radius": 1.0,
+          "stay_duration": 16.0,
+          "target_selection_method": "random",
+          "target_offset": [0, 0.25, 0],
+          "target_blocks": [
+            "minecraft:anvil",
+            "minecraft:furnace",
+            "minecraft:chest"
+          ],
+          "on_stay_completed": [
+            {
+              "event": "minecraft:resupply_trades",
+              "target": "self"
+            }
+          ]
+        }
+      },
+
+      "work_shcedule_cook": {
+        "minecraft:behavior.move_to_block": {
+          "priority": 5,
+          "speed_multiplier": 0.5,
+          "tick_interval": 1,
+          "start_chance": 0.5,
+          "search_range": 64,
+          "search_height": 16,
+          "goal_radius": 1.0,
+          "stay_duration": 16.0,
+          "target_selection_method": "random",
+          "target_offset": [0, 0.25, 0],
+          "target_blocks": [
+            "minecraft:crafting_table",
+            "minecraft:furnace"
+          ],
+          "on_stay_completed": [
+            {
+              "event": "minecraft:resupply_trades",
+              "target": "self"
+            }
+          ]
+        }
+      },
+
+      "work_shcedule_enchanter": {
+        "minecraft:behavior.move_to_block": {
+          "priority": 5,
+          "speed_multiplier": 0.5,
+          "tick_interval": 1,
+          "start_chance": 0.5,
+          "search_range": 64,
+          "search_height": 16,
+          "goal_radius": 1.0,
+          "stay_duration": 16.0,
+          "target_selection_method": "random",
+          "target_offset": [0, 0.25, 0],
+          "target_blocks": [
+            "minecraft:enchanting_table"
+          ],
+          "on_stay_completed": [
+            {
+              "event": "minecraft:resupply_trades",
+              "target": "self"
+            }
+          ]
+        }
+      },
+
+      "work_shcedule_rancher": {
+        "minecraft:behavior.move_to_block": {
+          "priority": 5,
+          "speed_multiplier": 0.5,
+          "tick_interval": 1,
+          "start_chance": 0.5,
+          "search_range": 64,
+          "search_height": 16,
+          "goal_radius": 1.0,
+          "stay_duration": 16.0,
+          "target_selection_method": "random",
+          "target_offset": [0, 0.25, 0],
+          "target_blocks": [
+            "minecraft:crafting_table",
+            "minecraft:chest",
+            "minecraft:hay_block",
+            "minecraft:dark_oak_fence_gate",
+            "minecraft:acacia_fence_gate",
+            "minecraft:jungle_fence_gate",
+            "minecraft:birch_fence_gate",
+            "minecraft:spruce_fence_gate",
+            "minecraft:fence_gate"
+          ],
+          "on_stay_completed": [
+            {
+              "event": "minecraft:resupply_trades",
+              "target": "self"
+            }
+          ]
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 2,
+
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 3.0,
+              "cooldown_time": 5.0,
+              "weight": 3,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "haggle.yes",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 1,
+                  "entity_type": "minecraft:cow",
+                  "size": 1.0,
+                  "sound_event": "prepare.attack"
+                },
+                {
+                  "shape": "circle",
+                  "target": "target",
+                  "base_delay": 0.15,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 1,
+                  "entity_type": "minecraft:sheep",
+                  "size": 1.0
+                }
+              ]
+            },
+            {
+              "min_activation_range": 3.0,
+              "weight": 3,
+              "cooldown_time": 5.0,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "haggle.yes",
+              "sequence": [
+                {
+                  "shape": "line",
+                  "target": "target",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.05,
+                  "num_entities_spawned": 1,
+                  "entity_type": "minecraft:chicken",
+                  "size": 1.0
+                }
+              ]
+            },
+            {
+              "weight": 1,
+              "cooldown_time": 17.0,
+              "cast_duration": 5.0,
+              "particle_color": "#FFB3B3CC",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "target",
+                  "base_delay": 5.0,
+                  "num_entities_spawned": 1,
+                  "entity_type": "minecraft:pig",
+                  "summon_cap": 8,
+                  "summon_cap_radius": 16.0,
+                  "size": 1.0,
+                  "sound_event": "prepare.summon"
+                }
+              ]
+            }
+          ]
+        },
+
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 6,
+          "must_see": true,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "chicken"
+              },
+              "max_dist": 32
+            },
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "cow"
+              },
+              "max_dist": 32
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "sheep"
+                  }
+                ]
+              },
+              "max_dist": 32
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "pig"
+                  }
+                ]
+              },
+              "max_dist": 32
+            }
+          ]
+        }
+      },
+
+      "work_schedule": {
+        "minecraft:scheduler": {
+          "min_delay_secs": 0,
+          "max_delay_secs": 10,
+          "scheduled_events" : [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 0 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 8000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 8000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 10000 }
+                ]
+              },
+              "event": "minecraft:schedule_gather_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 10000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 11000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 11000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 12000 }
+                ]
+              },
+              "event": "minecraft:schedule_home_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 12000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 24000 }
+                ]
+              },
+              "event": "minecraft:schedule_bed_villager"
+            }
+          ]
+        }
+      },
+
+      "cook_schedule": {
+        "minecraft:scheduler": {
+          "min_delay_secs": 0,
+          "max_delay_secs": 10,
+          "scheduled_events" : [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 0 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 8000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_cook"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 8000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 10000 }
+                ]
+              },
+              "event": "minecraft:schedule_gather_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 10000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 11000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_cook"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 11000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 12000 }
+                ]
+              },
+              "event": "minecraft:schedule_home_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 12000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 24000 }
+                ]
+              },
+              "event": "minecraft:schedule_bed_villager"
+            }
+          ]
+        }
+      },
+
+      "blacksmith_schedule": {
+        "minecraft:scheduler": {
+          "min_delay_secs": 0,
+          "max_delay_secs": 10,
+          "scheduled_events" : [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 0 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 8000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_blacksmith"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 8000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 10000 }
+                ]
+              },
+              "event": "minecraft:schedule_gather_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 10000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 11000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_blacksmith"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 11000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 12000 }
+                ]
+              },
+              "event": "minecraft:schedule_home_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 12000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 24000 }
+                ]
+              },
+              "event": "minecraft:schedule_bed_villager"
+            }
+          ]
+        }
+      },
+
+      "enchanter_schedule": {
+        "minecraft:scheduler": {
+          "min_delay_secs": 0,
+          "max_delay_secs": 10,
+          "scheduled_events" : [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 0 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 8000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_enchanter"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 8000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 10000 }
+                ]
+              },
+              "event": "minecraft:schedule_gather_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 10000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 11000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_enchanter"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 11000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 12000 }
+                ]
+              },
+              "event": "minecraft:schedule_home_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 12000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 24000 }
+                ]
+              },
+              "event": "minecraft:schedule_bed_villager"
+            }
+          ]
+        }
+      },
+
+      "rancher_schedule": {
+        "minecraft:scheduler": {
+          "min_delay_secs": 0,
+          "max_delay_secs": 10,
+          "scheduled_events" : [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 0 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 8000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_rancher"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 8000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 10000 }
+                ]
+              },
+              "event": "minecraft:schedule_gather_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 10000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 11000 }
+                ]
+              },
+              "event": "minecraft:schedule_work_rancher"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 11000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 12000 }
+                ]
+              },
+              "event": "minecraft:schedule_home_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 12000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 24000 }
+                ]
+              },
+              "event": "minecraft:schedule_bed_villager"
+            }
+          ]
+        }
+      },
+
+      "behavior_peasant": {
+        "minecraft:shareables": {
+          "items": [
+            {
+              "item": "minecraft:bread",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:carrot",
+              "want_amount": 60,
+              "surplus_amount": 4,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:potato",
+              "want_amount": 60,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:beetroot",
+              "want_amount": 60,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:wheat_seeds",
+              "want_amount": 64,
+              "surplus_amount": 64,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:beetroot_seeds",
+              "want_amount": 64,
+              "surplus_amount": 64,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:emerald",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:wheat",
+              "want_amount": 45,
+              "surplus_amount": 18,
+              "craft_into": "minecraft:bread",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_chicken",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_porkchop",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_beef",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_mutton",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            }
+          ]
+        },
+        "minecraft:behavior.harvest_farm_block": {
+          "priority": 9,
+          "speed_multiplier": 0.5
+        }
+      },
+
+      "behavior_non_peasant": {
+        "minecraft:shareables": {
+          "items": [
+            {
+              "item": "minecraft:bread",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:carrot",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:potato",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:beetroot",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:emerald",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:diamond",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:iron_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:gold_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "better:tin_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:copper_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_chicken",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_porkchop",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_beef",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_mutton",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            }
+          ]
+        }
+      },
+
+      "behavior_miner": {
+        "minecraft:shareables": {
+          "items": [
+            {
+              "item": "minecraft:bread",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "craft_into": "minecraft:iron_ore",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:carrot",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "craft_into": "minecraft:copper_ore",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:potato",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "craft_into": "minecraft:gold_ore",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:beetroot",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "craft_into": "minecraft:diamond",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:iron_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "craft_into": "better:tin_ore",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:gold_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "better:tin_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:copper_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:diamond",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:emerald",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:iron_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:gold_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "better:tin_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:copper_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_chicken",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_porkchop",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_beef",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_mutton",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            }
+          ]
+        }
+      },
+
+      "behavior_blacksmith": {
+        "minecraft:shareables": {
+          "items": [
+            {
+              "item": "minecraft:bread",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:carrot",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:potato",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:beetroot",
+              "want_amount": 12,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:iron_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "craft_into": "minecraft:iron_ingot",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:gold_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "craft_into": "minecraft:gold_ingot",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "better:tin_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "craft_into": "better:tin_ingot",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:copper_ore",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "craft_into": "minecraft:copper_ingot",
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:diamond",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:emerald",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:iron_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:gold_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "better:tin_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:copper_ingot",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_chicken",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_porkchop",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_beef",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:cooked_mutton",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            }
+          ]
+        }
+      },
+
+      "gather_schedule_villager": {
+        "minecraft:behavior.mingle": {
+          "priority": 7,
+          "speed_multiplier": 0.5,
+          "duration": 30,
+          "cooldown_time": 10,
+          "mingle_partner_type": "better:villager_cc",
+          "mingle_distance": 2.0
+        }
+      },
+
+      "home_schedule_villager": {
+        "minecraft:behavior.go_home": {
+        },
+        "minecraft:behavior.move_indoors": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        }
+      },
+
+      "wander_schedule_villager": {
+        "minecraft:behavior.move_through_village": {
+          "only_at_night": false
+        }
+      },
+
+      "bed_schedule_villager": {
+        "minecraft:behavior.sleep": {
+          "priority": 3,
+          "goal_radius": 1.5,
+          "speed_multiplier": 0.6,
+          "sleep_collider_height": 0.3,
+          "sleep_collider_width": 1.0,
+          "sleep_y_offset": 0.6,
+          "timeout_cooldown": 10.0
+        }
+      },
+
+      "baker":{
+        "minecraft:type_family": {
+          "family":[ "villager", "peasant", "nitwit", "baker", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 0
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Baker",
+          "table": "trading/economy_trades/baker_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "blacksmith":{
+        "minecraft:type_family": {
+          "family":[ "villager", "non_peasant", "nitwit", "blacksmith", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 1
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Blacksmith",
+          "table": "trading/economy_trades/blacksmith_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "cook":{
+        "minecraft:type_family": {
+          "family":[ "villager", "peasant", "nitwit", "cook", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 2
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Cook",
+          "table": "trading/economy_trades/cook_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "enchanter":{
+        "minecraft:type_family": {
+          "family":[ "villager", "non_peasant", "nitwit", "enchanter", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 3
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Enchanter",
+          "table": "trading/economy_trades/enchanter_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "gemtrader":{
+        "minecraft:type_family": {
+          "family":[ "villager", "gemtrader", "nitwit", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 4
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Gemtrader",
+          "table": "trading/economy_trades/gemtrader_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "goldsmith":{
+        "minecraft:type_family": {
+          "family":[ "villager", "goldsmith", "nitwit", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 5
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Goldsmith",
+          "table": "trading/economy_trades/goldsmith_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "nitwit":{
+        "minecraft:type_family": {
+          "family":[ "villager", "rancher", "nitwit", "mob" ]
+        },
+        "minecraft:economy_trade_table": {
+          "display_name": "Rancher",
+          "table": "trading/economy_trades/rancher_trades.json",
+          "new_screen": true
+        },
+        "minecraft:variant": {
+          "value": 6
+        }
+      },
+
+      "wizard":{
+        "minecraft:type_family": {
+          "family":[ "villager", "priest", "nitwit", "wizard", "mob" ]
+        },
+        "minecraft:behavior.send_event": {
+          "priority": 3,
+          "event_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "cooldown_time": 5.0,
+              "cast_duration": 6.0,
+              "particle_color": "#ab0eac",
+              "weight": 3,
+              "filters": { 
+                  "any_of": [
+                    { "test" :  "is_family", "subject" : "other", "value" :  "specter"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "ghost"}
+                  ] 
+              },
+              "start_sound_event": "haggle.no",
+              "sequence": [
+                {
+                  "base_delay": 2.0,
+                  "event": "start_fire",
+                  "sound_event": "cast.spell"
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:variant": {
+          "value": 7
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Wizard",
+          "table": "trading/economy_trades/wizard_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "miner":{
+        "minecraft:type_family": {
+          "family":[ "villager", "blacksmith", "nitwit", "miner", "mob" ]
+        },
+        "minecraft:break_blocks": {
+          "breakable_blocks": [
+            "gold_ore",
+            "iron_ore",
+            "coal_ore",
+            "diamond_ore",
+            "emerald_ore",
+            "copper_ore",
+            "better:tin_ore"
+          ]
+        },
+        "minecraft:variant": {
+          "value": 8
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Miner",
+          "table": "trading/economy_trades/miner_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "money_exchanger":{
+        "minecraft:type_family": {
+          "family":[ "villager", "money_exchanger", "nitwit", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 9
+        },
+
+        "minecraft:trade_table": {
+          "display_name": "Money Exchanger",
+          "table": "trading/money_exchanger_trades.json",
+          "convert_trades_economy": true,
+          "new_screen": true,
+          "persist_trades": true
+        }
+      },
+
+      "wood_loger":{
+        "minecraft:type_family": {
+          "family":[ "villager", "peasant", "woodloger", "nitwit", "mob" ]
+        },
+        "minecraft:variant": {
+          "value": 10
+        },
+
+        "minecraft:economy_trade_table": {
+          "display_name": "Lumberjack",
+          "table": "trading/economy_trades/wood_loger_trades.json",
+          "new_screen": true
+        }
+      },
+
+      "baby": {
+        "minecraft:is_baby": {  },
+        "minecraft:scale_by_age": {
+          "start_scale": 0.5,
+          "end_scale": 0.8
+        },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.take_flower":{
+          "priority": 7
+        },
+        "minecraft:behavior.play": {
+          "priority": 8,
+          "speed_multiplier": 0.32
+        },
+        "minecraft:scheduler": {
+          "min_delay_secs": 0,
+          "max_delay_secs": 10,
+          "scheduled_events" : [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 0 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 8000 }
+                ]
+              },
+              "event": "minecraft:schedule_wander_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 8000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 10000 }
+                ]
+              },
+              "event": "minecraft:schedule_gather_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 10000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 11000 }
+                ]
+              },
+              "event": "minecraft:schedule_wander_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 11000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 12000 }
+                ]
+              },
+              "event": "minecraft:schedule_home_villager"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "hourly_clock_time", "operator": ">=", "value": 12000 },
+                  { "test": "hourly_clock_time", "operator": "<", "value": 24000 }
+                ]
+              },
+              "event": "minecraft:schedule_bed_villager"
+            }
+          ]
+        }
+      },
+      "desert_villager": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+
+      "jungle_villager": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+
+      "savanna_villager": {
+        "minecraft:mark_variant": {
+          "value": 3
+        }
+      },
+
+      "snow_villager": {
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      },
+
+      "swamp_villager": {
+        "minecraft:mark_variant": {
+          "value": 5
+        }
+      },
+
+      "taiga_villager": {
+        "minecraft:mark_variant": {
+          "value": 6
+        }
+      },
+
+      "adult": {
+        "minecraft:behavior.breed": {
+          "priority": 3,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:breedable": {
+          "breed_items": [
+            "bread"
+          ],
+          "breeds_with": {
+            "mate_type": "better:girl_cc",
+            "baby_type": "better:villager_cc"
+          },
+          "require_tame": false
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": ["villager", "nitwit", "mob"]
+      },
+
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:hide": {
+      },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance":  10.0
+      },
+      "minecraft:preferred_path" : {
+        "max_fall_blocks" : 1,
+        "jump_cost" : 20,
+        "default_block_cost" : 3,
+        "preferred_path_blocks" : [
+          { 
+            "cost" : 0,
+            "blocks" : [ 
+              "grass_path"
+            ]
+          },
+          { 
+            "cost" : 1,
+            "blocks" : [ 
+              "cobblestone", 
+              "stone",
+              "stonebrick",
+              "sandstone",
+              "mossy_cobblestone",
+              "stone_slab",
+              "stone_slab2",
+              "stone_slab3",
+              "stone_slab4",
+              "double_stone_slab",
+              "double_stone_slab2",
+              "double_stone_slab3",
+              "double_stone_slab4",
+              "wooden_slab",
+              "double_wooden_slab",
+              "planks",
+              "brick_block",
+              "nether_brick",
+              "red_nether_brick",
+              "end_bricks",
+              "red_sandstone",
+              "stained_glass",
+              "glass",
+              "glowstone",
+              "prismarine",
+              "emerald_block",
+              "diamond_block",
+              "lapis_block",
+              "gold_block",
+              "redstone_block",
+              "purple_glazed_terracotta",
+              "white_glazed_terracotta",
+              "orange_glazed_terracotta",
+              "magenta_glazed_terracotta",
+              "light_blue_glazed_terracotta",
+              "yellow_glazed_terracotta",
+              "lime_glazed_terracotta",
+              "pink_glazed_terracotta",
+              "gray_glazed_terracotta",
+              "silver_glazed_terracotta",
+              "cyan_glazed_terracotta",
+              "blue_glazed_terracotta",
+              "brown_glazed_terracotta",
+              "green_glazed_terracotta",
+              "red_glazed_terracotta",
+              "black_glazed_terracotta"
+             ]
+          }
+        ]
+      },
+      "minecraft:interact": {
+        "interactions": {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "better:steel_sword"
+                }
+              ]
+            },
+            "event": "minecraft:promote_to_guard",
+            "target": "self"
+          },
+          "use_item": true,
+          "interact_text": "text.interact.promote"
+        }
+      },
+      "minecraft:behavior.hide": {
+        "priority": 0,
+        "speed_multiplier": 0.8,
+        "poi_type": "bed",
+        "duration": 30.0
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.move_indoors": {
+        "priority": 6,
+        "speed_multiplier": 0.8,
+        "timeout_cooldown": 8.0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "can_walk": true,
+        "avoid_water": true
+      },
+      "minecraft:annotation.open_door": {
+
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.trade_interest": {
+        "priority": 5,
+        "within_radius": 6.0,
+        "interest_time": 45.0,
+        "remove_item_time": 1.0,
+        "carried_item_switch_time": 2.0,
+        "cooldown": 2.0
+      },
+      "minecraft:dweller": {
+        "dwelling_type": "village",
+        "dweller_role": "inhabitant",
+        "update_interval_base": 60,
+        "update_interval_variant": 40,
+        "can_find_poi": true,
+        "can_migrate": true,
+        "first_founding_reward": 5
+      },
+      "minecraft:inventory": {
+        "inventory_size": 8,
+        "private": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "lightning" },
+              "event": "become_vindicator"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {"test": "is_family", "subject": "other", "value": "zombie"},
+                  {"test": "is_family", "subject": "other", "value": "husk"}
+                ],
+                "all_of": [
+                  {"test": "has_damage", "value": "fatal"}
+                ]
+              },
+              "event": "become_zombie"
+            }
+          }
+        ]
+      },
+      "minecraft:persistent": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.trade_with_player": {
+        "priority": 1
+      },
+      "minecraft:behavior.look_at_trading_player": {
+        "priority": 2
+      },
+      "minecraft:behavior.breed": {
+        "priority": 3,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": { 
+                "any_of": [
+                  { "test" : "has_equipment", "subject" : "other", "domain" : "head", "operator" : "==", "value" : "better:bad"},
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie"},
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie_villager"},
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie_pigman"},
+                  { "test" : "is_family", "subject" : "other", "value" : "illager"},
+                  { "test" : "is_family", "subject" : "other", "value" : "vex"}
+                ]
+            },
+            "max_dist": 8,
+            "walk_speed_multiplier": 0.6,
+            "sprint_speed_multiplier": 0.6
+          }
+        ]
+      },
+      "minecraft:behavior.open_door": {
+        "priority": 6,
+        "close_door_after": true
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 7,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.share_items": {
+        "priority": 8,
+        "max_dist": 3,
+        "goal_radius":  2.0,
+        "speed_multiplier": 0.5,
+        "entity_types": [
+          {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+          }
+        ]
+      },
+      "minecraft:behavior.pickup_items": {
+        "priority": 9,
+        "max_dist": 3,
+        "goal_radius": 2,
+        "speed_multiplier": 0.5,
+        "can_pickup_to_hand_or_equipment": false
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 11,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 12,
+        "look_distance": 8,
+        "probability": 0.02
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events":{
+      "become_vindicator": {
+        "add": {
+          "component_groups": [
+            "become_vindicator"
+          ]
+        }
+      },
+      "become_zombie": {
+        "sequence": [
+          {
+            "filters": {"test": "is_difficulty", "value": "normal"},
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "become_zombie" ] }
+              },
+              {
+                "weight": 50
+              }
+            ]
+          },
+          {
+            "filters": {"test": "is_difficulty", "value": "hard"},
+            "add": {
+              "component_groups": [
+                "become_zombie"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "has_component", "operator": "!=", "value": "minecraft:variant" },
+            "randomize": [
+              {
+                "weight": 10,
+                "add": { "component_groups": [ "baby" ] }
+              },
+              {
+                "weight": 90,
+                "add": { "component_groups": [ "adult", "work_schedule" ] }
+              }
+            ]
+          },
+          {
+            "filters": { "test": "has_component", "operator": "!=", "value": "minecraft:variant" },
+            "randomize": [
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "baker", "behavior_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "blacksmith", "behavior_blacksmith", "blacksmith_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "cook", "behavior_peasant", "cook_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "enchanter", "behavior_non_peasant", "enchanter_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "gemtrader", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "goldsmith", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "nitwit", "behavior_peasant", "rancher_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "wizard", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "miner", "behavior_miner" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "money_exchanger", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "wood_loger", "behavior_non_peasant" ] }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "desert"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "mesa"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "desert_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "jungle"
+            },
+            "add": { "component_groups": [ "jungle_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "savanna"
+            },
+            "add": { "component_groups": [ "savanna_villager" ] }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "cold"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "!=",
+                      "value": "ocean"
+                    }
+                  ]
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "frozen"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "snow_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "swamp"
+            },
+            "add": { "component_groups": [ "swamp_villager" ] }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "taiga"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "extreme_hills"
+                    }
+                  ]
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "cold"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "taiga_villager" ] }
+          }
+        ]
+      },
+
+      "minecraft:entity_transformed": {
+        "sequence": [
+          {
+            "filters": { "test": "has_component", "operator": "!=", "value": "minecraft:variant" },
+            "randomize": [
+              {
+                "weight": 10,
+                "add": { "component_groups": [ "baby" ] }
+              },
+              {
+                "weight": 90,
+                "add": { "component_groups": [ "adult", "work_schedule" ] }
+              }
+            ]
+          },
+          {
+            "filters": { "test": "has_component", "operator": "!=", "value": "minecraft:variant" },
+            "randomize": [
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "baker", "behavior_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "blacksmith", "behavior_blacksmith", "blacksmith_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "cook", "behavior_peasant", "cook_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "enchanter", "behavior_non_peasant", "enchanter_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "gemtrader", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "goldsmith", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "nitwit", "behavior_peasant", "rancher_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "wizard", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "miner", "behavior_miner" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "money_exchanger", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "wood_loger", "behavior_non_peasant" ] }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "desert"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "mesa"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "desert_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "jungle"
+            },
+            "add": { "component_groups": [ "jungle_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "savanna"
+            },
+            "add": { "component_groups": [ "savanna_villager" ] }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "cold"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "!=",
+                      "value": "ocean"
+                    }
+                  ]
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "frozen"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "snow_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "swamp"
+            },
+            "add": { "component_groups": [ "swamp_villager" ] }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "taiga"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "extreme_hills"
+                    }
+                  ]
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "cold"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "taiga_villager" ] }
+          }
+        ]
+      },
+
+      "minecraft:entity_born": {
+        "sequence": [
+          {
+            "add": { "component_groups": [ "baby" ] }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 20,
+                "add": { "component_groups": [ "baker", "behavior_peasant" ] }
+              },
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "blacksmith", "behavior_blacksmith", "blacksmith_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "cook", "behavior_peasant", "cook_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "enchanter", "behavior_non_peasant", "enchanter_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 20,
+                "add": { "component_groups": [ "gemtrader", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 20,
+                "add": { "component_groups": [ "goldsmith", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "nitwit", "behavior_peasant", "rancher_schedule" ] },
+                "remove": { "component_groups": [ "work_schedule" ] }
+              },
+              {
+                "weight": 6,
+                "add": { "component_groups": [ "wizard", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 6,
+                "add": { "component_groups": [ "miner", "behavior_miner" ] }
+              },
+              {
+                "weight": 6,
+                "add": { "component_groups": [ "money_exchanger", "behavior_non_peasant" ] }
+              },
+              {
+                "weight": 10,
+                "add": { "component_groups": [ "wood_loger", "behavior_peasant" ] }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "desert"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "mesa"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "desert_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "jungle"
+            },
+            "add": { "component_groups": [ "jungle_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "savanna"
+            },
+            "add": { "component_groups": [ "savanna_villager" ] }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "cold"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "!=",
+                      "value": "ocean"
+                    }
+                  ]
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "frozen"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "snow_villager" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag",
+              "value": "swamp"
+            },
+            "add": { "component_groups": [ "swamp_villager" ] }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "value": "taiga"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "value": "extreme_hills"
+                    }
+                  ]
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "cold"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "taiga_villager" ] }
+          }
+        ]
+      },
+
+      "minecraft:spawn_baker": {
+        "add": { "component_groups": [ "baker", "adult", "behavior_peasant", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+
+      "minecraft:spawn_blacksmith": {
+        "add": { "component_groups": [ "blacksmith", "adult", "behavior_blacksmith", "blacksmith_schedule" ] },
+        "remove": { "component_groups": [ "baby", "work_schedule" ] }
+      },
+
+      "minecraft:spawn_cook": {
+        "add": { "component_groups": [ "cook", "adult", "behavior_peasant", "cook_schedule" ] },
+        "remove": { "component_groups": [ "baby", "work_schedule" ] }
+      },
+
+      "minecraft:spawn_enchanter": {
+        "add": { "component_groups": [ "enchanter", "adult", "behavior_non_peasant", "enchanter_schedule" ] },
+        "remove": { "component_groups": [ "baby", "work_schedule" ] }
+      },
+
+      "minecraft:spawn_gemtrader": {
+        "add": { "component_groups": [ "gemtrader", "adult", "behavior_non_peasant", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+      "minecraft:spawn_goldsmith": {
+        "add": { "component_groups": [ "goldsmith", "adult", "behavior_non_peasant", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+      "minecraft:spawn_nitwit": {
+        "add": { "component_groups": [ "nitwit", "adult", "behavior_peasant", "rancher_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+      "minecraft:spawn_wizard": {
+        "add": { "component_groups": [ "wizard", "adult", "behavior_non_peasant", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+      "minecraft:spawn_miner": {
+        "add": { "component_groups": [ "miner", "adult", "behavior_miner", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+      "minecraft:spawn_money_exchanger": {
+        "add": { "component_groups": [ "money_exchanger", "adult", "behavior_non_peasant", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+      "minecraft:spawn_wood_loger": {
+        "add": { "component_groups": [ "wood_loger", "adult", "behavior_peasant", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+
+      "minecraft:ageable_grow_up": {
+        "sequence": [
+          {
+            "remove": { "component_groups": [ "baby" ] }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "sequence": [
+                  {
+                    "add": { "component_groups": [ "adult", "work_schedule" ] }
+                  },
+                  {
+                    "randomize": [
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "baker", "behavior_peasant" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "blacksmith", "behavior_blacksmith", "blacksmith_schedule" ] },
+                        "remove": { "component_groups": [ "work_schedule" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "cook", "behavior_peasant", "cook_schedule" ] },
+                        "remove": { "component_groups": [ "work_schedule" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "enchanter", "behavior_non_peasant", "enchanter_schedule" ] },
+                        "remove": { "component_groups": [ "work_schedule" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "gemtrader", "behavior_non_peasant" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "goldsmith", "behavior_non_peasant" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "nitwit", "behavior_peasant", "rancher_schedule" ] },
+                        "remove": { "component_groups": [ "work_schedule" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "wizard", "behavior_non_peasant" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "miner", "behavior_miner" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "money_exchanger", "behavior_non_peasant" ] }
+                      },
+                      {
+                        "weight": 1,
+                        "add": { "component_groups": [ "wood_loger", "behavior_peasant" ] }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "become_vanilla" ] }
+              }
+            ]
+          }
+        ]
+      },
+
+      "minecraft:become_cleric": {
+        "add": { "component_groups": [ "wizard", "adult", "behavior_non_peasant", "work_schedule" ] },
+        "remove": { "component_groups": [ "baby" ] }
+      },
+      "minecraft:promote_to_guard": {
+        "add": { "component_groups": [ "become_guard" ] }
+      },
+      "minecraft:resupply_trades": {
+        "add": { "component_groups": [ "trade_resupply_component_group" ] },
+        "remove": { "component_groups": [ "gather_schedule_villager", "bed_schedule_villager", "home_schedule_villager", "wander_schedule_villager" ] }
+      },
+      "minecraft:schedule_work_villager": {
+        "add": { "component_groups": [ "work_shcedule_villager" ] },
+        "remove": { "component_groups": [ "gather_schedule_villager", "bed_schedule_villager", "home_schedule_villager", "wander_schedule_villager", "work_shcedule_rancher" ] }
+      },
+      "minecraft:schedule_work_rancher": {
+        "add": { "component_groups": [ "work_shcedule_rancher" ] },
+        "remove": { "component_groups": [ "gather_schedule_villager", "work_shcedule_villager", "bed_schedule_villager", "home_schedule_villager", "wander_schedule_villager" ] }
+      },
+      "minecraft:schedule_work_cook": {
+        "add": { "component_groups": [ "work_shcedule_cook" ] },
+        "remove": { "component_groups": [ "gather_schedule_villager", "work_shcedule_villager", "bed_schedule_villager", "home_schedule_villager", "wander_schedule_villager" ] }
+      },
+      "minecraft:schedule_work_enchanter": {
+        "add": { "component_groups": [ "work_shcedule_enchanter" ] },
+        "remove": { "component_groups": [ "gather_schedule_villager", "work_shcedule_villager", "bed_schedule_villager", "home_schedule_villager", "wander_schedule_villager" ] }
+      },
+      "minecraft:schedule_work_blacksmith": {
+        "add": { "component_groups": [ "work_shcedule_blacksmith" ] },
+        "remove": { "component_groups": [ "gather_schedule_villager", "work_shcedule_villager", "bed_schedule_villager", "home_schedule_villager", "wander_schedule_villager" ] }
+      },
+      "minecraft:schedule_gather_villager": {
+        "add": { "component_groups": [ "gather_schedule_villager" ] },
+        "remove": { "component_groups": [ "trade_resupply_component_group", "bed_schedule_villager", "home_schedule_villager", "wander_schedule_villager", "work_shcedule_villager", "work_shcedule_rancher" ] }
+      },
+      "minecraft:schedule_wander_villager": {
+        "add": { "component_groups": [ "wander_schedule_villager" ] },
+        "remove": { "component_groups": [ "trade_resupply_component_group", "bed_schedule_villager", "home_schedule_villager", "gather_schedule_villager", "work_shcedule_villager", "work_shcedule_rancher" ] }
+      },
+      "minecraft:schedule_bed_villager": {
+        "add": { "component_groups": [ "bed_schedule_villager" ] },
+        "remove": { "component_groups": [ "home_schedule_villager", "trade_resupply_component_group", "gather_schedule_villager", "wander_schedule_villager", "work_shcedule_villager", "work_shcedule_rancher" ] }
+      },
+      "minecraft:schedule_home_villager": {
+        "add": { "component_groups": [ "home_schedule_villager" ] },
+        "remove": { "component_groups": [ "bed_schedule_villager", "trade_resupply_component_group", "gather_schedule_villager", "wander_schedule_villager", "work_shcedule_villager", "work_shcedule_rancher" ] }
+      }
+    }
+  }
+}

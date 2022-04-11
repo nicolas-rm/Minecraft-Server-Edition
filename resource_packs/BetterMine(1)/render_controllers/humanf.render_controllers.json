@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.humanf_base": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.base_0",
+            "Texture.base_1",
+            "Texture.base_2",
+            "Texture.base_3",
+            "Texture.base_4",
+            "Texture.base_5",
+            "Texture.base_6",
+            "Texture.base_7",
+            "Texture.base_8"
+
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [
+        "Array.skins[query.variant]"
+      ]
+    },
+    "controller.render.humanf_cape": {
+      "arrays": {
+        "textures": {
+          "Array.capes": [
+            "Texture.cape_0",
+            "Texture.cape_1",
+            "Texture.cape_2",
+            "Texture.cape_3",
+            "Texture.cape_4",
+            "Texture.cape_5"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+          { "*": "Material.default" }
+      ],
+      "textures": [
+        "Array.capes[query.skin_id]"
+      ]
+    }
+  }
+}

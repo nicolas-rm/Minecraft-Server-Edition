@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:crafting_table_from_pine_planks"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "better:pine_planks",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:crafting_table",
+      "data": 0,
+      "count": 1
+    }
+  }
+}

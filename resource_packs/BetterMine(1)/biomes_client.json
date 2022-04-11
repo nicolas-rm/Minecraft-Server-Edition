@@ -1,0 +1,175 @@
+{
+   "biomes" : {
+      "creeperhills" : {
+         "fog_identifier" : "better:fog_creeperhills",
+         "fog_color" : "#35281c",
+         "water_fog_color" : "#9e3f04",
+         "water_surface_color" : "#311b0e"
+      },
+      "swamp_marshland" : {
+         "fog_identifier" : "better:fog_swamp_marshland",
+         "water_fog_color" : "#4c6559",
+         "water_fog_distance" : 8,
+         "water_surface_color" : "#4c6559",
+         "water_surface_transparency" : 1.0
+      },
+      "creeperlands" : {
+         "fog_identifier" : "better:fog_creeperlands",
+         "fog_color" : "#35281c",
+         "water_fog_color" : "#9e3f04",
+         "water_surface_color" : "#9e3f04"
+      },
+      "dense_forest" : {
+         "fog_identifier" : "better:fog_dense_forest",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "beech_forest" : {
+         "fog_identifier" : "better:fog_beech_forest",
+         "fog_color" : "#ffeeae",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "fir_forest_hills" : {
+         "fog_identifier" : "better:fog_fir_forest_hills",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#287082",
+         "water_surface_color" : "#287082"
+      },
+      "fir_forest_mutated" : {
+         "fog_identifier" : "better:fog_fir_forest_mutated",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#287082",
+         "water_surface_color" : "#287082"
+      },
+      "fir_forest" : {
+         "fog_identifier" : "better:fog_fir_forest",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#287082",
+         "water_surface_color" : "#287082"
+      },
+      "pine_forest" : {
+         "fog_identifier" : "better:fog_pine_forest",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#287082",
+         "water_surface_color" : "#287082"
+      },
+      "ghostly" : {
+         "fog_identifier" : "better:fog_ghostly",
+         "fog_color" : "#edfffe",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "ghostly_hills" : {
+         "fog_identifier" : "better:fog_ghostly_hills",
+         "fog_color" : "#edfffe",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "pine_forest_hills" : {
+         "fog_identifier" : "better:fog_pine_forest_hills",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#287082",
+         "water_surface_color" : "#287082"
+      },
+      "pine_forest_mutated" : {
+         "fog_identifier" : "better:fog_pine_forest_mutated",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#287082",
+         "water_surface_color" : "#287082"
+      },
+      "sick_darkwood" : {
+         "fog_identifier" : "better:fog_sick_darkwood",
+         "fog_color" : "#130d50",
+         "water_fog_color" : "#410f7e",
+         "water_surface_color" : "#410f7e"
+      },
+      "wasteland" : {
+         "fog_identifier" : "better:fog_wasteland",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "wasteland_hills" : {
+         "fog_identifier" : "better:fog_wasteland_hills",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "woodland_hills" : {
+         "fog_identifier" : "better:fog_woodland_hills",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "woodland_mutated" : {
+         "fog_identifier" : "better:fog_woodland_mutated",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "woodland" : {
+         "fog_identifier" : "better:fog_woodland",
+         "fog_color" : "#a1ba95",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "volcano" : {
+         "fog_identifier" : "better:fog_volcano",
+         "fog_color" : "#c64600",
+         "water_fog_color" : "#9e3f04",
+         "water_surface_color" : "#9e3f04"
+      },
+      "volcano_craters" : {
+         "fog_identifier" : "better:fog_volcano_craters",
+         "fog_color" : "#c64600",
+         "water_fog_color" : "#9e3f04",
+         "water_surface_color" : "#9e3f04"
+      },
+      "grassy_hills" : {
+         "fog_identifier" : "better:fog_grassy_hills",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "hb" : {
+         "fog_identifier" : "better:fog_hb",
+         "fog_color" : "#6b372a",
+         "water_fog_color" : "#1e1e1e",
+         "water_surface_color" : "#1e1e1e"
+      },
+      "lands" : {
+         "fog_identifier" : "better:fog_lands",
+         "water_fog_color" : "#44AFF5",
+         "water_surface_color" : "#44AFF5"
+      },
+      "largem_ice" : {
+         "fog_identifier" : "better:fog_largem_ice",
+         "fog_color" : "#e3f0ff",
+         "water_fog_color" : "#007BF7",
+         "water_surface_color" : "#007BF7"
+      },
+      "largem_edge" : {
+         "fog_identifier" : "better:fog_largem_edge",
+         "fog_color" : "#a1cdff",
+         "water_fog_color" : "#007BF7",
+         "water_surface_color" : "#007BF7"
+      },
+      "largem" : {
+         "fog_identifier" : "better:fog_largem",
+         "fog_color" : "#c4dfff",
+         "water_fog_color" : "#007BF7",
+         "water_surface_color" : "#007BF7"
+      },
+      "frozen_tundra" : {
+         "fog_identifier" : "better:fog_frozen_tundra",
+         "fog_color" : "#ffffff",
+         "water_fog_color" : "#007BF7",
+         "water_surface_color" : "#007BF7"
+      },
+      "the_end" : {
+         "fog_color" : "#181a36",
+         "fog_identifier" : "better:fog_the_end",
+         "water_fog_color" : "#62529e",
+         "water_surface_color" : "#62529e"
+      }
+   }
+}

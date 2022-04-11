@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "better:prarie_sheperd_village_houses_feature"
+    },
+    "iterations": 3,
+    "coordinate_eval_order": "zyx",
+    "x": {
+      "extent": [ -20, 20 ],
+      "distribution": "fixed_grid"
+    },
+    "z": {
+      "extent": [ -20, 20 ],
+      "distribution": "fixed_grid"
+    },
+    "y": {
+      "extent": [ -1, 4 ],
+      "distribution": "gaussian"
+    },
+    "project_input_to_floor": true,
+    "places_feature": "better:prarie_hamlet_houses"
+  }
+}

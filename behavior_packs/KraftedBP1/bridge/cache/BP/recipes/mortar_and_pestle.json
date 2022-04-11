@@ -1,0 +1,264 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\mortar_and_pestle.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "053995a1_4020_421a_b010_a9ce64668cd0",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.200",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.200",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:mortar_and_pestle"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"#~#",
+							" #"
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:stone"
+							},
+							"~": {
+								"item": "minecraft:flint"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:mortar_and_pestle_item",
+								"count": 1
+							}
+						],
+						"priority": 5
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:mortar_and_pestle"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~#",
+								" #"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stone"
+								},
+								"~": {
+									"item": "minecraft:flint"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:mortar_and_pestle_item",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:mortar_and_pestle"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:mortar_and_pestle"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~#",
+								" #"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stone"
+								},
+								"~": {
+									"item": "minecraft:flint"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:mortar_and_pestle_item",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:mortar_and_pestle"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~#",
+								" #"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stone"
+								},
+								"~": {
+									"item": "minecraft:flint"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:mortar_and_pestle_item",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#~#",
+							" #"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:mortar_and_pestle"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~#",
+								" #"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stone"
+								},
+								"~": {
+									"item": "minecraft:flint"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:mortar_and_pestle_item",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:stone"
+									},
+									"~": {
+										"item": "minecraft:flint"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:stone"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:stone"
+									},
+									"~": {
+										"item": "minecraft:flint"
+									}
+								},
+								"key": "~",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:flint"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:mortar_and_pestle"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#~#",
+								" #"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stone"
+								},
+								"~": {
+									"item": "minecraft:flint"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:mortar_and_pestle_item",
+									"count": 1
+								}
+							],
+							"priority": 5
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:mortar_and_pestle_item",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:mortar_and_pestle_item",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"data": "5",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

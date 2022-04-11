@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "better:beech_trees_feature"
+    },
+    "features": [
+      [ "better:beech_tree_feature", 10 ],
+      [ "better:fancy_beech_tree_feature", 3 ],
+      [ "better:beech_tree_with_vines_feature", 2 ],
+      [ "better:fallen_beech_tree_feature", 1 ]
+    ]
+  }
+}

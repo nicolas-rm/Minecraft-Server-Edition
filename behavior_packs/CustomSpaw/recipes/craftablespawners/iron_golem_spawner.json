@@ -1,0 +1,33 @@
+//bridge-file-version: #7
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mrleefy:iron_golem_spawner"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ODO",
+			"DPD",
+			"ODO"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:iron_ingot"
+			},
+			"D": {
+				"item": "minecraft:red_flower"
+			},
+			"P": {
+				"item": "minecraft:netherite_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "mrleefy:iron_golem_spawner"
+			}
+		]
+	}
+}

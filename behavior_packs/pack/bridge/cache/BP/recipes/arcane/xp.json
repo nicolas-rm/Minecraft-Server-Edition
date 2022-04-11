@@ -1,0 +1,227 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\arcane\\xp.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "604190e6_b9ae_4f25_b39f_1838d61d6808",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:xp"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:xp_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:quartz"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:xp"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:quartz"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:quartz"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:xp_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:xp_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:quartz"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#L#",
+							"LBL",
+							"#L#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:xp"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:xp_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:quartz"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:quartz"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "L",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:quartz"
+								}
+							},
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:quartz"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

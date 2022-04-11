@@ -1,0 +1,1275 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\maple_shears.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "e569fce6_6191_4627_929e_698c612e38d0",
+	"file_version": 22,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:maple_shears",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:durability": {
+								"max_durability": 238
+							},
+							"minecraft:enchantable": {
+								"slot": "shears"
+							},
+							"minecraft:shears": {},
+							"minecraft:digger": {
+								"use_efficiency": true,
+								"destroy_speeds": [
+									{
+										"block": {
+											"tags": "query.any_tag('leaves')"
+										},
+										"speed": 10,
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									{
+										"block": "minecraft:wool",
+										"speed": 5,
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									{
+										"block": "minecraft:tallgrass",
+										"speed": 1,
+										"on_dig": {
+											"event": "tallgrass"
+										}
+									},
+									{
+										"block": "minecraft:vines",
+										"speed": 1,
+										"on_dig": {
+											"event": "vines"
+										}
+									},
+									{
+										"block": "minecraft:web",
+										"speed": 16,
+										"on_dig": {
+											"event": "web"
+										}
+									}
+								],
+								"on_dig": {
+									"event": "hurt"
+								}
+							},
+							"minecraft:icon": {
+								"texture": "maple_shears"
+							},
+							"minecraft:creative_category": {
+								"parent": "equipment"
+							},
+							"minecraft:on_use": {
+								"on_use": {
+									"event": "transform",
+									"condition": "query.is_sneaking"
+								}
+							}
+						},
+						"events": {
+							"hurt": {
+								"damage": {
+									"type": "none",
+									"amount": 1,
+									"target": "self"
+								}
+							},
+							"tallgrass": {
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @s tallgrass 1 1",
+										"gamerule sendcommandfeedback true"
+									],
+									"target": "holder"
+								},
+								"damage": {
+									"type": "none",
+									"amount": 1,
+									"target": "self"
+								}
+							},
+							"vines": {
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @s vines",
+										"gamerule sendcommandfeedback true"
+									],
+									"target": "holder"
+								},
+								"damage": {
+									"type": "none",
+									"amount": 1,
+									"target": "self"
+								}
+							},
+							"web": {
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"give @s web",
+										"gamerule sendcommandfeedback true"
+									],
+									"target": "holder"
+								},
+								"damage": {
+									"type": "none",
+									"amount": 1,
+									"target": "self"
+								}
+							},
+							"transform": {
+								"transform_item": {
+									"transform": "minecraft:shears"
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_shears",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:durability": {
+									"max_durability": 238
+								},
+								"minecraft:enchantable": {
+									"slot": "shears"
+								},
+								"minecraft:shears": {},
+								"minecraft:digger": {
+									"use_efficiency": true,
+									"destroy_speeds": [
+										{
+											"block": {
+												"tags": "query.any_tag('leaves')"
+											},
+											"speed": 10,
+											"on_dig": {
+												"event": "hurt"
+											}
+										},
+										{
+											"block": "minecraft:wool",
+											"speed": 5,
+											"on_dig": {
+												"event": "hurt"
+											}
+										},
+										{
+											"block": "minecraft:tallgrass",
+											"speed": 1,
+											"on_dig": {
+												"event": "tallgrass"
+											}
+										},
+										{
+											"block": "minecraft:vines",
+											"speed": 1,
+											"on_dig": {
+												"event": "vines"
+											}
+										},
+										{
+											"block": "minecraft:web",
+											"speed": 16,
+											"on_dig": {
+												"event": "web"
+											}
+										}
+									],
+									"on_dig": {
+										"event": "hurt"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "maple_shears"
+								},
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "transform",
+										"condition": "query.is_sneaking"
+									}
+								}
+							},
+							"events": {
+								"hurt": {
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"tallgrass": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s tallgrass 1 1",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"vines": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s vines",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"web": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s web",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"transform": {
+									"transform_item": {
+										"transform": "minecraft:shears"
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_shears",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_shears",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:durability": {
+									"max_durability": 238
+								},
+								"minecraft:enchantable": {
+									"slot": "shears"
+								},
+								"minecraft:shears": {},
+								"minecraft:digger": {
+									"use_efficiency": true,
+									"destroy_speeds": [
+										{
+											"block": {
+												"tags": "query.any_tag('leaves')"
+											},
+											"speed": 10,
+											"on_dig": {
+												"event": "hurt"
+											}
+										},
+										{
+											"block": "minecraft:wool",
+											"speed": 5,
+											"on_dig": {
+												"event": "hurt"
+											}
+										},
+										{
+											"block": "minecraft:tallgrass",
+											"speed": 1,
+											"on_dig": {
+												"event": "tallgrass"
+											}
+										},
+										{
+											"block": "minecraft:vines",
+											"speed": 1,
+											"on_dig": {
+												"event": "vines"
+											}
+										},
+										{
+											"block": "minecraft:web",
+											"speed": 16,
+											"on_dig": {
+												"event": "web"
+											}
+										}
+									],
+									"on_dig": {
+										"event": "hurt"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "maple_shears"
+								},
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "transform",
+										"condition": "query.is_sneaking"
+									}
+								}
+							},
+							"events": {
+								"hurt": {
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"tallgrass": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s tallgrass 1 1",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"vines": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s vines",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"web": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s web",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"transform": {
+									"transform_item": {
+										"transform": "minecraft:shears"
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_durability": 238
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:shears": {},
+									"minecraft:digger": {
+										"use_efficiency": true,
+										"destroy_speeds": [
+											{
+												"block": {
+													"tags": "query.any_tag('leaves')"
+												},
+												"speed": 10,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:wool",
+												"speed": 5,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:tallgrass",
+												"speed": 1,
+												"on_dig": {
+													"event": "tallgrass"
+												}
+											},
+											{
+												"block": "minecraft:vines",
+												"speed": 1,
+												"on_dig": {
+													"event": "vines"
+												}
+											},
+											{
+												"block": "minecraft:web",
+												"speed": 16,
+												"on_dig": {
+													"event": "web"
+												}
+											}
+										],
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "maple_shears"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "transform",
+											"condition": "query.is_sneaking"
+										}
+									}
+								},
+								"key": "minecraft:durability",
+								"is_minified": true,
+								"children": {
+									"max_durability": 238
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_durability": 238
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:shears": {},
+									"minecraft:digger": {
+										"use_efficiency": true,
+										"destroy_speeds": [
+											{
+												"block": {
+													"tags": "query.any_tag('leaves')"
+												},
+												"speed": 10,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:wool",
+												"speed": 5,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:tallgrass",
+												"speed": 1,
+												"on_dig": {
+													"event": "tallgrass"
+												}
+											},
+											{
+												"block": "minecraft:vines",
+												"speed": 1,
+												"on_dig": {
+													"event": "vines"
+												}
+											},
+											{
+												"block": "minecraft:web",
+												"speed": 16,
+												"on_dig": {
+													"event": "web"
+												}
+											}
+										],
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "maple_shears"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "transform",
+											"condition": "query.is_sneaking"
+										}
+									}
+								},
+								"key": "minecraft:enchantable",
+								"is_minified": true,
+								"children": {
+									"slot": "shears"
+								}
+							},
+							{
+								"key": "minecraft:shears",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_durability": 238
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:shears": {},
+									"minecraft:digger": {
+										"use_efficiency": true,
+										"destroy_speeds": [
+											{
+												"block": {
+													"tags": "query.any_tag('leaves')"
+												},
+												"speed": 10,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:wool",
+												"speed": 5,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:tallgrass",
+												"speed": 1,
+												"on_dig": {
+													"event": "tallgrass"
+												}
+											},
+											{
+												"block": "minecraft:vines",
+												"speed": 1,
+												"on_dig": {
+													"event": "vines"
+												}
+											},
+											{
+												"block": "minecraft:web",
+												"speed": 16,
+												"on_dig": {
+													"event": "web"
+												}
+											}
+										],
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "maple_shears"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "transform",
+											"condition": "query.is_sneaking"
+										}
+									}
+								},
+								"key": "minecraft:digger",
+								"children": [
+									{
+										"data": "true",
+										"key": "use_efficiency"
+									},
+									{
+										"key": "destroy_speeds",
+										"is_minified": true,
+										"children": [
+											{
+												"block": {
+													"tags": "query.any_tag('leaves')"
+												},
+												"speed": 10,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:wool",
+												"speed": 5,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:tallgrass",
+												"speed": 1,
+												"on_dig": {
+													"event": "tallgrass"
+												}
+											},
+											{
+												"block": "minecraft:vines",
+												"speed": 1,
+												"on_dig": {
+													"event": "vines"
+												}
+											},
+											{
+												"block": "minecraft:web",
+												"speed": 16,
+												"on_dig": {
+													"event": "web"
+												}
+											}
+										]
+									},
+									{
+										"open": {
+											"use_efficiency": true,
+											"destroy_speeds": [
+												{
+													"block": {
+														"tags": "query.any_tag('leaves')"
+													},
+													"speed": 10,
+													"on_dig": {
+														"event": "hurt"
+													}
+												},
+												{
+													"block": "minecraft:wool",
+													"speed": 5,
+													"on_dig": {
+														"event": "hurt"
+													}
+												},
+												{
+													"block": "minecraft:tallgrass",
+													"speed": 1,
+													"on_dig": {
+														"event": "tallgrass"
+													}
+												},
+												{
+													"block": "minecraft:vines",
+													"speed": 1,
+													"on_dig": {
+														"event": "vines"
+													}
+												},
+												{
+													"block": "minecraft:web",
+													"speed": 16,
+													"on_dig": {
+														"event": "web"
+													}
+												}
+											],
+											"on_dig": {
+												"event": "hurt"
+											}
+										},
+										"key": "on_dig",
+										"is_minified": true,
+										"children": {
+											"event": "hurt"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_durability": 238
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:shears": {},
+									"minecraft:digger": {
+										"use_efficiency": true,
+										"destroy_speeds": [
+											{
+												"block": {
+													"tags": "query.any_tag('leaves')"
+												},
+												"speed": 10,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:wool",
+												"speed": 5,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:tallgrass",
+												"speed": 1,
+												"on_dig": {
+													"event": "tallgrass"
+												}
+											},
+											{
+												"block": "minecraft:vines",
+												"speed": 1,
+												"on_dig": {
+													"event": "vines"
+												}
+											},
+											{
+												"block": "minecraft:web",
+												"speed": 16,
+												"on_dig": {
+													"event": "web"
+												}
+											}
+										],
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "maple_shears"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "transform",
+											"condition": "query.is_sneaking"
+										}
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "maple_shears"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_durability": 238
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:shears": {},
+									"minecraft:digger": {
+										"use_efficiency": true,
+										"destroy_speeds": [
+											{
+												"block": {
+													"tags": "query.any_tag('leaves')"
+												},
+												"speed": 10,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:wool",
+												"speed": 5,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:tallgrass",
+												"speed": 1,
+												"on_dig": {
+													"event": "tallgrass"
+												}
+											},
+											{
+												"block": "minecraft:vines",
+												"speed": 1,
+												"on_dig": {
+													"event": "vines"
+												}
+											},
+											{
+												"block": "minecraft:web",
+												"speed": 16,
+												"on_dig": {
+													"event": "web"
+												}
+											}
+										],
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "maple_shears"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "transform",
+											"condition": "query.is_sneaking"
+										}
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "equipment"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:durability": {
+										"max_durability": 238
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:shears": {},
+									"minecraft:digger": {
+										"use_efficiency": true,
+										"destroy_speeds": [
+											{
+												"block": {
+													"tags": "query.any_tag('leaves')"
+												},
+												"speed": 10,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:wool",
+												"speed": 5,
+												"on_dig": {
+													"event": "hurt"
+												}
+											},
+											{
+												"block": "minecraft:tallgrass",
+												"speed": 1,
+												"on_dig": {
+													"event": "tallgrass"
+												}
+											},
+											{
+												"block": "minecraft:vines",
+												"speed": 1,
+												"on_dig": {
+													"event": "vines"
+												}
+											},
+											{
+												"block": "minecraft:web",
+												"speed": 16,
+												"on_dig": {
+													"event": "web"
+												}
+											}
+										],
+										"on_dig": {
+											"event": "hurt"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "maple_shears"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "transform",
+											"condition": "query.is_sneaking"
+										}
+									}
+								},
+								"key": "minecraft:on_use",
+								"children": [
+									{
+										"open": {
+											"on_use": {
+												"event": "transform",
+												"condition": "query.is_sneaking"
+											}
+										},
+										"key": "on_use",
+										"is_minified": true,
+										"children": {
+											"event": "transform",
+											"condition": "query.is_sneaking"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_shears",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:durability": {
+									"max_durability": 238
+								},
+								"minecraft:enchantable": {
+									"slot": "shears"
+								},
+								"minecraft:shears": {},
+								"minecraft:digger": {
+									"use_efficiency": true,
+									"destroy_speeds": [
+										{
+											"block": {
+												"tags": "query.any_tag('leaves')"
+											},
+											"speed": 10,
+											"on_dig": {
+												"event": "hurt"
+											}
+										},
+										{
+											"block": "minecraft:wool",
+											"speed": 5,
+											"on_dig": {
+												"event": "hurt"
+											}
+										},
+										{
+											"block": "minecraft:tallgrass",
+											"speed": 1,
+											"on_dig": {
+												"event": "tallgrass"
+											}
+										},
+										{
+											"block": "minecraft:vines",
+											"speed": 1,
+											"on_dig": {
+												"event": "vines"
+											}
+										},
+										{
+											"block": "minecraft:web",
+											"speed": 16,
+											"on_dig": {
+												"event": "web"
+											}
+										}
+									],
+									"on_dig": {
+										"event": "hurt"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "maple_shears"
+								},
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "transform",
+										"condition": "query.is_sneaking"
+									}
+								}
+							},
+							"events": {
+								"hurt": {
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"tallgrass": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s tallgrass 1 1",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"vines": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s vines",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"web": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s web",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								},
+								"transform": {
+									"transform_item": {
+										"transform": "minecraft:shears"
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"key": "hurt",
+								"is_minified": true,
+								"children": {
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								}
+							},
+							{
+								"key": "tallgrass",
+								"is_minified": true,
+								"children": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s tallgrass 1 1",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								}
+							},
+							{
+								"key": "vines",
+								"is_minified": true,
+								"children": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s vines",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								}
+							},
+							{
+								"key": "web",
+								"is_minified": true,
+								"children": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"give @s web",
+											"gamerule sendcommandfeedback true"
+										],
+										"target": "holder"
+									},
+									"damage": {
+										"type": "none",
+										"amount": 1,
+										"target": "self"
+									}
+								}
+							},
+							{
+								"open": {
+									"hurt": {
+										"damage": {
+											"type": "none",
+											"amount": 1,
+											"target": "self"
+										}
+									},
+									"tallgrass": {
+										"run_command": {
+											"command": [
+												"gamerule sendcommandfeedback false",
+												"give @s tallgrass 1 1",
+												"gamerule sendcommandfeedback true"
+											],
+											"target": "holder"
+										},
+										"damage": {
+											"type": "none",
+											"amount": 1,
+											"target": "self"
+										}
+									},
+									"vines": {
+										"run_command": {
+											"command": [
+												"gamerule sendcommandfeedback false",
+												"give @s vines",
+												"gamerule sendcommandfeedback true"
+											],
+											"target": "holder"
+										},
+										"damage": {
+											"type": "none",
+											"amount": 1,
+											"target": "self"
+										}
+									},
+									"web": {
+										"run_command": {
+											"command": [
+												"gamerule sendcommandfeedback false",
+												"give @s web",
+												"gamerule sendcommandfeedback true"
+											],
+											"target": "holder"
+										},
+										"damage": {
+											"type": "none",
+											"amount": 1,
+											"target": "self"
+										}
+									},
+									"transform": {
+										"transform_item": {
+											"transform": "minecraft:shears"
+										}
+									}
+								},
+								"key": "transform",
+								"children": [
+									{
+										"open": {
+											"transform_item": {
+												"transform": "minecraft:shears"
+											}
+										},
+										"key": "transform_item",
+										"is_minified": true,
+										"children": {
+											"transform": "minecraft:shears"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,112 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\marked_arrow.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "934b0d0a_7701_45d0_8f96_8b2b82bf719b",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vt:arrow",
+							"materials": {
+								"default": "arrow"
+							},
+							"textures": {
+								"default": "textures/entity/arrows"
+							},
+							"geometry": {
+								"default": "geometry.arrow"
+							},
+							"animations": {
+								"move": "animation.arrow.move"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.shake = query.shake_time - query.frame_alpha;",
+									"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+								],
+								"animate": [
+									"move"
+								]
+							},
+							"render_controllers": [
+								"controller.render.arrow"
+							]
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vt:arrow",
+								"materials": {
+									"default": "arrow"
+								},
+								"textures": {
+									"default": "textures/entity/arrows"
+								},
+								"geometry": {
+									"default": "geometry.arrow"
+								},
+								"animations": {
+									"move": "animation.arrow.move"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.shake = query.shake_time - query.frame_alpha;",
+										"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+									],
+									"animate": [
+										"move"
+									]
+								},
+								"render_controllers": [
+									"controller.render.arrow"
+								]
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "vt:arrow",
+							"materials": {
+								"default": "arrow"
+							},
+							"textures": {
+								"default": "textures/entity/arrows"
+							},
+							"geometry": {
+								"default": "geometry.arrow"
+							},
+							"animations": {
+								"move": "animation.arrow.move"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.shake = query.shake_time - query.frame_alpha;",
+									"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+								],
+								"animate": [
+									"move"
+								]
+							},
+							"render_controllers": [
+								"controller.render.arrow"
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}

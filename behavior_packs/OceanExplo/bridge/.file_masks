@@ -1,0 +1,164 @@
+{
+	"RP/manifest.json": {
+		"data": {}
+	},
+	"BP/manifest.json": {
+		"data": {}
+	},
+	"BP/entities/humpback_whale.json": {
+		"data": {}
+	},
+	"RP/entity/humpback_whale.json": {
+		"data": {}
+	},
+	"BP/entities/great_white_shark.json": {
+		"data": {}
+	},
+	"RP/entity/great_white_shark.json": {
+		"data": {}
+	},
+	"BP/entities/emperor_penguin.json": {
+		"data": {}
+	},
+	"RP/entity/emperor_penguin.json": {
+		"data": {}
+	},
+	"RP/animation_controllers/penguin.ac.json": {
+		"data": {}
+	},
+	"RP/sounds/sound_definitions.json": {
+		"data": {}
+	},
+	"RP/sounds.json": {
+		"data": {}
+	},
+	"BP/entities/azure_serpent.json": {
+		"data": {}
+	},
+	"RP/entity/azure_serpent.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/great_white_shark.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/humpback_whale.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/emperor_penguin.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/azure_serpent.json": {
+		"data": {}
+	},
+	"RP/textures/terrain_texture.json": {
+		"data": {}
+	},
+	"BP/blocks/palm_log.json": {
+		"data": {}
+	},
+	"BP/blocks/palm_planks.json": {
+		"data": {}
+	},
+	"BP/blocks/palm_leaves.json": {
+		"data": {}
+	},
+	"RP/blocks.json": {
+		"data": {}
+	},
+	"RP/textures/item_texture.json": {
+		"data": {}
+	},
+	"BP/entities/player.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/bridge/custom_item_behavior.json": {
+		"data": {
+			"6aa0136b_5923_4feb_873b_2feb8f6c0577": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"1b7eb0f9_a2f1_43b8_9735_2432d4deb76b": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			}
+		}
+	},
+	"BP/loot_tables/azure_serpent.json": {
+		"data": {}
+	},
+	"BP/entities/barnacle.json": {
+		"data": {}
+	},
+	"RP/entity/barnacle.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/barnacle.animation_controller.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/force_ride.animation_controller.json": {
+		"data": {}
+	},
+	"BP/animations/barnacle.animation.json": {
+		"data": {}
+	},
+	"BP/entities/boat_killer.json": {
+		"data": {}
+	},
+	"BP/entities/effects.json": {
+		"data": {}
+	},
+	"RP/animation_controllers/barnacle.ac.json": {
+		"data": {}
+	},
+	"BP/features/palm_island1_structure_feature.json": {
+		"data": {}
+	},
+	"BP/feature_rules/palm_island_feature_rule.json": {
+		"data": {}
+	},
+	"BP/entities/barracuda.json": {
+		"data": {}
+	},
+	"RP/entity/barracuda.json": {
+		"data": {}
+	},
+	"RP/animations/barracuda.animation.json": {
+		"data": {}
+	},
+	"BP/items/barracuda_item.json": {
+		"data": {}
+	},
+	"RP/items/barracuda.item.json": {
+		"data": {}
+	},
+	"BP/loot_tables/barracuda.json": {
+		"data": {}
+	},
+	"BP/recipes/palm_planks.json": {
+		"data": {}
+	},
+	"BP/recipes/palm_crafting_table.json": {
+		"data": {}
+	},
+	"BP/recipes/palm_sticks.json": {
+		"data": {}
+	},
+	"BP/items/azure_scale.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/barracuda.json": {
+		"data": {}
+	}
+}

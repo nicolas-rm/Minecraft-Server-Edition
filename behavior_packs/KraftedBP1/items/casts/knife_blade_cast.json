@@ -1,0 +1,22 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "strat:knife_blade_cast",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Knife Blade Cast"
+			},
+			"minecraft:icon": {
+				"texture": "knife_blade_cast"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			}
+		},
+		"events": {}
+	}
+}

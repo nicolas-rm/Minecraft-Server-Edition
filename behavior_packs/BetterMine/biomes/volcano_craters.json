@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "volcano_craters"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 2.0,
+        "white_ash": 2.0
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 2.7, 0.0]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:basalt",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "better:ash",
+        "top_material": "better:ash",
+        "sea_material": "minecraft:lava"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "minecraft:basalt",
+              "top_material": "minecraft:basalt"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.121, 1.0 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "river_transformation": "dead_river",
+        "shore_transformation": "jungle_edge_mutated"
+      },
+
+      "animal": {},
+      "volcano_craters": {},
+      "basalt_deltas": {},
+      "hills": {},
+      "monster": {},
+      "overworld": {}
+    }
+  }
+}

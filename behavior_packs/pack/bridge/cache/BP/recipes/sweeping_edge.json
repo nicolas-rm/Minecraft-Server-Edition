@@ -1,0 +1,282 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\sweeping_edge.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "6bd2a099_70c7_4d23_9ed5_044115febbfe",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:sw_enchanted_book"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:sw_enchanted_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:iron_sword"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:sw_enchanted_book"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"result": [
+							{
+								"item": "ray:sw_enchanted_book"
+							}
+						],
+						"pattern": [
+							"#L#",
+							"LBL",
+							"#L#"
+						],
+						"key": {
+							"L": {
+								"item": "minecraft:iron_sword"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						}
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:iron_sword"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:sw_enchanted_book"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:iron_sword"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:iron_sword"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:sw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:sw_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:iron_sword"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#L#",
+							"LBL",
+							"#L#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_enchanted_book"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"result": [
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"pattern": [
+								"#L#",
+								"LBL",
+								"#L#"
+							],
+							"key": {
+								"L": {
+									"item": "minecraft:iron_sword"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							}
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:iron_sword"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "L",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:iron_sword"
+								}
+							},
+							{
+								"open": {
+									"L": {
+										"item": "minecraft:iron_sword"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "better:steel_lamp"
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/steel_lamp.json",
+			"minecraft:destroy_time": 0.9,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#626262",
+			"minecraft:flammable": {
+				"flame_odds": 0,
+				"burn_odds": 0
+			},
+			"minecraft:block_light_absorption": 15.0,
+			"minecraft:block_light_emission": 1.0
+		}
+	}
+}

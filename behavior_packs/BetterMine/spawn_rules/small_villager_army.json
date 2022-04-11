@@ -1,0 +1,67 @@
+{
+  "format_version": "1.11.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "better:small_villager_army",
+      "population_control": "pillager"
+    },
+    "conditions": [
+      {
+        "minecraft:mob_event_filter": {
+          "event": "minecraft:pillager_patrols_event"
+        },
+        "minecraft:world_age_filter": {
+          "min": 0
+        },
+        "minecraft:delay_filter": {
+          "min": 600,
+          "max": 660,
+          "identifier": "better:small_villager_army",
+          "spawn_chance": 30
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:distance_filter": {
+          "min": 24,
+          "max": 48
+        },
+        "minecraft:difficulty_filter": {
+          "min": "easy"
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size": 6,
+          "max_size": 8,
+          "initial_event": "minecraft:promote_to_captain",
+          "initial_event_count": 1,
+          "event": "minecraft:minecraft:spawn_as_patrol_follower",
+          "event_skip_count": 1
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 50,
+            "entity_type": "better:girl_warrior<minecraft:spawn_as_patrol_follower>"
+          },
+          {
+            "weight": 50,
+            "entity_type": "better:warrior<minecraft:spawn_as_patrol_follower>"
+          }
+        ],
+        "minecraft:biome_filter": {
+          "all_of": [
+            { "test": "has_biome_tag", "operator": "!=", "value": "mooshroom_island" },
+            { "test": "has_biome_tag", "operator": "!=", "value": "nether" },
+            { "test": "has_biome_tag", "operator": "!=", "value": "the_end" }
+          ]
+        },
+        "minecraft:player_in_village_filter": {
+          "distance": 48,
+          "village_border_tolerance": 16
+        }
+      }
+    ]
+  }
+}

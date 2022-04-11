@@ -1,0 +1,88 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\loot_tables\\azure_serpent.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "2aca65c3_d437_4ed1_abdd_a5c65f82db57",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": {
+								"min": 1,
+								"max": 2
+							},
+							"entries": [
+								{
+									"type": "item",
+									"name": "ocean:azure_scale"
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 2
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "ocean:azure_scale"
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"key": "rolls",
+								"is_minified": true,
+								"children": {
+									"min": 1,
+									"max": 2
+								}
+							},
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 2
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "ocean:azure_scale"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "ocean:azure_scale"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "ocean:azure_scale"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:corn"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "corn"
+      },
+      "block_placer": {
+        "block": "better:corn_crop",
+        "use_on": "minecraft:farmalnd"
+      }
+    }
+  }
+}

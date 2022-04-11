@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\mw_chainmail_boots.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "ae5e1710_f9de_422a_a62e_571a56a7e7ea",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:mw_chainmail_boots"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:chainmail_boots"
+							},
+							{
+								"item": "ray:mw_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:mw_chainmail_boots"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:mw_chainmail_boots"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:chainmail_boots"
+							},
+							{
+								"item": "ray:mw_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:mw_chainmail_boots"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_chainmail_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_chainmail_boots"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:mw_chainmail_boots"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_chainmail_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_chainmail_boots"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_chainmail_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_chainmail_boots"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:chainmail_boots"
+									},
+									{
+										"item": "ray:mw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:chainmail_boots"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:chainmail_boots"
+									},
+									{
+										"item": "ray:mw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:mw_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:mw_chainmail_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:chainmail_boots"
+								},
+								{
+									"item": "ray:mw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:mw_chainmail_boots"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:mw_chainmail_boots"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:mw_chainmail_boots"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

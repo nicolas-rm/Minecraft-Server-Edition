@@ -1,0 +1,40 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Multi Backpack BP V1.2",
+		"name": "§dMulti Backpack BP V1.2",
+		"uuid": "c415c68a-0542-48ee-b735-25c0c903e559",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			17,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "Multi Backpack BP V1.2",
+			"type": "data",
+			"uuid": "5202d2d9-88f4-4812-96e2-b5d022a25d84",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "9e81fb56-2d69-4d63-9dbe-cb0626c383da",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

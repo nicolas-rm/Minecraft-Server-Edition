@@ -1,0 +1,439 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\More Enchantments Addon\\attachables\\fire_riptide.json",
+	"file_type": "attachable",
+	"format_version": 1,
+	"file_uuid": "5e688e6b_11e5_4786_a555_bd5edc03239e",
+	"file_version": 13,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:attachable": {
+						"description": {
+							"materials": {
+								"default": "entity_alphatest",
+								"enchanted": "entity_alphatest_glint"
+							},
+							"textures": {
+								"enchanted": "textures/misc/enchanted_item_glint",
+								"default": "textures/entity/trident"
+							},
+							"geometry": {
+								"default": "geometry.trident",
+								"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+								"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+								"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+								"crossbow_arrow": "geometry.crossbow_arrow",
+								"crossbow_rocket": "geometry.crossbow_rocket"
+							},
+							"render_controllers": [
+								"controller.render.crossbow"
+							],
+							"item": {
+								"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+							},
+							"identifier": "ray:fire_trident",
+							"animations": {
+								"wield": "controller.animation.trident.wield",
+								"wield_first_person": "animation.trident.wield_first_person",
+								"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+								"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+								"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+								"wield_third_person": "animation.trident.wield_third_person",
+								"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+								],
+								"animate": [
+									"wield"
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:attachable",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"materials": {
+									"default": "entity_alphatest",
+									"enchanted": "entity_alphatest_glint"
+								},
+								"textures": {
+									"enchanted": "textures/misc/enchanted_item_glint",
+									"default": "textures/entity/trident"
+								},
+								"geometry": {
+									"default": "geometry.trident",
+									"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+									"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+									"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+									"crossbow_arrow": "geometry.crossbow_arrow",
+									"crossbow_rocket": "geometry.crossbow_rocket"
+								},
+								"render_controllers": [
+									"controller.render.crossbow"
+								],
+								"item": {
+									"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+								},
+								"identifier": "ray:fire_trident",
+								"animations": {
+									"wield": "controller.animation.trident.wield",
+									"wield_first_person": "animation.trident.wield_first_person",
+									"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+									"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+									"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+									"wield_third_person": "animation.trident.wield_third_person",
+									"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+									],
+									"animate": [
+										"wield"
+									]
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"materials": {
+										"default": "entity_alphatest",
+										"enchanted": "entity_alphatest_glint"
+									},
+									"textures": {
+										"enchanted": "textures/misc/enchanted_item_glint",
+										"default": "textures/entity/trident"
+									},
+									"geometry": {
+										"default": "geometry.trident",
+										"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+										"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+										"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+										"crossbow_arrow": "geometry.crossbow_arrow",
+										"crossbow_rocket": "geometry.crossbow_rocket"
+									},
+									"render_controllers": [
+										"controller.render.crossbow"
+									],
+									"item": {
+										"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+									},
+									"identifier": "ray:fire_trident",
+									"animations": {
+										"wield": "controller.animation.trident.wield",
+										"wield_first_person": "animation.trident.wield_first_person",
+										"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+										"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+										"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+										"wield_third_person": "animation.trident.wield_third_person",
+										"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+										],
+										"animate": [
+											"wield"
+										]
+									}
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity_alphatest",
+									"enchanted": "entity_alphatest_glint"
+								}
+							},
+							{
+								"open": {
+									"materials": {
+										"default": "entity_alphatest",
+										"enchanted": "entity_alphatest_glint"
+									},
+									"textures": {
+										"enchanted": "textures/misc/enchanted_item_glint",
+										"default": "textures/entity/trident"
+									},
+									"geometry": {
+										"default": "geometry.trident",
+										"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+										"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+										"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+										"crossbow_arrow": "geometry.crossbow_arrow",
+										"crossbow_rocket": "geometry.crossbow_rocket"
+									},
+									"render_controllers": [
+										"controller.render.crossbow"
+									],
+									"item": {
+										"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+									},
+									"identifier": "ray:fire_trident",
+									"animations": {
+										"wield": "controller.animation.trident.wield",
+										"wield_first_person": "animation.trident.wield_first_person",
+										"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+										"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+										"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+										"wield_third_person": "animation.trident.wield_third_person",
+										"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+										],
+										"animate": [
+											"wield"
+										]
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"enchanted": "textures/misc/enchanted_item_glint",
+									"default": "textures/entity/trident"
+								}
+							},
+							{
+								"open": {
+									"materials": {
+										"default": "entity_alphatest",
+										"enchanted": "entity_alphatest_glint"
+									},
+									"textures": {
+										"enchanted": "textures/misc/enchanted_item_glint",
+										"default": "textures/entity/trident"
+									},
+									"geometry": {
+										"default": "geometry.trident",
+										"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+										"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+										"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+										"crossbow_arrow": "geometry.crossbow_arrow",
+										"crossbow_rocket": "geometry.crossbow_rocket"
+									},
+									"render_controllers": [
+										"controller.render.crossbow"
+									],
+									"item": {
+										"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+									},
+									"identifier": "ray:fire_trident",
+									"animations": {
+										"wield": "controller.animation.trident.wield",
+										"wield_first_person": "animation.trident.wield_first_person",
+										"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+										"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+										"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+										"wield_third_person": "animation.trident.wield_third_person",
+										"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+										],
+										"animate": [
+											"wield"
+										]
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.trident",
+									"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+									"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+									"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+									"crossbow_arrow": "geometry.crossbow_arrow",
+									"crossbow_rocket": "geometry.crossbow_rocket"
+								}
+							},
+							{
+								"open": {
+									"materials": {
+										"default": "entity_alphatest",
+										"enchanted": "entity_alphatest_glint"
+									},
+									"textures": {
+										"enchanted": "textures/misc/enchanted_item_glint",
+										"default": "textures/entity/trident"
+									},
+									"geometry": {
+										"default": "geometry.trident",
+										"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+										"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+										"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+										"crossbow_arrow": "geometry.crossbow_arrow",
+										"crossbow_rocket": "geometry.crossbow_rocket"
+									},
+									"render_controllers": [
+										"controller.render.crossbow"
+									],
+									"item": {
+										"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+									},
+									"identifier": "ray:fire_trident",
+									"animations": {
+										"wield": "controller.animation.trident.wield",
+										"wield_first_person": "animation.trident.wield_first_person",
+										"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+										"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+										"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+										"wield_third_person": "animation.trident.wield_third_person",
+										"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+										],
+										"animate": [
+											"wield"
+										]
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.crossbow"
+								]
+							},
+							{
+								"open": {
+									"materials": {
+										"default": "entity_alphatest",
+										"enchanted": "entity_alphatest_glint"
+									},
+									"textures": {
+										"enchanted": "textures/misc/enchanted_item_glint",
+										"default": "textures/entity/trident"
+									},
+									"geometry": {
+										"default": "geometry.trident",
+										"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+										"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+										"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+										"crossbow_arrow": "geometry.crossbow_arrow",
+										"crossbow_rocket": "geometry.crossbow_rocket"
+									},
+									"render_controllers": [
+										"controller.render.crossbow"
+									],
+									"item": {
+										"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+									},
+									"identifier": "ray:fire_trident",
+									"animations": {
+										"wield": "controller.animation.trident.wield",
+										"wield_first_person": "animation.trident.wield_first_person",
+										"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+										"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+										"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+										"wield_third_person": "animation.trident.wield_third_person",
+										"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+										],
+										"animate": [
+											"wield"
+										]
+									}
+								},
+								"key": "item",
+								"is_minified": true,
+								"children": {
+									"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+								}
+							},
+							{
+								"open": {
+									"materials": {
+										"default": "entity_alphatest",
+										"enchanted": "entity_alphatest_glint"
+									},
+									"textures": {
+										"enchanted": "textures/misc/enchanted_item_glint",
+										"default": "textures/entity/trident"
+									},
+									"geometry": {
+										"default": "geometry.trident",
+										"crossbow_pulling_0": "geometry.crossbow_pulling_0",
+										"crossbow_pulling_1": "geometry.crossbow_pulling_1",
+										"crossbow_pulling_2": "geometry.crossbow_pulling_2",
+										"crossbow_arrow": "geometry.crossbow_arrow",
+										"crossbow_rocket": "geometry.crossbow_rocket"
+									},
+									"render_controllers": [
+										"controller.render.crossbow"
+									],
+									"item": {
+										"ray:fire_trident": "query.owner_identifier == 'minecraft:player'"
+									},
+									"identifier": "ray:fire_trident",
+									"animations": {
+										"wield": "controller.animation.trident.wield",
+										"wield_first_person": "animation.trident.wield_first_person",
+										"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+										"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+										"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+										"wield_third_person": "animation.trident.wield_third_person",
+										"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+										],
+										"animate": [
+											"wield"
+										]
+									}
+								},
+								"data": "ray:fire_trident",
+								"key": "identifier"
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"wield": "controller.animation.trident.wield",
+									"wield_first_person": "animation.trident.wield_first_person",
+									"wield_first_person_raise": "animation.trident.wield_first_person_raise",
+									"wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+									"wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+									"wield_third_person": "animation.trident.wield_third_person",
+									"wield_third_person_raise": "animation.trident.wield_third_person_raise"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+									],
+									"animate": [
+										"wield"
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

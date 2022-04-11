@@ -1,0 +1,83 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\cooked_bacon_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "a8ca1a0f_c841_46e1_8d4e_32e3d08b3fe9",
+	"file_version": 9,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_furnace": {
+						"description": {
+							"identifier": "strat:cooked_bacon_rec"
+						},
+						"tags": [
+							"furnace",
+							"smoker",
+							"campfire"
+						],
+						"input": "strat:bacon",
+						"output": "strat:cooked_bacon"
+					}
+				},
+				"key": "minecraft:recipe_furnace",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cooked_bacon_rec"
+							},
+							"tags": [
+								"furnace",
+								"smoker",
+								"campfire"
+							],
+							"input": "strat:bacon",
+							"output": "strat:cooked_bacon"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cooked_bacon_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cooked_bacon_rec"
+							},
+							"tags": [
+								"furnace",
+								"smoker",
+								"campfire"
+							],
+							"input": "strat:bacon",
+							"output": "strat:cooked_bacon"
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"furnace",
+							"smoker",
+							"campfire"
+						]
+					},
+					{
+						"data": "strat:bacon",
+						"key": "input"
+					},
+					{
+						"data": "strat:cooked_bacon",
+						"key": "output"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:rawduck"
+    },
+    
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:stacked_by_data": true,
+      "minecraft:use_duration": 64,
+      "minecraft:foil": false,
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": "low",
+        "can_always_eat": true,
+        "is_meat": true
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:chcake"
+    },
+
+    "components": {
+      "minecraft:use_duration": 64,
+      "minecraft:food": {
+        "nutrition": 14,
+        "saturation_modifier": "supernatural"
+      }
+    }
+  }
+}

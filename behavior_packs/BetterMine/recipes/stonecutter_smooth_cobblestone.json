@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "minecraft:stonecutter_smooth_cobblestone"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "priority": 2,
+    "ingredients": [
+      {
+        "item": "minecraft:cobblestone",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "better:smooth_cobblestone",
+      "data": 0,
+      "count": 1
+    }
+  }
+  
+}

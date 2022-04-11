@@ -1,0 +1,1259 @@
+//bridge-file-version: #27
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:add_bad_omen": {
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "bad_omen",
+							"duration": 6000,
+							"display_on_screen_animation": true
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						0,
+						0
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:clear_add_bad_omen",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:clear_bad_omen_spell_effect": {
+				"minecraft:spell_effects": {}
+			},
+			"minecraft:raid_trigger": {
+				"minecraft:raid_trigger": {
+					"triggered_event": {
+						"event": "minecraft:remove_raid_trigger",
+						"target": "self"
+					}
+				},
+				"minecraft:spell_effects": {
+					"remove_effects": "bad_omen"
+				}
+			},
+			"hb_lvl_1": {
+				"minecraft:health": {
+					"max": 30
+				}
+			},
+			"hb_lvl_2": {
+				"minecraft:health": {
+					"max": 40
+				}
+			},
+			"health": {
+				"minecraft:health": {
+					"max": 20
+				}
+			},
+			"normal_w_speed": {
+				"minecraft:underwater_movement": {
+					"value": 0.03
+				}
+			},
+			"ds_w_speed": {
+				"minecraft:underwater_movement": {
+					"value": 0.1
+				}
+			},
+			"scale_0": {
+				"minecraft:scale": {
+					"value": 0
+				}
+			},
+			"scale_1": {
+				"minecraft:scale": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "Math.Min(query.player_level * 7, 100)"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"player"
+				]
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:can_climb": {},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:attack": {
+				"damage": 1
+			},
+			"minecraft:player.saturation": {
+				"value": 20
+			},
+			"minecraft:player.exhaustion": {
+				"value": 0,
+				"max": 4
+			},
+			"minecraft:player.level": {
+				"value": 0,
+				"max": 24791
+			},
+			"minecraft:player.experience": {
+				"value": 0,
+				"max": 1
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": -1,
+				"inhale_time": 3.75,
+				"generates_bubbles": false
+			},
+			"minecraft:nameable": {
+				"always_show": true,
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:insomnia": {
+				"days_until_insomnia": 3
+			},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"family_types": [
+					"parrot_tame"
+				],
+				"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [
+							0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:scaffolding_climber": {},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"value": "bad_omen"
+								},
+								{
+									"test": "is_in_village",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"event": "minecraft:trigger_raid"
+					},
+					{
+						"event": "hb_test",
+						"target": "self"
+					},
+					{
+						"event": "se_test",
+						"target": "self"
+					},
+					{
+						"event": "ag_test",
+						"target": "self"
+					},
+					{
+						"event": "dw_test",
+						"target": "self"
+					},
+					{
+						"event": "smelt",
+						"target": "self"
+					},
+					{
+						"event": "mw_test",
+						"target": "self"
+					},
+					{
+						"event": "sf_test",
+						"target": "self"
+					},
+					{
+						"event": "lava_test",
+						"target": "self"
+					},
+					{
+						"event": "armoring",
+						"target": "self"
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "entity_attack",
+						"on_damage": {
+							"event": "hit_test",
+							"target": "self",
+							"filters": {
+								"any_of": [
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:bt_diamond_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:bt_gold_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:bt_iron_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:bt_netherite_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"domain": "torso",
+										"value": "ray:bt_chamail_chestplate"
+									}
+								]
+							}
+						}
+					},
+					{
+						"cause": "projectile",
+						"on_damage": {
+							"event": "hit_test",
+							"target": "self"
+						}
+					},
+					{
+						"cause": "all",
+						"on_damage": {
+							"event": "fall",
+							"target": "self",
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_damage",
+										"operator": "==",
+										"subject": "self",
+										"value": "fall"
+									},
+									{
+										"test": "has_tag",
+										"operator": "==",
+										"subject": "self",
+										"value": "slime"
+									}
+								]
+							}
+						},
+						"deals_damage": false
+					},
+					{
+						"cause": "all",
+						"on_damage": {
+							"filters": {
+								"any_of": [
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:ar_chamail_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:ar_iron_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:ar_gold_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:ar_netherite_chestplate",
+										"domain": "torso"
+									},
+									{
+										"test": "has_equipment",
+										"operator": "==",
+										"subject": "self",
+										"value": "ray:ar_diamond_chestplate",
+										"domain": "torso"
+									}
+								]
+							}
+						},
+						"damage_multiplier": 0.55
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_bad_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:trigger_raid": {
+				"add": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"hb_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb_chamail_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb_iron_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb_gold_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb_netherite_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb_diamond_chestplate",
+									"domain": "torso"
+								}
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"hb_lvl_2",
+								"health"
+							]
+						},
+						"add": {
+							"component_groups": [
+								"hb_lvl_1"
+							]
+						}
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb_diamond_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb_gold_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb_iron_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"domain": "torso",
+									"value": "ray:hb_chamail_chestplate"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb_netherite_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb2_diamond_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb2_gold_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb2_iron_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"domain": "torso",
+									"value": "ray:hb2_chamail_chestplate"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:hb2_netherite_chestplate",
+									"domain": "torso"
+								}
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"hb_lvl_1",
+								"hb_lvl_2"
+							]
+						},
+						"add": {
+							"component_groups": [
+								"health"
+							]
+						}
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb2_chamail_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb2_iron_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb2_gold_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb2_netherite_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:hb2_diamond_chestplate",
+									"domain": "torso"
+								}
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"hb_lvl_1",
+								"health"
+							]
+						},
+						"add": {
+							"component_groups": [
+								"hb_lvl_2"
+							]
+						}
+					}
+				]
+			},
+			"hit_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:bt_diamond_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:bt_gold_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:bt_iron_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:bt_netherite_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"domain": "torso",
+									"value": "ray:bt_chamail_chestplate"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"function bt"
+							]
+						}
+					}
+				]
+			},
+			"se_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:se_diamond_helmet",
+									"domain": "head"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:se_netherite_helmet",
+									"domain": "head"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:se_iron_helmet",
+									"domain": "head"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:se_gold_helmet",
+									"domain": "head"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"domain": "head",
+									"value": "ray:se_chainmail_helmet"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"effect @s darkness",
+								"effect @s night_vision 30 0 true"
+							]
+						}
+					}
+				]
+			},
+			"ag_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ag_diamond_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ag_iron_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ag_netherite_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ag_golden_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"domain": "feet",
+									"value": "ray:ag_chainmail_boots"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"effect @s speed 1 1 true"
+							]
+						}
+					}
+				]
+			},
+			"dw_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ds_diamond_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ds_golden_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ds_netherite_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ds_chainmail_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ds_iron_leggings",
+									"domain": "leg"
+								}
+							]
+						},
+						"add": {
+							"component_groups": [
+								"ds_w_speed"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_w_speed"
+							]
+						}
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:ds_diamond_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:ds_golden_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:ds_netherite_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:ds_chainmail_leggings",
+									"domain": "leg"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:ds_iron_leggings",
+									"domain": "leg"
+								}
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"ds_w_speed"
+							]
+						},
+						"add": {
+							"component_groups": [
+								"normal_w_speed"
+							]
+						}
+					}
+				]
+			},
+			"smelt": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:smelt_diamond_pickaxe",
+									"domain": "hand"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:smelt_netherite_pickaxe",
+									"domain": "hand"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:smelt_iron_pickaxe",
+									"domain": "hand"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:smelt_stone_pickaxe",
+									"domain": "hand"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"function cutclean"
+							]
+						}
+					}
+				]
+			},
+			"mw_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:mw_chainmail_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:mw_netherite_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:mw_iron_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:mw_golden_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:mw_diamond_boots",
+									"domain": "feet"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"effect @s fire_resistance 11 0",
+								"fill ~3 ~-1 ~3 ~-3 ~-1 ~-3 magma 0 replace lava",
+								"fill ~3 ~-2 ~3 ~-3 ~-2 ~-3 magma 0 replace lava"
+							]
+						}
+					}
+				]
+			},
+			"fall": {
+				"run_command": {
+					"command": [
+						"tag @s add fall",
+						"playsound jump.slime"
+					]
+				}
+			},
+			"sf_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:sf_chainmail_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:sf_netherite_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:sf_iron_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:sf_golden_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:sf_diamond_boots",
+									"domain": "feet"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"tag @s add slime",
+								"effect @s jump_boost 1 1 true"
+							]
+						}
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:sf_chainmail_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:sf_netherite_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:sf_iron_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:sf_golden_boots",
+									"domain": "feet"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "!=",
+									"subject": "self",
+									"value": "ray:sf_diamond_boots",
+									"domain": "feet"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"tag @s remove slime"
+							]
+						}
+					}
+				]
+			},
+			"lava_test": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "in_lava",
+									"operator": "==",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"scoreboard players set @s lava 1"
+							]
+						}
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "in_lava",
+									"operator": "!=",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"scoreboard players set @s lava 0"
+							]
+						}
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:fire_trident",
+									"domain": "hand"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"stopsound @s random.burp"
+							]
+						}
+					}
+				]
+			},
+			"scale_0": {
+				"add": {
+					"component_groups": [
+						"scale_0"
+					]
+				}
+			},
+			"scale_1": {
+				"add": {
+					"component_groups": [
+						"scale_1"
+					]
+				}
+			},
+			"armoring": {
+				"sequence": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_chamail_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_iron_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_gold_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_netherite_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_diamond_chestplate",
+									"domain": "torso"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"titleraw @s[tag=!abs] actionbar {\"rawtext\": [{ \"text\": \"\\n\\n                                    \"}]}",
+								"titleraw @s[tag=abs] actionbar {\"rawtext\": [{ \"text\": \"                                    \"}]}"
+							]
+						}
+					},
+					{
+						"filters": {
+							"none_of": [
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_chamail_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_iron_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_gold_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_netherite_chestplate",
+									"domain": "torso"
+								},
+								{
+									"test": "has_equipment",
+									"operator": "==",
+									"subject": "self",
+									"value": "ray:ar_diamond_chestplate",
+									"domain": "torso"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"title @s actionbar §§"
+							]
+						}
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_mob_effect",
+									"operator": "==",
+									"subject": "self",
+									"value": "absorption"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"tag @s add abs"
+							]
+						}
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_mob_effect",
+									"operator": "!=",
+									"subject": "self",
+									"value": "absorption"
+								}
+							]
+						},
+						"run_command": {
+							"command": [
+								"tag @s remove abs"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "better:splash_potion_reinforcement",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:throwable": {
+				"do_swing_animation": true
+			},
+			"minecraft:projectile": {
+				"projectile_entity": "better:splash_potion_reinforcement"
+			},
+			"minecraft:icon": {
+				"texture": "splash_potion_reinforcement"
+			},
+                        "minecraft:foil": true,
+			"minecraft:use_duration": 3600,
+			"minecraft:hand_equipped": false,
+			"minecraft:display_name": {
+				"value": "Splsh Potion of Reinfrocement"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.potions"
+			}
+		}
+	}
+}

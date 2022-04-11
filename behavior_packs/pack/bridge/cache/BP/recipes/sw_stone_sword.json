@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\sw_stone_sword.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "87eb3fbd_b72a_41f0_98ac_e1d92ec3c68c",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:sw_stone_sword"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:stone_sword"
+							},
+							{
+								"item": "ray:sw_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:sw_stone_sword"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:sw_stone_sword"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:stone_sword"
+							},
+							{
+								"item": "ray:sw_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:sw_stone_sword"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_stone_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:stone_sword"
+								},
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:sw_stone_sword"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:sw_stone_sword"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_stone_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:stone_sword"
+								},
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:sw_stone_sword"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_stone_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:stone_sword"
+								},
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:sw_stone_sword"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:stone_sword"
+									},
+									{
+										"item": "ray:sw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:stone_sword"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:stone_sword"
+									},
+									{
+										"item": "ray:sw_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:sw_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:sw_stone_sword"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:stone_sword"
+								},
+								{
+									"item": "ray:sw_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:sw_stone_sword"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:sw_stone_sword"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:sw_stone_sword"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

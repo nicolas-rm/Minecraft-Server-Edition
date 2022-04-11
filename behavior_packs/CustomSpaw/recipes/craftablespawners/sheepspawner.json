@@ -1,0 +1,33 @@
+//bridge-file-version: #12
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mrleefy:sheepspawner"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ODO",
+			"DPD",
+			"ODO"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:iron_bars"
+			},
+			"D": {
+				"item": "minecraft:muttonraw"
+			},
+			"P": {
+				"item": "minecraft:diamond_block"
+			}
+		},
+		"result": [
+			{
+				"item": "mrleefy:sheepspawner"
+			}
+		]
+	}
+}

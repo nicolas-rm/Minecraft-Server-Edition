@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:cooked_corn",
+      "category": "Items"
+    },
+
+    "components": {
+      "minecraft:icon": "cooked_corn",
+      "minecraft:use_animation": "eat",
+
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

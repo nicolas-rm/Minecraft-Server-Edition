@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "void_vein_44352fce"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:dark_void",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:void_vein",
+      "count": 2
+    }
+  }
+}

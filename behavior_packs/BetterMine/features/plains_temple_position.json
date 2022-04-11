@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "minecraft:plains_temple_position"
+    },
+    "iterations": 1,
+    "x": -8,
+    "y": -5,
+    "z": -8,
+    "project_input_to_floor": false,
+    "places_feature": "minecraft:plains_temple"
+  }
+}

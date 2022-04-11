@@ -1,0 +1,253 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "vanilla_twilight:swordsman_villager",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:default_targeting": {
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 3,
+					"entity_types": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "monster"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"operator": "!=",
+										"value": "creeper"
+									}
+								]
+							},
+							"within_default": 10
+						}
+					],
+					"must_see": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:nameable": {
+				"default_trigger": {
+					"event": "minecraft:stop_johnny",
+					"target": "self"
+				},
+				"name_actions": [
+					{
+						"name_filter": "Johnny",
+						"on_named": {
+							"event": "minecraft:start_johnny",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"swordsman",
+					"villagedefender",
+					"villager"
+				]
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.95
+			},
+			"minecraft:health": {
+				"value": 24,
+				"max": 24
+			},
+			"minecraft:attack": {
+				"damage": 8
+			},
+			"minecraft:movement": {
+				"value": 0.35
+			},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"can_path_over_water": true,
+				"can_pass_doors": true,
+				"can_open_doors": true,
+				"can_walk": true,
+				"avoid_water": true
+			},
+			"minecraft:annotation.open_door": {},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:preferred_path": {
+				"max_fall_blocks": 1,
+				"jump_cost": 5,
+				"default_block_cost": 1.5,
+				"preferred_path_blocks": [
+					{
+						"cost": 0,
+						"blocks": [
+							"grass_path"
+						]
+					},
+					{
+						"cost": 1,
+						"blocks": [
+							"cobblestone",
+							"stone",
+							"stonebrick",
+							"sandstone",
+							"mossy_cobblestone",
+							"stone_slab",
+							"stone_slab2",
+							"stone_slab3",
+							"stone_slab4",
+							"double_stone_slab",
+							"double_stone_slab2",
+							"double_stone_slab3",
+							"double_stone_slab4",
+							"wooden_slab",
+							"double_wooden_slab",
+							"planks",
+							"brick_block",
+							"nether_brick",
+							"red_nether_brick",
+							"end_bricks",
+							"red_sandstone",
+							"stained_glass",
+							"glass",
+							"glowstone",
+							"prismarine",
+							"emerald_block",
+							"diamond_block",
+							"lapis_block",
+							"gold_block",
+							"redstone_block",
+							"purple_glazed_terracotta",
+							"white_glazed_terracotta",
+							"orange_glazed_terracotta",
+							"magenta_glazed_terracotta",
+							"light_blue_glazed_terracotta",
+							"yellow_glazed_terracotta",
+							"lime_glazed_terracotta",
+							"pink_glazed_terracotta",
+							"gray_glazed_terracotta",
+							"silver_glazed_terracotta",
+							"cyan_glazed_terracotta",
+							"blue_glazed_terracotta",
+							"brown_glazed_terracotta",
+							"green_glazed_terracotta",
+							"red_glazed_terracotta",
+							"black_glazed_terracotta"
+						]
+					},
+					{
+						"cost": 50,
+						"blocks": [
+							"bed",
+							"lectern",
+							"composter",
+							"grindstone",
+							"blast_furnace",
+							"smoker",
+							"fletching_table",
+							"cartography_table",
+							"brewing_stand",
+							"smithing_table",
+							"cauldron",
+							"barrel",
+							"loom",
+							"stonecutter"
+						]
+					}
+				]
+			},
+			"minecraft:follow_range": {
+				"value": 64
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/vindication_illager.json"
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.move_to_village": {
+				"priority": 5,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.defend_village_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 3,
+				"speed_multiplier": 1,
+				"track_target": false
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 9,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 10,
+				"look_distance": 8,
+				"probability": 0.02
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 2,
+				"entity_types": {
+					"filters": {
+						"test": "is_family",
+						"subject": "other",
+						"operator": "!=",
+						"value": "villager"
+					},
+					"max_dist": 64
+				}
+			},
+			"minecraft:behavior.offer_flower": {
+				"priority": 5
+			},
+			"minecraft:on_target_acquired": {
+				"event": "minecraft:become_aggro",
+				"target": "self"
+			},
+			"minecraft:on_target_escape": {
+				"event": "minecraft:stop_aggro",
+				"target": "self"
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:physics": {},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/swordsman.json"
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"minecraft:default_targeting"
+					]
+				}
+			},
+			"minecraft:entity_transformed": {
+				"add": {
+					"component_groups": [
+						"minecraft:default_targeting"
+					]
+				}
+			}
+		}
+	}
+}

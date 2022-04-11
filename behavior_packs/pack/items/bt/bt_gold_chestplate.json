@@ -1,0 +1,58 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.18.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ray:bt_gold_chestplate",
+			"category": "commands"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 25,
+				"slot": "armor_torso"
+			},
+			"minecraft:durability": {
+				"max_damage": 112,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				},
+				"max_durability": 112
+			},
+			"minecraft:mining_speed": 12,
+			"minecraft:damage": 0,
+			"minecraft:armor": {
+				"protection": 5
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:display_name": {
+				"value": "§bGolden Chestplate\n§7Burning Thorns"
+			},
+			"minecraft:icon": {
+				"texture": "gold_chestplate"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:golden_chestplate",
+							"ray:hb_gold_chestplate"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"minecraft:gold_ingot"
+						],
+						"repair_amount": 15
+					}
+				]
+			},
+			"minecraft:foil": true
+		},
+		"events": {}
+	}
+}

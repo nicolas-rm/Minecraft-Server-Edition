@@ -1,0 +1,132 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\milk_jar.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "33d0b060_5bb8_40e4_aa47_af7989284a92",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:milk_jar",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:creative_category": {
+								"parent": "items"
+							},
+							"minecraft:icon": {
+								"texture": "milk_jar"
+							},
+							"minecraft:use_animation": "drink",
+							"minecraft:block_placer": {
+								"block": "strat:milk_jar_block",
+								"use_block_description": true
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:milk_jar",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "milk_jar"
+								},
+								"minecraft:use_animation": "drink",
+								"minecraft:block_placer": {
+									"block": "strat:milk_jar_block",
+									"use_block_description": true
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:milk_jar",
+							"category": "items"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:milk_jar",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "milk_jar"
+								},
+								"minecraft:use_animation": "drink",
+								"minecraft:block_placer": {
+									"block": "strat:milk_jar_block",
+									"use_block_description": true
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "milk_jar"
+									},
+									"minecraft:use_animation": "drink",
+									"minecraft:block_placer": {
+										"block": "strat:milk_jar_block",
+										"use_block_description": true
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "items"
+								}
+							},
+							{
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "milk_jar"
+								}
+							},
+							{
+								"data": "drink",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"key": "minecraft:block_placer",
+								"is_minified": true,
+								"children": {
+									"block": "strat:milk_jar_block",
+									"use_block_description": true
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

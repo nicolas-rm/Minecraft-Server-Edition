@@ -1,0 +1,75 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "hb"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 2.0,
+        "ash": 0.2
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "lowlands"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "minecraft:dirt",
+              "top_material": "better:dead_grass"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ -1.0, -0.012 ]
+          },
+          {
+            "materials": {
+              "mid_material": "minecraft:dirt",
+              "top_material": "better:dead_grass"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.024, 1.0 ]
+          },
+          {
+            "materials": {
+              "mid_material": "minecraft:blackstone",
+              "top_material": "minecraft:blackstone"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.121, 1.0 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:gravel"
+            },
+            "noise_range": [ -0.75, -0.5 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": "volcano_craters",
+        "river_transformation": "dead_river",
+        "generate_for_climates": [
+          [ "warm", 1 ]
+        ]
+      },
+
+      "animal": {},
+      "rare": {},
+      "monster": {},
+      "overworld": {},
+      "hb": {},
+      "bushes": {}
+    }
+  }
+}

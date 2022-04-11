@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "espada_madera_falsa_07f09bca"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "espadas:espada_carton",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 17
+      }
+    },
+    "result": {
+      "item": "espadas:espada_madera_falsa",
+      "count": 1
+    }
+  }
+}

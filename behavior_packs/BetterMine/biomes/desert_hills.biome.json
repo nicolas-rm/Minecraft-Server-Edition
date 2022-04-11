@@ -1,0 +1,39 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "desert_hills"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 2.0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "mountains"
+      },
+      "minecraft:mesa_surface": {
+        "bryce_pillars": false,
+        "clay_material": "minecraft:sandstone",
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "hard_clay_material": "minecraft:sand",
+        "has_forest": false,
+        "mid_material": "minecraft:sand",
+        "top_material": "minecraft:sand",
+        "sea_material": "minecraft:sand"
+      },
+      "minecraft:overworld_generation_rules": {
+        "mutate_transformation": "desert_m",
+        "river_transformation": "dead_river"
+      },
+
+      "desert": {},
+      "hills": {},
+      "monster": {},
+      "overworld": {}
+    }
+  }
+}

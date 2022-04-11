@@ -1,0 +1,29 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ray:ag_enchanted_book"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"result": [
+			{
+				"item": "ag_book:netherite_ingot"
+			}
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:sugar"
+			},
+			"B": {
+				"item": "minecraft:book"
+			}
+		},
+		"pattern": [
+			"SBS",
+			"S#S"
+		]
+	}
+}

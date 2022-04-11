@@ -1,0 +1,33 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.barnacle.force_ride": {
+			"loop": true,
+			"animation_length": 0.2,
+			"timeline": {
+				"0.1": [
+					"/event entity @s trap_player"
+				]
+			}
+		},
+		"animation.barnacle.down": {
+			"loop": true,
+			"animation_length": 0.3,
+			"timeline": {
+				"0.1": [
+					"/event entity @s d2"
+				]
+			}
+		},
+		"animation.barnacle.reset": {
+			"loop": true,
+			"animation_length": 1,
+			"timeline": {
+				"0.1": [
+					"/event entity @s normal"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\cooked_sausage_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "c64ec801_8658_4489_83ef_f46b92b518f1",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_furnace": {
+						"description": {
+							"identifier": "strat:cooked_sausage_rec"
+						},
+						"tags": [
+							"furnace",
+							"smoker",
+							"campfire"
+						],
+						"input": "strat:sausage",
+						"output": "strat:cooked_sausage"
+					}
+				},
+				"key": "minecraft:recipe_furnace",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cooked_sausage_rec"
+							},
+							"tags": [
+								"furnace",
+								"smoker",
+								"campfire"
+							],
+							"input": "strat:sausage",
+							"output": "strat:cooked_sausage"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:cooked_sausage_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:cooked_sausage_rec"
+							},
+							"tags": [
+								"furnace",
+								"smoker",
+								"campfire"
+							],
+							"input": "strat:sausage",
+							"output": "strat:cooked_sausage"
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"furnace",
+							"smoker",
+							"campfire"
+						]
+					},
+					{
+						"data": "strat:sausage",
+						"key": "input"
+					},
+					{
+						"data": "strat:cooked_sausage",
+						"key": "output"
+					}
+				]
+			}
+		]
+	}
+}

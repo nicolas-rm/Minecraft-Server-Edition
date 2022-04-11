@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "better:furnace_glistering_ore"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "better:glistering_ore",
+    "output": "minecraft:glowstone_dust"
+  }
+  
+}

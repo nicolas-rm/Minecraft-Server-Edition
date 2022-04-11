@@ -1,0 +1,33 @@
+//bridge-file-version: #10
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mrleefy:stack_killer"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ODO",
+			"DPD",
+			"ODO"
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:iron_ingot"
+			},
+			"D": {
+				"item": "minecraft:redstone"
+			},
+			"P": {
+				"item": "minecraft:diamond_sword"
+			}
+		},
+		"result": [
+			{
+				"item": "mrleefy:stack_killer"
+			}
+		]
+	}
+}

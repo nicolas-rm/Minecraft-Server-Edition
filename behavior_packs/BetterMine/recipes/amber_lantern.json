@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:amber_lantern"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "better:amber"
+      },
+      "X": {
+        "item": "minecraft:lantern"
+      }
+    },
+    "result": {
+      "item": "better:amber_lantern",
+      "data": 0
+    }
+  }
+}

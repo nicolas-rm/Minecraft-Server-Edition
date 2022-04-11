@@ -1,0 +1,363 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\necromancer_villager.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "489ac392_ee9d_421a_9b0d_f9e7c70eebb7",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:necromancer_illager",
+							"materials": {
+								"default": "evoker"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/necromancer.illager"
+							},
+							"geometry": {
+								"default": "geometry.necromancer.illager"
+							},
+							"scripts": {
+								"scale": 0.9375
+							},
+							"animations": {
+								"general": "animation.evoker.general",
+								"casting": "animation.evoker.casting",
+								"look_at_target": "animation.common.look_at_target",
+								"move": "animation.villager.move"
+							},
+							"animation_controllers": [
+								{
+									"general": "controller.animation.evoker.general.v1.0"
+								},
+								{
+									"move": "controller.animation.villager.move"
+								}
+							],
+							"particle_effects": {
+								"spell": "minecraft:evoker_spell"
+							},
+							"render_controllers": [
+								"controller.render.evoker"
+							],
+							"spawn_egg": {
+								"base_color": "#1e0f16",
+								"overlay_color": "#59160B"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:necromancer_illager",
+								"materials": {
+									"default": "evoker"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/necromancer.illager"
+								},
+								"geometry": {
+									"default": "geometry.necromancer.illager"
+								},
+								"scripts": {
+									"scale": 0.9375
+								},
+								"animations": {
+									"general": "animation.evoker.general",
+									"casting": "animation.evoker.casting",
+									"look_at_target": "animation.common.look_at_target",
+									"move": "animation.villager.move"
+								},
+								"animation_controllers": [
+									{
+										"general": "controller.animation.evoker.general.v1.0"
+									},
+									{
+										"move": "controller.animation.villager.move"
+									}
+								],
+								"particle_effects": {
+									"spell": "minecraft:evoker_spell"
+								},
+								"render_controllers": [
+									"controller.render.evoker"
+								],
+								"spawn_egg": {
+									"base_color": "#1e0f16",
+									"overlay_color": "#59160B"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:necromancer_illager",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "evoker"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/necromancer.illager"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.necromancer.illager"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"scale": 0.9375
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"general": "animation.evoker.general",
+									"casting": "animation.evoker.casting",
+									"look_at_target": "animation.common.look_at_target",
+									"move": "animation.villager.move"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:necromancer_illager",
+									"materials": {
+										"default": "evoker"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/necromancer.illager"
+									},
+									"geometry": {
+										"default": "geometry.necromancer.illager"
+									},
+									"scripts": {
+										"scale": 0.9375
+									},
+									"animations": {
+										"general": "animation.evoker.general",
+										"casting": "animation.evoker.casting",
+										"look_at_target": "animation.common.look_at_target",
+										"move": "animation.villager.move"
+									},
+									"animation_controllers": [
+										{
+											"general": "controller.animation.evoker.general.v1.0"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										}
+									],
+									"particle_effects": {
+										"spell": "minecraft:evoker_spell"
+									},
+									"render_controllers": [
+										"controller.render.evoker"
+									],
+									"spawn_egg": {
+										"base_color": "#1e0f16",
+										"overlay_color": "#59160B"
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"open": [
+											{
+												"general": "controller.animation.evoker.general.v1.0"
+											},
+											{
+												"move": "controller.animation.villager.move"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"general": "controller.animation.evoker.general.v1.0"
+										}
+									},
+									{
+										"open": [
+											{
+												"general": "controller.animation.evoker.general.v1.0"
+											},
+											{
+												"move": "controller.animation.villager.move"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"move": "controller.animation.villager.move"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "mythmob:necromancer_illager",
+									"materials": {
+										"default": "evoker"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/necromancer.illager"
+									},
+									"geometry": {
+										"default": "geometry.necromancer.illager"
+									},
+									"scripts": {
+										"scale": 0.9375
+									},
+									"animations": {
+										"general": "animation.evoker.general",
+										"casting": "animation.evoker.casting",
+										"look_at_target": "animation.common.look_at_target",
+										"move": "animation.villager.move"
+									},
+									"animation_controllers": [
+										{
+											"general": "controller.animation.evoker.general.v1.0"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										}
+									],
+									"particle_effects": {
+										"spell": "minecraft:evoker_spell"
+									},
+									"render_controllers": [
+										"controller.render.evoker"
+									],
+									"spawn_egg": {
+										"base_color": "#1e0f16",
+										"overlay_color": "#59160B"
+									}
+								},
+								"key": "particle_effects",
+								"is_minified": true,
+								"children": {
+									"spell": "minecraft:evoker_spell"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:necromancer_illager",
+									"materials": {
+										"default": "evoker"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/necromancer.illager"
+									},
+									"geometry": {
+										"default": "geometry.necromancer.illager"
+									},
+									"scripts": {
+										"scale": 0.9375
+									},
+									"animations": {
+										"general": "animation.evoker.general",
+										"casting": "animation.evoker.casting",
+										"look_at_target": "animation.common.look_at_target",
+										"move": "animation.villager.move"
+									},
+									"animation_controllers": [
+										{
+											"general": "controller.animation.evoker.general.v1.0"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										}
+									],
+									"particle_effects": {
+										"spell": "minecraft:evoker_spell"
+									},
+									"render_controllers": [
+										"controller.render.evoker"
+									],
+									"spawn_egg": {
+										"base_color": "#1e0f16",
+										"overlay_color": "#59160B"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.evoker"
+								]
+							},
+							{
+								"open": {
+									"identifier": "mythmob:necromancer_illager",
+									"materials": {
+										"default": "evoker"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/necromancer.illager"
+									},
+									"geometry": {
+										"default": "geometry.necromancer.illager"
+									},
+									"scripts": {
+										"scale": 0.9375
+									},
+									"animations": {
+										"general": "animation.evoker.general",
+										"casting": "animation.evoker.casting",
+										"look_at_target": "animation.common.look_at_target",
+										"move": "animation.villager.move"
+									},
+									"animation_controllers": [
+										{
+											"general": "controller.animation.evoker.general.v1.0"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										}
+									],
+									"particle_effects": {
+										"spell": "minecraft:evoker_spell"
+									},
+									"render_controllers": [
+										"controller.render.evoker"
+									],
+									"spawn_egg": {
+										"base_color": "#1e0f16",
+										"overlay_color": "#59160B"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#1e0f16",
+									"overlay_color": "#59160B"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

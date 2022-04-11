@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:topaz"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "better:topaz_block"
+      }
+    },
+    "result": {
+      "item": "better:topaz",
+      "count": 9
+    }
+  }
+}

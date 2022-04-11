@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "better:stone_warhammer"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "ABA",
+            " B "
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:cobblestone"
+            },
+            "B": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "better:stone_warhammer",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

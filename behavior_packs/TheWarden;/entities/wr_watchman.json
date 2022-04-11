@@ -1,0 +1,371 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "wr:watchman",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:enderman_calm": {
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        },
+        "minecraft:movement": {
+          "value": 0.23,
+          "max": 0.23
+        }
+      },
+      "minecraft:enderman_angry": {
+        "minecraft:angry": {
+          "duration": 25,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        },
+        "minecraft:movement": {
+          "value": 0.23,
+          "max": 0.23
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 2,
+          "speed_multiplier": 1.0,
+          "track_target": false
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "enderman",
+          "monster"
+        ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:nameable": {
+        "alwaysShow": false,
+        "allowNameTagRenaming": false
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/enderman.json"
+      },
+      "minecraft:health": {
+        "value": 40,
+        "max": 40
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:follow_range": {
+        "value": 32,
+        "max": 32
+      },
+      "minecraft:collision_box": {
+        "height": 2.9,
+        "width": 0.6
+      },
+      "minecraft:lookat": {
+        "searchRadius": 64.0,
+        "setTarget": true,
+        "look_cooldown": 5.0,
+        "filters": {
+          "all_of": [
+            {
+              "subject": "other",
+              "test": "is_family",
+              "value": "player"
+            },
+            {
+              "test": "has_equipment",
+              "domain": "head",
+              "subject": "other",
+              "operator": "not",
+              "value": "carved_pumpkin"
+            }
+          ]
+        }
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 5,
+        "attack_interval": 10,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": []
+            },
+            "max_dist": 40,
+            "must_see": false
+          }
+        ],
+        "must_see": false,
+        "within_radius": 0.0
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 8.0,
+        "probability": 8.0
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.enderman_leave_block": {
+        "priority": 10
+      },
+      "minecraft:behavior.enderman_take_block": {
+        "priority": 11
+      },
+      "minecraft:hurt_when_wet": {
+        "value": true
+      },
+      "minecraft:physics": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 10 : 0"
+      },
+      "minecraft:movement": {
+        "value": 0.23,
+        "max": 0.23
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.02
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "speed_multiplier": 1.0,
+        "target_dist": 0.0,
+        "max_dist": 3,
+        "random_stop_interval": 100,
+        "track_target": false,
+        "reach_multiplier": 1.4
+      },
+      "minecraft:behavior.owner_hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.owner_hurt_target": {
+        "priority": 2
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 4,
+        "yd": 0.4,
+        "must_be_on_ground": false,
+        "target_dist": 0.4,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:on_death": {
+        "event": "on:death",
+        "target": "self"
+      },
+      "minecraft:on_hurt": {
+        "event": "on:hurt",
+        "target": "self"
+      },
+      "minecraft:on_hurt_by_player": {
+        "event": "on:hurt_by_player",
+        "target": "self"
+      },
+      "minecraft:on_ignite": {
+        "event": "on:ignite",
+        "target": "self"
+      },
+      "minecraft:on_target_acquired": {
+        "event": "on:target_acquired",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "on:target_escape",
+        "target": "self"
+      },
+      "minecraft:on_wake_with_owner": {
+        "event": "on:wake_with_owner",
+        "target": "self"
+      },
+      "minecraft:tameable": {
+        "probability": 0.33,
+        "tameItems": [
+          "apple",
+          "appleenchanted",
+          "baked_potato",
+          "beef",
+          "beetroot",
+          "beetroot_seeds",
+          "beetroot_soup",
+          "bread",
+          "camera",
+          "carrot",
+          "chicken",
+          "chorus_fruit",
+          "clownfish",
+          "cooked_beef",
+          "cooked_chicken",
+          "cooked_fish",
+          "cooked_porkchop",
+          "cooked_rabbit",
+          "cooked_salmon",
+          "cookie",
+          "dried_kelp",
+          "fish",
+          "golden_apple",
+          "golden_carrot",
+          "honey_bottle",
+          "honeycomb",
+          "melon",
+          "melon_seeds",
+          "mushroom_stew",
+          "muttoncooked",
+          "muttonraw",
+          "nether_wart",
+          "poisonous_potato",
+          "porkchop",
+          "potato",
+          "pufferfish",
+          "pumpkin_pie",
+          "pumpkin_seeds",
+          "rabbit",
+          "rabbit_stew",
+          "rotten_flesh",
+          "salmon",
+          "spider_eye",
+          "suspicious_stew",
+          "sweet_berries",
+          "wheat_seeds"
+        ],
+        "tame_event": {
+          "event": "minecraft:on_tame",
+          "target": "self"
+        }
+      },
+      "minecraft:behavior.follow_owner": {
+        "start_distance": 10.0,
+        "speed_multiplier": 1.0,
+        "stop_distance": 2.0,
+        "priority": 6
+      },
+      "minecraft:flying_speed": {
+        "value": 0.01
+      },
+      "minecraft:can_fly": {},
+      "minecraft:behavior.float_wander": {
+        "random_reselect": true,
+        "priority": 2
+      },
+      "minecraft:movement.generic": {},
+      "minecraft:navigation.fly": {},
+      "minecraft:behavior.circle_around_anchor": {
+        "priority": 3,
+        "radius_range": [
+          5.0,
+          15.0
+        ],
+        "radius_change_chance": 250,
+        "height_above_target_range": [
+          20.0,
+          40.0
+        ],
+        "height_offset_range": [
+          -4.0,
+          5.0
+        ],
+        "height_change_chance": 350,
+        "goal_radius": 1.0
+      },
+      "minecraft:movement.glide": {
+        "start_speed": 0.1,
+        "speed_when_turning": 0.2
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "remove": {},
+        "add": {
+          "component_groups": [
+            "minecraft:enderman_calm"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": [
+            "minecraft:enderman_calm"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:enderman_angry"
+          ]
+        }
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:enderman_angry"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:enderman_calm"
+          ]
+        }
+      },
+      "on:death": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:hurt_by_player": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:ignite": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:target_acquired": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:target_escape": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on:wake_with_owner": {
+        "run_command": {
+          "command": []
+        }
+      }
+    }
+  }
+}

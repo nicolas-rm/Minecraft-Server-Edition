@@ -1,0 +1,22 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "strat:knife_blade_pattern",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "knife_blade_pattern"
+			},
+			"minecraft:display_name": {
+				"value": "Knife Blade Pattern"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			}
+		},
+		"events": {}
+	}
+}

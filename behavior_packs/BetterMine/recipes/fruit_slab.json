@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:fruit_slab"
+    },
+    "tags": [ 
+      "crafting_table" 
+    ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "better:fruit_planks"
+      }
+    },
+    "result": {
+      "item": "better:fruit_slab",
+      "count": 6
+    }
+  }
+}

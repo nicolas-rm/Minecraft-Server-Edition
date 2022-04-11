@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "minecraft:stonecutter_caverock_brick_wall"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "better:caverock_brick",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "better:caverock_brick_wall",
+      "data": 0,
+      "count": 1
+    }
+  }
+  
+}

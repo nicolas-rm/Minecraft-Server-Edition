@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:furnace_raw_lead"
+    },
+
+    
+    "tags": ["furnace", "blast_furnace"],
+    "input": "better:raw_lead",
+    "output": "better:lead_ingot"
+  }
+  
+}

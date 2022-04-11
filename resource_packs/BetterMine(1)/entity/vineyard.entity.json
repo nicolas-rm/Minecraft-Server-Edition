@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "better:vineyard",
+      "materials": { "default": "villager_v2" },
+      "textures": {
+        "default": "textures/entity/vineyard_green_grapes"
+      },
+      "geometry": {
+        "default": "geometry.vineyard",
+        "sheared": "geometry.vineyard.sheared
+      },
+      "spawn_egg": {
+        "texture": "vineyard",
+        "texture_index": 0
+      },
+      "animations": {
+        "setup": "animation.vineyard.setup",
+      },
+      "animation_controllers": [
+        { "setup": "controller.animation.sheep.setup" },
+      ],
+      "render_controllers": [ "controller.render.vineyard" ]
+    }
+  }
+}

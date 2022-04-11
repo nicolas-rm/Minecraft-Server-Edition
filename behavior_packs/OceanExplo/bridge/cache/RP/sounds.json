@@ -1,0 +1,469 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\sounds.json",
+	"file_type": "client_sound",
+	"format_version": 1,
+	"file_uuid": "a6700d42_64c0_414d_839e_5c025a887220",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"key": "individual_event_sounds",
+				"is_minified": true,
+				"children": {
+					"events": {}
+				}
+			},
+			{
+				"key": "block_sounds",
+				"is_minified": true,
+				"children": {}
+			},
+			{
+				"open": {
+					"individual_event_sounds": {
+						"events": {}
+					},
+					"block_sounds": {},
+					"entity_sounds": {
+						"defaults": {
+							"volume": 1,
+							"pitch": [
+								0.8,
+								1.2
+							],
+							"events": {
+								"fall.big": {
+									"sound": "damage.fallbig",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"fall.small": {
+									"sound": "damage.fallsmall",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"splash": {
+									"sound": "random.splash",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"swim": {
+									"sound": "random.swim",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"fizz": {
+									"sound": "random.fizz",
+									"volume": 0.7,
+									"pitch": [
+										1.2,
+										2
+									]
+								},
+								"drink": {
+									"sound": "random.drink",
+									"volume": 0.5,
+									"pitch": [
+										0.9,
+										1
+									]
+								},
+								"eat": {
+									"sound": "random.eat",
+									"volume": [
+										0.5,
+										1.5
+									],
+									"pitch": [
+										0.8,
+										1.2
+									]
+								},
+								"ambient": {},
+								"flop": {},
+								"hurt": "game.player.hurt",
+								"death": "game.player.die",
+								"ambient.in.water": {},
+								"hurt.in.water": {},
+								"death.in.water": {},
+								"ambient.in.raid": {}
+							}
+						},
+						"entities": {
+							"ocean:emperor_penguin": {
+								"volume": [
+									0.9,
+									1.2
+								],
+								"pitch": [
+									0.8,
+									1.3
+								],
+								"events": {
+									"ambient": "penguin.idle",
+									"hurt": "penguin.hurt",
+									"death": "penguin.death"
+								}
+							},
+							"ocean:humpback_whale": {
+								"volume": [
+									0.9,
+									1.2
+								],
+								"pitch": [
+									0.8,
+									1.3
+								],
+								"events": {
+									"ambient": "whale.idle",
+									"hurt": "whale.hurt",
+									"death": "whale.death"
+								}
+							}
+						}
+					}
+				},
+				"key": "entity_sounds",
+				"children": [
+					{
+						"key": "defaults",
+						"is_minified": true,
+						"children": {
+							"volume": 1,
+							"pitch": [
+								0.8,
+								1.2
+							],
+							"events": {
+								"fall.big": {
+									"sound": "damage.fallbig",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"fall.small": {
+									"sound": "damage.fallsmall",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"splash": {
+									"sound": "random.splash",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"swim": {
+									"sound": "random.swim",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"fizz": {
+									"sound": "random.fizz",
+									"volume": 0.7,
+									"pitch": [
+										1.2,
+										2
+									]
+								},
+								"drink": {
+									"sound": "random.drink",
+									"volume": 0.5,
+									"pitch": [
+										0.9,
+										1
+									]
+								},
+								"eat": {
+									"sound": "random.eat",
+									"volume": [
+										0.5,
+										1.5
+									],
+									"pitch": [
+										0.8,
+										1.2
+									]
+								},
+								"ambient": {},
+								"flop": {},
+								"hurt": "game.player.hurt",
+								"death": "game.player.die",
+								"ambient.in.water": {},
+								"hurt.in.water": {},
+								"death.in.water": {},
+								"ambient.in.raid": {}
+							}
+						}
+					},
+					{
+						"open": {
+							"defaults": {
+								"volume": 1,
+								"pitch": [
+									0.8,
+									1.2
+								],
+								"events": {
+									"fall.big": {
+										"sound": "damage.fallbig",
+										"volume": 0.75,
+										"pitch": 1
+									},
+									"fall.small": {
+										"sound": "damage.fallsmall",
+										"volume": 0.75,
+										"pitch": 1
+									},
+									"splash": {
+										"sound": "random.splash",
+										"pitch": [
+											0.6,
+											1.4
+										]
+									},
+									"swim": {
+										"sound": "random.swim",
+										"pitch": [
+											0.6,
+											1.4
+										]
+									},
+									"fizz": {
+										"sound": "random.fizz",
+										"volume": 0.7,
+										"pitch": [
+											1.2,
+											2
+										]
+									},
+									"drink": {
+										"sound": "random.drink",
+										"volume": 0.5,
+										"pitch": [
+											0.9,
+											1
+										]
+									},
+									"eat": {
+										"sound": "random.eat",
+										"volume": [
+											0.5,
+											1.5
+										],
+										"pitch": [
+											0.8,
+											1.2
+										]
+									},
+									"ambient": {},
+									"flop": {},
+									"hurt": "game.player.hurt",
+									"death": "game.player.die",
+									"ambient.in.water": {},
+									"hurt.in.water": {},
+									"death.in.water": {},
+									"ambient.in.raid": {}
+								}
+							},
+							"entities": {
+								"ocean:emperor_penguin": {
+									"volume": [
+										0.9,
+										1.2
+									],
+									"pitch": [
+										0.8,
+										1.3
+									],
+									"events": {
+										"ambient": "penguin.idle",
+										"hurt": "penguin.hurt",
+										"death": "penguin.death"
+									}
+								},
+								"ocean:humpback_whale": {
+									"volume": [
+										0.9,
+										1.2
+									],
+									"pitch": [
+										0.8,
+										1.3
+									],
+									"events": {
+										"ambient": "whale.idle",
+										"hurt": "whale.hurt",
+										"death": "whale.death"
+									}
+								}
+							}
+						},
+						"key": "entities",
+						"children": [
+							{
+								"open": {
+									"ocean:emperor_penguin": {
+										"volume": [
+											0.9,
+											1.2
+										],
+										"pitch": [
+											0.8,
+											1.3
+										],
+										"events": {
+											"ambient": "penguin.idle",
+											"hurt": "penguin.hurt",
+											"death": "penguin.death"
+										}
+									},
+									"ocean:humpback_whale": {
+										"volume": [
+											0.9,
+											1.2
+										],
+										"pitch": [
+											0.8,
+											1.3
+										],
+										"events": {
+											"ambient": "whale.idle",
+											"hurt": "whale.hurt",
+											"death": "whale.death"
+										}
+									}
+								},
+								"key": "ocean:emperor_penguin",
+								"children": [
+									{
+										"key": "volume",
+										"is_minified": true,
+										"children": [
+											0.9,
+											1.2
+										]
+									},
+									{
+										"key": "pitch",
+										"is_minified": true,
+										"children": [
+											0.8,
+											1.3
+										]
+									},
+									{
+										"open": {
+											"volume": [
+												0.9,
+												1.2
+											],
+											"pitch": [
+												0.8,
+												1.3
+											],
+											"events": {
+												"ambient": "penguin.idle",
+												"hurt": "penguin.hurt",
+												"death": "penguin.death"
+											}
+										},
+										"key": "events",
+										"is_minified": true,
+										"children": {
+											"ambient": "penguin.idle",
+											"hurt": "penguin.hurt",
+											"death": "penguin.death"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"ocean:emperor_penguin": {
+										"volume": [
+											0.9,
+											1.2
+										],
+										"pitch": [
+											0.8,
+											1.3
+										],
+										"events": {
+											"ambient": "penguin.idle",
+											"hurt": "penguin.hurt",
+											"death": "penguin.death"
+										}
+									},
+									"ocean:humpback_whale": {
+										"volume": [
+											0.9,
+											1.2
+										],
+										"pitch": [
+											0.8,
+											1.3
+										],
+										"events": {
+											"ambient": "whale.idle",
+											"hurt": "whale.hurt",
+											"death": "whale.death"
+										}
+									}
+								},
+								"key": "ocean:humpback_whale",
+								"children": [
+									{
+										"key": "volume",
+										"is_minified": true,
+										"children": [
+											0.9,
+											1.2
+										]
+									},
+									{
+										"key": "pitch",
+										"is_minified": true,
+										"children": [
+											0.8,
+											1.3
+										]
+									},
+									{
+										"open": {
+											"volume": [
+												0.9,
+												1.2
+											],
+											"pitch": [
+												0.8,
+												1.3
+											],
+											"events": {
+												"ambient": "whale.idle",
+												"hurt": "whale.hurt",
+												"death": "whale.death"
+											}
+										},
+										"key": "events",
+										"is_minified": true,
+										"children": {
+											"ambient": "whale.idle",
+											"hurt": "whale.hurt",
+											"death": "whale.death"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

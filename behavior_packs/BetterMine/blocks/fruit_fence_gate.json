@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:fruit_fence_gate"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/fruit_fence_gate.json",
+      "minecraft:destroy_time": 0.3,
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#dda867",
+      "minecraft:flammable": {
+        "flame_odds": 1,
+        "burn_odds": 1
+    },
+     "minecraft:block_light_absorption": 15.0,
+     "minecraft:block_light_emission": 0.0
+    }
+  }
+}

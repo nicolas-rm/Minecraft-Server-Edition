@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:ruby"
+    },
+
+    "components": {
+      "minecraft:foil": false
+    }
+  }
+}

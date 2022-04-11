@@ -1,0 +1,30 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ray:ds_book"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"result": [
+			{
+				"item": "ds_book:netherite_ingot"
+			}
+		],
+		"pattern": [
+			"#L#",
+			"LBL",
+			"#L#"
+		],
+		"key": {
+			"L": {
+				"item": "minecraft:nautilus_shell"
+			},
+			"B": {
+				"item": "minecraft:book"
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "equipment",
+			"identifier": "better:steel_shovel"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.shovel"
+			},
+			"minecraft:icon": {
+				"texture": "steel_shovel"
+			},
+			"minecraft:render_offsets": "tool",
+			"minecraft:display_name": {
+				"value": "item.better:steel_shovel.name"
+			},
+			"minecraft:hover_text_color": "white"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "corruption1_fe1c2735"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:corrupted_vein",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:corruption1",
+      "count": 1
+    }
+  }
+}

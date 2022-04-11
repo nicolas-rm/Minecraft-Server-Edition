@@ -1,0 +1,64 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "spruce_meadow"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.6,
+        "snow_accumulation": [ 0.0, 0.25 ],
+        "temperature": 0.6
+      },
+      "minecraft:overworld_height": {
+          "noise_params": [ 1.6, 0.47 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:mountain_parameters": {
+        "peaks_factor": 1,
+        "steep_material_adjustment": {
+          "material": "minecraft:stone",
+          "north_slopes": true,
+          "south_slopes": true,
+          "west_slopes": true,
+          "east_slopes": true
+        },
+        "top_slide": {
+          "enabled": false
+        }
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "minecraft:stone"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.121, 1.0 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:grass"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.212, 1.0 ]
+          }
+        ]
+      },
+
+      "animal": {},
+      "spruce_meadow": {},
+      "spruce_hills_underground": {},
+      "hills": {},
+      "monster": {},
+      "overworld": {}
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "better:end_diamond_ore",
+            "register_to_creative_menu": true,
+            "category": "nature"
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "end_diamond_ore",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 16, 16]
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:loot": "loot_tables/blocks/end_diamond_ore.json",
+            "minecraft:destroy_time": 21.9,
+            "minecraft:friction": 0.6,
+            "minecraft:entity_collision": true,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 15,
+            "tag:ore": {},
+            "tag:diamond_pick_diggable": {}
+        }
+    }
+}

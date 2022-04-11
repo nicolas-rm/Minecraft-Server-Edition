@@ -1,0 +1,49 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Custom Spawners BP 2.4 - Mr Leefy YT",
+		"description": "Optimized - Reduced Max Stack Amount to 100 - Adds Guardian from 2.3",
+		"uuid": "64b75316-bbe4-4c93-8923-0b0a77617a06",
+		"version": [
+			2,
+			0,
+			4
+		],
+		"min_engine_version": [
+			1,
+			16,
+			100
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "30b21a26-f856-421c-81d4-75d7e310052e",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.3"
+			],
+			"blockbench_entity_wizard": [
+				"1.0.6"
+			]
+		}
+	},
+	"dependencies": [
+		{
+			"version": [
+				2,
+				0,
+				4
+			],
+			"uuid": "a20cddf4-aa5a-4266-9a1a-ab1c749cfc25"
+		}
+	]
+}

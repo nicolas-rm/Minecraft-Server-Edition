@@ -1,0 +1,24 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ray:soul_torch",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "Soul Torch\n§7Dynamic Lightning"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "soul_torch"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.items"
+			}
+		},
+		"events": {}
+	}
+}

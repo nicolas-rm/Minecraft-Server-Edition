@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "o:purified_water_bottle"
+		},
+		"tags": [
+			"campfire",
+			"soul_campfire",
+			"furnace",
+			"smoker"
+		],
+		"input": {
+			"item": "o:water_bottle"
+		},
+		"output": "o:purified_water_bottle"
+	}
+}

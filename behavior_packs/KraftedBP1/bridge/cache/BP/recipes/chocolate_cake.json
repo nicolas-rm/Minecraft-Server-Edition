@@ -1,0 +1,407 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\chocolate_cake.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "7403885d_59bc_4cd4_a321_70d3c8a01455",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:chocolate_cake"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"AAA",
+							"BEB",
+							"CCC"
+						],
+						"key": {
+							"A": {
+								"item": "minecraft:bucket",
+								"data": 1
+							},
+							"B": {
+								"item": "strat:cocoa_powder"
+							},
+							"C": {
+								"item": "strat:flour"
+							},
+							"E": {
+								"item": "minecraft:egg"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:chocolate_cake_item"
+							},
+							{
+								"item": "minecraft:bucket",
+								"count": 3,
+								"data": 0
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "minecraft:bucket",
+									"data": 1
+								},
+								"B": {
+									"item": "strat:cocoa_powder"
+								},
+								"C": {
+									"item": "strat:flour"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:chocolate_cake_item"
+								},
+								{
+									"item": "minecraft:bucket",
+									"count": 3,
+									"data": 0
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:chocolate_cake"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "minecraft:bucket",
+									"data": 1
+								},
+								"B": {
+									"item": "strat:cocoa_powder"
+								},
+								"C": {
+									"item": "strat:flour"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:chocolate_cake_item"
+								},
+								{
+									"item": "minecraft:bucket",
+									"count": 3,
+									"data": 0
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "minecraft:bucket",
+									"data": 1
+								},
+								"B": {
+									"item": "strat:cocoa_powder"
+								},
+								"C": {
+									"item": "strat:flour"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:chocolate_cake_item"
+								},
+								{
+									"item": "minecraft:bucket",
+									"count": 3,
+									"data": 0
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"AAA",
+							"BEB",
+							"CCC"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "minecraft:bucket",
+									"data": 1
+								},
+								"B": {
+									"item": "strat:cocoa_powder"
+								},
+								"C": {
+									"item": "strat:flour"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:chocolate_cake_item"
+								},
+								{
+									"item": "minecraft:bucket",
+									"count": 3,
+									"data": 0
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"A": {
+										"item": "minecraft:bucket",
+										"data": 1
+									},
+									"B": {
+										"item": "strat:cocoa_powder"
+									},
+									"C": {
+										"item": "strat:flour"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "A",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:bucket",
+									"data": 1
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "minecraft:bucket",
+										"data": 1
+									},
+									"B": {
+										"item": "strat:cocoa_powder"
+									},
+									"C": {
+										"item": "strat:flour"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "strat:cocoa_powder"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "minecraft:bucket",
+										"data": 1
+									},
+									"B": {
+										"item": "strat:cocoa_powder"
+									},
+									"C": {
+										"item": "strat:flour"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "C",
+								"is_minified": true,
+								"children": {
+									"item": "strat:flour"
+								}
+							},
+							{
+								"open": {
+									"A": {
+										"item": "minecraft:bucket",
+										"data": 1
+									},
+									"B": {
+										"item": "strat:cocoa_powder"
+									},
+									"C": {
+										"item": "strat:flour"
+									},
+									"E": {
+										"item": "minecraft:egg"
+									}
+								},
+								"key": "E",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:egg"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:chocolate_cake"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"AAA",
+								"BEB",
+								"CCC"
+							],
+							"key": {
+								"A": {
+									"item": "minecraft:bucket",
+									"data": 1
+								},
+								"B": {
+									"item": "strat:cocoa_powder"
+								},
+								"C": {
+									"item": "strat:flour"
+								},
+								"E": {
+									"item": "minecraft:egg"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:chocolate_cake_item"
+								},
+								{
+									"item": "minecraft:bucket",
+									"count": 3,
+									"data": 0
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:chocolate_cake_item"
+									},
+									{
+										"item": "minecraft:bucket",
+										"count": 3,
+										"data": 0
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:chocolate_cake_item"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:chocolate_cake_item"
+									},
+									{
+										"item": "minecraft:bucket",
+										"count": 3,
+										"data": 0
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:bucket",
+									"count": 3,
+									"data": 0
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

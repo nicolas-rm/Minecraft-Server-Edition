@@ -1,0 +1,278 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:baba_jaga2",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:2": {
+        "minecraft:transformation": {
+          "into": "better:babuska"
+        }
+      },
+      "minecraft:drink": {
+        "minecraft:behavior.drink_potion": {
+          "priority": 6,
+          "speed_modifier": -0.2,
+          "potions": [
+            {
+              "id": 22,
+              "chance": 1.0,
+              "filters": {
+                "all_of": [
+                  {
+                    "any_of": [
+                      {
+                        "all_of": [
+                          { "test": "is_family", "subject": "self", "operator": "==", "value": "witch" }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "random_time_choices": [
+            { "weight": 50, "value": 5 },
+            { "weight": 50, "value": 5 }
+          ],
+          "time_down_event": {
+            "event": "minecraft:donot",
+            "target": "self"
+          }
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "50"
+      },
+      "minecraft:type_family": {
+        "family": [ "witch", "monster", "mob" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/baba_jaga.json"
+      },
+      "minecraft:navigation.fly": {
+        "is_amphibious": true,
+        "avoid_sun": false,
+        "avoid_water": true
+      },
+      "minecraft:behavior.random_fly": {
+        "priority": 1,
+        "xz_dist": 15,
+        "y_dist": 8,
+        "y_offset": 0,
+        "speed_multiplier": 1.0,
+        "can_land_on_trees": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:health": {
+        "value": 200,
+        "max": 200
+      },
+      "minecraft:behavior.summon_entity": {
+        "priority": 1,
+        "summon_choices": [
+          {
+            "min_activation_range": 0.0,
+            "weight": 1,
+            "cooldown_time": 5.0,
+            "cast_duration": 2.0,
+            "particle_color": "#FF664D59",
+            "start_sound_event": "cast.spell",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "target",
+                "base_delay": 1.0,
+                "delay_per_summon": 0.05,
+                "num_entities_spawned": 8,
+                "entity_type": "minecraft:witch",
+                "size": 4
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "name": "Baba Jaga (Stage 2)",
+        "hud_range": 128
+      },
+      "minecraft:equip_item": {
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_water": true
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 0
+          }
+        ]
+      },
+      "minecraft:fire_immune": {
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:movement.fly": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.equip_item": {
+        "priority": 3
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:movement.glide": {
+        "start_speed": 0.1,
+        "speed_when_turning": 0.2
+      },
+      "minecraft:behavior.circle_around_anchor": {
+        "priority": 3,
+        "radius_change": 1.0,
+        "radius_adjustment_chance": 0.004,
+        "height_adjustment_chance": 0.002857,
+        "goal_radius": 1.0,
+        "angle_change": 15.0,
+        "radius_range": [ 4.0, 8.0 ],
+        "height_offset_range": [ -4.0, 5.0 ],
+        "height_above_target_range": [ 4.0, 8.0 ]
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "entity_attack",
+            "deals_damage": true,
+            "on_damage": {
+              "event": "minecraft:drink"
+            }
+          },
+          {
+            "cause": "projectile",
+            "deals_damage": true,
+            "on_damage": {
+              "event": "minecraft:drink"
+            }
+          },
+          {
+            "cause": "block_explosion",
+            "deals_damage": true,
+            "on_damage": {
+              "event": "minecraft:drink"
+            }
+          },
+          {
+            "cause": "magic",
+            "deals_damage": true,
+            "on_damage": {
+              "event": "minecraft:drink"
+            }
+          },
+          {
+            "cause": "wither",
+            "deals_damage": false
+          },
+          {
+            "cause": "fire",
+            "deals_damage": false
+          },
+          {
+            "cause": "lightning",
+            "deals_damage": false
+          },
+          {
+            "cause": "fire_tick",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:follow_range": {
+        "value": 128,
+        "max": 128
+      },
+      "minecraft:on_death": {
+        "event": "minecraft:2",
+        "target": "self"
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {  
+              "all_of": [
+                {
+                  "test" :  "is_family",
+                  "subject" : "other",
+                  "value" :  "player"
+                }
+              ]
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "irongolem"
+            },
+            "max_dist": 16
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:drink": {
+        "add": { "component_groups": [ "minecraft:drink" ] }
+      },
+      "minecraft:2": {
+        "add": { "component_groups": [ "minecraft:2" ] }
+      },
+      "minecraft:donot": {
+        "remove": { "component_groups": [ "minecraft:drink" ] }
+      }
+    }
+  }
+}

@@ -1,0 +1,1889 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\VanillaTwi\\entities\\goblin_berserker.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "ae27c2c1_74cc_483d_8e6c_0ac261c6d041",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "mythmob:goblin.berserker",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"component_groups": {
+							"minecraft:vindicator_aggro": {
+								"minecraft:angry": {
+									"duration": 30,
+									"broadcastAnger": true,
+									"broadcastRange": 16,
+									"broadcast_targets": [
+										"goblin"
+									],
+									"calm_event": {
+										"event": "minecraft:stop_aggro",
+										"target": "self"
+									}
+								},
+								"minecraft:damage_sensor": {
+									"triggers": {
+										"on_damage": {
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "irongolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "snowgolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "villagedefender"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "troll"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "wolf"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "llama"
+													}
+												],
+												"all_of": [
+													{
+														"test": "has_damage",
+														"value": "fatal"
+													}
+												]
+											},
+											"event": "become_scared"
+										},
+										"deals_damage": false
+									}
+								}
+							},
+							"mythmob:goblin_scared": {
+								"minecraft:behavior.avoid_mob_type": {
+									"priority": 5,
+									"entity_types": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "irongolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "snowgolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "villagedefender"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "troll"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "wolf"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "llama"
+													}
+												]
+											},
+											"max_dist": 25,
+											"min_dist": 15,
+											"walk_speed_multiplier": 1,
+											"sprint_speed_multiplier": 1.33
+										}
+									]
+								},
+								"minecraft:timer": {
+									"time": [
+										60,
+										120
+									],
+									"looping": false,
+									"time_down_event": {
+										"event": "minecraft:entity_spawned"
+									}
+								},
+								"minecraft:is_shaking": {}
+							},
+							"mythmob:goblin_peon": {
+								"minecraft:experience_reward": {
+									"on_death": "query.last_hit_by_player ? 3 + (query.equipment_count * Math.Random(1,3)) : 0"
+								},
+								"minecraft:equipment": {
+									"table": "loot_tables/entities/goblin_berserker.json"
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1,
+									"entity_types": {
+										"filters": {
+											"test": "is_family",
+											"subject": "other",
+											"operator": "!=",
+											"value": "goblin"
+										},
+										"max_dist": 64
+									}
+								},
+								"minecraft:behavior.melee_attack": {
+									"priority": 3,
+									"speed_multiplier": 1,
+									"track_target": false
+								}
+							}
+						},
+						"components": {
+							"minecraft:nameable": {},
+							"minecraft:type_family": {
+								"family": [
+									"goblin",
+									"monster"
+								]
+							},
+							"minecraft:breathable": {
+								"totalSupply": 15,
+								"suffocateTime": 0
+							},
+							"minecraft:loot": {
+								"table": "loot_tables/entities/cat_gift.json"
+							},
+							"minecraft:collision_box": {
+								"width": 0.4,
+								"height": 1.1
+							},
+							"minecraft:health": {
+								"value": 10,
+								"max": 15
+							},
+							"minecraft:attack": {
+								"damage": 3
+							},
+							"minecraft:movement": {
+								"value": 0.36
+							},
+							"minecraft:navigation.walk": {
+								"can_path_over_water": true
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:jump.static": {},
+							"minecraft:behavior.move_to_village": {
+								"priority": 5,
+								"speed_multiplier": 1
+							},
+							"minecraft:dweller": {
+								"dwelling_type": "village",
+								"dweller_role": "hostile",
+								"update_interval_base": 60,
+								"update_interval_variant": 40,
+								"can_find_poi": false,
+								"can_migrate": false,
+								"first_founding_reward": 0
+							},
+							"minecraft:behavior.float": {
+								"priority": 0
+							},
+							"minecraft:behavior.random_look_around": {
+								"priority": 7
+							},
+							"minecraft:behavior.charge_held_item": {
+								"priority": 3,
+								"items": [
+									"minecraft:arrow"
+								]
+							},
+							"minecraft:behavior.random_stroll": {
+								"priority": 8,
+								"speed_multiplier": 1
+							},
+							"minecraft:follow_range": {
+								"value": 64
+							},
+							"minecraft:behavior.look_at_player": {
+								"priority": 10,
+								"look_distance": 12,
+								"probability": 0.02
+							},
+							"minecraft:on_target_acquired": {
+								"event": "minecraft:become_aggro",
+								"target": "self"
+							},
+							"minecraft:on_target_escape": {
+								"event": "minecraft:stop_aggro",
+								"target": "self"
+							},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:despawn": {
+								"despawn_from_distance": {}
+							}
+						},
+						"events": {
+							"become_scared": {
+								"remove": {
+									"component_groups": [
+										"mythmob:goblin_peon",
+										"minecraft:vindicator_aggro"
+									]
+								},
+								"add": {
+									"component_groups": [
+										"mythmob:goblin_scared"
+									],
+									"spell_effects": [
+										{
+											"effect": "regeneration",
+											"amplifier": 1,
+											"duration": 60,
+											"visible": false
+										}
+									]
+								}
+							},
+							"minecraft:become_aggro": {
+								"add": {
+									"component_groups": [
+										"minecraft:vindicator_aggro"
+									]
+								}
+							},
+							"minecraft:stop_aggro": {
+								"remove": {
+									"component_groups": [
+										"minecraft:vindicator_aggro"
+									]
+								}
+							},
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"mythmob:goblin_peon"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "mythmob:goblin.berserker",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:goblin.berserker",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"minecraft:vindicator_aggro": {
+									"minecraft:angry": {
+										"duration": 30,
+										"broadcastAnger": true,
+										"broadcastRange": 16,
+										"broadcast_targets": [
+											"goblin"
+										],
+										"calm_event": {
+											"event": "minecraft:stop_aggro",
+											"target": "self"
+										}
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villagedefender"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "troll"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wolf"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "llama"
+														}
+													],
+													"all_of": [
+														{
+															"test": "has_damage",
+															"value": "fatal"
+														}
+													]
+												},
+												"event": "become_scared"
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"mythmob:goblin_scared": {
+									"minecraft:behavior.avoid_mob_type": {
+										"priority": 5,
+										"entity_types": [
+											{
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villagedefender"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "troll"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wolf"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "llama"
+														}
+													]
+												},
+												"max_dist": 25,
+												"min_dist": 15,
+												"walk_speed_multiplier": 1,
+												"sprint_speed_multiplier": 1.33
+											}
+										]
+									},
+									"minecraft:timer": {
+										"time": [
+											60,
+											120
+										],
+										"looping": false,
+										"time_down_event": {
+											"event": "minecraft:entity_spawned"
+										}
+									},
+									"minecraft:is_shaking": {}
+								},
+								"mythmob:goblin_peon": {
+									"minecraft:experience_reward": {
+										"on_death": "query.last_hit_by_player ? 3 + (query.equipment_count * Math.Random(1,3)) : 0"
+									},
+									"minecraft:equipment": {
+										"table": "loot_tables/entities/goblin_berserker.json"
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1,
+										"entity_types": {
+											"filters": {
+												"test": "is_family",
+												"subject": "other",
+												"operator": "!=",
+												"value": "goblin"
+											},
+											"max_dist": 64
+										}
+									},
+									"minecraft:behavior.melee_attack": {
+										"priority": 3,
+										"speed_multiplier": 1,
+										"track_target": false
+									}
+								}
+							},
+							"components": {
+								"minecraft:nameable": {},
+								"minecraft:type_family": {
+									"family": [
+										"goblin",
+										"monster"
+									]
+								},
+								"minecraft:breathable": {
+									"totalSupply": 15,
+									"suffocateTime": 0
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/cat_gift.json"
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 1.1
+								},
+								"minecraft:health": {
+									"value": 10,
+									"max": 15
+								},
+								"minecraft:attack": {
+									"damage": 3
+								},
+								"minecraft:movement": {
+									"value": 0.36
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:jump.static": {},
+								"minecraft:behavior.move_to_village": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:dweller": {
+									"dwelling_type": "village",
+									"dweller_role": "hostile",
+									"update_interval_base": 60,
+									"update_interval_variant": 40,
+									"can_find_poi": false,
+									"can_migrate": false,
+									"first_founding_reward": 0
+								},
+								"minecraft:behavior.float": {
+									"priority": 0
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.charge_held_item": {
+									"priority": 3,
+									"items": [
+										"minecraft:arrow"
+									]
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 8,
+									"speed_multiplier": 1
+								},
+								"minecraft:follow_range": {
+									"value": 64
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 10,
+									"look_distance": 12,
+									"probability": 0.02
+								},
+								"minecraft:on_target_acquired": {
+									"event": "minecraft:become_aggro",
+									"target": "self"
+								},
+								"minecraft:on_target_escape": {
+									"event": "minecraft:stop_aggro",
+									"target": "self"
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:despawn": {
+									"despawn_from_distance": {}
+								}
+							},
+							"events": {
+								"become_scared": {
+									"remove": {
+										"component_groups": [
+											"mythmob:goblin_peon",
+											"minecraft:vindicator_aggro"
+										]
+									},
+									"add": {
+										"component_groups": [
+											"mythmob:goblin_scared"
+										],
+										"spell_effects": [
+											{
+												"effect": "regeneration",
+												"amplifier": 1,
+												"duration": 60,
+												"visible": false
+											}
+										]
+									}
+								},
+								"minecraft:become_aggro": {
+									"add": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								},
+								"minecraft:stop_aggro": {
+									"remove": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								},
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"mythmob:goblin_peon"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {
+							"minecraft:vindicator_aggro": {
+								"minecraft:angry": {
+									"duration": 30,
+									"broadcastAnger": true,
+									"broadcastRange": 16,
+									"broadcast_targets": [
+										"goblin"
+									],
+									"calm_event": {
+										"event": "minecraft:stop_aggro",
+										"target": "self"
+									}
+								},
+								"minecraft:damage_sensor": {
+									"triggers": {
+										"on_damage": {
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "irongolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "snowgolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "villagedefender"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "troll"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "wolf"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "llama"
+													}
+												],
+												"all_of": [
+													{
+														"test": "has_damage",
+														"value": "fatal"
+													}
+												]
+											},
+											"event": "become_scared"
+										},
+										"deals_damage": false
+									}
+								}
+							},
+							"mythmob:goblin_scared": {
+								"minecraft:behavior.avoid_mob_type": {
+									"priority": 5,
+									"entity_types": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "irongolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "snowgolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "villagedefender"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "troll"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "wolf"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "llama"
+													}
+												]
+											},
+											"max_dist": 25,
+											"min_dist": 15,
+											"walk_speed_multiplier": 1,
+											"sprint_speed_multiplier": 1.33
+										}
+									]
+								},
+								"minecraft:timer": {
+									"time": [
+										60,
+										120
+									],
+									"looping": false,
+									"time_down_event": {
+										"event": "minecraft:entity_spawned"
+									}
+								},
+								"minecraft:is_shaking": {}
+							},
+							"mythmob:goblin_peon": {
+								"minecraft:experience_reward": {
+									"on_death": "query.last_hit_by_player ? 3 + (query.equipment_count * Math.Random(1,3)) : 0"
+								},
+								"minecraft:equipment": {
+									"table": "loot_tables/entities/goblin_berserker.json"
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1,
+									"entity_types": {
+										"filters": {
+											"test": "is_family",
+											"subject": "other",
+											"operator": "!=",
+											"value": "goblin"
+										},
+										"max_dist": 64
+									}
+								},
+								"minecraft:behavior.melee_attack": {
+									"priority": 3,
+									"speed_multiplier": 1,
+									"track_target": false
+								}
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:goblin.berserker",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"minecraft:vindicator_aggro": {
+									"minecraft:angry": {
+										"duration": 30,
+										"broadcastAnger": true,
+										"broadcastRange": 16,
+										"broadcast_targets": [
+											"goblin"
+										],
+										"calm_event": {
+											"event": "minecraft:stop_aggro",
+											"target": "self"
+										}
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villagedefender"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "troll"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wolf"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "llama"
+														}
+													],
+													"all_of": [
+														{
+															"test": "has_damage",
+															"value": "fatal"
+														}
+													]
+												},
+												"event": "become_scared"
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"mythmob:goblin_scared": {
+									"minecraft:behavior.avoid_mob_type": {
+										"priority": 5,
+										"entity_types": [
+											{
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villagedefender"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "troll"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wolf"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "llama"
+														}
+													]
+												},
+												"max_dist": 25,
+												"min_dist": 15,
+												"walk_speed_multiplier": 1,
+												"sprint_speed_multiplier": 1.33
+											}
+										]
+									},
+									"minecraft:timer": {
+										"time": [
+											60,
+											120
+										],
+										"looping": false,
+										"time_down_event": {
+											"event": "minecraft:entity_spawned"
+										}
+									},
+									"minecraft:is_shaking": {}
+								},
+								"mythmob:goblin_peon": {
+									"minecraft:experience_reward": {
+										"on_death": "query.last_hit_by_player ? 3 + (query.equipment_count * Math.Random(1,3)) : 0"
+									},
+									"minecraft:equipment": {
+										"table": "loot_tables/entities/goblin_berserker.json"
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1,
+										"entity_types": {
+											"filters": {
+												"test": "is_family",
+												"subject": "other",
+												"operator": "!=",
+												"value": "goblin"
+											},
+											"max_dist": 64
+										}
+									},
+									"minecraft:behavior.melee_attack": {
+										"priority": 3,
+										"speed_multiplier": 1,
+										"track_target": false
+									}
+								}
+							},
+							"components": {
+								"minecraft:nameable": {},
+								"minecraft:type_family": {
+									"family": [
+										"goblin",
+										"monster"
+									]
+								},
+								"minecraft:breathable": {
+									"totalSupply": 15,
+									"suffocateTime": 0
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/cat_gift.json"
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 1.1
+								},
+								"minecraft:health": {
+									"value": 10,
+									"max": 15
+								},
+								"minecraft:attack": {
+									"damage": 3
+								},
+								"minecraft:movement": {
+									"value": 0.36
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:jump.static": {},
+								"minecraft:behavior.move_to_village": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:dweller": {
+									"dwelling_type": "village",
+									"dweller_role": "hostile",
+									"update_interval_base": 60,
+									"update_interval_variant": 40,
+									"can_find_poi": false,
+									"can_migrate": false,
+									"first_founding_reward": 0
+								},
+								"minecraft:behavior.float": {
+									"priority": 0
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.charge_held_item": {
+									"priority": 3,
+									"items": [
+										"minecraft:arrow"
+									]
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 8,
+									"speed_multiplier": 1
+								},
+								"minecraft:follow_range": {
+									"value": 64
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 10,
+									"look_distance": 12,
+									"probability": 0.02
+								},
+								"minecraft:on_target_acquired": {
+									"event": "minecraft:become_aggro",
+									"target": "self"
+								},
+								"minecraft:on_target_escape": {
+									"event": "minecraft:stop_aggro",
+									"target": "self"
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:despawn": {
+									"despawn_from_distance": {}
+								}
+							},
+							"events": {
+								"become_scared": {
+									"remove": {
+										"component_groups": [
+											"mythmob:goblin_peon",
+											"minecraft:vindicator_aggro"
+										]
+									},
+									"add": {
+										"component_groups": [
+											"mythmob:goblin_scared"
+										],
+										"spell_effects": [
+											{
+												"effect": "regeneration",
+												"amplifier": 1,
+												"duration": 60,
+												"visible": false
+											}
+										]
+									}
+								},
+								"minecraft:become_aggro": {
+									"add": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								},
+								"minecraft:stop_aggro": {
+									"remove": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								},
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"mythmob:goblin_peon"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:nameable",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:nameable": {},
+									"minecraft:type_family": {
+										"family": [
+											"goblin",
+											"monster"
+										]
+									},
+									"minecraft:breathable": {
+										"totalSupply": 15,
+										"suffocateTime": 0
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/entities/cat_gift.json"
+									},
+									"minecraft:collision_box": {
+										"width": 0.4,
+										"height": 1.1
+									},
+									"minecraft:health": {
+										"value": 10,
+										"max": 15
+									},
+									"minecraft:attack": {
+										"damage": 3
+									},
+									"minecraft:movement": {
+										"value": 0.36
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:jump.static": {},
+									"minecraft:behavior.move_to_village": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:dweller": {
+										"dwelling_type": "village",
+										"dweller_role": "hostile",
+										"update_interval_base": 60,
+										"update_interval_variant": 40,
+										"can_find_poi": false,
+										"can_migrate": false,
+										"first_founding_reward": 0
+									},
+									"minecraft:behavior.float": {
+										"priority": 0
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 7
+									},
+									"minecraft:behavior.charge_held_item": {
+										"priority": 3,
+										"items": [
+											"minecraft:arrow"
+										]
+									},
+									"minecraft:behavior.random_stroll": {
+										"priority": 8,
+										"speed_multiplier": 1
+									},
+									"minecraft:follow_range": {
+										"value": 64
+									},
+									"minecraft:behavior.look_at_player": {
+										"priority": 10,
+										"look_distance": 12,
+										"probability": 0.02
+									},
+									"minecraft:on_target_acquired": {
+										"event": "minecraft:become_aggro",
+										"target": "self"
+									},
+									"minecraft:on_target_escape": {
+										"event": "minecraft:stop_aggro",
+										"target": "self"
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:despawn": {
+										"despawn_from_distance": {}
+									}
+								},
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"goblin",
+												"monster"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"goblin",
+											"monster"
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"totalSupply": 15,
+									"suffocateTime": 0
+								}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {
+									"table": "loot_tables/entities/cat_gift.json"
+								}
+							},
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0.4,
+									"height": 1.1
+								}
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 10,
+									"max": 15
+								}
+							},
+							{
+								"key": "minecraft:attack",
+								"is_minified": true,
+								"children": {
+									"damage": 3
+								}
+							},
+							{
+								"key": "minecraft:movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.36
+								}
+							},
+							{
+								"key": "minecraft:navigation.walk",
+								"is_minified": true,
+								"children": {
+									"can_path_over_water": true
+								}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"is_minified": true,
+								"children": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								}
+							},
+							{
+								"key": "minecraft:movement.basic",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:behavior.move_to_village",
+								"is_minified": true,
+								"children": {
+									"priority": 5,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"key": "minecraft:dweller",
+								"is_minified": true,
+								"children": {
+									"dwelling_type": "village",
+									"dweller_role": "hostile",
+									"update_interval_base": 60,
+									"update_interval_variant": 40,
+									"can_find_poi": false,
+									"can_migrate": false,
+									"first_founding_reward": 0
+								}
+							},
+							{
+								"key": "minecraft:behavior.float",
+								"is_minified": true,
+								"children": {
+									"priority": 0
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_look_around",
+								"is_minified": true,
+								"children": {
+									"priority": 7
+								}
+							},
+							{
+								"key": "minecraft:behavior.charge_held_item",
+								"is_minified": true,
+								"children": {
+									"priority": 3,
+									"items": [
+										"minecraft:arrow"
+									]
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_stroll",
+								"is_minified": true,
+								"children": {
+									"priority": 8,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"key": "minecraft:follow_range",
+								"is_minified": true,
+								"children": {
+									"value": 64
+								}
+							},
+							{
+								"key": "minecraft:behavior.look_at_player",
+								"is_minified": true,
+								"children": {
+									"priority": 10,
+									"look_distance": 12,
+									"probability": 0.02
+								}
+							},
+							{
+								"key": "minecraft:on_target_acquired",
+								"is_minified": true,
+								"children": {
+									"event": "minecraft:become_aggro",
+									"target": "self"
+								}
+							},
+							{
+								"key": "minecraft:on_target_escape",
+								"is_minified": true,
+								"children": {
+									"event": "minecraft:stop_aggro",
+									"target": "self"
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:despawn",
+								"is_minified": true,
+								"children": {
+									"despawn_from_distance": {}
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:goblin.berserker",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"minecraft:vindicator_aggro": {
+									"minecraft:angry": {
+										"duration": 30,
+										"broadcastAnger": true,
+										"broadcastRange": 16,
+										"broadcast_targets": [
+											"goblin"
+										],
+										"calm_event": {
+											"event": "minecraft:stop_aggro",
+											"target": "self"
+										}
+									},
+									"minecraft:damage_sensor": {
+										"triggers": {
+											"on_damage": {
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villagedefender"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "troll"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wolf"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "llama"
+														}
+													],
+													"all_of": [
+														{
+															"test": "has_damage",
+															"value": "fatal"
+														}
+													]
+												},
+												"event": "become_scared"
+											},
+											"deals_damage": false
+										}
+									}
+								},
+								"mythmob:goblin_scared": {
+									"minecraft:behavior.avoid_mob_type": {
+										"priority": 5,
+										"entity_types": [
+											{
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villagedefender"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "troll"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wolf"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "llama"
+														}
+													]
+												},
+												"max_dist": 25,
+												"min_dist": 15,
+												"walk_speed_multiplier": 1,
+												"sprint_speed_multiplier": 1.33
+											}
+										]
+									},
+									"minecraft:timer": {
+										"time": [
+											60,
+											120
+										],
+										"looping": false,
+										"time_down_event": {
+											"event": "minecraft:entity_spawned"
+										}
+									},
+									"minecraft:is_shaking": {}
+								},
+								"mythmob:goblin_peon": {
+									"minecraft:experience_reward": {
+										"on_death": "query.last_hit_by_player ? 3 + (query.equipment_count * Math.Random(1,3)) : 0"
+									},
+									"minecraft:equipment": {
+										"table": "loot_tables/entities/goblin_berserker.json"
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1,
+										"entity_types": {
+											"filters": {
+												"test": "is_family",
+												"subject": "other",
+												"operator": "!=",
+												"value": "goblin"
+											},
+											"max_dist": 64
+										}
+									},
+									"minecraft:behavior.melee_attack": {
+										"priority": 3,
+										"speed_multiplier": 1,
+										"track_target": false
+									}
+								}
+							},
+							"components": {
+								"minecraft:nameable": {},
+								"minecraft:type_family": {
+									"family": [
+										"goblin",
+										"monster"
+									]
+								},
+								"minecraft:breathable": {
+									"totalSupply": 15,
+									"suffocateTime": 0
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/cat_gift.json"
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 1.1
+								},
+								"minecraft:health": {
+									"value": 10,
+									"max": 15
+								},
+								"minecraft:attack": {
+									"damage": 3
+								},
+								"minecraft:movement": {
+									"value": 0.36
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:jump.static": {},
+								"minecraft:behavior.move_to_village": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:dweller": {
+									"dwelling_type": "village",
+									"dweller_role": "hostile",
+									"update_interval_base": 60,
+									"update_interval_variant": 40,
+									"can_find_poi": false,
+									"can_migrate": false,
+									"first_founding_reward": 0
+								},
+								"minecraft:behavior.float": {
+									"priority": 0
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.charge_held_item": {
+									"priority": 3,
+									"items": [
+										"minecraft:arrow"
+									]
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 8,
+									"speed_multiplier": 1
+								},
+								"minecraft:follow_range": {
+									"value": 64
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 10,
+									"look_distance": 12,
+									"probability": 0.02
+								},
+								"minecraft:on_target_acquired": {
+									"event": "minecraft:become_aggro",
+									"target": "self"
+								},
+								"minecraft:on_target_escape": {
+									"event": "minecraft:stop_aggro",
+									"target": "self"
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:despawn": {
+									"despawn_from_distance": {}
+								}
+							},
+							"events": {
+								"become_scared": {
+									"remove": {
+										"component_groups": [
+											"mythmob:goblin_peon",
+											"minecraft:vindicator_aggro"
+										]
+									},
+									"add": {
+										"component_groups": [
+											"mythmob:goblin_scared"
+										],
+										"spell_effects": [
+											{
+												"effect": "regeneration",
+												"amplifier": 1,
+												"duration": 60,
+												"visible": false
+											}
+										]
+									}
+								},
+								"minecraft:become_aggro": {
+									"add": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								},
+								"minecraft:stop_aggro": {
+									"remove": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								},
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"mythmob:goblin_peon"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"become_scared": {
+										"remove": {
+											"component_groups": [
+												"mythmob:goblin_peon",
+												"minecraft:vindicator_aggro"
+											]
+										},
+										"add": {
+											"component_groups": [
+												"mythmob:goblin_scared"
+											],
+											"spell_effects": [
+												{
+													"effect": "regeneration",
+													"amplifier": 1,
+													"duration": 60,
+													"visible": false
+												}
+											]
+										}
+									},
+									"minecraft:become_aggro": {
+										"add": {
+											"component_groups": [
+												"minecraft:vindicator_aggro"
+											]
+										}
+									},
+									"minecraft:stop_aggro": {
+										"remove": {
+											"component_groups": [
+												"minecraft:vindicator_aggro"
+											]
+										}
+									},
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"mythmob:goblin_peon"
+											]
+										}
+									}
+								},
+								"key": "become_scared",
+								"children": [
+									{
+										"key": "remove",
+										"is_minified": true,
+										"children": {
+											"component_groups": [
+												"mythmob:goblin_peon",
+												"minecraft:vindicator_aggro"
+											]
+										}
+									},
+									{
+										"open": {
+											"remove": {
+												"component_groups": [
+													"mythmob:goblin_peon",
+													"minecraft:vindicator_aggro"
+												]
+											},
+											"add": {
+												"component_groups": [
+													"mythmob:goblin_scared"
+												],
+												"spell_effects": [
+													{
+														"effect": "regeneration",
+														"amplifier": 1,
+														"duration": 60,
+														"visible": false
+													}
+												]
+											}
+										},
+										"key": "add",
+										"is_minified": true,
+										"children": {
+											"component_groups": [
+												"mythmob:goblin_scared"
+											],
+											"spell_effects": [
+												{
+													"effect": "regeneration",
+													"amplifier": 1,
+													"duration": 60,
+													"visible": false
+												}
+											]
+										}
+									}
+								]
+							},
+							{
+								"key": "minecraft:become_aggro",
+								"is_minified": true,
+								"children": {
+									"add": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								}
+							},
+							{
+								"key": "minecraft:stop_aggro",
+								"is_minified": true,
+								"children": {
+									"remove": {
+										"component_groups": [
+											"minecraft:vindicator_aggro"
+										]
+									}
+								}
+							},
+							{
+								"key": "minecraft:entity_spawned",
+								"is_minified": true,
+								"children": {
+									"add": {
+										"component_groups": [
+											"mythmob:goblin_peon"
+										]
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

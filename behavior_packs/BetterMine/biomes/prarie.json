@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "prarie"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.25,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.85
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 0.1, 0.0 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": {
+          "name": "minecraft:stone",
+          "states": {
+            "stone_type": "granite"
+          }
+        },
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": [
+          [ "plains", 4 ]
+        ],
+        "mutate_transformation": [
+          [ "red_mountains", 4 ],
+          [ "red_town", 3 ]
+        ],
+        "generate_for_climates": [
+          [ "medium", 2 ],
+          [ "warm", 1 ]
+        ]
+      },
+
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "prarie": {},
+      "grasses": {}
+    }
+  }
+}

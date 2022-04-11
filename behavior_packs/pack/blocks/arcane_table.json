@@ -1,0 +1,89 @@
+//bridge-file-version: #24
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"components": {
+			"minecraft:breakonpush": true,
+			"minecraft:destroy_time": 1,
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					12,
+					16
+				]
+			},
+			"minecraft:explosion_resistance": 0,
+			"minecraft:flammable": {
+				"burn_odds": 10,
+				"flame_odds": 10
+			},
+			"minecraft:geometry": "geometry.arcane_table",
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"texture": "arcane_table"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					12,
+					16
+				]
+			},
+			"minecraft:ticking": {
+				"looping": false,
+				"on_tick": {
+					"event": "sound",
+					"target": "self"
+				},
+				"range": [
+					0,
+					0
+				]
+			},
+			"minecraft:crafting_table": {
+				"custom_description": "Netherite Enchantment Table",
+				"grid_size": 3,
+				"crafting_tags": [
+					"arcane_table"
+				]
+			},
+			"minecraft:block_light_emission": 0.6,
+			"minecraft:creative_category": {
+				"category": "items"
+			}
+		},
+		"description": {
+			"identifier": "ray:arcane_table",
+			"register_to_creative_menu": true,
+			"is_experimental": false
+		},
+		"events": {
+			"sound": {
+				"run_command": {
+					"command": [
+						"summon ray:book ~~-0.5 ~"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:block_light_emission": 1
+				}
+			}
+		]
+	}
+}

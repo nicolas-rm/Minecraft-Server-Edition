@@ -1,0 +1,1 @@
+execute @a ~ ~1 ~ tag @e[type=item,c=1,r=1] add dropped

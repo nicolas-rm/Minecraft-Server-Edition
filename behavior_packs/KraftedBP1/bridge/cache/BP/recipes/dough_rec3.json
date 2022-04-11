@@ -1,0 +1,317 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\dough_rec3.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "b48c5384_2a37_4221_a60c_680f3f502606",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:dough_rec3"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"#o",
+							"~"
+						],
+						"key": {
+							"#": {
+								"item": "strat:flour"
+							},
+							"~": {
+								"item": "minecraft:potion"
+							},
+							"o": {
+								"item": "strat:salt"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:dough",
+								"count": 2
+							},
+							{
+								"item": "minecraft:glass_bottle",
+								"count": 1
+							}
+						],
+						"priority": 3
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec3"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "minecraft:potion"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "minecraft:glass_bottle",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:dough_rec3"
+						}
+					},
+					{
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec3"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "minecraft:potion"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "minecraft:glass_bottle",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#o",
+							"~"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec3"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "minecraft:potion"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "minecraft:glass_bottle",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:flour"
+									},
+									"~": {
+										"item": "minecraft:potion"
+									},
+									"o": {
+										"item": "strat:salt"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:flour"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:flour"
+									},
+									"~": {
+										"item": "minecraft:potion"
+									},
+									"o": {
+										"item": "strat:salt"
+									}
+								},
+								"key": "~",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:potion"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "strat:flour"
+									},
+									"~": {
+										"item": "minecraft:potion"
+									},
+									"o": {
+										"item": "strat:salt"
+									}
+								},
+								"key": "o",
+								"is_minified": true,
+								"children": {
+									"item": "strat:salt"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:dough_rec3"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#o",
+								"~"
+							],
+							"key": {
+								"#": {
+									"item": "strat:flour"
+								},
+								"~": {
+									"item": "minecraft:potion"
+								},
+								"o": {
+									"item": "strat:salt"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:dough",
+									"count": 2
+								},
+								{
+									"item": "minecraft:glass_bottle",
+									"count": 1
+								}
+							],
+							"priority": 3
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:dough",
+										"count": 2
+									},
+									{
+										"item": "minecraft:glass_bottle",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:dough",
+									"count": 2
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "strat:dough",
+										"count": 2
+									},
+									{
+										"item": "minecraft:glass_bottle",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:glass_bottle",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"data": "3",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

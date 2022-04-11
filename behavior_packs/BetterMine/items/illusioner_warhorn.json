@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "items",
+			"identifier": "better:illusioner_warhorn"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.horn"
+			},
+			"minecraft:icon": {
+				"texture": "illusioner_warhorn"
+			},
+			"minecraft:display_name": {
+				"value": "Illusioner's Warhorn"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 99999,
+			"minecraft:foil": false,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "better:cast_spell",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"better:cast_spell": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon better:illusioner_spawn"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"playsound raid.horn @a [r=128] ~ ~ ~"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"replaceitem entity @p slot.weapon.mainhand 1 air 1"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

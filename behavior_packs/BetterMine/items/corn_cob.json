@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:corn_cob"
+    },
+
+    "components": {
+      "minecraft:use_duration": 256,
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": "low"
+      }
+    }
+  }
+}

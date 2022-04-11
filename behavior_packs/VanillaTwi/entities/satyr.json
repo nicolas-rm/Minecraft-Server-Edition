@@ -1,0 +1,213 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mythmob:satyr",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"managed": {
+				"minecraft:managed_wandering_trader": {}
+			},
+			"despawning": {
+				"minecraft:type_family": {
+					"family": [
+						"wandering_trader",
+						"wandering_trader_despawning"
+					]
+				}
+			},
+			"minecraft:scared": {
+				"minecraft:angry": {
+					"duration": 25,
+					"calm_event": {
+						"event": "minecraft:become_calm",
+						"target": "self"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.9
+			},
+			"minecraft:type_family": {
+				"family": [
+					"satyr",
+					"wandering_trader"
+				]
+			},
+			"minecraft:economy_trade_table": {
+				"display_name": "Satyr Trader",
+				"table": "trading/economy_trades/wandering_trader_trades.json",
+				"new_screen": true
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0
+			},
+			"minecraft:health": {
+				"value": 25,
+				"max": 25
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"target_dist": 1.2,
+				"speed_multiplier": 1,
+				"track_target": true
+			},
+			"minecraft:attack": {
+				"damage": 3
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/pillager.json"
+			},
+			"minecraft:movement": {
+				"value": 0.35
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:nameable": {},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/satyr.json"
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:damage_sensor": [
+				{
+					"cause": "entity_attack",
+					"deals_damage": true,
+					"on_damage": {
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "player"
+						},
+						"event": "minecraft:become_scared"
+					}
+				},
+				{
+					"cause": "projectile",
+					"deals_damage": true,
+					"on_damage": {
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "player"
+						},
+						"event": "minecraft:become_scared"
+					}
+				},
+				{
+					"cause": "magic",
+					"deals_damage": true,
+					"on_damage": {
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "player"
+						},
+						"event": "minecraft:become_scared"
+					}
+				}
+			],
+			"minecraft:behavior.trade_with_player": {
+				"priority": 1
+			},
+			"minecraft:behavior.trade_interest": {
+				"priority": 3,
+				"within_radius": 6,
+				"interest_time": 45,
+				"remove_item_time": 1,
+				"carried_item_switch_time": 2,
+				"cooldown": 2
+			},
+			"minecraft:behavior.look_at_trading_player": {
+				"priority": 4
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.avoid_mob_type": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "illager"
+								}
+							]
+						},
+						"walk_speed_multiplier": 0.6,
+						"sprint_speed_multiplier": 0.6
+					}
+				],
+				"max_dist": 6
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 8
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:follow_range": {
+				"value": 64
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": {}
+				}
+			},
+			"minecraft:start_despawn": {
+				"add": {
+					"component_groups": [
+						"despawning"
+					]
+				}
+			},
+			"minecraft:become_scared": {
+				"add": {
+					"component_groups": [
+						"minecraft:scared"
+					]
+				}
+			},
+			"minecraft:become_calm": {
+				"remove": {
+					"component_groups": [
+						"minecraft:scared"
+					]
+				}
+			}
+		}
+	}
+}

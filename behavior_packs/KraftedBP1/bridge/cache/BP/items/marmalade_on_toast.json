@@ -1,0 +1,189 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\marmalade_on_toast.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "bb377761_fa03_4827_903d_f7b1ad82d70e",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:marmalade_on_toast",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 2.4,
+							"minecraft:food": {
+								"nutrition": 9,
+								"saturation_modifier": "good",
+								"on_consume": {
+									"event": "speed"
+								}
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:icon": {
+								"texture": "marmalade_on_toast"
+							},
+							"minecraft:use_animation": "eat"
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:marmalade_on_toast",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"on_consume": {
+										"event": "speed"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "marmalade_on_toast"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:marmalade_on_toast",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:marmalade_on_toast",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2.4,
+								"minecraft:food": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"on_consume": {
+										"event": "speed"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:icon": {
+									"texture": "marmalade_on_toast"
+								},
+								"minecraft:use_animation": "eat"
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "good",
+										"on_consume": {
+											"event": "speed"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "marmalade_on_toast"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 9,
+									"saturation_modifier": "good",
+									"on_consume": {
+										"event": "speed"
+									}
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "good",
+										"on_consume": {
+											"event": "speed"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "marmalade_on_toast"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2.4,
+									"minecraft:food": {
+										"nutrition": 9,
+										"saturation_modifier": "good",
+										"on_consume": {
+											"event": "speed"
+										}
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:icon": {
+										"texture": "marmalade_on_toast"
+									},
+									"minecraft:use_animation": "eat"
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "marmalade_on_toast"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,401 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\cockatrice.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "e9e25ebb_d3cc_4519_b50a_2f9947779e09",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vanilla_twilight:cockatrice",
+							"materials": {
+								"default": "vindicator"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/cockatrice"
+							},
+							"geometry": {
+								"default": "geometry.cockatrice"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+									"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+								],
+								"scale": 0.9375
+							},
+							"animations": {
+								"vindicator_attack": "animation.cockatrice.attack",
+								"vindicator_walk": "animation.cockatrice.move"
+							},
+							"animation_controllers": [
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"vindicator_base": "controller.animation.vindicator.base.v1.0"
+								}
+							],
+							"render_controllers": [
+								"controller.render.vindicator"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#789657",
+								"overlay_color": "#a70000"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:cockatrice",
+								"materials": {
+									"default": "vindicator"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/cockatrice"
+								},
+								"geometry": {
+									"default": "geometry.cockatrice"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+										"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+									],
+									"scale": 0.9375
+								},
+								"animations": {
+									"vindicator_attack": "animation.cockatrice.attack",
+									"vindicator_walk": "animation.cockatrice.move"
+								},
+								"animation_controllers": [
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"vindicator_base": "controller.animation.vindicator.base.v1.0"
+									}
+								],
+								"render_controllers": [
+									"controller.render.vindicator"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#789657",
+									"overlay_color": "#a70000"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "vanilla_twilight:cockatrice",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/cockatrice"
+									},
+									"geometry": {
+										"default": "geometry.cockatrice"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.cockatrice.attack",
+										"vindicator_walk": "animation.cockatrice.move"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#789657",
+										"overlay_color": "#a70000"
+									}
+								},
+								"data": "vanilla_twilight:cockatrice",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "vindicator"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/cockatrice"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.cockatrice"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+										"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+									],
+									"scale": 0.9375
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:cockatrice",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/cockatrice"
+									},
+									"geometry": {
+										"default": "geometry.cockatrice"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.cockatrice.attack",
+										"vindicator_walk": "animation.cockatrice.move"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#789657",
+										"overlay_color": "#a70000"
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"vindicator_attack": "animation.cockatrice.attack",
+									"vindicator_walk": "animation.cockatrice.move"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:cockatrice",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/cockatrice"
+									},
+									"geometry": {
+										"default": "geometry.cockatrice"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.cockatrice.attack",
+										"vindicator_walk": "animation.cockatrice.move"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#789657",
+										"overlay_color": "#a70000"
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:cockatrice",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/cockatrice"
+									},
+									"geometry": {
+										"default": "geometry.cockatrice"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.cockatrice.attack",
+										"vindicator_walk": "animation.cockatrice.move"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#789657",
+										"overlay_color": "#a70000"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.vindicator"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:cockatrice",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/cockatrice"
+									},
+									"geometry": {
+										"default": "geometry.cockatrice"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 45.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 45.0);"
+										],
+										"scale": 0.9375
+									},
+									"animations": {
+										"vindicator_attack": "animation.cockatrice.attack",
+										"vindicator_walk": "animation.cockatrice.move"
+									},
+									"animation_controllers": [
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									],
+									"render_controllers": [
+										"controller.render.vindicator"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#789657",
+										"overlay_color": "#a70000"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#789657",
+									"overlay_color": "#a70000"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "better:prarie_hamlet_houses"
+    },
+    "features": [
+      [ "minecraft:prarie_sheperd_position", 3 ],
+      [ "minecraft:p_loft_house_position", 1 ],
+      [ "minecraft:prarie_farmer_position", 1 ],
+      [ "minecraft:red_tower_position", 1 ],
+      [ "minecraft:red_farm_position", 1 ],
+      [ "minecraft:red_stables_position", 1 ],
+      [ "minecraft:hamlet_centre_position", 1 ]
+    ]
+  }
+}

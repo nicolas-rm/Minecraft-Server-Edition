@@ -1,0 +1,256 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\VanillaTwi\\spawn_rules\\werewolf.json",
+	"file_type": "spawn_rule",
+	"format_version": 1,
+	"file_uuid": "9b73d4a1_6616_46ac_835f_5d7decbfcf11",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:spawn_rules": {
+						"description": {
+							"identifier": "mythmob:werewolf",
+							"population_control": "animal"
+						},
+						"conditions": [
+							{
+								"minecraft:spawns_on_surface": {},
+								"minecraft:brightness_filter": {
+									"min": 0,
+									"max": 7,
+									"adjust_for_weather": true
+								},
+								"minecraft:difficulty_filter": {
+									"min": "easy",
+									"max": "hard"
+								},
+								"minecraft:weight": {
+									"default": 1
+								},
+								"minecraft:herd": {
+									"min_size": 0,
+									"max_size": 1
+								},
+								"minecraft:biome_filter": {
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "monster"
+								}
+							}
+						]
+					}
+				},
+				"key": "minecraft:spawn_rules",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:werewolf",
+								"population_control": "animal"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 7,
+										"adjust_for_weather": true
+									},
+									"minecraft:difficulty_filter": {
+										"min": "easy",
+										"max": "hard"
+									},
+									"minecraft:weight": {
+										"default": 1
+									},
+									"minecraft:herd": {
+										"min_size": 0,
+										"max_size": 1
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "monster"
+									}
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "mythmob:werewolf",
+							"population_control": "animal"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:werewolf",
+								"population_control": "animal"
+							},
+							"conditions": [
+								{
+									"minecraft:spawns_on_surface": {},
+									"minecraft:brightness_filter": {
+										"min": 0,
+										"max": 7,
+										"adjust_for_weather": true
+									},
+									"minecraft:difficulty_filter": {
+										"min": "easy",
+										"max": "hard"
+									},
+									"minecraft:weight": {
+										"default": 1
+									},
+									"minecraft:herd": {
+										"min_size": 0,
+										"max_size": 1
+									},
+									"minecraft:biome_filter": {
+										"test": "has_biome_tag",
+										"operator": "==",
+										"value": "monster"
+									}
+								}
+							]
+						},
+						"key": "conditions",
+						"children": [
+							{
+								"open": [
+									{
+										"minecraft:spawns_on_surface": {},
+										"minecraft:brightness_filter": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": true
+										},
+										"minecraft:difficulty_filter": {
+											"min": "easy",
+											"max": "hard"
+										},
+										"minecraft:weight": {
+											"default": 1
+										},
+										"minecraft:herd": {
+											"min_size": 0,
+											"max_size": 1
+										},
+										"minecraft:biome_filter": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "monster"
+										}
+									}
+								],
+								"children": [
+									{
+										"key": "minecraft:spawns_on_surface",
+										"is_minified": true,
+										"children": {}
+									},
+									{
+										"key": "minecraft:brightness_filter",
+										"is_minified": true,
+										"children": {
+											"min": 0,
+											"max": 7,
+											"adjust_for_weather": true
+										}
+									},
+									{
+										"key": "minecraft:difficulty_filter",
+										"is_minified": true,
+										"children": {
+											"min": "easy",
+											"max": "hard"
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": true
+											},
+											"minecraft:difficulty_filter": {
+												"min": "easy",
+												"max": "hard"
+											},
+											"minecraft:weight": {
+												"default": 1
+											},
+											"minecraft:herd": {
+												"min_size": 0,
+												"max_size": 1
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "monster"
+											}
+										},
+										"key": "minecraft:weight",
+										"is_minified": true,
+										"children": {
+											"default": 1
+										}
+									},
+									{
+										"open": {
+											"minecraft:spawns_on_surface": {},
+											"minecraft:brightness_filter": {
+												"min": 0,
+												"max": 7,
+												"adjust_for_weather": true
+											},
+											"minecraft:difficulty_filter": {
+												"min": "easy",
+												"max": "hard"
+											},
+											"minecraft:weight": {
+												"default": 1
+											},
+											"minecraft:herd": {
+												"min_size": 0,
+												"max_size": 1
+											},
+											"minecraft:biome_filter": {
+												"test": "has_biome_tag",
+												"operator": "==",
+												"value": "monster"
+											}
+										},
+										"key": "minecraft:herd",
+										"is_minified": true,
+										"children": {
+											"min_size": 0,
+											"max_size": 1
+										}
+									},
+									{
+										"key": "minecraft:biome_filter",
+										"is_minified": true,
+										"children": {
+											"test": "has_biome_tag",
+											"operator": "==",
+											"value": "monster"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

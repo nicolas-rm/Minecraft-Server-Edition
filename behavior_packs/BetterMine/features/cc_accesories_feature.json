@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "better:cc_accesories_feature"
+    },
+    "features": [
+      [ "better:villager_random_spawn_waypoint", 1 ],
+      [ "better:villager_random_spawn_campfire", 1 ],
+      [ "better:villager_random_spawn_market", 1 ],
+      [ "better:villager_random_spawn_cage", 1 ]
+    ]
+  }
+}

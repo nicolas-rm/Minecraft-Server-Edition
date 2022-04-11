@@ -1,0 +1,238 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\animation_controllers\\barnacle.ac.json",
+	"file_type": "rp_animation_controller",
+	"format_version": 1,
+	"file_uuid": "f6b3967f_ea9e_4830_a7d7_b8b95867d015",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.barnacle": {
+							"states": {
+								"default": {
+									"transitions": [
+										{
+											"constrict": "query.is_sheared"
+										}
+									],
+									"animations": [
+										"swim"
+									],
+									"blend_transition": 0.2
+								},
+								"constrict": {
+									"transitions": [
+										{
+											"default": "!query.is_sheared"
+										}
+									],
+									"animations": [
+										"constrict"
+									],
+									"blend_transition": 0.2
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.barnacle": {
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"constrict": "query.is_sheared"
+											}
+										],
+										"animations": [
+											"swim"
+										],
+										"blend_transition": 0.2
+									},
+									"constrict": {
+										"transitions": [
+											{
+												"default": "!query.is_sheared"
+											}
+										],
+										"animations": [
+											"constrict"
+										],
+										"blend_transition": 0.2
+									}
+								}
+							}
+						},
+						"key": "controller.animation.barnacle",
+						"children": [
+							{
+								"open": {
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"constrict": "query.is_sheared"
+												}
+											],
+											"animations": [
+												"swim"
+											],
+											"blend_transition": 0.2
+										},
+										"constrict": {
+											"transitions": [
+												{
+													"default": "!query.is_sheared"
+												}
+											],
+											"animations": [
+												"constrict"
+											],
+											"blend_transition": 0.2
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"constrict": "query.is_sheared"
+													}
+												],
+												"animations": [
+													"swim"
+												],
+												"blend_transition": 0.2
+											},
+											"constrict": {
+												"transitions": [
+													{
+														"default": "!query.is_sheared"
+													}
+												],
+												"animations": [
+													"constrict"
+												],
+												"blend_transition": 0.2
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"constrict": "query.is_sheared"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"constrict": "query.is_sheared"
+														}
+													}
+												]
+											},
+											{
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"swim"
+												]
+											},
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"constrict": "query.is_sheared"
+													}
+												],
+												"animations": [
+													"swim"
+												],
+												"blend_transition": 0.2
+											},
+											"constrict": {
+												"transitions": [
+													{
+														"default": "!query.is_sheared"
+													}
+												],
+												"animations": [
+													"constrict"
+												],
+												"blend_transition": 0.2
+											}
+										},
+										"key": "constrict",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "!query.is_sheared"
+														}
+													],
+													"animations": [
+														"constrict"
+													],
+													"blend_transition": 0.2
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "!query.is_sheared"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "!query.is_sheared"
+														}
+													}
+												]
+											},
+											{
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"constrict"
+												]
+											},
+											{
+												"data": "0.2",
+												"key": "blend_transition"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

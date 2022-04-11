@@ -1,0 +1,285 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\evocation_villager.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "7c74fede_ce8b_40c9_a0ed_80cd136ecf68",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "vanilla_twilight:evocation_villager",
+							"materials": {
+								"default": "evoker"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/evocation"
+							},
+							"geometry": {
+								"default": "geometry.evoker.villager"
+							},
+							"scripts": {
+								"scale": 0.9375
+							},
+							"animations": {
+								"general": "animation.evoker.general",
+								"casting": "animation.evoker.casting",
+								"look_at_target": "animation.common.look_at_target",
+								"move": "animation.villager.move"
+							},
+							"animation_controllers": [
+								{
+									"general": "controller.animation.evoker.general.v1.0"
+								},
+								{
+									"move": "controller.animation.villager.move"
+								}
+							],
+							"particle_effects": {
+								"spell": "minecraft:evoker_spell"
+							},
+							"render_controllers": [
+								"controller.render.evoker"
+							],
+							"spawn_egg": {
+								"texture": "spawn_egg",
+								"texture_index": 14
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "vanilla_twilight:evocation_villager",
+								"materials": {
+									"default": "evoker"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/evocation"
+								},
+								"geometry": {
+									"default": "geometry.evoker.villager"
+								},
+								"scripts": {
+									"scale": 0.9375
+								},
+								"animations": {
+									"general": "animation.evoker.general",
+									"casting": "animation.evoker.casting",
+									"look_at_target": "animation.common.look_at_target",
+									"move": "animation.villager.move"
+								},
+								"animation_controllers": [
+									{
+										"general": "controller.animation.evoker.general.v1.0"
+									},
+									{
+										"move": "controller.animation.villager.move"
+									}
+								],
+								"particle_effects": {
+									"spell": "minecraft:evoker_spell"
+								},
+								"render_controllers": [
+									"controller.render.evoker"
+								],
+								"spawn_egg": {
+									"texture": "spawn_egg",
+									"texture_index": 14
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "vanilla_twilight:evocation_villager",
+									"materials": {
+										"default": "evoker"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/evocation"
+									},
+									"geometry": {
+										"default": "geometry.evoker.villager"
+									},
+									"scripts": {
+										"scale": 0.9375
+									},
+									"animations": {
+										"general": "animation.evoker.general",
+										"casting": "animation.evoker.casting",
+										"look_at_target": "animation.common.look_at_target",
+										"move": "animation.villager.move"
+									},
+									"animation_controllers": [
+										{
+											"general": "controller.animation.evoker.general.v1.0"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										}
+									],
+									"particle_effects": {
+										"spell": "minecraft:evoker_spell"
+									},
+									"render_controllers": [
+										"controller.render.evoker"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 14
+									}
+								},
+								"data": "vanilla_twilight:evocation_villager",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "evoker"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/evocation"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.evoker.villager"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"scale": 0.9375
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"general": "animation.evoker.general",
+									"casting": "animation.evoker.casting",
+									"look_at_target": "animation.common.look_at_target",
+									"move": "animation.villager.move"
+								}
+							},
+							{
+								"open": {
+									"identifier": "vanilla_twilight:evocation_villager",
+									"materials": {
+										"default": "evoker"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/evocation"
+									},
+									"geometry": {
+										"default": "geometry.evoker.villager"
+									},
+									"scripts": {
+										"scale": 0.9375
+									},
+									"animations": {
+										"general": "animation.evoker.general",
+										"casting": "animation.evoker.casting",
+										"look_at_target": "animation.common.look_at_target",
+										"move": "animation.villager.move"
+									},
+									"animation_controllers": [
+										{
+											"general": "controller.animation.evoker.general.v1.0"
+										},
+										{
+											"move": "controller.animation.villager.move"
+										}
+									],
+									"particle_effects": {
+										"spell": "minecraft:evoker_spell"
+									},
+									"render_controllers": [
+										"controller.render.evoker"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 14
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"open": [
+											{
+												"general": "controller.animation.evoker.general.v1.0"
+											},
+											{
+												"move": "controller.animation.villager.move"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"general": "controller.animation.evoker.general.v1.0"
+										}
+									},
+									{
+										"open": [
+											{
+												"general": "controller.animation.evoker.general.v1.0"
+											},
+											{
+												"move": "controller.animation.villager.move"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"move": "controller.animation.villager.move"
+										}
+									}
+								]
+							},
+							{
+								"key": "particle_effects",
+								"is_minified": true,
+								"children": {
+									"spell": "minecraft:evoker_spell"
+								}
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.evoker"
+								]
+							},
+							{
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"texture": "spawn_egg",
+									"texture_index": 14
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

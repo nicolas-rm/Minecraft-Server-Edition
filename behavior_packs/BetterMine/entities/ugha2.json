@@ -1,0 +1,58 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:ugha2",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:2": {
+        "minecraft:transformation": {
+          "into": "better:boom"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "skeleton", "mob" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 1.9
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:scale": {
+        "value":2.0
+      },
+      "minecraft:ageable": {
+        "duration": 10.04,
+        "grow_up": {
+          "event": "minecraft:grow_up",
+          "target": "self"
+        }
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+      "minecraft:grow_up": {
+        "add": { "component_groups": [ "minecraft:2" ] }
+      }
+    }
+  }
+}

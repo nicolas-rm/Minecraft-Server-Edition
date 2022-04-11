@@ -1,0 +1,28 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ray:scorching_heat"
+		},
+		"tags": [
+			"arcane_table"
+		],
+		"result": [
+			{
+				"item": "sh_book:netherite_ingot"
+			}
+		],
+		"pattern": [
+			"LB"
+		],
+		"key": {
+			"L": {
+				"item": "minecraft:lava_bucket"
+			},
+			"B": {
+				"item": "minecraft:book"
+			}
+		}
+	}
+}

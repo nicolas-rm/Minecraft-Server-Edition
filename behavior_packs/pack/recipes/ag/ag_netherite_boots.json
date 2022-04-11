@@ -1,0 +1,25 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.17.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "ray:ag_netherite_boots"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:netherite_boots"
+			},
+			{
+				"item": "ag_book:netherite_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "ray:ag_netherite_boots"
+			}
+		]
+	}
+}

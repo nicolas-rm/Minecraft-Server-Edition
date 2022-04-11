@@ -1,0 +1,57 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ray:book",
+			"runtime_identifier": {},
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"component_groups": {
+			"des": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": [
+					0,
+					0
+				],
+				"time_down_event": {
+					"event": "command",
+					"target": "self"
+				}
+			},
+			"minecraft:knockback_resistance": {
+				"value": 100
+			}
+		},
+		"events": {
+			"command": {
+				"run_command": {
+					"command": [
+						"tag @s add anee"
+					]
+				}
+			},
+			"des": {
+				"add": {
+					"component_groups": [
+						"des"
+					]
+				}
+			}
+		}
+	}
+}

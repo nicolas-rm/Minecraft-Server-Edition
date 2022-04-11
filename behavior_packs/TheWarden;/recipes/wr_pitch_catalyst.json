@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pitch_catalyst_0df7f14b"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:pitch_sculk",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:pitch_catalyst",
+      "count": 1
+    }
+  }
+}

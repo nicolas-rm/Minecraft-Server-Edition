@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "minecraft:village_ruin_feature"
+    },
+    "features": [
+      [ "minecraft:village_ruin0", 4 ],
+      [ "minecraft:village_ruin1", 4 ],
+      [ "minecraft:village_ruin2", 4 ],
+      [ "minecraft:village_ruin3", 4 ],
+      [ "minecraft:village_ruin4", 4 ],
+      [ "minecraft:village_ruin5", 4 ],
+      [ "minecraft:village_ruin6", 4 ],
+      [ "minecraft:village_ruin7", 4 ],
+      [ "minecraft:village_ruin8", 4 ],
+      [ "minecraft:village_farm_ruin0", 2 ],
+      [ "minecraft:village_farm_ruin1", 2 ],
+      [ "minecraft:village_mine_ruin0", 2 ],
+      [ "minecraft:village_mine_ruin1", 2 ],
+      [ "minecraft:village_temple_ruin0", 1 ],
+      [ "minecraft:village_temple_ruin1", 1 ],
+      [ "minecraft:village_temple_ruin2", 1 ],
+      [ "minecraft:village_temple_ruin3", 1 ]
+    ]
+  }
+}

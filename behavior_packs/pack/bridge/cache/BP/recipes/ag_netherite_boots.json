@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\ag_netherite_boots.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "f27b4710_6829_4984_b785_0991f10ade96",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:ag_netherite_boots"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:netherite_boots"
+							},
+							{
+								"item": "ray:ag_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:ag_netherite_boots"
+							}
+						]
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"description": {
+							"identifier": "ray:ag_netherite_boots"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:netherite_boots"
+							},
+							{
+								"item": "ray:ag_enchanted_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:ag_netherite_boots"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_netherite_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:netherite_boots"
+								},
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ag_netherite_boots"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:ag_netherite_boots"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_netherite_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:netherite_boots"
+								},
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ag_netherite_boots"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_netherite_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:netherite_boots"
+								},
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ag_netherite_boots"
+								}
+							]
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:netherite_boots"
+									},
+									{
+										"item": "ray:ag_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:netherite_boots"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:netherite_boots"
+									},
+									{
+										"item": "ray:ag_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ag_enchanted_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:ag_netherite_boots"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:netherite_boots"
+								},
+								{
+									"item": "ray:ag_enchanted_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ag_netherite_boots"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:ag_netherite_boots"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ag_netherite_boots"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

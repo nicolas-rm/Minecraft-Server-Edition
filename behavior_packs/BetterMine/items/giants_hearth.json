@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "better:giants_hearth",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "giants_hearth"
+			},
+			"minecraft:display_name": {
+				"value": "Giant's Hearth"
+			},
+			"minecraft:max_stack_size": 16
+		}
+	}
+}

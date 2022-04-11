@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.vildicator": {
+      "part_visibility": [
+        { "rightArm": "query.is_angry || query.is_celebrating" },
+        { "leftArm": "query.is_angry || query.is_celebrating" },
+        { "rightItem": "query.is_angry" },
+        { "arms": "!(query.is_angry || query.is_celebrating)" }
+      ],
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [
+        "query.is_angry ? Texture.default : (query.has_owner ? Texture.tame : Texture.default)"
+      ]
+    }
+  }
+}

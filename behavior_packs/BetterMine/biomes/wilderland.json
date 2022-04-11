@@ -1,0 +1,46 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "wilderland"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.5,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.8
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "lowlands"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": [
+          [ "woodland", 3 ],
+          [ "river", 1 ]
+        ],
+        "river_transformation": "cold_ocean",
+        "mutate_transformation": "glistering_caves",
+        "generate_for_climates": [
+          [ "medium", 3 ],
+          [ "cold", 1 ]
+        ]
+      },
+
+      "wilderland": {},
+      "plains": {},
+      "animal": {},
+      "overworld": {},
+      "bushes": {},
+      "stones": {}
+    }
+  }
+}
+  

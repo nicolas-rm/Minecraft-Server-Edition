@@ -1,0 +1,54 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "outside:mechanical_press_head"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.mechanical_press_head",
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mechanical_press_head",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:crafting_table": {
+				"custom_description": "Mechanical Press",
+				"grid_size": 3,
+				"crafting_tags": [
+					"mechanical_press"
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					13,
+					6
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					13,
+					6
+				]
+			}
+		},
+		"events": {}
+	}
+}

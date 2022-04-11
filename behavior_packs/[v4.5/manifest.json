@@ -1,0 +1,48 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§7[v4.5.0] §fMore Structures by §eiKorbon - §2BP",
+		"description": "Adds more structures to the game! v4.5 - §bTwitter - §f@iKorbon §cYouTube - §fiKorbon§f",
+		"uuid": "75e91e83-37f8-41dd-9d0f-e34edfbe1f53",
+		"version": [
+			1,
+			0,
+			16
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "a2760e90-846d-4e86-b52a-728b9dbc3bc9",
+			"version": [
+				1,
+				0,
+				16
+			]
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "Rare Rates",
+			"name": "Structure Spawn Rates - §eRare§f",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "Common Rates",
+			"name": "Structure Spawn Rates - Normal",
+			"memory_tier": 0
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.4"
+			]
+		}
+	}
+}

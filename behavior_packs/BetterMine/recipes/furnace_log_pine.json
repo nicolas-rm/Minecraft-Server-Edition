@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "better:furnace_log_pine"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "better:pine_log",
+    "output": "minecraft:coal:1"
+  }
+  
+}

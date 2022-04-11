@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "oh:trunk_stick"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:log",
+				"count": 1
+			},
+			{
+				"item": "minecraft:log",
+				"count": 1
+			}
+		],
+		"result": [
+			{
+				"item": "oh:trunk_stick"
+			}
+		]
+	}
+}

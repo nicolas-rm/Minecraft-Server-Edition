@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "wr_trypo_sculk_feature"
+    },
+    "count": 56656,
+    "replace_rules": [
+      {
+        "places_block": "wr:trypo_sculk",
+        "may_replace": [
+          "minecraft:stone",
+          "minecraft:netherrack",
+          "minecraft:end_stone"
+        ]
+      }
+    ]
+  }
+}

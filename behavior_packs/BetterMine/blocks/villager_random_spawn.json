@@ -1,0 +1,138 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "betterjigsaw:villager_random_spawn"
+		},
+		"components": {
+			"minecraft:ticking": {
+				"looping": false,
+				"range": [
+					2,
+					2
+				],
+				"on_tick": {
+					"event": "spawn",
+					"target": "self"
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "nein",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:unit_cube": {}
+		},
+		"events": {
+			"spawn": {
+				"trigger": {
+					"event": "spawn_villager"
+				},
+				"set_block": {
+					"block_type": "minecraft:air"
+				}
+			},
+            "spawn_villager": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function villager2"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function villager3"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function villager4"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "run_command": {
+                            "command": [
+                                "function villager5"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function villager_cc2"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function villager_cc3"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function villager_cc4"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "run_command": {
+                            "command": [
+                                "function villager_cc5"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function girl_cc2"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function girl_cc3"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "function girl_cc4"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 2,
+                        "run_command": {
+                            "command": [
+                                "function girl_cc5"
+                            ]
+                        }
+                    }
+                ]
+            }
+		}
+	}
+}

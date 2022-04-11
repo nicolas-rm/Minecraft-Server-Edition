@@ -1,0 +1,253 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\winter_aspect.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "b8a11e0d_f8ac_4a45_b668_dd12a0f3c823",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ray:winter_aspect"
+						},
+						"tags": [
+							"arcane_table"
+						],
+						"key": {
+							"O": {
+								"item": "minecraft:ice"
+							},
+							"B": {
+								"item": "minecraft:book"
+							}
+						},
+						"pattern": [
+							"#O#",
+							"OBO",
+							"#O#"
+						],
+						"result": [
+							{
+								"item": "ray:ia_enchanted_book"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:winter_aspect"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"key": {
+								"O": {
+									"item": "minecraft:ice"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"#O#",
+								"OBO",
+								"#O#"
+							],
+							"result": [
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:winter_aspect"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:winter_aspect"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"key": {
+								"O": {
+									"item": "minecraft:ice"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"#O#",
+								"OBO",
+								"#O#"
+							],
+							"result": [
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"arcane_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:winter_aspect"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"key": {
+								"O": {
+									"item": "minecraft:ice"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"#O#",
+								"OBO",
+								"#O#"
+							],
+							"result": [
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"O": {
+										"item": "minecraft:ice"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "O",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:ice"
+								}
+							},
+							{
+								"open": {
+									"O": {
+										"item": "minecraft:ice"
+									},
+									"B": {
+										"item": "minecraft:book"
+									}
+								},
+								"key": "B",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:winter_aspect"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"key": {
+								"O": {
+									"item": "minecraft:ice"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"#O#",
+								"OBO",
+								"#O#"
+							],
+							"result": [
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#O#",
+							"OBO",
+							"#O#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:winter_aspect"
+							},
+							"tags": [
+								"arcane_table"
+							],
+							"key": {
+								"O": {
+									"item": "minecraft:ice"
+								},
+								"B": {
+									"item": "minecraft:book"
+								}
+							},
+							"pattern": [
+								"#O#",
+								"OBO",
+								"#O#"
+							],
+							"result": [
+								{
+									"item": "ray:ia_enchanted_book"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:ia_enchanted_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ia_enchanted_book"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

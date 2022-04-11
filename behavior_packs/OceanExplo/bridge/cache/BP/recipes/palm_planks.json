@@ -1,0 +1,123 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\recipes\\palm_planks.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "cc638b58_30e5_4142_a91c_9f04b65c6fcf",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "ocean:palm_planks"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"L"
+						],
+						"key": {
+							"L": {
+								"item": "ocean:palm_log"
+							}
+						},
+						"result": [
+							{
+								"item": "ocean:palm_planks",
+								"count": 4
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ocean:palm_planks"
+						}
+					},
+					{
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"L"
+						]
+					},
+					{
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"L": {
+										"item": "ocean:palm_log"
+									}
+								},
+								"key": "L",
+								"is_minified": true,
+								"children": {
+									"item": "ocean:palm_log"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:palm_planks"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"L"
+							],
+							"key": {
+								"L": {
+									"item": "ocean:palm_log"
+								}
+							},
+							"result": [
+								{
+									"item": "ocean:palm_planks",
+									"count": 4
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ocean:palm_planks",
+										"count": 4
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ocean:palm_planks",
+									"count": 4
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,442 @@
+{
+	"entity": {
+		"BP/entities/humpback_whale.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:humpback_whale"
+			],
+			"animation_references": [],
+			"families": [
+				"fish"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/great_white_shark.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:barracuda"
+			],
+			"animation_references": [],
+			"families": [
+				"fish"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/emperor_penguin.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:emperor_penguin"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/azure_serpent.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:azure_serpent"
+			],
+			"animation_references": [],
+			"families": [
+				"fish",
+				"monster"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/player.json": {
+			"events": [
+				"minecraft:gain_bad_omen",
+				"minecraft:clear_add_bad_omen",
+				"minecraft:trigger_raid",
+				"minecraft:remove_raid_trigger"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:player"
+			],
+			"animation_references": [],
+			"families": [
+				"player"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/barnacle.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"constricting",
+				"normal",
+				"trap_player",
+				"down",
+				"d2"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:barnacle"
+			],
+			"animation_references": [
+				"trap",
+				"reset",
+				"down"
+			],
+			"families": [
+				"barnacle",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/boat_killer.json": {
+			"events": [
+				"despawn"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:boat_killer"
+			],
+			"animation_references": [
+				"trap",
+				"reset",
+				"down"
+			],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/effects.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:to_full_puff",
+				"minecraft:start_half_puff",
+				"minecraft:on_half_puff",
+				"minecraft:start_full_puff",
+				"minecraft:on_full_puff",
+				"minecraft:from_full_puff",
+				"minecraft:on_deflate",
+				"minecraft:on_normal_puff",
+				"d"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:effects"
+			],
+			"animation_references": [],
+			"families": [
+				"inanimate"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/barracuda.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"ocean:barracuda"
+			],
+			"animation_references": [],
+			"families": [
+				"fish"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"client_entity": {
+		"RP/entity/humpback_whale.json": {
+			"identifiers": [
+				"ocean:humpback_whale"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/great_white_shark.json": {
+			"identifiers": [
+				"ocean:great_white_shark"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/emperor_penguin.json": {
+			"identifiers": [
+				"ocean:emperor_penguin"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"walk",
+				"swim",
+				"animation_controller"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/azure_serpent.json": {
+			"identifiers": [
+				"ocean:azure_serpent"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/barnacle.json": {
+			"identifiers": [
+				"ocean:barnacle"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"controller",
+				"swim",
+				"constrict"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/barracuda.json": {
+			"identifiers": [
+				"ocean:barracuda"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"swim"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	},
+	"rp_animation_controller": {
+		"RP/animation_controllers/penguin.ac.json": {
+			"ids": [
+				"controller.animation.penguin"
+			]
+		},
+		"RP/animation_controllers/barnacle.ac.json": {
+			"ids": [
+				"controller.animation.barnacle"
+			]
+		}
+	},
+	"sound_definition": {
+		"RP/sounds/sound_definitions.json": {
+			"ids": [
+				"penguin.idle",
+				"penguin.hurt",
+				"penguin.death",
+				"whale.idle",
+				"whale.hurt",
+				"whale.death"
+			]
+		}
+	},
+	"block": {
+		"BP/blocks/palm_log.json": {
+			"identifiers": [
+				"ocean:palm_leaves"
+			],
+			"events": [],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/palm_planks.json": {
+			"identifiers": [
+				"ocean:palm_leaves"
+			],
+			"events": [],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/palm_leaves.json": {
+			"identifiers": [
+				"ocean:palm_leaves"
+			],
+			"events": [],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"item": {
+		"BP/items/barracuda_item.json": {
+			"identifiers": [
+				"ocean:barracuda_item"
+			],
+			"custom_commands": []
+		},
+		"BP/items/azure_scale.json": {
+			"identifiers": [
+				"ocean:azure_scale"
+			],
+			"custom_commands": []
+		}
+	},
+	"function": {
+		"7f000465_dac9_4dd8_a50b_47e061ee16c6": {},
+		"66e574ff_c8cc_4663_92c9_0a2caf002cca": {},
+		"7ce9008d_0e95_42b5_a5ac_1f8f247442f5": {},
+		"4b07bf89_a692_454e_8ae5_c2005eabff7d": {
+			"tags": [
+				"trapme"
+			]
+		},
+		"BP/functions/mseffects.mcfunction": {
+			"custom_commands": [],
+			"scoreboards": [
+				"ocean_effects"
+			],
+			"tags": [
+				"oceaneffects"
+			]
+		}
+	},
+	"animation_controller": {
+		"BP/animation_controllers/barnacle.animation_controller.json": {
+			"ids": [
+				"controller.animation.barnacle.damage_rider"
+			],
+			"custom_commands": []
+		},
+		"BP/animation_controllers/force_ride.animation_controller.json": {
+			"ids": [
+				"controller.animation.barnacle.catch"
+			],
+			"custom_commands": []
+		},
+		"BP/animation_controllers/bridge/custom_item_behavior.json": {
+			"ids": [],
+			"custom_commands": []
+		}
+	},
+	"animation": {
+		"BP/animations/barnacle.animation.json": {
+			"ids": [
+				"animation.barnacle.force_ride",
+				"animation.barnacle.down",
+				"animation.barnacle.reset"
+			],
+			"custom_commands": []
+		}
+	},
+	"feature": {
+		"BP/features/palm_island1_structure_feature.json": {
+			"identifiers": [
+				"ocean:palm_island1_structure_feature"
+			]
+		}
+	},
+	"feature_rule": {
+		"BP/feature_rules/palm_island_feature_rule.json": {
+			"identifiers": [
+				"ocean:palm_island_feature_rule"
+			]
+		}
+	},
+	"rp_animation": {
+		"RP/animations/barracuda.animation.json": {
+			"ids": [
+				"animation.barracuda.swim"
+			]
+		}
+	},
+	"recipe": {
+		"BP/recipes/palm_planks.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/palm_crafting_table.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/palm_sticks.json": {
+			"tags": [
+				"crafting_table"
+			]
+		}
+	}
+}

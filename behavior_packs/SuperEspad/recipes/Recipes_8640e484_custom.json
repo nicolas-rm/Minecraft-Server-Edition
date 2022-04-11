@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "furnace"
+    ],
+    "output": {
+      "item": "espadas:lingote_niquel",
+      "data": 0
+    },
+    "input": {
+      "item": "espadas:mineral_niquel",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_24216e07"
+    }
+  }
+}

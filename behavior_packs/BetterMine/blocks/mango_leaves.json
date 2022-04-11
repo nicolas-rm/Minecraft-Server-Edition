@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:mango_leaves"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/mango_leaves.json",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "mango_leaves",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:unit_cube": {},
+      "minecraft:destroy_time": 0.3,
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#033603",
+      "minecraft:flammable": {
+        "flame_odds": 8,
+        "burn_odds": 8
+    },
+     "minecraft:block_light_absorption": 15.0,
+     "minecraft:block_light_emission": 0.0
+    }
+  }
+}

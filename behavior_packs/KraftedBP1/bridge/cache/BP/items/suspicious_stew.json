@@ -1,0 +1,93 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\suspicious_stew.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "ed4c1f7e_4e38_4459_8c48_7d2d5e174f0b",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 1.1,
+					"minecraft:item": {
+						"description": {
+							"identifier": "minecraft:suspicious_stew"
+						},
+						"components": {
+							"minecraft:use_duration": 32,
+							"minecraft:max_stack_size": 16,
+							"minecraft:food": {
+								"nutrition": 4,
+								"saturation_modifier": "normal",
+								"using_converts_to": "bowl",
+								"on_use_action": "suspicious_stew_effect"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:suspicious_stew"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:suspicious_stew"
+							},
+							"components": {
+								"minecraft:use_duration": 32,
+								"minecraft:max_stack_size": 16,
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"using_converts_to": "bowl",
+									"on_use_action": "suspicious_stew_effect"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "32",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 32,
+									"minecraft:max_stack_size": 16,
+									"minecraft:food": {
+										"nutrition": 4,
+										"saturation_modifier": "normal",
+										"using_converts_to": "bowl",
+										"on_use_action": "suspicious_stew_effect"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 4,
+									"saturation_modifier": "normal",
+									"using_converts_to": "bowl",
+									"on_use_action": "suspicious_stew_effect"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

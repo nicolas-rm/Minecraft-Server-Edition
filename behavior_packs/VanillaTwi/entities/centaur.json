@@ -1,0 +1,258 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mythmob:centaur",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+	"minecraft:vindicator_aggro": {
+        "minecraft:angry": {
+          "duration": 25,
+          "broadcastAnger": false,
+          "calm_event": {
+            "event": "minecraft:stop_aggro",
+            "target": "self"
+          }
+        }
+      },
+	  "mythmob:adult_cock": {
+        "minecraft:scale": {
+          "value": 1
+        }
+      },
+		"minecraft:ranged_mode": {
+        "minecraft:shooter": {
+        "type": "Arrow",
+        "def": "minecraft:arrow"
+      },
+	  "minecraft:equipment": {
+        "table": "loot_tables/entities/goblin.json"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 4,
+        "attack_interval_min": 1,
+        "attack_interval_max": 1,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 0.0,
+        "attack_radius": 16,
+        "burst_shots": 3,
+        "burst_interval": 1
+      },
+	  "minecraft:knockback_resistance": {
+        "value": 0.0
+      },
+	  "minecraft:timer": {
+	    "time": [1.5,5],
+		"looping": false,
+		"time_down_event": {
+		"event": "minecraft:switch_to_melee"
+		}
+	  }
+      },
+
+      "minecraft:melee_mode": {
+	  "minecraft:equipment": {
+        "table": "loot_tables/entities/centaur.json"
+      },
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 2.0,
+          "track_target": false
+        },
+		"minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+		"minecraft:timer": {
+	    "time": [1.5,5],
+		"looping": false,
+		"time_down_event": {
+		"event": "minecraft:switch_to_ranged"
+		}
+	  }
+      }
+      },
+    "components": {
+      "minecraft:nameable": {
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:health": {
+        "value": 75,
+        "max": 100
+      },
+      "minecraft:collision_box": {
+        "width": 0.72,
+        "height": 1.2
+      },
+	  "minecraft:knockback_resistance": {
+        "value": 0.0
+      },
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/cockatrice.json"
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+		"avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:collision_box": {
+        "width": 0.7,
+        "height": 2.1
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {  
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "snowgolem"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "irongolem"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "wandering_trader"}
+                ] 
+            },
+            "max_dist": 20
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "villager" },
+                { "test": "has_component", "subject": "other", "operator": "!=", "value": "minecraft:is_baby" }
+              ]
+            },
+            "max_dist": 20
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "target_dist": 1.2,
+        "speed_multiplier": 1.25,
+        "track_target": true
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 6
+      },
+      "minecraft:type_family": {
+        "family": [ "monster", "undead", "skeleton" ]
+      },
+	  "minecraft:on_target_acquired": {
+        "event": "minecraft:become_aggro",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "minecraft:stop_aggro",
+        "target": "self"
+      },
+      "minecraft:physics": {
+      },
+	  "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+	"minecraft:switch_to_melee": {
+        "remove": {
+          "component_groups": [
+            "minecraft:ranged_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:melee_mode"
+          ]
+        }
+      },
+      "minecraft:switch_to_ranged": {
+        "remove": {
+          "component_groups": [
+            "minecraft:melee_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:ranged_mode"
+          ]
+        }
+      },
+	  "minecraft:become_aggro": {
+        "add": {
+          "component_groups": [
+            "minecraft:vindicator_aggro",
+			"minecraft:ranged_mode"
+          ]
+        }
+      },
+      "minecraft:stop_aggro": {
+        "remove": {
+          "component_groups": [
+            "minecraft:vindicator_aggro",
+			"minecraft:melee_mode",
+			"minecraft:ranged_mode"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+		"randomize": [
+          {
+            "weight": 100,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "mythmob:adult_cock"
+              ]
+            }
+          },
+          {
+            "weight": 0,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "mythmob:baby_cock",
+				"minecraft:melee_mode"
+              ]
+
+            }
+          }
+        ]
+      }
+    }
+  }
+}

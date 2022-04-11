@@ -1,0 +1,375 @@
+{
+	"file_path": "C:\\Users\\judie\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\VanillaTwi\\entity\\centaur.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "3ca3131e_b139_4a29_aaf2_591f6cd7bace",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "mythmob:centaur",
+							"materials": {
+								"default": "vindicator"
+							},
+							"textures": {
+								"default": "textures/entity/mythmob/centaur"
+							},
+							"geometry": {
+								"default": "geometry.centaur"
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+									"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+								]
+							},
+							"animations": {
+								"riding.arms": "animation.humanoid.riding.arms",
+								"riding.legs": "animation.humanoid.riding.legs",
+								"vindicator_base": "animation.centaur.base",
+								"vindicator_attack": "animation.archer.attack",
+								"vindicator_walk": "animation.centaur.move",
+								"bob": "animation.humanoid.bob"
+							},
+							"animation_controllers": [
+								{
+									"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+								},
+								{
+									"look_at_target": "controller.animation.humanoid.look_at_target"
+								},
+								{
+									"vindicator_base": "controller.animation.vindicator.base.v1.0"
+								},
+								{
+									"bob": "controller.animation.humanoid.bob"
+								}
+							],
+							"render_controllers": [
+								"controller.render.centaur"
+							],
+							"enable_attachables": true,
+							"spawn_egg": {
+								"base_color": "#878787",
+								"overlay_color": "#E3AF7F"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "mythmob:centaur",
+								"materials": {
+									"default": "vindicator"
+								},
+								"textures": {
+									"default": "textures/entity/mythmob/centaur"
+								},
+								"geometry": {
+									"default": "geometry.centaur"
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+										"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+									]
+								},
+								"animations": {
+									"riding.arms": "animation.humanoid.riding.arms",
+									"riding.legs": "animation.humanoid.riding.legs",
+									"vindicator_base": "animation.centaur.base",
+									"vindicator_attack": "animation.archer.attack",
+									"vindicator_walk": "animation.centaur.move",
+									"bob": "animation.humanoid.bob"
+								},
+								"animation_controllers": [
+									{
+										"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+									},
+									{
+										"look_at_target": "controller.animation.humanoid.look_at_target"
+									},
+									{
+										"vindicator_base": "controller.animation.vindicator.base.v1.0"
+									},
+									{
+										"bob": "controller.animation.humanoid.bob"
+									}
+								],
+								"render_controllers": [
+									"controller.render.centaur"
+								],
+								"enable_attachables": true,
+								"spawn_egg": {
+									"base_color": "#878787",
+									"overlay_color": "#E3AF7F"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "mythmob:centaur",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "vindicator"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/mythmob/centaur"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.centaur"
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+										"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+									]
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"riding.arms": "animation.humanoid.riding.arms",
+									"riding.legs": "animation.humanoid.riding.legs",
+									"vindicator_base": "animation.centaur.base",
+									"vindicator_attack": "animation.archer.attack",
+									"vindicator_walk": "animation.centaur.move",
+									"bob": "animation.humanoid.bob"
+								}
+							},
+							{
+								"open": {
+									"identifier": "mythmob:centaur",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/centaur"
+									},
+									"geometry": {
+										"default": "geometry.centaur"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										]
+									},
+									"animations": {
+										"riding.arms": "animation.humanoid.riding.arms",
+										"riding.legs": "animation.humanoid.riding.legs",
+										"vindicator_base": "animation.centaur.base",
+										"vindicator_attack": "animation.archer.attack",
+										"vindicator_walk": "animation.centaur.move",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.centaur"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#878787",
+										"overlay_color": "#E3AF7F"
+									}
+								},
+								"key": "animation_controllers",
+								"children": [
+									{
+										"open": [
+											{
+												"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+											},
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"bob": "controller.animation.humanoid.bob"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										}
+									},
+									{
+										"open": [
+											{
+												"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+											},
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"bob": "controller.animation.humanoid.bob"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										}
+									},
+									{
+										"open": [
+											{
+												"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+											},
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"bob": "controller.animation.humanoid.bob"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										}
+									},
+									{
+										"open": [
+											{
+												"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+											},
+											{
+												"look_at_target": "controller.animation.humanoid.look_at_target"
+											},
+											{
+												"vindicator_base": "controller.animation.vindicator.base.v1.0"
+											},
+											{
+												"bob": "controller.animation.humanoid.bob"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"bob": "controller.animation.humanoid.bob"
+										}
+									}
+								]
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.centaur"
+								]
+							},
+							{
+								"data": "true",
+								"key": "enable_attachables"
+							},
+							{
+								"open": {
+									"identifier": "mythmob:centaur",
+									"materials": {
+										"default": "vindicator"
+									},
+									"textures": {
+										"default": "textures/entity/mythmob/centaur"
+									},
+									"geometry": {
+										"default": "geometry.centaur"
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.attack = Math.sin(1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0;",
+											"variable.attack2 = Math.sin(variable.attack_time * 180.0);"
+										]
+									},
+									"animations": {
+										"riding.arms": "animation.humanoid.riding.arms",
+										"riding.legs": "animation.humanoid.riding.legs",
+										"vindicator_base": "animation.centaur.base",
+										"vindicator_attack": "animation.archer.attack",
+										"vindicator_walk": "animation.centaur.move",
+										"bob": "animation.humanoid.bob"
+									},
+									"animation_controllers": [
+										{
+											"humanoid_base_pose": "controller.animation.humanoid.base_pose"
+										},
+										{
+											"look_at_target": "controller.animation.humanoid.look_at_target"
+										},
+										{
+											"vindicator_base": "controller.animation.vindicator.base.v1.0"
+										},
+										{
+											"bob": "controller.animation.humanoid.bob"
+										}
+									],
+									"render_controllers": [
+										"controller.render.centaur"
+									],
+									"enable_attachables": true,
+									"spawn_egg": {
+										"base_color": "#878787",
+										"overlay_color": "#E3AF7F"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#878787",
+									"overlay_color": "#E3AF7F"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

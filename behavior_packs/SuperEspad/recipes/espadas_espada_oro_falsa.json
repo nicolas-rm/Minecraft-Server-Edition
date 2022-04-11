@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "espada_oro_falsa_69d3c6ff"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "espadas:espada_carton",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 11
+      }
+    },
+    "result": {
+      "item": "espadas:espada_oro_falsa",
+      "count": 1
+    }
+  }
+}

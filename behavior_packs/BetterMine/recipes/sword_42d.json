@@ -1,0 +1,39 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:sword_42d"
+    },
+
+    
+    "tags": [ "adv" ],
+    "pattern": [
+      "CEX",
+      "B||",
+      "AXX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:gold_nugget"
+      },
+      "|": {
+        "item": "better:silver_ingot"
+      },
+      "A": {
+        "item": "better:sword_42dhs"
+      },
+      "B": {
+        "item": "better:sword_42dh"
+      },
+      "C": {
+        "item": "better:sword_4bpf"
+      },
+      "E": {
+        "item": "better:sword_42db"
+      }
+    },
+    "result": {
+      "item": "better:sword_42d"
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\sausage_pizza.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "0293fadb_f84e_4d5a_8a75_b5c4eb629182",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:sausage_pizza",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:icon": {
+								"texture": "sausage_pizza_block"
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							},
+							"minecraft:block_placer": {
+								"block": "strat:sausage_pizza_block",
+								"use_block_description": true
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_pizza",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "sausage_pizza_block"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:block_placer": {
+									"block": "strat:sausage_pizza_block",
+									"use_block_description": true
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:sausage_pizza",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:sausage_pizza",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:icon": {
+									"texture": "sausage_pizza_block"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								},
+								"minecraft:block_placer": {
+									"block": "strat:sausage_pizza_block",
+									"use_block_description": true
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "sausage_pizza_block"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:sausage_pizza_block",
+										"use_block_description": true
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "sausage_pizza_block"
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "sausage_pizza_block"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:sausage_pizza_block",
+										"use_block_description": true
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							},
+							{
+								"open": {
+									"minecraft:icon": {
+										"texture": "sausage_pizza_block"
+									},
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									},
+									"minecraft:block_placer": {
+										"block": "strat:sausage_pizza_block",
+										"use_block_description": true
+									}
+								},
+								"key": "minecraft:block_placer",
+								"is_minified": true,
+								"children": {
+									"block": "strat:sausage_pizza_block",
+									"use_block_description": true
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

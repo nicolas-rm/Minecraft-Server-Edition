@@ -1,0 +1,128 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "minecraft:diamond",
+              "quantity": 5
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:trypo_sculk",
+              "quantity": 64
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:diamond",
+              "quantity": 10
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:trypo_sensor",
+              "quantity": 64
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:diamond",
+              "quantity": 15
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:trypo_catalyst",
+              "quantity": 64
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:diamond",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:trypo_shrieker",
+              "quantity": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "minecraft:amethyst_shard",
+              "quantity": 10
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:block_of_bone",
+              "quantity": 64
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:amethyst_shard",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:bone_catalyst",
+              "quantity": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "minecraft:diamond",
+              "quantity": 10
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:rust",
+              "quantity": 64
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:diamond",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "wr:rust_catalyst",
+              "quantity": 64
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "better:adamantit_pickaxe",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.pickaxe"
+			},
+			"minecraft:icon": {
+				"texture": "adamantit_pickaxe"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 4042
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"better:adamantit_crystal",
+							"better:adamantit_pickaxe"
+						],
+						"repair_amount": 15
+					}
+				]
+			},
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 7,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "pickaxe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:bedrock",
+						"speed": 9999999999
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 12
+					},
+                    {
+                        "block": "minecraft:coal_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:iron_ore",
+                        "speed": 12
+                    },
+		    {
+		    	"block": {
+				"tags": "query.any_tag('stone', 'metal', 'diamond_pick_diggable', 'ore')"
+			},
+			"speed": 12
+		    },
+                    {
+                        "block": "minecraft:gold_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:diamond_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:lapis_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:redstone_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:emerald_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "better:adamantit_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "better:tin_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "better:copper_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:copper_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:mossy_cobblestone",
+                        "speed": 12
+                    },
+                    {
+                        "block": "better:ruby_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "better:silver_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "better:sulphure_ore",
+                        "speed": 12
+                    },
+                    {
+                        "block": "better:ore_salt",
+                        "speed": 12
+                    },
+					{
+						"block": "minecraft:stone",
+						"speed": 12
+					},
+                    {
+                        "block": "minecraft:cobblestone",
+                        "speed": 12
+                    },
+					{
+						"block": "minecraft:sandstone",
+						"speed": 12
+					}
+				]
+			},
+			"minecraft:weapon": {}
+		}
+	}
+}

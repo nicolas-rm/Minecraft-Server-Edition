@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "better:brewery_blueberry_juice"
+    },
+
+    
+    "tags": [ "brewery" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "better:blueberries"
+      },
+      "X": {
+        "item": "better:wineglass"
+      }
+    },
+    "result": {
+      "item": "better:blueberry_juice",
+      "data": 0
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\items\\pepperoni.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "d6374b03_c7cf_4e3f_aec5_07663d640bfd",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "strat:pepperoni",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 0.4,
+							"minecraft:food": {
+								"nutrition": 1,
+								"saturation_modifier": "low",
+								"can_always_eat": false
+							},
+							"minecraft:icon": {
+								"texture": "bridge_pepperoni"
+							},
+							"minecraft:use_animation": "eat",
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.miscFood"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:pepperoni",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:food": {
+									"nutrition": 1,
+									"saturation_modifier": "low",
+									"can_always_eat": false
+								},
+								"minecraft:icon": {
+									"texture": "bridge_pepperoni"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:pepperoni",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:pepperoni",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 0.4,
+								"minecraft:food": {
+									"nutrition": 1,
+									"saturation_modifier": "low",
+									"can_always_eat": false
+								},
+								"minecraft:icon": {
+									"texture": "bridge_pepperoni"
+								},
+								"minecraft:use_animation": "eat",
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "0.4",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:food": {
+										"nutrition": 1,
+										"saturation_modifier": "low",
+										"can_always_eat": false
+									},
+									"minecraft:icon": {
+										"texture": "bridge_pepperoni"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:food",
+								"is_minified": true,
+								"children": {
+									"nutrition": 1,
+									"saturation_modifier": "low",
+									"can_always_eat": false
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:food": {
+										"nutrition": 1,
+										"saturation_modifier": "low",
+										"can_always_eat": false
+									},
+									"minecraft:icon": {
+										"texture": "bridge_pepperoni"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "bridge_pepperoni"
+								}
+							},
+							{
+								"data": "eat",
+								"key": "minecraft:use_animation"
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 0.4,
+									"minecraft:food": {
+										"nutrition": 1,
+										"saturation_modifier": "low",
+										"can_always_eat": false
+									},
+									"minecraft:icon": {
+										"texture": "bridge_pepperoni"
+									},
+									"minecraft:use_animation": "eat",
+									"minecraft:creative_category": {
+										"parent": "itemGroup.name.miscFood"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "itemGroup.name.miscFood"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

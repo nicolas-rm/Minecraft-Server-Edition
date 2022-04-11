@@ -1,0 +1,177 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\OceanExplorationRP\\entity\\barracuda.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "1f6bd0d0_4bcb_4d30_83f1_64c66c3dbe5d",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "ocean:barracuda",
+							"materials": {
+								"default": "entity_alphatest"
+							},
+							"textures": {
+								"default": "textures/entity/barracuda"
+							},
+							"geometry": {
+								"default": "geometry.barracuda"
+							},
+							"scripts": {
+								"animate": [
+									"swim"
+								]
+							},
+							"animations": {
+								"swim": "animation.barracuda.swim"
+							},
+							"spawn_egg": {
+								"base_color": "#0A1036",
+								"overlay_color": "#3D1FB0"
+							},
+							"render_controllers": [
+								"controller.render.default"
+							]
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:barracuda",
+								"materials": {
+									"default": "entity_alphatest"
+								},
+								"textures": {
+									"default": "textures/entity/barracuda"
+								},
+								"geometry": {
+									"default": "geometry.barracuda"
+								},
+								"scripts": {
+									"animate": [
+										"swim"
+									]
+								},
+								"animations": {
+									"swim": "animation.barracuda.swim"
+								},
+								"spawn_egg": {
+									"base_color": "#0A1036",
+									"overlay_color": "#3D1FB0"
+								},
+								"render_controllers": [
+									"controller.render.default"
+								]
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "ocean:barracuda",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity_alphatest"
+								}
+							},
+							{
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/barracuda"
+								}
+							},
+							{
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.barracuda"
+								}
+							},
+							{
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												"swim"
+											]
+										},
+										"key": "animate",
+										"is_minified": true,
+										"children": [
+											"swim"
+										]
+									}
+								]
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"swim": "animation.barracuda.swim"
+								}
+							},
+							{
+								"open": {
+									"identifier": "ocean:barracuda",
+									"materials": {
+										"default": "entity_alphatest"
+									},
+									"textures": {
+										"default": "textures/entity/barracuda"
+									},
+									"geometry": {
+										"default": "geometry.barracuda"
+									},
+									"scripts": {
+										"animate": [
+											"swim"
+										]
+									},
+									"animations": {
+										"swim": "animation.barracuda.swim"
+									},
+									"spawn_egg": {
+										"base_color": "#0A1036",
+										"overlay_color": "#3D1FB0"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									]
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#0A1036",
+									"overlay_color": "#3D1FB0"
+								}
+							},
+							{
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.default"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

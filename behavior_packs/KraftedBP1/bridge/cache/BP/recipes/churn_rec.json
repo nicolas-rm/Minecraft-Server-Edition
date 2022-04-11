@@ -1,0 +1,269 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\churn_rec.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "f09c1330_92a2_476b_b270_a02f7ce09991",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:churn_rec"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							" #",
+							"~ ~",
+							"~-~"
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:stick"
+							},
+							"-": {
+								"item": "minecraft:wooden_slab"
+							},
+							"~": {
+								"item": "minecraft:planks"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:churn_item",
+								"count": 1
+							}
+						],
+						"priority": 1
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 1
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:churn_rec"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 1
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 1
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							" #",
+							"~ ~",
+							"~-~"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 1
+						},
+						"key": "key",
+						"is_minified": true,
+						"children": {
+							"#": {
+								"item": "minecraft:stick"
+							},
+							"-": {
+								"item": "minecraft:wooden_slab"
+							},
+							"~": {
+								"item": "minecraft:planks"
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:churn_rec"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" #",
+								"~ ~",
+								"~-~"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:stick"
+								},
+								"-": {
+									"item": "minecraft:wooden_slab"
+								},
+								"~": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							],
+							"priority": 1
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:churn_item",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:churn_item",
+									"count": 1
+								}
+							}
+						]
+					},
+					{
+						"data": "1",
+						"key": "priority"
+					}
+				]
+			}
+		]
+	}
+}

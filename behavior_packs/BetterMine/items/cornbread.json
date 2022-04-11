@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "better:cornbread"
+    },
+
+    "components": {
+      "minecraft:use_duration": 128,
+      "minecraft:food": {
+        "nutrition": 7,
+        "saturation_modifier": "medium"
+      }
+    }
+  }
+}

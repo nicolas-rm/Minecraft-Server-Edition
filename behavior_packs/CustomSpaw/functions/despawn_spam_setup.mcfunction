@@ -1,0 +1,15 @@
+scoreboard players set @a pigcount 0
+scoreboard players set @a skeletoncount 0
+scoreboard players set @a slimecount 0
+scoreboard players set @a zombiecount 0
+scoreboard players set @a wskeletoncount 0
+scoreboard players set @a magmacubecount 0
+scoreboard players set @a spidercount 0
+scoreboard players set @a creepercount 0
+scoreboard players set @a guardiancount 0
+scoreboard players set @a endermancount 0
+scoreboard players set @a irongolemcount 0
+scoreboard players set @a cowcount 0
+scoreboard players set @a chickencount 0
+scoreboard players set @a blazecount 0
+scoreboard players set @a sheepcount 0

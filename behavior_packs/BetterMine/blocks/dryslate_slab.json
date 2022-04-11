@@ -1,0 +1,108 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "better:dryslate_slab",
+            "properties": {
+                "better:blockshape": [0, 1]
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "dryslate_slab",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:geometry": "geometry.slab_down",
+            "minecraft:pick_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 8, 16 ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 8, 16 ]
+            },
+            "minecraft:destroy_time": 2.9,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#656565",
+            "minecraft:block_light_absorption": 0.0,
+            "minecraft:loot": "loot_tables/blocks/dryslate_slab.json",
+            "minecraft:on_interact": {
+                "event": "change_blockshape_up"
+            },
+            "tag:stone": {}
+        },
+
+        "events": {
+            "change_blockshape_up": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "set_block_property": {
+                            "better:blockshape": 1
+                        }
+                    }
+                ]
+            },
+            "change_blockshape_down": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "set_block_property": {
+                            "better:blockshape": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('better:blockshape') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "dryslate_slab",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "change_blockshape_up"
+                    },
+                    "minecraft:entity_collision": {
+                      "origin": [ -8, 0, -8 ],
+                      "size": [ 16, 8, 16 ]
+                    },
+                    "minecraft:geometry": "geometry.slab_down",
+                    "minecraft:pick_collision": {
+                        "origin": [-8,0,-8],
+                        "size": [16,8,16]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('better:blockshape') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "dryslate_slab",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:entity_collision": {
+                      "origin": [ -8, 8, -8 ],
+                      "size": [ 16, 8, 16 ]
+                    },
+                    "minecraft:on_interact": {
+                        "event": "change_blockshape_down"
+                    },
+                    "minecraft:geometry": "geometry.slab_up",
+                    "minecraft:pick_collision": {
+                        "origin": [-8,8,-8],
+                        "size": [16,8,16]
+                    }
+                }
+            }
+        ]
+    }
+}

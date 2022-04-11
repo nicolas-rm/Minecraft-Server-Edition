@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "better:fruit_fence"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/fruit_fence.json",
+      "minecraft:destroy_time": 0.3,
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#dda867",
+      "minecraft:entity_collision": {
+        "origin":  [-8, 0, -8],
+        "size":    [16, 20, 16]
+      },
+      "minecraft:flammable": {
+        "flame_odds": 16,
+        "burn_odds": 16
+    },
+     "minecraft:block_light_absorption": 15.0,
+     "minecraft:block_light_emission": 0.0
+    }
+  }
+}

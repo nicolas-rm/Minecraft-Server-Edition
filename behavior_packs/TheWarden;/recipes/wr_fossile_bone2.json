@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "fossile_bone2_39bff78c"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "wr:fossiled_bone1",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "wr:fossile_bone2",
+      "count": 1
+    }
+  }
+}

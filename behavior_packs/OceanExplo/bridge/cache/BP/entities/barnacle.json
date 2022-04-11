@@ -1,0 +1,3774 @@
+{
+	"file_path": "C:\\Users\\Serap\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\OceanExplorationBP\\entities\\barnacle.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "4b07bf89_a692_454e_8ae5_c2005eabff7d",
+	"file_version": 17,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "ocean:barnacle",
+							"is_summonable": true,
+							"is_spawnable": true,
+							"is_experimental": false,
+							"animations": {
+								"trap": "animation.barnacle.force_ride",
+								"reset": "animation.barnacle.reset",
+								"down": "animation.barnacle.down"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"trap": "query.is_sheared && !query.has_rider"
+									},
+									{
+										"reset": "query.is_sheared && !query.has_target"
+									},
+									{
+										"down": "query.is_sheared"
+									}
+								]
+							}
+						},
+						"component_groups": {
+							"minecraft:in_water": {
+								"minecraft:collision_box": {
+									"height": 1,
+									"width": 0.9
+								},
+								"minecraft:environment_sensor": {
+									"triggers": [
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "rider_count",
+														"subject": "self",
+														"value": 0
+													},
+													{
+														"test": "is_underwater",
+														"subject": "self",
+														"operator": "==",
+														"value": false
+													}
+												]
+											},
+											"event": "minecraft:ground"
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "rider_count",
+														"subject": "self",
+														"value": 1
+													},
+													{
+														"test": "is_underwater",
+														"subject": "self",
+														"operator": "==",
+														"value": true
+													}
+												]
+											},
+											"event": "minecraft:constrict_underwater"
+										}
+									]
+								},
+								"minecraft:behavior.melee_attack": {
+									"priority": 1,
+									"speed_multiplier": 1.5,
+									"track_target": true,
+									"require_complete_path": true,
+									"reach_multiplier": 2,
+									"on_attack": {
+										"event": "constricting",
+										"target": "self",
+										"filters": {
+											"test": "in_water",
+											"subject": "self"
+										}
+									}
+								},
+								"minecraft:navigation.generic": {
+									"is_amphibious": true,
+									"can_path_over_water": true,
+									"can_swim": true,
+									"can_walk": true,
+									"can_breach": true,
+									"can_sink": false
+								},
+								"minecraft:water_movement": {
+									"value": 0.12
+								},
+								"minecraft:behavior.random_swim": {
+									"priority": 3,
+									"speed_multiplier": 0.9,
+									"interval": 10,
+									"xz_dist": 30,
+									"y_dist": 15,
+									"avoid_surface": true
+								},
+								"minecraft:behavior.nearest_prioritized_attackable_target": {
+									"priority": 2,
+									"entity_types": [
+										{
+											"must_see": true,
+											"priority": 1,
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_riding",
+														"subject": "other",
+														"value": false
+													},
+													{
+														"test": "has_component",
+														"value": "minecraft:is_sheared",
+														"subject": "self",
+														"operator": "!="
+													}
+												],
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "villager"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "boat"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "wandering_trader"
+													}
+												]
+											},
+											"max_dist": 75
+										},
+										{
+											"must_see": true,
+											"priority": 0,
+											"filters": {
+												"all_of": [
+													{
+														"test": "has_component",
+														"value": "minecraft:is_sheared",
+														"subject": "self",
+														"operator": "!="
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													}
+												]
+											},
+											"max_dist": 75
+										}
+									],
+									"reselect_targets": true
+								}
+							},
+							"minecraft:constricting": {
+								"minecraft:navigation.generic": {
+									"is_amphibious": true,
+									"can_path_over_water": false,
+									"can_swim": false,
+									"can_walk": false,
+									"can_breach": false,
+									"can_sink": true
+								},
+								"minecraft:collision_box": {
+									"height": 0.9,
+									"width": 1.9
+								},
+								"minecraft:water_movement": {
+									"value": 0.12,
+									"drag_factor": 0
+								},
+								"minecraft:is_sheared": {},
+								"minecraft:area_attack": {
+									"damage_range": 1,
+									"damage_per_tick": 1,
+									"cause": "contact",
+									"entity_filter": {
+										"test": "is_target",
+										"subject": "other"
+									}
+								},
+								"minecraft:rideable": {
+									"seat_count": 1,
+									"rider_can_interact": true,
+									"seats": [
+										{
+											"position": [
+												0,
+												1,
+												0
+											]
+										}
+									],
+									"family_types": [
+										"player"
+									]
+								},
+								"minecraft:knockback_resistance": {
+									"value": 1,
+									"max": 1
+								}
+							},
+							"minecraft:down": {
+								"minecraft:buoyant": {
+									"drag_down_on_buoyancy_removed": 2,
+									"apply_gravity": true,
+									"liquid_blocks": [
+										"minecraft:water"
+									],
+									"base_buoyancy": 0.1
+								},
+								"minecraft:timer": {
+									"time": 0.05,
+									"time_down_event": {
+										"event": "down"
+									}
+								}
+							}
+						},
+						"components": {
+							"minecraft:conditional_bandwidth_optimization": {},
+							"minecraft:type_family": {
+								"family": [
+									"barnacle",
+									"mob"
+								]
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:loot": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:health": {
+								"value": 35,
+								"max": 35
+							},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0,
+								"breathes_air": false,
+								"breathes_water": true
+							},
+							"minecraft:movement.sway": {
+								"sway_amplitude": 0,
+								"max_turn": 170
+							},
+							"minecraft:attack": {
+								"damage": 2
+							},
+							"minecraft:persistent": {},
+							"minecraft:follow_range": {
+								"value": 32,
+								"max": 32
+							},
+							"minecraft:physics": {
+								"has_gravity": true,
+								"has_collision": true
+							}
+						},
+						"events": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"minecraft:in_water"
+									]
+								}
+							},
+							"constricting": {
+								"sequence": [
+									{
+										"remove": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									{
+										"add": {
+											"component_groups": [
+												"minecraft:constricting"
+											]
+										}
+									},
+									{
+										"trigger": "trap_player"
+									}
+								]
+							},
+							"normal": {
+								"remove": {
+									"component_groups": [
+										"minecraft:constricting"
+									]
+								},
+								"add": {
+									"component_groups": [
+										"minecraft:in_water"
+									]
+								}
+							},
+							"trap_player": {
+								"sequence": [
+									{
+										"run_command": {
+											"command": [
+												"tag @s add trapme",
+												"summon ocean:boat_killer"
+											],
+											"target": "target"
+										}
+									},
+									{
+										"run_command": {
+											"command": [
+												"ride @e[c=1,tag=trapme] start_riding @s",
+												"tag @e remove trapme"
+											]
+										}
+									}
+								]
+							},
+							"down": {
+								"remove": {
+									"component_groups": [
+										"minecraft:down"
+									]
+								}
+							},
+							"d2": {
+								"add": {
+									"component_groups": [
+										"minecraft:down"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"children": [
+							{
+								"data": "ocean:barnacle",
+								"key": "identifier"
+							},
+							{
+								"data": "true",
+								"key": "is_summonable"
+							},
+							{
+								"data": "true",
+								"key": "is_spawnable"
+							},
+							{
+								"data": "false",
+								"key": "is_experimental"
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								}
+							},
+							{
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"trap": "query.is_sheared && !query.has_rider"
+												},
+												{
+													"reset": "query.is_sheared && !query.has_target"
+												},
+												{
+													"down": "query.is_sheared"
+												}
+											]
+										},
+										"key": "animate",
+										"children": [
+											{
+												"open": [
+													{
+														"trap": "query.is_sheared && !query.has_rider"
+													},
+													{
+														"reset": "query.is_sheared && !query.has_target"
+													},
+													{
+														"down": "query.is_sheared"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"trap": "query.is_sheared && !query.has_rider"
+												}
+											},
+											{
+												"open": [
+													{
+														"trap": "query.is_sheared && !query.has_rider"
+													},
+													{
+														"reset": "query.is_sheared && !query.has_target"
+													},
+													{
+														"down": "query.is_sheared"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"reset": "query.is_sheared && !query.has_target"
+												}
+											},
+											{
+												"open": [
+													{
+														"trap": "query.is_sheared && !query.has_rider"
+													},
+													{
+														"reset": "query.is_sheared && !query.has_target"
+													},
+													{
+														"down": "query.is_sheared"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"down": "query.is_sheared"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:barnacle",
+								"is_summonable": true,
+								"is_spawnable": true,
+								"is_experimental": false,
+								"animations": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"trap": "query.is_sheared && !query.has_rider"
+										},
+										{
+											"reset": "query.is_sheared && !query.has_target"
+										},
+										{
+											"down": "query.is_sheared"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"minecraft:in_water": {
+									"minecraft:collision_box": {
+										"height": 1,
+										"width": 0.9
+									},
+									"minecraft:environment_sensor": {
+										"triggers": [
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "rider_count",
+															"subject": "self",
+															"value": 0
+														},
+														{
+															"test": "is_underwater",
+															"subject": "self",
+															"operator": "==",
+															"value": false
+														}
+													]
+												},
+												"event": "minecraft:ground"
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "rider_count",
+															"subject": "self",
+															"value": 1
+														},
+														{
+															"test": "is_underwater",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														}
+													]
+												},
+												"event": "minecraft:constrict_underwater"
+											}
+										]
+									},
+									"minecraft:behavior.melee_attack": {
+										"priority": 1,
+										"speed_multiplier": 1.5,
+										"track_target": true,
+										"require_complete_path": true,
+										"reach_multiplier": 2,
+										"on_attack": {
+											"event": "constricting",
+											"target": "self",
+											"filters": {
+												"test": "in_water",
+												"subject": "self"
+											}
+										}
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": true,
+										"can_path_over_water": true,
+										"can_swim": true,
+										"can_walk": true,
+										"can_breach": true,
+										"can_sink": false
+									},
+									"minecraft:water_movement": {
+										"value": 0.12
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 3,
+										"speed_multiplier": 0.9,
+										"interval": 10,
+										"xz_dist": 30,
+										"y_dist": 15,
+										"avoid_surface": true
+									},
+									"minecraft:behavior.nearest_prioritized_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"must_see": true,
+												"priority": 1,
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_riding",
+															"subject": "other",
+															"value": false
+														},
+														{
+															"test": "has_component",
+															"value": "minecraft:is_sheared",
+															"subject": "self",
+															"operator": "!="
+														}
+													],
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villager"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "boat"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wandering_trader"
+														}
+													]
+												},
+												"max_dist": 75
+											},
+											{
+												"must_see": true,
+												"priority": 0,
+												"filters": {
+													"all_of": [
+														{
+															"test": "has_component",
+															"value": "minecraft:is_sheared",
+															"subject": "self",
+															"operator": "!="
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												},
+												"max_dist": 75
+											}
+										],
+										"reselect_targets": true
+									}
+								},
+								"minecraft:constricting": {
+									"minecraft:navigation.generic": {
+										"is_amphibious": true,
+										"can_path_over_water": false,
+										"can_swim": false,
+										"can_walk": false,
+										"can_breach": false,
+										"can_sink": true
+									},
+									"minecraft:collision_box": {
+										"height": 0.9,
+										"width": 1.9
+									},
+									"minecraft:water_movement": {
+										"value": 0.12,
+										"drag_factor": 0
+									},
+									"minecraft:is_sheared": {},
+									"minecraft:area_attack": {
+										"damage_range": 1,
+										"damage_per_tick": 1,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_target",
+											"subject": "other"
+										}
+									},
+									"minecraft:rideable": {
+										"seat_count": 1,
+										"rider_can_interact": true,
+										"seats": [
+											{
+												"position": [
+													0,
+													1,
+													0
+												]
+											}
+										],
+										"family_types": [
+											"player"
+										]
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1,
+										"max": 1
+									}
+								},
+								"minecraft:down": {
+									"minecraft:buoyant": {
+										"drag_down_on_buoyancy_removed": 2,
+										"apply_gravity": true,
+										"liquid_blocks": [
+											"minecraft:water"
+										],
+										"base_buoyancy": 0.1
+									},
+									"minecraft:timer": {
+										"time": 0.05,
+										"time_down_event": {
+											"event": "down"
+										}
+									}
+								}
+							},
+							"components": {
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:type_family": {
+									"family": [
+										"barnacle",
+										"mob"
+									]
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:loot": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:health": {
+									"value": 35,
+									"max": 35
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								},
+								"minecraft:movement.sway": {
+									"sway_amplitude": 0,
+									"max_turn": 170
+								},
+								"minecraft:attack": {
+									"damage": 2
+								},
+								"minecraft:persistent": {},
+								"minecraft:follow_range": {
+									"value": 32,
+									"max": 32
+								},
+								"minecraft:physics": {
+									"has_gravity": true,
+									"has_collision": true
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"minecraft:in_water"
+										]
+									}
+								},
+								"constricting": {
+									"sequence": [
+										{
+											"remove": {
+												"component_groups": [
+													"minecraft:in_water"
+												]
+											}
+										},
+										{
+											"add": {
+												"component_groups": [
+													"minecraft:constricting"
+												]
+											}
+										},
+										{
+											"trigger": "trap_player"
+										}
+									]
+								},
+								"normal": {
+									"remove": {
+										"component_groups": [
+											"minecraft:constricting"
+										]
+									},
+									"add": {
+										"component_groups": [
+											"minecraft:in_water"
+										]
+									}
+								},
+								"trap_player": {
+									"sequence": [
+										{
+											"run_command": {
+												"command": [
+													"tag @s add trapme",
+													"summon ocean:boat_killer"
+												],
+												"target": "target"
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"ride @e[c=1,tag=trapme] start_riding @s",
+													"tag @e remove trapme"
+												]
+											}
+										}
+									]
+								},
+								"down": {
+									"remove": {
+										"component_groups": [
+											"minecraft:down"
+										]
+									}
+								},
+								"d2": {
+									"add": {
+										"component_groups": [
+											"minecraft:down"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
+						"children": [
+							{
+								"key": "minecraft:in_water",
+								"children": [
+									{
+										"key": "minecraft:collision_box",
+										"is_minified": true,
+										"children": {
+											"height": 1,
+											"width": 0.9
+										}
+									},
+									{
+										"key": "minecraft:environment_sensor",
+										"children": [
+											{
+												"open": {
+													"triggers": [
+														{
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "rider_count",
+																		"subject": "self",
+																		"value": 0
+																	},
+																	{
+																		"test": "is_underwater",
+																		"subject": "self",
+																		"operator": "==",
+																		"value": false
+																	}
+																]
+															},
+															"event": "minecraft:ground"
+														},
+														{
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "rider_count",
+																		"subject": "self",
+																		"value": 1
+																	},
+																	{
+																		"test": "is_underwater",
+																		"subject": "self",
+																		"operator": "==",
+																		"value": true
+																	}
+																]
+															},
+															"event": "minecraft:constrict_underwater"
+														}
+													]
+												},
+												"key": "triggers",
+												"children": [
+													{
+														"open": [
+															{
+																"filters": {
+																	"all_of": [
+																		{
+																			"test": "rider_count",
+																			"subject": "self",
+																			"value": 0
+																		},
+																		{
+																			"test": "is_underwater",
+																			"subject": "self",
+																			"operator": "==",
+																			"value": false
+																		}
+																	]
+																},
+																"event": "minecraft:ground"
+															},
+															{
+																"filters": {
+																	"all_of": [
+																		{
+																			"test": "rider_count",
+																			"subject": "self",
+																			"value": 1
+																		},
+																		{
+																			"test": "is_underwater",
+																			"subject": "self",
+																			"operator": "==",
+																			"value": true
+																		}
+																	]
+																},
+																"event": "minecraft:constrict_underwater"
+															}
+														],
+														"children": [
+															{
+																"open": {
+																	"filters": {
+																		"all_of": [
+																			{
+																				"test": "rider_count",
+																				"subject": "self",
+																				"value": 0
+																			},
+																			{
+																				"test": "is_underwater",
+																				"subject": "self",
+																				"operator": "==",
+																				"value": false
+																			}
+																		]
+																	},
+																	"event": "minecraft:ground"
+																},
+																"key": "filters",
+																"children": [
+																	{
+																		"open": {
+																			"all_of": [
+																				{
+																					"test": "rider_count",
+																					"subject": "self",
+																					"value": 0
+																				},
+																				{
+																					"test": "is_underwater",
+																					"subject": "self",
+																					"operator": "==",
+																					"value": false
+																				}
+																			]
+																		},
+																		"key": "all_of",
+																		"children": [
+																			{
+																				"open": [
+																					{
+																						"test": "rider_count",
+																						"subject": "self",
+																						"value": 0
+																					},
+																					{
+																						"test": "is_underwater",
+																						"subject": "self",
+																						"operator": "==",
+																						"value": false
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "rider_count",
+																					"subject": "self",
+																					"value": 0
+																				}
+																			},
+																			{
+																				"open": [
+																					{
+																						"test": "rider_count",
+																						"subject": "self",
+																						"value": 0
+																					},
+																					{
+																						"test": "is_underwater",
+																						"subject": "self",
+																						"operator": "==",
+																						"value": false
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "is_underwater",
+																					"subject": "self",
+																					"operator": "==",
+																					"value": false
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"data": "minecraft:ground",
+																"key": "event"
+															}
+														]
+													},
+													{
+														"children": [
+															{
+																"open": {
+																	"filters": {
+																		"all_of": [
+																			{
+																				"test": "rider_count",
+																				"subject": "self",
+																				"value": 1
+																			},
+																			{
+																				"test": "is_underwater",
+																				"subject": "self",
+																				"operator": "==",
+																				"value": true
+																			}
+																		]
+																	},
+																	"event": "minecraft:constrict_underwater"
+																},
+																"key": "filters",
+																"children": [
+																	{
+																		"open": {
+																			"all_of": [
+																				{
+																					"test": "rider_count",
+																					"subject": "self",
+																					"value": 1
+																				},
+																				{
+																					"test": "is_underwater",
+																					"subject": "self",
+																					"operator": "==",
+																					"value": true
+																				}
+																			]
+																		},
+																		"key": "all_of",
+																		"children": [
+																			{
+																				"open": [
+																					{
+																						"test": "rider_count",
+																						"subject": "self",
+																						"value": 1
+																					},
+																					{
+																						"test": "is_underwater",
+																						"subject": "self",
+																						"operator": "==",
+																						"value": true
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "rider_count",
+																					"subject": "self",
+																					"value": 1
+																				}
+																			},
+																			{
+																				"open": [
+																					{
+																						"test": "rider_count",
+																						"subject": "self",
+																						"value": 1
+																					},
+																					{
+																						"test": "is_underwater",
+																						"subject": "self",
+																						"operator": "==",
+																						"value": true
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "is_underwater",
+																					"subject": "self",
+																					"operator": "==",
+																					"value": true
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"data": "minecraft:constrict_underwater",
+																"key": "event"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "minecraft:behavior.melee_attack",
+										"children": [
+											{
+												"data": "1",
+												"key": "priority"
+											},
+											{
+												"open": {
+													"priority": 1,
+													"speed_multiplier": 1.5,
+													"track_target": true,
+													"require_complete_path": true,
+													"reach_multiplier": 2,
+													"on_attack": {
+														"event": "constricting",
+														"target": "self",
+														"filters": {
+															"test": "in_water",
+															"subject": "self"
+														}
+													}
+												},
+												"data": "1.5",
+												"key": "speed_multiplier"
+											},
+											{
+												"data": "true",
+												"key": "track_target"
+											},
+											{
+												"data": "true",
+												"key": "require_complete_path"
+											},
+											{
+												"open": {
+													"priority": 1,
+													"speed_multiplier": 1.5,
+													"track_target": true,
+													"require_complete_path": true,
+													"reach_multiplier": 2,
+													"on_attack": {
+														"event": "constricting",
+														"target": "self",
+														"filters": {
+															"test": "in_water",
+															"subject": "self"
+														}
+													}
+												},
+												"data": "2",
+												"key": "reach_multiplier"
+											},
+											{
+												"open": {
+													"priority": 1,
+													"speed_multiplier": 1.5,
+													"track_target": true,
+													"require_complete_path": true,
+													"reach_multiplier": 2,
+													"on_attack": {
+														"event": "constricting",
+														"target": "self",
+														"filters": {
+															"test": "in_water",
+															"subject": "self"
+														}
+													}
+												},
+												"key": "on_attack",
+												"children": [
+													{
+														"data": "constricting",
+														"key": "event"
+													},
+													{
+														"data": "self",
+														"key": "target"
+													},
+													{
+														"open": {
+															"event": "constricting",
+															"target": "self",
+															"filters": {
+																"test": "in_water",
+																"subject": "self"
+															}
+														},
+														"key": "filters",
+														"is_minified": true,
+														"children": {
+															"test": "in_water",
+															"subject": "self"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "minecraft:navigation.generic",
+										"is_minified": true,
+										"children": {
+											"is_amphibious": true,
+											"can_path_over_water": true,
+											"can_swim": true,
+											"can_walk": true,
+											"can_breach": true,
+											"can_sink": false
+										}
+									},
+									{
+										"key": "minecraft:water_movement",
+										"is_minified": true,
+										"children": {
+											"value": 0.12
+										}
+									},
+									{
+										"key": "minecraft:behavior.random_swim",
+										"is_minified": true,
+										"children": {
+											"priority": 3,
+											"speed_multiplier": 0.9,
+											"interval": 10,
+											"xz_dist": 30,
+											"y_dist": 15,
+											"avoid_surface": true
+										}
+									},
+									{
+										"key": "minecraft:behavior.nearest_prioritized_attackable_target",
+										"children": [
+											{
+												"data": "2",
+												"key": "priority"
+											},
+											{
+												"key": "entity_types",
+												"children": [
+													{
+														"open": [
+															{
+																"must_see": true,
+																"priority": 1,
+																"filters": {
+																	"all_of": [
+																		{
+																			"test": "is_riding",
+																			"subject": "other",
+																			"value": false
+																		},
+																		{
+																			"test": "has_component",
+																			"value": "minecraft:is_sheared",
+																			"subject": "self",
+																			"operator": "!="
+																		}
+																	],
+																	"any_of": [
+																		{
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "villager"
+																		},
+																		{
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "boat"
+																		},
+																		{
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "wandering_trader"
+																		}
+																	]
+																},
+																"max_dist": 75
+															},
+															{
+																"must_see": true,
+																"priority": 0,
+																"filters": {
+																	"all_of": [
+																		{
+																			"test": "has_component",
+																			"value": "minecraft:is_sheared",
+																			"subject": "self",
+																			"operator": "!="
+																		},
+																		{
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "player"
+																		}
+																	]
+																},
+																"max_dist": 75
+															}
+														],
+														"children": [
+															{
+																"data": "true",
+																"key": "must_see"
+															},
+															{
+																"data": "1",
+																"key": "priority"
+															},
+															{
+																"open": {
+																	"must_see": true,
+																	"priority": 1,
+																	"filters": {
+																		"all_of": [
+																			{
+																				"test": "is_riding",
+																				"subject": "other",
+																				"value": false
+																			},
+																			{
+																				"test": "has_component",
+																				"value": "minecraft:is_sheared",
+																				"subject": "self",
+																				"operator": "!="
+																			}
+																		],
+																		"any_of": [
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "villager"
+																			},
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "boat"
+																			},
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "wandering_trader"
+																			}
+																		]
+																	},
+																	"max_dist": 75
+																},
+																"key": "filters",
+																"children": [
+																	{
+																		"key": "all_of",
+																		"children": [
+																			{
+																				"open": [
+																					{
+																						"test": "is_riding",
+																						"subject": "other",
+																						"value": false
+																					},
+																					{
+																						"test": "has_component",
+																						"value": "minecraft:is_sheared",
+																						"subject": "self",
+																						"operator": "!="
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "is_riding",
+																					"subject": "other",
+																					"value": false
+																				}
+																			},
+																			{
+																				"open": [
+																					{
+																						"test": "is_riding",
+																						"subject": "other",
+																						"value": false
+																					},
+																					{
+																						"test": "has_component",
+																						"value": "minecraft:is_sheared",
+																						"subject": "self",
+																						"operator": "!="
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "has_component",
+																					"value": "minecraft:is_sheared",
+																					"subject": "self",
+																					"operator": "!="
+																				}
+																			}
+																		]
+																	},
+																	{
+																		"key": "any_of",
+																		"children": [
+																			{
+																				"open": [
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "villager"
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "boat"
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "wandering_trader"
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "is_family",
+																					"subject": "other",
+																					"value": "villager"
+																				}
+																			},
+																			{
+																				"open": [
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "villager"
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "boat"
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "wandering_trader"
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "is_family",
+																					"subject": "other",
+																					"value": "boat"
+																				}
+																			},
+																			{
+																				"open": [
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "villager"
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "boat"
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "wandering_trader"
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "is_family",
+																					"subject": "other",
+																					"value": "wandering_trader"
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"data": "75",
+																"key": "max_dist"
+															}
+														]
+													},
+													{
+														"children": [
+															{
+																"data": "true",
+																"key": "must_see"
+															},
+															{
+																"data": "0",
+																"key": "priority"
+															},
+															{
+																"key": "filters",
+																"children": [
+																	{
+																		"open": {
+																			"all_of": [
+																				{
+																					"test": "has_component",
+																					"value": "minecraft:is_sheared",
+																					"subject": "self",
+																					"operator": "!="
+																				},
+																				{
+																					"test": "is_family",
+																					"subject": "other",
+																					"value": "player"
+																				}
+																			]
+																		},
+																		"key": "all_of",
+																		"children": [
+																			{
+																				"open": [
+																					{
+																						"test": "has_component",
+																						"value": "minecraft:is_sheared",
+																						"subject": "self",
+																						"operator": "!="
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "player"
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "has_component",
+																					"value": "minecraft:is_sheared",
+																					"subject": "self",
+																					"operator": "!="
+																				}
+																			},
+																			{
+																				"open": [
+																					{
+																						"test": "has_component",
+																						"value": "minecraft:is_sheared",
+																						"subject": "self",
+																						"operator": "!="
+																					},
+																					{
+																						"test": "is_family",
+																						"subject": "other",
+																						"value": "player"
+																					}
+																				],
+																				"is_minified": true,
+																				"children": {
+																					"test": "is_family",
+																					"subject": "other",
+																					"value": "player"
+																				}
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"data": "75",
+																"key": "max_dist"
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": "true",
+												"key": "reselect_targets"
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:in_water": {
+										"minecraft:collision_box": {
+											"height": 1,
+											"width": 0.9
+										},
+										"minecraft:environment_sensor": {
+											"triggers": [
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "rider_count",
+																"subject": "self",
+																"value": 0
+															},
+															{
+																"test": "is_underwater",
+																"subject": "self",
+																"operator": "==",
+																"value": false
+															}
+														]
+													},
+													"event": "minecraft:ground"
+												},
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "rider_count",
+																"subject": "self",
+																"value": 1
+															},
+															{
+																"test": "is_underwater",
+																"subject": "self",
+																"operator": "==",
+																"value": true
+															}
+														]
+													},
+													"event": "minecraft:constrict_underwater"
+												}
+											]
+										},
+										"minecraft:behavior.melee_attack": {
+											"priority": 1,
+											"speed_multiplier": 1.5,
+											"track_target": true,
+											"require_complete_path": true,
+											"reach_multiplier": 2,
+											"on_attack": {
+												"event": "constricting",
+												"target": "self",
+												"filters": {
+													"test": "in_water",
+													"subject": "self"
+												}
+											}
+										},
+										"minecraft:navigation.generic": {
+											"is_amphibious": true,
+											"can_path_over_water": true,
+											"can_swim": true,
+											"can_walk": true,
+											"can_breach": true,
+											"can_sink": false
+										},
+										"minecraft:water_movement": {
+											"value": 0.12
+										},
+										"minecraft:behavior.random_swim": {
+											"priority": 3,
+											"speed_multiplier": 0.9,
+											"interval": 10,
+											"xz_dist": 30,
+											"y_dist": 15,
+											"avoid_surface": true
+										},
+										"minecraft:behavior.nearest_prioritized_attackable_target": {
+											"priority": 2,
+											"entity_types": [
+												{
+													"must_see": true,
+													"priority": 1,
+													"filters": {
+														"all_of": [
+															{
+																"test": "is_riding",
+																"subject": "other",
+																"value": false
+															},
+															{
+																"test": "has_component",
+																"value": "minecraft:is_sheared",
+																"subject": "self",
+																"operator": "!="
+															}
+														],
+														"any_of": [
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "villager"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "boat"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "wandering_trader"
+															}
+														]
+													},
+													"max_dist": 75
+												},
+												{
+													"must_see": true,
+													"priority": 0,
+													"filters": {
+														"all_of": [
+															{
+																"test": "has_component",
+																"value": "minecraft:is_sheared",
+																"subject": "self",
+																"operator": "!="
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "player"
+															}
+														]
+													},
+													"max_dist": 75
+												}
+											],
+											"reselect_targets": true
+										}
+									},
+									"minecraft:constricting": {
+										"minecraft:navigation.generic": {
+											"is_amphibious": true,
+											"can_path_over_water": false,
+											"can_swim": false,
+											"can_walk": false,
+											"can_breach": false,
+											"can_sink": true
+										},
+										"minecraft:collision_box": {
+											"height": 0.9,
+											"width": 1.9
+										},
+										"minecraft:water_movement": {
+											"value": 0.12,
+											"drag_factor": 0
+										},
+										"minecraft:is_sheared": {},
+										"minecraft:area_attack": {
+											"damage_range": 1,
+											"damage_per_tick": 1,
+											"cause": "contact",
+											"entity_filter": {
+												"test": "is_target",
+												"subject": "other"
+											}
+										},
+										"minecraft:rideable": {
+											"seat_count": 1,
+											"rider_can_interact": true,
+											"seats": [
+												{
+													"position": [
+														0,
+														1,
+														0
+													]
+												}
+											],
+											"family_types": [
+												"player"
+											]
+										},
+										"minecraft:knockback_resistance": {
+											"value": 1,
+											"max": 1
+										}
+									},
+									"minecraft:down": {
+										"minecraft:buoyant": {
+											"drag_down_on_buoyancy_removed": 2,
+											"apply_gravity": true,
+											"liquid_blocks": [
+												"minecraft:water"
+											],
+											"base_buoyancy": 0.1
+										},
+										"minecraft:timer": {
+											"time": 0.05,
+											"time_down_event": {
+												"event": "down"
+											}
+										}
+									}
+								},
+								"key": "minecraft:constricting",
+								"children": [
+									{
+										"key": "minecraft:navigation.generic",
+										"is_minified": true,
+										"children": {
+											"is_amphibious": true,
+											"can_path_over_water": false,
+											"can_swim": false,
+											"can_walk": false,
+											"can_breach": false,
+											"can_sink": true
+										}
+									},
+									{
+										"key": "minecraft:collision_box",
+										"is_minified": true,
+										"children": {
+											"height": 0.9,
+											"width": 1.9
+										}
+									},
+									{
+										"key": "minecraft:water_movement",
+										"is_minified": true,
+										"children": {
+											"value": 0.12,
+											"drag_factor": 0
+										}
+									},
+									{
+										"key": "minecraft:is_sheared",
+										"is_minified": true,
+										"children": {}
+									},
+									{
+										"key": "minecraft:area_attack",
+										"is_minified": true,
+										"children": {
+											"damage_range": 1,
+											"damage_per_tick": 1,
+											"cause": "contact",
+											"entity_filter": {
+												"test": "is_target",
+												"subject": "other"
+											}
+										}
+									},
+									{
+										"open": {
+											"minecraft:navigation.generic": {
+												"is_amphibious": true,
+												"can_path_over_water": false,
+												"can_swim": false,
+												"can_walk": false,
+												"can_breach": false,
+												"can_sink": true
+											},
+											"minecraft:collision_box": {
+												"height": 0.9,
+												"width": 1.9
+											},
+											"minecraft:water_movement": {
+												"value": 0.12,
+												"drag_factor": 0
+											},
+											"minecraft:is_sheared": {},
+											"minecraft:area_attack": {
+												"damage_range": 1,
+												"damage_per_tick": 1,
+												"cause": "contact",
+												"entity_filter": {
+													"test": "is_target",
+													"subject": "other"
+												}
+											},
+											"minecraft:rideable": {
+												"seat_count": 1,
+												"rider_can_interact": true,
+												"seats": [
+													{
+														"position": [
+															0,
+															1,
+															0
+														]
+													}
+												],
+												"family_types": [
+													"player"
+												]
+											},
+											"minecraft:knockback_resistance": {
+												"value": 1,
+												"max": 1
+											}
+										},
+										"key": "minecraft:rideable",
+										"children": [
+											{
+												"data": "1",
+												"key": "seat_count"
+											},
+											{
+												"data": "true",
+												"key": "rider_can_interact"
+											},
+											{
+												"key": "seats",
+												"children": [
+													{
+														"open": [
+															{
+																"position": [
+																	0,
+																	1,
+																	0
+																]
+															}
+														],
+														"children": [
+															{
+																"open": {
+																	"position": [
+																		0,
+																		1,
+																		0
+																	]
+																},
+																"key": "position",
+																"is_minified": true,
+																"children": [
+																	0,
+																	1,
+																	0
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"key": "family_types",
+												"is_minified": true,
+												"children": [
+													"player"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"minecraft:navigation.generic": {
+												"is_amphibious": true,
+												"can_path_over_water": false,
+												"can_swim": false,
+												"can_walk": false,
+												"can_breach": false,
+												"can_sink": true
+											},
+											"minecraft:collision_box": {
+												"height": 0.9,
+												"width": 1.9
+											},
+											"minecraft:water_movement": {
+												"value": 0.12,
+												"drag_factor": 0
+											},
+											"minecraft:is_sheared": {},
+											"minecraft:area_attack": {
+												"damage_range": 1,
+												"damage_per_tick": 1,
+												"cause": "contact",
+												"entity_filter": {
+													"test": "is_target",
+													"subject": "other"
+												}
+											},
+											"minecraft:rideable": {
+												"seat_count": 1,
+												"rider_can_interact": true,
+												"seats": [
+													{
+														"position": [
+															0,
+															1,
+															0
+														]
+													}
+												],
+												"family_types": [
+													"player"
+												]
+											},
+											"minecraft:knockback_resistance": {
+												"value": 1,
+												"max": 1
+											}
+										},
+										"key": "minecraft:knockback_resistance",
+										"is_minified": true,
+										"children": {
+											"value": 1,
+											"max": 1
+										}
+									}
+								]
+							},
+							{
+								"key": "minecraft:down",
+								"children": [
+									{
+										"key": "minecraft:buoyant",
+										"is_minified": true,
+										"children": {
+											"drag_down_on_buoyancy_removed": 2,
+											"apply_gravity": true,
+											"liquid_blocks": [
+												"minecraft:water"
+											],
+											"base_buoyancy": 0.1
+										}
+									},
+									{
+										"key": "minecraft:timer",
+										"children": [
+											{
+												"open": {
+													"time": 0.05,
+													"time_down_event": {
+														"event": "down"
+													}
+												},
+												"data": "0.05",
+												"key": "time"
+											},
+											{
+												"open": {
+													"time": 0.05,
+													"time_down_event": {
+														"event": "down"
+													}
+												},
+												"key": "time_down_event",
+												"is_minified": true,
+												"children": {
+													"event": "down"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:barnacle",
+								"is_summonable": true,
+								"is_spawnable": true,
+								"is_experimental": false,
+								"animations": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"trap": "query.is_sheared && !query.has_rider"
+										},
+										{
+											"reset": "query.is_sheared && !query.has_target"
+										},
+										{
+											"down": "query.is_sheared"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"minecraft:in_water": {
+									"minecraft:collision_box": {
+										"height": 1,
+										"width": 0.9
+									},
+									"minecraft:environment_sensor": {
+										"triggers": [
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "rider_count",
+															"subject": "self",
+															"value": 0
+														},
+														{
+															"test": "is_underwater",
+															"subject": "self",
+															"operator": "==",
+															"value": false
+														}
+													]
+												},
+												"event": "minecraft:ground"
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "rider_count",
+															"subject": "self",
+															"value": 1
+														},
+														{
+															"test": "is_underwater",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														}
+													]
+												},
+												"event": "minecraft:constrict_underwater"
+											}
+										]
+									},
+									"minecraft:behavior.melee_attack": {
+										"priority": 1,
+										"speed_multiplier": 1.5,
+										"track_target": true,
+										"require_complete_path": true,
+										"reach_multiplier": 2,
+										"on_attack": {
+											"event": "constricting",
+											"target": "self",
+											"filters": {
+												"test": "in_water",
+												"subject": "self"
+											}
+										}
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": true,
+										"can_path_over_water": true,
+										"can_swim": true,
+										"can_walk": true,
+										"can_breach": true,
+										"can_sink": false
+									},
+									"minecraft:water_movement": {
+										"value": 0.12
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 3,
+										"speed_multiplier": 0.9,
+										"interval": 10,
+										"xz_dist": 30,
+										"y_dist": 15,
+										"avoid_surface": true
+									},
+									"minecraft:behavior.nearest_prioritized_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"must_see": true,
+												"priority": 1,
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_riding",
+															"subject": "other",
+															"value": false
+														},
+														{
+															"test": "has_component",
+															"value": "minecraft:is_sheared",
+															"subject": "self",
+															"operator": "!="
+														}
+													],
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villager"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "boat"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wandering_trader"
+														}
+													]
+												},
+												"max_dist": 75
+											},
+											{
+												"must_see": true,
+												"priority": 0,
+												"filters": {
+													"all_of": [
+														{
+															"test": "has_component",
+															"value": "minecraft:is_sheared",
+															"subject": "self",
+															"operator": "!="
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												},
+												"max_dist": 75
+											}
+										],
+										"reselect_targets": true
+									}
+								},
+								"minecraft:constricting": {
+									"minecraft:navigation.generic": {
+										"is_amphibious": true,
+										"can_path_over_water": false,
+										"can_swim": false,
+										"can_walk": false,
+										"can_breach": false,
+										"can_sink": true
+									},
+									"minecraft:collision_box": {
+										"height": 0.9,
+										"width": 1.9
+									},
+									"minecraft:water_movement": {
+										"value": 0.12,
+										"drag_factor": 0
+									},
+									"minecraft:is_sheared": {},
+									"minecraft:area_attack": {
+										"damage_range": 1,
+										"damage_per_tick": 1,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_target",
+											"subject": "other"
+										}
+									},
+									"minecraft:rideable": {
+										"seat_count": 1,
+										"rider_can_interact": true,
+										"seats": [
+											{
+												"position": [
+													0,
+													1,
+													0
+												]
+											}
+										],
+										"family_types": [
+											"player"
+										]
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1,
+										"max": 1
+									}
+								},
+								"minecraft:down": {
+									"minecraft:buoyant": {
+										"drag_down_on_buoyancy_removed": 2,
+										"apply_gravity": true,
+										"liquid_blocks": [
+											"minecraft:water"
+										],
+										"base_buoyancy": 0.1
+									},
+									"minecraft:timer": {
+										"time": 0.05,
+										"time_down_event": {
+											"event": "down"
+										}
+									}
+								}
+							},
+							"components": {
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:type_family": {
+									"family": [
+										"barnacle",
+										"mob"
+									]
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:loot": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:health": {
+									"value": 35,
+									"max": 35
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								},
+								"minecraft:movement.sway": {
+									"sway_amplitude": 0,
+									"max_turn": 170
+								},
+								"minecraft:attack": {
+									"damage": 2
+								},
+								"minecraft:persistent": {},
+								"minecraft:follow_range": {
+									"value": 32,
+									"max": 32
+								},
+								"minecraft:physics": {
+									"has_gravity": true,
+									"has_collision": true
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"minecraft:in_water"
+										]
+									}
+								},
+								"constricting": {
+									"sequence": [
+										{
+											"remove": {
+												"component_groups": [
+													"minecraft:in_water"
+												]
+											}
+										},
+										{
+											"add": {
+												"component_groups": [
+													"minecraft:constricting"
+												]
+											}
+										},
+										{
+											"trigger": "trap_player"
+										}
+									]
+								},
+								"normal": {
+									"remove": {
+										"component_groups": [
+											"minecraft:constricting"
+										]
+									},
+									"add": {
+										"component_groups": [
+											"minecraft:in_water"
+										]
+									}
+								},
+								"trap_player": {
+									"sequence": [
+										{
+											"run_command": {
+												"command": [
+													"tag @s add trapme",
+													"summon ocean:boat_killer"
+												],
+												"target": "target"
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"ride @e[c=1,tag=trapme] start_riding @s",
+													"tag @e remove trapme"
+												]
+											}
+										}
+									]
+								},
+								"down": {
+									"remove": {
+										"component_groups": [
+											"minecraft:down"
+										]
+									}
+								},
+								"d2": {
+									"add": {
+										"component_groups": [
+											"minecraft:down"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:conditional_bandwidth_optimization",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"barnacle",
+												"mob"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"barnacle",
+											"mob"
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"children": [
+									{
+										"open": {
+											"damage_conditions": [
+												{
+													"filters": {
+														"test": "in_lava",
+														"subject": "self",
+														"operator": "==",
+														"value": true
+													},
+													"cause": "lava",
+													"damage_per_tick": 4
+												}
+											]
+										},
+										"key": "damage_conditions",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"test": "in_lava",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														},
+														"cause": "lava",
+														"damage_per_tick": 4
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"filters": {
+														"test": "in_lava",
+														"subject": "self",
+														"operator": "==",
+														"value": true
+													},
+													"cause": "lava",
+													"damage_per_tick": 4
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 35,
+									"max": 35
+								}
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								}
+							},
+							{
+								"key": "minecraft:movement.sway",
+								"is_minified": true,
+								"children": {
+									"sway_amplitude": 0,
+									"max_turn": 170
+								}
+							},
+							{
+								"key": "minecraft:attack",
+								"is_minified": true,
+								"children": {
+									"damage": 2
+								}
+							},
+							{
+								"open": {
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:type_family": {
+										"family": [
+											"barnacle",
+											"mob"
+										]
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:loot": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:health": {
+										"value": 35,
+										"max": 35
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0,
+										"breathes_air": false,
+										"breathes_water": true
+									},
+									"minecraft:movement.sway": {
+										"sway_amplitude": 0,
+										"max_turn": 170
+									},
+									"minecraft:attack": {
+										"damage": 2
+									},
+									"minecraft:persistent": {},
+									"minecraft:follow_range": {
+										"value": 32,
+										"max": 32
+									},
+									"minecraft:physics": {
+										"has_gravity": true,
+										"has_collision": true
+									}
+								},
+								"key": "minecraft:persistent",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:follow_range",
+								"is_minified": true,
+								"children": {
+									"value": 32,
+									"max": 32
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_gravity": true,
+									"has_collision": true
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ocean:barnacle",
+								"is_summonable": true,
+								"is_spawnable": true,
+								"is_experimental": false,
+								"animations": {
+									"trap": "animation.barnacle.force_ride",
+									"reset": "animation.barnacle.reset",
+									"down": "animation.barnacle.down"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"trap": "query.is_sheared && !query.has_rider"
+										},
+										{
+											"reset": "query.is_sheared && !query.has_target"
+										},
+										{
+											"down": "query.is_sheared"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"minecraft:in_water": {
+									"minecraft:collision_box": {
+										"height": 1,
+										"width": 0.9
+									},
+									"minecraft:environment_sensor": {
+										"triggers": [
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "rider_count",
+															"subject": "self",
+															"value": 0
+														},
+														{
+															"test": "is_underwater",
+															"subject": "self",
+															"operator": "==",
+															"value": false
+														}
+													]
+												},
+												"event": "minecraft:ground"
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "rider_count",
+															"subject": "self",
+															"value": 1
+														},
+														{
+															"test": "is_underwater",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														}
+													]
+												},
+												"event": "minecraft:constrict_underwater"
+											}
+										]
+									},
+									"minecraft:behavior.melee_attack": {
+										"priority": 1,
+										"speed_multiplier": 1.5,
+										"track_target": true,
+										"require_complete_path": true,
+										"reach_multiplier": 2,
+										"on_attack": {
+											"event": "constricting",
+											"target": "self",
+											"filters": {
+												"test": "in_water",
+												"subject": "self"
+											}
+										}
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": true,
+										"can_path_over_water": true,
+										"can_swim": true,
+										"can_walk": true,
+										"can_breach": true,
+										"can_sink": false
+									},
+									"minecraft:water_movement": {
+										"value": 0.12
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 3,
+										"speed_multiplier": 0.9,
+										"interval": 10,
+										"xz_dist": 30,
+										"y_dist": 15,
+										"avoid_surface": true
+									},
+									"minecraft:behavior.nearest_prioritized_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"must_see": true,
+												"priority": 1,
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_riding",
+															"subject": "other",
+															"value": false
+														},
+														{
+															"test": "has_component",
+															"value": "minecraft:is_sheared",
+															"subject": "self",
+															"operator": "!="
+														}
+													],
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "villager"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "boat"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wandering_trader"
+														}
+													]
+												},
+												"max_dist": 75
+											},
+											{
+												"must_see": true,
+												"priority": 0,
+												"filters": {
+													"all_of": [
+														{
+															"test": "has_component",
+															"value": "minecraft:is_sheared",
+															"subject": "self",
+															"operator": "!="
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														}
+													]
+												},
+												"max_dist": 75
+											}
+										],
+										"reselect_targets": true
+									}
+								},
+								"minecraft:constricting": {
+									"minecraft:navigation.generic": {
+										"is_amphibious": true,
+										"can_path_over_water": false,
+										"can_swim": false,
+										"can_walk": false,
+										"can_breach": false,
+										"can_sink": true
+									},
+									"minecraft:collision_box": {
+										"height": 0.9,
+										"width": 1.9
+									},
+									"minecraft:water_movement": {
+										"value": 0.12,
+										"drag_factor": 0
+									},
+									"minecraft:is_sheared": {},
+									"minecraft:area_attack": {
+										"damage_range": 1,
+										"damage_per_tick": 1,
+										"cause": "contact",
+										"entity_filter": {
+											"test": "is_target",
+											"subject": "other"
+										}
+									},
+									"minecraft:rideable": {
+										"seat_count": 1,
+										"rider_can_interact": true,
+										"seats": [
+											{
+												"position": [
+													0,
+													1,
+													0
+												]
+											}
+										],
+										"family_types": [
+											"player"
+										]
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1,
+										"max": 1
+									}
+								},
+								"minecraft:down": {
+									"minecraft:buoyant": {
+										"drag_down_on_buoyancy_removed": 2,
+										"apply_gravity": true,
+										"liquid_blocks": [
+											"minecraft:water"
+										],
+										"base_buoyancy": 0.1
+									},
+									"minecraft:timer": {
+										"time": 0.05,
+										"time_down_event": {
+											"event": "down"
+										}
+									}
+								}
+							},
+							"components": {
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:type_family": {
+									"family": [
+										"barnacle",
+										"mob"
+									]
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:loot": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:health": {
+									"value": 35,
+									"max": 35
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": false,
+									"breathes_water": true
+								},
+								"minecraft:movement.sway": {
+									"sway_amplitude": 0,
+									"max_turn": 170
+								},
+								"minecraft:attack": {
+									"damage": 2
+								},
+								"minecraft:persistent": {},
+								"minecraft:follow_range": {
+									"value": 32,
+									"max": 32
+								},
+								"minecraft:physics": {
+									"has_gravity": true,
+									"has_collision": true
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"minecraft:in_water"
+										]
+									}
+								},
+								"constricting": {
+									"sequence": [
+										{
+											"remove": {
+												"component_groups": [
+													"minecraft:in_water"
+												]
+											}
+										},
+										{
+											"add": {
+												"component_groups": [
+													"minecraft:constricting"
+												]
+											}
+										},
+										{
+											"trigger": "trap_player"
+										}
+									]
+								},
+								"normal": {
+									"remove": {
+										"component_groups": [
+											"minecraft:constricting"
+										]
+									},
+									"add": {
+										"component_groups": [
+											"minecraft:in_water"
+										]
+									}
+								},
+								"trap_player": {
+									"sequence": [
+										{
+											"run_command": {
+												"command": [
+													"tag @s add trapme",
+													"summon ocean:boat_killer"
+												],
+												"target": "target"
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"ride @e[c=1,tag=trapme] start_riding @s",
+													"tag @e remove trapme"
+												]
+											}
+										}
+									]
+								},
+								"down": {
+									"remove": {
+										"component_groups": [
+											"minecraft:down"
+										]
+									}
+								},
+								"d2": {
+									"add": {
+										"component_groups": [
+											"minecraft:down"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"key": "minecraft:entity_spawned",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"minecraft:in_water"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"minecraft:in_water"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"minecraft:in_water"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "constricting",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"remove": {
+														"component_groups": [
+															"minecraft:in_water"
+														]
+													}
+												},
+												{
+													"add": {
+														"component_groups": [
+															"minecraft:constricting"
+														]
+													}
+												},
+												{
+													"trigger": "trap_player"
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"remove": {
+															"component_groups": [
+																"minecraft:in_water"
+															]
+														}
+													},
+													{
+														"add": {
+															"component_groups": [
+																"minecraft:constricting"
+															]
+														}
+													},
+													{
+														"trigger": "trap_player"
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"remove": {
+																"component_groups": [
+																	"minecraft:in_water"
+																]
+															}
+														},
+														"key": "remove",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"minecraft:in_water"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"children": [
+																	"minecraft:in_water"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"remove": {
+															"component_groups": [
+																"minecraft:in_water"
+															]
+														}
+													},
+													{
+														"add": {
+															"component_groups": [
+																"minecraft:constricting"
+															]
+														}
+													},
+													{
+														"trigger": "trap_player"
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"add": {
+																"component_groups": [
+																	"minecraft:constricting"
+																]
+															}
+														},
+														"key": "add",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"minecraft:constricting"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"children": [
+																	"minecraft:constricting"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"remove": {
+															"component_groups": [
+																"minecraft:in_water"
+															]
+														}
+													},
+													{
+														"add": {
+															"component_groups": [
+																"minecraft:constricting"
+															]
+														}
+													},
+													{
+														"trigger": "trap_player"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"trigger": "trap_player"
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"constricting": {
+										"sequence": [
+											{
+												"remove": {
+													"component_groups": [
+														"minecraft:in_water"
+													]
+												}
+											},
+											{
+												"add": {
+													"component_groups": [
+														"minecraft:constricting"
+													]
+												}
+											},
+											{
+												"trigger": "trap_player"
+											}
+										]
+									},
+									"normal": {
+										"remove": {
+											"component_groups": [
+												"minecraft:constricting"
+											]
+										},
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"trap_player": {
+										"sequence": [
+											{
+												"run_command": {
+													"command": [
+														"tag @s add trapme",
+														"summon ocean:boat_killer"
+													],
+													"target": "target"
+												}
+											},
+											{
+												"run_command": {
+													"command": [
+														"ride @e[c=1,tag=trapme] start_riding @s",
+														"tag @e remove trapme"
+													]
+												}
+											}
+										]
+									},
+									"down": {
+										"remove": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									},
+									"d2": {
+										"add": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									}
+								},
+								"key": "normal",
+								"children": [
+									{
+										"open": {
+											"remove": {
+												"component_groups": [
+													"minecraft:constricting"
+												]
+											},
+											"add": {
+												"component_groups": [
+													"minecraft:in_water"
+												]
+											}
+										},
+										"key": "remove",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"minecraft:constricting"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"minecraft:constricting"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"remove": {
+												"component_groups": [
+													"minecraft:constricting"
+												]
+											},
+											"add": {
+												"component_groups": [
+													"minecraft:in_water"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"minecraft:in_water"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"minecraft:in_water"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"constricting": {
+										"sequence": [
+											{
+												"remove": {
+													"component_groups": [
+														"minecraft:in_water"
+													]
+												}
+											},
+											{
+												"add": {
+													"component_groups": [
+														"minecraft:constricting"
+													]
+												}
+											},
+											{
+												"trigger": "trap_player"
+											}
+										]
+									},
+									"normal": {
+										"remove": {
+											"component_groups": [
+												"minecraft:constricting"
+											]
+										},
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"trap_player": {
+										"sequence": [
+											{
+												"run_command": {
+													"command": [
+														"tag @s add trapme",
+														"summon ocean:boat_killer"
+													],
+													"target": "target"
+												}
+											},
+											{
+												"run_command": {
+													"command": [
+														"ride @e[c=1,tag=trapme] start_riding @s",
+														"tag @e remove trapme"
+													]
+												}
+											}
+										]
+									},
+									"down": {
+										"remove": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									},
+									"d2": {
+										"add": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									}
+								},
+								"key": "trap_player",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"run_command": {
+														"command": [
+															"tag @s add trapme",
+															"summon ocean:boat_killer"
+														],
+														"target": "target"
+													}
+												},
+												{
+													"run_command": {
+														"command": [
+															"ride @e[c=1,tag=trapme] start_riding @s",
+															"tag @e remove trapme"
+														]
+													}
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"run_command": {
+															"command": [
+																"tag @s add trapme",
+																"summon ocean:boat_killer"
+															],
+															"target": "target"
+														}
+													},
+													{
+														"run_command": {
+															"command": [
+																"ride @e[c=1,tag=trapme] start_riding @s",
+																"tag @e remove trapme"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"tag @s add trapme",
+																	"summon ocean:boat_killer"
+																],
+																"target": "target"
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"tag @s add trapme",
+																		"summon ocean:boat_killer"
+																	],
+																	"target": "target"
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"tag @s add trapme",
+																	"summon ocean:boat_killer"
+																]
+															},
+															{
+																"data": "target",
+																"key": "target"
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"run_command": {
+															"command": [
+																"tag @s add trapme",
+																"summon ocean:boat_killer"
+															],
+															"target": "target"
+														}
+													},
+													{
+														"run_command": {
+															"command": [
+																"ride @e[c=1,tag=trapme] start_riding @s",
+																"tag @e remove trapme"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"ride @e[c=1,tag=trapme] start_riding @s",
+																	"tag @e remove trapme"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"ride @e[c=1,tag=trapme] start_riding @s",
+																		"tag @e remove trapme"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"ride @e[c=1,tag=trapme] start_riding @s",
+																	"tag @e remove trapme"
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"constricting": {
+										"sequence": [
+											{
+												"remove": {
+													"component_groups": [
+														"minecraft:in_water"
+													]
+												}
+											},
+											{
+												"add": {
+													"component_groups": [
+														"minecraft:constricting"
+													]
+												}
+											},
+											{
+												"trigger": "trap_player"
+											}
+										]
+									},
+									"normal": {
+										"remove": {
+											"component_groups": [
+												"minecraft:constricting"
+											]
+										},
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"trap_player": {
+										"sequence": [
+											{
+												"run_command": {
+													"command": [
+														"tag @s add trapme",
+														"summon ocean:boat_killer"
+													],
+													"target": "target"
+												}
+											},
+											{
+												"run_command": {
+													"command": [
+														"ride @e[c=1,tag=trapme] start_riding @s",
+														"tag @e remove trapme"
+													]
+												}
+											}
+										]
+									},
+									"down": {
+										"remove": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									},
+									"d2": {
+										"add": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									}
+								},
+								"key": "down",
+								"children": [
+									{
+										"open": {
+											"remove": {
+												"component_groups": [
+													"minecraft:down"
+												]
+											}
+										},
+										"key": "remove",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"minecraft:down"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"minecraft:down"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"constricting": {
+										"sequence": [
+											{
+												"remove": {
+													"component_groups": [
+														"minecraft:in_water"
+													]
+												}
+											},
+											{
+												"add": {
+													"component_groups": [
+														"minecraft:constricting"
+													]
+												}
+											},
+											{
+												"trigger": "trap_player"
+											}
+										]
+									},
+									"normal": {
+										"remove": {
+											"component_groups": [
+												"minecraft:constricting"
+											]
+										},
+										"add": {
+											"component_groups": [
+												"minecraft:in_water"
+											]
+										}
+									},
+									"trap_player": {
+										"sequence": [
+											{
+												"run_command": {
+													"command": [
+														"tag @s add trapme",
+														"summon ocean:boat_killer"
+													],
+													"target": "target"
+												}
+											},
+											{
+												"run_command": {
+													"command": [
+														"ride @e[c=1,tag=trapme] start_riding @s",
+														"tag @e remove trapme"
+													]
+												}
+											}
+										]
+									},
+									"down": {
+										"remove": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									},
+									"d2": {
+										"add": {
+											"component_groups": [
+												"minecraft:down"
+											]
+										}
+									}
+								},
+								"key": "d2",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"minecraft:down"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"minecraft:down"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"minecraft:down"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

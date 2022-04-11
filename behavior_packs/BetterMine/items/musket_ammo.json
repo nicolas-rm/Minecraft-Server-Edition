@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "equipment",
+			"identifier": "better:musket_ammo"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "musket_ammo"
+			},
+			"minecraft:display_name": {
+				"value": "Musket Ammo"
+			}
+		}
+	}
+}

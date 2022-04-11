@@ -1,0 +1,211 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\recipes\\maple_planks.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "189b430b_ef07_4cca_9456_dc50b53c1029",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "strat:maple_planks"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"#"
+						],
+						"key": {
+							"#": {
+								"item": "strat:maple_log"
+							}
+						},
+						"result": [
+							{
+								"item": "strat:maple_planks",
+								"count": 4
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_planks"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_log"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_planks",
+									"count": 4
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "strat:maple_planks"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_planks"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_log"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_planks",
+									"count": 4
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_planks"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_log"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_planks",
+									"count": 4
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"#"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_planks"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_log"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_planks",
+									"count": 4
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "strat:maple_log"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_log"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "strat:maple_planks"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"#"
+							],
+							"key": {
+								"#": {
+									"item": "strat:maple_log"
+								}
+							},
+							"result": [
+								{
+									"item": "strat:maple_planks",
+									"count": 4
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "strat:maple_planks",
+										"count": 4
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "strat:maple_planks",
+									"count": 4
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "red_town"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.25,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.85
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 0.1, 0.0 ]
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": "better:dirtpatched"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.121, 1.0 ]
+          },
+          {
+            "materials": {
+              "top_material": "better:granite_cobble"
+            },
+            "noise_range": [ 0.25, 1.0 ]
+          }
+        ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": {
+          "name": "minecraft:stone",
+          "states": {
+            "stone_type": "granite"
+          }
+        },
+        "top_material": "minecraft:grass_path",
+        "sea_material": "minecraft:water"
+      },
+
+      "animal": {},
+      "prarie": {},
+      "red_town": {},
+      "overworld": {},
+      "bee_habitat": {}
+    }
+  }
+}

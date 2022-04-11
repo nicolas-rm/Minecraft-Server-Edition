@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:furnace_lead_ore"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "better:lead_ore",
+    "output": "better:lead_ingot"
+  }
+  
+}

@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\Owner\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\More Enchantments Addon\\recipes\\ds_gold_leggigns.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "1d292712_164f_4e1b_8902_b17549282776",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:golden_leggings"
+							},
+							{
+								"item": "ray:ds_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:ds_golden_leggings"
+							}
+						],
+						"description": {
+							"identifier": "ray:ds_gold_leggigns"
+						}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shapeless": {
+						"tags": [
+							"crafting_table"
+						],
+						"ingredients": [
+							{
+								"item": "minecraft:golden_leggings"
+							},
+							{
+								"item": "ray:ds_book"
+							}
+						],
+						"result": [
+							{
+								"item": "ray:ds_golden_leggings"
+							}
+						],
+						"description": {
+							"identifier": "ray:ds_gold_leggigns"
+						}
+					}
+				},
+				"key": "minecraft:recipe_shapeless",
+				"children": [
+					{
+						"open": {
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_leggings"
+								},
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ds_golden_leggings"
+								}
+							],
+							"description": {
+								"identifier": "ray:ds_gold_leggigns"
+							}
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_leggings"
+								},
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ds_golden_leggings"
+								}
+							],
+							"description": {
+								"identifier": "ray:ds_gold_leggigns"
+							}
+						},
+						"key": "ingredients",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "minecraft:golden_leggings"
+									},
+									{
+										"item": "ray:ds_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:golden_leggings"
+								}
+							},
+							{
+								"open": [
+									{
+										"item": "minecraft:golden_leggings"
+									},
+									{
+										"item": "ray:ds_book"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ds_book"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_leggings"
+								},
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ds_golden_leggings"
+								}
+							],
+							"description": {
+								"identifier": "ray:ds_gold_leggigns"
+							}
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "ray:ds_golden_leggings"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "ray:ds_golden_leggings"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"tags": [
+								"crafting_table"
+							],
+							"ingredients": [
+								{
+									"item": "minecraft:golden_leggings"
+								},
+								{
+									"item": "ray:ds_book"
+								}
+							],
+							"result": [
+								{
+									"item": "ray:ds_golden_leggings"
+								}
+							],
+							"description": {
+								"identifier": "ray:ds_gold_leggigns"
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:ds_gold_leggigns"
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,1189 @@
+{
+	"file_path": "C:\\Users\\pixel\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Food Expansion Addon BP\\loot_tables\\tomato_dungeon.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "e2317297_b699_418b_9ee8_0d02fc51c9ec",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": {
+								"min": 1,
+								"max": 3
+							},
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:saddle",
+									"weight": 20
+								},
+								{
+									"type": "item",
+									"name": "minecraft:golden_apple",
+									"weight": 15
+								},
+								{
+									"type": "item",
+									"name": "minecraft:appleEnchanted",
+									"weight": 2
+								},
+								{
+									"type": "item",
+									"name": "minecraft:record_13",
+									"weight": 15
+								},
+								{
+									"type": "item",
+									"name": "minecraft:record_cat",
+									"weight": 15
+								},
+								{
+									"type": "item",
+									"name": "minecraft:name_tag",
+									"weight": 20
+								},
+								{
+									"type": "item",
+									"name": "minecraft:horsearmorgold",
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "minecraft:horsearmoriron",
+									"weight": 15
+								},
+								{
+									"type": "item",
+									"name": "minecraft:horsearmordiamond",
+									"weight": 5
+								},
+								{
+									"type": "item",
+									"name": "minecraft:book",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "enchant_randomly"
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "strat:tomato",
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "strat:lettuce",
+									"weight": 10
+								}
+							]
+						},
+						{
+							"rolls": {
+								"min": 1,
+								"max": 4
+							},
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:iron_ingot",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:gold_ingot",
+									"weight": 5,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:bread",
+									"weight": 20
+								},
+								{
+									"type": "item",
+									"name": "minecraft:wheat",
+									"weight": 20,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:bucket",
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "minecraft:redstone",
+									"weight": 15,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:coal",
+									"weight": 15,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:melon_seeds",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 4
+											}
+										}
+									],
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "minecraft:pumpkin_seeds",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 4
+											}
+										}
+									],
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "minecraft:beetroot_seeds",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 4
+											}
+										}
+									],
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "strat:tomato_seeds",
+									"weight": 10
+								}
+							]
+						},
+						{
+							"rolls": 3,
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:bone",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:gunpowder",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:rotten_flesh",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:string",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 3
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:saddle",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:golden_apple",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:appleEnchanted",
+										"weight": 2
+									},
+									{
+										"type": "item",
+										"name": "minecraft:record_13",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:record_cat",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:name_tag",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmorgold",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmoriron",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmordiamond",
+										"weight": 5
+									},
+									{
+										"type": "item",
+										"name": "minecraft:book",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "enchant_randomly"
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "strat:tomato",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "strat:lettuce",
+										"weight": 10
+									}
+								]
+							},
+							{
+								"rolls": {
+									"min": 1,
+									"max": 4
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:iron_ingot",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:gold_ingot",
+										"weight": 5,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:bread",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:wheat",
+										"weight": 20,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:bucket",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:redstone",
+										"weight": 15,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:coal",
+										"weight": 15,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:melon_seeds",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 4
+												}
+											}
+										],
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:pumpkin_seeds",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 4
+												}
+											}
+										],
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:beetroot_seeds",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 4
+												}
+											}
+										],
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "strat:tomato_seeds",
+										"weight": 10
+									}
+								]
+							},
+							{
+								"rolls": 3,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:bone",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:gunpowder",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:rotten_flesh",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:string",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"key": "rolls",
+								"is_minified": true,
+								"children": {
+									"min": 1,
+									"max": 3
+								}
+							},
+							{
+								"open": {
+									"rolls": {
+										"min": 1,
+										"max": 3
+									},
+									"entries": [
+										{
+											"type": "item",
+											"name": "minecraft:saddle",
+											"weight": 20
+										},
+										{
+											"type": "item",
+											"name": "minecraft:golden_apple",
+											"weight": 15
+										},
+										{
+											"type": "item",
+											"name": "minecraft:appleEnchanted",
+											"weight": 2
+										},
+										{
+											"type": "item",
+											"name": "minecraft:record_13",
+											"weight": 15
+										},
+										{
+											"type": "item",
+											"name": "minecraft:record_cat",
+											"weight": 15
+										},
+										{
+											"type": "item",
+											"name": "minecraft:name_tag",
+											"weight": 20
+										},
+										{
+											"type": "item",
+											"name": "minecraft:horsearmorgold",
+											"weight": 10
+										},
+										{
+											"type": "item",
+											"name": "minecraft:horsearmoriron",
+											"weight": 15
+										},
+										{
+											"type": "item",
+											"name": "minecraft:horsearmordiamond",
+											"weight": 5
+										},
+										{
+											"type": "item",
+											"name": "minecraft:book",
+											"weight": 10,
+											"functions": [
+												{
+													"function": "enchant_randomly"
+												}
+											]
+										},
+										{
+											"type": "item",
+											"name": "strat:tomato",
+											"weight": 10
+										},
+										{
+											"type": "item",
+											"name": "strat:lettuce",
+											"weight": 10
+										}
+									]
+								},
+								"key": "entries",
+								"is_minified": true,
+								"children": [
+									{
+										"type": "item",
+										"name": "minecraft:saddle",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:golden_apple",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:appleEnchanted",
+										"weight": 2
+									},
+									{
+										"type": "item",
+										"name": "minecraft:record_13",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:record_cat",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:name_tag",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmorgold",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmoriron",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmordiamond",
+										"weight": 5
+									},
+									{
+										"type": "item",
+										"name": "minecraft:book",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "enchant_randomly"
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "strat:tomato",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "strat:lettuce",
+										"weight": 10
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": {
+									"min": 1,
+									"max": 3
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:saddle",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:golden_apple",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:appleEnchanted",
+										"weight": 2
+									},
+									{
+										"type": "item",
+										"name": "minecraft:record_13",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:record_cat",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:name_tag",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmorgold",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmoriron",
+										"weight": 15
+									},
+									{
+										"type": "item",
+										"name": "minecraft:horsearmordiamond",
+										"weight": 5
+									},
+									{
+										"type": "item",
+										"name": "minecraft:book",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "enchant_randomly"
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "strat:tomato",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "strat:lettuce",
+										"weight": 10
+									}
+								]
+							},
+							{
+								"rolls": {
+									"min": 1,
+									"max": 4
+								},
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:iron_ingot",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:gold_ingot",
+										"weight": 5,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:bread",
+										"weight": 20
+									},
+									{
+										"type": "item",
+										"name": "minecraft:wheat",
+										"weight": 20,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:bucket",
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:redstone",
+										"weight": 15,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:coal",
+										"weight": 15,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 4
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:melon_seeds",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 4
+												}
+											}
+										],
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:pumpkin_seeds",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 4
+												}
+											}
+										],
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "minecraft:beetroot_seeds",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 2,
+													"max": 4
+												}
+											}
+										],
+										"weight": 10
+									},
+									{
+										"type": "item",
+										"name": "strat:tomato_seeds",
+										"weight": 10
+									}
+								]
+							},
+							{
+								"rolls": 3,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:bone",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:gunpowder",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:rotten_flesh",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:string",
+										"weight": 10,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 8
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"is_minified": true,
+						"children": {
+							"rolls": {
+								"min": 1,
+								"max": 4
+							},
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:iron_ingot",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:gold_ingot",
+									"weight": 5,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:bread",
+									"weight": 20
+								},
+								{
+									"type": "item",
+									"name": "minecraft:wheat",
+									"weight": 20,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:bucket",
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "minecraft:redstone",
+									"weight": 15,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:coal",
+									"weight": 15,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 4
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:melon_seeds",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 4
+											}
+										}
+									],
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "minecraft:pumpkin_seeds",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 4
+											}
+										}
+									],
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "minecraft:beetroot_seeds",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 2,
+												"max": 4
+											}
+										}
+									],
+									"weight": 10
+								},
+								{
+									"type": "item",
+									"name": "strat:tomato_seeds",
+									"weight": 10
+								}
+							]
+						}
+					},
+					{
+						"is_minified": true,
+						"children": {
+							"rolls": 3,
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:bone",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:gunpowder",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:rotten_flesh",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:string",
+									"weight": 10,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 8
+											}
+										}
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}

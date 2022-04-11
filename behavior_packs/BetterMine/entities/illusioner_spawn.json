@@ -1,0 +1,62 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "better:illusioner_spawn",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:2": {
+        "minecraft:transformation": {
+          "into": "better:spawn_illusioner"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "inaminate", "mob" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:scale": {
+        "value":0.1
+      },
+      "minecraft:is_baby": {
+      },
+      "minecraft:ageable": {
+        "duration": 12.16,
+        "grow_up": {
+          "event": "minecraft:grow_up",
+          "target": "self"
+        }
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:health": {
+        "value": 4000,
+        "max": 4000
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+
+    "events": {
+      "minecraft:grow_up": {
+        "add": { "component_groups": [ "minecraft:2" ] }
+      }
+    }
+  }
+}
