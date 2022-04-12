@@ -8,6 +8,171 @@
 	{
 		"file_system" : "RawPath",
 		"from_disk" : true,
+		"hashes" : [ "C2dE4mBrsF9fKIRzY1mpmtwWB2kw+JFbnN2qQtpCiRw=" ],
+		"path" : "behavior_packs/test_vanilla_1.12",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.12.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.17.0",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.17.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/agent_gametest",
+		"uuid" : "dba81c2c-f7b3-468e-990e-f31555ed6079",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.16.200",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.16.200"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.17.10",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.17.10"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
+		"hashes" : [ "gymtxHtwe9QzHaW5cHjWWiXsZK/8OzOIbhL3GPN6m7o=" ],
+		"path" : "behavior_packs/test_vanilla_1.11",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.11.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.16.100",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.16.100"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.16",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.16.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.15",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.15.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.16.210",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.16.210"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "resource_packs/vanilla",
+		"uuid" : "0575c61f-a5da-4b7f-9961-ffda2908861e",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.14",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.14.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.16.220",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.16.220"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_gametest",
+		"uuid" : "fd375b0a-4bdd-4572-9268-e55a79cf99d3",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.18.0",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.18.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/chemistry",
+		"uuid" : "6baf8b62-8948-4c99-bb1e-a0cb35dc4579",
+		"version" : "1.0.0"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/experimental_vanilla_experiments",
+		"uuid" : "32b2f234-9e44-46fe-a600-54712c051d20",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/experimental_wild_update",
+		"uuid" : "032705f6-35dd-4761-ba1a-6f559a27cc29",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "0.0.1"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.17.40",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.17.40"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.17.30",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.17.30"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.17.20",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.17.20"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"path" : "behavior_packs/vanilla_1.18.10",
+		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
+		"version" : "1.18.10"
+	},
+	
+	{
+		"file_system" : "RawPath",
+		"from_disk" : true,
 		"hashes" : [ "PmnbfwpwDl/rHoFnsWBBmcywfjxUlZ9G1kzxjhpLcAE=" ],
 		"path" : "behavior_packs/TheWarden;",
 		"uuid" : "0bc49f5a-c049-4399-b122-02ae4f9799c0",
@@ -61,20 +226,6 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.18.10",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.18.10"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.17.20",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.17.20"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"from_disk" : true,
 		"hashes" : [ "+sED232PvTI3bxk6LGV8aPTsqGVjaebFE1FfyZsSRTM=" ],
 		"path" : "behavior_packs/VanillaTwi",
@@ -84,32 +235,11 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.17.30",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.17.30"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/experimental_wild_update",
-		"uuid" : "032705f6-35dd-4761-ba1a-6f559a27cc29",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"from_disk" : true,
 		"hashes" : [ "THk+qdmX2wfWtWaJxloOkpZ8m63v9/QRGlDr/ScSkkc=" ],
 		"path" : "behavior_packs/v4",
 		"uuid" : "86bb4632-3521-443c-9b6a-c375e871ee64",
 		"version" : "4.6.5"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/experimental_vanilla_experiments",
-		"uuid" : "32b2f234-9e44-46fe-a600-54712c051d20",
-		"version" : "0.0.1"
 	},
 	
 	{
@@ -152,48 +282,11 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.18.0",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.18.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_gametest",
-		"uuid" : "fd375b0a-4bdd-4572-9268-e55a79cf99d3",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : [ "gymtxHtwe9QzHaW5cHjWWiXsZK/8OzOIbhL3GPN6m7o=" ],
-		"path" : "behavior_packs/test_vanilla_1.11",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.11.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"from_disk" : true,
 		"hashes" : [ "4UKD5CwyqZMK2riXOGPzhpqzFTdW+dfuUagtuJ5+Sk0=" ],
 		"path" : "behavior_packs/CraftableN",
 		"uuid" : "18e257c8-b760-4d76-9ca5-f12a8497d083",
 		"version" : "0.1.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "resource_packs/vanilla",
-		"uuid" : "0575c61f-a5da-4b7f-9961-ffda2908861e",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.16.210",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.16.210"
 	},
 	
 	{
@@ -207,27 +300,6 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.17.40",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.17.40"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/chemistry",
-		"uuid" : "6baf8b62-8948-4c99-bb1e-a0cb35dc4579",
-		"version" : "1.0.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.16.220",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.16.220"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"from_disk" : true,
 		"hashes" : [ "enOHGmPCSP84w7NsJHawhXa3INRU+YrpgXLJCk/nI+E=" ],
 		"path" : "behavior_packs/Multi backpack [BP]",
@@ -237,83 +309,11 @@
 	
 	{
 		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.16",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.16.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.16.100",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.16.100"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.17.10",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.17.10"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.16.200",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.16.200"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.15",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.15.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/agent_gametest",
-		"uuid" : "dba81c2c-f7b3-468e-990e-f31555ed6079",
-		"version" : "0.0.1"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.17.0",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.17.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"from_disk" : true,
-		"hashes" : [ "C2dE4mBrsF9fKIRzY1mpmtwWB2kw+JFbnN2qQtpCiRw=" ],
-		"path" : "behavior_packs/test_vanilla_1.12",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.12.0"
-	},
-	
-	{
-		"file_system" : "RawPath",
 		"from_disk" : true,
 		"hashes" : [ "1lWmUnbkTqtcBPsiN65T4VcRNbKvLnqO1lmLJ2bhKa0=" ],
 		"path" : "behavior_packs/[v4.5",
 		"uuid" : "75e91e83-37f8-41dd-9d0f-e34edfbe1f53",
 		"version" : "1.0.16"
-	},
-	
-	{
-		"file_system" : "RawPath",
-		"path" : "behavior_packs/vanilla_1.14",
-		"uuid" : "fe9f8597-5454-481a-8730-8d070a8e2e58",
-		"version" : "1.14.0"
 	},
 	
 	{
