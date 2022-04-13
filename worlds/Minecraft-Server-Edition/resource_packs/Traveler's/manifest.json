@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Traveler's Backpack Mcpe",
+    "description": "Addon: §l§eAndriel xZ\n§rMod Java: §l§c@Tiviacz1337",
+    "uuid": "2dfa364a-cb52-4038-b370-d4d806c4d1a8",
+    "min_engine_version": [1, 18, 0],
+    "version": [0, 1, 0]
+  },
+  "modules": [
+    {
+      "description": "Addon: §l§eAndriel xZ\n§rMod Java: §l§c@Tiviacz1337",
+      "type": "resources",
+      "uuid": "1da651f7-9b18-469e-b72a-f7d914746b36",
+      "version": [0, 1, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "e4eb6b9e-69fc-42b0-886e-5272f0e64222",
+      "version": [0, 1, 0]
+    }
+  ]
+}

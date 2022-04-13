@@ -1,0 +1,164 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "korbon:firefly",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:health": {
+				"value": 5,
+				"max": 5
+			},
+			"minecraft:buoyant": {
+				"apply_gravity": false,
+				"liquid_blocks": [
+					"minecraft:flowing_water",
+					"minecraft:water"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.03
+			},
+			"minecraft:navigation.float": {
+				"can_path_over_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.float_wander": {
+				"xz_dist": 10,
+				"y_dist": 7,
+				"y_offset": -2,
+				"random_reselect": true,
+				"float_duration": [
+					0.1,
+					0.35
+				]
+			},
+			"minecraft:can_fly": true,
+			"minecraft:scale": {
+				"value": 0.3
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "korbon:glass_jar_item"
+									}
+								]
+							},
+							"event": "despawn"
+						},
+						"use_item": true,
+						"transform_to_item": "korbon:glass_jar_firefly_item",
+						"interact_text": "action.interact.catch"
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"random_time_choices": [
+					{
+						"weight": 50,
+						"value": 2400
+					},
+					{
+						"weight": 50,
+						"value": 3600
+					}
+				],
+				"time_down_event": {
+					"event": "despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:despawn": {
+				"remove_child_entities": true,
+				"filters": {
+					"all_of": [
+						{
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "self",
+									"value": "firefly_despawning"
+								}
+							]
+						},
+						{
+							"test": "distance_to_nearest_player",
+							"operator": ">",
+							"value": 50
+						}
+					]
+				}
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"firefly",
+					"firefly_despawning"
+				]
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		}
+	}
+}

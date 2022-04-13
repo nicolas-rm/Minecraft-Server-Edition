@@ -1,0 +1,71 @@
+//bridge-file-version: #31
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:icicles_down"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "icicles_down",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.plantv3",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:stone",
+							"minecraft:dirt",
+							"minecraft:grass",
+							"minecraft:deepslate",
+							"minecraft:tuff",
+							"minecraft:planks",
+							"minecraft:log",
+							"minecraft:leaves",
+							"minecraft:leaves2",
+							"minecraft:log2",
+							"minecraft:ice",
+							"minecraft:packed_ice",
+							"minecraft:frosted_ice",
+							"minecraft:blue_ice"
+						],
+						"allowed_faces": [
+							"down"
+						]
+					}
+				]
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-4,
+					4,
+					-4
+				],
+				"size": [
+					8,
+					12,
+					8
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-4,
+					4,
+					-4
+				],
+				"size": [
+					8,
+					12,
+					8
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/empty.json"
+		},
+		"events": {}
+	}
+}

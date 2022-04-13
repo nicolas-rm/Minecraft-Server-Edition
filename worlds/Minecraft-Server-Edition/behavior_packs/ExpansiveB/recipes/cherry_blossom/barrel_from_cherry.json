@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "korbon:barrel_from_cherry"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "#~#", 
+            "# #",
+            "#~#"
+        ],
+        "key": {
+            "~": {
+                "item": "korbon:cherry_blossom_slab"
+            },
+            "#": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": [
+			{
+				"item": "minecraft:barrel",
+				"count": 1
+			}
+		]
+    }
+}

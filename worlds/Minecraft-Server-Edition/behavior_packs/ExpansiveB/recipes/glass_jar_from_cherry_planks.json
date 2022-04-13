@@ -1,0 +1,29 @@
+//bridge-file-version: #14
+{
+	"format_version": 1.16,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "korbon:glass_jar_from_cherry_planks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"B"
+		],
+		"key": {
+			"A": {
+				"item": "korbon:cherry_blossom_planks"
+			},
+			"B": {
+				"item": "minecraft:glass"
+			}
+		},
+		"result": {
+			"item": "korbon:glass_jar_item",
+			"count": 1
+		},
+		"priority": 2
+	}
+}

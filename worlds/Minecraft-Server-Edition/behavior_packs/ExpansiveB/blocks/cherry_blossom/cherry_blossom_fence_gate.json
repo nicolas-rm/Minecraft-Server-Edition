@@ -1,0 +1,267 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:cherry_blossom_fence_gate",
+			"properties": {
+				"cbw:facing": [
+					0,
+					1,
+					2,
+					3
+				],
+				"cbw:open_bit": [
+					0,
+					1
+				],
+				"cbw:mirror_bit": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 0.5,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cherry_blossom_planks",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-2
+				],
+				"size": [
+					16,
+					16,
+					4
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "cbw:facing",
+				"target": "self"
+			},
+			"minecraft:map_color": "#744570",
+			"minecraft:unwalkable": true,
+			"minecraft:flammable": {
+				"burn_odds": 30,
+				"flame_odds": 30
+			},
+			"minecraft:explosion_resistance": 1.5,
+			"minecraft:breathability": "air",
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.fenceGate",
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('cbw:facing') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:facing') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:facing') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:facing') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:open_bit') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.fence_gate",
+					"minecraft:on_interact": {
+						"event": "cbw:open",
+						"target": "self"
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							16,
+							16,
+							4
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:open_bit') == 1 && query.block_property('cbw:mirror_bit') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.fence_gate_open_mirror",
+					"minecraft:on_interact": {
+						"event": "cbw:close",
+						"target": "self"
+					},
+					"minecraft:entity_collision": false
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:open_bit') == 1 && query.block_property('cbw:mirror_bit') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.fence_gate_open",
+					"minecraft:on_interact": {
+						"event": "cbw:close",
+						"target": "self"
+					},
+					"minecraft:entity_collision": false
+				}
+			}
+		],
+		"events": {
+			"cbw:facing": {
+				"set_block_property": {
+					"cbw:facing": "query.cardinal_facing_2d-2"
+				}
+			},
+			"cbw:open": {
+				"sequence": [
+					{
+						"condition": "query.block_property('cbw:facing') == 0",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 0
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 0 && query.block_face == 3",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 1",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 0
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 1 && query.block_face == 2",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 2",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 0
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 2 && query.block_face == 5",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 3",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 0
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 3 && query.block_face == 4",
+						"set_block_property": {
+							"cbw:open_bit": 1,
+							"cbw:mirror_bit": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					}
+				]
+			},
+			"cbw:close": {
+				"set_block_property": {
+					"cbw:open_bit": 0,
+					"cbw:mirror_bit": 0
+				},
+				"run_command": {
+					"command": [
+						"playsound random.door_close @a ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

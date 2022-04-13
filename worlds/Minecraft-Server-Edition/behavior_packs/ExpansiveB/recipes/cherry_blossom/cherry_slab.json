@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "korbon:cherry_slab"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "~~~"
+        ],
+        "key": {
+            "~": {
+                "item": "korbon:cherry_blossom_planks"
+            }
+        },
+        "result": [
+			{
+				"item": "korbon:cherry_blossom_slab",
+				"count": 6
+			}
+		]
+    }
+}

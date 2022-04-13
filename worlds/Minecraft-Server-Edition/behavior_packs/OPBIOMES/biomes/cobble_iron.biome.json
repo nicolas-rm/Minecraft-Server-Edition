@@ -1,0 +1,63 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "cobble_iron"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [
+          0.0,
+          0.0
+        ],
+        "temperature": 40,
+        "blue_spores": 0,
+        "red_spores": 0,
+        "white_ash": 0,
+        "ash": 0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "default"
+      },
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "cobble_iron": {},
+      "minecraft:surface_parameters": {
+        "top_material": "minecraft:cobblestone",
+        "mid_material": "minecraft:cobblestone",
+        "foundation_material": "minecraft:iron_block",
+        "sea_floor_material": "minecraft:iron_block",
+        "sea_material": "minecraft:water",
+        "sea_floor_depth": 7
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": "bamboo_jungle",
+        "river_transformation": "cold_ocean",
+        "generate_for_climates": [
+          [
+            "cold",
+            5
+          ],
+          [
+            "medium",
+            5
+          ],
+          [
+            "warm",
+            5
+          ],
+          [
+            "lukewarm",
+            5
+          ],
+          [
+            "frozen",
+            5
+          ]
+        ]
+      }
+    }
+  }
+}

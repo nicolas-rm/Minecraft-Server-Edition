@@ -1,0 +1,54 @@
+//bridge-file-version: #138
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:tinder_mushroom_e",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "tinder_mushroom",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.tinder_mushroom_e",
+			"minecraft:destroy_time": 0.1,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:breakonpush": true,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:loot": "loot_tables/blocks/tinder_mushrooms.json",
+			"minecraft:pick_collision": {
+				"origin": [
+					2,
+					0,
+					-8
+				],
+				"size": [
+					6,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"east"
+						],
+						"block_filter": [
+							"minecraft:log",
+							"minecraft:log2"
+						]
+					}
+				]
+			},
+			"minecraft:map_color": "#B5947D"
+		},
+		"events": {}
+	}
+}

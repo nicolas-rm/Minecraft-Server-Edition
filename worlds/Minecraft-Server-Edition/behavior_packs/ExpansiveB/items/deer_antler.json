@@ -1,0 +1,23 @@
+//bridge-file-version: #10
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "korbon:deer_antler",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 16,
+			"minecraft:icon": {
+				"texture": "deer_antler"
+			},
+			"minecraft:display_name": {
+				"value": "item.korbon:deer_antler.name"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.items"
+			}
+		},
+		"events": {}
+	}
+}

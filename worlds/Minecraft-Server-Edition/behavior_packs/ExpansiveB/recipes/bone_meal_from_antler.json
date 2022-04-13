@@ -1,0 +1,23 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "korbon:bone_meal_from_antler"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"group": "bonemeal",
+		"ingredients": [
+			{
+				"item": "korbon:deer_antler"
+			}
+		],
+		"result": {
+			"item": "minecraft:dye",
+			"data": 15,
+			"count": 3
+		}
+	}
+}

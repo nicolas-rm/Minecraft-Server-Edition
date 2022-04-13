@@ -1,0 +1,71 @@
+//bridge-file-version: #21
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:vibrant_dripstone_small_up"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "vibrant_dripstone_small_up",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.plantv3",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:stone",
+							"korbon:vibrancy_stone"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					11,
+					6
+				]
+			},
+			"minecraft:breathability": "air",
+			"minecraft:on_fall_on": {
+				"event": "hurt"
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					11,
+					6
+				]
+			}
+		},
+		"events": {
+			"hurt": {
+				"damage": {
+					"amount": 1,
+					"target": "other",
+					"type": "contact"
+				}
+			}
+		}
+	}
+}

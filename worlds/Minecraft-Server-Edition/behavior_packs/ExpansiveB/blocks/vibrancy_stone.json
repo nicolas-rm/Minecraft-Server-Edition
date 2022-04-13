@@ -1,0 +1,28 @@
+//bridge-file-version: #21
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:vibrancy_stone"
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:map_color": "#0066AC",
+			"minecraft:explosion_resistance": 0.9,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "vibrant_stone",
+					"render_method": "opaque",
+					"face_dimming": true
+				}
+			},
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.nature",
+				"category": "nature"
+			}
+		},
+		"events": {}
+	}
+}

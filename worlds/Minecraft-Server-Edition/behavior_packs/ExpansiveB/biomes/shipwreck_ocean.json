@@ -1,0 +1,59 @@
+//bridge-file-version: #60
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "shipwreck_ocean"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.5,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 0.5
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					-1.6,
+					0
+				]
+			},
+			"minecraft:overworld_generation_rules": {
+				"river_transformation": [
+					"deep_ocean"
+				]
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 15,
+				"sea_floor_material": "minecraft:sand",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:mesa_surface": {
+				"bryce_pillars": true,
+				"has_forest": false,
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:stone",
+				"top_material": {
+					"name": "minecraft:stone"
+				},
+				"sea_material": "minecraft:water",
+				"clay_material": "minecraft:stone",
+				"hard_clay_material": "minecraft:stone"
+			},
+			"overworld": {},
+			"monster": {},
+			"shipwreck": {},
+			"spawn_kelp": {},
+			"spawn_seagrass": {},
+			"ocean": {},
+			"warm": {}
+		}
+	}
+}

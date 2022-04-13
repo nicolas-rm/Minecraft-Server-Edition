@@ -1,0 +1,83 @@
+//bridge-file-version: #56
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "marsh"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.7,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 0.6
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					0,
+					0.001
+				]
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 15,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"medium",
+						1
+					]
+				],
+				"hills_transformation": [
+					"marsh_pools"
+				],
+				"river_transformation": [
+					"marsh_pools"
+				],
+				"shore_transformation": [
+					"marsh_pools"
+				]
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": {
+								"name": "korbon:mud_block"
+							}
+						},
+						"noise_range": [
+							0.4,
+							0.5
+						],
+						"noise_frequency_scale": 0.09
+					},
+					{
+						"materials": {
+							"top_material": "minecraft:podzol"
+						},
+						"noise_range": [
+							0.6,
+							1
+						],
+						"noise_frequency_scale": 0.1
+					}
+				]
+			},
+			"overworld": {},
+			"river": {},
+			"lake": {},
+			"monster": {},
+			"marsh": {},
+			"animal": {},
+			"tons_of_grass": {}
+		}
+	}
+}

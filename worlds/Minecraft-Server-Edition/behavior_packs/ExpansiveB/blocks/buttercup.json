@@ -1,0 +1,52 @@
+//bridge-file-version: #19
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:buttercup"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:geometry": "geometry.plantv3",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "buttercup",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-1,
+					0,
+					-1
+				],
+				"size": [
+					2,
+					6,
+					2
+				]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:grass",
+							"minecraft:dirt"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/buttercup.json",
+			"minecraft:breathability": "air"
+		},
+		"events": {}
+	}
+}

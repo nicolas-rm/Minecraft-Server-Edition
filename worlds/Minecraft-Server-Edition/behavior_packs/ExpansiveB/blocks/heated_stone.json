@@ -1,0 +1,89 @@
+//bridge-file-version: #64
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:heated_stone",
+			"properties": {
+				"korbon:step_on": [
+					true,
+					false
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0.2,
+			"minecraft:explosion_resistance": 0.6,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "heated_stone",
+					"render_method": "opaque",
+					"face_dimming": false
+				}
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					1,
+					1
+				],
+				"on_tick": {
+					"event": "emit_smoke"
+				}
+			},
+			"minecraft:map_color": "#B96B55",
+			"minecraft:on_step_on": {
+				"event": "korbon:step_on"
+			},
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.nature",
+				"category": "nature"
+			}
+		},
+		"events": {
+			"emit_smoke": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:campfire_tall_smoke_particle ~~1~"
+							]
+						}
+					}
+				]
+			},
+			"hurt": {
+				"run_command": {
+					"command": [
+						"effect @a[r=1] poison 1 3 true"
+					]
+				}
+			},
+			"korbon:step_on": {
+				"set_block_property": {
+					"korbon:step_on": 0
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('korbon:step_on') == 0",
+				"components": {
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0,
+							0
+						],
+						"on_tick": {
+							"event": "hurt",
+							"target": "other"
+						}
+					}
+				}
+			}
+		]
+	}
+}

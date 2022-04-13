@@ -1,0 +1,64 @@
+//bridge-file-version: #20
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "marsh_pools"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.5,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 0.5
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					-0.4,
+					0
+				]
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 15,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": {
+								"name": "korbon:mud_block"
+							}
+						},
+						"noise_range": [
+							0.6,
+							1
+						],
+						"noise_frequency_scale": 0.1
+					}
+				]
+			},
+			"minecraft:overworld_generation_rules": {
+				"hills_transformation": [
+					"marsh_pools"
+				],
+				"mutate_transformation": [
+					"marsh_pools"
+				],
+				"river_transformation": [
+					"marsh_pools"
+				]
+			},
+			"overworld": {},
+			"river": {},
+			"lake": {},
+			"monster": {}
+		}
+	}
+}

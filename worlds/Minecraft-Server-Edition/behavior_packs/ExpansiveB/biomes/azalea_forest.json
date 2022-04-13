@@ -1,0 +1,72 @@
+//bridge-file-version: #48
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "azalea_forest"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.8,
+				"snow_accumulation": [
+					0,
+					0.20000000000000004
+				],
+				"temperature": 0.7
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"medium",
+						1
+					]
+				]
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "default"
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": "minecraft:moss_block"
+						},
+						"noise_range": [
+							0.1,
+							0.3
+						],
+						"noise_frequency_scale": 0.1
+					},
+					{
+						"materials": {
+							"top_material": {
+								"name": "minecraft:dirt_with_roots"
+							}
+						},
+						"noise_range": [
+							-0.1,
+							0.1
+						],
+						"noise_frequency_scale": 0.3
+					}
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"overworld": {},
+			"azalea_forest": {},
+			"spawn_flowers": {},
+			"lots_of_grass": {},
+			"spawn_spore_blossoms": {},
+			"spawn_oak_bushes": {}
+		}
+	}
+}

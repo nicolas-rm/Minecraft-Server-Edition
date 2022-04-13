@@ -2,6 +2,28 @@
 [
 	
 	{
+		"pack_id" : "9431ca77-b297-4a03-84c0-cc56ac14a054",
+		"version" : [ 1, 0, 1 ]
+	},
+	
+	{
+		"pack_id" : "68dcee51-7828-4696-beb5-a4396542e4dc",
+		"version" : [ 0, 0, 1 ]
+	},
+	
+	{
+		"pack_id" : "69de193f-0c90-41a7-a1d1-f7ff789252eb",
+		"subpack" : "Add Mobs",
+		"version" : [ 1, 0, 12 ]
+	},
+	
+	{
+		"pack_id" : "b3538a6c-3e42-400a-9ed0-5ec1670b796c",
+		"subpack" : "AlseCustoms",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
 		"pack_id" : "f82bf061-7c80-43ad-996e-dfc6601fccf9",
 		"version" : [ 0, 0, 1 ]
 	},
@@ -9,6 +31,11 @@
 	{
 		"pack_id" : "c4c1a9fd-17d6-4484-850e-46c0dd7e91ef",
 		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "e4eb6b9e-69fc-42b0-886e-5272f0e64222",
+		"version" : [ 0, 1, 0 ]
 	},
 	
 	{

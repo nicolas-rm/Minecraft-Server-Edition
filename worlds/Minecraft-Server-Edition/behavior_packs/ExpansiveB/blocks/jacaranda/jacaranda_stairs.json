@@ -1,0 +1,259 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:jacaranda_stairs",
+			"properties": {
+				"cbw:facing": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				],
+				"cbw:upside_bit": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 0.5,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "jacaranda_planks",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "cbw:facing"
+			},
+			"minecraft:on_step_on": {
+				"event": "cbw:upper_collision",
+				"target": "self"
+			},
+			"minecraft:map_color": "#575055",
+			"tag:stairs": {},
+			"minecraft:flammable": {
+				"burn_odds": 30,
+				"flame_odds": 30
+			},
+			"minecraft:explosion_resistance": 1.5,
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.stairs",
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('cbw:facing') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.stairs"
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:facing') == 2 && query.block_property('cbw:upside_bit') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.stairs",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:facing') == 3 && query.block_property('cbw:upside_bit') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.stairs_south",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:facing') == 4 && query.block_property('cbw:upside_bit') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.stairs_west",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:facing') == 5 && query.block_property('cbw:upside_bit') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.stairs_east",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:upside_bit') == 1 && query.block_property('cbw:facing') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.stairs_upside",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:upside_bit') == 1 && query.block_property('cbw:facing') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.stairs_south_upside",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:upside_bit') == 1 && query.block_property('cbw:facing') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.stairs_west_upside",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:upside_bit') == 1 && query.block_property('cbw:facing') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.stairs_east_upside",
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			}
+		],
+		"events": {
+			"cbw:facing": {
+				"sequence": [
+					{
+						"condition": "query.target_x_rotation > 0",
+						"set_block_property": {
+							"cbw:facing": "query.cardinal_facing_2d"
+						}
+					},
+					{
+						"condition": "query.target_x_rotation < 0",
+						"set_block_property": {
+							"cbw:facing": "query.cardinal_facing_2d",
+							"cbw:upside_bit": 1
+						}
+					}
+				]
+			},
+			"cbw:upper_collision": {
+				"sequence": [
+					{
+						"condition": "query.block_property('cbw:facing') == 2",
+						"run_command": {
+							"command": [
+								"setblock ~ ~1 ~ cbw:stairs_collision[\"direction\":0]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 3",
+						"run_command": {
+							"command": [
+								"setblock ~ ~1 ~ cbw:stairs_collision[\"direction\":1]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 4",
+						"run_command": {
+							"command": [
+								"setblock ~ ~1 ~ cbw:stairs_collision[\"direction\":2]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('cbw:facing') == 5",
+						"run_command": {
+							"command": [
+								"setblock ~ ~1 ~ cbw:stairs_collision[\"direction\":3]"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

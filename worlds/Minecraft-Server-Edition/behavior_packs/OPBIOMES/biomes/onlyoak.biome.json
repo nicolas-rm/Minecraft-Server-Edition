@@ -1,0 +1,63 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "onlyoak"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [
+          0.0,
+          0.0
+        ],
+        "temperature": 40.0,
+        "blue_spores": 0,
+        "red_spores": 0,
+        "white_ash": 0,
+        "ash": 0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "default"
+      },
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "onlyoak": {},
+      "minecraft:surface_parameters": {
+        "top_material": "minecraft:planks",
+        "mid_material": "minecraft:planks",
+        "foundation_material": "minecraft:crimson_planks",
+        "sea_floor_material": "minecraft:warped_planks",
+        "sea_material": "minecraft:water",
+        "sea_floor_depth": 7
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": "desert_mutated",
+        "river_transformation": "flower_forest",
+        "generate_for_climates": [
+          [
+            "cold",
+            5
+          ],
+          [
+            "medium",
+            5
+          ],
+          [
+            "warm",
+            5
+          ],
+          [
+            "lukewarm",
+            5
+          ],
+          [
+            "frozen",
+            5
+          ]
+        ]
+      }
+    }
+  }
+}

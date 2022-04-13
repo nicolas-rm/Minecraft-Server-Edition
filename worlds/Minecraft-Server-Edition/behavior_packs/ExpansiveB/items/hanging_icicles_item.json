@@ -1,0 +1,28 @@
+//bridge-file-version: #31
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"category": "nature",
+			"identifier": "korbon:hanging_icicles_item"
+		},
+		"components": {
+			"minecraft:hand_equipped": false,
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "korbon:hanging_icicles_item"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.nature"
+			},
+			"minecraft:display_name": {
+				"value": "item.korbon:hanging_icicles_item.name"
+			},
+			"minecraft:block_placer": {
+				"block": "korbon:icicles_down"
+			}
+		},
+		"events": {}
+	}
+}

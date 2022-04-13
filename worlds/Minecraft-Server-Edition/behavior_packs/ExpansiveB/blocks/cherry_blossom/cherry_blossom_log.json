@@ -1,0 +1,143 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:cherry_blossom_log",
+			"properties": {
+				"minecraft:direction": {},
+				"cbw:leave_decay_bit": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 0.5,
+			"minecraft:on_player_placing": {
+				"event": "minecraft:direction",
+				"target": "self"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cherry_blossom_log",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "cherry_blossom_log_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "cherry_blossom_log_top",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:flammable": {
+				"burn_odds": 30,
+				"flame_odds": 30
+			},
+			"minecraft:map_color": "#744570",
+			"minecraft:on_interact": {
+				"event": "cwt:stripped",
+				"target": "self",
+				"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_axe')"
+			},
+			"tag:wood": {},
+			"minecraft:explosion_resistance": 1.5,
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.log",
+				"category": "nature"
+			},
+			"minecraft:unit_cube": {}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('minecraft:direction') == 1",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('minecraft:direction') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						90
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('cbw:leave_decay_bit') == 0",
+				"components": {
+					"minecraft:on_player_destroyed": {
+						"event": "cbw:destroyleaves",
+						"target": "self"
+					}
+				}
+			}
+		],
+		"events": {
+			"minecraft:direction": {
+				"set_block_property": {
+					"minecraft:direction": "math.floor( query.block_face / 2.0 )",
+					"cbw:leave_decay_bit": 1
+				}
+			},
+			"cbw:destroyleaves": {
+				"run_command": {
+					"command": [
+						"fill ~3 ~3 ~3 ~-3 ~-3 ~-3 cbw:cherry_blossom_decay_leaves 0 replace cbw:cherry_blossom_leaves"
+					]
+				}
+			},
+			"cwt:stripped": {
+				"sequence": [
+					{
+						"condition": "query.block_property('minecraft:direction') == 0",
+						"run_command": {
+							"command": [
+								"setblock ~ ~ ~ korbon:stripped_cherry_blossom_log[\"direction\":0]"
+							]
+						},
+						"damage": {
+							"type": "durability",
+							"target": "item",
+							"amount": 1
+						}
+					},
+					{
+						"condition": "query.block_property('minecraft:direction') == 1",
+						"run_command": {
+							"command": [
+								"setblock ~ ~ ~ korbon:stripped_cherry_blossom_log[\"direction\":1]"
+							]
+						},
+						"damage": {
+							"type": "durability",
+							"target": "item",
+							"amount": 1
+						}
+					},
+					{
+						"condition": "query.block_property('minecraft:direction') == 2",
+						"run_command": {
+							"command": [
+								"setblock ~ ~ ~ korbon:stripped_cherry_blossom_log[\"direction\":2]"
+							]
+						},
+						"damage": {
+							"type": "durability",
+							"target": "item",
+							"amount": 1
+						}
+					}
+				]
+			}
+		}
+	}
+}

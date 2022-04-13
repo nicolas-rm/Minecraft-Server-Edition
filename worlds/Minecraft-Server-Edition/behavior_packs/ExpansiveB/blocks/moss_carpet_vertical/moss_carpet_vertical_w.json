@@ -1,0 +1,69 @@
+//bridge-file-version: #118
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:moss_carpet_vertical_w",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "moss_carpet_vertical",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": "geometry.moss_carpet_vertical_w",
+			"minecraft:destroy_time": 0.1,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:breakonpush": true,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:loot": "loot_tables/blocks/moss_carpet_vertical.json",
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-7
+				],
+				"size": [
+					1,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					7
+				],
+				"size": [
+					1,
+					16,
+					16
+				]
+			},
+			"minecraft:map_color": "#2A5322",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"west"
+						],
+						"block_filter": [
+							"minecraft:log",
+							"minecraft:log2",
+							"korbon:jacaranda_log",
+							"korbon:cherry_blossom_log",
+							"minecraft:cobblestone",
+							"minecraft:mossy_cobblestone",
+							"minecraft:stone",
+							"minecraft:stonebrick"
+						]
+					}
+				]
+			}
+		},
+		"events": {}
+	}
+}

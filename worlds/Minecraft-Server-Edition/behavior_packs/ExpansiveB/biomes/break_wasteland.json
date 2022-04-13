@@ -1,0 +1,76 @@
+//bridge-file-version: #76
+{
+	"format_version": "1.13.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "break_wasteland"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.8,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 0.7
+			},
+			"minecraft:multinoise_generation_rules": {
+				"target_temperature": 0.4,
+				"target_humidity": 0,
+				"target_altitude": 0,
+				"target_weirdness": 0,
+				"weight": 0
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					0,
+					0.1
+				]
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 7,
+				"sea_floor_material": "minecraft:gravel",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:dirt",
+				"top_material": "minecraft:grass",
+				"sea_material": "minecraft:water"
+			},
+			"minecraft:overworld_generation_rules": {
+				"generate_for_climates": [
+					[
+						"medium",
+						1
+					]
+				],
+				"hills_transformation": [
+					"break_wasteland_bryce",
+					"break_wasteland"
+				]
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": {
+								"name": "minecraft:dirt",
+								"states": {
+									"dirt_type": "coarse"
+								}
+							}
+						},
+						"noise_frequency_scale": 0.0925,
+						"noise_range": [
+							0.4,
+							1
+						]
+					}
+				]
+			},
+			"animal": {},
+			"monster": {},
+			"overworld": {},
+			"break_wasteland": {},
+			"lots_of_grass": {}
+		}
+	}
+}

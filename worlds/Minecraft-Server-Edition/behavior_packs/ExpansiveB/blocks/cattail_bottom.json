@@ -1,0 +1,101 @@
+//bridge-file-version: #149
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:cattail_bottom"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:geometry": "geometry.plant",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cattail_bottom",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:entity_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:grass",
+							"minecraft:dirt",
+							"minecraft:sand",
+							"korbon:mud_block",
+							"korbon:black_sand",
+							"korbon:dune_sand"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/cattail.json",
+			"minecraft:breathability": "air",
+			"minecraft:on_placed": {
+				"event": "placed"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "destroy"
+			},
+			"minecraft:breakonpush": true,
+			"minecraft:pick_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					16,
+					14
+				]
+			}
+		},
+		"events": {
+			"placed": {
+				"sequence": [
+					{
+						"set_block_at_pos": {
+							"block_type": "korbon:cattail_top",
+							"block_offset": [
+								0,
+								1,
+								0
+							]
+						}
+					}
+				]
+			},
+			"destroy": {
+				"set_block_at_pos": {
+					"block_type": "minecraft:air",
+					"block_offset": [
+						0,
+						1,
+						0
+					]
+				}
+			},
+			"destroy_by_placement": {
+				"die": {}
+			},
+			"clean": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"fill ~1~~1 ~-1~~-1 air 0 replace vine"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

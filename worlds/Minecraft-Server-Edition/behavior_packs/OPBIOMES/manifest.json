@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "This adds some OP biomes to your minecraft world.Making it more easier to gather resources by INSANE GAMER",
+    "name": "OP BIOMES",
+    "uuid": "68dcee51-7828-4696-beb5-a4396542e4dc",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "This adds some OP biomes to your minecraft world.Making it more easier to gather resources by INSANE GAMER",
+      "type": "data",
+      "uuid": "5bc23715-0676-4357-8332-f73d7fd44c14",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a2cd060b-f925-48d8-be44-7e3d585f5958",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

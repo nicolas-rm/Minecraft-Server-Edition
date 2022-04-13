@@ -1,0 +1,61 @@
+//bridge-file-version: #34
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:glass_jar_firefly"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.3,
+			"minecraft:geometry": "geometry.jar",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "firefly_jar",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:block_light_emission": 0.6,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					8,
+					6
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					8,
+					6
+				]
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "free"
+			},
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:breathability": "air"
+		},
+		"events": {
+			"free": {
+				"run_command": {
+					"command": [
+						"summon korbon:firefly ~~~"
+					]
+				}
+			}
+		}
+	}
+}

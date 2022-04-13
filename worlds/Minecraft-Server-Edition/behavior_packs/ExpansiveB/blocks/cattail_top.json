@@ -1,0 +1,84 @@
+//bridge-file-version: #34
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:cattail_top"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:geometry": "geometry.plant",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cattail_top",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:entity_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"korbon:cattail_bottom"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:breathability": "air",
+			"minecraft:on_player_destroyed": {
+				"event": "destroy"
+			},
+			"minecraft:breakonpush": true,
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:map_color": "#31301D",
+			"minecraft:flammable": {
+				"burn_odds": 20,
+				"flame_odds": 20
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					16,
+					14
+				]
+			}
+		},
+		"events": {
+			"destroy": {
+				"set_block_at_pos": {
+					"block_type": "minecraft:air",
+					"block_offset": [
+						0,
+						-1,
+						0
+					]
+				},
+				"spawn_loot": {
+					"table": "loot_tables/blocks/cattail.json"
+				}
+			},
+			"clean": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"fill ~1~~1 ~-1~-1~-1 air 0 replace vine"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

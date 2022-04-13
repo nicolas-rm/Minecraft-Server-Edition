@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "korbon:cherry_planks_from_stripped_wood"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "korbon:stripped_cherry_blossom_wood"
+			}
+		],
+		"result": [
+			{
+				"item": "korbon:cherry_blossom_planks",
+				"count": 4
+			}
+		]
+	}
+}

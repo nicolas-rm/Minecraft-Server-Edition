@@ -1,0 +1,43 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"nqhung"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.2.5"
+			],
+			"dash": [
+				"0.8.3"
+			]
+		}
+	},
+	"header": {
+		"name": "Ruins Addon Beta V1.0.0 ",
+		"description": "Ruins Addon Minecraft bedrock
+UNOFFICIAL by: §aNQHung\n§7 Original author: §aAtomicStryker\n§7 ",
+		"min_engine_version": [
+			1,
+			18,
+			0
+		],
+		"uuid": "9431ca77-b297-4a03-84c0-cc56ac14a054",
+		"version": [
+			1,
+			0,
+			1
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "42fbd139-00b7-4835-9bd7-08d5d2f9f6a8",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

@@ -1,0 +1,163 @@
+item.andriel:backpack_standard_item=Mochila do Viajante §6§l§k|§r§o§9 Padrão
+item.andriel:backpack_standard_item1=Mochila do Viajante §6§l§k|§r§o§9 Padrão 1
+item.andriel:backpack_standard_item2=Mochila do Viajante §6§l§k|§r§o§9 Padrão 2
+item.andriel:backpack_standard_item3=Mochila do Viajante §6§l§k|§r§o§9 Padrão 3
+item.andriel:backpack_standard_item4=Mochila do Viajante §6§l§k|§r§o§9 Padrão 4
+item.andriel:backpack_standard_item5=Mochila do Viajante §6§l§k|§r§o§9 Padrão 5
+item.andriel:backpack_standard_item6=Mochila do Viajante §6§l§k|§r§o§9 Padrão 6
+item.andriel:backpack_standard_item7=Mochila do Viajante §6§l§k|§r§o§9 Padrão 7
+item.andriel:backpack_standard_item8=Mochila do Viajante §6§l§k|§r§o§9 Padrão 8
+item.andriel:backpack_standard_item9=Mochila do Viajante §6§l§k|§r§o§9 Padrão 9
+item.andriel:backpack_standard_item10=Mochila do Viajante §6§l§k|§r§o§9 Padrão 10
+item.andriel:backpack_standard_item11=Mochila do Viajante §6§l§k|§r§o§9 Padrão 11
+item.andriel:backpack_standard_item12=Mochila do Viajante §6§l§k|§r§o§9 Padrão 12
+item.andriel:backpack_standard_item13=Mochila do Viajante §6§l§k|§r§o§9 Padrão 13
+item.andriel:backpack_standard_item14=Mochila do Viajante §6§l§k|§r§o§9 Padrão 14
+item.andriel:backpack_standard_item15=Mochila do Viajante §6§l§k|§r§o§9 Padrão 15
+item.andriel:backpack_standard_item16=Mochila do Viajante §6§l§k|§r§o§9 Padrão 16
+item.andriel:backpack_standard_item17=Mochila do Viajante §6§l§k|§r§o§9 Padrão 17
+item.andriel:backpack_standard_item18=Mochila do Viajante §6§l§k|§r§o§9 Padrão 18
+item.andriel:backpack_standard_item19=Mochila do Viajante §6§l§k|§r§o§9 Padrão 19
+item.andriel:backpack_standard_item20=Mochila do Viajante §6§l§k|§r§o§9 Padrão 20
+
+item.andriel:backpack_pig_item=Mochila do Viajante §6§l§k|§r§o§9 Porco
+item.andriel:backpack_pig_item1=Mochila do Viajante §6§l§k|§r§o§9 Porco 1
+item.andriel:backpack_pig_item2=Mochila do Viajante §6§l§k|§r§o§9 Porco 2
+item.andriel:backpack_pig_item3=Mochila do Viajante §6§l§k|§r§o§9 Porco 3
+item.andriel:backpack_pig_item4=Mochila do Viajante §6§l§k|§r§o§9 Porco 4
+item.andriel:backpack_pig_item5=Mochila do Viajante §6§l§k|§r§o§9 Porco 5
+item.andriel:backpack_pig_item6=Mochila do Viajante §6§l§k|§r§o§9 Porco 6
+item.andriel:backpack_pig_item7=Mochila do Viajante §6§l§k|§r§o§9 Porco 7
+item.andriel:backpack_pig_item8=Mochila do Viajante §6§l§k|§r§o§9 Porco 8
+item.andriel:backpack_pig_item9=Mochila do Viajante §6§l§k|§r§o§9 Porco 9
+item.andriel:backpack_pig_item10=Mochila do Viajante §6§l§k|§r§o§9 Porco 10
+item.andriel:backpack_pig_item11=Mochila do Viajante §6§l§k|§r§o§9 Porco 11
+item.andriel:backpack_pig_item12=Mochila do Viajante §6§l§k|§r§o§9 Porco 12
+item.andriel:backpack_pig_item13=Mochila do Viajante §6§l§k|§r§o§9 Porco 13
+item.andriel:backpack_pig_item14=Mochila do Viajante §6§l§k|§r§o§9 Porco 14
+item.andriel:backpack_pig_item15=Mochila do Viajante §6§l§k|§r§o§9 Porco 15
+item.andriel:backpack_pig_item16=Mochila do Viajante §6§l§k|§r§o§9 Porco 16
+item.andriel:backpack_pig_item17=Mochila do Viajante §6§l§k|§r§o§9 Porco 17
+item.andriel:backpack_pig_item18=Mochila do Viajante §6§l§k|§r§o§9 Porco 18
+item.andriel:backpack_pig_item19=Mochila do Viajante §6§l§k|§r§o§9 Porco 19
+item.andriel:backpack_pig_item20=Mochila do Viajante §6§l§k|§r§o§9 Porco 20
+
+item.andriel:backpack_fox_item=Mochila do Viajante §6§l§k|§r§o§9 Raposa
+item.andriel:backpack_fox_item1=Mochila do Viajante §6§l§k|§r§o§9 Raposa 1
+item.andriel:backpack_fox_item2=Mochila do Viajante §6§l§k|§r§o§9 Raposa 2
+item.andriel:backpack_fox_item3=Mochila do Viajante §6§l§k|§r§o§9 Raposa 3
+item.andriel:backpack_fox_item4=Mochila do Viajante §6§l§k|§r§o§9 Raposa 4
+item.andriel:backpack_fox_item5=Mochila do Viajante §6§l§k|§r§o§9 Raposa 5
+item.andriel:backpack_fox_item6=Mochila do Viajante §6§l§k|§r§o§9 Raposa 6
+item.andriel:backpack_fox_item7=Mochila do Viajante §6§l§k|§r§o§9 Raposa 7
+item.andriel:backpack_fox_item8=Mochila do Viajante §6§l§k|§r§o§9 Raposa 8
+item.andriel:backpack_fox_item9=Mochila do Viajante §6§l§k|§r§o§9 Raposa 9
+item.andriel:backpack_fox_item10=Mochila do Viajante §6§l§k|§r§o§9 Raposa 10
+item.andriel:backpack_fox_item11=Mochila do Viajante §6§l§k|§r§o§9 Raposa 11
+item.andriel:backpack_fox_item12=Mochila do Viajante §6§l§k|§r§o§9 Raposa 12
+item.andriel:backpack_fox_item13=Mochila do Viajante §6§l§k|§r§o§9 Raposa 13
+item.andriel:backpack_fox_item14=Mochila do Viajante §6§l§k|§r§o§9 Raposa 14
+item.andriel:backpack_fox_item15=Mochila do Viajante §6§l§k|§r§o§9 Raposa 15
+item.andriel:backpack_fox_item16=Mochila do Viajante §6§l§k|§r§o§9 Raposa 16
+item.andriel:backpack_fox_item17=Mochila do Viajante §6§l§k|§r§o§9 Raposa 17
+item.andriel:backpack_fox_item18=Mochila do Viajante §6§l§k|§r§o§9 Raposa 18
+item.andriel:backpack_fox_item19=Mochila do Viajante §6§l§k|§r§o§9 Raposa 19
+item.andriel:backpack_fox_item20=Mochila do Viajante §6§l§k|§r§o§9 Raposa 20
+
+item.andriel:backpack_andriel_item=Mochila do Viajante §6§l§k|§r§o§9 Andriel
+item.andriel:backpack_andriel_item1=Mochila do Viajante §6§l§k|§r§o§9 Andriel 1
+item.andriel:backpack_andriel_item2=Mochila do Viajante §6§l§k|§r§o§9 Andriel 2
+item.andriel:backpack_andriel_item3=Mochila do Viajante §6§l§k|§r§o§9 Andriel 3
+
+item.andriel:sleeping_bag=Saco de dormir §6§l§k|§r§o§9 Mochila do Viajante
+item.andriel:backpack_tank=Tanque da mochila §6§l§k|§r§o§9 Mochila do Viajante
+item.andriel:hose_nozzle=Ponta da mangueira §6§l§k|§r§o§9 Mochila do Viajante
+item.andriel:hose=Mangueira §6§l§k|§r§o§9 Mochila do Viajante
+
+
+
+
+
+tile.andriel:backpack_standard.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão
+tile.andriel:backpack_standard1.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 1
+tile.andriel:backpack_standard2.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 2
+tile.andriel:backpack_standard3.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 3
+tile.andriel:backpack_standard4.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 4
+tile.andriel:backpack_standard5.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 5
+tile.andriel:backpack_standard6.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 6
+tile.andriel:backpack_standard7.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 7
+tile.andriel:backpack_standard8.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 8
+tile.andriel:backpack_standard9.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 9
+tile.andriel:backpack_standard10.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 10
+tile.andriel:backpack_standard11.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 11
+tile.andriel:backpack_standard12.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 12
+tile.andriel:backpack_standard13.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 13
+tile.andriel:backpack_standard14.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 14
+tile.andriel:backpack_standard15.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 15
+tile.andriel:backpack_standard16.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 16
+tile.andriel:backpack_standard17.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 17
+tile.andriel:backpack_standard18.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 18
+tile.andriel:backpack_standard19.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 19
+tile.andriel:backpack_standard20.name=Mochila do Viajante §6§l§k|§r§o§9 Padrão 20
+
+tile.andriel:backpack_pig.name=Mochila do Viajante §6§l§k|§r§o§9 Porco
+tile.andriel:backpack_pig1.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 1
+tile.andriel:backpack_pig2.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 2
+tile.andriel:backpack_pig3.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 3
+tile.andriel:backpack_pig4.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 4
+tile.andriel:backpack_pig5.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 5
+tile.andriel:backpack_pig6.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 6
+tile.andriel:backpack_pig7.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 7
+tile.andriel:backpack_pig8.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 8
+tile.andriel:backpack_pig9.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 9
+tile.andriel:backpack_pig10.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 10
+tile.andriel:backpack_pig11.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 11
+tile.andriel:backpack_pig12.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 12
+tile.andriel:backpack_pig13.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 13
+tile.andriel:backpack_pig14.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 14
+tile.andriel:backpack_pig15.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 15
+tile.andriel:backpack_pig16.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 16
+tile.andriel:backpack_pig17.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 17
+tile.andriel:backpack_pig18.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 18
+tile.andriel:backpack_pig19.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 19
+tile.andriel:backpack_pig20.name=Mochila do Viajante §6§l§k|§r§o§9 Porco 20
+
+tile.andriel:backpack_fox.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa
+tile.andriel:backpack_fox1.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 1
+tile.andriel:backpack_fox2.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 2
+tile.andriel:backpack_fox3.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 3
+tile.andriel:backpack_fox4.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 4
+tile.andriel:backpack_fox5.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 5
+tile.andriel:backpack_fox6.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 6
+tile.andriel:backpack_fox7.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 7
+tile.andriel:backpack_fox8.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 8
+tile.andriel:backpack_fox9.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 9
+tile.andriel:backpack_fox10.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 10
+tile.andriel:backpack_fox11.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 11
+tile.andriel:backpack_fox12.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 12
+tile.andriel:backpack_fox13.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 13
+tile.andriel:backpack_fox14.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 14
+tile.andriel:backpack_fox15.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 15
+tile.andriel:backpack_fox16.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 16
+tile.andriel:backpack_fox17.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 17
+tile.andriel:backpack_fox18.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 18
+tile.andriel:backpack_fox19.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 19
+tile.andriel:backpack_fox20.name=Mochila do Viajante §6§l§k|§r§o§9 Raposa 20
+
+tile.andriel:backpack_andriel.name=Mochila do Viajante §6§l§k|§r§o§9 Andriel
+tile.andriel:backpack_andriel1.name=Mochila do Viajante §6§l§k|§r§o§9 Andriel 1
+tile.andriel:backpack_andriel2.name=Mochila do Viajante §6§l§k|§r§o§9 Andriel 2
+tile.andriel:backpack_andriel3.name=Mochila do Viajante §6§l§k|§r§o§9 Andriel 3
+
+
+
+
+
+exceeded_limit.info=§cO limite de mochilas deste modelo chegou a capacidade máxima, tente criar uma de outro modelo!
+exceeded_limit.models=§eModelos disponiveis:
+exceeded_limit.standard=§aMochila do Viajante §l§k|§r§o§a Padrão
+exceeded_limit.pig=§aMochila do Viajante §l§k|§r§o§a Porco
+exceeded_limit.fox=§aMochila do Viajante §l§k|§r§o§a Raposa
+exceeded_limit.andriel=§aMochila do Viajante §l§k|§r§o§a Andriel
+exceeded_limit.null=§dNenhum modelo disponivel.
+good_night.sleeping_bag=Boa Noite!

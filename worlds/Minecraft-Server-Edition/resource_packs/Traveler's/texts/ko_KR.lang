@@ -1,0 +1,163 @@
+item.andriel:backpack_standard_item=여행자의 배낭 §6§l§k|§r§o§9 일반
+item.andriel:backpack_standard_item1=여행자의 배낭 §6§l§k|§r§o§9 일반 1
+item.andriel:backpack_standard_item2=여행자의 배낭 §6§l§k|§r§o§9 일반 2
+item.andriel:backpack_standard_item3=여행자의 배낭 §6§l§k|§r§o§9 일반 3
+item.andriel:backpack_standard_item4=여행자의 배낭 §6§l§k|§r§o§9 일반 4
+item.andriel:backpack_standard_item5=여행자의 배낭 §6§l§k|§r§o§9 일반 5
+item.andriel:backpack_standard_item6=여행자의 배낭 §6§l§k|§r§o§9 일반 6
+item.andriel:backpack_standard_item7=여행자의 배낭 §6§l§k|§r§o§9 일반 7
+item.andriel:backpack_standard_item8=여행자의 배낭 §6§l§k|§r§o§9 일반 8
+item.andriel:backpack_standard_item9=여행자의 배낭 §6§l§k|§r§o§9 일반 9
+item.andriel:backpack_standard_item10=여행자의 배낭 §6§l§k|§r§o§9 일반 10
+item.andriel:backpack_standard_item11=여행자의 배낭 §6§l§k|§r§o§9 일반 11
+item.andriel:backpack_standard_item12=여행자의 배낭 §6§l§k|§r§o§9 일반 12
+item.andriel:backpack_standard_item13=여행자의 배낭 §6§l§k|§r§o§9 일반 13
+item.andriel:backpack_standard_item14=여행자의 배낭 §6§l§k|§r§o§9 일반 14
+item.andriel:backpack_standard_item15=여행자의 배낭 §6§l§k|§r§o§9 일반 15
+item.andriel:backpack_standard_item16=여행자의 배낭 §6§l§k|§r§o§9 일반 16
+item.andriel:backpack_standard_item17=여행자의 배낭 §6§l§k|§r§o§9 일반 17
+item.andriel:backpack_standard_item18=여행자의 배낭 §6§l§k|§r§o§9 일반 18
+item.andriel:backpack_standard_item19=여행자의 배낭 §6§l§k|§r§o§9 일반 19
+item.andriel:backpack_standard_item20=여행자의 배낭 §6§l§k|§r§o§9 일반 20
+
+item.andriel:backpack_pig_item=여행자의 배낭 §6§l§k|§r§o§9 돼지
+item.andriel:backpack_pig_item1=여행자의 배낭 §6§l§k|§r§o§9 돼지 1
+item.andriel:backpack_pig_item2=여행자의 배낭 §6§l§k|§r§o§9 돼지 2
+item.andriel:backpack_pig_item3=여행자의 배낭 §6§l§k|§r§o§9 돼지 3
+item.andriel:backpack_pig_item4=여행자의 배낭 §6§l§k|§r§o§9 돼지 4
+item.andriel:backpack_pig_item5=여행자의 배낭 §6§l§k|§r§o§9 돼지 5
+item.andriel:backpack_pig_item6=여행자의 배낭 §6§l§k|§r§o§9 돼지 6
+item.andriel:backpack_pig_item7=여행자의 배낭 §6§l§k|§r§o§9 돼지 7
+item.andriel:backpack_pig_item8=여행자의 배낭 §6§l§k|§r§o§9 돼지 8
+item.andriel:backpack_pig_item9=여행자의 배낭 §6§l§k|§r§o§9 돼지 9
+item.andriel:backpack_pig_item10=여행자의 배낭 §6§l§k|§r§o§9 돼지 10
+item.andriel:backpack_pig_item11=여행자의 배낭 §6§l§k|§r§o§9 돼지 11
+item.andriel:backpack_pig_item12=여행자의 배낭 §6§l§k|§r§o§9 돼지 12
+item.andriel:backpack_pig_item13=여행자의 배낭 §6§l§k|§r§o§9 돼지 13
+item.andriel:backpack_pig_item14=여행자의 배낭 §6§l§k|§r§o§9 돼지 14
+item.andriel:backpack_pig_item15=여행자의 배낭 §6§l§k|§r§o§9 돼지 15
+item.andriel:backpack_pig_item16=여행자의 배낭 §6§l§k|§r§o§9 돼지 16
+item.andriel:backpack_pig_item17=여행자의 배낭 §6§l§k|§r§o§9 돼지 17
+item.andriel:backpack_pig_item18=여행자의 배낭 §6§l§k|§r§o§9 돼지 18
+item.andriel:backpack_pig_item19=여행자의 배낭 §6§l§k|§r§o§9 돼지 19
+item.andriel:backpack_pig_item20=여행자의 배낭 §6§l§k|§r§o§9 돼지 20
+
+item.andriel:backpack_fox_item=여행자의 배낭 §6§l§k|§r§o§9 여우
+item.andriel:backpack_fox_item1=여행자의 배낭 §6§l§k|§r§o§9 여우 1
+item.andriel:backpack_fox_item2=여행자의 배낭 §6§l§k|§r§o§9 여우 2
+item.andriel:backpack_fox_item3=여행자의 배낭 §6§l§k|§r§o§9 여우 3
+item.andriel:backpack_fox_item4=여행자의 배낭 §6§l§k|§r§o§9 여우 4
+item.andriel:backpack_fox_item5=여행자의 배낭 §6§l§k|§r§o§9 여우 5
+item.andriel:backpack_fox_item6=여행자의 배낭 §6§l§k|§r§o§9 여우 6
+item.andriel:backpack_fox_item7=여행자의 배낭 §6§l§k|§r§o§9 여우 7
+item.andriel:backpack_fox_item8=여행자의 배낭 §6§l§k|§r§o§9 여우 8
+item.andriel:backpack_fox_item9=여행자의 배낭 §6§l§k|§r§o§9 여우 9
+item.andriel:backpack_fox_item10=여행자의 배낭 §6§l§k|§r§o§9 여우 10
+item.andriel:backpack_fox_item11=여행자의 배낭 §6§l§k|§r§o§9 여우 11
+item.andriel:backpack_fox_item12=여행자의 배낭 §6§l§k|§r§o§9 여우 12
+item.andriel:backpack_fox_item13=여행자의 배낭 §6§l§k|§r§o§9 여우 13
+item.andriel:backpack_fox_item14=여행자의 배낭 §6§l§k|§r§o§9 여우 14
+item.andriel:backpack_fox_item15=여행자의 배낭 §6§l§k|§r§o§9 여우 15
+item.andriel:backpack_fox_item16=여행자의 배낭 §6§l§k|§r§o§9 여우 16
+item.andriel:backpack_fox_item17=여행자의 배낭 §6§l§k|§r§o§9 여우 17
+item.andriel:backpack_fox_item18=여행자의 배낭 §6§l§k|§r§o§9 여우 18
+item.andriel:backpack_fox_item19=여행자의 배낭 §6§l§k|§r§o§9 여우 19
+item.andriel:backpack_fox_item20=여행자의 배낭 §6§l§k|§r§o§9 여우 20
+
+item.andriel:backpack_andriel_item=여행자의 배낭 §6§l§k|§r§o§9 안드리엘
+item.andriel:backpack_andriel_item1=여행자의 배낭 §6§l§k|§r§o§9 안드리엘 1
+item.andriel:backpack_andriel_item2=여행자의 배낭 §6§l§k|§r§o§9 안드리엘 2
+item.andriel:backpack_andriel_item3=여행자의 배낭 §6§l§k|§r§o§9 안드리엘 3
+
+item.andriel:sleeping_bag=침낭 §6§l§k|§r§o§9 여행자의 배낭
+item.andriel:backpack_tank=배낭 탱크 §6§l§k|§r§o§9 여행자의 배낭
+item.andriel:hose_nozzle=호스 분사구 §6§l§k|§r§o§9 여행자의 배낭
+item.andriel:hose=호스 §6§l§k|§r§o§9 여행자의 배낭
+
+
+
+
+
+tile.andriel:backpack_standard.name=여행자의 배낭 §6§l§k|§r§o§9 일반
+tile.andriel:backpack_standard1.name=여행자의 배낭 §6§l§k|§r§o§9 일반 1
+tile.andriel:backpack_standard2.name=여행자의 배낭 §6§l§k|§r§o§9 일반 2
+tile.andriel:backpack_standard3.name=여행자의 배낭 §6§l§k|§r§o§9 일반 3
+tile.andriel:backpack_standard4.name=여행자의 배낭 §6§l§k|§r§o§9 일반 4
+tile.andriel:backpack_standard5.name=여행자의 배낭 §6§l§k|§r§o§9 일반 5
+tile.andriel:backpack_standard6.name=여행자의 배낭 §6§l§k|§r§o§9 일반 6
+tile.andriel:backpack_standard7.name=여행자의 배낭 §6§l§k|§r§o§9 일반 7
+tile.andriel:backpack_standard8.name=여행자의 배낭 §6§l§k|§r§o§9 일반 8
+tile.andriel:backpack_standard9.name=여행자의 배낭 §6§l§k|§r§o§9 일반 9
+tile.andriel:backpack_standard10.name=여행자의 배낭 §6§l§k|§r§o§9 일반 10
+tile.andriel:backpack_standard11.name=여행자의 배낭 §6§l§k|§r§o§9 일반 11
+tile.andriel:backpack_standard12.name=여행자의 배낭 §6§l§k|§r§o§9 일반 12
+tile.andriel:backpack_standard13.name=여행자의 배낭 §6§l§k|§r§o§9 일반 13
+tile.andriel:backpack_standard14.name=여행자의 배낭 §6§l§k|§r§o§9 일반 14
+tile.andriel:backpack_standard15.name=여행자의 배낭 §6§l§k|§r§o§9 일반 15
+tile.andriel:backpack_standard16.name=여행자의 배낭 §6§l§k|§r§o§9 일반 16
+tile.andriel:backpack_standard17.name=여행자의 배낭 §6§l§k|§r§o§9 일반 17
+tile.andriel:backpack_standard18.name=여행자의 배낭 §6§l§k|§r§o§9 일반 18
+tile.andriel:backpack_standard19.name=여행자의 배낭 §6§l§k|§r§o§9 일반 19
+tile.andriel:backpack_standard20.name=여행자의 배낭 §6§l§k|§r§o§9 일반 20
+
+tile.andriel:backpack_pig.name=여행자의 배낭 §6§l§k|§r§o§9 돼지
+tile.andriel:backpack_pig1.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 1
+tile.andriel:backpack_pig2.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 2
+tile.andriel:backpack_pig3.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 3
+tile.andriel:backpack_pig4.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 4
+tile.andriel:backpack_pig5.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 5
+tile.andriel:backpack_pig6.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 6
+tile.andriel:backpack_pig7.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 7
+tile.andriel:backpack_pig8.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 8
+tile.andriel:backpack_pig9.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 9
+tile.andriel:backpack_pig10.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 10
+tile.andriel:backpack_pig11.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 11
+tile.andriel:backpack_pig12.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 12
+tile.andriel:backpack_pig13.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 13
+tile.andriel:backpack_pig14.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 14
+tile.andriel:backpack_pig15.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 15
+tile.andriel:backpack_pig16.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 16
+tile.andriel:backpack_pig17.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 17
+tile.andriel:backpack_pig18.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 18
+tile.andriel:backpack_pig19.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 19
+tile.andriel:backpack_pig20.name=여행자의 배낭 §6§l§k|§r§o§9 돼지 20
+
+tile.andriel:backpack_fox.name=여행자의 배낭 §6§l§k|§r§o§9 여우
+tile.andriel:backpack_fox1.name=여행자의 배낭 §6§l§k|§r§o§9 여우 1
+tile.andriel:backpack_fox2.name=여행자의 배낭 §6§l§k|§r§o§9 여우 2
+tile.andriel:backpack_fox3.name=여행자의 배낭 §6§l§k|§r§o§9 여우 3
+tile.andriel:backpack_fox4.name=여행자의 배낭 §6§l§k|§r§o§9 여우 4
+tile.andriel:backpack_fox5.name=여행자의 배낭 §6§l§k|§r§o§9 여우 5
+tile.andriel:backpack_fox6.name=여행자의 배낭 §6§l§k|§r§o§9 여우 6
+tile.andriel:backpack_fox7.name=여행자의 배낭 §6§l§k|§r§o§9 여우 7
+tile.andriel:backpack_fox8.name=여행자의 배낭 §6§l§k|§r§o§9 여우 8
+tile.andriel:backpack_fox9.name=여행자의 배낭 §6§l§k|§r§o§9 여우 9
+tile.andriel:backpack_fox10.name=여행자의 배낭 §6§l§k|§r§o§9 여우 10
+tile.andriel:backpack_fox11.name=여행자의 배낭 §6§l§k|§r§o§9 여우 11
+tile.andriel:backpack_fox12.name=여행자의 배낭 §6§l§k|§r§o§9 여우 12
+tile.andriel:backpack_fox13.name=여행자의 배낭 §6§l§k|§r§o§9 여우 13
+tile.andriel:backpack_fox14.name=여행자의 배낭 §6§l§k|§r§o§9 여우 14
+tile.andriel:backpack_fox15.name=여행자의 배낭 §6§l§k|§r§o§9 여우 15
+tile.andriel:backpack_fox16.name=여행자의 배낭 §6§l§k|§r§o§9 여우 16
+tile.andriel:backpack_fox17.name=여행자의 배낭 §6§l§k|§r§o§9 여우 17
+tile.andriel:backpack_fox18.name=여행자의 배낭 §6§l§k|§r§o§9 여우 18
+tile.andriel:backpack_fox19.name=여행자의 배낭 §6§l§k|§r§o§9 여우 19
+tile.andriel:backpack_fox20.name=여행자의 배낭 §6§l§k|§r§o§9 여우 20
+
+tile.andriel:backpack_andriel.name=여행자의 배낭 §6§l§k|§r§o§9 안드리엘
+tile.andriel:backpack_andriel1.name=여행자의 배낭 §6§l§k|§r§o§9 안드리엘 1
+tile.andriel:backpack_andriel2.name=여행자의 배낭 §6§l§k|§r§o§9 안드리엘 2
+tile.andriel:backpack_andriel3.name=여행자의 배낭 §6§l§k|§r§o§9 안드리엘 3
+
+
+
+
+
+exceeded_limit.info=§c이 모델의 배낭 한도가 최대 용량에 도달했습니다. 다른 모델에서 배낭을 만들어 보세요!
+exceeded_limit.models=§e사용 가능한 모델:
+exceeded_limit.standard=§a여행자의 배낭 §l§k|§r§o§a 일반
+exceeded_limit.pig=§a여행자의 배낭 §l§k|§r§o§a 돼지
+exceeded_limit.fox=§a여행자의 배낭 §l§k|§r§o§a 여우
+exceeded_limit.andriel=§a여행자의 배낭 §l§k|§r§o§a 안드리엘
+exceeded_limit.null=§d사용 가능한 모델이 없습니다.
+good_night.sleeping_bag=잘 자!

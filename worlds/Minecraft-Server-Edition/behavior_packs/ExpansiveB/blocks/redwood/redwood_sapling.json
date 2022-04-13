@@ -1,0 +1,157 @@
+//bridge-file-version: #56
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:redwood_sapling_block"
+		},
+		"components": {
+			"minecraft:entity_collision": false,
+			"minecraft:pick_collision": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					12,
+					12
+				]
+			},
+			"minecraft:geometry": "geometry.sapling_model",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "redwood_sapling",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breakonpush": true,
+			"minecraft:on_interact": {
+				"event": "cbw:grow",
+				"target": "self",
+				"condition": "query.get_equipped_item_name == 'bone_meal'"
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:dirt",
+							"minecraft:grass",
+							"minecraft:farmland"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					2000,
+					2500
+				],
+				"on_tick": {
+					"event": "cbw:grow",
+					"target": "self"
+				}
+			},
+			"minecraft:map_color": "#125800",
+			"minecraft:loot": "loot_tables/blocks/redwood_sapling.json",
+			"minecraft:breathability": "air"
+		},
+		"events": {
+			"cbw:grow": {
+				"sequence": [
+					{
+						"condition": "query.get_equipped_item_name('main_hand') == 'bone_meal'",
+						"run_command": {
+							"command": [
+								"particle minecraft:crop_growth_emitter ~ ~ ~",
+								"playsound item.bone_meal.use @a ~ ~ ~"
+							]
+						},
+						"trigger": {
+							"event": "cbw:random",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"cbw:random": {
+				"randomize": [
+					{
+						"weight": 100,
+						"decrement_stack": {}
+					},
+					{
+						"weight": 70,
+						"decrement_stack": {},
+						"randomize": [
+							{
+								"set_block": {
+									"block_type": "korbon:redwood_log"
+								},
+								"run_command": {
+									"command": [
+										"structure load redwood_tree_1 ~-3~-1~-3"
+									]
+								}
+							},
+							{
+								"run_command": {
+									"command": [
+										"structure load redwood_tree_2 ~-3~-1~-3"
+									]
+								},
+								"set_block": {
+									"block_type": "korbon:redwood_log"
+								}
+							},
+							{
+								"run_command": {
+									"command": [
+										"structure load redwood_tree_3 ~-3~-1~-3"
+									]
+								},
+								"set_block": {
+									"block_type": "korbon:redwood_log"
+								}
+							}
+						]
+					},
+					{
+						"weight": 10,
+						"decrement_stack": {},
+						"randomize": [
+							{
+								"set_block": {
+									"block_type": "korbon:redwood_wood"
+								},
+								"run_command": {
+									"command": [
+										"structure load redwood_large_1 ~-15~~-16"
+									]
+								}
+							},
+							{
+								"set_block": {
+									"block_type": "korbon:redwood_wood"
+								},
+								"run_command": {
+									"command": [
+										"structure load redwood_large_2 ~-5~~-5"
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

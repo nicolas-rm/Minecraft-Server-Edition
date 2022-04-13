@@ -1,0 +1,88 @@
+//bridge-file-version: #51
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:snowdrop_flower"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:geometry": "geometry.plant",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "snowdrop_flower",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:block_light_emission": 0.2,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					11,
+					8
+				]
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:grass",
+							"minecraft:dirt"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/snowdrop_flower.json",
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					5,
+					10
+				],
+				"on_tick": {
+					"event": "freeze"
+				}
+			},
+			"minecraft:breathability": "air",
+			"minecraft:entity_collision": false,
+			"minecraft:breakonpush": true
+		},
+		"events": {
+			"freeze": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:falling_dust_top_snow_particle ~~0.3~",
+								"particle minecraft:falling_dust_top_snow_particle ~0.3~~",
+								"particle minecraft:falling_dust_top_snow_particle ~~~0.3",
+								"particle minecraft:falling_dust_top_snow_particle ~-0.3~~",
+								"particle minecraft:falling_dust_top_snow_particle ~~~-0.3",
+								"effect @e[r=2] slowness 3 6 true",
+								"effect @e[r=2] fatal_poison 3 1 true"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"fill ~~1~ ~~~ air 0 replace snow_layer",
+								"fill ~~1~ ~~~ air 0 replace snow"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

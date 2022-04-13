@@ -1,0 +1,46 @@
+//bridge-file-version: #40
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:redwood_leaves"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.2,
+			"minecraft:map_color": "#125800",
+			"minecraft:explosion_resistance": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "redwood_leaves",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/redwood_leaves_drops.json",
+			"minecraft:on_player_destroyed": {
+				"event": "shear",
+				"condition": "query.get_equipped_item_name('main_hand') == 'shears'"
+			},
+			"minecraft:unit_cube": {},
+			"minecraft:flammable": {
+				"burn_odds": 30,
+				"flame_odds": 30
+			},
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.leaves",
+				"category": "nature"
+			},
+			"minecraft:breathability": "air"
+		},
+		"events": {
+			"shear": {
+				"sequence": [
+					{
+						"spawn_loot": {
+							"table": "loot_tables/blocks/redwood_leaves_sheared.json"
+						}
+					}
+				]
+			}
+		}
+	}
+}
